@@ -268,3 +268,18 @@
     de nível muito mais alto, com NPCs "mob atalho" e 4 ladrões-quest.
   sources: ["notas.md#DESCOBERTA: Mural da Biblioteca de Bri — \"Mobs Atalhos\" e geografia avançada", "notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca", "notas.md#Fronteira norte de Valfenda: \"Uma Ladeira de Pedras\" (provável início do Caminho para as Montanhas Sombrias)"]
   confidence: hypothesis
+
+- id: region:saloes-espera
+  name: Os Salões de Espera (pós-morte)
+  kind: building
+  safety: safe
+  danger: 0
+  navigation: linear
+  atmosphere: [solene, sobrenatural]
+  tags: [morte, mandos, zona-segura]
+  notes: >
+    Para onde o personagem vai ao morrer: Estë dá um manto temporário e uma
+    bênção; Námo/Vairë "julgam" por alguns minutos e depois o personagem é
+    teleportado de volta ao ponto de retorno. Salas achadas na mineração do raw.log.
+  sources: ["notas.md#Lições aprendidas (gerais)", "logs/raw.log"]
+  confidence: confirmed
