@@ -1,0 +1,15 @@
+# credenciais e estado de conexao — nunca versionar
+.credenciais
+.mud_in
+.mud_last
+.mud_off
+
+# logs brutos de sessao (podem conter login/senha em texto puro)
+logs/
+
+# gerado por db/tools/build.py — nunca editar a mao, regenerar sempre
+db/valinor.sqlite
+db/valinor.json
+
+# editor
+*.swp
