@@ -1,0 +1,542 @@
+# NPCs. id: npc:<slug>. description = flavor/aparencia; papel funcional em roles/notes.
+- id: npc:narine
+  name: Narinë
+  region: region:academia
+  roles: [buyer]
+  description: "Fica no Centro do Jardim, recebendo itens de jogadores com entusiasmo genuíno por qualquer coisa que lhe deem."
+  presence: [{location: loc:academia.centro-jardim, mode: home}]
+  interactions:
+    - {trigger: "give <item> narine", effect: "paga 1 gold por quase qualquer item", status: works}
+    - {trigger: "give all.<item> narine", effect: "vende toda a pilha de uma vez", status: works}
+  tags: [comprador-universal, economia]
+  sources: ["notas.md#Fonte de ouro: Zurg (refeitório, E do corredor 3) paga por coelhos caçados no bosque"]
+  confidence: confirmed
+
+- id: npc:zurg
+  name: Zurg
+  region: region:academia
+  roles: [shop, buyer]
+  description: "Fica no Refeitório (corredor 3, leste); ensina gratuitamente as perícias 'fatiar carne' e 'cozinhar'."
+  presence: [{location: loc:academia.sala-cura, mode: home}]
+  schedule: {closed_at_night: false}
+  tags: [loja, trainer-gratis]
+  sources: ["notas.md#Lição CRÍTICA: fome/sede severas MATAM (2ª morte, nível 6)", "notas.md#Zurg vende \"pedaço de carne de coelho\" por 1 gold (estoque limitado a 1!)"]
+  confidence: confirmed
+
+- id: npc:mestre-toric
+  name: Mestre Toric
+  region: region:academia
+  roles: [healer]
+  description: "'Brilha sob uma aura branca.' Mago especializado em artes de cura e proteção; cuida dos alunos que dormem nos leitos da Sala de Cura."
+  presence: [{location: loc:academia.sala-cura, mode: home}]
+  tags: [cura]
+  sources: ["notas.md#Básico"]
+  confidence: confirmed
+
+- id: npc:domick
+  name: Domick
+  region: region:academia
+  roles: [trainer]
+  description: "'Mestre do Conhecimento'; fica na Sala de Treino de Perícias. Ensina perícias com nome composto via `practice 'nome'` (aspas simples)."
+  presence: [{location: loc:academia.saguao, mode: home}]
+  tags: [trainer, pericias]
+  sources: ["notas.md#RESOLVIDO: perícia \"Procurar\" (search) aprendida com Domick"]
+  confidence: confirmed
+
+- id: npc:herenvardo
+  name: Herenvardo
+  region: region:academia
+  roles: [trainer]
+  description: "Mago que treina perícias de magia na Sala de Treino de Magias."
+  presence: [{location: loc:academia.saguao, mode: home}]
+  tags: [trainer, magia]
+  sources: ["notas.md#Exploração: Academia de Aventureiros, partes nunca vistas"]
+  confidence: confirmed
+
+- id: npc:phrantes
+  name: Phrantes
+  region: region:academia
+  roles: [repair]
+  description: "Cuteleiro no Depósito de Armas (leste do saguão); repara itens via `repair <item>`."
+  presence: [{location: loc:academia.saguao, mode: home}]
+  tags: [reparo]
+  sources: ["notas.md#Exploração: Academia de Aventureiros, partes nunca vistas"]
+  confidence: confirmed
+
+- id: npc:diretora
+  name: A ilustre diretora da Academia de Aventureiros
+  region: region:academia
+  roles: [decorative]
+  description: "Presente no saguão; ainda não interagida a fundo."
+  presence: [{location: loc:academia.saguao, mode: home}]
+  tags: [decorativo]
+  sources: ["notas.md#Exploração: fora da Academia — Vila de Bri e Biblioteca"]
+  confidence: confirmed
+
+- id: npc:guardiao-norte
+  name: O Guardião do Norte
+  region: region:bri
+  roles: [gps]
+  description: "'Sob uma estranha mistura de luz e sombras.' Fica na Avenida Zênite, perto da macieira."
+  presence: [{location: loc:bri.avenida-zenite, mode: home}]
+  interactions: [{trigger: "whisper/say preciso de ajuda", effect: "dá rota a partir de onde está, mais recursos (comida/água)", status: works}]
+  tags: [gps]
+  sources: ["notas.md#Guardião do Norte (Avenida Zênite): NPC \"GPS\" de ajuda/navegação"]
+  confidence: confirmed
+
+- id: npc:guarda-portao
+  name: "Guarda de portão (genérico — Norte/Sul)"
+  region: region:bri
+  roles: [gps, guard]
+  description: "Guarda comum em armadura completa de ferro, patrulhando ou a postos em qualquer portão de Bri."
+  presence: [{location: loc:bri.portao-norte, mode: roaming}]
+  interactions:
+    - {trigger: "say preciso de ajuda / say <lugar>", effect: "dá rota a partir da Praça de Bri", status: works}
+  gifts: [{item: item:pergaminho-retorno, condition: "achar que o personagem 'não parece experiente o bastante'", renewable: true}]
+  tags: [gps, scroll-gratis]
+  sources: ["notas.md#DESCOBERTA IMPORTANTE: guarda dá pergaminho de retorno de graça", "notas.md#Pergaminhos de retorno são RENOVÁVEIS de graça pelos guardas"]
+  confidence: confirmed
+
+- id: npc:hary-barba-de-bode
+  name: "Hary Barba-de-Bode (Hary, o porteiro)"
+  region: region:bri
+  roles: [guard, gps]
+  description: "Porteiro nomeado do Portão Oeste — referência a Harry Goatleaf, personagem de Bree em O Senhor dos Anéis."
+  presence: [{location: loc:bri.portao-oeste, mode: home}]
+  canon: lore:harry-goatleaf
+  tags: [lore, gps]
+  sources: ["notas.md#Exploração: Portão Oeste de Bri"]
+  confidence: confirmed
+
+- id: npc:carrapicho
+  name: "Sr. Carrapicho"
+  region: region:bri.ponei
+  roles: [innkeeper]
+  description: "'Esbanjando seu sorriso.' Estalajadeiro do Pônei Saltitante — equivalente a Barliman Butterbur no livro."
+  presence: [{location: loc:bri.ponei, mode: home}]
+  canon: lore:butterbur
+  tags: [lore, hospedaria]
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: npc:nob
+  name: Nob
+  region: region:bri.ponei
+  roles: [shop]
+  description: "O criado hobbit do livro; vende comida/bebida na taverna e cuida do galinheiro."
+  presence: [{location: loc:bri.ponei, mode: home}]
+  canon: lore:prancing-pony
+  interactions: [{trigger: "say Alimente as galinhas", effect: "Nob sai da sala rumo ao galinheiro", status: works}]
+  tags: [lore, loja]
+  sources: ["notas.md#Confirmado: interação do galinheiro com Nob FUNCIONA"]
+  confidence: confirmed
+
+- id: npc:dori
+  name: Dori
+  region: region:bri.ponei
+  roles: [decorative, lore]
+  description: "Um dos doze anões companheiros de Thorin Escudo de Carvalho (irmão de Ori e Nori) — totalmente equipado em tema: insígnia da Montanha Solitária, malha de couro e anéis, braçadeiras 'das trevas de Angband', cinto de ouro e prata."
+  presence: [{location: loc:bri.ponei, mode: home}]
+  canon: lore:dori
+  tags: [lore, hobbit-companhia]
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: npc:nedhellener
+  name: Nedhellener
+  region: region:bri.ponei
+  roles: [decorative]
+  description: "Bardo tocando banjo na taverna; flavor sugere que uma conversa/canção pode ser puxada, mas nenhum trigger funcionou."
+  presence: [{location: loc:bri.ponei, mode: home}]
+  tags: [pendencia]
+  sources: ["notas.md#Bardo Nedhellener: trigger de história/canção ainda não encontrado"]
+  confidence: confirmed
+
+- id: npc:bob
+  name: Bob
+  region: region:bri.ponei
+  roles: [pet-stable]
+  description: "Prepara o estábulo do Pônei pra chegada de viajantes; usa os comandos GUARDARPET/PEGARPET."
+  presence: [{location: loc:bri.ponei, mode: home}]
+  tags: [servico]
+  sources: ["notas.md#Exploração: Estábulo do Pônei Saltitante (NPC \"Bob\")"]
+  confidence: confirmed
+
+- id: npc:pescador
+  name: "o pescador"
+  region: region:bri
+  roles: [decorative]
+  description: "No Pequeno Trapiche; oferece sua coleção de canoas e avisa pra não esquecer o colete salva-vidas (`say Preciso de um colete`)."
+  presence: [{location: loc:bri.trapiche, mode: home}]
+  tags: [servico, pendencia]
+  sources: ["notas.md#Nova sala: \"Um Pequeno Trapiche\" (pescador, rio que margeia Bri)"]
+  confidence: confirmed
+
+- id: npc:vato-nogueira
+  name: Vato Nogueira
+  region: region:bri
+  roles: [transport]
+  description: "Sentado numa bela égua, com charrete montada — cocheiro de aluguel de Bri."
+  presence:
+    - {location: loc:bri.grande-estrada-leste-oeste, mode: home}
+    - {location: null, mode: after-trip, rule: "fica algumas horas próximo ao destino da última corrida"}
+  interactions:
+    - {trigger: "sit charrete -> give 5 moedas vato -> say Leve-me para <destino>", effect: "viagem 100% automática e segura, zero combate", status: works}
+  tags: [charreteiro, transporte-seguro]
+  sources: ["notas.md#DESCOBERTA ENORME: Vato Nogueira — transporte rápido e seguro (charrete)", "notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!", "notas.md#Vato Nogueira: paradeiro MUDA conforme última corrida (não fica fixo)"]
+  confidence: confirmed
+
+- id: npc:mat-urzal
+  name: Mat Urzal
+  region: region:bri
+  roles: [shop]
+  description: "Hobbit do Comércio de Ervas, norte da macieira na Avenida Zênite; vende fumo/ervas em caixinhas organizadas."
+  presence: [{location: loc:bri.avenida-zenite, mode: home}]
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#Exploração: Comércio de Ervas (NPC \"Mat Urzal\")"]
+  confidence: confirmed
+
+- id: npc:vognus
+  name: "Vognus, o banqueiro"
+  region: region:archet
+  roles: [banker]
+  description: "Cumprimenta pelo nome ('Olá Halbarion'). Opera o sistema BANK na Casa Bancária de Archet."
+  presence: [{location: loc:archet.rua-oficios, mode: home}]
+  tags: [servico, economia]
+  sources: ["notas.md#Exploração: Archet, Rua dos Ofícios + Casa Bancária"]
+  confidence: confirmed
+
+- id: npc:umaro
+  name: "Umaro, líder da guarda de Archet"
+  region: region:archet
+  roles: [guard, decorative]
+  description: "Não responde a pedidos de ajuda ('say preciso de ajuda')."
+  presence: [{location: loc:archet.rua-oficios, mode: home}]
+  tags: [decorativo]
+  sources: ["notas.md#Exploração: Archet, Rua dos Ofícios + Casa Bancária"]
+  confidence: confirmed
+
+- id: npc:tantarel
+  name: Tantarel
+  region: region:archet
+  roles: [innkeeper]
+  description: "'Olá forasteiro! Talvez queira descansar...' Hospedeiro da Hospedaria Sono Cerrado."
+  presence: [{location: loc:archet.hospedaria, mode: home}]
+  tags: [hospedaria]
+  sources: ["notas.md#Exploração: Archet, Rua das Distrações + Hospedaria Sono Cerrado"]
+  confidence: confirmed
+
+- id: npc:annir
+  name: "Annir, o alfaiate"
+  region: region:bri.lei
+  roles: [shop]
+  description: "Alfaiate da Alfaiataria do Annir, na Avenida da Lei."
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#Exploração: Avenida da Lei (muro sul) completa"]
+  confidence: confirmed
+
+- id: npc:tuneloso
+  name: "Senhor Tuneloso"
+  region: region:bri.mercado
+  roles: [shop]
+  description: "Vendedor de armas na Loja de Armamentos."
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#DESCOBERTA: Portão Sul de Bri + guarda-GPS funciona em qualquer portão"]
+  confidence: confirmed
+
+- id: npc:siulin
+  name: Siulin
+  region: region:bri.mercado
+  roles: [shop]
+  description: "Jovem garota, vendedora da Loja de Laticínios."
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#Exploração: Rua do Mercado lado leste (Loja de Armamentos, Laticínios)"]
+  confidence: confirmed
+
+- id: npc:artemisas
+  name: "Senhora Artemisas"
+  region: region:bri.mercado
+  roles: [shop]
+  description: "Vendedora da Loja de Chás."
+  schedule: {closed_at_night: true, closed_msg: "voltar amanhã"}
+  tags: [loja]
+  sources: ["notas.md#Exploração: Loja de Chás (Senhora Artemisas) + confirma lojas fechadas de noite"]
+  confidence: confirmed
+
+- id: npc:buraqueiro
+  name: Buraqueiro
+  region: region:bri.mercado
+  roles: [shop]
+  description: "Escriba que transcreve pergaminhos pra ganhar dinheiro, na Tenda do Escriba."
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#Exploração: Tenda do Escriba (NPC \"Buraqueiro\")"]
+  confidence: confirmed
+
+- id: npc:joalheiro
+  name: "o joalheiro"
+  region: region:bri.mercado
+  roles: [shop]
+  description: "Vendedor da joalheria 'A Esmeralda Brilhante' — vitrine trancada de gemas, pinturas, esculturas."
+  schedule: {closed_at_night: true}
+  tags: [loja]
+  sources: ["notas.md#Exploração: \"A Esmeralda Brilhante\" (joalheria)"]
+  confidence: confirmed
+
+- id: npc:ferion
+  name: Ferion
+  region: region:bri.biblioteca
+  roles: [shop]
+  description: "Copista que copia livros LACRADOS a pedido dos próprios autores (10 moedas + 1 por página)."
+  tags: [servico]
+  sources: ["notas.md#Exploração: Escritório do Copista (Biblioteca de Bri, sala leste do Saguão)"]
+  confidence: confirmed
+
+- id: npc:mestre-ladroes
+  name: "o mestre dos ladrões"
+  region: region:bri
+  roles: [trainer]
+  description: "No canto sudoeste de Bri (Encontro da Estrada do Falcão com a Avenida da Lei); 'mostra as maneiras de se roubar'."
+  tags: [trainer, pendencia]
+  sources: ["notas.md#Exploração: canto sudoeste de Bri — \"mestre dos ladrões\""]
+  confidence: confirmed
+
+- id: npc:mirindhel
+  name: "Mirindhel, a mestra dos ladrões"
+  region: region:bosque
+  roles: [lore, decorative]
+  description: "Sentada numa cadeira luxuosa dentro da Gruta Profunda, observando os outros."
+  presence: [{location: loc:bri.gruta-profunda, mode: home}]
+  tags: [guilda]
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: npc:thanthal
+  name: "mestre Thanthal"
+  region: region:bosque
+  roles: [trainer]
+  description: "Elfo que comanda a Academia de Combate escondida no bosque."
+  presence: [{location: loc:bri.academia-combate, mode: home}]
+  tags: [trainer]
+  sources: ["notas.md#DESCOBERTA: \"A Academia de Combate\" (acessível só pelo Amplo Bosque)"]
+  confidence: confirmed
+
+- id: npc:senhor-knob
+  name: Senhor Knob
+  region: region:bri.mansao-knob
+  roles: [quest-hook]
+  description: "Patriarca da família; empunha um chicote de equitação, veste calça de couro, tranca a porteira ao saír — NPC com rotina/IA ativa."
+  presence: [{location: loc:knob.estabulo, mode: roaming}]
+  hostility: unknown
+  tags: [quest]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: npc:lady-knob
+  name: "Lady Knob (Marry Knob)"
+  region: region:bri.mansao-knob
+  roles: [quest-hook]
+  description: "'Aliança de esposa.' Atacou com um chute na primeira aproximação ('apavorada com sua presença'), depois calma."
+  presence: [{location: loc:knob.jardim, mode: home}]
+  hostility: startled-once
+  tags: [quest]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: npc:servente-knob
+  name: "servente da casa"
+  region: region:bri.mansao-knob
+  roles: [quest-hook]
+  description: "Mal-humorado, mas pacífico."
+  tags: [quest]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: npc:jardineiro-knob
+  name: jardineiro
+  region: region:bri.mansao-knob
+  roles: [quest-hook]
+  description: "Simpático; convida a sentar, oferece algo mas pede pra voltar amanhã (horário fechado)."
+  presence: [{location: loc:knob.jardim, mode: home}]
+  tags: [quest]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: npc:tratador-knob
+  name: "tratador de animais"
+  region: region:bri.mansao-knob
+  roles: [quest-hook]
+  description: "Cuida dos cavalos no estábulo da mansão; ainda não interagido."
+  presence: [{location: loc:knob.estabulo, mode: home}]
+  tags: [quest]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: npc:guardia-elfa
+  name: "A Guardiã elfa"
+  region: region:valfenda
+  roles: [gps]
+  description: "'Aura branca.' GPS local de Valfenda, equivalente aos guardas de Bri."
+  presence: [{location: loc:valfenda.bosquepraca, mode: home}]
+  interactions: [{trigger: "whisper guardia preciso de ajuda -> say <lugar>", effect: "dá rota a partir do Bosquepraça", status: works}]
+  gifts: [{item: item:pergaminho-retorno, condition: "mesmo mecanismo dos guardas de Bri, confirmado em Valfenda", renewable: true}]
+  tags: [gps]
+  sources: ["notas.md#Valfenda: \"A Guardiã elfa\" é o GPS local (mesmo padrão dos guardas de Bri)"]
+  confidence: confirmed
+
+- id: npc:faelar-anor
+  name: Faelar Anor
+  region: region:valfenda
+  roles: [transport]
+  description: "Charreteiro com uma grande charrete de rodas reforçadas e um potro, na Alameda de Pópulos."
+  presence: [{location: loc:valfenda.alameda-populos, mode: home}]
+  interactions: [{trigger: "sit/give/say (mesma mecânica do Vato Nogueira)", effect: "destinos de endgame: Topo do Vento, Carrocha, Terras de Beorn etc.", status: works}]
+  canon: lore:weathertop
+  tags: [charreteiro, endgame]
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: npc:isilie
+  name: "Isilië, a curandeira"
+  region: region:valfenda
+  roles: [healer]
+  description: "Cura com encantamentos em Sindarin ('naimad'/'nran'); equivalente a Mestre Toric em Valfenda."
+  presence: [{location: loc:valfenda.casa-cura, mode: home}]
+  canon: lore:mallorn
+  tags: [cura]
+  sources: ["notas.md#Achado: \"Casa de Cura\" de Valfenda — NPC Isilië + referência a Lothlórien"]
+  confidence: confirmed
+
+- id: npc:recepcionista-descanso
+  name: recepcionista
+  region: region:valfenda
+  roles: [innkeeper]
+  description: "Atende na Recepção da Casa de Descanso, hospedaria de Valfenda."
+  tags: [servico]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: npc:eartitton
+  name: Eartitton
+  region: region:valfenda
+  roles: [shop]
+  description: "Cartógrafo; vende mapas organizados numa estante, no alto do complexo museu/pinacoteca/biblioteca."
+  presence: [{location: loc:valfenda.cartografo, mode: home}]
+  tags: [loja]
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: npc:bibliotecario-valfenda
+  name: "o bibliotecário"
+  region: region:valfenda
+  roles: [decorative]
+  description: "Presente na Biblioteca de Valfenda; decorativo até agora."
+  tags: [decorativo]
+  sources: ["notas.md#Exploração: \"A Pinacoteca\" e Biblioteca de Valfenda (norte do bairro élfico)"]
+  confidence: confirmed
+
+- id: npc:learin
+  name: "Learin Verde-Braço"
+  region: region:valfenda
+  roles: [shop]
+  description: "Vende propriedades no Empório das Casas."
+  presence: [{location: loc:valfenda.emporio-casas, mode: home}]
+  tags: [loja, housing]
+  sources: ["notas.md#Valfenda: sistema de compra de casas (housing, endgame)"]
+  confidence: confirmed
+
+- id: npc:aissa
+  name: "Aissa, a protegida do Maider"
+  region: region:valfenda
+  roles: [decorative]
+  description: "Presente na Loja Magia Boa é Magia Pura, testando magia no meio de itens flutuantes e faíscas; não vende de fato ('list' falha)."
+  tags: [decorativo]
+  sources: ["notas.md#Exploração: Alameda de Plátanos + \"Loja Magia Boa é Magia Pura\""]
+  confidence: confirmed
+
+- id: npc:vendedor-casa-alimentos
+  name: "um alegre vendedor"
+  region: region:valfenda
+  roles: [shop]
+  description: "Vende bolo de frutas silvestres, uvas e mel na Casa de Alimentos."
+  presence: [{location: loc:valfenda.casa-alimentos, mode: home}]
+  tags: [loja]
+  sources: ["notas.md#Achado: \"A Casa de Alimentos\" (= \"Casa de Refeições\") + NPC Lindir!"]
+  confidence: confirmed
+
+- id: npc:lindir
+  name: Lindir
+  region: region:valfenda
+  roles: [lore]
+  description: "Visto passando perto da Casa de Alimentos, indo para o norte — cantor/membro da corte de Elrond no livro, que recebe Frodo."
+  presence: [{location: null, mode: seen-passing}]
+  canon: lore:lindir
+  tags: [lore, canonico]
+  sources: ["notas.md#Achado: \"A Casa de Alimentos\" (= \"Casa de Refeições\") + NPC Lindir!"]
+  confidence: confirmed
+
+- id: npc:dunendel
+  name: "Dunendel, o mensageiro da cidadela branca"
+  region: region:valfenda
+  roles: [lore, quest-hook]
+  description: "Mensageiro de Gondor/Minas Tirith; 'caminha por aqui em busca de Elrond' — gancho de quest em aberto, ainda não conversamos com ele."
+  presence: [{location: loc:valfenda.salao-fogo, mode: home}]
+  canon: lore:minas-tirith-gondor
+  tags: [quest, pendencia]
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: npc:menestrel-salao-fogo
+  name: "um menestrel"
+  region: region:valfenda
+  roles: [decorative]
+  description: "Elfo com lira de sete cordas; o flavor convida a 'ouvir o que esse elfo tem a tocar', mas nenhum trigger (`listen`, etc.) funcionou."
+  presence: [{location: loc:valfenda.salao-fogo, mode: home}]
+  tags: [pendencia]
+  sources: ["notas.md#Pendência: trigger do menestrel no Salão do Fogo não encontrado"]
+  confidence: confirmed
+
+- id: npc:guarda-real-passagem
+  name: "2× guarda real"
+  region: region:valfenda
+  roles: [guard, lore]
+  description: >
+    Imóveis na Passagem Bem Guardada, falando em Sindarin:
+    'Iwá Tewqvilyauih!' e uma frase mais longa mencionando Imladris.
+  presence: [{location: loc:valfenda.passagem-guardada, mode: stationary}]
+  hostility: unknown
+  tags: [endgame, lore]
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: npc:lojista-provisoes
+  name: "o lojista (Provisões para Jovens Aventureiros)"
+  region: region:academia
+  roles: [shop]
+  description: "Nome não capturado ainda; atende no balcão da loja mais barata da Academia."
+  presence: [{location: loc:academia.loja-provisoes, mode: home}]
+  tags: [loja]
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: inferred
+
+- id: npc:alfaiate-valfenda
+  name: "o alfaiate (A Alfaiataria, Valfenda)"
+  region: region:valfenda
+  roles: [shop]
+  description: "Nome não capturado ainda; vende roupas finas na Alameda de Olmeiros."
+  tags: [loja]
+  sources: ["catalogo.md#1.5"]
+  confidence: inferred
+
+- id: npc:celorien
+  name: "Celorien Ramo-Verde"
+  region: region:valfenda
+  roles: [mail]
+  description: "Opera o correio élfico, mesmo sistema OOC visto em Bri, com uma piada meta sobre 'Tweets recentes'."
+  tags: [servico, ooc]
+  sources: ["notas.md#Exploração: \"A Pinacoteca\" e Biblioteca de Valfenda (norte do bairro élfico)"]
+  confidence: confirmed

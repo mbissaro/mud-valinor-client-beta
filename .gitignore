@@ -13,3 +13,4 @@ db/valinor.json
 
 # editor
 *.swp
+__pycache__/

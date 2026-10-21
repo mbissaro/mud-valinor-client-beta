@@ -1,0 +1,132 @@
+# Trade = junção NPC x Item. mode: sells | buys | refuses | accepts-unpaid | repairs.
+- id: trade:narine-fatia-carne
+  npc: npc:narine
+  item: item:fatia-carne
+  mode: buys
+  price: 1
+  description: "Narinë exclama 'Obrigado! farei bom uso disto!' e paga 1 moeda por fatia."
+  sources: ["notas.md#RESOLVIDO: estratégia segura pra gold — bezerro + slice + Narinë"]
+  confidence: confirmed
+
+- id: trade:narine-mapa-academia
+  npc: npc:narine
+  item: item:mapa-academia
+  mode: buys
+  price: 1
+  sources: ["notas.md#Progresso: primeiro gold da sessão (2 moedas)"]
+  confidence: confirmed
+
+- id: trade:narine-folha-negra
+  npc: npc:narine
+  item: item:folha-negra
+  mode: buys
+  price: 1
+  description: "Aceita mesmo itens trazidos de Valfenda via pergaminho de retorno."
+  sources: ["notas.md#LIÇÃO: `give <item> <NPC>` em Valfenda NÃO dá gold (diferente de Narinë em Bri!)"]
+  confidence: confirmed
+
+- id: trade:narine-mapa-bri
+  npc: npc:narine
+  item: item:mapa-bri
+  mode: refuses
+  description: "Único mapa que ela recusa comprar, motivo não dado."
+  sources: ["notas.md#Mapa ASCII de Bri (item \"um mapa da vila de Bri\", `look mapa`)"]
+  confidence: confirmed
+
+- id: trade:narine-caroco-maca
+  npc: npc:narine
+  item: item:caroco-maca
+  mode: refuses
+  sources: ["notas.md#DESCOBERTA ENORME: pão cura fome instantaneamente (sem cozinhar!)"]
+  confidence: confirmed
+
+- id: trade:narine-cabresto
+  npc: npc:narine
+  item: item:cabresto-rompido
+  mode: refuses
+  description: "'Isso é uma das poucas coisas que não me interessam.'"
+  sources: ["notas.md#Dicas úteis de sintaxe + item que Narinë recusa"]
+  confidence: confirmed
+
+- id: trade:zurg-carne-coelho
+  npc: npc:zurg
+  item: item:carne-coelho
+  mode: sells
+  price: 1
+  stock: 1
+  sources: ["notas.md#Zurg vende \"pedaço de carne de coelho\" por 1 gold (estoque limitado a 1!)"]
+  confidence: confirmed
+
+- id: trade:lojista-pergaminho
+  npc: npc:lojista-provisoes
+  item: item:pergaminho-retorno
+  mode: sells
+  price: 1
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: trade:lojista-lamparina
+  npc: npc:lojista-provisoes
+  item: item:lamparina
+  mode: sells
+  price: 2
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: trade:lojista-pao
+  npc: npc:lojista-provisoes
+  item: item:pao
+  mode: sells
+  price: 1
+  sources: ["notas.md#DESCOBERTA ENORME: pão cura fome instantaneamente (sem cozinhar!)"]
+  confidence: confirmed
+
+- id: trade:lojista-cantil
+  npc: npc:lojista-provisoes
+  item: item:cantil
+  mode: sells
+  price: 15
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: trade:eartitton-mapa-valfenda
+  npc: npc:eartitton
+  item: item:mapa-valfenda
+  mode: sells
+  price: 4
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: trade:eartitton-mapa-montanhas
+  npc: npc:eartitton
+  item: item:mapa-montanhas-sombrias
+  mode: sells
+  price: 2
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: trade:alfaiate-camisa-seda
+  npc: npc:alfaiate-valfenda
+  item: item:camisa-seda
+  mode: sells
+  price: 26
+  level: 17
+  sources: ["catalogo.md#1.5"]
+  confidence: confirmed
+
+- id: trade:guardia-elfa-canino
+  npc: npc:guardia-elfa
+  item: item:canino-morcego
+  mode: accepts-unpaid
+  side_effect: "alinhamento positivo sobe (visto: 3 -> 28 pontos cumulativo)"
+  description: "Aceita o item sem reclamar, mas não paga gold — só sobe alinhamento."
+  sources: ["notas.md#LIÇÃO: `give <item> <NPC>` em Valfenda NÃO dá gold (diferente de Narinë em Bri!)"]
+  confidence: confirmed
+
+- id: trade:vato-canino
+  npc: npc:vato-nogueira
+  item: item:canino-morcego
+  mode: accepts-unpaid
+  side_effect: "alinhamento positivo sobe, sem pagamento"
+  sources: ["notas.md#LIÇÃO: `give <item> <NPC>` em Valfenda NÃO dá gold (diferente de Narinë em Bri!)"]
+  confidence: confirmed

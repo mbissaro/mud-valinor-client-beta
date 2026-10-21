@@ -1,0 +1,243 @@
+# Referencias Tolkien. id: lore:<slug>. fidelity: exact|renamed|adapted|invented-in-style.
+- id: lore:prancing-pony
+  canon_name: "The Prancing Pony (O Pônei Saltitante)"
+  work: LotR
+  chapter: "At the Sign of the Prancing Pony"
+  description: "Estalagem de Bree onde Frodo e companhia se hospedam e encontram Aragorn disfarçado."
+  mud_entities: [region:bri.ponei, npc:carrapicho, npc:nob]
+  fidelity: exact
+  how_used: place
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: lore:butterbur
+  canon_name: "Barliman Butterbur"
+  work: LotR
+  description: "Estalajadeiro do Pônei Saltitante no livro."
+  mud_entities: [npc:carrapicho]
+  fidelity: renamed
+  how_used: npc-cameo
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: lore:harry-goatleaf
+  canon_name: "Harry Goatleaf"
+  work: LotR
+  description: "Porteiro de Bree no livro, cúmplice menor dos vilões em Bree."
+  mud_entities: [npc:hary-barba-de-bode]
+  fidelity: renamed
+  how_used: npc-cameo
+  sources: ["notas.md#Exploração: Portão Oeste de Bri"]
+  confidence: confirmed
+
+- id: lore:dori
+  canon_name: "Dori"
+  work: Hobbit
+  description: "Um dos doze anões companheiros de Thorin Escudo de Carvalho, irmão de Ori e Nori."
+  mud_entities: [npc:dori]
+  fidelity: exact
+  how_used: npc-cameo
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: lore:glorfindel
+  canon_name: Glorfindel
+  work: LotR
+  chapter: "Flight to the Ford"
+  description: "Senhor-Élfico que resgata Frodo ferido no livro, cavalgando até o Vau do Bruinen."
+  mud_entities: [loc:estrada.glorfindel]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: lore:asfaloth
+  canon_name: Asfaloth
+  work: LotR
+  description: "Cavalo branco élfico de Glorfindel."
+  mud_entities: [loc:estrada.glorfindel]
+  fidelity: exact
+  how_used: flavor-mention
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: lore:ultima-ponte-mitheithel
+  canon_name: "The Last Bridge / rio Mitheithel (Fontegris)"
+  work: LotR
+  description: "A Última Ponte cruza o rio Mitheithel (Fontegris em westron), ponto de passagem real na rota de Bree a Rivendell."
+  mud_entities: [loc:estrada.ultima-ponte]
+  fidelity: exact
+  how_used: place
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: lore:vau-bruinen
+  canon_name: "Ford of Bruinen (Vau do Bruinen)"
+  work: LotR
+  description: "Travessia do rio Bruinen perto de Valfenda, cena central da fuga dos Cavaleiros Negros."
+  mud_entities: [loc:estrada.vau-bruinen]
+  fidelity: exact
+  how_used: place
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: lore:entwives
+  canon_name: Entwives
+  work: LotR
+  description: "As esposas perdidas dos Ents, mencionadas no livro como desaparecidas."
+  mud_entities: [loc:valfenda.jardim-imladris]
+  fidelity: exact
+  how_used: flavor-mention
+  sources: ["notas.md#Exploração: Jardim de Imladris (leste do Bosquepraça/Alameda de Juníperos)"]
+  confidence: confirmed
+
+- id: lore:mallorn
+  canon_name: Mallorn
+  work: LotR
+  description: "Árvores douradas de Lothlórien."
+  mud_entities: [loc:valfenda.casa-cura]
+  fidelity: exact
+  how_used: flavor-mention
+  sources: ["notas.md#Achado: \"Casa de Cura\" de Valfenda — NPC Isilië + referência a Lothlórien"]
+  confidence: confirmed
+
+- id: lore:hall-of-fire
+  canon_name: "Hall of Fire (O Salão do Fogo)"
+  work: LotR
+  chapter: "Many Meetings"
+  description: "Salão de Valfenda onde Frodo reencontra Bilbo cantando, no capítulo 'Muitos Encontros'."
+  mud_entities: [loc:valfenda.salao-fogo]
+  fidelity: exact
+  how_used: place
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: lore:lindir
+  canon_name: Lindir
+  work: LotR
+  description: "Elfo da corte de Elrond, cantor/menestrel presente na recepção de Frodo em Valfenda."
+  mud_entities: [npc:lindir]
+  fidelity: exact
+  how_used: npc-cameo
+  sources: ["notas.md#Achado: \"A Casa de Alimentos\" (= \"Casa de Refeições\") + NPC Lindir!"]
+  confidence: confirmed
+
+- id: lore:minas-tirith-gondor
+  canon_name: "Minas Tirith / Gondor (a cidadela branca)"
+  work: LotR
+  description: "Capital de Gondor; Dunendel se apresenta como mensageiro dessa cidadela, em busca de Elrond."
+  mud_entities: [npc:dunendel]
+  fidelity: adapted
+  how_used: npc-cameo
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: lore:noldor
+  canon_name: Noldor
+  work: Silmarillion
+  description: "Um dos clãs de Elfos; citado em flavor text como comparação de brilho ('como as jóias dos Noldor')."
+  mud_entities: [loc:valfenda.jardim-imladris]
+  fidelity: exact
+  how_used: flavor-mention
+  sources: ["notas.md#Exploração: Jardim de Imladris (leste do Bosquepraça/Alameda de Juníperos)"]
+  confidence: confirmed
+
+- id: lore:weathertop
+  canon_name: "Weathertop (Topo do Vento)"
+  work: LotR
+  description: "Colina histórica onde Frodo é ferido por um Espectro do Anel; destino de endgame oferecido por Faelar Anor."
+  mud_entities: [npc:faelar-anor]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: lore:carrock
+  canon_name: "The Carrock (a Carrocha)"
+  work: Hobbit
+  description: "Rocha onde as águias deixam Bilbo e a companhia perto da casa de Beorn."
+  mud_entities: [npc:faelar-anor]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: lore:terras-beorn
+  canon_name: "Terras de Beorn"
+  work: Hobbit
+  description: "Território do metamorfo Beorn, visitado pela companhia de Thorin."
+  mud_entities: [npc:faelar-anor]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: lore:tharbad
+  canon_name: Tharbad
+  work: UT
+  description: "Antigo porto em ruínas no sul de Eriador."
+  mud_entities: [region:eriador.caminho-verde]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#Exploração: Caminho Verde (ao sul da Interseção de Eriador)"]
+  confidence: confirmed
+
+- id: lore:fornost
+  canon_name: Fornost
+  work: LotR
+  description: "Antiga capital do Reino do Norte, nas Colinas do Norte — destino nominal da Velha Estrada Norte."
+  mud_entities: [region:eriador.estrada-norte]
+  fidelity: exact
+  how_used: travel-landmark
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: lore:quendi-awakening
+  canon_name: "Cuivienyarna — o despertar dos Quendi"
+  work: HoME
+  description: "Lenda do despertar dos primeiros elfos (Quendi); Imin, Tata e Enel são os três pais-elfos que despertaram primeiro."
+  mud_entities: [item:livro-cuivienyarna]
+  fidelity: exact
+  how_used: book-text
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: lore:dragons-morgoth
+  canon_name: "Glaurung, Ancalagon, Scatha, Smaug"
+  work: Silmarillion
+  description: "Grandes dragões de Tolkien: Glaurung (Pai dos Dragões), Ancalagon (1º dragão alado), Scatha (dragão do norte) e Smaug."
+  mud_entities: [item:livro-dragoes]
+  fidelity: exact
+  how_used: book-text
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: lore:orcs-origin
+  canon_name: "Origem dos Orcs em Utumno"
+  work: Silmarillion
+  description: "Melkor tortura Elfos capturados nos Poços de Utumno até transformá-los em Orcs."
+  mud_entities: [item:livro-orcs]
+  fidelity: exact
+  how_used: book-text
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: lore:valinor-valar
+  canon_name: "Valar/Maiar, Era das Lâmpadas, Valinor/Valimar"
+  work: Silmarillion
+  description: "Origem dos Valar e Maiar e a fundação de Valinor/Valimar em Aman — tema que dá nome ao próprio MUD."
+  mud_entities: [item:livro-poderes-arda]
+  fidelity: exact
+  how_used: book-text
+  sources: ["notas.md#Exploração: fora da Academia — Vila de Bri e Biblioteca"]
+  confidence: confirmed
+
+- id: lore:esgaroth
+  canon_name: "Esgaroth (Lago Comprido)"
+  work: Hobbit
+  description: "Cidade no Lago Comprido; mencionada de passagem numa piada de jogador sobre um 'Portal Extradimensional' no mural da Academia."
+  mud_entities: [loc:academia.sala-estudos]
+  fidelity: exact
+  how_used: flavor-mention
+  sources: ["notas.md#Exploração: Sala de Estudos (2º andar) + Mural da Academia (ativo, jogadores reais)"]
+  confidence: hypothesis

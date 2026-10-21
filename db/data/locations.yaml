@@ -1,0 +1,618 @@
+# Lugares notaveis (nao sala-a-sala). id: loc:<regiao>.<nome>.
+# description = texto/paráfrase da descrição real do jogo (flavor); summary = leitura funcional curta.
+- id: loc:academia.saguao
+  name: O Saguão (Academia de Aventureiros)
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: >
+    "Você está no saguão de entrada da Academia de Aventureiros, um lugar
+    onde os jovens aventureiros têm tudo que precisam... Há um quadro na
+    parede norte com uma planta da academia. Uma grande arcada a oeste
+    leva ao depósito de armaduras. Ao leste, uma arcada leva ao depósito
+    de armas. Outra arcada, a norte, leva ao corredor principal da
+    academia. Duas escadas ocupam a parte sul, uma leva ao segundo andar
+    e a outra para a saída." Fonte de mármore no centro; diretora presente.
+  summary: "Saguão de entrada; ponto de retorno universal; porta de saída é 'return-to-entry' por cidade."
+  sources: ["notas.md#Academia de Aventureiros (zona segura)"]
+  confidence: confirmed
+
+- id: loc:academia.centro-jardim
+  name: Centro do Jardim
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: >
+    Pátio aberto ao norte do corredor principal, com portão (!n) pro Amplo
+    Bosque. Narinë, a compradora universal, fica sempre aqui recebendo
+    itens de jogadores.
+  summary: "Narinë fica aqui, compra qualquer item por 1 gold; porta !n pro Amplo Bosque."
+  sources: ["notas.md#Mapa da Academia (térreo, eixo norte-sul)"]
+  confidence: confirmed
+
+- id: loc:academia.sala-cura
+  name: Sala de Cura (Academia)
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: >
+    "A sala é ampla e bem iluminada, e você pode ver várias pessoas aqui.
+    Nesta sala fica o curandeiro da academia... Uma janela ocupa boa
+    parte da parede norte e através dela é possível avistar o jardim...
+    A fonte de mármore goteja água cristalina. Vários leitos estão
+    organizados em fileiras." Mestre Toric brilha sob uma aura branca.
+  features: [{type: heal-bed, command: "sleep leitos"}]
+  summary: "Mestre Toric cura dormindo nos leitos, dá bênçãos."
+  sources: ["notas.md#Básico"]
+  confidence: confirmed
+
+- id: loc:academia.loja-provisoes
+  name: "Provisões para Jovens Aventureiros"
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: >
+    Pequena loja porta oeste do corredor principal da Academia; balcão com
+    lista impressa de itens básicos de sobrevivência e aventura a preços
+    de iniciante.
+  summary: "Loja mais barata encontrada: pergaminho de retorno 1g, lamparina 2g, pão 1g."
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: loc:academia.tutorial-inicial
+  name: Tutorial Inicial (2º andar)
+  region: region:academia
+  kind: segment
+  room_count_estimate: 9
+  safe_zone: true
+  status: explored
+  light: lit
+  hazards: [one-way-risk]
+  description: >
+    Corredor de salas de orbe brilhante (Observação, Movimentação, Ajuda,
+    Objetos, Contêiners, Comunicação, Auto-Conhecimento com um espelho no
+    lugar do orbe, Preparação) — cada orbe reensina um comando básico com
+    texto de ajuda, cada sala tem um professor PNJ.
+  summary: "Corredor de orbes ONE-WAY; única saída é completar o corredor até o fim (~12 comandos)."
+  sources: ["notas.md#Exploração: Tutorial Inicial (2º andar) é corredor ONE-WAY, cuidado com fome"]
+  confidence: confirmed
+
+- id: loc:academia.sala-estudos
+  name: Sala de Estudos (mural ativo)
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Sala de isolamento acústico com mesas de estudo e uma estante (geralmente vazia); mural de avisos na parede."
+  features: [{type: board, era: "2015-2019", active: true}]
+  summary: "Mural da Academia com posts reais de jogadores (2015-2019+)."
+  sources: ["notas.md#Exploração: Sala de Estudos (2º andar) + Mural da Academia (ativo, jogadores reais)"]
+  confidence: confirmed
+
+- id: loc:academia.sala-professores
+  name: Sala dos Professores (mural arquivado)
+  region: region:academia
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Tapete, quadros de professores antigos nas paredes, lareira; nenhum NPC presente. Portas 'Diretoria' e outra sem placa, ambas decorativas/bloqueadas."
+  features: [{type: board, era: 2008, active: false}]
+  summary: "Mural de profecias de 2008 (Derinthuck) — quest encerrada há muito tempo, conteúdo histórico."
+  sources: ["notas.md#Exploração: Sala dos Professores + Sistema de Quest por Profecias (histórico)"]
+  confidence: confirmed
+
+- id: loc:bri.praca
+  name: A Praça de Bri
+  region: region:bri
+  kind: room
+  safe_zone: true
+  status: explored
+  description: >
+    "Você está na extensa e famosa área da Praça de Bri. Uma magnífica
+    fonte de mármore ocupa o centro da praça, rodeada por um verdejante
+    jardim de arbustos que realça o ar de serenidade e paz, mesmo estando
+    no centro da vila. As estradas se estendem nas quatro direções
+    enquanto que para nordeste e noroeste observam-se caminhos
+    arborizados. Na esquina, há um poste de madeira... Em frente à fonte
+    há dois bancos de pedra."
+  features: [{type: signpost}]
+  summary: "Centro geográfico de Bri; fonte, bancos, poste com as 4+2 direções."
+  sources: ["notas.md#Exploração: fora da Academia — Vila de Bri e Biblioteca"]
+  confidence: confirmed
+
+- id: loc:bri.avenida-zenite
+  name: Avenida Zênite (macieira)
+  region: region:bri
+  kind: room
+  safe_zone: false
+  status: explored
+  description: >
+    "Aqui o caminho passa por uma plataforma circular e há uma área
+    reservada para uma enorme macieira de galhos espessos e folhas
+    lustrosas. Outras áreas arborizadas delineiam a estrada a leste e a
+    oeste." O Guardião do Norte está sob uma estranha mistura de luz e
+    sombras.
+  features: [{type: free-resource, gives: item:maca, command: "get maçã macieira", limit: unlimited}]
+  hazards: [fall-damage]
+  summary: "Macieira grátis + Guardião do Norte (GPS). Subir na árvore e descer causa queda real (-20 HP)."
+  sources: ["notas.md#DESCOBERTA ENORME: macieira grátis na Avenida Zênite resolve fome pra sempre", "notas.md#Lição: CUIDADO ao subir (`u`) na macieira da Avenida Zênite"]
+  confidence: confirmed
+
+- id: loc:bri.portao-norte
+  name: Portão Norte de Bri
+  region: region:bri
+  kind: room
+  status: explored
+  light: dark-at-night
+  description: "Portão fortificado na muralha norte; um guarda com armadura completa de ferro toma conta dele, segurando a chave do portão."
+  summary: "Tranca de noite (confirmado — outros portões não trancam sempre). Guarda dá GPS + pergaminho grátis."
+  sources: ["notas.md#DESCOBERTA: portões de Bri TRANCAM de noite", "notas.md#Correção: só o Portão NORTE estava trancado de noite, não todos"]
+  confidence: confirmed
+
+- id: loc:bri.portao-sul
+  name: Portão Sul de Bri
+  region: region:bri
+  kind: room
+  status: explored
+  description: "Lado de dentro do portão sul, com guarda da vila a postos; lado de fora tem folhagens estranhamente reviradas."
+  summary: "Nunca trancado (testado). 'Fora do Portão Sul' tem a passagem secreta do formigueiro."
+  sources: ["notas.md#DESCOBERTA: Portão Sul de Bri + guarda-GPS funciona em qualquer portão"]
+  confidence: confirmed
+
+- id: loc:bri.portao-oeste
+  name: Portão Oeste de Bri
+  region: region:bri
+  kind: room
+  status: explored
+  description: "Portão guardado por Hary Barba-de-Bode, o porteiro — referência a Harry Goatleaf, personagem de Bree no livro."
+  summary: "Guardado por Hary Barba-de-Bode (Harry Goatleaf); NÃO dá pergaminho grátis (diferente dos guardas comuns)."
+  sources: ["notas.md#Exploração: Portão Oeste de Bri"]
+  confidence: confirmed
+
+- id: loc:bri.grande-estrada-leste-oeste
+  name: Grande Estrada Leste (trecho oeste da Praça)
+  region: region:bri
+  kind: room
+  status: explored
+  description: >
+    "Você acelera o passo à medida que caminha pela Grande Estrada Leste.
+    Olhando para o norte você vê um modesto galinheiro, em cuja porta foi
+    afixado um aviso. Ainda ao norte, ao fundo, você vê uma bela área
+    arborizada. Para o leste fica a Praça de Bri."
+  summary: "Galinheiro de Nob; 'em repouso' aqui Vato Nogueira costuma esperar clientes (mas muda conforme última corrida)."
+  sources: ["notas.md#DESCOBERTA ENORME: Vato Nogueira — transporte rápido e seguro (charrete)", "notas.md#Exploração: galinheiro de Nob (Grande Estrada Leste, oeste da Praça)"]
+  confidence: confirmed
+
+- id: loc:bri.trapiche
+  name: Um Pequeno Trapiche
+  region: region:bri
+  kind: room
+  status: partial
+  description: >
+    "O odor de peixe agride seus sentidos à medida que você inspira o ar
+    desse lugar. Esse trapiche, aqui montado, é de pequeno porte, sendo
+    utilizado apenas por pescadores locais. Ao sul, pode-se ver o pequeno
+    riacho que margeia Bri... Um pequeno caminho segue para o leste,
+    seguindo o curso do rio." O pescador oferece sua coleção de canoas.
+  summary: "Pescador oferece canoas e colete salva-vidas; saída leste segue o rio, não explorada."
+  sources: ["notas.md#Nova sala: \"Um Pequeno Trapiche\" (pescador, rio que margeia Bri)"]
+  confidence: confirmed
+
+- id: loc:bri.rua-xaxim
+  name: Rua do Xaxim
+  region: region:bri
+  kind: room
+  status: explored
+  description: "Beco particularmente escuro e abandonado, ratos guinchando nas sombras, a escuridão parece se aprofundar — mas sem perigo real, é puro flavor."
+  summary: "Atalho secreto ligando Estrada do Falcão à Avenida Zênite; ratos decorativos, sem perigo real."
+  sources: ["notas.md#Exploração: Rua do Xaxim (atalho secreto dentro de Bri)"]
+  confidence: confirmed
+
+- id: loc:bri.casa-mathom
+  name: A Casa-Mathom
+  region: region:bri
+  kind: room
+  status: partial
+  description: "Depósito caótico de objetos 'para possível uso futuro' construído pelos hobbits de Bri — referência direta ao mathom-house de Michel Delving."
+  summary: "'search' funciona mas não achou nada em 8 tentativas; pode já estar vazia."
+  sources: ["notas.md#Exploração: Casa-Mathom (referência real a Tolkien)", "notas.md#Casa-Mathom: `search` funciona mas 8 tentativas = 0 itens achados"]
+  confidence: confirmed
+
+- id: loc:bri.mina-abandonada
+  name: A Entrada da Mina Abandonada
+  region: region:bri.colina
+  kind: room
+  status: locked
+  description: "Túnel vedado por pedras e madeira pelos guardas de Bri; placa avisa 'cuidado!' mas o motivo é histórico (minério insuficiente), não monstros."
+  summary: "Túnel vedado por pedras/madeira pelos guardas; sem acesso real, aviso é só histórico."
+  sources: ["notas.md#Exploração: Colina de Bri / Caminho Arborizado (nordeste/leste da Praça)"]
+  confidence: confirmed
+
+- id: loc:bosque.entrada-secreta
+  name: "Pequena construção de pedras (!s)"
+  region: region:bosque
+  kind: room
+  status: explored
+  description: "'No sul, uma pequena construção de pedras não permite que você veja o que há além dela.' Saída !s trancada por fora, abre com `open s`."
+  summary: "Porta externa de um destino contextual — leva a Academia de Combate ou Gruta Profunda dependendo da visita."
+  sources: ["notas.md#DESCOBERTA: \"A Academia de Combate\" (acessível só pelo Amplo Bosque)", "notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: loc:bri.fora-portao-sul
+  name: Fora do Portão Sul
+  region: region:bri
+  kind: room
+  status: explored
+  description: "'Para o sul, há uma ponte transpondo o fosso que circunda a vila. As folhagens que ladeiam o caminho parecem estranhamente reviradas e merecem alguma investigação mais detalhada.'"
+  summary: "Aqui fica a passagem secreta (examine folhagens -> open abertura -> d) pro formigueiro."
+  sources: ["notas.md#DESCOBERTA: passagem secreta em \"Fora do Portão Sul\""]
+  confidence: confirmed
+
+- id: loc:bri.gruta-profunda
+  name: A Gruta Profunda
+  region: region:bosque
+  kind: room
+  status: explored
+  description: "Por fora, um pequeno galpão comum. Por dentro, guilda de ladrões: encapuzados e pessoas comuns do bosque que ninguém suspeitaria serem criminosas. Mirindhel observa tudo de uma cadeira luxuosa."
+  summary: "Guilda de ladrões disfarçada de galpão; Mirindhel (mestra dos ladrões). Destino contextual da mesma entrada !s do bosque."
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: loc:bri.academia-combate
+  name: A Academia de Combate
+  region: region:bosque
+  kind: room
+  status: explored
+  description: "Sala de duelo com cartaz na parede oeste listando as principais perícias que um guerreiro precisa aprender; mestre Thanthal, um elfo, comanda o treino."
+  summary: "Destino contextual (alternativo à Gruta Profunda) da mesma entrada secreta !s do bosque."
+  sources: ["notas.md#DESCOBERTA: \"A Academia de Combate\" (acessível só pelo Amplo Bosque)"]
+  confidence: confirmed
+
+- id: loc:bri.formigueiro.juncao
+  name: Outra Interseção (formigueiro)
+  region: region:bosque.formigueiro
+  kind: room
+  status: partial
+  hazards: [infestation]
+  description: "Túneis escavados na pedra, labirinto de 'Junções'/'Curvas no Túnel'; 3 pequenos morcegos ferozes pendurados no teto, não hostis passivamente; um 'duto de ar' vertical liso demais pra escalar."
+  summary: "3 'pequeno morcego de aparência feroz' pendurados, não hostis passivamente. Duto de ar em outra sala, liso demais pra escalar."
+  sources: ["notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: loc:knob.portao-principal
+  name: O Portão Principal (Mansão Knob)
+  region: region:bri.mansao-knob
+  kind: room
+  status: explored
+  description: "Casarão de 3 andares, tijolos vermelhos, jardim bem cuidado. Placa de bronze confirma: 'Esta área foi desenvolvida para jogadores de nível 1 a 10... -Cedrick, Abril de 1996' + adaptação Eleuvis, Julho de 2003."
+  features: [{type: free-resource, command: "drink fonte"}]
+  summary: "Entrada da mansão; fonte própria (Oeste da Porta da Frente)."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: loc:knob.jardim
+  name: O Jardim (Mansão Knob)
+  region: region:bri.mansao-knob
+  kind: room
+  status: explored
+  description: "Fileiras de flores, horta, parede de 6 metros. O jardineiro convida a sentar, mas 'volte amanhã' (horário fechado). Lady Knob/Marry Knob também aqui."
+  summary: "NPC jardineiro (simpático) e Lady/Marry Knob (atacou uma vez por medo, depois calma)."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: loc:knob.estabulo
+  name: Os Alojamentos dos Cavalos (Mansão Knob)
+  region: region:bri.mansao-knob
+  kind: room
+  status: explored
+  description: "Estábulo privado da mansão; o tratador de animais cuida dos cavalos. Senhor Knob aparece aqui com chicote de equitação e calça de couro."
+  summary: "Senhor Knob (patriarca) aparece aqui, troca de roupa, tranca a porteira ao saír."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: loc:knob.cabana
+  name: Cabana (Mansão Knob)
+  region: region:bri.mansao-knob
+  kind: room
+  status: locked
+  description: "Cabana trancada, 'residência de alguém pequeno' sugerida pelo flavor; 'odor horrível' vindo de oeste, também trancado."
+  summary: "Trancada; pendência de quest ainda não resolvida."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: loc:archet.entrada
+  name: A Entrada de Archet
+  region: region:archet
+  kind: room
+  safe_zone: false
+  status: explored
+  description: "Arco de pedra, muralhas semi-destruídas, estrada calçada ao norte. Kylara (aura branca) dá boas-vindas calorosas e avisa sobre os esgotos/subterrâneos perigosos."
+  summary: "Kylara dá boas-vindas; esgotos exigem alinhamento maligno ou 'cartão negro'."
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: loc:archet.rua-oficios
+  name: Rua dos Ofícios (Archet)
+  region: region:archet
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Centro de Archet: fonte, bancos de pedra. Umaro, líder da guarda, não responde a pedidos de ajuda. Casa Bancária nas proximidades."
+  features: [{type: free-resource, command: "drink fonte"}]
+  summary: "Centro de Archet; Casa Bancária (Vognus, sistema BANK)."
+  sources: ["notas.md#Exploração: Archet, Rua dos Ofícios + Casa Bancária"]
+  confidence: confirmed
+
+- id: loc:archet.torre-sudeste
+  name: A Torre Sudeste / Os Saguões de Inverno
+  region: region:archet
+  kind: room
+  status: explored
+  description: "Antiga torre de muralha virada restaurante, hoje abandonado — 'hoje isso não vai além de lembranças'. Nauk, um anão perdido, lê o Guia do Aventureiro."
+  summary: "Restaurante abandonado; lore de declínio da cidade, sem interação de gameplay."
+  sources: ["notas.md#Exploração: Archet, Torre Sudeste / \"Os Saguões de Inverno\" (abandonado)"]
+  confidence: confirmed
+
+- id: loc:archet.torre-nordeste
+  name: A Torre Nordeste / Os Saguões de Outono
+  region: region:archet
+  kind: room
+  status: explored
+  description: "Antiga torre de muralha virada bar ativo, com garçonete servindo mesas."
+  summary: "Bar ativo; menu 1-4g, o mais barato encontrado até agora."
+  sources: ["notas.md#Exploração: Archet, Rua das Batalhas + \"Os Saguões de Outono\" (bar ativo)"]
+  confidence: confirmed
+
+- id: loc:archet.torre-noroeste
+  name: Torre Noroeste (Archet)
+  region: region:archet
+  kind: room
+  status: locked
+  description: "'Mais lojas', entrada !nw trancada; aroma de flores vindo de dentro."
+  summary: "Não visitada por dentro."
+  sources: ["notas.md#Mapa das 4 Torres de Archet (muralha reaproveitada)"]
+  confidence: confirmed
+
+- id: loc:archet.rua-distracoes
+  name: Rua das Distrações (Archet)
+  region: region:archet
+  kind: room
+  status: partial
+  description: "Área de jogos de azar e bebidas, barracas inacessíveis. 'Construção de mármore negro' trancada, guardiões visíveis pelas janelas — provável guild/instituição poderosa."
+  summary: "Jogos de azar, barracas inacessíveis; construção suspeita trancada."
+  sources: ["notas.md#Exploração: Archet, Rua das Distrações + Hospedaria Sono Cerrado"]
+  confidence: confirmed
+
+- id: loc:archet.hospedaria
+  name: Hospedaria Sono Cerrado (Archet)
+  region: region:archet
+  kind: room
+  status: explored
+  description: "Tantarel ('Olá forasteiro! Talvez queira descansar...') hospeda viajantes; quadro de avisos diz diária 10 gold. Cortina escondendo passagem ao norte, só liberada após pagar."
+  summary: "10g/diária; tentar passar sem pagar faz Tantarel puxar o personagem de volta."
+  sources: ["notas.md#Exploração: Archet, Rua das Distrações + Hospedaria Sono Cerrado"]
+  confidence: confirmed
+
+- id: loc:estrada.ultima-ponte
+  name: A Última Ponte
+  region: region:estrada-leste
+  kind: room
+  status: explored
+  description: "Ponte antiga cruzando o rio Fontegris (Mitheithel pros elfos) — referência exata do livro (Last Bridge / Vale do Mitheithel). Escalando o Desfiladeiro logo depois, com ruínas de torres antigas visíveis."
+  summary: "Cruza o rio Fontegris — referência exata do livro (Last Bridge)."
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: loc:estrada.glorfindel
+  name: Nos Limites de uma Floresta Sombria
+  region: region:estrada-leste
+  kind: room
+  status: seen-only
+  description: "Glorfindel, o Senhor-Élfico, montado em seu cavalo branco Asfaloth, parado numa sala com uma 'PASSAGEM' escondida — referência direta à cena do resgate de Frodo no livro."
+  summary: "NPC canônico visto montado; passagem escondida não explorada a pé (vista só de dentro da charrete)."
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: loc:estrada.vau-bruinen
+  name: Vau do Bruinen
+  region: region:estrada-leste
+  kind: room
+  status: explored
+  description: "Travessia rasa do rio Bruinen — o Ford of Bruinen do livro, onde o tráfego de carroças e cavaleiros aumenta perto de Valfenda."
+  summary: "Travessia rasa do rio Bruinen (Ford of Bruinen)."
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: loc:estrada.trapiche
+  name: Um Pequeno Trapiche (ver loc:bri.trapiche)
+  region: region:estrada-leste
+  kind: room
+  status: partial
+  description: "Mesma sala referenciada a partir da região da estrada (ver loc:bri.trapiche para a descrição completa)."
+  summary: "Pescador, canoas, colete salva-vidas; saída leste pelo rio não explorada."
+  sources: ["notas.md#Nova sala: \"Um Pequeno Trapiche\" (pescador, rio que margeia Bri)"]
+  confidence: confirmed
+
+- id: loc:valfenda.bosquepraca
+  name: O Bosquepraça
+  region: region:valfenda
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Praça de chegada em Valfenda: estátuas-lamparina sobre pedestais, fonte em cascata, círculo de bancos de pedra. A Guardiã elfa (aura branca) e o charreteiro de visita ficam por aqui."
+  summary: "Chegada da charrete; Guardiã elfa (GPS); Vato Nogueira 'em repouso' pós-viagem."
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: loc:valfenda.alameda-juniperos
+  name: Uma Alameda de Juníperos (macieira)
+  region: region:valfenda
+  kind: segment
+  room_count_estimate: 3
+  status: explored
+  description: "Várias salas quase idênticas com esse nome, cada uma com um texto contemplativo diferente ('alheias aos círculos do mundo' — referência direta a Tolkien); a primeira (nw do Bosquepraça) tem a macieira grátis."
+  features: [{type: free-resource, gives: item:maca, command: "get maçã macieira", limit: unlimited}]
+  summary: "Macieira grátis logo nw do Bosquepraça."
+  sources: ["notas.md#Valfenda: macieira grátis também existe aqui (Uma Alameda de Juníperos)"]
+  confidence: confirmed
+
+- id: loc:valfenda.jardim-imladris
+  name: Jardim de Imladris
+  region: region:valfenda
+  kind: maze-cluster
+  room_count_estimate: 8
+  status: partial
+  hazards: [easy-to-get-lost]
+  description: >
+    Mini-labirinto de salas quase idênticas ("Jardins: Ervas Perfumadas",
+    "No Jardim: Um caminho entre Canteiros", "No meio das Flores" — as
+    flores brilham "como as jóias dos Noldor"). Há uma menção a uma
+    "entesposa" (Entwife) vista de canto de olho, e uma "casa de
+    marimbondos" não investigada.
+  summary: "Fácil se perder; a rota da Guardiã elfa não bate exatamente com os nomes de sala vistos."
+  sources: ["notas.md#Exploração: Jardim de Imladris (leste do Bosquepraça/Alameda de Juníperos)"]
+  confidence: confirmed
+
+- id: loc:valfenda.arvore-contos
+  name: A Árvore dos Contos
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "No extremo sul do Jardim de Imladris: uma árvore mágica com inscrições no tronco, funcionando como um board real (note list/note read)."
+  features: [{type: board, era: 2011, active: false}]
+  summary: "Histórico de construção da área (2011, builder Derinthuck); conteúdo congelado, não é possível postar hoje."
+  sources: ["notas.md#Descoberta: \"A Árvore dos Contos\" (Jardim de Imladris, extremo sul)"]
+  confidence: confirmed
+
+- id: loc:valfenda.alameda-populos
+  name: Uma Alameda de Pópulos
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Faelar Anor aguarda aqui com uma grande charrete de rodas reforçadas e um potro; arcada ao sul leva a uma área cheia de moradas silvestres (bairro élfico)."
+  summary: "2º charreteiro (destinos endgame); porta pro bairro residencial élfico."
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: loc:valfenda.sala-doacoes
+  name: Sala de Doações (Valfenda)
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Sala simples onde jogadores reais deixam itens que não usam mais, livres para qualquer um pegar ('get')."
+  summary: "Achamos equipamento de nível 17 e 22 — muito acima do nível atual, guardados pro futuro."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: loc:valfenda.casa-cura
+  name: Uma Sala de Espera (Casa de Cura)
+  region: region:valfenda
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Isilië, a curandeira, cura com encantamentos em Sindarin ('naimad'/'nran'). Camas simples com colchões de folhas de mallorn — as árvores douradas de Lothlórien no livro."
+  features: [{type: heal-bed, command: "sleep camas"}, {type: free-resource, command: "drink fonte"}]
+  summary: "Equivalente de Valfenda a Mestre Toric; referência real a Lothlórien."
+  sources: ["notas.md#Achado: \"Casa de Cura\" de Valfenda — NPC Isilië + referência a Lothlórien"]
+  confidence: confirmed
+
+- id: loc:valfenda.circulo-florido
+  name: Um Círculo Florido
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Área circular aberta com canteiros e bancos de pedra, com UMA macieira e uma fonte de pedras verdes no mesmo lugar. Três ruas partem daqui (Altéias, Olmeiros, Casuarinas)."
+  features: [{type: free-resource, gives: item:maca, command: "get maçã macieira", limit: unlimited}, {type: free-resource, command: "drink fonte"}]
+  summary: "Ponto de recuperação mais eficiente de Valfenda: fome e sede no mesmo lugar."
+  sources: ["notas.md#Achado: \"Um Círculo Florido\" (praça central, macieira + fonte juntas!)"]
+  confidence: confirmed
+
+- id: loc:valfenda.casa-alimentos
+  name: A Casa de Alimentos (Casa de Refeições)
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Loja de comida com 'um alegre vendedor' e 'um simpático elfo à procura de histórias para ouvir'; Lindir foi visto passando por aqui, seguindo para o norte."
+  summary: "Vende bolo/uvas/mel (1-3g); Lindir (NPC canônico de Elrond) visto aqui."
+  sources: ["notas.md#Achado: \"A Casa de Alimentos\" (= \"Casa de Refeições\") + NPC Lindir!"]
+  confidence: confirmed
+
+- id: loc:valfenda.casa-reis-saguao
+  name: O Saguão Principal (Casa de Reis)
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Grande hall circular com 6 pilares, um jeweled candelabro de joias e ouro, janelas de vidro colorido e 2 escadarias subindo."
+  summary: "Hub interno de Valfenda que leva aos Salões de Elrond."
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: loc:valfenda.salao-fogo
+  name: O Salão do Fogo
+  region: region:valfenda
+  kind: room
+  safe_zone: true
+  status: explored
+  description: "Referência direta ao capítulo 'Muitos Encontros' do livro (onde Frodo reencontra Bilbo cantando). Lareira com chama dourada. Dunendel, mensageiro da cidadela branca, caminha por aqui em busca de Elrond; um menestrel com lira de sete cordas convida a 'ouvir', mas nenhum trigger encontrado."
+  summary: "Lore 100% canônica; gancho de quest em aberto (Dunendel busca Elrond)."
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: loc:valfenda.nave-superior
+  name: A Nave Superior
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Corredor circular com parapeito olhando para o salão principal, bandeiras em cada pilar. Leva à Passagem Bem Guardada (ne) e ao Terraço com os sinos (se)."
+  summary: "Hub interno sobre a Casa de Reis."
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: loc:valfenda.passagem-guardada
+  name: Uma Passagem Bem Guardada
+  region: region:valfenda
+  kind: room
+  status: locked
+  hazards: [endgame-guarded]
+  description: >
+    Porta norte lacrada com trincos e fechaduras — "Mesmo que tivesse a
+    chave, ainda seria necessária muita força para mover a gigantesca
+    placa." Dois guardas reais ficam imóveis, falando em Sindarin:
+    'Iwá Tewqvilyauih!' e uma frase mais longa.
+  summary: "Quase certamente guarda a câmara/trono do próprio Elrond. Puzzle de endgame, não tentado."
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: loc:valfenda.cartografo
+  name: O Cartógrafo
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "No alto de um complexo de museu/pinacoteca/biblioteca interligado. Eartitton vende mapas organizados numa estante."
+  summary: "Vende mapas (2-10g), incluindo mapa de Valfenda e das Montanhas Sombrias."
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: loc:valfenda.emporio-casas
+  name: Empório das Casas
+  region: region:valfenda
+  kind: room
+  status: explored
+  description: "Escritório de vendas de propriedades do bairro élfico; Learin Verde-Braço atende com um livro de registros."
+  summary: "50000g/casa + taxa anual de 2500g; totalmente fora de alcance agora."
+  sources: ["notas.md#Valfenda: sistema de compra de casas (housing, endgame)"]
+  confidence: confirmed
+
+- id: loc:valfenda.floresta-pinheiros-lagoa
+  name: A lagoa (Floresta de Pinheiros)
+  region: region:valfenda.floresta-pinheiros
+  kind: room
+  status: explored
+  description: "Lagoa nos arredores da floresta élfica, habitat do 'grande e nojento morcego' — mais forte que o morcego peludo encontrado nas clareiras."
+  summary: "Tier 2 de perigo dentro da Floresta de Pinheiros."
+  sources: ["notas.md#Bestiário da Floresta de Pinheiros: dois tipos de morcego distintos"]
+  confidence: confirmed

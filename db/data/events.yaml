@@ -1,0 +1,186 @@
+# Eventos/marcos. id: event:<slug>. type: milestone|death|discovery|correction|bug|buff-expired.
+- id: event:morte-1-javalis
+  type: death
+  summary: "2 javalis simultâneos derrubaram HP de 3 pra -2/-6 em sequência rápida; sangramento continuou mesmo inconsciente."
+  deltas: {xp: -25000}
+  refs: [creature:javali-gordao]
+  sources: ["notas.md#Lição crítica: morte (nível 6, sessão longa)"]
+  confidence: confirmed
+
+- id: event:morte-2-fome-sede
+  type: death
+  summary: "Fome e sede severas ao mesmo tempo causaram sangramento fora de combate; morreu sem nenhuma luta, em ~15 minutos."
+  refs: [mech:fome-sede-letal]
+  sources: ["notas.md#Lição CRÍTICA: fome/sede severas MATAM (2ª morte, nível 6)"]
+  confidence: confirmed
+
+- id: event:morte-3-incapacitado
+  type: death
+  summary: "Múltiplos javalis + fome crítica simultânea; HP foi de 84 a -4; estado Incapacitado não regenerou, morreu sem mais nenhum golpe."
+  deltas: {xp: -36752}
+  refs: [creature:javali-gordao, mech:incapacitado-sem-regen]
+  sources: ["notas.md#Lição CRÍTICA: 3ª morte — \"Incapacitado\" NÃO regenera HP sozinho"]
+  confidence: confirmed
+
+- id: event:bug-concorrencia-bot
+  type: bug
+  summary: "Rodar um bot autônomo em background e comandos manuais ao mesmo tempo mistura os outputs no mesmo pipe — o bot interpretou texto de um `look` concorrente como confirmação de teleporte."
+  sources: ["notas.md#Lição: wilderness perigosa e bug de concorrência bot+manual (nível 6, sessão longa)"]
+  confidence: confirmed
+
+- id: event:buff-aura-azul-expirou
+  type: buff-expired
+  summary: "'A aura azul que envolvia seu corpo desapareceu lentamente...' — 1º de 3 buffs de novato a expirar nesta sessão."
+  sources: ["notas.md#ATENÇÃO: \"aura azul\" de proteção expirou nesta sessão"]
+  confidence: confirmed
+
+- id: event:buff-resiliencia-expirou
+  type: buff-expired
+  summary: "'Você não mais se sente tão resiliente' — 2º buff de novato a expirar."
+  sources: ["notas.md#ATENÇÃO: mais um buff expirou (\"Você não mais se sente tão resiliente\")"]
+  confidence: confirmed
+
+- id: event:buff-resistencia-paralisia-expirou
+  type: buff-expired
+  summary: "'Sua resistência a paralisia lentamente se desfaz...' — 3º buff de novato a expirar, confirmando um pacote inteiro se esgotando."
+  refs: [mech:buffs-novato-expiram]
+  sources: ["notas.md#ATENÇÃO: mais um buff expirou (\"Você não mais se sente tão resiliente\")"]
+  confidence: confirmed
+
+- id: event:descoberta-hub-academia
+  type: discovery
+  summary: "A Academia de Aventureiros é a MESMA sala em Bri, Archet e Valfenda — hub único com retorno contextual à entrada de origem."
+  refs: [region:academia, mech:hub-compartilhado-retorno-entrada]
+  sources: ["notas.md#DESCOBERTA ESTRUTURAL IMPORTANTE: a Academia de Aventureiros é um HUB ÚNICO"]
+  confidence: confirmed
+
+- id: event:descoberta-macieira-gratis
+  type: discovery
+  summary: "Macieira na Avenida Zênite resolve fome de graça e sem limite — maior virada de qualidade de vida da sessão até então."
+  refs: [loc:bri.avenida-zenite, item:maca]
+  sources: ["notas.md#DESCOBERTA ENORME: macieira grátis na Avenida Zênite resolve fome pra sempre"]
+  confidence: confirmed
+
+- id: event:descoberta-pergaminho-gratis-guardas
+  type: discovery
+  summary: "Guardas de portão dão pergaminho de retorno de graça, renovável, resolvendo a crise recorrente de ficar sem scroll de emergência."
+  refs: [npc:guarda-portao, item:pergaminho-retorno]
+  sources: ["notas.md#DESCOBERTA IMPORTANTE: guarda dá pergaminho de retorno de graça"]
+  confidence: confirmed
+
+- id: event:descoberta-vato-nogueira
+  type: discovery
+  summary: "Vato Nogueira oferece viagem de charrete 100% segura por 5 gold, eliminando o risco da Grande Estrada do Leste a pé."
+  refs: [npc:vato-nogueira]
+  sources: ["notas.md#DESCOBERTA ENORME: Vato Nogueira — transporte rápido e seguro (charrete)"]
+  confidence: confirmed
+
+- id: event:chegada-archet-a-pe
+  type: milestone
+  summary: "Rota inteira de Bri a Archet a pé confirmada segura pelo próprio jogo, mesmo pra personagem de nível baixo."
+  refs: [region:archet]
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: event:descoberta-loja-provisoes
+  type: discovery
+  summary: "Loja dentro da própria Academia vende pergaminho de retorno por 1 gold — mais barata que qualquer outra fonte encontrada."
+  refs: [loc:academia.loja-provisoes]
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: event:descoberta-formigueiro
+  type: discovery
+  summary: "Passagem secreta nas folhagens de 'Fora do Portão Sul' leva a um dungeon tipo formigueiro, precisa de lamparina, reseta a cada visita."
+  refs: [region:bosque.formigueiro]
+  sources: ["notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: event:descoberta-mansao-knob
+  type: discovery
+  summary: "Mansão Knob confirmada como área de quest oficial nível 1-10 (placa de bronze, créditos de 1996/2003), com família completa de NPCs."
+  refs: [region:bri.mansao-knob]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: event:descoberta-pao-cura-fome
+  type: discovery
+  summary: "Pão comprado na loja cura fome crítica instantaneamente, sem precisar cozinhar — solução de emergência mais rápida encontrada."
+  refs: [item:pao]
+  sources: ["notas.md#DESCOBERTA ENORME: pão cura fome instantaneamente (sem cozinhar!)"]
+  confidence: confirmed
+
+- id: event:estrategia-bezerro-slice-narine
+  type: discovery
+  summary: "Bezerro assustado identificado como o alvo de farm mais seguro e lucrativo: zero dano recebido, gera carne vendável."
+  refs: [creature:bezerro-assustado, mech:farm-slice-vender]
+  sources: ["notas.md#RESOLVIDO: estratégia segura pra gold — bezerro + slice + Narinë"]
+  confidence: confirmed
+
+- id: event:descoberta-gruta-profunda
+  type: discovery
+  summary: "A mesma entrada secreta do Amplo Bosque levou a um destino diferente (guilda de ladrões) numa segunda visita — confirma portal contextual."
+  refs: [loc:bri.gruta-profunda, mech:portal-contextual]
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: event:chegada-valfenda
+  type: milestone
+  summary: "Primeira chegada a Valfenda via charrete do Vato Nogueira, atravessando a Última Ponte, vendo Glorfindel montado em Asfaloth, e cruzando o Vau do Bruinen."
+  refs: [region:valfenda, region:estrada-leste]
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: event:descoberta-faelar-anor
+  type: discovery
+  summary: "Segundo charreteiro em Valfenda oferece destinos de endgame (Topo do Vento, Carrocha, Terras de Beorn) — fora de alcance por ora."
+  refs: [npc:faelar-anor]
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: event:descoberta-sala-doacoes
+  type: discovery
+  summary: "Sala de doações em Valfenda tinha equipamento de nível 17 e 22 deixado por outros jogadores, livre para pegar."
+  refs: [loc:valfenda.sala-doacoes]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: event:descoberta-saloes-elrond
+  type: milestone
+  summary: "Os Salões de Elrond e o Salão do Fogo confirmados — referência direta ao capítulo 'Muitos Encontros' do livro, com Dunendel de Gondor em busca de Elrond."
+  refs: [loc:valfenda.salao-fogo, lore:hall-of-fire]
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: event:descoberta-passagem-guardada
+  type: discovery
+  summary: "Porta lacrada guardada por guardas reais falando Sindarin, quase certamente a câmara do próprio Elrond — puzzle de endgame registrado, não tentado."
+  refs: [loc:valfenda.passagem-guardada]
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: event:descoberta-floresta-pinheiros
+  type: discovery
+  summary: "Floresta de Pinheiros de Valfenda mapeada; 'morcego peludo' identificado como alvo seguro equivalente ao bezerro de Bri."
+  refs: [creature:morcego-peludo]
+  sources: ["notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\""]
+  confidence: confirmed
+
+- id: event:correcao-portao-norte-apenas
+  type: correction
+  summary: "Corrigido: só o Portão Norte trancava de noite, não todos os portões de Bri como se supôs inicialmente (Portão Sul respondeu 'já está aberta')."
+  refs: [loc:bri.portao-norte, loc:bri.portao-sul]
+  sources: ["notas.md#Correção: só o Portão NORTE estava trancado de noite, não todos"]
+  confidence: confirmed
+
+- id: event:licao-vato-paradeiro-variavel
+  type: discovery
+  summary: >
+    Sessão atual: busca extensiva por Vato Nogueira em Bri (Praça,
+    Avenida Zênite, Portão Norte, toda a Grande Estrada Leste, Pônei
+    Saltitante completo) não o encontrou. `help vato nogueira` revelou a
+    regra real: ele fica 'algumas horas' perto do destino da ÚLTIMA
+    corrida (Valfenda, nesse caso), não sempre em Bri.
+  refs: [npc:vato-nogueira, mech:viagem-rapida-motorista-relocaliza]
+  sources: ["notas.md#Vato Nogueira: paradeiro MUDA conforme última corrida (não fica fixo)"]
+  confidence: confirmed

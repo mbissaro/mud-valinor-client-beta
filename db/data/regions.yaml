@@ -1,0 +1,270 @@
+# Regioes do mundo. id: region:<slug>. Ver db-plano.md secao 1.3 (Region).
+- id: region:academia
+  name: Academia de Aventureiros
+  kind: hub
+  safety: safe
+  danger: 0
+  navigation: grid
+  atmosphere: [acolhedor, didatico]
+  tags: [hub-compartilhado, tutorial, zona-segura]
+  notes: >
+    Hub unico com entradas locais em Bri, Archet e Valfenda — a mesma sala
+    de saguao sempre, independente de qual cidade voce entrou por.
+  sources: ["catalogo.md#1.1", "notas.md#DESCOBERTA ESTRUTURAL IMPORTANTE: a Academia de Aventureiros é um HUB ÚNICO"]
+  confidence: confirmed
+
+- id: region:bri
+  name: Bri
+  kind: city
+  safety: guarded
+  danger: 1
+  navigation: grid
+  atmosphere: [rural, acolhedor, hobbit]
+  tags: [vila-natal, tolkien-exact]
+  tolkien_refs: [lore:prancing-pony, lore:butterbur, lore:harry-goatleaf, lore:dori]
+  notes: >
+    Vila natal de Halbarion. Perimetro fechado por 3 portoes (Norte/Sul/
+    Oeste). Quase todas as lojas fecham de noite; alguns portoes trancam.
+  sources: ["catalogo.md#1.2"]
+  confidence: confirmed
+
+- id: region:bri.mercado
+  name: Rua do Mercado
+  kind: district
+  parent: region:bri
+  safety: guarded
+  danger: 0
+  navigation: grid
+  tags: [comercio]
+  notes: "Açougue, Padaria, Armorial, Utilidades, Correio, Ferreiro, Loja de Armamentos, Laticínios, Chás, Esmeralda, Tenda do Escriba."
+  sources: ["catalogo.md#1.2", "notas.md#Exploração: Rua do Mercado completa + Oficina do Ferreiro"]
+  confidence: confirmed
+
+- id: region:bri.ponei
+  name: O Pônei Saltitante
+  kind: district
+  parent: region:bri
+  safety: safe
+  danger: 0
+  navigation: grid
+  atmosphere: [acolhedor, boemio]
+  tags: [estalagem, lore-rico]
+  tolkien_refs: [lore:prancing-pony, lore:butterbur, lore:dori]
+  notes: "Referência direta a The Prancing Pony de Bree. Pátio, hospedaria, taverna, estábulo, quartos."
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: region:bri.aguia
+  name: Rua da Águia
+  kind: district
+  parent: region:bri
+  safety: guarded
+  danger: 0
+  navigation: linear
+  atmosphere: [decadente]
+  tags: [fronteira-leste, bairro-pobre]
+  notes: "Fronteira leste de Bri; trecho com setor pobre/favela."
+  sources: ["notas.md#Exploração: Rua da Águia (fronteira leste de Bri)", "notas.md#Exploração: Rua da Águia sul + perímetro completo de Bri mapeado"]
+  confidence: confirmed
+
+- id: region:bri.lei
+  name: Avenida da Lei
+  kind: district
+  parent: region:bri
+  safety: guarded
+  danger: 0
+  navigation: linear
+  tags: [muro-sul, mansoes-trancadas]
+  notes: "Muro sul de Bri. Mascotes e Montarias (aberta sempre), Alfaiataria, mansões trancadas, estátua de Uthar Darkbane."
+  sources: ["notas.md#Exploração: Avenida da Lei (muro sul) completa", "notas.md#PONTOS DE INTERESSE PENDENTES (trancados, possível quest futura)"]
+  confidence: confirmed
+
+- id: region:bri.biblioteca
+  name: Biblioteca de Bri
+  kind: building
+  parent: region:bri
+  safety: safe
+  danger: 0
+  navigation: grid
+  tags: [lore, livros]
+  tolkien_refs: [lore:quendi-awakening, lore:dragons-morgoth, lore:orcs-origin, lore:noldor]
+  notes: "Livros reais de Tolkien lidos aqui (Os Poderes/Povos de Arda). Escritório do Copista, mural 'Mobs Atalhos'."
+  sources: ["notas.md#Exploração: fora da Academia — Vila de Bri e Biblioteca", "notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: region:bri.colina
+  name: Colina de Bri
+  kind: wilderness
+  parent: region:bri
+  safety: guarded
+  danger: 1
+  navigation: linear
+  tags: [mina-abandonada, charreteiro]
+  notes: "Trilha arborizada subindo a colina; Vato Nogueira costuma esperar 'em repouso' perto daqui; Mina Abandonada sem acesso real."
+  sources: ["notas.md#Exploração: Colina de Bri / Caminho Arborizado (nordeste/leste da Praça)", "notas.md#DESCOBERTA ENORME: Vato Nogueira — transporte rápido e seguro (charrete)"]
+  confidence: confirmed
+
+- id: region:bosque
+  name: Amplo Bosque (wilderness ao norte da Academia)
+  kind: wilderness
+  safety: hostile
+  danger: 3
+  level_range: [1, 6]
+  navigation: wilderness
+  atmosphere: [selvagem, infestado-a-noite]
+  tags: [caça, farm-de-gold, portal-contextual]
+  notes: >
+    "Floresta ao extremo norte" da Academia. Bestiário variado, farm de
+    gold (bezerro/slice/Narinë), e uma entrada secreta (!s) que leva a
+    destinos diferentes em visitas diferentes.
+  sources: ["catalogo.md", "notas.md#Amplo Bosque (nível 1)"]
+  confidence: confirmed
+
+- id: region:bosque.formigueiro
+  name: Formigueiro sob o Portão Sul
+  kind: dungeon
+  parent: region:bri
+  safety: hostile
+  danger: 2
+  navigation: maze
+  tags: [passagem-secreta, precisa-luz, reseta]
+  notes: "Passagem secreta nas folhagens de 'Fora do Portão Sul'; reseta a cada visita; precisa lamparina."
+  sources: ["notas.md#DESCOBERTA: passagem secreta em \"Fora do Portão Sul\"", "notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: region:eriador.intersecao
+  name: Interseção de Eriador
+  kind: road
+  safety: hostile
+  danger: 2
+  navigation: grid
+  atmosphere: [historico]
+  tags: [cruzamento, puzzle]
+  notes: "Cruzamento das 3 estradas históricas de Eriador. Pedra com inscrição em westron sugere puzzle de navegação."
+  sources: ["notas.md#DESCOBERTA: saída oeste de Bri leva à Interseção de Eriador (lore real de Bree!)"]
+  confidence: confirmed
+
+- id: region:eriador.estrada-norte
+  name: Velha Estrada Norte
+  kind: road
+  safety: hostile
+  danger: 2
+  navigation: linear
+  tags: [rumo-fornost]
+  tolkien_refs: [lore:fornost]
+  notes: "Rumo a Fornost nas Colinas do Norte; ramal leste leva ao Cemitério."
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: region:eriador.cemiterio
+  name: Cemitério abandonado
+  kind: dungeon
+  parent: region:eriador.estrada-norte
+  safety: hostile
+  danger: 2
+  navigation: linear
+  atmosphere: [sepulcral, decadente, mortos-vivos-tematico]
+  tags: [atmosferico, sem-mobs-hostis-confirmado]
+  notes: >
+    ~12 salas exploradas sem nenhum mob hostil (coveiro, saqueador e viúva
+    são pacíficos) — majoritariamente atmosférico. Aviso textual explícito
+    de lobos na 'Cerca de Ferro', não confirmado em combate.
+  sources: ["notas.md#Exploração: \"Antes do Cemitério\" (trilha leste da Velha Estrada Norte)", "notas.md#Exploração: INTERIOR DO CEMITÉRIO (Velha Estrada Norte, trilha leste)"]
+  confidence: confirmed
+
+- id: region:eriador.caminho-verde
+  name: Caminho Verde
+  kind: road
+  safety: unknown
+  danger: 2
+  navigation: linear
+  tolkien_refs: [lore:tharbad]
+  tags: [rumo-tharbad, pouco-explorado]
+  notes: "Rumo ao antigo porto de Tharbad; só 4 salas genéricas exploradas, sem ponto de interesse ainda."
+  sources: ["notas.md#Exploração: Caminho Verde (ao sul da Interseção de Eriador)"]
+  confidence: confirmed
+
+- id: region:bri.mansao-knob
+  name: Mansão Knob
+  kind: quest-area
+  safety: guarded
+  danger: 1
+  level_range: [1, 10]
+  navigation: grid
+  atmosphere: [misterioso, domestico]
+  tags: [quest-estruturada, familia-npc]
+  notes: >
+    Placa de bronze confirma área oficial de quest nível 1-10 (Cedrick,
+    1996; adaptação Eleuvis, 2003). Família Knob completa, mistério em aberto.
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: region:archet
+  name: Archet
+  kind: city
+  safety: guarded
+  danger: 1
+  navigation: grid
+  atmosphere: [decadente-em-partes, comercial]
+  tags: [vila-vizinha, rota-segura-a-pe]
+  notes: "Acessível a pé com segurança desde Bri. 4 torres antigas da muralha reaproveitadas."
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)", "notas.md#Mapa das 4 Torres de Archet (muralha reaproveitada)"]
+  confidence: confirmed
+
+- id: region:estrada-leste
+  name: Grande Estrada do Leste (Bri → Valfenda)
+  kind: road
+  safety: hostile
+  danger: 4
+  navigation: linear
+  atmosphere: [epico, tolkien-exact, longo]
+  tags: [rota-externa, lore-canonica, use-a-charrete]
+  tolkien_refs: [lore:ultima-ponte-mitheithel, lore:glorfindel, lore:asfaloth, lore:vau-bruinen]
+  notes: >
+    Dezenas de salas; passa pela Última Ponte (rio Fontegris/Mitheithel),
+    Glorfindel montado em Asfaloth, e o Vau do Bruinen. De charrete é 100%
+    segura; a pé e sozinho é perigosa (sem a aura de novato).
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!", "notas.md#Exploração: início da Grande Estrada do Leste (rumo Valfenda) — AMBIENTE PERIGOSO"]
+  confidence: confirmed
+
+- id: region:valfenda
+  name: Valfenda (Imladris)
+  kind: city
+  safety: guarded
+  danger: 2
+  navigation: maze
+  atmosphere: [contemplativo, atemporal, elfico]
+  tags: [rivendell, lore-canonica, labirintica]
+  tolkien_refs: [lore:entwives, lore:mallorn, lore:hall-of-fire, lore:lindir, lore:minas-tirith-gondor, lore:noldor]
+  notes: >
+    Rivendell. Extremamente labiríntica — muitas salas quase idênticas
+    ("Uma Alameda de Juníperos" x várias). Clima próprio (já nevou aqui
+    sem neve em Bri). Mapeamento parcial.
+  sources: ["catalogo.md#1.5", "notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: region:valfenda.floresta-pinheiros
+  name: Floresta de Pinheiros
+  kind: wilderness
+  parent: region:valfenda
+  safety: hostile
+  danger: 2
+  navigation: wilderness
+  tags: [farm-local, caverna-perigosa]
+  notes: "Arredores de Valfenda. Lagoa, clareiras. 'Uma Clareira Escura Fora da Caverna' tem aviso explícito de perigo, não explorada."
+  sources: ["notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\""]
+  confidence: confirmed
+
+- id: region:montanhas-sombrias
+  name: Caminho para as Montanhas Sombrias
+  kind: wilderness
+  safety: unknown
+  danger: 5
+  navigation: unknown
+  atmosphere: [endgame, misty-mountains]
+  tags: [rumored, endgame, nao-visitado]
+  notes: >
+    Conhecido só por murais/mapas/GPS — nunca visitado. Citado como zona
+    de nível muito mais alto, com NPCs "mob atalho" e 4 ladrões-quest.
+  sources: ["notas.md#DESCOBERTA: Mural da Biblioteca de Bri — \"Mobs Atalhos\" e geografia avançada", "notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca", "notas.md#Fronteira norte de Valfenda: \"Uma Ladeira de Pedras\" (provável início do Caminho para as Montanhas Sombrias)"]
+  confidence: hypothesis

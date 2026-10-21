@@ -1,0 +1,70 @@
+# Rotas nomeadas (nao se reduzem a uma Exit simples). id: route:<slug>.
+- id: route:bri-valfenda-charrete
+  from: loc:bri.grande-estrada-leste-oeste
+  to: loc:valfenda.bosquepraca
+  mode: cart
+  steps: ["sit charrete", "give 5 moedas vato", "say Leve-me para Valfenda"]
+  via: [loc:estrada.ultima-ponte, loc:estrada.glorfindel, loc:estrada.vau-bruinen]
+  given_by: npc:vato-nogueira
+  safety: "100% automática e segura, zero combate, mesmo passando por trechos descritos como ameaçadores."
+  description: "Rota completa documentada passo a passo em notas.md; a mesma sintaxe funciona pra qualquer destino do Vato Nogueira (Archet, Bri, Estrado, Fosso Branco)."
+  sources: ["notas.md#MARCO ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: route:bri-archet-a-pe
+  from: region:bri
+  to: region:archet
+  mode: walk
+  steps: [n, n, nw, nw, nw, nw, n, ne, ne, ne, ne, n]
+  via: [region:eriador.estrada-norte]
+  safety: "'o caminho parece bastante frequentado e não oferece perigo algum, até mesmo para os mais jovens aventureiros' — confirmado pelo próprio jogo."
+  description: "Sai pelo Portão Norte de Bri; não precisa de Vato Nogueira nem de 5 gold."
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: route:gps-praca-secao-alimentos
+  from: loc:bri.praca
+  to: region:bri.mercado
+  mode: walk
+  steps: [s, s, e]
+  given_by: npc:guarda-portao
+  description: "Rota dada por um guarda qualquer a partir da Praça de Bri, respondendo 'say Seção de Alimentos'."
+  sources: ["notas.md#DESCOBERTA: Portão Sul de Bri + guarda-GPS funciona em qualquer portão"]
+  confidence: confirmed
+
+- id: route:gps-bosquepraca-casa-alimentos
+  from: loc:valfenda.bosquepraca
+  to: loc:valfenda.casa-alimentos
+  mode: walk
+  steps: [nw, n, e, n, n, ne, s]
+  given_by: npc:guardia-elfa
+  description: "Rota dada pela Guardiã elfa; nem sempre bate exatamente com os nomes de sala vistos na prática (Valfenda é labiríntica)."
+  sources: ["notas.md#Valfenda: \"A Guardiã elfa\" é o GPS local (mesmo padrão dos guardas de Bri)"]
+  confidence: confirmed
+
+- id: route:gps-floresta-pinheiros
+  from: loc:valfenda.bosquepraca
+  to: region:valfenda.floresta-pinheiros
+  mode: walk
+  steps: [se, sw, s, w, s]
+  given_by: npc:guardia-elfa
+  sources: ["notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\""]
+  confidence: confirmed
+
+- id: route:academia-saguao-narine
+  from: loc:academia.saguao
+  to: loc:academia.centro-jardim
+  mode: walk
+  steps: [n, n, n]
+  description: "Rota confiável pra vender itens a Narinë e seguir pro Amplo Bosque ('open n' depois, pois a saída fecha sozinha)."
+  sources: ["notas.md#Rota exata: Saguão -> Centro do Jardim (Narinë)"]
+  confidence: confirmed
+
+- id: route:bri-mansao-knob
+  from: region:bri
+  to: loc:knob.portao-principal
+  mode: walk
+  steps: [n, n, u]
+  description: "Sai da trilha 'pequena colina', perto do Portão Norte de Bri."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed

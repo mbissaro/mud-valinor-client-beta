@@ -1,0 +1,360 @@
+# Mecanicas = padroes de design reutilizaveis. id: mech:<slug>.
+- id: mech:fome-sede-letal
+  name: Fome e sede com escala letal
+  category: survival
+  description: >
+    Fome e sede evoluem em estágios textuais e, nos estágios mais graves,
+    causam sangramento passivo (perda de HP por tick) mesmo fora de
+    combate — matam de verdade se ignoradas.
+  stages: ["com fome", "com muita fome", "MORRENDO DE FOME / MORRENDO DE SEDE"]
+  rules:
+    - "~3 HP perdidos por tick nos estágios críticos combinados"
+    - "~15 minutos reais sem comida/água, a partir do estágio crítico, até a morte"
+    - "dormir/descansar sozinho NÃO impede a sangria — só comer/beber resolve"
+  counterplay: ["manter cantil cheio sempre", "macieira grátis resolve fome de graça e sem limite", "nunca entrar numa área sem rota de saída rápida com fome em estágio 2+"]
+  instances: [item:maca, item:pao, item:cantil, event:morte-2-fome-sede]
+  design:
+    player_experience: [tension]
+    verdict: adopt
+    takeaway: "Transforma sobrevivência de 'barra decorativa' em pressão real de tempo, mas precisa de uma saída barata e sempre acessível (macieira) pra não virar punitivo."
+  sources: ["notas.md#Lição CRÍTICA: fome/sede severas MATAM (2ª morte, nível 6)"]
+  confidence: confirmed
+
+- id: mech:mv-zero-bloqueia-fuga
+  name: "mv=0 bloqueia a fuga"
+  category: combat
+  description: "O comando de fuga falha quando o recurso de movimento chega a zero, mesmo com HP ainda ok — cada ação em combate consome mv."
+  rules: ["flee falha com 'Você está cansado demais para fugir!' quando mv=0"]
+  counterplay: ["tratar mv baixo (~20-25) como alerta igual a HP baixo; terminar a luta rápido ou recuar antes de chegar a 0"]
+  instances: []
+  design:
+    player_experience: [tension]
+    verdict: adopt
+    takeaway: "Um segundo recurso que bloqueia a válvula de escape do primeiro (HP) cria decisões mais interessantes do que só HP baixo = perigo."
+  sources: ["notas.md#Lição: Movimento (mv) em 0 BLOQUEIA fuga — regra de margem mínima"]
+  confidence: confirmed
+
+- id: mech:incapacitado-sem-regen
+  name: "Incapacitado não regenera só"
+  category: death
+  description: "Ao cair pra HP muito negativo, o personagem entra no estado 'Incapacitado': não se move, não luta, e o HP fica parado — sem resgate de outro jogador, só espera a morte."
+  rules: ["HP parado por 45+ segundos reais sem nenhuma mudança, testado"]
+  counterplay: ["perícia de resgate existe mas é para OUTRO jogador usar em você — sozinho, não há recuperação"]
+  instances: [event:morte-3-incapacitado]
+  design:
+    player_experience: [tension, frustration]
+    verdict: adapt
+    takeaway: "Ponto de não-retorno sem solo-recovery incentiva jogo em grupo organicamente, mas é brutal pra quem joga sozinho — bom pra MMO social, ruim copiado 1:1 num jogo single-player."
+  sources: ["notas.md#Lição CRÍTICA: 3ª morte — \"Incapacitado\" NÃO regenera HP sozinho"]
+  confidence: confirmed
+
+- id: mech:buffs-novato-expiram
+  name: "Buffs de novato expiram com o tempo/uso"
+  category: progression
+  description: >
+    Personagens recém-criados carregam um pacote de buffs temporários
+    (aura azul, resiliência, resistência a paralisia) que absorvem dano
+    real. Quando expiram, o MESMO conteúdo (ex.: um javali gordão) passa
+    de rotina a quase fatal.
+  rules: ["3 buffs confirmados expirando em sequência numa sessão", "sem eles, dano recebido do mesmo mob mais que dobrou"]
+  counterplay: ["reavaliar todo o bestiário já mapeado quando os buffs acabarem — o que era seguro pode não ser mais"]
+  instances: [creature:javali-gordao]
+  design:
+    player_experience: [discovery, tension]
+    verdict: adopt
+    takeaway: "Rede de segurança invisível que se dissolve é uma forma elegante de dificuldade progressiva sem re-balancear o mundo — o jogador sente o mundo ficando 'mais real', não mais injusto."
+  sources: ["notas.md#ATENÇÃO: \"aura azul\" de proteção expirou nesta sessão", "notas.md#LIÇÃO CRÍTICA: javali ficou MUITO mais perigoso sem a aura de proteção"]
+  confidence: confirmed
+
+- id: mech:limite-carga
+  name: "Limite de carga (itens e peso)"
+  category: survival
+  description: "Carrega no máximo ~5 itens / 100kg; passar disso bloqueia qualquer 'get' novo até liberar espaço."
+  rules: ["'all.<item>' descarta ou vende uma pilha inteira de um item de uma vez, em um só comando"]
+  counterplay: ["descartar lixo (caroço de maçã, mapas recusados) proativamente antes de entrar em áreas de farm"]
+  instances: [item:caroco-maca]
+  design:
+    player_experience: [frustration]
+    verdict: adapt
+    takeaway: "Limite de carga força decisões de triagem, mas sem um comando de bulk (`all.`) seria só atrito puro — a sintaxe de pilha é o que salva a mecânica."
+  sources: ["notas.md#Lição crítica: morte (nível 6, sessão longa)", "notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\""]
+  confidence: confirmed
+
+- id: mech:morte-perda-xp
+  name: "Morte custa XP, não equipamento"
+  category: death
+  description: "Ao morrer, o personagem perde uma fração grande de XP (ex.: ~25.000 e ~37.000 pontos em duas mortes distintas) mas NÃO perde nível nem itens — o equipamento fica no corpo, recuperável."
+  rules: ["corpo decompõe com o tempo — recuperar o quanto antes"]
+  instances: [event:morte-1-javalis, event:morte-2-fome-sede, event:morte-3-incapacitado]
+  design:
+    player_experience: [tension]
+    verdict: adopt
+    takeaway: "Penalidade de progresso (XP) em vez de penalidade de posse (itens) deixa a morte dolorosa sem criar perda permanente de equipamento favorito — boa calibragem de punição."
+  sources: ["notas.md#Lição crítica: morte (nível 6, sessão longa)"]
+  confidence: confirmed
+
+- id: mech:corpo-mantem-equipamento
+  name: "Corpo do jogador morto mantém o equipamento"
+  category: death
+  description: "Itens e ouro ficam no corpo no ponto de retorno; 'get all corpo' intercalado com wear/wield (por causa do limite de carga) recupera tudo."
+  instances: []
+  design:
+    player_experience: [discovery]
+    verdict: adopt
+  sources: ["notas.md#Lição crítica: morte (nível 6, sessão longa)"]
+  confidence: confirmed
+
+- id: mech:ciclo-dia-noite-lojas
+  name: "Lojas com horário próprio, não só dia/noite"
+  category: time
+  description: "Quase todas as lojas fecham de noite, mas cada uma parece ter seu próprio horário comercial (nem todas abrem no instante em que o dia começa)."
+  rules: ["mensagens variam: 'voltar mais tarde' vs. 'voltar amanhã' — pode indicar regras de fechamento diferentes"]
+  instances: []
+  design:
+    player_experience: [discovery, frustration]
+    verdict: adapt
+    takeaway: "Horários de loja dão vida ao mundo, mas sem um jeito rápido de consultar o horário (comando `time` ajuda, mas não lista horário por loja), o jogador só descobre por tentativa e erro."
+  sources: ["notas.md#Lição: lojas fecham de madrugada (horário do jogo)", "notas.md#Resumo: TODAS as lojas de Bri visitadas até agora fecham de noite"]
+  confidence: confirmed
+
+- id: mech:portao-tranca-noite
+  name: "Alguns portões trancam de noite, outros não"
+  category: time
+  description: "O Portão Norte de Bri trancava de noite; o Portão Sul nunca trancou, mesmo na mesma hora — não é uma regra universal, precisa testar cada saída."
+  instances: [loc:bri.portao-norte, loc:bri.portao-sul]
+  design:
+    player_experience: [discovery]
+    verdict: adapt
+    takeaway: "Inconsistência aparentemente arbitrária entre portões pode ser bug do MUD original, mas como padrão de design é interessante: nem toda saída de uma zona segura tem a mesma regra."
+  sources: ["notas.md#DESCOBERTA: portões de Bri TRANCAM de noite", "notas.md#Correção: só o Portão NORTE estava trancado de noite, não todos"]
+  confidence: confirmed
+
+- id: mech:clima-dinamico-regional
+  name: "Clima dinâmico e regional"
+  category: time
+  description: "Clima muda independente do ciclo dia/noite e varia por região (já nevou em Valfenda sem neve em Bri; chuva observada em Bri)."
+  instances: [region:valfenda, region:bri]
+  design:
+    player_experience: [delight]
+    verdict: adopt
+  sources: ["notas.md#Valfenda: \"A Guardiã elfa\" é o GPS local (mesmo padrão dos guardas de Bri)", "notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien"]
+  confidence: confirmed
+
+- id: mech:portal-contextual
+  name: "Portal contextual (mesma porta, destinos diferentes)"
+  category: navigation
+  description: "A mesma saída/porta externa pode levar a lugares DIFERENTES em visitas diferentes, sem aviso prévio — gatilho exato desconhecido (aleatório? classe? alinhamento?)."
+  instances: [loc:bri.gruta-profunda, loc:bri.academia-combate]
+  design:
+    player_experience: [discovery, delight]
+    verdict: adopt
+    takeaway: "Quebra a expectativa de que o mapa é fixo, de um jeito que convida a voltar e explorar de novo — ótimo gancho de replayability se o gatilho for comunicado de alguma forma (mesmo que sutil)."
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: mech:hub-compartilhado-retorno-entrada
+  name: "Hub compartilhado com retorno à entrada de origem"
+  category: navigation
+  description: "A Academia de Aventureiros é literalmente a mesma sala em Bri, Archet e Valfenda — o jogo 'lembra' por qual portal você entrou e te devolve lá ao saír, sem precisar de uma Academia separada por cidade."
+  instances: [region:academia]
+  design:
+    player_experience: [discovery]
+    verdict: adopt
+    takeaway: "Resolve elegantemente o problema de 'todo tutorial precisa existir em todo lugar' sem duplicar conteúdo — um hub, múltiplas portas de entrada com estado de retorno por sessão."
+  sources: ["notas.md#DESCOBERTA ESTRUTURAL IMPORTANTE: a Academia de Aventureiros é um HUB ÚNICO"]
+  confidence: confirmed
+
+- id: mech:npc-gps
+  name: "NPC GPS (guarda/guardiã dá rotas por nome de lugar)"
+  category: navigation
+  description: "Guardas/guardiãs em praticamente toda cidade respondem a 'preciso de ajuda' seguido do nome de um lugar, dando a rota passo a passo A PARTIR de onde eles estão."
+  instances: [npc:guardiao-norte, npc:guarda-portao, npc:guardia-elfa]
+  design:
+    player_experience: [delight]
+    verdict: adopt
+    takeaway: "Sistema de navegação diegético (um personagem te orienta) é muito mais agradável que um comando de 'auto-walk' sem narrativa, mas falha quando a cidade é muito labiríntica (ver Valfenda) — a rota verbal não escala bem pra mapas complexos."
+  sources: ["notas.md#Guardião do Norte (Avenida Zênite): NPC \"GPS\" de ajuda/navegação"]
+  confidence: confirmed
+
+- id: mech:saidas-falsas-no-texto
+  name: "Saídas falsas sugeridas só pelo texto"
+  category: navigation
+  description: "Descrições de sala mencionam direções ('ao norte, ergue-se a Academia') que NÃO são saídas reais navegáveis — só as saídas listadas explicitamente funcionam."
+  instances: [region:bosque]
+  design:
+    player_experience: [frustration]
+    verdict: avoid
+    takeaway: "Texto ambiental que parece uma pista de navegação mas não é gera frustração pura, sem contrapartida de diversão — evitar essa armadilha específica no jogo novo."
+  sources: ["notas.md#Pista: \"Academia ao norte/oeste/noroeste\" no Amplo Bosque é só flavor text"]
+  confidence: confirmed
+
+- id: mech:escuridao-esconde-texto
+  name: "Escuridão esconde até o texto da sala"
+  category: navigation
+  description: "De noite, sem luz, a sala vira só 'Está escuro' — nem a descrição nem as pistas de saída aparecem, navegação por leitura para de funcionar."
+  instances: [item:lamparina]
+  design:
+    player_experience: [tension]
+    verdict: adapt
+    takeaway: "Forte incentivo a carregar luz, mas sem um fallback (ex.: 'você sente que há algo ao norte') pode deixar o jogador completamente preso sem outra ferramenta."
+  sources: ["notas.md#Lição CRÍTICA: fome/sede severas MATAM (2ª morte, nível 6)"]
+  confidence: confirmed
+
+- id: mech:passagem-secreta-reseta
+  name: "Passagem secreta que reseta a cada visita"
+  category: navigation
+  description: "A entrada escondida do formigueiro (sob o Portão Sul) precisa ser revelada de novo a cada visita ('examine folhagens' + 'open abertura'), nunca fica permanentemente aberta."
+  instances: [region:bosque.formigueiro]
+  design:
+    player_experience: [tension]
+    verdict: adapt
+    takeaway: "Bom pra manter um segredo 'secreto' de verdade mesmo depois de descoberto, mas é atrito repetido se o jogador volta com frequência — funciona melhor pra conteúdo visitado raramente."
+  sources: ["notas.md#DESCOBERTA: passagem secreta em \"Fora do Portão Sul\""]
+  confidence: confirmed
+
+- id: mech:corredor-sem-volta
+  name: "Corredor one-way (só sai pelo fim)"
+  category: navigation
+  description: "O Tutorial Inicial da Academia não tem saída de volta pelo caminho de entrada — a única forma de saír é completar a sequência até o fim."
+  instances: [loc:academia.tutorial-inicial]
+  design:
+    player_experience: [tension]
+    verdict: adapt
+    takeaway: "Força o jogador a terminar o tutorial, mas é perigoso se o jogador entrar com recursos baixos (quase causou fome crítica aqui) — avisar antes de entrar."
+  sources: ["notas.md#Exploração: Tutorial Inicial (2º andar) é corredor ONE-WAY, cuidado com fome"]
+  confidence: confirmed
+
+- id: mech:comprador-universal
+  name: "Comprador universal de baixo valor (1 por item)"
+  category: economy
+  description: "Narinë compra praticamente qualquer item por exatamente 1 gold, sem limite diário aparente — vira a base de toda estratégia de gold no early game."
+  instances: [npc:narine]
+  design:
+    player_experience: [delight]
+    verdict: adopt
+    takeaway: "Um 'sink' universal simples e previsível dá ao jogador novo uma estratégia de gold óbvia e sempre disponível, sem precisar descobrir sistema de mercado complexo cedo."
+  sources: ["notas.md#Fonte de ouro: Zurg (refeitório, E do corredor 3) paga por coelhos caçados no bosque"]
+  confidence: confirmed
+
+- id: mech:farm-slice-vender
+  name: "Caçar → cortar carne → vender (loop de 3 passos)"
+  category: economy
+  description: "Matar um animal específico, usar 'slice' pra extrair 1 porção de carne, levar até o comprador universal — loop repetível e previsível, mas nem todo animal dá carne (raposa não)."
+  instances: [creature:bezerro-assustado, item:fatia-carne]
+  design:
+    player_experience: [progression]
+    verdict: adopt
+  sources: ["notas.md#RESOLVIDO: estratégia segura pra gold — bezerro + slice + Narinë"]
+  confidence: confirmed
+
+- id: mech:sala-doacoes-entre-jogadores
+  name: "Sala de doações entre jogadores (item sink/source social)"
+  category: economy
+  description: "Sala onde jogadores reais deixam itens que não usam mais, livre para qualquer outro jogador pegar — conteúdo muda organicamente com o uso da comunidade."
+  instances: [loc:valfenda.sala-doacoes]
+  design:
+    player_experience: [delight, discovery]
+    verdict: adopt
+    takeaway: "Mecanismo social emergente e barato de implementar (é só uma sala com container compartilhado) que cria uma economia de doação paralela ao comércio NPC."
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: mech:housing-taxa-manutencao
+  name: "Housing com taxa de manutenção recorrente"
+  category: economy
+  description: "Comprar uma casa custa uma quantia alta (50000g) mas também exige taxa anual (2500g) — não pagar em 30 dias bloqueia o acesso."
+  instances: [npc:learin, region:valfenda]
+  design:
+    player_experience: [progression]
+    verdict: adapt
+    takeaway: "Sink de endgame com custo recorrente dá um objetivo de longo prazo E um dreno de gold contínuo — bom pra economia de servidor longa, mas pode frustrar jogador casual que compra e esquece de pagar."
+  sources: ["notas.md#Valfenda: sistema de compra de casas (housing, endgame)"]
+  confidence: confirmed
+
+- id: mech:viagem-rapida-motorista-relocaliza
+  name: "Viagem rápida paga, motorista se realoca"
+  category: travel
+  description: "Pagar um charreteiro elimina todo risco da viagem (nenhum combate, mesmo em área perigosa), mas o motorista passa a esperar 'algumas horas' perto do DESTINO da última corrida, não sempre no ponto de partida — ele precisa ser procurado de novo."
+  rules: ["sintaxe: sit charrete -> give 5 moedas <npc> -> say Leve-me para <destino>"]
+  instances: [npc:vato-nogueira]
+  design:
+    player_experience: [tension, delight]
+    verdict: adopt
+    takeaway: >
+      Ótimo padrão: fast-travel sem quebrar a economia de risco/recompensa
+      (ele é caro e finito), e o detalhe do motorista 'sumir' no destino
+      da última corrida cria um mini-mistério de rastreamento sem custo
+      de desenvolvimento extra — é só uma regra de posição condicional.
+  sources: ["notas.md#DESCOBERTA ENORME: Vato Nogueira — transporte rápido e seguro (charrete)", "notas.md#Vato Nogueira: paradeiro MUDA conforme última corrida (não fica fixo)"]
+  confidence: confirmed
+
+- id: mech:segundo-condutor-destinos-endgame
+  name: "Segundo condutor com destinos de nível muito mais alto"
+  category: travel
+  description: "Um 2º NPC charreteiro na mesma cidade oferece destinos claramente de endgame (nomes de áreas avançadas), visível e nomeável desde o nível baixo mas inacessível na prática."
+  instances: [npc:faelar-anor]
+  design:
+    player_experience: [discovery]
+    verdict: adopt
+    takeaway: "Mostrar o teto do jogo através de uma lista de destinos (sem deixar o jogador ir lá ainda) é uma forma barata e eficaz de comunicar profundidade/escala do mundo."
+  sources: ["notas.md#DESCOBERTA ENORME: segundo charreteiro em Valfenda — \"Faelar Anor\""]
+  confidence: confirmed
+
+- id: mech:gatilho-fala-exato
+  name: "Gatilhos de fala com sintaxe exata e não documentada"
+  category: social
+  description: "Alguns NPCs reagem a uma frase exata dita em voz alta (ex.: 'say Alimente as galinhas' faz Nob agir), mas a sintaxe não é sempre intuitiva nem documentada em HELP — precisa achar por tentativa."
+  instances: [npc:nob, npc:nedhellener, npc:menestrel-salao-fogo]
+  design:
+    player_experience: [discovery, frustration]
+    verdict: adapt
+    takeaway: "Easter eggs de frase exata são deliciosos quando achados, mas pelo menos 2 casos documentados aqui (bardo, menestrel) nunca foram resolvidos — sem NENHUMA pista no jogo, o 'puzzle' não tem solução percebível, só frustração."
+  sources: ["notas.md#Confirmado: interação do galinheiro com Nob FUNCIONA", "notas.md#Bardo Nedhellener: trigger de história/canção ainda não encontrado"]
+  confidence: confirmed
+
+- id: mech:murais-note-arquivado-vs-ativo
+  name: "Murais com sistema real (NOTE), alguns arquivados"
+  category: meta-system
+  description: "Vários 'murais' no mundo são boards reais (note list / note read), mas alguns são conteúdo histórico/arquivado de anos atrás (quests encerradas) e outros são ativos com posts de jogadores reais."
+  instances: [loc:academia.sala-professores, loc:academia.sala-estudos, loc:valfenda.arvore-contos]
+  design:
+    player_experience: [discovery]
+    verdict: adopt
+    takeaway: "Reusar o mesmo sistema técnico (board) pra lore histórica E pra comunicação ativa de jogadores é eficiente, mas sem marcação clara de 'isso é arquivo' vs 'isso é atual' o jogador pode perder tempo tentando responder algo encerrado há anos."
+  sources: ["notas.md#Exploração: Sala dos Professores + Sistema de Quest por Profecias (histórico)", "notas.md#Descoberta: \"A Árvore dos Contos\" (Jardim de Imladris, extremo sul)"]
+  confidence: confirmed
+
+- id: mech:mob-atalho-summon
+  name: "'Mobs atalho' como alvos de resgate/summon em áreas longas"
+  category: meta-system
+  description: "NPCs específicos posicionados de propósito nas duas pontas de áreas muito longas servem de alvo de summon/resgate rápido pra outros jogadores, documentado por um jogador num mural técnico."
+  instances: [region:montanhas-sombrias]
+  design:
+    player_experience: [progression]
+    verdict: adopt
+    takeaway: "Solução elegante pra o problema de 'área grande demais pra andar toda hora': em vez de teleporte direto, usa um NPC-alvo existente como ponto de ancoragem pra uma mecânica já existente (summon)."
+  sources: ["notas.md#DESCOBERTA: Mural da Biblioteca de Bri — \"Mobs Atalhos\" e geografia avançada"]
+  confidence: confirmed
+
+- id: mech:treino-seguro-sem-risco
+  name: "Treino de combate sem risco real de morte"
+  category: combat
+  description: "Salas de treino com boneco de palha ou jaula, comandadas por um trainer, permitem praticar combate numa zona segura (a Academia de Combate inteira, inclusive, fica numa zona de risco mas o combate em si parece ser treino)."
+  instances: [npc:thanthal, loc:bri.academia-combate]
+  design:
+    player_experience: [progression]
+    verdict: adopt
+  sources: ["notas.md#DESCOBERTA: \"A Academia de Combate\" (acessível só pelo Amplo Bosque)"]
+  confidence: hypothesis
+
+- id: mech:cura-dormindo-leito
+  name: "Cura passiva ao dormir em leitos/camas específicas"
+  category: survival
+  description: "Dormir em leitos de uma Sala/Casa de Cura (comando `sleep <leitos>`) cura HP rapidamente e ainda dá bênçãos temporárias — muito mais eficiente que regen natural."
+  instances: [npc:mestre-toric, npc:isilie]
+  design:
+    player_experience: [delight]
+    verdict: adopt
+    takeaway: "Ancorar a cura rápida a um lugar físico específico (não um botão genérico) incentiva o jogador a aprender e voltar pra geografia do mundo."
+  sources: ["notas.md#Básico", "notas.md#Achado: \"Casa de Cura\" de Valfenda — NPC Isilië + referência a Lothlórien"]
+  confidence: confirmed

@@ -1,0 +1,192 @@
+# Pendencias e misterios. id: q:<slug>. kind: trigger-unknown|unexplored|locked|contradiction|mechanic-unclear.
+- id: q:bardo-nedhellener-trigger
+  question: "Qual o gatilho de fala/ação pra ouvir a canção/história do bardo Nedhellener no Pônei Saltitante?"
+  kind: trigger-unknown
+  priority: low
+  attempts: ["say", "ask bardo about historia/cancao", "listen bardo", "talk nedhellener", "converse nedhellener"]
+  status: open
+  refs: [npc:nedhellener]
+  sources: ["notas.md#Bardo Nedhellener: trigger de história/canção ainda não encontrado"]
+  confidence: confirmed
+
+- id: q:menestrel-salao-fogo-trigger
+  question: "Qual o gatilho pra ouvir o menestrel do Salão do Fogo (Valfenda) tocar sua lira de sete cordas?"
+  kind: trigger-unknown
+  priority: low
+  attempts: ["listen menestrel", "listen"]
+  status: open
+  refs: [npc:menestrel-salao-fogo]
+  sources: ["notas.md#Pendência: trigger do menestrel no Salão do Fogo não encontrado"]
+  confidence: confirmed
+
+- id: q:portal-bosque-gatilho
+  question: "O que determina se a entrada secreta (!s) do Amplo Bosque leva à Academia de Combate ou à Gruta Profunda? Aleatório? Classe? Alinhamento?"
+  kind: mechanic-unclear
+  priority: med
+  status: open
+  refs: [mech:portal-contextual]
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: hypothesis
+
+- id: q:mansao-knob-cabana
+  question: "O que há na cabana trancada da Mansão Knob e no 'odor horrível' a oeste dela? Qual é a quest completa da família Knob?"
+  kind: locked
+  priority: med
+  status: open
+  refs: [loc:knob.cabana]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Mansão Knob\" — área de quest oficial nível 1-10"]
+  confidence: confirmed
+
+- id: q:cemiterio-interior-resto
+  question: "O que existe no resto do cemitério de Bri, além da 'Cerca de Ferro' (saídas s/w/nw não exploradas)?"
+  kind: unexplored
+  priority: low
+  status: open
+  refs: [region:eriador.cemiterio]
+  sources: ["notas.md#Exploração: INTERIOR DO CEMITÉRIO (Velha Estrada Norte, trilha leste)"]
+  confidence: confirmed
+
+- id: q:archet-torre-sudoeste
+  question: "O que há na Torre Sudoeste de Archet (a 4ª torre do anel, nunca visitada)?"
+  kind: unexplored
+  priority: low
+  status: open
+  refs: [region:archet]
+  sources: ["notas.md#Archet: pendências de exploração"]
+  confidence: confirmed
+
+- id: q:archet-torre-noroeste-interior
+  question: "O que há dentro da Torre Noroeste de Archet ('mais lojas', entrada !nw trancada, aroma de flores)?"
+  kind: locked
+  priority: low
+  status: open
+  refs: [loc:archet.torre-noroeste]
+  sources: ["notas.md#Mapa das 4 Torres de Archet (muralha reaproveitada)"]
+  confidence: confirmed
+
+- id: q:archet-marmore-negro
+  question: "O que é a 'construção de mármore negro' na Rua das Distrações de Archet, com guardiões visíveis pelas janelas?"
+  kind: locked
+  priority: med
+  status: open
+  refs: [loc:archet.rua-distracoes]
+  sources: ["notas.md#Exploração: Archet, Rua das Distrações + Hospedaria Sono Cerrado"]
+  confidence: confirmed
+
+- id: q:archet-esgotos-cartao-negro
+  question: "O que há nos esgotos/subterrâneos de Archet, e como se consegue o 'cartão negro' que dá acesso sem precisar de alinhamento maligno?"
+  kind: unexplored
+  priority: med
+  status: open
+  sources: ["notas.md#DESCOBERTA ENORME: chegamos em Archet a pé (seguro, sem Vato Nogueira)"]
+  confidence: confirmed
+
+- id: q:indumentaria-fundicao
+  question: "Onde fica 'Indumentária e Fundição' em Valfenda — a loja de equipamento de combate citada pela Guardiã elfa?"
+  kind: unexplored
+  priority: high
+  attempts: ["exploração extensiva pelo complexo Casa de Reis / Salões de Elrond sem sucesso"]
+  status: open
+  refs: [region:valfenda]
+  sources: ["notas.md#DECISÃO: voltar a Bri via pergaminho pra usar método de gold já comprovado"]
+  confidence: confirmed
+
+- id: q:valfenda-aposentos-reais
+  question: "Onde ficam os 'Aposentos Reais' de Valfenda, citados pela Guardiã elfa?"
+  kind: unexplored
+  priority: med
+  status: open
+  refs: [region:valfenda]
+  sources: ["notas.md#Valfenda: \"A Guardiã elfa\" é o GPS local (mesmo padrão dos guardas de Bri)"]
+  confidence: confirmed
+
+- id: q:casa-mathom-sintaxe
+  question: "Existe algum item restante pra achar na Casa-Mathom via `search`, ou a sala está (ou sempre esteve) vazia?"
+  kind: mechanic-unclear
+  priority: low
+  attempts: ["search (8x consecutivas, 0 itens)", "procurar", "look chao", "vasculhar", "vasculhar quinquilharias", "procure"]
+  status: abandoned
+  refs: [loc:bri.casa-mathom]
+  sources: ["notas.md#Casa-Mathom: `search` funciona mas 8 tentativas = 0 itens achados"]
+  confidence: confirmed
+
+- id: q:passagem-sindarin-porta
+  question: "Como (ou se) é possível abrir a Passagem Bem Guardada em Valfenda, dado que o próprio jogo avisa que precisaria de chave E muita força?"
+  kind: locked
+  priority: low
+  status: open
+  refs: [loc:valfenda.passagem-guardada]
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: q:trapiche-rio-leste
+  question: "O que existe seguindo o rio para leste a partir do Pequeno Trapiche? Precisa das canoas do pescador?"
+  kind: unexplored
+  priority: low
+  status: open
+  refs: [loc:bri.trapiche]
+  sources: ["notas.md#Nova sala: \"Um Pequeno Trapiche\" (pescador, rio que margeia Bri)"]
+  confidence: confirmed
+
+- id: q:formigueiro-duto-ar
+  question: "O duto de ar vertical 'liso demais para escalar' no formigueiro — que equipamento ou perícia permitiria usá-lo?"
+  kind: unexplored
+  priority: low
+  status: open
+  refs: [region:bosque.formigueiro]
+  sources: ["notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: q:bri-mansoes-trancadas
+  question: "O que há dentro da 'Mansão Abandonada' (guardada por gárgulas) e da 'casa descuidada', ambas na Avenida da Lei de Bri, ambas trancadas?"
+  kind: locked
+  priority: low
+  status: open
+  refs: [region:bri.lei]
+  sources: ["notas.md#PONTOS DE INTERESSE PENDENTES (trancados, possível quest futura)"]
+  confidence: confirmed
+
+- id: q:eriador-intersecao-puzzle
+  question: "O que significa a inscrição em westron na Interseção de Eriador ('nem todo caminho é uma verdade, há estradas falsas e verdadeiras até seu tesouro')? É um puzzle de navegação real?"
+  kind: mechanic-unclear
+  priority: med
+  status: open
+  refs: [region:eriador.intersecao]
+  sources: ["notas.md#DESCOBERTA: saída oeste de Bri leva à Interseção de Eriador (lore real de Bree!)"]
+  confidence: hypothesis
+
+- id: q:dunendel-conversa
+  question: "Dunendel (mensageiro de Gondor) está 'em busca de Elrond' no Salão do Fogo — existe um diálogo ou quest pra iniciar com ele?"
+  kind: unexplored
+  priority: med
+  status: open
+  refs: [npc:dunendel]
+  sources: ["notas.md#MARCO GIGANTESCO: \"Os Salões de Elrond\" + \"O Salão do Fogo\" (lore 100% canônico!)"]
+  confidence: confirmed
+
+- id: q:contradicao-narine-lamparina
+  question: "As notas registram em momentos diferentes que 'Narinë não aceita itens da Academia / não compra lamparina' E que 'give lamparina narine paga 1 ouro' — qual é o comportamento real?"
+  kind: contradiction
+  priority: med
+  status: open
+  refs: [npc:narine]
+  sources: ["notas.md#Lições", "notas.md#Lição crítica: morte (nível 6, sessão longa)"]
+  confidence: hypothesis
+
+- id: q:contradicao-preco-cantil
+  question: "Cantil de aventureiro aparece como 15 gold numa loja e 16 gold em outra — são preços diferentes reais ou um erro de transcrição?"
+  kind: contradiction
+  priority: low
+  status: open
+  refs: [item:cantil]
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: hypothesis
+
+- id: q:contradicao-preco-quarto-carrapicho
+  question: "O quarto do Sr. Carrapicho (Pônei Saltitante) foi mencionado como '1 moeda' em um ponto e como 'preço não testado' em outro — qual é o valor real?"
+  kind: contradiction
+  priority: low
+  status: open
+  refs: [npc:carrapicho]
+  sources: ["notas.md#Exploração: O Pônei Saltitante (taverna/estalagem) — rico em referências Tolkien", "notas.md#Exploração: andar superior do Pônei Saltitante (quartos)"]
+  confidence: hypothesis

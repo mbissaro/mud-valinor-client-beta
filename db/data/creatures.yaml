@@ -1,0 +1,150 @@
+# Bestiario. id: creature:<slug>. Perigo é SEMPRE relativo a nivel+buffs — ver observations.
+- id: creature:bezerro-assustado
+  name: "um bezerro assustado"
+  regions: [region:bosque]
+  description: "Animal doméstico assustado, encontrado perto da entrada do Amplo Bosque."
+  behavior: passive
+  drops: [item:cabresto-rompido]
+  slice_yields: item:fatia-carne
+  observations:
+    - {char_level: 6, hp_lost: 0, xp: 328, verdict: "melhor alvo encontrado — zero dano, farm ideal"}
+  tags: [farm, seguro]
+  sources: ["notas.md#RESOLVIDO: estratégia segura pra gold — bezerro + slice + Narinë"]
+  confidence: confirmed
+
+- id: creature:grande-macaco
+  name: "um grande macaco"
+  regions: [region:bosque]
+  description: "Macaco grande e agressivo; guarda rancor e persegue depois de atacado."
+  behavior: holds-grudge
+  slice_yields: item:fatia-carne
+  observations:
+    - {char_level: 2, newbie_buffs: true, consider: "muito mais experiente", hp_lost: 38, xp: null, verdict: avoid}
+    - {char_level: 6, newbie_buffs: false, hp_lost: 36, xp: 402, verdict: "arriscado mas rentável — ~43% do HP máximo numa luta prolongada"}
+  tags: [risco-medio, farm]
+  sources: ["notas.md#Bestiário do Bosque (visto no nível 2)", "notas.md#DESCOBERTA ENORME: CHEGAMOS A VALFENDA (Imladris) via charrete do Vato Nogueira!"]
+  confidence: confirmed
+
+- id: creature:javali-gordao
+  name: "um javali gordão"
+  regions: [region:bosque]
+  description: "Javali que ataca ativamente (não é passivo); pode aparecer em grupos de 2-3."
+  behavior: [aggressive, group-spawn]
+  observations:
+    - {char_level: 3, newbie_buffs: true, hp_lost: 35, xp: 732, verdict: "melhor alvo do nível 3, só com hp cheio"}
+    - {char_level: 6, newbie_buffs: false, hp_lost: 71, xp: null, verdict: "quase fatal sem os buffs de novato — HP de 84 a 13 em poucos ticks"}
+  tags: [contraste-de-dificuldade, buffs-dependente]
+  sources: ["notas.md#Bestiário do Bosque (visto no nível 2)", "notas.md#LIÇÃO CRÍTICA: javali ficou MUITO mais perigoso sem a aura de proteção"]
+  confidence: confirmed
+
+- id: creature:raposa-preguicosa
+  name: "raposa preguiçosa"
+  regions: [region:bosque]
+  description: "Bom alvo de XP; cabeça pode ser arrancada no combate (flavor de dano)."
+  behavior: passive
+  observations:
+    - {char_level: 2, hp_lost: 17, xp: 120, verdict: "bom alvo seguro"}
+    - {char_level: 6, hp_lost: 8, xp: 98, verdict: "segura mas slice falha — não dá item, só XP"}
+  quirks: ["`slice corpo` falha/\"não é fonte adequada\" — diferente de bezerro/javali/coelho/lobo"]
+  tags: [seguro, sem-drop]
+  sources: ["notas.md#Tentativa de gold via caça leve: resultado modesto, raposa é segura mas não rende item"]
+  confidence: confirmed
+
+- id: creature:coelho-veloz
+  name: "coelho veloz"
+  regions: [region:bosque]
+  description: "Rápido; persegue quem foge."
+  behavior: chases-fleeing
+  observations:
+    - {char_level: 1, hp_lost: null, verdict: "PERIGOSO — bate ~4/rodada, 2x por rodada"}
+    - {char_level: 3, xp: 100, hp_lost: 25, verdict: "virou fácil"}
+  tags: [contraste-de-dificuldade]
+  sources: ["notas.md#Amplo Bosque (nível 1)", "notas.md#Lições"]
+  confidence: confirmed
+
+- id: creature:cobra-gigantesca
+  name: "cobra gigantesca"
+  regions: [region:bosque]
+  description: "Vista a oeste da entrada do bosque."
+  behavior: aggressive
+  observations:
+    - {char_level: 2, hp_lost: null, verdict: "PERIGOSA — até 6 hp por rodada, levou o personagem a 4 hp"}
+  tags: [perigoso]
+  sources: ["notas.md#Bestiário do Bosque (visto no nível 2)"]
+  confidence: confirmed
+
+- id: creature:felino-agil
+  name: "um felino ágil"
+  regions: [region:bosque]
+  description: "Descrito como espião desajeitado e fedorento — possível orc disfarçado."
+  behavior: aggressive
+  observations:
+    - {char_level: 2, consider: "muito mais experiente, um pouco mais forte", verdict: avoid}
+  tags: [evitar, lore-hint]
+  sources: ["notas.md#Amplo Bosque (nível 1)"]
+  confidence: hypothesis
+
+- id: creature:filhote-urso
+  name: "filhote de urso"
+  regions: [region:bosque]
+  description: "Apesar do nome, nada fraco."
+  behavior: aggressive
+  observations:
+    - {char_level: 6, hp_lost: 70, xp: null, verdict: "sozinho tirou o personagem de 84 pra 14 HP — evitar"}
+  tags: [perigoso, nome-enganoso]
+  sources: ["notas.md#Lição: ciclo de emergência contra fome severa (rápido e seguro)"]
+  confidence: confirmed
+
+- id: creature:vespa-enorme
+  name: "vespa enorme"
+  regions: [region:bosque]
+  description: "Vista a oeste da entrada do bosque; parece agressiva."
+  behavior: aggressive
+  observations:
+    - {char_level: 3, verdict: "virou fácil no nível 3"}
+  tags: [contraste-de-dificuldade]
+  sources: ["notas.md#Amplo Bosque (nível 1)", "notas.md#Lições"]
+  confidence: confirmed
+
+- id: creature:lobo-sorrateiro
+  name: "lobo sorrateiro"
+  regions: [region:bosque]
+  description: "Pode aparecer junto com javalis em salas infestadas."
+  behavior: aggressive
+  slice_yields: item:fatia-carne
+  tags: [farm]
+  sources: ["notas.md#Lição: wilderness perigosa e bug de concorrência bot+manual (nível 6, sessão longa)"]
+  confidence: confirmed
+
+- id: creature:morcego-feroz-pequeno
+  name: "pequeno morcego de aparência feroz"
+  regions: [region:bosque.formigueiro]
+  description: "Pendurado no teto dos túneis do formigueiro; apesar do nome, não hostil passivamente."
+  behavior: passive
+  tags: [dungeon, nao-testado-em-combate]
+  sources: ["notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: creature:morcego-peludo
+  name: "um morcego peludo"
+  regions: [region:valfenda.floresta-pinheiros]
+  description: "Encontrado nas clareiras/junções da Floresta de Pinheiros."
+  behavior: passive
+  drops: [item:canino-morcego]
+  observations:
+    - {char_level: 6, hp_lost: 2, xp: 22, verdict: "MUITO seguro — morre em 2-3 acertos, equivalente ao bezerro de Bri"}
+  tags: [farm, seguro, valfenda]
+  sources: ["notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\""]
+  confidence: confirmed
+
+- id: creature:grande-morcego
+  name: "um grande e nojento morcego"
+  regions: [region:valfenda.floresta-pinheiros]
+  description: "Encontrado na lagoa da Floresta de Pinheiros; tanque mais forte que o morcego peludo."
+  behavior: aggressive
+  drops: [item:folha-negra]
+  observations:
+    - {char_level: 6, hp_lost: 13, xp: 40, verdict: "gerenciável mas um tier acima do morcego peludo — luta mais longa (6+ rounds)"}
+  tags: [farm, risco-medio, valfenda]
+  sources: ["notas.md#Bestiário da Floresta de Pinheiros: dois tipos de morcego distintos"]
+  confidence: confirmed

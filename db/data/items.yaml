@@ -1,0 +1,240 @@
+# Itens. id: item:<slug>. description = texto/flavor do item; category/effects = mecanica.
+- id: item:maca
+  name: "uma deliciosa maçã"
+  category: food
+  description: >
+    Colhida do galho mais baixo de uma macieira ("Diversas maçãs podem
+    ser vistas em seus galhos, algumas verdes e outras prontas para
+    consumo imediato"). Sintaxe exata: `get maçã macieira` (não "colher
+    maçã"); comer com `eat maçã` só funciona depois de descartar o
+    caroço de maçã do inventário, senão o parser prioriza o caroço.
+  effects: {cures: hunger-any-stage}
+  obtain: [{method: harvest, from: "loc:bri.avenida-zenite / loc:valfenda.alameda-juniperos / loc:valfenda.circulo-florido", cost: 0}]
+  quirks: ["ambígua com 'caroço de maçã' no parser de eat"]
+  tags: [comida, gratis, ilimitado]
+  sources: ["notas.md#DESCOBERTA ENORME: macieira grátis na Avenida Zênite resolve fome pra sempre", "notas.md#Sintaxe exata pra colher/comer maçã da macieira (resolvido de vez)"]
+  confidence: confirmed
+
+- id: item:caroco-maca
+  name: "um caroço de maçã"
+  category: junk
+  description: "Item do inventário inicial. 'Você tentou morder um caroço de maçã...' — não é comida de verdade, é isca/decoração."
+  effects: {}
+  obtain: [{method: found, from: "inventário inicial", cost: 0}]
+  quirks: ["não comestível", "causa ambiguidade com 'maçã' no parser", "Narinë recusa"]
+  tags: [decorativo, recusado]
+  sources: ["notas.md#DESCOBERTA ENORME: pão cura fome instantaneamente (sem cozinhar!)"]
+  confidence: confirmed
+
+- id: item:pao
+  name: "uma fatia de pão"
+  category: food
+  description: "Pão simples vendido na Loja da Academia. Cura fome crítica ('MORRENDO DE FOME') na hora, sem precisar da perícia cozinhar nem de fogo."
+  effects: {cures: hunger-critical}
+  obtain: [{method: buy, from: "loc:academia.loja-provisoes", cost: 1}]
+  tags: [comida, emergencia]
+  sources: ["notas.md#DESCOBERTA ENORME: pão cura fome instantaneamente (sem cozinhar!)"]
+  confidence: confirmed
+
+- id: item:carne-coelho
+  name: "pedaço de carne de coelho"
+  category: food
+  description: "Vendida por Zurg no refeitório da Academia; estoque de apenas 1 por vez."
+  effects: {cures: hunger-any-stage}
+  obtain: [{method: buy, from: "npc:zurg", cost: 1}]
+  quirks: ["estoque limitado a 1"]
+  tags: [comida]
+  sources: ["notas.md#Zurg vende \"pedaço de carne de coelho\" por 1 gold (estoque limitado a 1!)"]
+  confidence: confirmed
+
+- id: item:cantil
+  name: "cantil de aventureiro"
+  category: tool
+  description: "Recipiente de água pessoal — sem ele, não há como saciar sede fora de uma fonte fixa. Regra de ouro: nunca andar sem um."
+  effects: {prevents: thirst}
+  obtain: [{method: buy, from: "loc:academia.loja-provisoes ou npc:zurg", cost: "15-16"}]
+  quirks: ["preço varia entre as duas lojas (15g vs 16g) — pode ser inconsistência das notas, não confirmado"]
+  tags: [equipamento, sobrevivencia, essencial]
+  sources: ["notas.md#Lição CRÍTICA: fome/sede severas MATAM (2ª morte, nível 6)"]
+  confidence: confirmed
+
+- id: item:elixir
+  name: "elixir colorido"
+  category: food
+  description: "Poção de cura rápida usada em combate; efeito instantâneo, bom pra emergências no meio de uma luta."
+  effects: {heal: 8, vitality: true}
+  obtain: [{method: buy, from: "loja (não especificada)", cost: null}]
+  tags: [cura, combate]
+  sources: ["notas.md#Lições"]
+  confidence: confirmed
+
+- id: item:pergaminho-retorno
+  name: "um pergaminho de retorno"
+  category: scroll
+  description: "Pergaminho simples que, ao ser recitado (`recite pergaminho`), teleporta o personagem de volta ao saguão único da Academia, de qualquer cidade."
+  effects: {teleport: "loc:academia.saguao"}
+  obtain:
+    - {method: buy, from: "loc:academia.loja-provisoes", cost: 1}
+    - {method: gift, from: "qualquer guarda de portão (Bri) ou guardião elfo (Valfenda), se achar que o personagem 'não parece experiente o bastante'", cost: 0}
+  quirks: ["renovável de graça repetidamente pelos guardas", "sempre leva ao MESMO saguão, não ao ponto onde você estava"]
+  tags: [equipamento, viagem, emergencia]
+  sources: ["notas.md#DESCOBERTA IMPORTANTE: guarda dá pergaminho de retorno de graça", "notas.md#Pergaminhos de retorno são RENOVÁVEIS de graça pelos guardas"]
+  confidence: confirmed
+
+- id: item:lamparina
+  name: "uma lamparina"
+  category: light
+  description: "Fonte de luz portátil vendida na Loja da Academia; necessária pra ver em áreas escuras como a passagem secreta do Portão Sul."
+  effects: {enables: see-in-dark}
+  obtain: [{method: buy, from: "loc:academia.loja-provisoes", cost: 2}]
+  tags: [equipamento, exploracao]
+  sources: ["notas.md#DESCOBERTA ENORME: Loja \"Provisões para Jovens Aventureiros\" (dentro da Academia!)"]
+  confidence: confirmed
+
+- id: item:fatia-carne
+  name: "fatia de carne (de bezerro / grande macaco / javali / coelho / lobo)"
+  category: trophy-drop
+  description: "Obtida com `slice corpo` imediatamente após matar certos animais; cada corpo só rende 1 fatia ('Esta não é uma fonte adequada de carne' na 2ª tentativa)."
+  effects: {sellable: true}
+  obtain: [{method: slice, from: "creature:bezerro-assustado (ou outro animal com carne)", cost: 0}]
+  quirks: ["slice falha em raposa — ela não dá carne cortável, diferente dos outros"]
+  tags: [vendavel, farm]
+  sources: ["notas.md#RESOLVIDO: estratégia segura pra gold — bezerro + slice + Narinë", "notas.md#Tentativa de gold via caça leve: resultado modesto, raposa é segura mas não rende item"]
+  confidence: confirmed
+
+- id: item:cabresto-rompido
+  name: "um cabresto arrebentado/rompido"
+  category: junk
+  description: "Dropa de um bezerro morto, direto, sem precisar de `slice`. Narinë se recusa a comprar: 'isso é uma das poucas coisas que não me interessam'."
+  effects: {}
+  obtain: [{method: drop, from: "creature:bezerro-assustado", cost: 0}]
+  tags: [decorativo, recusado]
+  sources: ["notas.md#Dicas úteis de sintaxe + item que Narinë recusa"]
+  confidence: confirmed
+
+- id: item:canino-morcego
+  name: "um canino de morcego"
+  category: trophy-drop
+  description: "Dropa diretamente da morte de um 'morcego peludo' na Floresta de Pinheiros de Valfenda, sem precisar de slice."
+  effects: {}
+  obtain: [{method: drop, from: "creature:morcego-peludo", cost: 0}]
+  quirks: ["ainda sem comprador confirmado em Valfenda — Guardiã elfa e Vato Nogueira aceitam de graça mas não pagam"]
+  tags: [vendavel, pendencia]
+  sources: ["notas.md#DESCOBERTA: Floresta de Pinheiros (arredores de Valfenda) + alvo seguro \"morcego peludo\"", "notas.md#LIÇÃO: `give <item> <NPC>` em Valfenda NÃO dá gold (diferente de Narinë em Bri!)"]
+  confidence: confirmed
+
+- id: item:folha-negra
+  name: "uma folha negra"
+  category: trophy-drop
+  description: "Dropa da morte do 'grande e nojento morcego' (tier mais forte, na lagoa da Floresta de Pinheiros)."
+  effects: {}
+  obtain: [{method: drop, from: "creature:grande-morcego", cost: 0}]
+  tags: [vendavel]
+  sources: ["notas.md#Bestiário da Floresta de Pinheiros: dois tipos de morcego distintos"]
+  confidence: confirmed
+
+- id: item:mapa-academia
+  name: "um mapa da Academia de Aventureiros"
+  category: map
+  description: "Achado caído no chão do Corredor Silencioso (2º andar); `look mapa` dá a descrição textual completa do prédio."
+  effects: {}
+  obtain: [{method: found, from: "loc:academia.tutorial-inicial (2º andar)", cost: 0}]
+  tags: [vendavel, informativo]
+  sources: ["notas.md#Progresso: primeiro gold da sessão (2 moedas)"]
+  confidence: confirmed
+
+- id: item:mapa-bri
+  name: "um mapa da vila de Bri"
+  category: map
+  description: "Mapa ASCII da vila, acessado via `look mapa`; funciona como um pager de texto, emenda nas Políticas do jogo após a 2ª página."
+  effects: {}
+  obtain: [{method: found, from: "loc:academia.tutorial-inicial (2º andar)", cost: 0}]
+  quirks: ["Narinë RECUSA comprar este item especificamente"]
+  tags: [informativo, recusado]
+  sources: ["notas.md#Mapa ASCII de Bri (item \"um mapa da vila de Bri\", `look mapa`)"]
+  confidence: confirmed
+
+- id: item:mapa-valfenda
+  name: "um mapa de Valfenda"
+  category: map
+  description: "Vendido pelo Cartógrafo (Eartitton) em Valfenda; útil pra não se perder no labirinto de alamedas."
+  effects: {}
+  obtain: [{method: buy, from: "npc:eartitton", cost: 4}]
+  tags: [equipamento, navegacao]
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: item:mapa-montanhas-sombrias
+  name: "mapa do Caminho para as Montanhas Sombras"
+  category: map
+  description: "Vendido pelo Cartógrafo; confirma de novo a existência de uma zona de altíssimo nível rumo às Montanhas Sombrias."
+  effects: {}
+  obtain: [{method: buy, from: "npc:eartitton", cost: 2}]
+  tags: [informativo, endgame-hint]
+  sources: ["notas.md#Descoberta: \"O Cartógrafo\" (Eartitton) — sobe pela Pinacoteca/Biblioteca"]
+  confidence: confirmed
+
+- id: item:camisa-seda
+  name: "uma fina camisa de seda"
+  category: clothing
+  level_req: 17
+  description: "Peça de roupa fina vendida na Alfaiataria de Valfenda; a mesma peça aparece também grátis na Sala de Doações, deixada por outro jogador."
+  effects: {}
+  obtain:
+    - {method: buy, from: "A Alfaiataria (Valfenda, Alameda de Olmeiros)", cost: 26}
+    - {method: donation, from: "loc:valfenda.sala-doacoes", cost: 0}
+  tags: [equipamento, nivel-alto]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: item:bainha-couro
+  name: "uma tosca bainha de couro"
+  category: armor
+  level_req: 22
+  description: "Equipamento de nível alto achado de graça na Sala de Doações de Valfenda — muito acima do nível atual de Halbarion."
+  effects: {}
+  obtain: [{method: donation, from: "loc:valfenda.sala-doacoes", cost: 0}]
+  tags: [equipamento, nivel-alto]
+  sources: ["notas.md#DESCOBERTA ENORME: \"Sala de Doações\" de Valfenda (itens gratuitos de outros jogadores!)"]
+  confidence: confirmed
+
+- id: item:livro-poderes-arda
+  name: "livro: Os Poderes de Arda (3 páginas)"
+  category: book
+  description: "Lido página a página com `book <livro> read <página>`. Página 1: lore real de Tolkien sobre Ainur/Valar/Maiar, a Era das Lâmpadas, a fundação de Valinor/Valimar em Aman."
+  effects: {}
+  obtain: [{method: found, from: "region:bri.biblioteca, Ala Leste", cost: 0}]
+  tags: [lore, livro]
+  sources: ["notas.md#Exploração: fora da Academia — Vila de Bri e Biblioteca"]
+  confidence: confirmed
+
+- id: item:livro-cuivienyarna
+  name: "livro: Cuivienyarna — A Lenda do Despertar dos Quendi (14 páginas)"
+  category: book
+  description: "Texto real de Tolkien (de História da Terra-média) sobre o despertar dos primeiros elfos: Imin/Tata/Enel, os pais-elfos."
+  effects: {}
+  obtain: [{method: found, from: "region:bri.biblioteca, Ala Oeste", cost: 0}]
+  tags: [lore, livro]
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: item:livro-dragoes
+  name: "livro: Dragões — Os Servos de Morgoth"
+  category: book
+  description: "Página 1 fala de Glaurung, Ancalagon, Scatha e Smaug — lore real e correto de Tolkien. Keyword do item é 'servos', não 'dragoes'."
+  effects: {}
+  obtain: [{method: found, from: "region:bri.biblioteca, Ala Oeste", cost: 0}]
+  quirks: ["keyword de pega é 'servos', não o nome aparente"]
+  tags: [lore, livro]
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed
+
+- id: item:livro-orcs
+  name: "livro: Orcs — A Raça Corrompida"
+  category: book
+  description: "Página 1 conta a origem dos Orcs: Melkor nos Poços de Utumno torturando Elfos capturados até transformá-los."
+  effects: {}
+  obtain: [{method: found, from: "region:bri.biblioteca, Ala Oeste", cost: 0}]
+  tags: [lore, livro]
+  sources: ["notas.md#Exploração: Biblioteca de Bri, Ala Oeste — livros \"OS POVOS DE ARDA\""]
+  confidence: confirmed

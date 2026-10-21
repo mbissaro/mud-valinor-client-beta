@@ -1,0 +1,93 @@
+# Exits = casos especiais de conexao (nao e grafo completo sala-a-sala). id: exit:<slug>.
+- id: exit:academia-saida
+  from: loc:academia.saguao
+  dir: d
+  to: null
+  selection: return-to-entry
+  destinations: [region:bri, region:archet, region:valfenda]
+  description: "'d' leva de volta pro MESMO lugar de onde você entrou na Academia (Bri/Archet/Valfenda) — o jogo lembra o portal de entrada por sessão."
+  sources: ["notas.md#DESCOBERTA ESTRUTURAL IMPORTANTE: a Academia de Aventureiros é um HUB ÚNICO"]
+  confidence: confirmed
+
+- id: exit:bosque-entrada-secreta-contextual
+  from: loc:bosque.entrada-secreta
+  dir: s
+  to: null
+  selection: contextual
+  destinations: [loc:bri.academia-combate, loc:bri.gruta-profunda]
+  door: {state: closed, opens_with: "open s"}
+  description: "Mesma porta, destinos diferentes em visitas diferentes; gatilho exato desconhecido (ver q:portal-bosque-gatilho)."
+  sources: ["notas.md#CORREÇÃO + DESCOBERTA ENORME: \"A Gruta Profunda\" (guilda de ladrões escondida)"]
+  confidence: confirmed
+
+- id: exit:bri-portao-sul-passagem-secreta
+  from: loc:bri.fora-portao-sul
+  dir: d
+  to: region:bosque.formigueiro
+  selection: fixed
+  hidden: {reveal: ["examine folhagens", "open abertura"], resets_each_visit: true}
+  requires: [light]
+  description: "Revela uma saída 'd' que não existe por padrão; precisa lamparina acesa pra navegar depois de descer (está escuro)."
+  sources: ["notas.md#DESCOBERTA: passagem secreta em \"Fora do Portão Sul\"", "notas.md#DESCOBERTA: dungeon \"formigueiro\" sob o Portão Sul (precisa lamparina)"]
+  confidence: confirmed
+
+- id: exit:academia-tutorial-sequencia
+  from: loc:academia.tutorial-inicial
+  dir: "n (sequência completa de ~12 comandos)"
+  to: null
+  selection: fixed
+  one_way: true
+  description: "A sala de entrada do Tutorial Inicial não tem saída de volta pelo caminho de entrada; só se avança até completar o corredor."
+  sources: ["notas.md#Exploração: Tutorial Inicial (2º andar) é corredor ONE-WAY, cuidado com fome"]
+  confidence: confirmed
+
+- id: exit:bri-portao-norte-noite
+  from: loc:bri.portao-norte
+  dir: n
+  to: null
+  selection: fixed
+  door: {state: "locked (só de noite)", opens_with: "open n (não confirmado se contorna a tranca noturna)", night_lock: true}
+  description: "Tranca de noite com '!n' real (não só 'fechado'); outros portões de Bri não seguem a mesma regra."
+  sources: ["notas.md#DESCOBERTA: portões de Bri TRANCAM de noite", "notas.md#Correção: só o Portão NORTE estava trancado de noite, não todos"]
+  confidence: confirmed
+
+- id: exit:archet-hospedaria-cortina
+  from: loc:archet.hospedaria
+  dir: n
+  to: null
+  selection: fixed
+  requires: ["gold:10"]
+  description: "Cortina escondendo passagem norte; tentar passar sem pagar a diária faz Tantarel puxar o personagem de volta."
+  sources: ["notas.md#Exploração: Archet, Rua das Distrações + Hospedaria Sono Cerrado"]
+  confidence: confirmed
+
+- id: exit:valfenda-passagem-guardada-porta
+  from: loc:valfenda.passagem-guardada
+  dir: n
+  to: null
+  selection: unknown
+  door: {state: locked, key: unknown, opens_with: null}
+  description: "'Mesmo que tivesse a chave, ainda seria necessária muita força para mover a gigantesca placa.' Guardada por 2 guardas reais falando Sindarin."
+  sources: ["notas.md#DESCOBERTA: \"Uma Passagem Bem Guardada\" + guardas falando Sindarin (puzzle de endgame)"]
+  confidence: confirmed
+
+- id: exit:bri-mina-abandonada-vedada
+  from: loc:bri.mina-abandonada
+  dir: n
+  to: null
+  selection: fixed
+  door: {state: "vedada permanentemente (pedras e madeira)"}
+  fake: false
+  description: "Sem acesso real por design — o aviso 'cuidado!' na placa é sobre o motivo histórico (minério insuficiente), não sobre monstros."
+  sources: ["notas.md#Exploração: Colina de Bri / Caminho Arborizado (nordeste/leste da Praça)"]
+  confidence: confirmed
+
+- id: exit:bri-avenida-zenite-macieira-descida
+  from: loc:bri.avenida-zenite
+  dir: d
+  to: loc:bri.avenida-zenite
+  selection: fixed
+  hazards: [fall-damage]
+  description: "Descer do topo da macieira ('No Alto da Macieira') causa queda real (-20 HP), mesmo que o texto diga 'descida segura'."
+  sources: ["notas.md#Lição: CUIDADO ao subir (`u`) na macieira da Avenida Zênite"]
+  confidence: confirmed
