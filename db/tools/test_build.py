@@ -52,7 +52,25 @@ def test_minerar_separa_titulo_descricao_objetos_e_mobs() -> None:
     assert list(r["exits"]) == ["n s"] and len(visits) == 1
 
 
+def test_minerar_itens_de_inventario_npc_loja_e_eventos() -> None:
+    lines = ["Você está carregando:", "     (2x) um pão bem recheado para viagem", "",
+             "O guarda está usando:", "<como luz>        uma tocha", "",
+             "Núm    Nível    Quant    Item                                           Preço",
+             " 1         7     Ilim.    um par de manoplas de ferro                        3", "",
+             "Você pegou um canino de morcego do corpo de um morcego peludo.",
+             "Você colocou um protetor de ferro para os braços em seus braços.",
+             "O professor Elundhir deu um pão bem recheado para viagem para você."]
+    items = minerar.parse_items(lines, ["room:x"] * len(lines), "O guarda patrulha")
+    pao = items["um pão bem recheado para viagem"]
+    assert pao["held"] == 2 and pao["verbs"]["recebeu"] == 1
+    assert items["uma tocha"]["worn_by"] == {"O guarda <como luz>"}
+    assert items["um par de manoplas de ferro"]["shops"]["room:x"]["price"] == 3
+    assert items["um canino de morcego"]["dropped_by"] == {"um morcego peludo"}
+    assert "um protetor de ferro para os braços" in items
+
+
 if __name__ == "__main__":
+    test_minerar_itens_de_inventario_npc_loja_e_eventos()
     test_minerar_separa_titulo_descricao_objetos_e_mobs()
     test_validate_catches_broken_ref_and_duplicate_id()
     test_validate_accepts_minimal_valid_entity()

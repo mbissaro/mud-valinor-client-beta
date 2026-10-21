@@ -419,13 +419,6 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:help.book-dragoes-read-1
-  kind: help
-  title: book dragoes read 1
-  body: Você não possui nenhum livro com este nome.
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
 - id: text:help.book-servos-read-1
   kind: help
   title: book servos read 1
@@ -733,7 +726,6 @@
     O professor Elundhir deu um pão bem recheado para viagem para você.
     O professor Elundhir falou 'NO início, quando precisar de mais água e comida, procure o refeitório da academia.'
     O professor Elundhir aplaude sua performance.
-    O professor Elundhir falou 'Pois bem Halbarion, com isso, você concluiu seus estudos comigo. Para continuar seu aprendizado, vá para a próxima sala de conhecimento.'
   rooms:
   - room:academia.a-sala-dos-objetos
   sources:
@@ -1180,15 +1172,6 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.read-pergaminho
-  kind: look
-  title: read pergaminho
-  body: Este comando não se aplica a objetos.
-  rooms:
-  - room:academia.fim-do-treinamento
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
 - id: text:look.examine-pergaminho
   kind: look
   title: examine pergaminho
@@ -1353,7 +1336,19 @@
     <no corpo>        uma camisa de algodão
     <nas pernas>      uma calça marrom
     <nos pés>         um par de botas de couro
-    O lojista sussurrou para você 'Eu compro e vendo itens, Halbarion. Fique a vontade para me vender armaduras, armas, roupas, tesouros ou comidas.'
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-protetor
+  kind: look
+  title: examine protetor
+  body: |-
+    Você não vê nada especial.
+    Isto pesa cerca de 1 kg.
+    Isto é usado nas posições: braços.
+    Isto está em perfeito estado.
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
   sources:
@@ -1426,8 +1421,6 @@
     Isto pesa de 3 a 4 kg.
     Isto é usado nas posições: como escudo.
     Isto está em perfeito estado.
-    Mestre Toric disse solenemente 'nran'.
-    Com um encantamento, seus ferimentos se fecham...
   rooms:
   - room:academia.sala-de-cura
   sources:
@@ -1580,7 +1573,6 @@
   body: |-
     Um javali gordão é muito mais experiente que você!
     Um javali gordão parece páreo para você.
-    Uma cobra gigantesca chegou do leste.
   rooms:
   - room:bosque.o-amplo-bosque
   sources:
@@ -1603,32 +1595,6 @@
   body: Uma cobra gigantesca é mais experiente que você.
   rooms:
   - room:bosque.o-amplo-bosque
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.glance-cobra
-  kind: look
-  title: glance cobra
-  body: |-
-    O golpe de uma cobra gigantesca acertou você levemente.
-    Uma cobra gigantesca DESTRUIU você com seu golpe esmagador!
-    Você apenas deseja que seus ferimentos parem de sangrar tanto!
-    O Amplo Bosque
-    Diversas árvores e belas flores adornam esse bosque que possui um gramado
-    bem verde e macio. Há animais em todo lugar... No chão, nas árvores e no
-    céu. Raposas caçando, coelhos saltitando e pássaros voando são exemplos
-    dessa natureza maravilhosa que cerca a Academia... O longo uivo de algum
-    lobo mostra que esse recanto natural também pode ser perigoso... A trilha
-    no bosque continua para norte, leste e oeste. Ao sul, ergue-se a grande
-    Academia dos Aventureiros.
-    Saídas: n e w
-    Uma raposa preguiçosa vaga sem rumo pelo bosque.
-    Um javali gordão anda quase deitado de tão pesado que ele é.
-    Voando tranquilamente, um grande pássaro azul canta suavemente.
-    Você fugiu desesperadamente da luta!
-    Esta pessoa não está aqui.
-  rooms:
-  - room:bosque.o-amplo-bosque-2
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1656,8 +1622,6 @@
   body: |-
     Um lobo sorrateiro é mais experiente que você.
     Um lobo sorrateiro parece páreo para você.
-    Uma cobra gigantesca foi para o leste.
-    Um lobo sorrateiro foi para o oeste.
   rooms:
   - room:bosque.o-amplo-bosque-2
   sources:
@@ -1749,12 +1713,11 @@
 - id: text:look.look-in-mochila
   kind: look
   title: look in mochila
-  body: |-
-    Mestre Toric disse solenemente 'naimad'.
-    Com um encantamento, seus ferimentos se fecham...
-    A mochila dos aventureiros de Halbarion contém:
+  body: 'A mochila dos aventureiros de Halbarion contém:'
   rooms:
+  - room:academia.o-refeitorio
   - room:academia.sala-de-cura
+  - room:bosque.o-amplo-bosque
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1827,24 +1790,6 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-3
-  kind: look
-  title: look in mochila
-  body: 'A mochila dos aventureiros de Halbarion contém:'
-  rooms:
-  - room:bosque.o-amplo-bosque
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.look-in-mochila-4
-  kind: look
-  title: look in mochila
-  body: Mestre Toric disse solenemente 'sunimod'.
-  rooms:
-  - room:academia.sala-de-cura
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
 - id: text:look.consider-cobra-2
   kind: look
   title: consider cobra
@@ -1854,23 +1799,10 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-guia
-  kind: look
-  title: look guia
-  body: |-
-    Um grande pássaro azul voou do oeste.
-    Um bezerro foi para o sul.
-    Você não vê isto aqui.
-  rooms:
-  - room:bosque.o-amplo-bosque-2
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
 - id: text:look.look-in-corpo
   kind: look
   title: look in corpo
   body: |-
-    Mestra Tsythia sussurrou para você 'Lembre-se de ler seu Guia do Aventureiro, digitando LOOK GUIA.'
     Mestra Tsythia folheia um velho livro apressadamente.
     Depositados sobre o corpo de Halbarion, você vê:
   rooms:
@@ -1878,7 +1810,7 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-5
+- id: text:look.look-in-mochila-3
   kind: look
   title: look in mochila
   body: |-
@@ -1892,7 +1824,7 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-6
+- id: text:look.look-in-mochila-4
   kind: look
   title: look in mochila
   body: |-
@@ -1905,7 +1837,7 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-7
+- id: text:look.look-in-mochila-5
   kind: look
   title: look in mochila
   body: |-
@@ -1920,31 +1852,10 @@
   kind: look
   title: look in corpo
   body: |-
-    Mestra Tsythia sussurrou para você 'Lembre-se de ler seu Guia do Aventureiro, digitando LOOK GUIA.'
     Mestra Tsythia anotou alguma coisa em um velho diário de classe.
     Depositados sobre o corpo de Halbarion, você vê:
   rooms:
   - room:academia.a-academia-de-aventureiros
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.look-in-mochila-8
-  kind: look
-  title: look in mochila
-  body: |-
-    Zurg falou 'Bem que alguém poderia caçar uns coelhos no bosque para mim... eu até pagaria por isso.'
-    A mochila dos aventureiros de Halbarion contém:
-  rooms:
-  - room:academia.o-refeitorio
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.look-guia-2
-  kind: look
-  title: look guia
-  body: Mestre Toric disse solenemente 'suah'.
-  rooms:
-  - room:academia.sala-de-cura
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2097,7 +2008,7 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-9
+- id: text:look.look-in-mochila-6
   kind: look
   title: look in mochila
   body: |-
@@ -2109,13 +2020,11 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.look-in-mochila-10
+- id: text:look.look-in-mochila-7
   kind: look
   title: look in mochila
   body: |-
-    === NOVA CONEXÃO 2026-10-21 07:44:22 ===
-    ÿý
-                                                            _a         ,
+    _a         ,
                 0'              _                          _!4       /'
               jP d0            d0                          /        J'
                                                           "
@@ -2188,7 +2097,6 @@
     Escrito por algum antigo mestre da tradição.
     Páginas escritas: 1, 2, 3.
     Digite 'BOOK <livro> READ <página>' para ler uma página do livro.
-    Você não vê nada especial.
   rooms:
   - room:bri.biblioteca.a-ala-leste
   sources:
@@ -2197,9 +2105,7 @@
 - id: text:look.examine-estante-6
   kind: look
   title: examine estante
-  body: |-
-    Você está MORRENDO DE FOME!
-    Decorada por runas, esta pesada estante parece ter sido entalhada há
+  body: Decorada por runas, esta pesada estante parece ter sido entalhada há
   rooms:
   - room:bri.biblioteca.a-ala-oeste
   sources:
@@ -2256,9 +2162,7 @@
 - id: text:look.examine-dori
   kind: look
   title: examine dori
-  body: |-
-    Você está MORRENDO DE FOME!
-    Dori é um dos doze anões, companheiros fiéis de Thorin Escudo de
+  body: Dori é um dos doze anões, companheiros fiéis de Thorin Escudo de
   rooms:
   - room:bri.ponei.o-ponei-saltitante
   sources:
@@ -2299,9 +2203,6 @@
     <empunhando>      uma espada longa
     <nas pernas>      uma calça de couro
     <nos pés>         as botas pretas
-    O Guardião do Norte sussurrou para você 'Perdido? Para voltar à Academia de Aventureiros, vá até a Praça de Bri, logo ao sul daqui. A partir de lá, siga três vezes para o leste, e a Academia estará ao sul.'
-    O Guardião do Norte sussurrou para você 'Caso esteja com fome, pode buscar alimentos na Rua do Mercado. Vá duas vezes ao sul da Praça de Bri, e a seção de alimentos fica a leste de lá, na parte norte da Rua do Mercado: há o Açougue, a Padaria e a tenda de Laticínios.'
-    O Guardião do Norte sussurrou para você 'Caso precise de algo mais, diga 'preciso de ajuda' para mim.'
   rooms:
   - room:bri.avenida-zenite
   sources:
@@ -2326,7 +2227,6 @@
     <segurando>       a chave do portão norte de Bri
     <nas pernas>      as perneiras de malha
     <nos pés>         as botas pretas
-    O guarda sussurrou para você 'Saudações! Caso precise de ajuda, basta dizer 'preciso de ajuda' a mim.'
   rooms:
   - room:bri.dentro-do-portao-norte
   sources:
@@ -2353,7 +2253,6 @@
     <segurando>       a chave do portão norte de Bri
     <nas pernas>      as perneiras de malha
     <nos pés>         as botas pretas
-    O guarda sussurrou para você 'Saudações! Caso precise de ajuda, basta dizer 'preciso de ajuda' a mim.'
   rooms:
   - room:bri.fora-do-portao-norte
   sources:
@@ -2618,8 +2517,6 @@
     <no corpo>        uma grossa camisa de mangas longas
     <nas pernas>      uma calça de couro fornido
     <nos pés>         leves botas de montaria
-    Vato Nogueira falou 'Posso lhe transportar para Valfenda, Archet, Bri, Estrado e Fosso Branco'
-    (OOC) [OSAY] Vato Nogueira disse 'Pergunte 'como viajar?' para mais informações.'
   rooms:
   - room:bri.a-grande-estrada-leste-8
   sources:
@@ -2634,17 +2531,6 @@
     O mendigo está perfeitamente saudável.
   rooms:
   - room:bri.estrada-do-falcao
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.look-torre
-  kind: look
-  title: look torre
-  body: |-
-    Nauk folheia o Guia do Aventureiro.
-    Você não vê isto aqui.
-  rooms:
-  - room:archet.rua-dos-oficios-3
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2722,6 +2608,18 @@
          Nada.
   rooms:
   - room:academia.sala-de-estudos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-lamparina
+  kind: look
+  title: examine lamparina
+  body: |-
+    Você não vê nada especial.
+    Isto pesa cerca de 300 g.
+    Você nota que isto ainda fornecerá luz por 120 horas.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2928,15 +2826,6 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: text:look.read-cuivienyarna
-  kind: look
-  title: read cuivienyarna
-  body: Este comando não se aplica a objetos.
-  rooms:
-  - room:bri.biblioteca.a-ala-oeste
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
 - id: text:look.look-cuivienyarna
   kind: look
   title: look cuivienyarna
@@ -2945,7 +2834,6 @@
     Escrito por um antigo mestre da sabedoria.
     Páginas escritas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
     Digite 'BOOK <livro> READ <página>' para ler uma página do livro.
-    Você não vê nada especial.
   rooms:
   - room:bri.biblioteca.a-ala-oeste
   sources:
@@ -3109,9 +2997,7 @@
 - id: text:look.look-guarda-3
   kind: look
   title: look guarda
-  body: |-
-    O guarda está perfeitamente saudável.
-    O guarda sussurrou para você 'Saudações! Caso precise de ajuda, basta dizer 'preciso de ajuda' a mim.'
+  body: O guarda está perfeitamente saudável.
   rooms:
   - room:bri.estrada-horizonte
   sources:
@@ -3120,10 +3006,7 @@
 - id: text:look.look-guardia
   kind: look
   title: look guardia
-  body: |-
-    Começa a nevar.
-    Você está com fome.
-    Ela possui longos cabelos, todo trançado em muitas mechas. Algumas soltas,
+  body: Ela possui longos cabelos, todo trançado em muitas mechas. Algumas soltas,
   rooms:
   - room:valfenda.o-bosquepraca
   sources:
@@ -3138,17 +3021,6 @@
     para consumo imediato.
   rooms:
   - room:valfenda.uma-alameda-de-juniperos
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.look-mural-3
-  kind: look
-  title: look mural
-  body: |-
-    Um marimbondo tonto voou do norte.
-    Você não vê nada especial.
-  rooms:
-  - room:valfenda.na-entrada-do-jardim-de-imladris
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3167,15 +3039,6 @@
     Uma simpática tartaruga está perfeitamente saudável.
   rooms:
   - room:valfenda.na-entrada-do-jardim-de-imladris
-  sources:
-  - logs/transcript.log
-  confidence: confirmed
-- id: text:look.read-mural
-  kind: look
-  title: read mural
-  body: Este comando não se aplica a objetos.
-  rooms:
-  - room:valfenda.jardins-ervas-perfumadas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4882,8 +4745,10 @@
       17x  O olho arrancado de um javali gordão está se decompondo aqui.
        9x  O corpo de um bezerro foi abandonado aqui.
        8x  O corpo de um coelho veloz foi abandonado aqui.
+       8x  O pé decepado de um coelho veloz está se decompondo aqui.
        6x  O corpo de uma vespa enorme foi abandonado aqui.
        5x  O corpo de um grande pássaro azul foi abandonado aqui.
+       5x  Uma asa arrancada de um grande pássaro azul está se decompondo aqui.
        5x  O corpo de um grande pássaro azul está envolto em um cheiro nauseabundo.
        5x  O corpo de um coelho veloz está coberto de insetos.
        5x  O corpo de um grande macaco foi abandonado aqui.

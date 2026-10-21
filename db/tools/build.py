@@ -45,6 +45,7 @@ TYPES = {
     # camada bruta, GERADA por db/tools/minerar.py a partir de logs/ (nao editar a mao)
     "room":     {"file": "rooms.yaml",     "required": ["id", "title", "region", "description"], "sources_required": True},
     "text":     {"file": "texts.yaml",     "required": ["id", "kind", "title", "body"],         "sources_required": True},
+    "object":   {"file": "objects.yaml",   "required": ["id", "name", "kind"],                  "sources_required": True},
 }
 
 # campo -> um unico id referenciado (ou None)
@@ -56,6 +57,7 @@ REF_FIELDS = {
     "npc": ["canon"],
     "trade": ["npc", "item"],
     "room": ["region", "location"],
+    "object": ["item"],
 }
 # campo -> lista de ids referenciados
 REF_LIST_FIELDS = {
@@ -67,6 +69,7 @@ REF_LIST_FIELDS = {
     "event": ["refs"],
     "question": ["refs"],
     "text": ["rooms"],
+    "object": ["rooms"],
 }
 
 ENUMS = {
@@ -84,6 +87,7 @@ ENUMS = {
     "event.type": {"milestone", "death", "discovery", "correction", "bug", "buff-expired"},
     "question.kind": {"trigger-unknown", "unexplored", "locked", "contradiction", "mechanic-unclear"},
     "question.status": {"open", "resolved", "abandoned"},
+    "object.kind": {"item", "scenery"},
     "text.kind": {"creation", "help", "look", "shop-list", "speech", "tip", "remains"},
     "*.confidence": {"confirmed", "inferred", "hypothesis", "superseded"},
 }

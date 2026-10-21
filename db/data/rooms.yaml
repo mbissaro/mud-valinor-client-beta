@@ -21,6 +21,8 @@
   - Um guardião de pedra está aqui, ao lado do livro.
   objects:
   - Um grande livro de regras foi colocado sobre um pedestal aqui.
+  links:
+    n: room:academia.iniciantes-e-experientes
   visits: 2
   sources:
   - logs/raw.log:293
@@ -41,6 +43,8 @@
   - n
   mobs:
   - Um guardião de pedra está ajudando os jogadores aqui.
+  links:
+    n: room:academia.a-sala-da-observacao
   visits: 1
   sources:
   - logs/raw.log:440
@@ -63,6 +67,8 @@
   - Um homem está orientando os alunos.
   objects:
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    n: room:academia.a-sala-da-movimentacao
   visits: 9
   sources:
   - logs/raw.log:454
@@ -86,6 +92,9 @@
   - Um hobbit está orientando os alunos.
   objects:
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    e: room:academia.a-sala-da-ajuda
+    s: room:academia.a-sala-da-observacao
   visits: 11
   sources:
   - logs/raw.log:470
@@ -109,6 +118,9 @@
   - Uma anã está orientando os alunos.
   objects:
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    e: room:academia.a-sala-dos-objetos
+    w: room:academia.a-sala-da-movimentacao
   visits: 8
   sources:
   - logs/raw.log:616
@@ -134,6 +146,9 @@
   - Ao lado da janela, jaz uma grande placa.
   - Fileiras de cadeiras ocupam quase metade da sala.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    s: room:academia.a-sala-dos-conteiners
+    w: room:academia.a-sala-da-ajuda
   visits: 8
   sources:
   - logs/raw.log:659
@@ -158,6 +173,9 @@
   objects:
   - Na parede oeste, jaz um armário.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    n: room:academia.a-sala-dos-objetos
+    s: room:academia.a-sala-da-comunicacao
   visits: 7
   sources:
   - logs/raw.log:758
@@ -180,8 +198,11 @@
   mobs:
   - Uma mulher está orientando os alunos.
   objects:
-  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Ao lado da janela, jaz uma placa.
+  - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    n: room:academia.a-sala-dos-conteiners
+    w: room:academia.a-sala-do-auto-conhecimento
   visits: 6
   sources:
   - logs/raw.log:997
@@ -204,8 +225,11 @@
   mobs:
   - Uma elfa está orientando os alunos.
   objects:
-  - (Brilhando) Pendurado no centro da sala, jaz um espelho.
   - Na parede norte, jaz uma grande placa.
+  - (Brilhando) Pendurado no centro da sala, jaz um espelho.
+  links:
+    e: room:academia.a-sala-da-comunicacao
+    w: room:academia.a-sala-da-preparacao
   visits: 6
   sources:
   - logs/raw.log:1110
@@ -229,6 +253,9 @@
   - Um anão está orientando os alunos.
   objects:
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    e: room:academia.a-sala-do-auto-conhecimento
+    u: room:academia.a-sala-das-portas
   visits: 6
   sources:
   - logs/raw.log:1235
@@ -251,8 +278,10 @@
   - '!e'
   - d
   objects:
-  - Fixada na parede, jaz uma bela estante.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede, jaz uma bela estante.
+  links:
+    n: room:academia.a-sala-da-atencao
   visits: 4
   sources:
   - logs/raw.log:1326
@@ -276,8 +305,8 @@
   - '!s'
   - s
   objects:
-  - Fixada na parede, jaz uma bela estante.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede, jaz uma bela estante.
   visits: 4
   sources:
   - logs/raw.log:1383
@@ -301,9 +330,11 @@
   mobs:
   - Uma hobbit está orientando os alunos.
   objects:
-  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Fixada na parede, jaz uma grande placa.
+  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Uma chave metálica jaz largada.
+  links:
+    e: room:academia.a-sala-das-habilidades
   visits: 6
   sources:
   - logs/raw.log:1429
@@ -344,6 +375,8 @@
   objects:
   - Fixada na parede sul, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  links:
+    e: room:academia.fim-do-treinamento
   visits: 4
   sources:
   - logs/raw.log:1598
@@ -364,6 +397,8 @@
   - w
   objects:
   - Um pergaminho está sobre um pedestal. Você sente vontade de lê-lo.
+  links:
+    e: room:academia.o-corredor-silencioso
   visits: 4
   sources:
   - logs/raw.log:1711
@@ -390,6 +425,11 @@
   objects:
   - Um caroço de maçã foi jogado aqui.
   - Um mapa da Academia de Aventureiros foi abandonado aqui.
+  links:
+    d: room:academia.a-academia-de-aventureiros
+    e: room:academia.sala-de-estudos
+    n: room:academia.o-corredor-silencioso-2
+    w: room:academia.a-sala-da-observacao
   visits: 16
   sources:
   - logs/raw.log:1743
@@ -421,6 +461,13 @@
   - A ilustre diretora da Academia de Aventureiros está aqui.
   objects:
   - A fonte de mármore goteja água cristalina.
+  links:
+    d: room:bri.entrada-para-a-academia
+    e: room:academia.deposito-de-armas
+    n: room:academia.um-corredor
+    s: room:bosque.o-amplo-bosque-14
+    u: room:academia.o-corredor-silencioso
+    w: room:academia.deposito-de-armaduras
   visits: 130
   sources:
   - logs/raw.log:1791
@@ -442,6 +489,8 @@
   - A melhor costureira de Arda foi incubida de ajustar as vestes que não cabem mais onde antes cabiam muito bem.
   objects:
   - Fixada na parede, jaz uma bela estante.
+  links:
+    e: room:academia.a-academia-de-aventureiros
   visits: 21
   sources:
   - logs/raw.log:1812
@@ -463,9 +512,11 @@
   - Um cuteleiro examina algumas armas.
   objects:
   - Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
-  - Um tanque foi preenchido com água até sua borda.
   - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
+  - Um tanque foi preenchido com água até sua borda.
   - Fixada na parede, jaz uma bela estante.
+  links:
+    w: room:academia.a-academia-de-aventureiros
   visits: 28
   sources:
   - logs/raw.log:1887
@@ -487,6 +538,11 @@
   - e
   - s
   - w
+  links:
+    e: room:academia.sala-de-treino-de-magias
+    n: room:academia.um-corredor-2
+    s: room:academia.a-academia-de-aventureiros
+    w: room:academia.sala-de-treino-de-pericias
   visits: 70
   sources:
   - logs/raw.log:1930
@@ -503,6 +559,8 @@
   - e
   mobs:
   - Domick, Mestre do Conhecimento, está aqui lendo, aguardando alunos.
+  links:
+    e: room:academia.um-corredor
   visits: 6
   sources:
   - logs/raw.log:1944
@@ -523,6 +581,11 @@
   - e
   - s
   - w
+  links:
+    e: room:academia.sala-de-estudo-de-linguas
+    n: room:academia.um-corredor-3
+    s: room:academia.um-corredor
+    w: room:academia.provisoes-para-jovens-aventureiros
   visits: 96
   sources:
   - logs/raw.log:2039
@@ -543,9 +606,11 @@
   - e
   - s
   - w
-  objects:
-  - Sua elevação espiritual sofre um leve decremento.
-  - Sua poderosa bênção desaparece.
+  links:
+    e: room:academia.o-refeitorio
+    n: room:academia.o-centro-do-jardim
+    s: room:academia.um-corredor-2
+    w: room:academia.sala-de-cura
   visits: 302
   sources:
   - logs/raw.log:2056
@@ -575,6 +640,10 @@
   - Narinë está aqui com sua ENORME mochila cheia de tralhas de todos os tipos!
   objects:
   - Um cabresto rompido foi largado no chão daqui.
+  links:
+    e: room:academia.um-corredor-3
+    n: room:bosque.o-amplo-bosque
+    s: room:academia.um-corredor-3
   visits: 261
   sources:
   - logs/raw.log:2079
@@ -611,9 +680,11 @@
   - Um filhote de urso está perdido.
   - Uma cobra gigantesca rasteja lentamente.
   - Uma vespa enorme voa em sua direção.
-  objects:
-  - O pé decepado de um coelho veloz está se decompondo aqui.
-  - Uma asa arrancada de um grande pássaro azul está se decompondo aqui.
+  links:
+    e: room:bosque.o-amplo-bosque-3
+    n: room:bosque.o-amplo-bosque-2
+    s: room:academia.o-centro-do-jardim
+    w: room:bosque.o-amplo-bosque-3
   visits: 980
   sources:
   - logs/raw.log:2094
@@ -655,6 +726,15 @@
   - Uma cobra gigantesca rasteja lentamente.
   - Um bezerro assustado perdeu-se por aqui.
   - Uma vespa enorme voa em sua direção.
+  links:
+    e: room:bosque.o-amplo-bosque-6
+    n: room:bosque.o-amplo-bosque-16
+    ne: room:bosque.o-amplo-bosque-21
+    nw: room:bosque.o-amplo-bosque-13
+    s: room:bosque.o-amplo-bosque-3
+    se: room:bosque.o-amplo-bosque-9
+    sw: room:bosque.o-amplo-bosque-8
+    w: room:bosque.o-amplo-bosque-5
   visits: 304
   sources:
   - logs/raw.log:2147
@@ -675,11 +755,13 @@
   exits:
   - e
   mobs:
-  - Um Mestre da Cura está aqui, cuidando dos alunos.
   - Mestre Toric brilha sob uma aura branca.
+  - Um Mestre da Cura está aqui, cuidando dos alunos.
   objects:
   - A fonte de mármore goteja água cristalina.
   - Vários leitos estão organizados em fileiras.
+  links:
+    e: room:academia.um-corredor-3
   visits: 139
   sources:
   - logs/raw.log:2205
@@ -712,6 +794,10 @@
   - Um filhote de urso está perdido.
   - Um bezerro assustado perdeu-se por aqui.
   - Uma vespa enorme voa em sua direção.
+  links:
+    e: room:bosque.o-amplo-bosque
+    n: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque
   visits: 824
   sources:
   - logs/raw.log:2301
@@ -747,6 +833,13 @@
   - Uma vespa enorme voa em sua direção.
   - Um felino ágil fareja algo.
   - Um bezerro assustado perdeu-se por aqui.
+  links:
+    e: room:bosque.o-amplo-bosque-3
+    n: room:bosque.o-amplo-bosque-2
+    nw: room:bosque.o-amplo-bosque-2
+    s: room:bosque.o-amplo-bosque-21
+    sw: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-2
   visits: 37
   sources:
   - logs/raw.log:2358
@@ -781,6 +874,11 @@
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um felino ágil fareja algo.
   - Uma vespa enorme voa em sua direção.
+  links:
+    e: room:bosque.o-amplo-bosque-2
+    n: room:bosque.o-amplo-bosque-2
+    s: room:bosque.o-amplo-bosque-7
+    w: room:bosque.o-amplo-bosque-3
   visits: 57
   sources:
   - logs/raw.log:2572
@@ -814,6 +912,11 @@
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um felino ágil fareja algo.
   - Uma vespa enorme voa em sua direção.
+  links:
+    n: room:bosque.o-amplo-bosque-18
+    s: room:bosque.o-amplo-bosque-18
+    sw: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-2
   visits: 41
   sources:
   - logs/raw.log:2614
@@ -832,6 +935,8 @@
   - e
   mobs:
   - Um homem está aqui, vendendo equipamento para aventureiros.
+  links:
+    e: room:academia.um-corredor-2
   visits: 26
   sources:
   - logs/raw.log:2964
@@ -854,6 +959,8 @@
   objects:
   - A fonte de mármore goteja água cristalina.
   - Um grande fogão a lenha ocupa a parede norte.
+  links:
+    w: room:academia.um-corredor-3
   visits: 19
   sources:
   - logs/raw.log:4723
@@ -888,6 +995,12 @@
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um bezerro assustado perdeu-se por aqui.
   - Um grande macaco imita seus movimentos.
+  links:
+    e: room:bosque.o-amplo-bosque-2
+    n: room:bosque.o-amplo-bosque-5
+    ne: room:bosque.o-amplo-bosque-2
+    s: room:bosque.o-amplo-bosque-23
+    se: room:bosque.o-amplo-bosque-2
   visits: 74
   sources:
   - logs/raw.log:17759
@@ -926,6 +1039,13 @@
   - Uma vespa enorme voa em sua direção.
   - Um grande macaco imita seus movimentos.
   - Um bezerro assustado perdeu-se por aqui.
+  links:
+    e: room:bosque.o-amplo-bosque-9
+    n: room:bosque.o-amplo-bosque-2
+    ne: room:bosque.o-amplo-bosque-2
+    nw: room:bosque.o-amplo-bosque-2
+    s: room:bosque.a-gruta-profunda
+    w: room:bosque.o-amplo-bosque-9
   visits: 38
   sources:
   - logs/raw.log:18245
@@ -950,6 +1070,8 @@
   - n
   mobs:
   - Uma anã está orientando os aprendizes.
+  links:
+    n: room:bosque.o-amplo-bosque-8
   visits: 5
   sources:
   - logs/raw.log:18264
@@ -981,6 +1103,10 @@
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
   - Uma cobra gigantesca rasteja lentamente.
+  links:
+    e: room:bosque.o-amplo-bosque-8
+    n: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-8
   visits: 21
   sources:
   - logs/raw.log:18314
@@ -1011,6 +1137,9 @@
   - Um felino ágil fareja algo.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um lobo sorrateiro está procurando sua matilha.
+  links:
+    e: room:bosque.o-amplo-bosque-11
+    w: room:bosque.o-amplo-bosque-8
   visits: 12
   sources:
   - logs/raw.log:18388
@@ -1036,6 +1165,8 @@
   - Uma cobra gigantesca rasteja lentamente.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
+  links:
+    w: room:bosque.o-amplo-bosque-10
   visits: 3
   sources:
   - logs/raw.log:18405
@@ -1059,6 +1190,10 @@
   mobs:
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  links:
+    e: room:bosque.o-amplo-bosque-10
+    n: room:bosque.o-amplo-bosque-13
+    ne: room:bosque.o-amplo-bosque-2
   visits: 4
   sources:
   - logs/raw.log:18523
@@ -1092,6 +1227,11 @@
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
   - Um bezerro assustado perdeu-se por aqui.
+  links:
+    e: room:bosque.o-amplo-bosque-2
+    n: room:bosque.o-amplo-bosque-25
+    s: room:bosque.o-amplo-bosque-12
+    se: room:bosque.o-amplo-bosque-2
   visits: 18
   sources:
   - logs/raw.log:18540
@@ -1129,6 +1269,8 @@
   - Uma cobra gigantesca rasteja lentamente.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Uma vespa enorme voa em sua direção.
+  links:
+    n: room:academia.a-academia-de-aventureiros
   visits: 9
   sources:
   - logs/raw.log:18879
@@ -1197,6 +1339,10 @@
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
+  links:
+    e: room:bosque.o-amplo-bosque-17
+    s: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-17
   visits: 23
   sources:
   - logs/raw.log:28644
@@ -1228,6 +1374,10 @@
   - Um lobo sorrateiro está procurando sua matilha.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um grande macaco imita seus movimentos.
+  links:
+    e: room:bosque.o-amplo-bosque-19
+    s: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-15
   visits: 34
   sources:
   - logs/raw.log:35141
@@ -1255,6 +1405,10 @@
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um lobo sorrateiro está procurando sua matilha.
   - Um filhote de urso está perdido.
+  links:
+    e: room:bosque.o-amplo-bosque-15
+    s: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-15
   visits: 38
   sources:
   - logs/raw.log:35169
@@ -1279,13 +1433,18 @@
   - nw
   - sw
   mobs:
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Uma cobra gigantesca rasteja lentamente.
+  - Um lobo sorrateiro está procurando sua matilha.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um felino ágil fareja algo.
   - Um grande macaco imita seus movimentos.
   - Um filhote de urso está perdido.
+  links:
+    e: room:bosque.a-trilha-de-pedras-claras
+    n: room:bosque.o-amplo-bosque-6
+    s: room:bosque.o-amplo-bosque-6
+    sw: room:bosque.o-amplo-bosque-2
   visits: 5
   sources:
   - logs/raw.log:35612
@@ -1305,6 +1464,8 @@
   exits:
   - e
   - w
+  links:
+    w: room:bosque.o-amplo-bosque-18
   visits: 1
   sources:
   - logs/raw.log:35633
@@ -1329,6 +1490,9 @@
   - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um filhote de urso está perdido.
   - Um lobo sorrateiro está procurando sua matilha.
+  links:
+    s: room:bosque.o-amplo-bosque-6
+    w: room:bosque.o-amplo-bosque-16
   visits: 3
   sources:
   - logs/raw.log:35768
@@ -1355,13 +1519,17 @@
   - sw
   mobs:
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Uma cobra gigantesca rasteja lentamente.
   - Um felino ágil fareja algo.
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um lobo sorrateiro está procurando sua matilha.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Uma vespa enorme voa em sua direção.
   - Um filhote de urso está perdido.
+  links:
+    e: room:bosque.o-amplo-bosque-24
+    n: room:bosque.o-amplo-bosque-21
+    se: room:bosque.o-amplo-bosque-2
   visits: 9
   sources:
   - logs/raw.log:36051
@@ -1395,6 +1563,12 @@
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Uma vespa enorme voa em sua direção.
+  links:
+    n: room:bosque.o-amplo-bosque-4
+    nw: room:bosque.o-amplo-bosque-2
+    s: room:bosque.o-amplo-bosque-20
+    sw: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-2
   visits: 36
   sources:
   - logs/raw.log:36178
@@ -1419,8 +1593,10 @@
   - sw
   mobs:
   - Uma cobra gigantesca rasteja lentamente.
-  - Um felino ágil fareja algo.
   - Um filhote de urso está perdido.
+  - Um felino ágil fareja algo.
+  links:
+    e: room:bosque.o-amplo-bosque-15
   visits: 2
   sources:
   - logs/raw.log:36319
@@ -1454,6 +1630,10 @@
   - Um bezerro assustado perdeu-se por aqui.
   - Um filhote de urso está perdido.
   - Um lobo sorrateiro está procurando sua matilha.
+  links:
+    n: room:bosque.o-amplo-bosque-7
+    sw: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-24
   visits: 11
   sources:
   - logs/raw.log:36852
@@ -1477,15 +1657,21 @@
   - se
   - sw
   mobs:
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um lobo sorrateiro está procurando sua matilha.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
-  - Um filhote de urso está perdido.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Um filhote de urso está perdido.
   - Um felino ágil fareja algo.
+  links:
+    e: room:bosque.o-amplo-bosque-23
+    s: room:bosque.o-amplo-bosque-2
+    se: room:bosque.o-amplo-bosque-2
+    sw: room:bosque.o-amplo-bosque-2
+    w: room:bosque.o-amplo-bosque-14
   visits: 11
   sources:
   - logs/raw.log:37066
@@ -1512,8 +1698,11 @@
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um filhote de urso está perdido.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um bezerro assustado perdeu-se por aqui.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
+  links:
+    s: room:bosque.o-amplo-bosque-13
+    se: room:bosque.o-amplo-bosque-2
   visits: 3
   sources:
   - logs/raw.log:37294
@@ -1532,6 +1721,8 @@
     permite seguir por um corredor ao norte.
   exits:
   - n
+  links:
+    n: room:saloes-espera.os-saloes-de-espera-2
   visits: 4
   sources:
   - logs/raw.log:43037
@@ -1549,6 +1740,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:saloes-espera.os-saloes-de-espera-3
+    s: room:saloes-espera.os-saloes-de-espera
   visits: 6
   sources:
   - logs/raw.log:43049
@@ -1572,6 +1766,9 @@
   mobs:
   - Estë, a Senhora da Renovação, está aqui.
   - Estë brilha sob uma aura branca.
+  links:
+    n: room:saloes-espera.os-saloes-de-espera-4
+    s: room:saloes-espera.os-saloes-de-espera-2
   visits: 5
   sources:
   - logs/raw.log:43072
@@ -1593,10 +1790,12 @@
   exits:
   - s
   mobs:
-  - Vairë brilha sob uma aura branca.
   - Námo brilha sob uma aura branca.
-  - Vairë, a Senhora do Tempo, está aqui, escrevendo seus Registros.
+  - Vairë brilha sob uma aura branca.
   - Námo, o Senhor de Mandos, está aqui, te observando.
+  - Vairë, a Senhora do Tempo, está aqui, escrevendo seus Registros.
+  links:
+    s: room:saloes-espera.os-saloes-de-espera-3
   visits: 5
   sources:
   - logs/raw.log:43094
@@ -1641,6 +1840,8 @@
   - '!s'
   mobs:
   - Um homem está orientando os aprendizes.
+  links:
+    s: room:bosque.a-academia-de-combate
   visits: 1
   sources:
   - logs/raw.log:50056
@@ -1661,6 +1862,8 @@
   - n
   mobs:
   - Um elfo está orientando os aprendizes.
+  links:
+    n: room:bosque.o-amplo-bosque-8
   visits: 3
   sources:
   - logs/raw.log:50358
@@ -1702,6 +1905,8 @@
   - w
   mobs:
   - Abbigalye espera pelos seus alunos aqui.
+  links:
+    w: room:academia.um-corredor-2
   visits: 2
   sources:
   - logs/raw.log:57882
@@ -1720,6 +1925,8 @@
   - w
   mobs:
   - O mago Herenvardo está aqui, aguardando alunos.
+  links:
+    w: room:academia.um-corredor
   visits: 3
   sources:
   - logs/raw.log:58090
@@ -1739,8 +1946,10 @@
   exits:
   - w
   objects:
-  - Fixada na parede, jaz uma bela estante.
   - Há um grande mural aqui, coberto de folhas de papel.
+  - Fixada na parede, jaz uma bela estante.
+  links:
+    w: room:academia.o-corredor-silencioso
   visits: 3
   sources:
   - logs/raw.log:59396
@@ -1757,6 +1966,9 @@
   exits:
   - n
   - u
+  links:
+    n: room:bri.estrada-horizonte
+    u: room:academia.a-academia-de-aventureiros
   visits: 21
   sources:
   - logs/raw.log:65683
@@ -1781,6 +1993,11 @@
   - Um guarda está em pé aqui, cuidando dos arredores.
   - Um guarda está patrulhando aqui.
   - Um cão abandonado fareja algo ao longo da rua.
+  links:
+    e: room:bri.intersecao-da-estrada-horizonte-com-a-rua-da-agu
+    n: room:bri.biblioteca.em-frente-a-biblioteca-de-bri
+    s: room:bri.entrada-para-a-academia
+    w: room:bri.estrada-horizonte-2
   visits: 26
   sources:
   - logs/raw.log:65693
@@ -1799,6 +2016,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
+    s: room:bri.estrada-horizonte
   visits: 8
   sources:
   - logs/raw.log:65713
@@ -1822,6 +2042,11 @@
   exits_variants:
   - n !e s w
   - n e s w
+  links:
+    e: room:bri.biblioteca.o-escritorio-do-copista
+    n: room:bri.biblioteca.a-antecamara-da-biblioteca
+    s: room:bri.biblioteca.em-frente-a-biblioteca-de-bri
+    w: room:bri.biblioteca.uma-sala-reservada
   visits: 9
   sources:
   - logs/raw.log:65722
@@ -1841,6 +2066,9 @@
   - e
   - s
   - w
+  links:
+    n: room:bri.biblioteca.a-nave-principal-da-biblioteca
+    s: room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
   visits: 4
   sources:
   - logs/raw.log:65730
@@ -1860,6 +2088,10 @@
   - e
   - s
   - w
+  links:
+    e: room:bri.biblioteca.a-ala-leste
+    s: room:bri.biblioteca.a-antecamara-da-biblioteca
+    w: room:bri.biblioteca.a-ala-oeste
   visits: 5
   sources:
   - logs/raw.log:65742
@@ -1880,6 +2112,8 @@
   - w
   objects:
   - Há uma pesada estante de livros aqui.
+  links:
+    w: room:bri.biblioteca.a-nave-principal-da-biblioteca
   visits: 1
   sources:
   - logs/raw.log:65753
@@ -1899,6 +2133,8 @@
   objects:
   - Há uma pesada estante de livros aqui.
   - Um caroço de maçã foi jogado aqui.
+  links:
+    e: room:bri.biblioteca.a-nave-principal-da-biblioteca
   visits: 3
   sources:
   - logs/raw.log:65818
@@ -1918,6 +2154,9 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.estrada-horizonte
+    w: room:bri.estrada-horizonte-3
   visits: 18
   sources:
   - logs/raw.log:66236
@@ -1935,6 +2174,9 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.estrada-horizonte-2
+    w: room:bri.a-praca-de-bri
   visits: 21
   sources:
   - logs/raw.log:66248
@@ -1959,12 +2201,18 @@
   - ne
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Em frente à fonte há dois bancos de pedra.
   - Há uma fonte de mármore aqui, gotejando água cristalina.
+  - Em frente à fonte há dois bancos de pedra.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.estrada-horizonte-3
+    n: room:bri.avenida-zenite
+    ne: room:bri.colina.um-caminho-arborizado
+    s: room:bri.a-grande-estrada-leste
+    w: room:bri.a-grande-estrada-leste-7
   visits: 49
   sources:
   - logs/raw.log:66263
@@ -1989,11 +2237,16 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - Há um cesto para lixo aqui.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.ponei.o-patio-do-ponei-saltitante
+    n: room:bri.a-praca-de-bri
+    s: room:bri.a-grande-estrada-leste-2
+    w: room:bri.a-casa-mathom
   visits: 40
   sources:
   - logs/raw.log:66292
@@ -2017,6 +2270,9 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.ponei.a-entrada-da-hospedaria-ponei-saltitante
+    w: room:bri.a-grande-estrada-leste
   visits: 15
   sources:
   - logs/raw.log:66308
@@ -2042,6 +2298,10 @@
   - O Sr. Carrapicho está aqui, esbanjando seu sorriso.
   - Um bardo afina calmamente as cordas de seu banjo.
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.ponei.o-ponei-saltitante
+    s: room:bri.ponei.o-patio-do-ponei-saltitante
+    u: room:bri.ponei.um-corredor-vazio
   visits: 9
   sources:
   - logs/raw.log:66322
@@ -2064,12 +2324,15 @@
   - e
   - s
   mobs:
-  - Nob está aqui, misturando bebidas atrás do balcão.
   - Um homem tranqüilo está aqui, embaralhando algumas cartas.
   - Um gato preto está aqui descansando.
+  - Nob está aqui, misturando bebidas atrás do balcão.
   - Dori está aqui, sentado sobre um banco.
   objects:
   - Há várias mesas com bancos aqui.
+  links:
+    e: room:academia.a-sala-de-estar-do-ponei-saltitante
+    s: room:bri.ponei.a-entrada-da-hospedaria-ponei-saltitante
   visits: 5
   sources:
   - logs/raw.log:66338
@@ -2086,11 +2349,15 @@
   - s
   - u
   mobs:
-  - O Guardião do Norte está sob uma estranha mistura de luz e sombras.
   - Um obscuro homem do norte está aqui.
+  - O Guardião do Norte está sob uma estranha mistura de luz e sombras.
   - Um velho homem está caminhando por aqui.
   objects:
   - Uma majestosa macieira cresce aqui.
+  links:
+    n: room:bri.avenida-zenite-2
+    s: room:bri.a-praca-de-bri
+    u: room:bri.no-alto-da-macieira
   visits: 19
   sources:
   - logs/raw.log:66469
@@ -2114,6 +2381,10 @@
   objects:
   - Há um cesto para lixo aqui.
   - Um caroço de maçã foi jogado aqui.
+  links:
+    e: room:bri.comercio-de-ervas
+    n: room:bri.avenida-zenite-3
+    s: room:bri.avenida-zenite
   visits: 19
   sources:
   - logs/raw.log:66501
@@ -2134,6 +2405,10 @@
   mobs:
   - Um velho homem está caminhando por aqui.
   - Um hobbit parece estar perdido por aqui.
+  links:
+    e: room:bri.na-praca-das-flores
+    n: room:bri.cruzamento-da-avenida-zenite-com-a-estrada-da-ju
+    s: room:bri.avenida-zenite-2
   visits: 15
   sources:
   - logs/raw.log:66508
@@ -2154,6 +2429,10 @@
   - w
   mobs:
   - Um velho homem está caminhando por aqui.
+  links:
+    n: room:bri.dentro-do-portao-norte
+    s: room:bri.avenida-zenite-3
+    w: room:bri.estrada-da-justica-3
   visits: 14
   sources:
   - logs/raw.log:66515
@@ -2176,6 +2455,10 @@
   - Um guarda toma conta do portão norte.
   - Um velho homem está caminhando por aqui.
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.fora-do-portao-norte
+    nw: room:bri.a-guarita-do-portao-sul
+    s: room:bri.cruzamento-da-avenida-zenite-com-a-estrada-da-ju
   visits: 13
   sources:
   - logs/raw.log:66520
@@ -2191,6 +2474,9 @@
   - s
   mobs:
   - Um guarda vigia a parte externa do portão.
+  links:
+    n: room:bri.sobre-um-passadico
+    s: room:bri.dentro-do-portao-norte
   visits: 9
   sources:
   - logs/raw.log:66767
@@ -2204,6 +2490,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.ao-redor-de-bri
+    s: room:bri.fora-do-portao-norte
   visits: 7
   sources:
   - logs/raw.log:66816
@@ -2225,6 +2514,10 @@
   - sw
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    nw: room:bri.uma-trilha-ao-norte-de-bri
+    s: room:bri.sobre-um-passadico
+    sw: room:bri.numa-trilha
   visits: 9
   sources:
   - logs/raw.log:66824
@@ -2244,6 +2537,9 @@
   - se
   mobs:
   - Um velho homem está caminhando por aqui.
+  links:
+    nw: room:bri.uma-trilha-ao-norte-de-bri-2
+    se: room:bri.ao-redor-de-bri
   visits: 9
   sources:
   - logs/raw.log:66840
@@ -2260,6 +2556,9 @@
   exits:
   - nw
   - se
+  links:
+    nw: room:bri.uma-trilha-perto-de-bri
+    se: room:bri.uma-trilha-ao-norte-de-bri
   visits: 7
   sources:
   - logs/raw.log:66855
@@ -2278,8 +2577,12 @@
   - nw
   - se
   mobs:
-  - Um velho homem está caminhando por aqui.
   - Uma criança transborda de alegria, cantarolando aqui.
+  - Um velho homem está caminhando por aqui.
+  links:
+    n: room:bri.uma-trilha
+    nw: room:eriador.estrada-norte.a-velha-estrada-norte
+    se: room:bri.uma-trilha-ao-norte-de-bri-2
   visits: 8
   sources:
   - logs/raw.log:66862
@@ -2295,6 +2598,8 @@
   exits:
   - ne
   - sw
+  links:
+    ne: room:bri.ao-redor-de-bri
   visits: 2
   sources:
   - logs/raw.log:66923
@@ -2318,10 +2623,15 @@
   - O cão abandonado está dormindo aqui.
   - Um velho homem está caminhando por aqui.
   - Um cão abandonado fareja algo ao longo da rua.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.mercado.rua-do-mercado
+    n: room:bri.a-grande-estrada-leste
+    s: room:bri.a-grande-estrada-leste-3
+    w: room:bri.mercado.rua-do-mercado-3
   visits: 30
   sources:
   - logs/raw.log:67049
@@ -2339,6 +2649,11 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.mercado.rua-do-mercado-2
+    n: room:bri.mercado.o-acougue
+    s: room:bri.mercado.a-oficina-do-ferreiro
+    w: room:bri.a-grande-estrada-leste-2
   visits: 12
   sources:
   - logs/raw.log:67059
@@ -2353,6 +2668,8 @@
   - s
   mobs:
   - O açougueiro cumprimenta você.
+  links:
+    s: room:bri.mercado.rua-do-mercado
   visits: 1
   sources:
   - logs/raw.log:67066
@@ -2376,6 +2693,11 @@
   - Um guarda está patrulhando aqui.
   objects:
   - Há um cesto para lixo aqui.
+  links:
+    e: room:bri.mercado.rua-do-mercado-4
+    n: room:bri.mercado.a-padaria-de-bri
+    s: room:bri.mercado.armorial
+    w: room:bri.mercado.rua-do-mercado
   visits: 6
   sources:
   - logs/raw.log:67086
@@ -2391,6 +2713,8 @@
   - O padeiro está aqui preparando mais uma fornada de pães.
   objects:
   - Um belo balcão verde está aqui rodeado de banquinhos.
+  links:
+    s: room:bri.mercado.rua-do-mercado-2
   visits: 1
   sources:
   - logs/raw.log:67115
@@ -2406,6 +2730,8 @@
   mobs:
   - Um guarda está patrulhando aqui.
   - A armeira está bastante ocupada, lustrando seu capacete.
+  links:
+    n: room:bri.mercado.rua-do-mercado-2
   visits: 1
   sources:
   - logs/raw.log:67151
@@ -2422,6 +2748,8 @@
   - O ferreiro está aqui, brincando com seu martelo.
   objects:
   - Uma forja está ardendo em chamas no canto da sala.
+  links:
+    n: room:bri.mercado.rua-do-mercado
   visits: 1
   sources:
   - logs/raw.log:67185
@@ -2440,10 +2768,13 @@
   mobs:
   - Um guarda está patrulhando aqui.
   - Um velho homem está caminhando por aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:bri.a-grande-estrada-leste-2
+    s: room:bri.a-grande-estrada-leste-4
   visits: 16
   sources:
   - logs/raw.log:67220
@@ -2462,10 +2793,15 @@
   mobs:
   - Um velho homem está caminhando por aqui.
   - Um guarda está patrulhando aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.lei.avenida-da-lei-3
+    n: room:bri.a-grande-estrada-leste-3
+    s: room:bri.dentro-do-portao-sul
+    w: room:bri.lei.avenida-da-lei-4
   visits: 20
   sources:
   - logs/raw.log:67229
@@ -2484,10 +2820,14 @@
   mobs:
   - Um guarda da vila permanece a postos.
   - Um guarda está patrulhando aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:bri.a-grande-estrada-leste-4
+    s: room:bri.fora-do-portao-sul
+    sw: room:bri.a-guarita-do-portao-sul
   visits: 19
   sources:
   - logs/raw.log:67234
@@ -2504,6 +2844,8 @@
   - ne
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    ne: room:bri.dentro-do-portao-sul
   visits: 2
   sources:
   - logs/raw.log:67283
@@ -2526,10 +2868,14 @@
   - n s d
   mobs:
   - Um guarda se mantém vigilante aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    d: room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
+    n: room:bri.dentro-do-portao-sul
+    s: room:bri.sobre-um-passadico-3
   visits: 14
   sources:
   - logs/raw.log:67298
@@ -2553,6 +2899,11 @@
   mobs:
   - Um guarda está patrulhando aqui.
   - Um hobbit parece estar perdido por aqui.
+  links:
+    e: room:bri.a-grande-estrada-leste-2
+    n: room:bri.mercado.loja-de-utilidades
+    s: room:bri.mercado.penas-e-papeis
+    w: room:bri.mercado.rua-do-mercado-5
   visits: 10
   sources:
   - logs/raw.log:67361
@@ -2570,8 +2921,10 @@
   - s
   mobs:
   - O comerciante está em pé aqui.
-  - Um velho homem está caminhando por aqui.
   - Um guarda está patrulhando aqui.
+  - Um velho homem está caminhando por aqui.
+  links:
+    s: room:bri.mercado.rua-do-mercado-3
   visits: 2
   sources:
   - logs/raw.log:67369
@@ -2588,6 +2941,9 @@
   mobs:
   - Um homem magro está sentado atrás de uma pilha de papel.
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.mercado.rua-do-mercado-3
+    w: room:bri.mercado.o-correio-de-bri
   visits: 4
   sources:
   - logs/raw.log:67389
@@ -2603,10 +2959,12 @@
   - n
   - e
   mobs:
-  - Um curioso passarinho azul caminha aqui.
   - Entre as fileiras de armários, um carteiro despreocupado arruma uma coisa ou outra pela sala.
+  - Um curioso passarinho azul caminha aqui.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
+  links:
+    e: room:bri.mercado.penas-e-papeis
   visits: 2
   sources:
   - logs/raw.log:67400
@@ -2629,6 +2987,11 @@
   mobs:
   - Kheodred, o herói das guerras, caminha por aqui em viagem.
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.aguia.intersecao-da-rua-do-mercado-com-a-rua-da-aguia
+    n: room:bri.mercado.a-loja-de-laticinios
+    s: room:bri.mercado.a-loja-de-armamentos
+    w: room:bri.mercado.rua-do-mercado-2
   visits: 7
   sources:
   - logs/raw.log:67475
@@ -2646,8 +3009,10 @@
   exits:
   - n
   mobs:
-  - O vendedor de armas trabalha uma longa lâmina.
   - Um guarda está patrulhando aqui.
+  - O vendedor de armas trabalha uma longa lâmina.
+  links:
+    n: room:bri.mercado.rua-do-mercado-4
   visits: 1
   sources:
   - logs/raw.log:67529
@@ -2663,6 +3028,8 @@
   mobs:
   - Uma jovem garota sorri ao lhe ver.
   - Um guarda está patrulhando aqui.
+  links:
+    s: room:bri.mercado.rua-do-mercado-4
   visits: 2
   sources:
   - logs/raw.log:67555
@@ -2682,6 +3049,10 @@
   - w
   mobs:
   - Um cão abandonado fareja algo ao longo da rua.
+  links:
+    n: room:bri.aguia.rua-da-aguia
+    s: room:bri.aguia.rua-da-aguia-5
+    w: room:bri.mercado.rua-do-mercado-4
   visits: 6
   sources:
   - logs/raw.log:67581
@@ -2699,6 +3070,9 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.intersecao-da-estrada-horizonte-com-a-rua-da-agu
+    s: room:bri.aguia.intersecao-da-rua-do-mercado-com-a-rua-da-aguia
   visits: 4
   sources:
   - logs/raw.log:67587
@@ -2718,6 +3092,10 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.aguia.rua-da-aguia-2
+    s: room:bri.aguia.rua-da-aguia
+    w: room:bri.estrada-horizonte
   visits: 7
   sources:
   - logs/raw.log:67594
@@ -2733,6 +3111,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.aguia.rua-da-aguia-3
+    s: room:bri.intersecao-da-estrada-horizonte-com-a-rua-da-agu
   visits: 2
   sources:
   - logs/raw.log:67600
@@ -2750,6 +3131,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.aguia.rua-da-aguia-4
+    s: room:bri.aguia.rua-da-aguia-2
   visits: 2
   sources:
   - logs/raw.log:67608
@@ -2767,6 +3151,9 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.aguia.encontro-da-rua-da-aguia-com-a-estrada-da-justic
+    s: room:bri.aguia.rua-da-aguia-3
   visits: 2
   sources:
   - logs/raw.log:67616
@@ -2780,8 +3167,10 @@
   - s
   - w
   mobs:
-  - O cão abandonado está dormindo aqui.
   - Um guarda está patrulhando aqui.
+  - O cão abandonado está dormindo aqui.
+  links:
+    s: room:bri.aguia.rua-da-aguia-4
   visits: 1
   sources:
   - logs/raw.log:67622
@@ -2804,6 +3193,9 @@
   - Um cão abandonado fareja algo ao longo da rua.
   objects:
   - Dois bancos de pedra foram colocados aqui.
+  links:
+    n: room:bri.aguia.intersecao-da-rua-do-mercado-com-a-rua-da-aguia
+    s: room:bri.aguia.encontro-da-rua-da-aguia-com-a-avenida-da-lei
   visits: 4
   sources:
   - logs/raw.log:67679
@@ -2820,6 +3212,9 @@
   exits:
   - n
   - w
+  links:
+    n: room:bri.aguia.rua-da-aguia-5
+    w: room:bri.lei.avenida-da-lei
   visits: 4
   sources:
   - logs/raw.log:67688
@@ -2840,6 +3235,10 @@
   - w
   mobs:
   - O cão abandonado está dormindo aqui.
+  links:
+    e: room:bri.aguia.encontro-da-rua-da-aguia-com-a-avenida-da-lei
+    n: room:bri.lei.mascotes-e-montarias
+    w: room:bri.lei.avenida-da-lei-2
   visits: 7
   sources:
   - logs/raw.log:67702
@@ -2857,6 +3256,8 @@
   - s
   mobs:
   - O peão de estábulo toma conta de seus animais.
+  links:
+    s: room:bri.lei.avenida-da-lei
   visits: 1
   sources:
   - logs/raw.log:67709
@@ -2878,6 +3279,9 @@
   mobs:
   - Uma mulher cuida da casa e das crianças.
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.lei.avenida-da-lei
+    w: room:bri.lei.avenida-da-lei-3
   visits: 3
   sources:
   - logs/raw.log:67736
@@ -2891,6 +3295,9 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.lei.avenida-da-lei-2
+    w: room:bri.a-grande-estrada-leste-4
   visits: 3
   sources:
   - logs/raw.log:67749
@@ -2907,6 +3314,8 @@
   - '!n'
   - e
   - w
+  links:
+    w: room:bri.lei.avenida-da-lei-5
   visits: 2
   sources:
   - logs/raw.log:67776
@@ -2927,6 +3336,9 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.lei.a-alfaiataria-do-annir
+    w: room:bri.lei.avenida-da-lei-6
   visits: 3
   sources:
   - logs/raw.log:67786
@@ -2942,6 +3354,8 @@
   - s
   mobs:
   - Annir conserta uma blusa enquanto observa o movimento da loja.
+  links:
+    s: room:bri.lei.avenida-da-lei-5
   visits: 1
   sources:
   - logs/raw.log:67797
@@ -2960,6 +3374,8 @@
   - '!n'
   - e
   - w
+  links:
+    w: room:bri.lei.encontro-da-estrada-do-falcao-com-a-avenida-da-l
   visits: 2
   sources:
   - logs/raw.log:67817
@@ -2977,6 +3393,8 @@
   - e
   mobs:
   - O mestre dos ladrões está aqui para mostrar as maneiras de se roubar.
+  links:
+    n: room:bri.lei.estrada-do-falcao
   visits: 2
   sources:
   - logs/raw.log:67831
@@ -2993,6 +3411,9 @@
   - n
   - e
   - s
+  links:
+    e: room:bri.rua-do-xaxim
+    n: room:bri.lei.intersecao-da-rua-do-mercado-com-a-estrada-do-fa
   visits: 3
   sources:
   - logs/raw.log:67852
@@ -3012,6 +3433,9 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.lei.estrada-do-falcao-2
+    s: room:bri.lei.estrada-do-falcao
   visits: 3
   sources:
   - logs/raw.log:67859
@@ -3028,6 +3452,9 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.a-grande-estrada-leste-5
+    s: room:bri.lei.intersecao-da-rua-do-mercado-com-a-estrada-do-fa
   visits: 3
   sources:
   - logs/raw.log:67868
@@ -3049,6 +3476,10 @@
   mobs:
   - Um guarda está patrulhando aqui.
   - Um hobbit parece estar perdido por aqui.
+  links:
+    n: room:bri.estrada-do-falcao
+    s: room:bri.lei.estrada-do-falcao-2
+    w: room:bri.dentro-do-portao-oeste
   visits: 5
   sources:
   - logs/raw.log:67878
@@ -3067,6 +3498,10 @@
   - nw
   mobs:
   - Hary Barba-de-Bode toma conta do portão oeste.
+  links:
+    e: room:bri.a-grande-estrada-leste-5
+    nw: room:bri.a-guarita-do-portao-oeste
+    w: room:bri.fora-do-portao-oeste
   visits: 5
   sources:
   - logs/raw.log:67892
@@ -3081,6 +3516,8 @@
     pequena cadeira em frente a escrivaninha, e uma tocha pendurada na parede.
   exits:
   - se
+  links:
+    se: room:bri.dentro-do-portao-oeste
   visits: 1
   sources:
   - logs/raw.log:67915
@@ -3099,6 +3536,9 @@
   - w
   mobs:
   - Um guarda vigia a parte externa do portão.
+  links:
+    e: room:bri.dentro-do-portao-oeste
+    w: room:bri.sobre-um-passadico-2
   visits: 3
   sources:
   - logs/raw.log:67929
@@ -3115,6 +3555,9 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.fora-do-portao-oeste
+    w: room:bri.a-grande-estrada-leste-6
   visits: 3
   sources:
   - logs/raw.log:67937
@@ -3136,6 +3579,9 @@
   - w
   mobs:
   - Um velho homem está caminhando por aqui.
+  links:
+    e: room:bri.sobre-um-passadico-2
+    w: room:eriador.intersecao.na-intersecao
   visits: 3
   sources:
   - logs/raw.log:67948
@@ -3158,6 +3604,11 @@
   mobs:
   - Um velho homem está caminhando por aqui.
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.a-grande-estrada-leste-6
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-ao-norte-da-intersecao
+    s: room:eriador.caminho-verde.o-caminho-verde-ao-sul-da-intersecao
+    w: room:estrada-leste.a-grande-estrada-do-leste
   visits: 4
   sources:
   - logs/raw.log:67956
@@ -3175,6 +3626,8 @@
   - s
   mobs:
   - Um decrépito e velho mendigo está sentado na beirada da rua, suplicando.
+  links:
+    n: room:bri.estrada-do-falcao-2
   visits: 2
   sources:
   - logs/raw.log:68033
@@ -3193,6 +3646,8 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.estrada-do-falcao-3
   visits: 2
   sources:
   - logs/raw.log:68043
@@ -3210,6 +3665,8 @@
   - s
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    n: room:bri.encontro-da-estrada-do-falcao-com-a-estrada-da-j
   visits: 2
   sources:
   - logs/raw.log:68049
@@ -3226,6 +3683,8 @@
   exits:
   - e
   - s
+  links:
+    e: room:bri.estrada-da-justica
   visits: 2
   sources:
   - logs/raw.log:68056
@@ -3243,6 +3702,8 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.estrada-da-justica-2
   visits: 2
   sources:
   - logs/raw.log:68062
@@ -3260,6 +3721,8 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.estrada-da-justica-3
   visits: 2
   sources:
   - logs/raw.log:68072
@@ -3275,6 +3738,8 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    e: room:bri.cruzamento-da-avenida-zenite-com-a-estrada-da-ju
   visits: 3
   sources:
   - logs/raw.log:68079
@@ -3302,6 +3767,8 @@
   - w
   mobs:
   - Um hobbit está aqui, cuidando de seus produtos com carinho.
+  links:
+    w: room:bri.avenida-zenite-2
   visits: 1
   sources:
   - logs/raw.log:68156
@@ -3331,6 +3798,9 @@
   objects:
   - Uma pequena fonte circular de pedras claras jaz aqui, jorrando água cristalina.
   - Vários bancos de pedras claras estão espalhados ao longo da praça.
+  links:
+    n: room:bri.no-comeco-da-rua-das-cerejeiras
+    w: room:bri.avenida-zenite-3
   visits: 2
   sources:
   - logs/raw.log:68186
@@ -3351,6 +3821,8 @@
   - s
   objects:
   - Há um cesto para lixo aqui.
+  links:
+    s: room:bri.na-praca-das-flores
   visits: 1
   sources:
   - logs/raw.log:68208
@@ -3369,6 +3841,8 @@
     paciência para procurar. A porta ao leste leva até a Estrada Leste.
   exits:
   - e
+  links:
+    e: room:bri.a-grande-estrada-leste
   visits: 4
   sources:
   - logs/raw.log:68293
@@ -3384,6 +3858,9 @@
   exits:
   - ne
   - sw
+  links:
+    ne: room:bri.colina.um-caminho-arborizado-2
+    sw: room:bri.a-praca-de-bri
   visits: 4
   sources:
   - logs/raw.log:68349
@@ -3396,6 +3873,9 @@
   exits:
   - e
   - sw
+  links:
+    e: room:bri.colina.um-caminho-arborizado-3
+    sw: room:bri.colina.um-caminho-arborizado
   visits: 2
   sources:
   - logs/raw.log:68355
@@ -3411,6 +3891,9 @@
   - ne
   objects:
   - Uma majestosa macieira cresce aqui.
+  links:
+    ne: room:bri.colina.uma-bifurcacao-no-caminho
+    w: room:bri.colina.um-caminho-arborizado-2
   visits: 2
   sources:
   - logs/raw.log:68362
@@ -3428,6 +3911,10 @@
   - n
   - e
   - sw
+  links:
+    e: room:bri.colina.um-caminho-arborizado-4
+    n: room:bri.colina.a-entrada-da-mina-abandonada
+    sw: room:bri.colina.um-caminho-arborizado-3
   visits: 3
   sources:
   - logs/raw.log:68370
@@ -3444,6 +3931,9 @@
   exits:
   - w
   - se
+  links:
+    se: room:bri.colina.diante-de-uma-colina-ingreme
+    w: room:bri.colina.uma-bifurcacao-no-caminho
   visits: 2
   sources:
   - logs/raw.log:68388
@@ -3456,6 +3946,8 @@
     \ a noroeste leva de volta à \nbifurcação."
   exits:
   - nw
+  links:
+    nw: room:bri.colina.um-caminho-arborizado-4
   visits: 1
   sources:
   - logs/raw.log:68395
@@ -3475,6 +3967,8 @@
     mineiros esta última obra de segurança. É possível ao caminho ao sul.
   exits:
   - s
+  links:
+    s: room:bri.colina.uma-bifurcacao-no-caminho
   visits: 1
   sources:
   - logs/raw.log:68419
@@ -3495,10 +3989,13 @@
   mobs:
   - Um guarda está patrulhando aqui.
   - Um hobbit parece estar perdido por aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.a-praca-de-bri
+    w: room:bri.a-grande-estrada-leste-8
   visits: 11
   sources:
   - logs/raw.log:68483
@@ -3515,10 +4012,12 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    w: room:bri.a-grande-estrada-leste-9
   visits: 6
   sources:
   - logs/raw.log:68503
@@ -3535,6 +4034,9 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.a-grande-estrada-leste-8
+    w: room:bri.a-grande-estrada-leste-5
   visits: 3
   sources:
   - logs/raw.log:68541
@@ -3553,6 +4055,10 @@
   - n
   - s
   - se
+  links:
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-2
+    s: room:eriador.estrada-norte.a-velha-estrada-norte-6
+    se: room:bri.uma-trilha-perto-de-bri
   visits: 5
   sources:
   - logs/raw.log:68704
@@ -3571,6 +4077,10 @@
   - n
   - e
   - s
+  links:
+    e: room:eriador.cemiterio.antes-do-cemiterio
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-3
+    s: room:eriador.estrada-norte.a-velha-estrada-norte
   visits: 4
   sources:
   - logs/raw.log:68712
@@ -3589,6 +4099,8 @@
   - n
   - s
   - ne
+  links:
+    ne: room:eriador.estrada-norte.uma-estrada-muito-utilizada
   visits: 1
   sources:
   - logs/raw.log:68720
@@ -3602,6 +4114,8 @@
   exits:
   - ne
   - sw
+  links:
+    ne: room:eriador.estrada-norte.uma-estrada-muito-utilizada-2
   visits: 1
   sources:
   - logs/raw.log:68729
@@ -3615,6 +4129,8 @@
   exits:
   - e
   - sw
+  links:
+    e: room:eriador.estrada-norte.uma-estrada-muito-utilizada-3
   visits: 1
   sources:
   - logs/raw.log:68737
@@ -3631,6 +4147,8 @@
   exits:
   - w
   - ne
+  links:
+    ne: room:eriador.estrada-norte.uma-estrada-muito-utilizada-4
   visits: 1
   sources:
   - logs/raw.log:68744
@@ -3649,6 +4167,8 @@
   - n
   - se
   - sw
+  links:
+    n: room:archet.a-entrada-de-archet
   visits: 1
   sources:
   - logs/raw.log:68752
@@ -3671,8 +4191,10 @@
   - s
   - w
   mobs:
-  - Kylara brilha sob uma aura branca.
   - Uma bela mulher lhe dá as boas vindas a Archet.
+  - Kylara brilha sob uma aura branca.
+  links:
+    n: room:archet.rua-dos-oficios
   visits: 1
   sources:
   - logs/raw.log:68761
@@ -3695,11 +4217,13 @@
   - s
   - w
   mobs:
-  - Umaro, o líder da guarda de Archet, observa a todos com cara de poucos amigos.
   - Umaro está sob uma estranha mistura de luz e sombras.
+  - Umaro, o líder da guarda de Archet, observa a todos com cara de poucos amigos.
   objects:
-  - Uma grande fonte circular jorra água cristalina aqui.
   - Um banco de pedras azuis está aqui ao redor da fonte.
+  - Uma grande fonte circular jorra água cristalina aqui.
+  links:
+    e: room:archet.rua-dos-oficios-2
   visits: 1
   sources:
   - logs/raw.log:68779
@@ -3718,6 +4242,9 @@
   - w
   mobs:
   - Uma sentinela mantém guarda aqui.
+  links:
+    e: room:archet.rua-dos-oficios-3
+    s: room:archet.a-casa-bancaria
   visits: 2
   sources:
   - logs/raw.log:68793
@@ -3739,6 +4266,8 @@
   - Vognus, o banqueiro, está sentado aqui.
   objects:
   - Há uma grande mesa de escritório aqui.
+  links:
+    n: room:archet.rua-dos-oficios-2
   visits: 1
   sources:
   - logs/raw.log:68803
@@ -3759,6 +4288,8 @@
   - w
   mobs:
   - Um anão parece estar perdido por aqui.
+  links:
+    n: room:archet.a-torre-sudeste
   visits: 1
   sources:
   - logs/raw.log:68831
@@ -3779,6 +4310,9 @@
   - se
   mobs:
   - Um homem fardado mantém-se parado aqui.
+  links:
+    e: room:archet.rua-das-batalhas
+    se: room:archet.os-saguoes-de-inverno
   visits: 2
   sources:
   - logs/raw.log:68847
@@ -3798,6 +4332,9 @@
   exits:
   - nw
   - se
+  links:
+    nw: room:archet.a-torre-sudeste
+    se: room:archet.os-saguoes-de-inverno-2
   visits: 2
   sources:
   - logs/raw.log:68859
@@ -3817,6 +4354,8 @@
     sala um verdadeiro caos.
   exits:
   - nw
+  links:
+    nw: room:archet.os-saguoes-de-inverno
   visits: 1
   sources:
   - logs/raw.log:68870
@@ -3835,6 +4374,8 @@
   - n
   - w
   - '!d'
+  links:
+    n: room:archet.rua-das-batalhas-2
   visits: 1
   sources:
   - logs/raw.log:68898
@@ -3854,6 +4395,8 @@
   - n
   - '!e'
   - s
+  links:
+    n: room:archet.rua-das-batalhas-3
   visits: 1
   sources:
   - logs/raw.log:68907
@@ -3872,6 +4415,8 @@
   - n
   - '!e'
   - s
+  links:
+    n: room:archet.rua-das-batalhas-4
   visits: 1
   sources:
   - logs/raw.log:68915
@@ -3887,6 +4432,8 @@
   - n
   - '!e'
   - s
+  links:
+    n: room:archet.rua-das-batalhas-5
   visits: 1
   sources:
   - logs/raw.log:68926
@@ -3904,6 +4451,9 @@
   exits:
   - s
   - w
+  links:
+    s: room:archet.a-torre-nordeste
+    w: room:archet.a-torre-nordeste
   visits: 2
   sources:
   - logs/raw.log:68934
@@ -3925,6 +4475,10 @@
   - ne
   mobs:
   - Um homem fardado mantém-se parado aqui.
+  links:
+    e: room:archet.rua-das-batalhas-5
+    n: room:archet.rua-das-batalhas-5
+    ne: room:archet.os-saguoes-de-outono
   visits: 4
   sources:
   - logs/raw.log:68943
@@ -3942,6 +4496,8 @@
   - Uma garçonete corre de mesa em mesa, servindo cerveja em grandes canecas.
   objects:
   - Há muitas grandes mesas de madeira rústica com cadeiras espalhadas ao redor por todo o lugar.
+  links:
+    sw: room:archet.a-torre-nordeste
   visits: 1
   sources:
   - logs/raw.log:68953
@@ -3980,6 +4536,9 @@
   - '!n'
   - e
   - w
+  links:
+    e: room:archet.rua-das-batalhas-5
+    w: room:archet.rua-das-distracoes-3
   visits: 3
   sources:
   - logs/raw.log:68990
@@ -4001,6 +4560,10 @@
   - n
   - e
   - w
+  links:
+    e: room:archet.rua-das-distracoes-2
+    n: room:archet.hospedaria-sono-cerrado
+    w: room:archet.rua-das-distracoes-4
   visits: 4
   sources:
   - logs/raw.log:69000
@@ -4024,6 +4587,9 @@
   - Um homem gordo e alto está aqui fumando seu cachimbo pacientemente.
   objects:
   - Um quadro foi pendurado na parede aqui.
+  links:
+    n: room:archet.no-corredor-dos-quartos
+    s: room:archet.rua-das-distracoes-3
   visits: 2
   sources:
   - logs/raw.log:69009
@@ -4048,14 +4614,11 @@
   - '!sw'
   mobs:
   - solicitar um aposento.
-  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
+  - O barulho da rua lá fora ainda pode ser ouvido, porém com bem menos
   - rústicos, deixando você bem à vontade. Ao norte há uma cortina
   - escondendo a passagem para o norte. Grandes poltronas de muitos
-  - O barulho da rua lá fora ainda pode ser ouvido, porém com bem menos
+  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
   - intensidade. A recepção da hospedaria é decorada com tons claros e
-  objects:
-  - Tantarel puxa você delicadamente você pelo ombro.
-  - Hospedaria Sono Cerrado
   visits: 1
   sources:
   - logs/raw.log:69043
@@ -4071,6 +4634,10 @@
   - e
   - s
   - w
+  links:
+    e: room:archet.rua-das-distracoes-3
+    s: room:archet.entrada-para-a-academia
+    w: room:archet.rua-das-distracoes-5
   visits: 4
   sources:
   - logs/raw.log:69074
@@ -4089,6 +4656,9 @@
   exits:
   - e
   - s
+  links:
+    e: room:archet.rua-das-distracoes-4
+    s: room:archet.a-torre-noroeste
   visits: 3
   sources:
   - logs/raw.log:69082
@@ -4105,6 +4675,8 @@
   - '!nw'
   mobs:
   - Um homem fardado mantém-se parado aqui.
+  links:
+    n: room:archet.rua-das-distracoes-5
   visits: 1
   sources:
   - logs/raw.log:69090
@@ -4121,6 +4693,9 @@
   exits:
   - n
   - u
+  links:
+    n: room:archet.rua-das-distracoes-4
+    u: room:academia.a-academia-de-aventureiros
   visits: 2
   sources:
   - logs/raw.log:69115
@@ -4141,6 +4716,10 @@
   - n
   - e
   - s
+  links:
+    e: room:academia.a-biblioteca-dos-aventureiros
+    n: room:academia.o-corredor-silencioso-3
+    s: room:academia.o-corredor-silencioso
   visits: 3
   sources:
   - logs/raw.log:69313
@@ -4160,6 +4739,8 @@
   - w
   objects:
   - Há um mural aqui, onde podem ser afixadas mensagens.
+  links:
+    w: room:academia.o-corredor-silencioso-2
   visits: 1
   sources:
   - logs/raw.log:69322
@@ -4180,6 +4761,9 @@
   exits:
   - e
   - s
+  links:
+    e: room:academia.a-sala-dos-professores
+    s: room:academia.o-corredor-silencioso-2
   visits: 2
   sources:
   - logs/raw.log:69352
@@ -4199,6 +4783,8 @@
   - w
   objects:
   - Na parede sul está  pendurado um mural cheio de notas.
+  links:
+    w: room:academia.o-corredor-silencioso-3
   visits: 1
   sources:
   - logs/raw.log:69365
@@ -4218,6 +4804,9 @@
   - s
   - w
   - u
+  links:
+    n: room:bosque.formigueiro.a-juncao-tripla
+    u: room:bri.fora-do-portao-sul
   visits: 2
   sources:
   - logs/raw.log:70013
@@ -4234,6 +4823,9 @@
   - e
   - s
   - w
+  links:
+    e: room:bosque.formigueiro.a-curva-no-tunel-da-galeria
+    s: room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
   visits: 2
   sources:
   - logs/raw.log:70019
@@ -4248,6 +4840,9 @@
   exits:
   - n
   - w
+  links:
+    n: room:bosque.formigueiro.uma-curva-no-tunel-da-galeria
+    w: room:bosque.formigueiro.a-juncao-tripla
   visits: 2
   sources:
   - logs/raw.log:70024
@@ -4260,6 +4855,9 @@
   exits:
   - s
   - w
+  links:
+    s: room:bosque.formigueiro.a-curva-no-tunel-da-galeria
+    w: room:bosque.formigueiro.uma-juncao-na-galeria
   visits: 2
   sources:
   - logs/raw.log:70028
@@ -4273,6 +4871,9 @@
   - n
   - e
   - w
+  links:
+    e: room:bosque.formigueiro.uma-curva-no-tunel-da-galeria
+    n: room:bosque.formigueiro.uma-juncao
   visits: 2
   sources:
   - logs/raw.log:70032
@@ -4290,6 +4891,9 @@
   - n
   - s
   - w
+  links:
+    n: room:bosque.formigueiro.outra-intersecao
+    s: room:bosque.formigueiro.uma-juncao-na-galeria
   visits: 2
   sources:
   - logs/raw.log:70039
@@ -4308,6 +4912,8 @@
   - s
   mobs:
   - O pequeno morcego de aparência feroz está pendurado no teto.
+  links:
+    s: room:bosque.formigueiro.uma-juncao
   visits: 2
   sources:
   - logs/raw.log:70044
@@ -4326,6 +4932,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.intersecao.na-intersecao
+    s: room:eriador.caminho-verde.o-caminho-verde
   visits: 2
   sources:
   - logs/raw.log:70292
@@ -4344,6 +4953,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.caminho-verde.o-caminho-verde-ao-sul-da-intersecao
+    s: room:eriador.caminho-verde.o-caminho-verde-2
   visits: 2
   sources:
   - logs/raw.log:70301
@@ -4361,6 +4973,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.caminho-verde.o-caminho-verde
+    s: room:eriador.caminho-verde.o-caminho-verde-3
   visits: 2
   sources:
   - logs/raw.log:70309
@@ -4377,6 +4992,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.caminho-verde.o-caminho-verde-2
+    s: room:eriador.caminho-verde.o-caminho-verde-4
   visits: 2
   sources:
   - logs/raw.log:70316
@@ -4393,6 +5011,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.caminho-verde.o-caminho-verde-3
   visits: 1
   sources:
   - logs/raw.log:70323
@@ -4405,6 +5025,9 @@
   exits:
   - e
   - w
+  links:
+    e: room:eriador.intersecao.na-intersecao
+    w: room:estrada-leste.a-grande-estrada-do-leste-2
   visits: 2
   sources:
   - logs/raw.log:70376
@@ -4418,6 +5041,9 @@
   exits:
   - e
   - w
+  links:
+    e: room:estrada-leste.a-grande-estrada-do-leste
+    w: room:estrada-leste.a-grande-estrada-do-leste-3
   visits: 2
   sources:
   - logs/raw.log:70382
@@ -4433,6 +5059,8 @@
   exits:
   - e
   - nw
+  links:
+    e: room:estrada-leste.a-grande-estrada-do-leste-2
   visits: 1
   sources:
   - logs/raw.log:70388
@@ -4452,6 +5080,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-4
   visits: 1
   sources:
   - logs/raw.log:70420
@@ -4471,6 +5101,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-5
   visits: 1
   sources:
   - logs/raw.log:70430
@@ -4490,6 +5122,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.estrada-norte.a-velha-estrada-norte-6
   visits: 1
   sources:
   - logs/raw.log:70443
@@ -4508,6 +5142,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:eriador.estrada-norte.a-velha-estrada-norte
   visits: 3
   sources:
   - logs/raw.log:70452
@@ -4531,6 +5167,9 @@
   exits:
   - s
   - w
+  links:
+    s: room:eriador.cemiterio.entrada-para-o-cemiterio
+    w: room:eriador.estrada-norte.a-velha-estrada-norte-2
   visits: 3
   sources:
   - logs/raw.log:70491
@@ -4548,6 +5187,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.rua-do-xaxim-2
   visits: 1
   sources:
   - logs/raw.log:70950
@@ -4562,6 +5203,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.rua-do-xaxim-3
   visits: 1
   sources:
   - logs/raw.log:70956
@@ -4582,6 +5225,8 @@
   mobs:
   - O Senhor Macieira canta alegremente com os pássaros ao seu redor.
   - Rowlie Macieira brilha sob uma aura branca.
+  links:
+    e: room:bri.a-grande-estrada-leste-3
   visits: 2
   sources:
   - logs/raw.log:70963
@@ -4600,6 +5245,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.uma-colina-suave
+    s: room:bri.uma-trilha-perto-de-bri
   visits: 2
   sources:
   - logs/raw.log:71307
@@ -4616,6 +5264,9 @@
   exits:
   - s
   - u
+  links:
+    s: room:bri.uma-trilha
+    u: room:bri.mansao-knob.o-portao-principal
   visits: 2
   sources:
   - logs/raw.log:71314
@@ -4634,6 +5285,9 @@
   exits_variants:
   - '!n d'
   - n d
+  links:
+    d: room:bri.uma-colina-suave
+    n: room:bri.mansao-knob.depois-do-portao-frontal
   visits: 2
   sources:
   - logs/raw.log:71324
@@ -4653,6 +5307,10 @@
   exits_variants:
   - '!n e !s w'
   - '!n e s w'
+  links:
+    e: room:bri.mansao-knob.leste-da-porta-da-frente
+    s: room:bri.mansao-knob.o-portao-principal
+    w: room:bri.mansao-knob.oeste-da-porta-da-frente
   visits: 4
   sources:
   - logs/raw.log:71354
@@ -4665,6 +5323,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:bri.mansao-knob.canto-sudeste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71366
@@ -4678,6 +5338,8 @@
   exits:
   - n
   - w
+  links:
+    n: room:bri.mansao-knob.leste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71372
@@ -4690,6 +5352,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.mansao-knob.continuando-ao-longo-do-lado-leste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71377
@@ -4702,6 +5366,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:bri.mansao-knob.canto-nordeste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71383
@@ -4714,6 +5380,8 @@
   exits:
   - s
   - w
+  links:
+    w: room:bri.mansao-knob.o-quintal
   visits: 2
   sources:
   - logs/raw.log:71388
@@ -4730,6 +5398,9 @@
   - e
   - '!s'
   - w
+  links:
+    n: room:bri.mansao-knob.no-interior-do-quintal
+    w: room:bri.mansao-knob.canto-noroeste-do-sitio
   visits: 4
   sources:
   - logs/raw.log:71397
@@ -4750,6 +5421,9 @@
   - '!w'
   mobs:
   - O servente da casa está em pé aqui.
+  links:
+    e: room:bri.mansao-knob.um-cruzamento
+    s: room:bri.mansao-knob.o-quintal
   visits: 4
   sources:
   - logs/raw.log:71404
@@ -4766,6 +5440,10 @@
   - n
   - e
   - w
+  links:
+    e: room:bri.mansao-knob.a-entrada-do-estabulo
+    n: room:bri.mansao-knob.o-jardim
+    w: room:bri.mansao-knob.no-interior-do-quintal
   visits: 4
   sources:
   - logs/raw.log:71420
@@ -4786,6 +5464,8 @@
   mobs:
   - Lady Knob está apavorada com sua presença.
   - O jardineiro trabalha duro para produzir legumes frescos.
+  links:
+    s: room:bri.mansao-knob.um-cruzamento
   visits: 2
   sources:
   - logs/raw.log:71428
@@ -4798,6 +5478,8 @@
   exits:
   - e
   - s
+  links:
+    s: room:bri.mansao-knob.continuando-atraves-do-oeste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71500
@@ -4810,6 +5492,8 @@
   exits:
   - n
   - s
+  links:
+    s: room:bri.mansao-knob.oeste-do-sitio
   visits: 2
   sources:
   - logs/raw.log:71504
@@ -4824,6 +5508,8 @@
   - s
   objects:
   - Uma pequena caixa de ferramentas jaz no chão.
+  links:
+    s: room:bri.mansao-knob.canto-sudoeste-do-sitio
   visits: 3
   sources:
   - logs/raw.log:71510
@@ -4840,6 +5526,9 @@
   exits:
   - n
   - e
+  links:
+    e: room:bri.mansao-knob.oeste-da-porta-da-frente
+    n: room:bri.mansao-knob.oeste-do-sitio
   visits: 4
   sources:
   - logs/raw.log:71522
@@ -4855,6 +5544,9 @@
   - w
   objects:
   - Uma pequena fonte de água jorra do chão aqui.
+  links:
+    e: room:bri.mansao-knob.depois-do-portao-frontal
+    w: room:bri.mansao-knob.canto-sudoeste-do-sitio
   visits: 4
   sources:
   - logs/raw.log:71528
@@ -4876,6 +5568,9 @@
   - e w
   mobs:
   - Um velho tratador de animais está trabalhando duro.
+  links:
+    e: room:bri.mansao-knob.os-alojamentos-dos-cavalos
+    w: room:bri.mansao-knob.um-cruzamento
   visits: 2
   sources:
   - logs/raw.log:71606
@@ -4897,6 +5592,9 @@
   exits_variants:
   - '!n s !w'
   - '!n s w'
+  links:
+    s: room:bri.mansao-knob.deposito-de-utensilios
+    w: room:bri.mansao-knob.a-entrada-do-estabulo
   visits: 3
   sources:
   - logs/raw.log:71618
@@ -4914,8 +5612,10 @@
   exits:
   - n
   objects:
-  - Uma calça de couro foi arremessada aqui no chão.
   - Um chicote de equitação foi jogado aqui.
+  - Uma calça de couro foi arremessada aqui no chão.
+  links:
+    n: room:bri.mansao-knob.os-alojamentos-dos-cavalos
   visits: 1
   sources:
   - logs/raw.log:71644
@@ -4948,6 +5648,9 @@
   - '!e'
   - s
   - d
+  links:
+    d: room:bri.ponei.a-entrada-da-hospedaria-ponei-saltitante
+    n: room:bri.ponei.um-corredor-vazio-2
   visits: 2
   sources:
   - logs/raw.log:72519
@@ -4966,6 +5669,8 @@
   - '!e'
   - s
   - '!w'
+  links:
+    s: room:bri.ponei.um-corredor-vazio
   visits: 1
   sources:
   - logs/raw.log:72526
@@ -4984,6 +5689,8 @@
   - w
   objects:
   - Há uma escrivaninha aqui.
+  links:
+    w: room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
   visits: 1
   sources:
   - logs/raw.log:72646
@@ -5003,6 +5710,8 @@
   - e
   objects:
   - Um grande mural foi instalado aqui.
+  links:
+    e: room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
   visits: 2
   sources:
   - logs/raw.log:72703
@@ -5022,6 +5731,10 @@
   - Um guarda está patrulhando aqui.
   objects:
   - Há um cesto para lixo aqui.
+  links:
+    e: room:bri.mercado.rua-do-mercado-3
+    n: room:bri.mercado.loja-de-chas
+    w: room:bri.mercado.rua-do-mercado-6
   visits: 5
   sources:
   - logs/raw.log:72910
@@ -5039,6 +5752,8 @@
   - s
   mobs:
   - A senhora Artemisas está aqui atrás do balcão, vendendo alguns de seus chás.
+  links:
+    s: room:bri.mercado.rua-do-mercado-5
   visits: 1
   sources:
   - logs/raw.log:72918
@@ -5057,6 +5772,10 @@
   - e
   - s
   - w
+  links:
+    e: room:bri.mercado.rua-do-mercado-5
+    n: room:bri.mercado.a-tenda-do-escriba
+    s: room:bri.mercado.a-esmeralda-brilhante
   visits: 4
   sources:
   - logs/raw.log:72937
@@ -5071,6 +5790,8 @@
   - n
   mobs:
   - O joalheiro sorri calorosamente.
+  links:
+    n: room:bri.mercado.rua-do-mercado-6
   visits: 1
   sources:
   - logs/raw.log:72945
@@ -5092,6 +5813,8 @@
   - s
   mobs:
   - Buraqueiro está aqui, atrás do balcão, vendendo alguns de seus pergaminhos.
+  links:
+    s: room:bri.mercado.rua-do-mercado-6
   visits: 1
   sources:
   - logs/raw.log:72966
@@ -5114,6 +5837,8 @@
   exits:
   - n
   - e
+  links:
+    e: room:eriador.cemiterio.a-terra-irregular
   visits: 2
   sources:
   - logs/raw.log:73868
@@ -5131,6 +5856,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:eriador.cemiterio.as-profanas-terras-da-morte
   visits: 1
   sources:
   - logs/raw.log:73895
@@ -5152,6 +5879,8 @@
   - e
   - w
   - se
+  links:
+    se: room:eriador.cemiterio.a-morte-de-uma-crianca
   visits: 2
   sources:
   - logs/raw.log:73906
@@ -5170,6 +5899,8 @@
   - nw
   mobs:
   - Um coveiro está cavando um novo túmulo aqui.
+  links:
+    e: room:eriador.cemiterio.as-terras-esburacadas
   visits: 1
   sources:
   - logs/raw.log:73924
@@ -5190,6 +5921,8 @@
   - e
   - s
   - w
+  links:
+    e: room:eriador.cemiterio.as-terras-escuras
   visits: 1
   sources:
   - logs/raw.log:73942
@@ -5210,8 +5943,10 @@
   - s
   - w
   mobs:
-  - Um coveiro está cavando um novo túmulo aqui.
   - Um saqueador de túmulos procura por valiosos tesouros enterrados.
+  - Um coveiro está cavando um novo túmulo aqui.
+  links:
+    n: room:eriador.cemiterio.o-caixao-de-thomas
   visits: 1
   sources:
   - logs/raw.log:73954
@@ -5232,6 +5967,8 @@
   - e
   - s
   - w
+  links:
+    e: room:eriador.cemiterio.a-lapide-caida
   visits: 1
   sources:
   - logs/raw.log:73976
@@ -5252,6 +5989,8 @@
   - Um saqueador de túmulos procura por valiosos tesouros enterrados.
   objects:
   - Uma lápide de mármore negro foi posta aqui, parcialmente enterrada.
+  links:
+    e: room:eriador.cemiterio.o-tumulo-do-guerreiro-desconhecido
   visits: 1
   sources:
   - logs/raw.log:73992
@@ -5274,6 +6013,8 @@
   - w
   mobs:
   - Um saqueador de túmulos procura por valiosos tesouros enterrados.
+  links:
+    e: room:eriador.cemiterio.um-tumulo-subterraneo
   visits: 1
   sources:
   - logs/raw.log:74006
@@ -5296,6 +6037,8 @@
   mobs:
   - Uma viúva lamenta miseravelmente a perda do seu amado.
   - Um coveiro esta cavando um novo túmulo aqui.
+  links:
+    e: room:eriador.cemiterio.a-arvore-caida
   visits: 1
   sources:
   - logs/raw.log:74019
@@ -5318,6 +6061,8 @@
   - Uma viúva lamenta miseravelmente a perda do seu amado.
   objects:
   - Uma grande árvore caiu aqui, bloqueando o caminho a leste.
+  links:
+    se: room:eriador.cemiterio.ao-longo-da-cerca-de-ferro
   visits: 2
   sources:
   - logs/raw.log:74044
@@ -5338,6 +6083,8 @@
   - s
   - w
   - nw
+  links:
+    nw: room:eriador.cemiterio.a-arvore-caida
   visits: 1
   sources:
   - logs/raw.log:74056
@@ -5355,11 +6102,14 @@
   - n
   - s
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um guarda está patrulhando aqui.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:bri.fora-do-portao-sul
+    s: room:bri.proximo-ao-portao-sul
   visits: 9
   sources:
   - logs/raw.log:81846
@@ -5381,10 +6131,15 @@
   - sw
   mobs:
   - Um guarda está patrulhando aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:estrada-leste.a-grande-estrada-do-leste-4
+    n: room:bri.sobre-um-passadico-3
+    ne: room:bri.numa-trilha-aos-arredores-de-bri
+    sw: room:bri.numa-trilha-aos-arredores-de-bri-2
   visits: 12
   sources:
   - logs/raw.log:81860
@@ -5403,10 +6158,14 @@
   - w
   mobs:
   - Um guarda está patrulhando aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:bri.colina.contornando-a-colina-de-bri
+    s: room:estrada-leste.um-pequeno-trapiche
+    w: room:bri.proximo-ao-portao-sul
   visits: 9
   sources:
   - logs/raw.log:81872
@@ -5424,10 +6183,13 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    se: room:estrada-leste.a-grande-estrada-do-leste-5
+    w: room:estrada-leste.a-grande-estrada-do-leste-4
   visits: 7
   sources:
   - logs/raw.log:81886
@@ -5443,10 +6205,13 @@
   - e
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:estrada-leste.a-grande-estrada-do-leste-6
+    nw: room:bri.colina.contornando-a-colina-de-bri
   visits: 7
   sources:
   - logs/raw.log:81897
@@ -5462,10 +6227,13 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    ne: room:estrada-leste.a-grande-estrada-do-leste-7
+    w: room:estrada-leste.a-grande-estrada-do-leste-5
   visits: 6
   sources:
   - logs/raw.log:81909
@@ -5481,10 +6249,13 @@
   - e
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:estrada-leste.a-grande-estrada-do-leste-8
+    sw: room:estrada-leste.a-grande-estrada-do-leste-6
   visits: 5
   sources:
   - logs/raw.log:81920
@@ -5501,10 +6272,13 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    ne: room:estrada-leste.a-grande-estrada-do-leste-9
+    w: room:estrada-leste.a-grande-estrada-do-leste-7
   visits: 4
   sources:
   - logs/raw.log:81933
@@ -5524,11 +6298,13 @@
   - e sw
   - e w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um ganso anda desengonçadamente por aqui.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    sw: room:estrada-leste.a-grande-estrada-do-leste-8
   visits: 4
   sources:
   - logs/raw.log:81945
@@ -5546,8 +6322,8 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5569,8 +6345,8 @@
   - ne
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5591,8 +6367,8 @@
   - e
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5611,9 +6387,9 @@
   - n
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um passarinho salta assustado fugindo de você.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5633,8 +6409,8 @@
   - e
   - s
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5655,8 +6431,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um passarinho salta assustado fugindo de você.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
@@ -5676,8 +6452,8 @@
   - w
   - u
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5695,8 +6471,8 @@
   - s
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5715,8 +6491,8 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5740,8 +6516,8 @@
   - nw se
   - se sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 5
@@ -5765,8 +6541,8 @@
   - e w
   - w se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Uma raposa vaga por aqui.
   - Um esquilo cinzento busca proteção ao se esconder aqui.
   - Um passarinho salta assustado fugindo de você.
@@ -5790,8 +6566,8 @@
   - nw
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5812,8 +6588,8 @@
   - e
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5834,8 +6610,8 @@
   - s
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5857,8 +6633,8 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5889,8 +6665,8 @@
   - w ne
   - w se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um passarinho salta assustado fugindo de você.
   - Uma raposa vaga por aqui.
   - Um esquilo cinzento busca proteção ao se esconder aqui.
@@ -5913,8 +6689,8 @@
   - se
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5933,8 +6709,8 @@
   - e
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5954,8 +6730,8 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5975,8 +6751,8 @@
   - ne
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -5996,8 +6772,8 @@
   - ne
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6018,9 +6794,9 @@
   - e
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um esquilo cinzento busca proteção ao se esconder aqui.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6039,8 +6815,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6060,8 +6836,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6079,8 +6855,8 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6099,8 +6875,8 @@
   - e
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6119,8 +6895,8 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6143,8 +6919,8 @@
   - ne
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
@@ -6164,8 +6940,8 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6185,8 +6961,8 @@
   - e
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6207,8 +6983,8 @@
   - w
   - u
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6231,8 +7007,8 @@
   - w
   - ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6252,8 +7028,8 @@
   - e
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6274,12 +7050,12 @@
   - w
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
-  - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   - Uma enorme estátua de três criaturas petrificadas jaz aqui.
+  - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
   sources:
   - logs/raw.log:83258
@@ -6300,8 +7076,8 @@
   - u
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6321,8 +7097,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6342,8 +7118,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 5
@@ -6362,9 +7138,9 @@
   - w
   - se
   mobs:
-  - Glorfindel, o Senhor-Élfico, está aqui.
   - Glorfindel brilha sob uma aura branca.
   - Um imponente cavalo branco está aqui aguardando as ordens de seu senhor.
+  - Glorfindel, o Senhor-Élfico, está aqui.
   - Asfaloth brilha sob uma aura branca.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
@@ -6386,8 +7162,8 @@
   - nw
   - se
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6407,8 +7183,8 @@
   - ne
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
@@ -6434,8 +7210,8 @@
   - e w
   - w ne
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
@@ -6459,8 +7235,8 @@
   - e sw
   - e w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 5
@@ -6478,8 +7254,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6499,8 +7275,8 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -6523,11 +7299,14 @@
   - s
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - Um caroço de maçã foi jogado aqui.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:valfenda.olhos-para-o-vale
+    s: room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa
   visits: 8
   sources:
   - logs/raw.log:83592
@@ -6547,12 +7326,15 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Só agora você percebe o homem estranho que caminha aqui.
   objects:
   - Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:valfenda.a-estrada-rochosa
+    w: room:valfenda.as-margens-da-floresta
   visits: 9
   sources:
   - logs/raw.log:83607
@@ -6572,10 +7354,13 @@
   - e
   - w
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:valfenda.a-ponte-sobre-o-bruinen
+    w: room:valfenda.olhos-para-o-vale
   visits: 7
   sources:
   - logs/raw.log:83621
@@ -6594,10 +7379,13 @@
   - n
   - s
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:valfenda.curva-entre-arvores
+    s: room:valfenda.a-estrada-rochosa
   visits: 7
   sources:
   - logs/raw.log:83635
@@ -6614,10 +7402,13 @@
   - e
   - s
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:valfenda.curva-entre-arvores-2
+    s: room:valfenda.a-ponte-sobre-o-bruinen
   visits: 10
   sources:
   - logs/raw.log:83647
@@ -6634,11 +7425,14 @@
   - n
   - w
   mobs:
-  - (Montada) Uma obediente égua aguarda aqui.
   - Só agora você percebe o homem estranho que caminha aqui.
+  - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    n: room:valfenda.uma-enorme-area-coberta
+    w: room:valfenda.curva-entre-arvores
   visits: 11
   sources:
   - logs/raw.log:83659
@@ -6659,11 +7453,15 @@
   - ne
   - nw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - Um elfo cansado está contemplando a paisagem enquanto relaxa um pouco.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    ne: room:valfenda.uma-alameda-de-populos
+    nw: room:valfenda.uma-alameda-de-juniperos-7
+    s: room:valfenda.curva-entre-arvores-2
   visits: 13
   sources:
   - logs/raw.log:83675
@@ -6683,10 +7481,14 @@
   - nw
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  links:
+    e: room:valfenda.uma-alameda-de-populos-2
+    nw: room:valfenda.o-bosquepraca
+    sw: room:valfenda.uma-enorme-area-coberta
   visits: 22
   sources:
   - logs/raw.log:83688
@@ -6707,15 +7509,18 @@
   - se
   - sw
   mobs:
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
-  - A Guardiã elfa brilha sob uma aura branca.
   - (Montada) Uma obediente égua aguarda aqui.
   - A Guardiã cuida para que a ordem seja absolutamente preservada.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
+  - A Guardiã elfa brilha sob uma aura branca.
   objects:
   - No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
+  - Um grande círculo de bancos de pedra está montado aqui.
   - Algumas estátuas estão dispostas sobre pedestais aqui.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
-  - Um grande círculo de bancos de pedra está montado aqui.
+  links:
+    nw: room:valfenda.uma-alameda-de-juniperos
+    se: room:valfenda.uma-alameda-de-populos
   visits: 19
   sources:
   - logs/raw.log:83702
@@ -6738,6 +7543,10 @@
   objects:
   - Uma majestosa macieira cresce aqui.
   - Um caroço de maçã foi jogado aqui.
+  links:
+    n: room:valfenda.uma-alameda-de-juniperos-2
+    se: room:valfenda.o-bosquepraca
+    sw: room:valfenda.uma-alameda-de-juniperos-6
   visits: 18
   sources:
   - logs/raw.log:83774
@@ -6757,6 +7566,11 @@
   - e
   - s
   - w
+  links:
+    e: room:valfenda.na-entrada-do-jardim-de-imladris
+    n: room:valfenda.encontro-das-alamedas-de-juniperos-e-platanos
+    s: room:valfenda.uma-alameda-de-juniperos
+    w: room:valfenda.entrada-para-a-academia
   visits: 14
   sources:
   - logs/raw.log:83984
@@ -6791,6 +7605,9 @@
   - Um mural bem legal está aqui no meio do nada.
   - Um tanque formado pela nascente de um córrego jaz aqui.
   - Um canteiro, em forma de meia lua, foi construido em redor do salgueiro.
+  links:
+    n: room:valfenda.no-jardim-um-caminho-entre-canteiros
+    w: room:valfenda.uma-alameda-de-juniperos-2
   visits: 6
   sources:
   - logs/raw.log:84008
@@ -6811,6 +7628,9 @@
   objects:
   - Um mural bem legal está aqui no meio do nada.
   - Um arco de madeira, coberto de trepadeiras e flores brancas, jaz aqui.
+  links:
+    e: room:valfenda.no-jardim-um-caminho-entre-canteiros-2
+    s: room:valfenda.na-entrada-do-jardim-de-imladris
   visits: 6
   sources:
   - logs/raw.log:84141
@@ -6827,6 +7647,9 @@
   - w
   objects:
   - Um mural bem legal está aqui no meio do nada.
+  links:
+    e: room:valfenda.no-jardim-um-caminho-entre-canteiros-3
+    w: room:valfenda.no-jardim-um-caminho-entre-canteiros
   visits: 5
   sources:
   - logs/raw.log:84167
@@ -6846,6 +7669,9 @@
   - Um beija-flor sobrevoa em redor, procurando uma flor...
   objects:
   - Um mural bem legal está aqui no meio do nada.
+  links:
+    n: room:valfenda.jardins-ervas-perfumadas
+    s: room:valfenda.jardins-no-meio-das-flores
   visits: 10
   sources:
   - logs/raw.log:84184
@@ -6866,6 +7692,9 @@
   objects:
   - Um mural bem legal está aqui no meio do nada.
   - Algumas pedras grandes estão aqui como bancos.
+  links:
+    nw: room:valfenda.jardins-ervas-perfumadas-2
+    s: room:valfenda.no-jardim-um-caminho-entre-canteiros-3
   visits: 10
   sources:
   - logs/raw.log:84207
@@ -6892,6 +7721,8 @@
   - se
   objects:
   - Um mural bem legal está aqui no meio do nada.
+  links:
+    se: room:valfenda.jardins-ervas-perfumadas
   visits: 4
   sources:
   - logs/raw.log:84244
@@ -6910,6 +7741,9 @@
   - Uma abelha solitária voa procurando néctar nas flores...
   objects:
   - Um mural bem legal está aqui no meio do nada.
+  links:
+    n: room:valfenda.no-jardim-um-caminho-entre-canteiros-3
+    w: room:valfenda.jardins-no-meio-das-flores-2
   visits: 7
   sources:
   - logs/raw.log:84315
@@ -6936,6 +7770,10 @@
   - Uma abelha solitária voa procurando néctar nas flores...
   objects:
   - Um mural bem legal está aqui no meio do nada.
+  links:
+    e: room:valfenda.jardins-no-meio-das-flores
+    n: room:valfenda.no-jardim-um-caminho-entre-canteiros-2
+    se: room:valfenda.no-extremo-sul-do-jardim-flores
   visits: 6
   sources:
   - logs/raw.log:84405
@@ -6960,6 +7798,8 @@
   - Uma joaninha amarela voa alegremente aqui.
   objects:
   - Uma árvore, com várias camadas de folhas, e cheia de inscrições jaz aqui.
+  links:
+    nw: room:valfenda.jardins-no-meio-das-flores-2
   visits: 2
   sources:
   - logs/raw.log:84434
@@ -6976,6 +7816,8 @@
   exits:
   - e
   - u
+  links:
+    e: room:valfenda.uma-alameda-de-juniperos-2
   visits: 2
   sources:
   - logs/raw.log:84737
@@ -6997,10 +7839,14 @@
   - s
   - w
   mobs:
-  - O belo e imponente potro de Faelar Anor exibe sua crina aqui.
   - Faelar Anor, o elfo charreteiro, está se preparando para a próxima viagem.
+  - O belo e imponente potro de Faelar Anor exibe sua crina aqui.
   objects:
   - Uma grande charrete com rodas reforçadas está aqui.
+  links:
+    e: room:valfenda.uma-alameda-de-populos-3
+    s: room:valfenda.entre-as-alamedas-das-ameixeiras-e-dos-ipes
+    w: room:valfenda.uma-alameda-de-populos
   visits: 9
   sources:
   - logs/raw.log:84931
@@ -7022,6 +7868,9 @@
   - e
   - s
   - w
+  links:
+    n: room:valfenda.uma-alameda-de-populos-2
+    s: room:valfenda.no-centro-das-casas-fonte-de-aguapes
   visits: 4
   sources:
   - logs/raw.log:84967
@@ -7048,6 +7897,9 @@
   objects:
   - A fonte de aguapés está gotejando no meio da pracinha.
   - Um belo banco com runas élficas circunda a fonte.
+  links:
+    e: room:valfenda.no-emporio-das-casas-compra-venda
+    n: room:valfenda.entre-as-alamedas-das-ameixeiras-e-dos-ipes
   visits: 3
   sources:
   - logs/raw.log:84986
@@ -7069,6 +7921,8 @@
   - w
   mobs:
   - Learin Verde-Braço está aqui, controlando e cedendo casas.
+  links:
+    w: room:valfenda.no-centro-das-casas-fonte-de-aguapes
   visits: 2
   sources:
   - logs/raw.log:85011
@@ -7086,6 +7940,10 @@
   - n
   - e
   - s
+  links:
+    e: room:valfenda.uma-alameda-de-platanos
+    n: room:valfenda.uma-alameda-de-juniperos-3
+    s: room:valfenda.uma-alameda-de-juniperos-2
   visits: 8
   sources:
   - logs/raw.log:85205
@@ -7106,6 +7964,9 @@
   - s
   mobs:
   - Um elfo cansado está contemplando a paisagem enquanto relaxa um pouco.
+  links:
+    n: room:valfenda.uma-alameda-de-juniperos-4
+    s: room:valfenda.encontro-das-alamedas-de-juniperos-e-platanos
   visits: 4
   sources:
   - logs/raw.log:85220
@@ -7126,6 +7987,10 @@
   - n
   - s
   - w
+  links:
+    n: room:valfenda.uma-alameda-de-juniperos-5
+    s: room:valfenda.uma-alameda-de-juniperos-3
+    w: room:valfenda.a-pinacoteca
   visits: 7
   sources:
   - logs/raw.log:85237
@@ -7143,6 +8008,9 @@
   exits:
   - n
   - s
+  links:
+    n: room:valfenda.encontro-das-alamedas-de-juniperos-e-olmeiros
+    s: room:valfenda.uma-alameda-de-juniperos-4
   visits: 4
   sources:
   - logs/raw.log:85253
@@ -7160,6 +8028,9 @@
   - n
   - e
   - s
+  links:
+    n: room:valfenda.servico-de-correios
+    s: room:valfenda.uma-alameda-de-juniperos-5
   visits: 5
   sources:
   - logs/raw.log:85267
@@ -7176,10 +8047,12 @@
   exits:
   - s
   mobs:
-  - Um curioso passarinho azul caminha aqui.
   - Celorien Ramo-Verde sela algumas cartas, enquanto vigia os armários.
+  - Um curioso passarinho azul caminha aqui.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
+  links:
+    s: room:valfenda.encontro-das-alamedas-de-juniperos-e-olmeiros
   visits: 2
   sources:
   - logs/raw.log:85281
@@ -7204,6 +8077,10 @@
   - n e s
   objects:
   - Há pinturas preenchendo todas as paredes.
+  links:
+    e: room:valfenda.uma-alameda-de-juniperos-4
+    n: room:valfenda.a-pinacoteca-2
+    s: room:valfenda.o-estudio-de-pinturas
   visits: 5
   sources:
   - logs/raw.log:85326
@@ -7219,6 +8096,9 @@
   - u
   objects:
   - Há pinturas preenchendo todas as paredes.
+  links:
+    s: room:valfenda.a-pinacoteca
+    u: room:valfenda.outro-corredor-pela-biblioteca
   visits: 4
   sources:
   - logs/raw.log:85344
@@ -7234,6 +8114,10 @@
   - s
   - d
   - ne
+  links:
+    d: room:valfenda.a-pinacoteca-2
+    ne: room:valfenda.outro-corredor-pela-biblioteca-2
+    s: room:valfenda.outro-corredor-pela-biblioteca-4
   visits: 5
   sources:
   - logs/raw.log:85361
@@ -7251,6 +8135,8 @@
   - O bibliotecário ordena cuidadosamente os livros por aqui.
   objects:
   - Várias estantes, umas ao lado da outra, algumas sobre as demais, estão aqui.
+  links:
+    n: room:valfenda.outro-corredor-pela-biblioteca-3
   visits: 3
   sources:
   - logs/raw.log:85374
@@ -7268,6 +8154,9 @@
   - d
   objects:
   - Várias estantes, umas ao lado da outra, algumas sobre as demais, estão aqui.
+  links:
+    d: room:valfenda.o-cartografo
+    u: room:valfenda.um-terraco
   visits: 3
   sources:
   - logs/raw.log:85401
@@ -7291,6 +8180,8 @@
   - Um senhor trabalha alguns mapas aqui.
   objects:
   - Uma pilha de folhas de papel em branco e rabiscadas está amontoada aqui.
+  links:
+    u: room:valfenda.outro-corredor-pela-biblioteca-3
   visits: 2
   sources:
   - logs/raw.log:85416
@@ -7308,6 +8199,8 @@
   - n d
   - n s
   - s d
+  links:
+    d: room:valfenda.outro-corredor-pela-biblioteca-4
   visits: 5
   sources:
   - logs/raw.log:85463
@@ -7326,6 +8219,9 @@
   - u
   objects:
   - As estantes parecem ser as paredes desse lugar.
+  links:
+    e: room:valfenda.os-corredores-circulares
+    n: room:valfenda.outro-corredor-pela-biblioteca
   visits: 8
   sources:
   - logs/raw.log:85501
@@ -7345,6 +8241,9 @@
   - se
   objects:
   - As estantes parecem ser as paredes desse lugar.
+  links:
+    se: room:valfenda.os-corredores-circulares-2
+    w: room:valfenda.outro-corredor-pela-biblioteca-4
   visits: 5
   sources:
   - logs/raw.log:85518
@@ -7363,6 +8262,8 @@
   - nw
   objects:
   - As estantes parecem ser as paredes desse lugar.
+  links:
+    nw: room:valfenda.os-corredores-circulares
   visits: 2
   sources:
   - logs/raw.log:85534
@@ -7377,6 +8278,8 @@
   - n
   mobs:
   - Um elfo limpa suas mãos meladas de tinta.
+  links:
+    n: room:valfenda.a-pinacoteca
   visits: 2
   sources:
   - logs/raw.log:85675
@@ -7396,6 +8299,9 @@
   - se
   mobs:
   - Um elfo cansado está contemplando a paisagem enquanto relaxa um pouco.
+  links:
+    ne: room:valfenda.uma-alameda-de-juniperos
+    se: room:valfenda.uma-alameda-de-juniperos-7
   visits: 8
   sources:
   - logs/raw.log:85761
@@ -7414,6 +8320,9 @@
   - e
   - '!s'
   - w
+  links:
+    e: room:valfenda.uma-alameda-de-platanos-2
+    n: room:valfenda.os-corredores-de-entrada
   visits: 4
   sources:
   - logs/raw.log:85868
@@ -7434,6 +8343,9 @@
   exits_variants:
   - e !s w
   - e s w
+  links:
+    s: room:valfenda.loja-magia-boa-e-magia-pura
+    w: room:valfenda.uma-alameda-de-platanos
   visits: 3
   sources:
   - logs/raw.log:85882
@@ -7453,6 +8365,8 @@
   - n
   mobs:
   - Aissa, a protegida do Maider, está aqui testando os limites da magia.
+  links:
+    n: room:valfenda.uma-alameda-de-platanos-2
   visits: 2
   sources:
   - logs/raw.log:85900
@@ -7470,6 +8384,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:valfenda.o-saguao-principal-do-museu
   visits: 2
   sources:
   - logs/raw.log:85942
@@ -7490,6 +8406,8 @@
   - e
   - s
   - w
+  links:
+    n: room:valfenda.escadarias-de-acesso
   visits: 2
   sources:
   - logs/raw.log:85959
@@ -7506,6 +8424,8 @@
   exits:
   - s
   - u
+  links:
+    u: room:valfenda.os-corredores-circulares-3
   visits: 2
   sources:
   - logs/raw.log:85975
@@ -7526,6 +8446,8 @@
   - sw
   objects:
   - As estantes parecem ser as paredes desse lugar.
+  links:
+    n: room:valfenda.escadarias-de-acesso-2
   visits: 2
   sources:
   - logs/raw.log:85989
@@ -7541,6 +8463,8 @@
   exits:
   - s
   - d
+  links:
+    d: room:valfenda.a-casa-de-estudos
   visits: 2
   sources:
   - logs/raw.log:86004
@@ -7561,6 +8485,8 @@
   - u
   mobs:
   - Um senhor prepara várias ervas em misturas.
+  links:
+    e: room:valfenda.a-casa-de-estudos-2
   visits: 2
   sources:
   - logs/raw.log:86017
@@ -7580,6 +8506,8 @@
   mobs:
   - Alguém escreve em pergaminhos freneticamente aqui.
   - Uma jovem elfa parece estar perdida por aqui.
+  links:
+    n: room:valfenda.uma-alameda-de-olmeiros
   visits: 2
   sources:
   - logs/raw.log:86042
@@ -7598,6 +8526,10 @@
   - e
   - s
   - w
+  links:
+    e: room:valfenda.um-circulo-florido
+    n: room:valfenda.a-alfaiataria
+    w: room:valfenda.uma-alameda-de-olmeiros-2
   visits: 4
   sources:
   - logs/raw.log:86063
@@ -7615,6 +8547,8 @@
   - s
   mobs:
   - Um elfo está aqui carregando muitas peças de roupa.
+  links:
+    s: room:valfenda.uma-alameda-de-olmeiros
   visits: 2
   sources:
   - logs/raw.log:86077
@@ -7634,9 +8568,12 @@
   - s
   - w
   objects:
-  - Uma majestosa macieira cresce aqui.
   - Uma bela fonte de pedras verdes está aqui no centro do círculo.
   - Um belo banco com runas élficas circunda a fonte.
+  - Uma majestosa macieira cresce aqui.
+  links:
+    e: room:valfenda.uma-alameda-de-alteias
+    w: room:valfenda.uma-alameda-de-olmeiros
   visits: 4
   sources:
   - logs/raw.log:86112
@@ -7655,6 +8592,9 @@
   - w
   mobs:
   - Um simpático elfo está a procura de histórias para ouvir.
+  links:
+    e: room:valfenda.uma-alameda-de-alteias-2
+    s: room:valfenda.a-casa-de-refeicoes
   visits: 2
   sources:
   - logs/raw.log:86131
@@ -7676,6 +8616,9 @@
   mobs:
   - Um alegre vendedor recebe você com cortesia.
   - Um simpático elfo está a procura de histórias para ouvir.
+  links:
+    n: room:valfenda.uma-alameda-de-alteias
+    s: room:valfenda.os-saloes-de-elrond-2
   visits: 4
   sources:
   - logs/raw.log:86137
@@ -7689,6 +8632,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:valfenda.uma-alameda-de-alteias-3
   visits: 2
   sources:
   - logs/raw.log:86171
@@ -7704,6 +8649,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:valfenda.uma-alameda-de-alteias-4
   visits: 2
   sources:
   - logs/raw.log:86189
@@ -7720,6 +8667,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:valfenda.uma-alameda-de-alteias-5
   visits: 2
   sources:
   - logs/raw.log:86204
@@ -7735,6 +8684,8 @@
   exits:
   - e
   - w
+  links:
+    e: room:valfenda.encontro-das-alamedas-de-choupos-e-alteias
   visits: 2
   sources:
   - logs/raw.log:86217
@@ -7751,6 +8702,9 @@
   - s
   - w
   - ne
+  links:
+    ne: room:valfenda.floresta-pinheiros.uma-ladeira-de-pedras
+    s: room:valfenda.uma-alameda-de-choupos
   visits: 3
   sources:
   - logs/raw.log:86229
@@ -7768,6 +8722,8 @@
   - n
   - e
   - sw
+  links:
+    sw: room:valfenda.encontro-das-alamedas-de-choupos-e-alteias
   visits: 2
   sources:
   - logs/raw.log:86242
@@ -7784,6 +8740,9 @@
   - n
   - e
   - s
+  links:
+    e: room:valfenda.a-casa-de-animais
+    s: room:valfenda.uma-alameda-de-choupos-2
   visits: 3
   sources:
   - logs/raw.log:86261
@@ -7802,6 +8761,9 @@
   - e w
   mobs:
   - Um treinador prepara a ração de seus animais.
+  links:
+    e: room:valfenda.a-casa-de-animais-2
+    w: room:valfenda.uma-alameda-de-choupos
   visits: 3
   sources:
   - logs/raw.log:86277
@@ -7814,6 +8776,8 @@
     \ hóspedes, não apenas pela empatia que \npossuem com os animais, mas sobretudo pelo amor que tem por aquilo que \nfazem."
   exits:
   - w
+  links:
+    w: room:valfenda.a-casa-de-animais
   visits: 2
   sources:
   - logs/raw.log:86296
@@ -7827,6 +8791,8 @@
   exits:
   - n
   - s
+  links:
+    s: room:valfenda.uma-alameda-de-choupos-3
   visits: 2
   sources:
   - logs/raw.log:86324
@@ -7845,6 +8811,8 @@
   - e
   - s
   - w
+  links:
+    w: room:valfenda.uma-majestosa-arcada
   visits: 2
   sources:
   - logs/raw.log:86337
@@ -7866,6 +8834,9 @@
   exits_variants:
   - e w
   - n s
+  links:
+    n: room:valfenda.o-saguao-principal
+    w: room:valfenda.o-saguao-principal
   visits: 8
   sources:
   - logs/raw.log:86353
@@ -7892,6 +8863,13 @@
   - nw
   mobs:
   - Um simpático elfo está a procura de histórias para ouvir.
+  links:
+    e: room:valfenda.uma-majestosa-arcada
+    n: room:valfenda.uma-majestosa-arcada-2
+    ne: room:valfenda.escadarias-leste
+    nw: room:valfenda.escadarias-oeste
+    s: room:valfenda.uma-majestosa-arcada
+    w: room:valfenda.uma-majestosa-arcada-2
   visits: 12
   sources:
   - logs/raw.log:86372
@@ -7916,6 +8894,11 @@
   - s ne nw
   mobs:
   - Um simpático elfo está a procura de histórias para ouvir.
+  links:
+    e: room:valfenda.o-saguao-principal
+    ne: room:valfenda.os-saloes-de-elrond
+    s: room:valfenda.o-saguao-principal
+    w: room:valfenda.uma-alameda-de-casuarinas
   visits: 7
   sources:
   - logs/raw.log:86391
@@ -7935,6 +8918,9 @@
   exits_variants:
   - '!e !w sw'
   - e !w sw
+  links:
+    e: room:valfenda.o-salao-do-fogo
+    w: room:valfenda.os-saloes-de-elrond-2
   visits: 4
   sources:
   - logs/raw.log:86406
@@ -7956,6 +8942,10 @@
   - Dunendel, o mensageiro da cidadela branca, caminha por aqui em busca de Elrond.
   objects:
   - Uma chama dourada arde silenciosamente na lareira.
+  links:
+    n: room:valfenda.o-salao-do-fogo-2
+    s: room:valfenda.o-salao-do-fogo-3
+    w: room:valfenda.os-saloes-de-elrond
   visits: 4
   sources:
   - logs/raw.log:86420
@@ -7973,6 +8963,8 @@
     mais apropriado.
   exits:
   - s
+  links:
+    s: room:valfenda.o-salao-do-fogo
   visits: 2
   sources:
   - logs/raw.log:86447
@@ -7990,6 +8982,8 @@
   - n
   mobs:
   - Um menestrel cantarola alguns versos aqui.
+  links:
+    n: room:valfenda.o-salao-do-fogo
   visits: 2
   sources:
   - logs/raw.log:86469
@@ -8013,6 +9007,9 @@
   - e
   - e w se
   - n e w
+  links:
+    n: room:valfenda.a-casa-de-refeicoes
+    se: room:valfenda.uma-majestosa-arcada-2
   visits: 10
   sources:
   - logs/raw.log:86523
@@ -8030,6 +9027,9 @@
   exits:
   - u
   - se
+  links:
+    se: room:valfenda.o-saguao-principal
+    u: room:valfenda.a-nave-superior
   visits: 3
   sources:
   - logs/raw.log:86749
@@ -8049,6 +9049,10 @@
   - d
   - ne
   - se
+  links:
+    d: room:valfenda.escadarias-oeste
+    ne: room:valfenda.uma-passagem-bem-guardada
+    se: room:valfenda.o-terraco
   visits: 5
   sources:
   - logs/raw.log:86765
@@ -8068,6 +9072,8 @@
   - sw
   mobs:
   - Um guarda permanece imóvel aqui.
+  links:
+    sw: room:valfenda.a-nave-superior
   visits: 2
   sources:
   - logs/raw.log:86779
@@ -8086,6 +9092,8 @@
   - nw
   objects:
   - Há uma corda suspensa aqui.
+  links:
+    nw: room:valfenda.a-nave-superior
   visits: 4
   sources:
   - logs/raw.log:86806
@@ -8103,6 +9111,8 @@
   exits:
   - u
   - sw
+  links:
+    sw: room:valfenda.o-saguao-principal
   visits: 2
   sources:
   - logs/raw.log:86893
@@ -8123,6 +9133,8 @@
   - s
   mobs:
   - Uma criança olha para você compenetradamente.
+  links:
+    n: room:valfenda.uma-alameda-de-casuarinas-2
   visits: 1
   sources:
   - logs/raw.log:87025
@@ -8137,6 +9149,8 @@
   exits:
   - n
   - s
+  links:
+    n: room:valfenda.um-circulo-florido
   visits: 1
   sources:
   - logs/raw.log:87031
@@ -8154,6 +9168,8 @@
   - e
   - s
   - w
+  links:
+    w: room:valfenda.uma-alameda-de-olmeiros-3
   visits: 1
   sources:
   - logs/raw.log:87071
@@ -8172,6 +9188,8 @@
   - e
   - s
   - w
+  links:
+    w: room:valfenda.uma-alameda-de-olmeiros-4
   visits: 2
   sources:
   - logs/raw.log:87078
@@ -8190,6 +9208,8 @@
   - e
   - s
   - w
+  links:
+    w: room:valfenda.encontro-das-alamedas-de-juniperos-e-olmeiros
   visits: 2
   sources:
   - logs/raw.log:87092
@@ -8211,6 +9231,9 @@
   - Um morcego marrom e peludo executa vôos rápidos aqui.
   objects:
   - Águas reluzentes como cristal absorvem as ondas deixadas por seus passos.
+  links:
+    n: room:valfenda.as-margens-da-floresta
+    s: room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa-2
   visits: 6
   sources:
   - logs/raw.log:87407
@@ -8232,6 +9255,9 @@
   - Um grande e nojento morcego se arrasta com suas asas recolhidas.
   objects:
   - Águas reluzentes como cristal absorvem as ondas deixadas por seus passos.
+  links:
+    n: room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa
+    s: room:valfenda.floresta-pinheiros.uma-clareira-escura-fora-da-caverna
   visits: 6
   sources:
   - logs/raw.log:87423
@@ -8249,6 +9275,9 @@
   - n
   - s
   - w
+  links:
+    n: room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa-2
+    s: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta
   visits: 6
   sources:
   - logs/raw.log:87441
@@ -8265,6 +9294,9 @@
   - n
   - s
   - w
+  links:
+    n: room:valfenda.floresta-pinheiros.uma-clareira-escura-fora-da-caverna
+    s: room:valfenda.floresta-pinheiros.uma-juncao-no-caminho-da-floresta
   visits: 11
   sources:
   - logs/raw.log:87454
@@ -8287,6 +9319,11 @@
   - Um morcego marrom e peludo executa vôos rápidos aqui.
   objects:
   - Um mapa foi deixado aqui.
+  links:
+    n: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta
+    ne: room:valfenda.floresta-pinheiros.uma-curva-no-caminho
+    se: room:valfenda.floresta-pinheiros.sob-um-teto-de-folhas
+    w: room:valfenda.floresta-pinheiros.uma-pequena-clareira
   visits: 14
   sources:
   - logs/raw.log:87467
@@ -8306,6 +9343,10 @@
   - w
   mobs:
   - Um morcego marrom e peludo executa vôos rápidos aqui.
+  links:
+    e: room:valfenda.floresta-pinheiros.uma-juncao-no-caminho-da-floresta
+    n: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta-3
+    s: room:valfenda.floresta-pinheiros.uma-pequena-clareira-2
   visits: 12
   sources:
   - logs/raw.log:87482
@@ -8323,6 +9364,8 @@
   - w
   mobs:
   - Um morcego marrom e peludo executa vôos rápidos aqui.
+  links:
+    w: room:valfenda.floresta-pinheiros.uma-pequena-clareira-3
   visits: 4
   sources:
   - logs/raw.log:87494
@@ -8341,6 +9384,8 @@
   - e
   mobs:
   - Um morcego marrom e peludo executa vôos rápidos aqui.
+  links:
+    n: room:valfenda.floresta-pinheiros.uma-pequena-clareira-4
   visits: 4
   sources:
   - logs/raw.log:87536
@@ -8356,6 +9401,8 @@
   exits:
   - e
   - s
+  links:
+    e: room:valfenda.floresta-pinheiros.uma-pequena-clareira
   visits: 4
   sources:
   - logs/raw.log:87549
@@ -8370,6 +9417,9 @@
   exits:
   - n
   - sw
+  links:
+    n: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta-2
+    sw: room:valfenda.floresta-pinheiros.uma-juncao-no-caminho-da-floresta
   visits: 5
   sources:
   - logs/raw.log:87616
@@ -8385,6 +9435,9 @@
   exits:
   - e
   - s
+  links:
+    e: room:valfenda.floresta-pinheiros.uma-intersecao-no-caminho
+    s: room:valfenda.floresta-pinheiros.uma-curva-no-caminho
   visits: 4
   sources:
   - logs/raw.log:87627
@@ -8400,6 +9453,9 @@
   - n
   - e
   - w
+  links:
+    e: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-espessa-folhagem
+    w: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta-2
   visits: 3
   sources:
   - logs/raw.log:87638
@@ -8416,6 +9472,8 @@
   - n
   - e
   - w
+  links:
+    w: room:valfenda.floresta-pinheiros.uma-intersecao-no-caminho
   visits: 2
   sources:
   - logs/raw.log:87649
@@ -8439,6 +9497,8 @@
   - sw
   objects:
   - Uma pedra está aqui no meio do caminho.
+  links:
+    nw: room:valfenda.floresta-pinheiros.uma-juncao-no-caminho-da-floresta
   visits: 2
   sources:
   - logs/raw.log:87707
@@ -8453,6 +9513,9 @@
   exits:
   - e
   - s
+  links:
+    e: room:valfenda.floresta-pinheiros.um-caminho-atraves-da-floresta
+    s: room:valfenda.floresta-pinheiros.uma-pequena-clareira
   visits: 6
   sources:
   - logs/raw.log:87753
@@ -8473,6 +9536,9 @@
   - ne
   - nw
   - se
+  links:
+    nw: room:valfenda.uma-alameda-de-juniperos-6
+    se: room:valfenda.uma-enorme-area-coberta
   visits: 8
   sources:
   - logs/raw.log:87923
@@ -8492,6 +9558,9 @@
   - e
   - s
   - w
+  links:
+    n: room:valfenda.a-casa-de-descanso
+    w: room:valfenda.uma-alameda-de-populos-2
   visits: 4
   sources:
   - logs/raw.log:88147
@@ -8509,6 +9578,10 @@
   - e
   - s
   - w
+  links:
+    e: room:valfenda.uma-sala-de-espera
+    s: room:valfenda.uma-alameda-de-populos-3
+    w: room:valfenda.a-recepcao
   visits: 7
   sources:
   - logs/raw.log:88160
@@ -8527,6 +9600,9 @@
   - '!u'
   mobs:
   - A recepcionista da Casa de Descanso tenta dar atenção a todos.
+  links:
+    e: room:valfenda.a-casa-de-descanso
+    w: room:valfenda.sala-de-doacoes
   visits: 4
   sources:
   - logs/raw.log:88172
@@ -8546,6 +9622,8 @@
   objects:
   - Uma delicada camisa clara foi abandonada aqui.
   - Uma desgastada bainha de couro foi largada aqui.
+  links:
+    e: room:valfenda.a-recepcao
   visits: 4
   sources:
   - logs/raw.log:88180
@@ -8565,11 +9643,13 @@
   exits:
   - w
   mobs:
-  - Isilië, a curandeira, pacientemente auxilia os feridos.
   - Isilië brilha sob uma aura branca.
+  - Isilië, a curandeira, pacientemente auxilia os feridos.
   objects:
   - Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
   - A fonte de mármore goteja água cristalina.
+  links:
+    w: room:valfenda.a-casa-de-descanso
   visits: 4
   sources:
   - logs/raw.log:88242
@@ -8588,6 +9668,8 @@
   - sw
   mobs:
   - Um guarda está patrulhando aqui.
+  links:
+    sw: room:bri.proximo-ao-portao-sul
   visits: 4
   sources:
   - logs/raw.log:92183
@@ -8605,6 +9687,8 @@
   exits:
   - w
   - ne
+  links:
+    ne: room:bri.proximo-ao-portao-sul
   visits: 2
   sources:
   - logs/raw.log:92209
@@ -8621,6 +9705,8 @@
   - s
   mobs:
   - O pescador oferece a você sua coleção de canoas.
+  links:
+    n: room:estrada-leste.a-grande-estrada-do-leste-4
   visits: 2
   sources:
   - logs/raw.log:92275
@@ -8641,6 +9727,8 @@
   objects:
   - Diversas cadeiras circulam uma mesa de centro.
   - Junto à parede leste, crepita uma lareira.
+  links:
+    w: room:bri.ponei.o-ponei-saltitante
   visits: 2
   sources:
   - logs/raw.log:92686

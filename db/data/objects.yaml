@@ -1,0 +1,4143 @@
+# GERADO por db/tools/minerar.py a partir de logs/ — NAO EDITAR A MAO, rode o script de novo.
+- id: obj:1-moeda
+  name: 1 moeda
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:5-moedas-de-ouro
+  name: 5 moedas de ouro
+  kind: item
+  category: outro
+  examined: false
+  dropped_by:
+  - um jovem orc furioso
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:adaga-metalica
+  name: uma adaga metálica
+  kind: item
+  category: outro
+  examined: false
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:alianca-de-esposa
+  name: uma aliança de esposa
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Marry Knob <no dedo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:aljava-afilada
+  name: uma aljava afilada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <nas costas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:anel-do-guarda-da-vila
+  name: um anel do guarda da vila
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <no dedo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:arco-bem-trabalhado
+  name: um arco bem trabalhado
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <empunhando dis>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:armadura-cristada
+  name: uma armadura cristada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <no corpo>
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 6
+    price: 5
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bainha-ornada
+  name: uma bainha ornada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:banjo-de-peroba
+  name: um banjo de peroba
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:barbote-de-couro
+  name: um barbote de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <sobre o rosto>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bela-coroa-dourada
+  name: uma bela coroa dourada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mestre Toric <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bengala-da-viuva
+  name: a bengala da viúva
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A viúva <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolo-de-frutas-silvestres
+  name: um bolo de frutas silvestres
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-refeicoes
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-refeicoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:botas-pretas
+  name: as botas pretas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <nos pés>
+  - O guarda <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bracelete-de-couro
+  name: um bracelete de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O herói Kheodred <nos braços>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bracelete-metalico
+  name: um bracelete metálico
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - no pulso
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cabresto-arrebentado
+  name: um cabresto arrebentado
+  kind: item
+  category: outro
+  examined: false
+  dropped_by:
+  - um bezerro
+  actions:
+  - deu
+  - jogou
+  - pegou
+  - recebeu
+  item: item:cabresto-rompido
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cabresto-rompido
+  name: um cabresto rompido
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Um cabresto rompido foi largado no chão daqui.
+  rooms:
+  - room:academia.o-centro-do-jardim
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cacho-de-uvas
+  name: um cacho de uvas
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-refeicoes
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-refeicoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cajado-de-madeira
+  name: um cajado de madeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mestre Toric <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-com-listras
+  name: uma calça com listras
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Eartitton <nas pernas>
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 9
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-curta
+  name: uma calça curta
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 7
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-de-brim
+  name: uma calça de brim
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-de-couro
+  name: uma calça de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <nas pernas>
+  ground_line: Uma calça de couro foi arremessada aqui no chão.
+  rooms:
+  - room:bri.mansao-knob.deposito-de-utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-de-couro-fornido
+  name: uma calça de couro fornido
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Vato Nogueira <nas pernas>
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 6
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-marrom
+  name: uma calça marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O herói Kheodred <nas pernas>
+  - O lojista <nas pernas>
+  - Zurg <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-preta-de-algodao
+  name: uma calça preta de algodão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - nas pernas
+  actions:
+  - pegou
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-rasgada
+  name: uma calça rasgada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O servente da casa <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-de-algodao
+  name: uma camisa de algodão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <no corpo>
+  - O herói Kheodred <no corpo>
+  - O lojista <no corpo>
+  - Zurg <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-marrom
+  name: uma camisa marrom
+  kind: item
+  category: equipamento
+  description: Uma camisa ordinária, feita de um tecido marrom.
+  examined: true
+  worn_at:
+  - no corpo
+  actions:
+  - pegou
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caneca-de-cerveja
+  name: uma caneca de cerveja
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:archet.os-saguoes-de-outono
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caneca-de-rum
+  name: uma caneca de rum
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caneta-tinteiro
+  name: uma caneta-tinteiro
+  kind: item
+  category: outro
+  examined: false
+  found_in:
+  - um pequeno armário
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 1
+    price: 10
+    stock: Ilim.
+  rooms:
+  - room:academia.a-sala-dos-conteiners
+  - room:valfenda.o-cartografo
+  actions:
+  - deu
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:canino-de-morcego
+  name: um canino de morcego
+  kind: item
+  category: outro
+  examined: false
+  dropped_by:
+  - um morcego peludo
+  actions:
+  - deu
+  - pegou
+  item: item:canino-morcego
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cantil-de-aventureiro
+  name: um cantil de aventureiro
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:academia.o-refeitorio
+    level: 1
+    price: 16
+    stock: Ilim.
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 1
+    price: 15
+    stock: Ilim.
+  rooms:
+  - room:academia.o-refeitorio
+  - room:academia.provisoes-para-jovens-aventureiros
+  actions:
+  - deu
+  - pegou
+  - recebeu
+  item: item:cantil
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:capa-cinzenta
+  name: uma capa cinzenta
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:capa-cinzenta-de-viagem
+  name: uma capa cinzenta de viagem
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:capuz-roxo-berrante
+  name: um capuz roxo berrante
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caro-relogio-de-bolso
+  name: um caro relógio de bolso
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O herói Kheodred <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caroco-de-maca
+  name: um caroço de maçã
+  kind: item
+  category: comida e bebida
+  examined: false
+  ground_line: Um caroço de maçã foi jogado aqui.
+  rooms:
+  - room:academia.o-corredor-silencioso
+  - room:bri.avenida-zenite-2
+  - room:bri.biblioteca.a-ala-oeste
+  - room:valfenda.as-margens-da-floresta
+  - room:valfenda.uma-alameda-de-juniperos
+  actions:
+  - deu
+  - jogou
+  - recebeu
+  item: item:caroco-maca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:casaco-preto
+  name: um casaco preto
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - no corpo
+  actions:
+  - pegou
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chapeu-de-couro
+  name: um chapéu de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O herói Kheodred <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chapeu-de-couro-marrom
+  name: um chapéu de couro marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Vato Nogueira <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chapeu-de-duas-penas
+  name: um chapéu de duas penas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chave-do-portao-norte-de-bri
+  name: a chave do portão norte de Bri
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chave-metalica
+  name: uma chave metálica
+  kind: item
+  category: outro
+  examined: false
+  found_in:
+  - uma bela estante
+  ground_line: Uma chave metálica jaz largada.
+  rooms:
+  - room:academia.a-sala-da-atencao
+  - room:academia.a-sala-das-portas
+  - room:academia.a-sala-do-combate
+  actions:
+  - jogou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chicote-de-equitacao
+  name: um chicote de equitação
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Um chicote de equitação foi jogado aqui.
+  rooms:
+  - room:bri.mansao-knob.deposito-de-utensilios
+  actions:
+  - deu
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cinto-de-couro
+  name: um cinto de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - na cintura
+  worn_by:
+  - Zurg <na cintura>
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cinto-de-ouro-e-prata
+  name: um cinto de ouro e prata
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cinto-ornado-em-folhas
+  name: um cinto ornado em folhas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Eartitton <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cogumelo-comestivel
+  name: um cogumelo comestível
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:academia.o-refeitorio
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:academia.o-refeitorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cogumelos
+  name: alguns cogumelos
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:colchonete-de-penas
+  name: um colchonete de penas
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 1
+    price: 10
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:colete-entreaberto
+  name: um colete entreaberto
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:dado-de-seis-faces
+  name: um dado de seis faces
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:dado-de-vinte-faces
+  name: um dado de vinte faces
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:delicada-camisa-clara
+  name: uma delicada camisa clara
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Uma delicada camisa clara foi abandonada aqui.
+  rooms:
+  - room:valfenda.sala-de-doacoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:deliciosa-maca
+  name: uma deliciosa maçã
+  kind: item
+  category: comida e bebida
+  examined: false
+  found_in:
+  - o galho mais baixo da macieira
+  rooms:
+  - room:bri.avenida-zenite
+  actions:
+  - jogou
+  item: item:maca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:desgastada-bainha-de-couro
+  name: uma desgastada bainha de couro
+  kind: item
+  category: outro
+  description: |-
+    Uma tosca bainha de um couro negro e um tanto ressecado. Fixada a ela há
+    duas tiras de couro com a finalidade de serem amarradas na cintura.
+  examined: true
+  ground_line: Uma desgastada bainha de couro foi largada aqui.
+  rooms:
+  - room:valfenda.sala-de-doacoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:elixir-colorido
+  name: o elixir colorido
+  kind: item
+  category: comida e bebida
+  description: |-
+    Dentro do pequeno frasco de vidro, borbulha um líquido colorido. Na
+    superfície da tampa e na lateral do frasco, jaz inscrito o símbolo da
+    Academia de Aventureiros.
+  examined: true
+  weight: cerca de 100 g
+  actions:
+  - bebeu
+  - pegou
+  item: item:elixir
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:elmo-de-ferro
+  name: um elmo de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:elmo-metalico
+  name: um elmo metálico
+  kind: item
+  category: equipamento
+  description: |-
+    Apesar de simples, esse elmo metálico foi muito bem forjado. É perceptível
+    o quão resistente ele é, o tornando uma ótima proteção para quem for
+    entrar em combate. Sobre o elmo jaz inscrito o símbolo da Academia dos
+    Aventureiros.
+  examined: true
+  weight: cerca de 2 kg
+  wear:
+  - cabeça
+  condition: em perfeito estado
+  worn_at:
+  - na cabeça
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:enorme-caneca-de-cerveja
+  name: uma enorme caneca de cerveja
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:escudo-de-ferro
+  name: um escudo de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <como escudo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:escudo-metalico
+  name: um escudo metálico
+  kind: item
+  category: equipamento
+  description: |-
+    Apesar de simples, esse escudo metálico foi muito bem forjado. É
+    perceptível o quão forte ele é, o tornando uma ótima proteção para quem
+    for entrar em combate. No centro da face dele, jaz inscrito o símbolo da
+    Academia dos Aventureiros.
+  examined: true
+  weight: de 3 a 4 kg
+  wear:
+  - como escudo
+  condition: em perfeito estado
+  worn_at:
+  - como escudo
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - pegou
+  - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espada-longa
+  name: uma espada longa
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <empunhando>
+  - O guarda <empunhando>
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 1
+    price: 8
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espada-metalica
+  name: uma espada metálica
+  kind: item
+  category: equipamento
+  description: |-
+    Muito bem forjada, esta espada foi cuidadosamente feita para grandes
+    batalhas. Feita a partir de algum metal escuro, ela traz inscrita em sua
+    superfície o símbolo da Academia dos Aventureiros.
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - empunhando
+  condition: em perfeito estado
+  worn_at:
+  - empunhando
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armas
+  actions:
+  - empunhou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:etereo-manto-dos-mortos
+  name: o etéreo manto dos mortos
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - sobre o corpo
+  actions:
+  - recebeu
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne-de-um-bezerro
+  name: uma fatia de carne de um bezerro
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  - deu
+  item: item:fatia-carne
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne-de-um-grande-macaco
+  name: uma fatia de carne de um grande macaco
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  - deu
+  item: item:fatia-carne
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne-de-um-javali-gordao
+  name: uma fatia de carne de um javali gordão
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  item: item:fatia-carne
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne-de-um-lobo-sorrateiro
+  name: uma fatia de carne de um lobo sorrateiro
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  - deu
+  item: item:fatia-carne
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne-de-uma-raposa-preguicosa
+  name: uma fatia de carne de uma raposa preguiçosa
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  item: item:fatia-carne
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-pao
+  name: uma fatia de pão
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  actions:
+  - come
+  - comprou
+  item: item:pao
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-salame
+  name: uma fatia de salame
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:archet.os-saguoes-de-outono
+    level: 0
+    price: 2
+    stock: Ilim.
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:favo-de-mel
+  name: um favo de mel
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-refeicoes
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-refeicoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fina-calca-de-seda
+  name: uma fina calça de seda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Faelar Anor <nas pernas>
+  - Um menestrel <nas pernas>
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 18
+    price: 26
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fina-camisa-de-seda
+  name: uma fina camisa de seda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Eartitton <no corpo>
+  - Faelar Anor <no corpo>
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 17
+    price: 26
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  actions:
+  - pegou
+  item: item:camisa-seda
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fita-verde-escura
+  name: uma fita verde escura
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um menestrel <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:folha-de-papel
+  name: uma folha de papel
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:folha-negra
+  name: uma folha negra
+  kind: item
+  category: outro
+  examined: false
+  dropped_by:
+  - um grande e nojento morcego
+  actions:
+  - deu
+  - pegou
+  item: item:folha-negra
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:formao
+  name: um formão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O saqueador de túmulos <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:garrafa-de-cerveja
+  name: uma garrafa de cerveja
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:garrafa-de-limonada-gelada
+  name: uma garrafa de limonada gelada
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 1
+    price: 6
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:garrafa-de-uisque
+  name: uma garrafa de uísque
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grande-mochila-de-viagem
+  name: uma grande mochila de viagem
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Narinë <nas costas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:gravata-borboleta
+  name: uma gravata borboleta
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grossa-camisa-de-mangas-longas
+  name: uma grossa camisa de mangas longas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Vato Nogueira <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grosso-cachecol-de-la-aranha
+  name: um grosso cachecol de lã aranha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:guia-do-aventureiro
+  name: O Guia do Aventureiro
+  kind: item
+  category: livro
+  examined: false
+  actions:
+  - colocou
+  - deu
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:insignia-da-montanha-solitaria
+  name: a insígnia da Montanha Solitária
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <como símbolo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:lamparina
+  name: uma lamparina
+  kind: item
+  category: equipamento
+  examined: true
+  weight: cerca de 300 g
+  light: 120 horas
+  worn_at:
+  - como luz
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  actions:
+  - colocou
+  - comprou
+  - deu
+  - pegou
+  item: item:lamparina
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:lamparina-incandescente
+  name: uma lamparina incandescente
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <como luz>
+  item: item:lamparina
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:lanterna-de-latao-batido
+  name: uma lanterna de latão batido
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <como luz>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:leves-botas-de-montaria
+  name: leves botas de montaria
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Faelar Anor <nos pés>
+  - O herói Kheodred <nos pés>
+  - Vato Nogueira <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:lira-de-sete-cordas
+  name: uma lira de sete cordas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um menestrel <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:livro-intitulado-cuivienyarna-a-lenda-do-despert
+  name: um livro intitulado 'Cuivienyarna - A Lenda do Despertar dos Quendi'
+  kind: item
+  category: livro
+  description: |-
+    Cuivienyarna - A Lenda do Despertar dos Quendi
+    Escrito por um antigo mestre da sabedoria.
+    Páginas escritas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14.
+    Digite 'BOOK <livro> READ <página>' para ler uma página do livro.
+  examined: true
+  found_in:
+  - a estante
+  rooms:
+  - room:bri.biblioteca.a-ala-oeste
+  actions:
+  - colocou
+  - pegou
+  item: item:livro-cuivienyarna
+  pages:
+  - |-
+    Cuivienyarna - A Lenda do Despertar dos Quendi - Página 1
+    Enquanto seus primeiros corpos estavam sendo feitos da "carne de Arda", os
+    quendi dormiam "no seio da terra", debaixo do verde gramado, e despertaram
+    quando tornaram-se adultos. Mas os Primeiros Elfos [também chamados de
+    Não-Nascidos, ou Nascidos de Eru] não acordaram todos ao mesmo tempo. Eru
+    havia então determinado que cada um deveria estar ao lado de seu/sua
+    "parceiro[a] destinado". Mas três elfos despertaram antes de todos,
+    e eles eram elfos homens, pois elfos homens são mais fortes fisicamente
+    e mais ávidos e aventureiros em lugares estranhos. Estes três pais elfos
+    são chamados nos contos antigos Imin, Tata e Enel. Eles despertaram nessa
+    ordem, mas com pouca diferença de tempo entre cada um; e a partir deles,
+    dizem os eldar, as palavras um, dois e três foram feitas: os mais antigos
+    de todos os numerais.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:livro-intitulado-dragoes-os-servos-de-morgoth
+  name: um livro intitulado 'Dragões - Os Servos de Morgoth'
+  kind: item
+  category: livro
+  examined: false
+  found_in:
+  - a estante
+  rooms:
+  - room:bri.biblioteca.a-ala-oeste
+  actions:
+  - colocou
+  - pegou
+  item: item:livro-dragoes
+  pages:
+  - Dragões - Os Servos de Morgoth - Página 1
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:livro-intitulado-orcs-a-raca-corrompida
+  name: um livro intitulado 'Orcs - A Raça Corrompida'
+  kind: item
+  category: livro
+  examined: false
+  found_in:
+  - a estante
+  rooms:
+  - room:bri.biblioteca.a-ala-oeste
+  actions:
+  - colocou
+  - pegou
+  item: item:livro-orcs
+  pages:
+  - |-
+    Orcs - A Raça Corrompida - Página 1
+    Dentro dos mais profundos Poços de Utumno, na Primeira Era das Estrelas,
+    é dito que Melkor cometeu sua maior blasfêmia. Por àquele tempo ele
+    capturou muitos dentre a recentemente surgida raça dos Elfos e prendeu-os
+    em suas masmorras, e com atos horríveis de torura ele fez formas de
+    vida arruinadas e terríveis. Destes ele criou uma raça escrava, Orcs,
+    que eram tão repulsivos quanto os Elfos eram belos.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:livro-intitulado-os-poderes-de-arda
+  name: um livro intitulado 'Os Poderes de Arda'
+  kind: item
+  category: livro
+  description: |-
+    Os Poderes de Arda
+    Escrito por algum antigo mestre da tradição.
+    Páginas escritas: 1, 2, 3.
+    Digite 'BOOK <livro> READ <página>' para ler uma página do livro.
+  examined: true
+  found_in:
+  - a estante
+  rooms:
+  - room:bri.biblioteca.a-ala-leste
+  actions:
+  - colocou
+  - pegou
+  item: item:livro-poderes-arda
+  pages:
+  - |-
+    Os Poderes de Arda - Página 1
+    Quando Ëa, o "Mundo Que É", foi dado substância, nele veio a residir
+    uma parte da primeira raça, os Ainur, os "Sagrados". Nos Salões Eternos
+    eram seres de puro espírito que o "Valaquenta" registra terem entrado no
+    Mundo e, tomando uma forma terrena, se dividiram em dois povos. O povo
+    que era menos poderoso e mais numeroso e sua história é contada como os
+    Maiar; os maiores poderes eram quinze em número e são considerados Valar,
+    os Poderes de Arda.
+  - |-
+    Os Poderes de Arda - Página 2
+    É dito em livros antigos que, quando os Valar e Maiar vieram e moldaram
+    a aspereza do Mundo, desejavam construir a beleza perfeita que tinham
+    visto na Visão. Mas houve disputa entre os Valar e a guerra estragou seus
+    trabalhos. Mas ao menos o primeiro reino dos Valar, chamado, Almaren,
+    foi feito em uma ilha no meio de um vasto lago na Terra-média, e todo o
+    Mundo foi iluminado pelas duas Lâmpadas brilhantes que estavam no Norte
+    e Sul. Então começou a Era das Lâmpadas. Mas um dos Valar se revoltou
+    e quebrou as Grandes Lâmpadas dos Valar e destruiu a Ilha de Almaren e
+    seus jardins encantados.
+  - |-
+    Os Poderes de Arda - Página 3
+    Então os Valar deixaram a Terra-média e foram para o Oeste para o
+    Continente de Aman, onde colocaram as Montanhas Pelóri ao redor deles e
+    fizeram seu segundo reino e mansões ainda mais belas que no primeiro. Seu
+    reino foi chamado Valinor, e sua cidade de domos, sinos e grandes salas
+    foi chamada Valimar. A este tempo as Árvores dos Valar, que forneciam
+    luz eterna, dourada e prateada, foram feitas e toda a Mana foi iluminada
+    até as bordas das Pelóri; e o reino era um milagre de beleza.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:longa-tunica-negra
+  name: uma longa túnica negra
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mestre Toric <sobre o corpo>
+  - O herói Kheodred <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:longa-tunica-elfica
+  name: uma longa túnica élfica
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:machado-metalico
+  name: um machado metálico
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O herói Kheodred <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:malha-de-couro-e-aneis-de-metal
+  name: uma malha de couro e anéis de metal
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:manta-bordada
+  name: uma manta bordada
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 3
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:manto-do-coveiro
+  name: o manto do coveiro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O coveiro <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa
+  name: um mapa
+  kind: item
+  category: mapa
+  examined: false
+  ground_line: Um mapa foi deixado aqui.
+  rooms:
+  - room:valfenda.floresta-pinheiros.uma-juncao-no-caminho-da-floresta
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-da-academia-de-aventureiros
+  name: um mapa da Academia de Aventureiros
+  kind: item
+  category: mapa
+  description: |-
+    Mapa da Academia de Aventureiros
+        O mapa representa a planta-baixa da Academia de Aventureiros, onde se
+    destaca um corredor central que percorre o sentido norte-sul e dá acesso a
+    salas a leste a oeste.
+        Na extremidade sul deste corredor, fica o saguão de entrada com a loja
+    ao leste e a entrada para as salas de treinamento ao oeste.
+        O corredor inicia-se ao norte do saguão de entrada e da acesso ao
+    refeitório ao leste e à sala de estudos ao oeste.
+        O corredor continua ao norte, onde dá acesso a sala de estudos de
+    idiomas ao leste e a sala de treinamento de perícias ao oeste; a oeste
+    desta última sala, fica a sala de treinamento de magias.
+        O corredor continua ao norte, onde dá acesso ao depósito de armas
+    ao leste e ao depósito de armaduras ao oeste.
+        Ao norte desse último segmento fica a sala de curta. Ao norte,
+    leste e oeste da sala de cura ficam três diferentes salas de combate.
+  examined: true
+  ground_line: Um mapa da Academia de Aventureiros foi abandonado aqui.
+  rooms:
+  - room:academia.o-corredor-silencioso
+  actions:
+  - deu
+  - pegou
+  item: item:mapa-academia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-da-vila-de-bri
+  name: um mapa da vila de Bri
+  kind: item
+  category: mapa
+  description: |-
+    |
+      +--------+-------+--------+---------+---------+--------+--------+--------+
+      |                                   |
+      +      Sya  +    Casa de            +
+      |            \     Cura             |
+      +             +      +              +         +
+      |             |      |              |         |
+      +             +------+----+-----+   +        ,+----+
+      |            /                   \  |  ,+---+       \.
+      |           +   Sede      Gali    \ | +              +
+      |               McD      nheiro    \|/                     Biblioteca
+     -+------+---------+----------+-------+-------+-------+----------+---------+
+      |              Sede                 | Praça                 Academia     |
+      |              Grn                  |                                    |
+      |                             Casa  | Pônei                              |
+      +                           Mathom  + Saltitante                         +
+      |                                   | Estábulos                          |
+      | Tenda do   Loja de      Loja de   |                                    |
+      | Escriba     Chás      Utilidades  |    Açougue   Padaria   Lacticínios |
+      +-----+----------+----------+-------+-------+---------+----------+-------+
+      |   Loja     Correios    Penas e    |   Ferreiro   Armorial    Loja de   |
+      | Esmeralda            Pergaminhos  |                           Armas    |
+      |                                   |                                    |
+    Próximo, Mostrar tudo, Repetir, Voltar, ou Sair: [P]
+  examined: true
+  actions:
+  - colocou
+  - deu
+  - jogou
+  - pegou
+  - recebeu
+  item: item:mapa-bri
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-das-cercanias-de-bri
+  name: um mapa das cercanias de Bri
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-de-archet
+  name: um mapa de Archet
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-de-bri
+  name: um mapa de Bri
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-de-couro-lupino
+  name: um mapa de couro lupino
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-de-valfenda
+  name: um mapa de Valfenda
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  item: item:mapa-valfenda
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-do-caminho-para-as-montanhas-sombr
+  name: um mapa do Caminho para as Montanhas Sombr
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:valfenda.o-cartografo
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.o-cartografo
+  item: item:mapa-montanhas-sombrias
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:maca-metalica
+  name: uma maça metálica
+  kind: item
+  category: outro
+  examined: false
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:maca
+  name: uma maçã
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - comeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mistura-de-ervas
+  name: uma mistura de ervas
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-estudos
+    level: 1
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-estudos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mistura-de-especiarias
+  name: uma mistura de especiarias
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-estudos
+    level: 12
+    price: 5
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-estudos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mistura-de-iguarias
+  name: uma mistura de iguarias
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-estudos
+    level: 2
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-estudos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mistura-de-temperos
+  name: uma mistura de temperos
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:valfenda.a-casa-de-estudos
+    level: 5
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-casa-de-estudos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mochila-dos-aventureiros-de-halbarion
+  name: a mochila dos aventureiros de Halbarion
+  kind: item
+  category: equipamento
+  description: |-
+    Feita por ábeis artesãos anões, essa mochila é perfeita para qualquer
+    aventura. Por dentro, ela é recoberta por um tecido liso e macio. E por
+    fora, ela foi feita a partir de algum couro resistente que foi trabalhado
+    até ficar bem flexível. O símbolo da Academia dos Aventureiros a adorna, a
+    deixando ainda mais bela.
+  examined: true
+  weight: cerca de 2 kg
+  wear:
+  - costas
+  capacity: Gigantesca
+  worn_at:
+  - nas costas
+  actions:
+  - colocou
+  - pegou
+  - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:moedas
+  name: algumas moedas
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - deu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-de-couro
+  name: um par de botas de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - nos pés
+  worn_by:
+  - Mestre Toric <nos pés>
+  - O lojista <nos pés>
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-bracadeiras-das-trevas-de-angband
+  name: um par de braçadeiras das trevas de Angband
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <nos braços>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-bracadeiras-de-ferro
+  name: um par de braçadeiras de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <no pulso>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-calcas-escuras
+  name: um par de calças escuras
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-delicados-sapatos-de-couro
+  name: um par de delicados sapatos de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Zurg <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-grossas-botas-de-couro
+  name: um par de grossas botas de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-luvas-de-couro
+  name: um par de luvas de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - nas mãos
+  worn_by:
+  - O Guardião do Norte <nas mãos>
+  - O herói Kheodred <nas mãos>
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-manoplas-de-ferro
+  name: um par de manoplas de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <nas mãos>
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 7
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-perneiras-metalicas
+  name: um par de perneiras metálicas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - nas pernas
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - pegou
+  - recebeu
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sandalias
+  name: um par de sandálias
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A viúva <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pedaco-de-bolo-de-chocolate
+  name: um pedaço de bolo de chocolate
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pedaco-de-carne-de-coelho
+  name: um pedaço de carne de coelho
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:academia.o-refeitorio
+    level: 1
+    price: 1
+    stock: '1'
+  rooms:
+  - room:academia.o-refeitorio
+  actions:
+  - come
+  - comprou
+  - recebeu
+  item: item:carne-coelho
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pedaco-de-pao-duro-com-carne-desfiada
+  name: um pedaço de pão duro com carne desfiada
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:archet.os-saguoes-de-outono
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:peitoral-metalico
+  name: um peitoral metálico
+  kind: item
+  category: equipamento
+  description: |-
+    Apesar de simples, esse peitoral metálico foi muito bem forjado. É
+    perceptível o quão resistente ele é, o tornando uma ótima proteção para
+    quem for entrar em combate. No centro do peitoral jaz inscrito o símbolo
+    da Academia dos Aventureiros.
+  examined: true
+  weight: de 5 a 10 kg
+  wear:
+  - corpo
+  condition: em perfeito estado
+  worn_at:
+  - no corpo
+  actions:
+  - pegou
+  - recebeu
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequena-charrete
+  name: uma pequena charrete
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Uma pequena charrete foi deixada aqui.
+  rooms:
+  - room:bri.a-grande-estrada-leste
+  - room:bri.a-grande-estrada-leste-2
+  - room:bri.a-grande-estrada-leste-3
+  - room:bri.a-grande-estrada-leste-4
+  - room:bri.a-grande-estrada-leste-7
+  - room:bri.a-grande-estrada-leste-8
+  - room:bri.a-praca-de-bri
+  - room:bri.colina.contornando-a-colina-de-bri
+  - room:bri.dentro-do-portao-sul
+  - room:bri.fora-do-portao-sul
+  - room:bri.proximo-ao-portao-sul
+  - room:bri.sobre-um-passadico-3
+  - room:estrada-leste.a-grande-estrada-do-leste-10
+  - room:estrada-leste.a-grande-estrada-do-leste-11
+  - room:estrada-leste.a-grande-estrada-do-leste-12
+  - room:estrada-leste.a-grande-estrada-do-leste-13
+  - room:estrada-leste.a-grande-estrada-do-leste-14
+  - room:estrada-leste.a-grande-estrada-do-leste-15
+  - room:estrada-leste.a-grande-estrada-do-leste-16
+  - room:estrada-leste.a-grande-estrada-do-leste-17
+  - room:estrada-leste.a-grande-estrada-do-leste-18
+  - room:estrada-leste.a-grande-estrada-do-leste-19
+  - room:estrada-leste.a-grande-estrada-do-leste-20
+  - room:estrada-leste.a-grande-estrada-do-leste-21
+  - room:estrada-leste.a-grande-estrada-do-leste-22
+  - room:estrada-leste.a-grande-estrada-do-leste-23
+  - room:estrada-leste.a-grande-estrada-do-leste-24
+  - room:estrada-leste.a-grande-estrada-do-leste-25
+  - room:estrada-leste.a-grande-estrada-do-leste-26
+  - room:estrada-leste.a-grande-estrada-do-leste-27
+  - room:estrada-leste.a-grande-estrada-do-leste-28
+  - room:estrada-leste.a-grande-estrada-do-leste-29
+  - room:estrada-leste.a-grande-estrada-do-leste-30
+  - room:estrada-leste.a-grande-estrada-do-leste-31
+  - room:estrada-leste.a-grande-estrada-do-leste-32
+  - room:estrada-leste.a-grande-estrada-do-leste-33
+  - room:estrada-leste.a-grande-estrada-do-leste-34
+  - room:estrada-leste.a-grande-estrada-do-leste-35
+  - room:estrada-leste.a-grande-estrada-do-leste-36
+  - room:estrada-leste.a-grande-estrada-do-leste-37
+  - room:estrada-leste.a-grande-estrada-do-leste-4
+  - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrada-leste.a-grande-estrada-do-leste-6
+  - room:estrada-leste.a-grande-estrada-do-leste-7
+  - room:estrada-leste.a-grande-estrada-do-leste-8
+  - room:estrada-leste.a-grande-estrada-do-leste-9
+  - room:estrada-leste.a-ultima-ponte
+  - room:estrada-leste.escalando-o-desfiladeiro
+  - room:estrada-leste.escalando-o-desfiladeiro-2
+  - room:estrada-leste.escalando-o-desfiladeiro-3
+  - room:estrada-leste.escalando-o-desfiladeiro-4
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-2
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-3
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-4
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-5
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-6
+  - room:estrada-leste.o-vau-do-bruinen
+  - room:estrada-leste.um-atalho
+  - room:estrada-leste.um-atalho-2
+  - room:estrada-leste.um-atalho-3
+  - room:estrada-leste.um-atalho-4
+  - room:valfenda.a-estrada-rochosa
+  - room:valfenda.a-ponte-sobre-o-bruinen
+  - room:valfenda.as-margens-da-floresta
+  - room:valfenda.curva-entre-arvores
+  - room:valfenda.curva-entre-arvores-2
+  - room:valfenda.o-bosquepraca
+  - room:valfenda.olhos-para-o-vale
+  - room:valfenda.uma-alameda-de-populos
+  - room:valfenda.uma-enorme-area-coberta
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:perdiz-assada
+  name: uma perdiz assada
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:academia.o-refeitorio
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:academia.o-refeitorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pergaminho-de-identificacao
+  name: um pergaminho de identificação
+  kind: item
+  category: pergaminho
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 1
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pergaminho-de-retorno
+  name: um pergaminho de retorno
+  kind: item
+  category: pergaminho
+  examined: false
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 1
+    price: 1
+    stock: Ilim.
+  ground_line: Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  - room:valfenda.olhos-para-o-vale
+  actions:
+  - colocou
+  - comprou
+  - pegou
+  - recebeu
+  - recitou
+  item: item:pergaminho-retorno
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:perneiras-de-batalha
+  name: as perneiras de batalha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A Guardiã elfa <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:perneiras-de-malha
+  name: as perneiras de malha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesado-colete-marrom
+  name: um pesado colete marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um menestrel <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:placa-roubada-de-uma-lapide
+  name: uma placa roubada de uma lápide
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O saqueador de túmulos <como escudo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:porcao-de-azeitonas
+  name: uma porção de azeitonas
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:archet.os-saguoes-de-outono
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:porcao-de-nozes
+  name: uma porção de nozes
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:protetor-de-ferro
+  name: um protetor de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:protetor-de-ferro-para-os-bracos
+  name: um protetor de ferro para os braços
+  kind: item
+  category: equipamento
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - braços
+  condition: em perfeito estado
+  worn_at:
+  - nos braços
+  worn_by:
+  - O guarda <nos braços>
+  shops:
+  - room: room:academia.provisoes-para-jovens-aventureiros
+    level: 2
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  actions:
+  - colocou
+  - comprou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pao-bem-recheado-para-viagem
+  name: um pão bem recheado para viagem
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - colocou
+  - come
+  - deu
+  - pegou
+  - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:reluzente-par-de-botas-com-fivelas-de-cobre
+  name: um reluzente par de botas com fivelas de cobre
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dori <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:resistente-colarinho-metalico
+  name: um resistente colarinho metálico
+  kind: item
+  category: equipamento
+  description: |-
+    Este colarinho ajusta-se perfeitamente em seu pescoço, e poderá
+    salvá-lo de uma espada! Olhando atentamente, você vê o brasão da
+    Academia de Aventureiros forjado em sua face frontal.
+  examined: true
+  weight: cerca de 2 kg
+  wear:
+  - pescoço
+  condition: em perfeito estado
+  worn_at:
+  - no pescoço
+  found_in:
+  - uma bela estante
+  rooms:
+  - room:academia.deposito-de-armaduras
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:rodela-de-queijo
+  name: uma rodela de queijo
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:archet.os-saguoes-de-outono
+    level: 0
+    price: 2
+    stock: Ilim.
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:sapatilhas-de-madeira
+  name: as sapatilhas de madeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Nedhellener <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tocha
+  name: uma tocha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O Guardião do Norte <como luz>
+  - O guarda <como luz>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:torta-de-cereja
+  name: uma torta de cereja
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:bri.ponei.o-ponei-saltitante
+    level: 0
+    price: 7
+    stock: Ilim.
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tosca-bainha-de-couro
+  name: uma tosca bainha de couro
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - pegou
+  item: item:bainha-couro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-com-alcas
+  name: um vestido com alças
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:valfenda.a-alfaiataria
+    level: 10
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:valfenda.a-alfaiataria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-de-seda-rosado
+  name: um vestido de seda rosado
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Marry Knob <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:viseira-de-ferro
+  name: uma viseira de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda <nos olhos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:veu-negro
+  name: um véu negro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A viúva <nos olhos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:xale-preto
+  name: um xale preto
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A viúva <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.abertura
+  name: abertura
+  kind: scenery
+  descriptions:
+  - text: A passagem está fechada.
+    rooms:
+    - room:bri.fora-do-portao-sul
+  examined: true
+  rooms:
+  - room:bri.fora-do-portao-sul
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.antigo-e-reverenciavel-salgueiro-chorao-estende-
+  name: Um antigo e reverenciável salgueiro-chorão estende seus galhos.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.na-entrada-do-jardim-de-imladris
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ao-lado-da-janela-jaz-uma-grande-placa
+  name: Ao lado da janela, jaz uma grande placa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      As palavras contidas nesta placa lhe revelam o seguinte conhecimento:
+                               Fome, Sede e Móveis
+      Com o passar do tempo, o seu personagem passará a sentir fome e sede, e
+      caso você não o sacie, logo ele começará a perder pontos de vida (hp)
+      gradualmente até que acabe por morrer. Para que você possa alimentar seu
+      personagem, terá que ter comida no inventário e digitar EAT <nome da
+      comida desejada>.
+      Para que você possa dar água para seu personagem, deverá ter no seu
+      inventário algum recipiente com água, tal como um cantil, garrafa e etc.,
+      e digitar DRINK <nome do recipiente> algumas vezes até que o seu
+      personagem fique completamente saciado.
+      Em certas salas você encontrará fontes que servirão tanto para beber
+      quanto para reabastecimento. Para beber de uma fonte, o comando é DRINK
+      <fonte>, e para reabastecer um recipiente, digita-se FILL <recipiente>.
+      No momento não há necessidade para se preocupar, pois enquanto estiver
+      aprendendo os comandos básicos, não sentirá nem fome nem sede. até
+      terminar o seu treinamento, você também receberá um cantil e um pouco de
+      comida, além de informações de como se obter mais alimento.
+      Alguns objetos são móveis que servem para descanso também. Inclusive, seu
+      personagem poderá se sentar sobre a cadeira que está na sala digitando SIT
+      CADEIRA.
+      Para se levantar, use o comando STAND.
+      Para interagir com o professor, basta dar aquela olhada rápida nele.
+      O professor Elundhir faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-dos-objetos
+  examined: true
+  rooms:
+  - room:academia.a-sala-dos-objetos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ao-lado-da-janela-jaz-uma-placa
+  name: Ao lado da janela, jaz uma placa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      As palavras contidas nesta placa lhe revelam o seguinte conhecimento:
+                               Canais e Mensagens
+      Há vários canais, mas o mais útil no momento é o canal SAY, que envia uma
+      mensagem para todos que estejam na mesma sala que você; para utilizá-lo,
+      digite SAY seguido da mensagem que quer falar, por exemplo, SAY Olá! (este
+      é um canal IC). E você já deve ter o usado no seu caminho de conhecimentos
+      até aqui.
+      Para mandar uma mensagem para todos os jogadores do MUD, usa-se o canal
+      CHAT, digitando, por exemplo, CHAT Olá!, e caso queira falar com uma pessoa
+      em especial, que não esteja na mesma sala que você, use TELL seguido do nome
+      da pessoa e da mensagem, por exemplo, TELL Fulano Olá. Os canais CHAT e
+      TELL são OOC. Caso deseje saber quais personagens estão visíveis online, basta
+      digitar WHO.
+      Há ainda os chamados comandos sociais, que geralmente auxiliam na intepretação
+      (experimente digitar SMILE) e para o mesmo fim, o comando EMOTE, que deve ser
+      digitado seguido de uma mensagem que você queira expressar, por exemplo, EMOTE
+      é iniciante. Ambos os comandos exibem mensagens para todos que estejam na mesma
+      sala que você.
+      Por último, caso tenha algum problema, poderá pedir informações diretamente
+      aos administradores do MUD, para isso o comando é MTALK seguido da sua
+      mensagem.
+      Para ligar e desligar os canais OOC, você usa o comando CHANNELS, para
+      saber mais sobre ele e mais sobre os canais, leia o #PHELP CANAIS.
+      E para mais informações sobre comunicação em geral, leia o HELP
+      COMUNICAÇÃO.
+      Interaja com a professora usando um social que dará olá para ela digitando:
+      HELLO PROFESSORA.
+      A professora Erisha faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-comunicacao
+  examined: true
+  rooms:
+  - room:academia.a-sala-da-comunicacao
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.arco-de-madeira-coberto-de-trepadeiras-e-flores-
+  name: Um arco de madeira, coberto de trepadeiras e flores brancas, jaz aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.no-jardim-um-caminho-entre-canteiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.aviso
+  name: aviso
+  kind: scenery
+  descriptions:
+  - text: |-
+      Um galinheiro pequeno e modesto, de onde você pode ouvir um cacarejar
+      constante. Sobre a porta, há um aviso:
+        - Mantenha a porta do galinheiro fechada, ou
+          as galinhas fugirão.
+        - Avise-me caso as galinhas estejam sem milho.
+          Para isto, venha até mim e diga "Alimente as
+          galinhas".
+                                  Grato,
+                                       Nob.
+    rooms:
+    - room:bri.a-grande-estrada-leste-7
+  examined: true
+  rooms:
+  - room:bri.a-grande-estrada-leste-7
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.banco-de-pedras-azuis-esta-aqui-ao-redor-da-font
+  name: Um banco de pedras azuis está aqui ao redor da fonte.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:archet.rua-dos-oficios
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.bela-fonte-de-pedras-verdes-esta-aqui-no-centro-
+  name: Uma bela fonte de pedras verdes está aqui no centro do círculo.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.um-circulo-florido
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.belo-balcao-verde-esta-aqui-rodeado-de-banquinho
+  name: Um belo balcão verde está aqui rodeado de banquinhos.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.mercado.a-padaria-de-bri
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.belo-banco-com-runas-elficas-circunda-a-fonte
+  name: Um belo banco com runas élficas circunda a fonte.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.no-centro-das-casas-fonte-de-aguapes
+  - room:valfenda.um-circulo-florido
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.boneco-de-palha-esta-aqui
+  name: Um boneco de palha está aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.o-leste-do-jardim
+  - room:academia.o-oeste-do-jardim
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.camas-simples-com-colchoes-de-folhas-de-mallorn-
+  name: Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.uma-sala-de-espera
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.canteiro-em-forma-de-meia-lua-foi-construido-em-
+  name: Um canteiro, em forma de meia lua, foi construido em redor do salgueiro.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.na-entrada-do-jardim-de-imladris
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.chama-dourada-arde-silenciosamente-na-lareira
+  name: Uma chama dourada arde silenciosamente na lareira.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.o-salao-do-fogo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.diversas-cadeiras-circulam-uma-mesa-de-centro
+  name: Diversas cadeiras circulam uma mesa de centro.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-sala-de-estar-do-ponei-saltitante
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.dois-bancos-de-pedra-foram-colocados-aqui
+  name: Dois bancos de pedra foram colocados aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.aguia.rua-da-aguia-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.em-frente-a-fonte-ha-dois-bancos-de-pedra
+  name: Em frente à fonte há dois bancos de pedra.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-praca-de-bri
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-estatua-de-tres-criaturas-petrificadas-ja
+  name: Uma enorme estátua de três criaturas petrificadas jaz aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.esquilo-abandonou-a-seguranca-das-arvores-para-c
+  name: Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-34
+  - room:estrada-leste.a-grande-estrada-do-leste-35
+  - room:estrada-leste.escalando-o-desfiladeiro-3
+  - room:estrada-leste.nos-limites-de-uma-floresta-sombria-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.estantes-parecem-ser-as-paredes-desse-lugar
+  name: As estantes parecem ser as paredes desse lugar.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.os-corredores-circulares
+  - room:valfenda.os-corredores-circulares-2
+  - room:valfenda.os-corredores-circulares-3
+  - room:valfenda.outro-corredor-pela-biblioteca-4
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.estatuas-estao-dispostas-sobre-pedestais-aqui
+  name: Algumas estátuas estão dispostas sobre pedestais aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.o-bosquepraca
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fileiras-de-cadeiras-ocupam-quase-metade-da-sala
+  name: Fileiras de cadeiras ocupam quase metade da sala.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-sala-dos-objetos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fixada-ao-chao-uma-bigorna-aguarda-que-alguma-li
+  name: Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fixada-na-parede-sul-jaz-uma-grande-placa
+  name: Fixada na parede sul, jaz uma grande placa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      As palavras contidas nesta placa lhe revelam o seguinte conhecimento:
+                                  APRENDENDO
+      Após estudar o conteúdo do orbe, você JÁ sabe tudo o que precisa para
+      conseguir as informações das habilidades que deseja que o seu personagem
+      obtenha, como quais mestres a ensinam e os custos para que eles lhe a
+      ensinem.
+      Ou seja, ao ter os requisitos mínimos necessários para aprender a
+      habilidade que deseja, você precisará ir até onde está o mestre da
+      habilidade em questão e lá digitar PRACTICE "NOME DA HABILIDADE" ou PRAC
+      "NOME DA HABILIDADE" para que ele a ensine.
+      Durante os primeiros níveis do jogo, você encontrará os mestres que o seu
+      personagem precisará na área inicial mesmo. Porém, ao concluir a jornada
+      pela Área Inicial e sair para o mundo, você precisará encontrar os
+      diversos mestres que estão espalhados pela Terra Média.
+      Caso você tenha escolhido uma classe mágica para o seu personagem
+      (Clérigo, Druida ou Mago), você precisará que ele aprenda duas habilidades
+      importantes para ele poder utilizar magias em combate, sendo elas: Estilo
+      Evasivo e Míssil Mágico. Não deixe de consultar o PRACTICE INFO delas.
+      Já se escolheu uma das classes físicas para o seu personagem (Guerreiro,
+      Ladino ou Ranger), a habilidade recomendada para você começar a utilizar
+      ataques durante os combates é Chutar. Confira o PRACTICE INFO CHUTAR para
+      obter mais informações.
+      Para interagir com o professor desta sala, chame ele digitando SAY
+      PROFESSOR.
+      O professor Rodhvan faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-das-habilidades
+  examined: true
+  rooms:
+  - room:academia.a-sala-das-habilidades
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fixada-na-parede-jaz-uma-bela-estante
+  name: Fixada na parede, jaz uma bela estante.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Uma estante de madeira, usada para armazenar o material disponível aos
+      alunos da Academia. Você pode pegar o que lhe for útil daqui.
+      Uma bela estante contém:
+           um bracelete metálico
+           um par de botas de couro
+           um cinto de couro
+           um par de perneiras metálicas
+           um elmo metálico
+           um resistente colarinho metálico
+           um escudo metálico
+           um par de luvas de couro
+    rooms:
+    - room:academia.deposito-de-armaduras
+    - room:academia.sala-de-estudos
+    - room:valfenda.na-entrada-do-jardim-de-imladris
+  - text: |-
+      Uma estante de madeira, usada para armazenar o material disponível aos
+      alunos da Academia. Você pode pegar o que lhe for útil daqui.
+      Uma bela estante contém:
+           uma adaga metálica
+           uma espada metálica
+           uma maça metálica
+    rooms:
+    - room:academia.deposito-de-armas
+  - text: |-
+      Uma estante de madeira, usada para armazenar o material disponível aos
+      alunos da Academia. Você pode pegar o que lhe for útil daqui.
+      Uma bela estante contém:
+           (2x) uma chave metálica
+    rooms:
+    - room:academia.a-sala-das-portas
+  - text: |-
+      Uma estante de madeira, usada para armazenar o material disponível aos
+      alunos da Academia. Você pode pegar o que lhe for útil daqui.
+      Uma bela estante contém:
+           uma chave metálica
+    rooms:
+    - room:academia.a-sala-da-atencao
+    - room:academia.a-sala-das-portas
+  examined: true
+  rooms:
+  - room:academia.a-sala-da-atencao
+  - room:academia.a-sala-das-portas
+  - room:academia.deposito-de-armaduras
+  - room:academia.deposito-de-armas
+  - room:academia.sala-de-estudos
+  - room:valfenda.na-entrada-do-jardim-de-imladris
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fixada-na-parede-jaz-uma-grande-placa
+  name: Fixada na parede, jaz uma grande placa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      As palavras contidas nesta placa lhe revelam o seguinte conhecimento:
+      Após ter iniciado um combate, caso você perceba que terá poucas chances de
+      vencer, você poderá fugir para um local seguro digitando FLEE. Este comando
+      fará você perder uma pequena porcentagem da sua experiência, porém, inferior
+      a quantia que você perde quando morre; além disso, alguns mobs poderão ainda
+      irem atrás de você.
+      Você poderá também configurar para que o seu personagem fuja automaticamente
+      após ter os seus pontos de vida diminuidos até um certo valor, o comando
+      para isso é WIMPY <valor> (por exemplo: ao digitar WIMPY 3, o seu personagem
+      tentará fugir do combate assim que seus pontos de vida estiverem iguais ou
+      inferiores a 3).
+      Uma maneira de você acompanhar os status do seu personagem rapidamente e o
+      status dos inimigos dele também, é através do PROMPT e FPROMPT. Leia o
+      HELP PROMPT para mais informações.
+      Existem configurações importantes para combates, não deixe de ler o HELP
+      CONFIG para saber mais sobre as possibilidades, principalmente as opções
+      AUTOGOLD, AUTOLOOT, AUTOSAC e NICE.
+      Para continuar seu treinamento, fale com a professora desta sala, digitando SAY PROFESSORA.
+      A professora Bhieda faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-do-combate
+  examined: true
+  rooms:
+  - room:academia.a-sala-do-combate
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.folhagens
+  name: folhagens
+  kind: scenery
+  descriptions:
+  - text: |-
+      Apos vasculhar tudo, você descobre uma abertura aos pés de um dos muitos
+      arbustos.
+    rooms:
+    - room:bri.fora-do-portao-sul
+  examined: true
+  rooms:
+  - room:bri.fora-do-portao-sul
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fonte-de-aguapes-esta-gotejando-no-meio-da-praci
+  name: A fonte de aguapés está gotejando no meio da pracinha.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.no-centro-das-casas-fonte-de-aguapes
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fonte-de-marmore-goteja-agua-cristalina
+  name: A fonte de mármore goteja água cristalina.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Uma fonte esculpida com muito cuidado a partir de um único bloco de
+      mármore branco, e colocada sobre uma nascente de agua cristalina. O
+      gotejar contínuo da água parece pedir que você tome um gole.
+    rooms:
+    - room:academia.sala-de-cura
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  - room:academia.o-refeitorio
+  - room:academia.sala-de-cura
+  - room:valfenda.uma-sala-de-espera
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
+  name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.forja-esta-ardendo-em-chamas-no-canto-da-sala
+  name: Uma forja está ardendo em chamas no canto da sala.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.mercado.a-oficina-do-ferreiro
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-charrete-com-rodas-reforcadas-esta-aqui
+  name: Uma grande charrete com rodas reforçadas está aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.uma-alameda-de-populos-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-circulo-de-bancos-de-pedra-esta-montado-a
+  name: Um grande círculo de bancos de pedra está montado aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.o-bosquepraca
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-fogao-a-lenha-ocupa-a-parede-norte
+  name: Um grande fogão a lenha ocupa a parede norte.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.o-refeitorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-fonte-circular-jorra-agua-cristalina-aqui
+  name: Uma grande fonte circular jorra água cristalina aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:archet.rua-dos-oficios
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-livro-de-regras-foi-colocado-sobre-um-ped
+  name: Um grande livro de regras foi colocado sobre um pedestal aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.as-regras-do-jogo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-mural-foi-instalado-aqui
+  name: Um grande mural foi instalado aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.biblioteca.uma-sala-reservada
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-arvore-caiu-aqui-bloqueando-o-caminho-a-l
+  name: Uma grande árvore caiu aqui, bloqueando o caminho a leste.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:eriador.cemiterio.a-arvore-caida
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-muitas-grandes-mesas-de-madeira-rustica-com-c
+  name: Há muitas grandes mesas de madeira rústica com cadeiras espalhadas ao redor por todo o lugar.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-pinturas-preenchendo-todas-as-paredes
+  name: Há pinturas preenchendo todas as paredes.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.a-pinacoteca
+  - room:valfenda.a-pinacoteca-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-um-cesto-para-lixo-aqui
+  name: Há um cesto para lixo aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-grande-estrada-leste
+  - room:bri.avenida-zenite-2
+  - room:bri.mercado.rua-do-mercado-2
+  - room:bri.mercado.rua-do-mercado-5
+  - room:bri.no-comeco-da-rua-das-cerejeiras
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-um-grande-mural-aqui-coberto-de-folhas-de-pap
+  name: Há um grande mural aqui, coberto de folhas de papel.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.sala-de-estudos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-um-mural-aqui-onde-podem-ser-afixadas-mensage
+  name: Há um mural aqui, onde podem ser afixadas mensagens.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Este é um mural de avisos: servirá apenas para dar aviso e fornecer
+      explicações.
+      Este é um mural de postagem: servirá apenas para postar possíveis
+      respostas, dúvidas, etc.
+    rooms:
+    - room:academia.a-biblioteca-dos-aventureiros
+  examined: true
+  rooms:
+  - room:academia.a-biblioteca-dos-aventureiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-corda-suspensa-aqui
+  name: Há uma corda suspensa aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Você corre a corda com os olhos... ela começa a uma altura de 1 metro do
+      assoalho e segue subindo. Só então você percebe dois sino no topo do terraço
+      alongado como uma torre.
+    rooms:
+    - room:valfenda.o-terraco
+  examined: true
+  rooms:
+  - room:valfenda.o-terraco
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-escrivaninha-aqui
+  name: Há uma escrivaninha aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.biblioteca.o-escritorio-do-copista
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-fonte-de-marmore-aqui-gotejando-agua-cris
+  name: Há uma fonte de mármore aqui, gotejando água cristalina.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-praca-de-bri
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-grande-mesa-de-escritorio-aqui
+  name: Há uma grande mesa de escritório aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:archet.a-casa-bancaria
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-pesada-estante-de-livros-aqui
+  name: Há uma pesada estante de livros aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Decorada por runas, esta pesada estante parece ter sido entalhada há
+      bastante tempo por experientes marceneiros. Uma placa afixada sobre sua
+      face frontal indica: "OS PODERES DE ARDA"
+      A estante contém:
+           um livro intitulado 'Os Poderes de Arda'
+    rooms:
+    - room:bri.biblioteca.a-ala-leste
+    - room:bri.biblioteca.a-ala-oeste
+  - text: |-
+      Decorada por runas, esta pesada estante parece ter sido entalhada há
+      bastante tempo por experientes marceneiros. Uma placa afixada sobre sua
+      face frontal indica: "OS POVOS DE ARDA"
+    rooms:
+    - room:bri.biblioteca.a-ala-oeste
+  examined: true
+  rooms:
+  - room:bri.biblioteca.a-ala-leste
+  - room:bri.biblioteca.a-ala-oeste
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-varias-mesas-com-bancos-aqui
+  name: Há várias mesas com bancos aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.janelas
+  name: janelas
+  kind: scenery
+  descriptions:
+  - text: Através da janela, você pode avistar o Amplo Bosque lá em baixo.
+    rooms:
+    - room:academia.a-sala-da-observacao
+  examined: true
+  rooms:
+  - room:academia.a-sala-da-observacao
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.jovem-orc-furioso-urra-em-sua-direcao
+  name: Um jovem orc furioso urra em sua direção.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-jaula
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.junto-a-parede-leste-crepita-uma-lareira
+  name: Junto à parede leste, crepita uma lareira.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-sala-de-estar-do-ponei-saltitante
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.lapides
+  name: lapides
+  kind: scenery
+  descriptions:
+  - text: |-
+      Lápides destruídas estão aqui diante de você, rachadas pela idade e
+      pela falta de piedade dos elementos. Ladrões de tumba gananciosos
+      deixaram suas marcas em muitas das lápides, com suas esperanças de
+      violar túmulos e encontrar tesouros, escavando sem cuidado e
+      terminando de destruir as já difíceis de ler lápides.
+    rooms:
+    - room:eriador.cemiterio.entrada-para-o-cemiterio
+  examined: true
+  rooms:
+  - room:eriador.cemiterio.entrada-para-o-cemiterio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.lapide-de-marmore-negro-foi-posta-aqui-parcialme
+  name: Uma lápide de mármore negro foi posta aqui, parcialmente enterrada.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:eriador.cemiterio.a-lapide-caida
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.majestosa-macieira-cresce-aqui
+  name: Uma majestosa macieira cresce aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Uma macieira bastante velha, sem dúvida, mas muito produtiva. Diversas
+      maçãs podem ser vistas em seus galhos, algumas verdes e outras prontas
+      para consumo imediato.
+      O galho mais baixo da macieira contém:
+          (15x) uma deliciosa maçã
+    rooms:
+    - room:bri.avenida-zenite
+    - room:valfenda.uma-alameda-de-juniperos
+  examined: true
+  rooms:
+  - room:bri.avenida-zenite
+  - room:bri.colina.um-caminho-arborizado-3
+  - room:valfenda.um-circulo-florido
+  - room:valfenda.uma-alameda-de-juniperos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mesa
+  name: mesa
+  kind: scenery
+  descriptions:
+  - text: |-
+      Várias mesas e cadeiras ocupam a maior parte da sala. Muitas delas
+      estão ocupadas por alunos.
+    rooms:
+    - room:academia.o-refeitorio
+  examined: true
+  rooms:
+  - room:academia.o-refeitorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.misterioso-orbe-atrai-a-sua-atencao
+  name: Um misterioso orbe atrai a sua atenção.
+  kind: scenery
+  flags: (Brilhando)
+  descriptions:
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                  PREPARAÇÃO
+      É importante que você entenda o seu personagem nos mínimos detalhes. A
+      começar pelas escolhas que fez para ele, pois as mesmas são decisivas para
+      as necessidades que ele terá ao longo do jogo. E só entendendo todas as
+      possibilidades para seu personagem, que você poderá prepará-lo melhor para
+      enfrentar o mundo.
+      Por exemplo, se escolheu uma das classes físicas para ele (Guerreiro,
+      Ladino ou Ranger), ele precisará ter atributos físicos mais altos
+      (Constituição, Destreza e Força).
+      Já se escolheu uma das classes mágicas para ele (Clérigo, Druida e Mago),
+      ele precisará ter atributos mentais mais altos (Inteligência e Sabedoria).
+      Assim como saber quais atributos dão mais benefícios para a classe que
+      escolheu, você também deve saber quais os tipos de objetos são mais
+      favoráveis para o seu personagem. Por exemplo, Guerreiros e Rangers
+      favorecem armaduras pesadas e feitas de metal. Já Clérigos, Druidas e
+      Magos não usam armaduras pesadas, evitam armaduras metálicas e acabam
+      usando somente armaduras leves e orgânicas, como de couro e madeira.
+      Além dos tipos de armaduras diferentes, cada uma das classes costuma ter
+      um tipo de arma que melhor se adeque a mesma. Você saberá mais sobre isso
+      quando seu personagem estiver perto de entrar em combate.
+      Outro ponto importante de se ter em conta, é o alinhamento que escolherá
+      manter para o seu personagem, pois tem itens que só podem ser usados por
+      personagens bons, outros itens que só por personagens neutros e outros que
+      só por personagens maus.
+      Não deixe de ler os tópicos de ajuda da raça e da classe que escolheu para
+      o seu personagem para descobrir as melhores opções para ele durante o
+      jogo. Para isso digite HELP NOME_DA_CLASSE ou HELP NOME_DA_RAÇA.
+      Para continuar seus estudos, chame o professor falando no SAY PROFESSOR.
+      O professor Dogrod faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-preparacao
+  - text: |-
+      Ao examinar este orbe, o seguinte conhecimento lhe é transmitido:
+                                    OBSERVAÇÃO
+      A ação mais simples que você poderá executar no MUD será o ato de observar, e
+      como tudo o que será encontrado aqui estará em forma de texto, olhar e saber
+      interpretar as informações mostradas na tela é a chave para o bom entendimento
+      do jogo e de seus mais variados desafios propostos.
+      Quando você entra em uma sala a primeira coisa que aparecerá será o título
+      dela seguido de um texto contendo a descrição da mesma. Logo abaixo são
+      mostradas as saídas óbvias da sala (você logo aprenderá sobre elas) e
+      finalmente haverá uma listagem com os objetos e personagens que estão no
+      local.
+      O comando para olhar é LOOK <palavra>, sendo que <palavra> deve ser trocado
+      pelo objeto ou pessoa que esteja na sala e que você deseje ver. Digitando
+      apenas LOOK, você olha para a sala tal como ela é notada assim que entra
+      nela.
+      Além do LOOK, você pode usar também os comandos EXAMINE e o GLANCE.
+      Você perceberá que o EXAMINE é mais utilizado para observar itens e o
+      glance mais para fazer observações rápidas dos lugares e criaturas.
+      OBS: Assim como o LOOK, o EXAMINE e o GLANCE também aceitam argumentos,
+      experimente
+      "GLANCE PROFESSOR".
+      Para mais informações sobre cada um deles, você pode consultar os
+      respectivos tópicos de ajuda, basta digitar: HELP EXAMINE, HELP GLANCE e
+      HELP LOOK.
+      Ao longo do jogo, tente observar os elementos importantes contidos nas
+      descrições das salas, tal como as janelas contidas na descrição desta.
+      Após ter feito isso, digite N para continuar sem falar com o professor. Ou
+      digite "GLANCE PROFESSOR" sem as aspas para chamar a atenção dele e
+      descobrir o que ele pode lhe ensinar.
+      O professor Servan faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-observacao
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                 MOVIMENTAÇÃO
+      Geralmente, toda a movimentação no MUD é feita com base nos pontos
+      cardeais: norte (N), nordeste (NE), leste (E), sudeste (SE), sul (S)
+      sudoeste (SW) oeste (W) e noroeste (NW), além de também ser possível ir
+      para cima (U) e para baixo (D).
+      Ao entrar em uma sala, ou usar os comandos LOOK e GLANCE, é possível ver
+      abaixo da descrição ou do nome quais as saídas possíveis para a sala em
+      que você está, e teclando EXITS você poderá ter uma informação mais
+      detalhada das saídas, mostrando quais são elas e para quais salas elas
+      poderão te levar. Para andar até outra sala qualquer, basta digitar uma
+      das saídas indicadas na descrição da sala (E para ir para o leste, W para
+      ir para o oeste e etc.).
+      Existem outras maneiras de se mover pelo jogo, mas você só as verá mais
+      adiante. Assim como existem caminhos que estarão escondidos ou bloqueados
+      por portas fechadas ou portões trancados...
+      Outro ponto importante é que, ao caminhar por aí, você gradualmente
+      perderá pontos de movimento (abreviado por mv), indicando o cansaço do seu
+      personagem.
+      Quando seus pontos se esgotam, você fica impossibilitado de caminhar e
+      deverá sentar (SIT), descansar (REST) ou dormir (SLEEP) até se recuperar.
+      Para acordar usa-se o comando WAKE e para se levantar, digita-se STAND.
+      Para mais informações, consulte o tópico de ajuda digitando HELP
+      MOVIMENTO.
+      Para continuar sem interagir com o professor, basta ir para o leste
+      digitando E. Mas caso queira interagir com ele e descobrir o que mais ele
+      pode lhe ensinar, digite GLANCE PROFESSOR.
+      O professor Pildo faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-movimentacao
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                     COMBATE
+      Lutas são uma atividade muito comum no MUD, pois é por meio delas que os
+      personagens adquirem pontos de experiência, além dos itens que o ponente
+      estiver carregando.
+      Antes de começar um combate, você deverá estimar se o seu adversário é páreo;
+      para isso, use o comando CONSIDER <adversário>.
+      Caso o adversário pareça páreo, você poderá iniciar um ataque com o comando
+      KILL <adversário>. Após iniciada a luta, cada golpe acertado pelo adversário
+      inflingirá dano ao seu personagem, fazendo com que perca uma parcela
+      proporcional dos seus pontos de vida (ocorrerá o mesmo com o seu adversário
+      para cada acerto seu). Você poderá saber a condição atual do seu oponente
+      olhando para ele durante o combate, ou de forma mais abreviada, digitando
+      GLANCE <adversário>.
+      Ao vencer uma luta, você receberá uma quantia de experiência proporcional ao
+      nível do adversário, sua dificuldade e alguns outros fatores.
+      Caso os seus pontos de vida fiquem abaixo de 1, você ficará inconsciente,
+      podendo às vezes se recuperar naturalmente com o tempo. Caso isto não ocorra,
+      você morrerá e irá para os Salões de Espera, onde terá que aguardar até que
+      você retorne com um novo corpo para a Terra-Média. Todos os seus itens
+      ficarão no corpo antigo e você terá de recuperá-los dele quando
+      encontrá-lo após sair dos Salões de Espera..
+      Digite EXAMINE PLACA para continuar a leitura.
+      A professora Bhieda faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-do-combate
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                  CONTÊINERS
+      Contêiners são objetos especiais que possuem a capacidade de armazenar
+      outros objetos em seu interior. Podem ser fixos na sala, (não podendo ser
+      carregados juntos com você) tais como armários, estantes ou aquele grande baú
+      repleto de tesouros que você talvez um dia desenterre, ou podem ser
+      portáteis, onde mochilas, bolsas, caixinhas e tudo aquilo que possa carregar
+      nas suas mãos com facilidade se enquadram.
+      O conteúdo de um contêiner pode ser observado digitando EXAMINE <contêiner>
+      (este comando também poderá lhe dar informações úteis para demais tipos de
+      objetos).
+      Para pegar um objeto que esteja dentro de um contêiner, digite GET <objeto>
+      <contêiner> (por exemplo: GET anel baú) e para colocar um objeto dentro
+      de um contêiner, digite PUT <objeto> <contêiner> (por exemplo: PUT cantil
+      bolsa)
+      Assim como as saídas, contêiners podem muitas vezes estar fechados ou até
+      mesmo trancados, e para estes casos, use os comandos OPEN <contêiner>, ou
+      então UNLOCK <contêiner> (estando de posse da chave do contêiner trancado)
+      respectivamente. Para fechar um contêiner, digite CLOSE <contêiner> e para
+      trancá-lo, desde que possua a sua chave, digite LOCK <contêiner>.
+      Nesta sala há um armário com um objeto em seu interior. Experimente abrir
+      o armário, pegar o objeto que está dentro e entregá-lo ao professor que está
+      perto de você.
+      O professor Mithrael faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-dos-conteiners
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                  HABILIDADES
+      As habilidades podem ser perícias ou magias. Cada classe tem um grande
+      número delas. Elas permitem que seu personagem lute de maneira mais
+      eficiente do que apenas com armas, além de ajudar o mesmo no dia-a-dia de
+      muitas outras maneiras.
+      Seu personagem pode usar magias de invisibiliddade e de voar para explorar
+      lugares desconhecidos; perícias para arrombar portas ou desfazer
+      armadilhas para entrar em lugares perigosos; dentre tantas outras
+      possibilidades físicas e mágicas.
+      Para ver as habilidades recomendadas para o seu personagem aprender no
+      nível atual, digite PRACTICE. Você verá também a proficiência nas que ele
+      já aprendeu. Para ver uma lista de todas as habilidades da classe atual,
+      digite SLIST.
+      Não deixe de ler o HELP PRACTICE e o HELP SLIST.
+      Para aprender uma habilidade, seu personagem precisará ter os pontos de
+      prática, as moedas de ouro e quaisquer outros requisitos mínimos
+      necessários que cada habilidade exige. Para saber mais informações sobre
+      uma habilidade específica, digite PRACTICE INFO "NOME_DA_HABILIDADE" ou
+      PRAC INFO "NOME_DA_HABILIDADE". Com isso, será exibido as informações de
+      como usar a habilidade, o que é preciso para aprendê-la e quais mestres a
+      ensinam.
+      Para continuar seu aprendizado, examine a placa fixada na parede. Para
+      isso digite EXAMINE PLACA.
+      O professor Rodhvan faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-das-habilidades
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                    COMUNICAÇÃO
+      Saber se comunicar no MUD é fundamental, pois é a principal forma com que você
+      interage com outros personagens, interpreta, e compartilha informações.
+      É possível se comunicar de duas formas distintas, a saber, por meio de canais
+      IC (In Character) e canais OOC (Out of Character). Canais IC são aqueles
+      que você deve utilizar quando está interpretando o seu personagem, tal como se
+      você estivesse na Terra-Média. Já os canais OOC são utilizados para uma
+      comunicação mais geral, com assuntos que podem ir além do personagem e do mundo
+      fantasioso a sua volta.
+      Quando um jogador comenta com outra pessoa que esteja na mesma sala que ele
+      as suas aventuras, a criatura que ele matou, tesouros que ele conquistou ou
+      até mesmo uma informação de como chegar em uma cidade do jogo, este jogador
+      deverá utilizar meios de comunicação (canais) IC.
+      Já quando você quer comentar sobre alguma notícia que viu na internet, ou
+      passar alguma informação que não tenha relação com o MUD, deverá utilizar
+      os canais OOC.
+      OBS: OOC é o mesmo que IRL, termo também usado em jogos com o mesmo
+      significado.
+      Tecle EXAMINE PLACA para continuar seu aprendizado.
+      A professora Erisha faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-comunicacao
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                   PORTAS
+      Pode ocorrer que algumas vezes você se depare com uma saída por onde não
+      consiga passar livremente, pois há uma porta fechada naquela direção.
+      Quando uma saída está fechada ou trancada, ela será indicada com um ponto
+      de exclamação do lado da saída (por exemplo: Saídas: e u !n - a saída para
+      o norte se encontra fechada e/ou trancada).
+      Para abrir uma porta fechada, digite OPEN <nome da saída ou direção> (no
+      exemplo anterior, para abrir a porta você digitaria OPEN N), se a porta
+      estiver trancada, você precisará da chave que a destranque. De posse da
+      chave, o comando para destrancar será UNLOCK <nome da saída ou direção> e após
+      isso ainda deve-se abrir a porta com OPEN <nome da saída ou direção>.
+      Também é possível fechar uma porta aberta digitando CLOSE <nome da saída ou
+      direção> e até mesmo trancá-la, desde que possua a chave; para isso, digita-se
+      LOCK <nome da saída ou direção>.
+      Vale lembrar que, saídas enterradas, ocultas e secretas também podem estar
+      trancadas.
+      OBS: Em objetos que possuam portas e tampas também usa-se os comandos
+      OPEN, UNLOCK, CLOSE e LOCK para manipulá-los.
+      Para seguir adiante, você terá que abrir uma das portas desta sala.
+    rooms:
+    - room:academia.a-sala-das-portas
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                AJUDA
+      Até agora você conheceu alguns comandos úteis do MUD e ao longo do
+      tutorial conhecerá outros tantos. De início eles parecerão muitos e será
+      comum você se esquecer de algum em momentos que possa precisar.
+      Mas, não se preocupe, tudo o que aprendeu poderá ser revisto com muito
+      mais detalhes usando o comando HELP. Ao digitar HELP aparecerá para você
+      um menu com vários tópicos úteis. Digitando HLIST será exibido uma imensa
+      lista com todos os tópicos de ajuda.
+      Caso você queira saber mais sobre algum comando em especial, magia,
+      perícia, localidade ou termo encontrado no seu SCORE, poderá fazê-lo
+      digitando HELP <palavra>.
+      Todo iniciante que entra no MUD Valinor também recebe O Guia do
+      Aventureiro que contém os principais tópicos abordados até aqui. Para
+      lê-lo, digite LOOK GUIA.
+      Para muitas outras informações, acesse o site: http://mud.valinor.com.br/
+      Caso queira interagir com a professora, dê aquela olhada rápida nela. Ou
+      se quiser somente prosseguir, vá para o leste.
+      A professora Duelda faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-da-ajuda
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                    OBJETOS
+      Objetos estão em todos os lugares e desempenham as mais diversas funções:
+      eles são as roupas que você veste, a espada lendária que um dia talvez você
+      encontre, camas, cadeiras, chaves e até mesmo a comida que você ingere e a
+      água que você bebe.
+      Sim, são muitos os tipos de objetos assim como são muitas as formas com que
+      você os manipula, mas por hora, você será apresentado a alguns comandos mais
+      básicos.
+      Para pegar um objeto que esteja no chão, você digita GET <objeto>, para
+      largar um objeto que esteja com você, digite DROP <objeto> e caso queira
+      dar um objeto que esteja com você para outra pessoa, o comando é GIVE
+      <objeto> <pessoa>.
+      Para que você veja os objetos que você veste no seu corpo, digite
+      EQUIPMENT ou EQ. Uma nova peça de roupa ou armadura poderá ser vestida com
+      o comando WEAR <nome da peça>. Digitando INVENTORY (abreviado por INV)
+      você poderá ver os itens que você está carregando.
+      Digite EXAMINE PLACA para continuar seu aprendizado.
+      O professor Elundhir faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-dos-objetos
+  - text: |-
+      Ao observar este orbe, o seguinte conhecimento lhe é transmitido:
+                                   ATENÇÃO
+      Algumas vezes existirão passagens escondidas onde a saída não irá
+      aparecer para você. Geralmente estas saídas o levarão para atalhos,
+      locais com tesouros ou até mesmo será o único meio de você sair
+      de alguma sala (caso de algumas armadilhas).
+      A melhor estratégia para descobrir saídas escondidas é ler atentamente
+      as descrições das salas, procurando observar os elementos que compõem
+      o cenário de modo a encontrar uma passagem.
+      Nesta sala há uma passagem escondida; para que você consiga encontrá-la
+      siga as dicas acima, lendo cuidadosamente a descrição da sala e
+      observando os elementos do cenário. Caso seja bem sucedido, poderá
+      continuar seus estudos.
+    rooms:
+    - room:academia.a-sala-da-atencao
+  examined: true
+  rooms:
+  - room:academia.a-sala-da-ajuda
+  - room:academia.a-sala-da-atencao
+  - room:academia.a-sala-da-comunicacao
+  - room:academia.a-sala-da-movimentacao
+  - room:academia.a-sala-da-observacao
+  - room:academia.a-sala-da-preparacao
+  - room:academia.a-sala-das-habilidades
+  - room:academia.a-sala-das-portas
+  - room:academia.a-sala-do-combate
+  - room:academia.a-sala-dos-conteiners
+  - room:academia.a-sala-dos-objetos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mural-bem-legal-esta-aqui-no-meio-do-nada
+  name: Um mural bem legal está aqui no meio do nada.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.jardins-ervas-perfumadas
+  - room:valfenda.jardins-ervas-perfumadas-2
+  - room:valfenda.jardins-no-meio-das-flores
+  - room:valfenda.jardins-no-meio-das-flores-2
+  - room:valfenda.na-entrada-do-jardim-de-imladris
+  - room:valfenda.no-jardim-um-caminho-entre-canteiros
+  - room:valfenda.no-jardim-um-caminho-entre-canteiros-2
+  - room:valfenda.no-jardim-um-caminho-entre-canteiros-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.na-parede-norte-jaz-uma-grande-placa
+  name: Na parede norte, jaz uma grande placa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      As palavras contidas nesta placa lhe revelam o seguinte conhecimento:
+                               MAIS SOBRE VOCÊ
+      Digitando GOLD, será exibido quantas moedas de ouro seu personagem está
+      carregando.
+      Digitando LEVEL, será exibido seu nível e sua experiência atual, a experiência
+      que falta para seu personagem passar para o próximo nível. Também mostra a experiência
+      necessária para os próximos níveis.
+      Digitando REPORT, será mostrado para quem estiver na mesma sala o status de
+      vida, mana, movimento , etc. do seu personagem.
+      Digitando WHOIS NOME, mostrará algumas informações básicas do personagem desejado,
+      inclusive do seu próprio personagem.
+      Antes de continuar, leve um tempo e teste esses comandos novos.
+      Caso precise, leia o help de cada um deles, digitando HELP COMANDO.
+      Para chamar a atenção da professora desta sala, você deve relatar o status
+      atual do seu personagem digitando REPORT.
+      A professora Idhissiel faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-do-auto-conhecimento
+  examined: true
+  rooms:
+  - room:academia.a-sala-do-auto-conhecimento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.na-parede-oeste-jaz-um-armario
+  name: Na parede oeste, jaz um armário.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Apesar de caber no canto da sala, ele não é pequeno, mas sim bem espaçoso.
+      Feito de madeira escura, ele possui duas portas.
+      Um pequeno armário contém:
+           uma caneta-tinteiro
+    rooms:
+    - room:academia.a-sala-dos-conteiners
+  examined: true
+  rooms:
+  - room:academia.a-sala-dos-conteiners
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.na-parede-sul-esta-pendurado-um-mural-cheio-de-n
+  name: Na parede sul está  pendurado um mural cheio de notas.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Este é um mural de avisos: servirá apenas para dar aviso e fornecer
+      explicações.
+      Para exibir as notas do mural digite 'NOTE LIST'. Digite 'HELP
+      NOTE' para aprender a lidar com notas e murais.
+    rooms:
+    - room:academia.a-sala-dos-professores
+  examined: true
+  rooms:
+  - room:academia.a-sala-dos-professores
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.no-centro-do-bosque-uma-fonte-em-cascata-borrifa
+  name: No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.o-bosquepraca
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pedra
+  name: pedra
+  kind: scenery
+  descriptions:
+  - text: |-
+      A pedra parece estar aqui há séculos, e somente agora você nota que em
+      sua base, ocultada pelo mato alto, há uma inscrição muito gasta e quase
+      ilegível em westron... Nem todo caminho é uma verdade, há estradas
+      falsas e verdadeiras até seu tesouro. É uma encruzilhada. Boa sorte!.
+    rooms:
+    - room:eriador.intersecao.na-intersecao
+  examined: true
+  rooms:
+  - room:eriador.intersecao.na-intersecao
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pedra-esta-aqui-no-meio-do-caminho
+  name: Uma pedra está aqui no meio do caminho.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.floresta-pinheiros.sob-um-teto-de-folhas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pedras-grandes-estao-aqui-como-bancos
+  name: Algumas pedras grandes estão aqui como bancos.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.jardins-ervas-perfumadas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pendurada-em-um-poleiro-uma-folha-de-papel-ooc-a
+  name: 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.mercado.o-correio-de-bri
+  - room:valfenda.servico-de-correios
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pendurado-no-centro-da-sala-jaz-um-espelho
+  name: Pendurado no centro da sala, jaz um espelho.
+  kind: scenery
+  flags: (Brilhando)
+  descriptions:
+  - text: |-
+      À medida que você observa a sua própria face no espelho, o seguinte
+      conhecimento é transmitido a você:
+                               AUTO-CONHECIMENTO
+      Como em todo bom RPG, no MUD Valinor o seu personagem é composto por uma série
+      de atributos que delimitam os seus pontos fracos e fortes. É importante que
+      você seja capaz de ter acesso a estes dados para que no futuro você também seja
+      capaz de melhorá-los à medida que torna-se mais experiente.
+      Digitando SCORE, será exibida uma tabela detalhada com todas as características
+      do seu personagem, tais como a sua raça, classe, força, pontos de vida e muitas
+      outras informações possivelmente estranhas de início, mas que irá compreender à
+      medida que for se habituando ao jogo.
+      Digitando AFFECTED, serão listadas possíveis magias que estejam afetando o seu
+      personagem. Ao usar o comando AFFECTED BY serão listados certos efeitos em seu
+      personagem, tais como resistência, fraquezas e imunidades a determinados
+      elementos.
+      Digitando WORTH, serão exibidas informações rápidas do seu personagem.
+      Para continuar seus estudos, examine a placa digitando EXAMINE PLACA.
+      A professora Idhissiel faz algumas anotações.
+    rooms:
+    - room:academia.a-sala-do-auto-conhecimento
+  examined: true
+  rooms:
+  - room:academia.a-sala-do-auto-conhecimento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pequena-caixa-de-ferramentas-jaz-no-chao
+  name: Uma pequena caixa de ferramentas jaz no chão.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.mansao-knob.oeste-do-sitio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pequena-fonte-circular-de-pedras-claras-jaz-aqui
+  name: Uma pequena fonte circular de pedras claras jaz aqui, jorrando água cristalina.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.na-praca-das-flores
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pequena-fonte-de-agua-jorra-do-chao-aqui
+  name: Uma pequena fonte de água jorra do chão aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.mansao-knob.oeste-da-porta-da-frente
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pergaminho-esta-sobre-um-pedestal-voce-sente-von
+  name: Um pergaminho está sobre um pedestal. Você sente vontade de lê-lo.
+  kind: scenery
+  descriptions:
+  - text: |-
+      No pergaminho, você lê: Fim do treinamento
+          Parabéns! Você chegou ao fim do seu treinamento.
+          Esse treinamento apresentou os comandos básicos, mas há muito mais
+      que não foi falado aqui. Além disso, é normal que você não lembre de
+      tudo que foi falado.
+          Lembre-se do mais importante: há ajuda para todos os comandos,
+      acessível com o comando HELP. E você também pode pedir ajuda (pelo
+      CHAT), porém tente antes encontrar a resposta sozinho.
+          Veja também o site do MUD: http://mud.valinor.com.br que tem
+      muitas informações úteis.
+          Seguindo a leste, você será levado à entrada da Academia de
+      Aventureiros, onde todos os iniciantes podem lutar, comprar
+      equipamentos, aprender perícias, e todo o resto. Posteriormente, você
+      poderá sair para explorar o mundo.
+          Bom divertimento!
+    rooms:
+    - room:academia.fim-do-treinamento
+  examined: true
+  rooms:
+  - room:academia.fim-do-treinamento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pilha-de-folhas-de-papel-em-branco-e-rabiscadas-
+  name: Uma pilha de folhas de papel em branco e rabiscadas está amontoada aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.o-cartografo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.placa
+  name: placa
+  kind: scenery
+  descriptions:
+  - text: |-
+      Na placa, você lê:
+       "Orientações gerais
+       O serviço de cópia de livros custa 10 moedas, mais uma moeda para cada
+       página copiada.
+       Por razões éticas, só copiarei livros lacrados a pedido dos seus
+       próprios autores.  Por favor, não insista.
+              Grato pela atenção, Ferion"
+      Há também uma orientação OOC deixada para os jogadores: Digite
+      BOOK <nome do livro> VALUE para obter um orçamento do serviço, e
+      BOOK <nome do livro> COPY para solicitar a cópia. Em caso de
+      dúvidas, digite HELP LIVROS.
+    rooms:
+    - room:bri.biblioteca.o-escritorio-do-copista
+  - text: |-
+      ______________________________________
+        /                                      \
+        | Norte:    Mina abandonada (cuidado!)  |
+        | Sudoeste: A Praça de Bri              |
+        | Leste:    A Colina                    |
+        \______________________________________/
+                           | |
+                         __|_|__
+                        \\\\\\\\\'
+    rooms:
+    - room:bri.colina.uma-bifurcacao-no-caminho
+  - text: |-
+      Posicionada na base da estátua, uma placa dourada e quadrada com pinos nos
+      cantos exibe: "Descanse em paz, Uthar Darkbane".
+    rooms:
+    - room:bri.lei.avenida-da-lei-2
+  - text: |-
+      O sistema de correios é OOC e pode ser usado em qualquer lugar do MUD.
+      Digite 'HELP MAIL' para aprender lidar com ele.
+    rooms:
+    - room:bri.mercado.o-correio-de-bri
+  - text: |-
+      Sobre a placa, você lê:
+        "Serviço de cópia de livros
+         Horário de atendimento: 8 às 20 horas"
+    rooms:
+    - room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
+  - text: Você vê o apenas nome 'Thomas' escrito na placa.
+    rooms:
+    - room:eriador.cemiterio.a-lapide-caida
+  examined: true
+  rooms:
+  - room:bri.biblioteca.o-escritorio-do-copista
+  - room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
+  - room:bri.colina.uma-bifurcacao-no-caminho
+  - room:bri.lei.avenida-da-lei-2
+  - room:bri.mercado.o-correio-de-bri
+  - room:eriador.cemiterio.a-lapide-caida
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.plaqueta
+  name: plaqueta
+  kind: scenery
+  descriptions:
+  - text: |-
+      "Bem vindo! Esta área foi desenvolvida para jogadores de nível 1 a 10.
+      Lembre-se, OLHE para tudo. Há muitas coisas que você irá perder se não
+      parar e examinar ao seu redor. Boa sorte e tenha um bom divertimento.
+      -Cedrick, Abril de 1996"
+      Esta área, originalmente criada por Cedrick, foi adaptada por Eleuvis,
+      porque ele acredita que as pessoas um dia se lembrarão dele por isso.
+      :)
+      -Eleuvis, Julho de 2003
+    rooms:
+    - room:bri.mansao-knob.o-portao-principal
+  examined: true
+  rooms:
+  - room:bri.mansao-knob.o-portao-principal
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.poste
+  name: poste
+  kind: scenery
+  descriptions:
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Norte- Avenida Zênite e para a Estrada da Justiça.
+      Leste- Estrada Horizonte e para a Rua da Águia.
+      Sul- A Grande Estrada do Leste, para a Estrada Horizonte, para a Rua do
+      Mercado e para a Avenida da Lei.
+      Oeste- A Grande Estrada do Leste e para a Estrada do Falcão.
+      Noroeste- Caminho Arborizado e para A Casa de Cura.
+      Nordeste- Caminho Arborizado e para a Colina de Bri.
+    rooms:
+    - room:bri.a-praca-de-bri
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas?
+      Norte- Avenida Zênite, para a Estrada da Justiça, para a Estrada Horizonte
+      e para a Praça de Bri.
+      Leste- Rua do Mercado e para a Rua da Águia.
+      Sul- Estrada leste, para a Rua Xaxim, para a Avenida da Lei e o Portão Sul.
+      Oeste- Rua do Mercado e para a Estrada do Falcão.
+    rooms:
+    - room:bri.a-grande-estrada-leste-2
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Norte- Estrada Leste, para a Rua do Mercado, para a Estrada Horizonte,
+      para a Estrada da Justiça e para a Praça de Bri.
+      Leste- Avenida da Lei e para a Rua da Águia.
+      Sul- O Portão Sul de Bri.
+      Oeste- Avenida da Lei e para a Estrada do Falcão.
+    rooms:
+    - room:bri.a-grande-estrada-leste-4
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Norte- A Biblioteca de Bri.
+      Leste- Estrada Horizonte e para a Rua da Águia.
+      Sul- Academia de Aventureiros.
+      Oeste- Estrada Horizonte, para a Avenida Zênite, para a Estrada do Falcãoe
+      para a Praça de Bri.
+    rooms:
+    - room:bri.estrada-horizonte
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Leste- A Grande Estrada do Leste, para a Rua da Águia, para a Avenida
+      Zênite e para a Praça de Bri.
+      Oeste- A Grande Estrada do Leste e para a Estrada do Falcão.
+    rooms:
+    - room:bri.a-grande-estrada-leste-9
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Leste- Estrada Horizonte e para a Rua da Águia.
+      Oeste- Estrada Horizonte, para a Avenida Zênite, para a Estrada do Falcãoe
+      para a Praça de Bri.
+    rooms:
+    - room:bri.estrada-horizonte-2
+    - room:bri.estrada-horizonte-3
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Leste- Rua do Mercado e para a Rua da Águia.
+      Oeste- Rua do Mercado, para a Avenida Zênite e para a Estrada do Falcão.
+    rooms:
+    - room:bri.mercado.rua-do-mercado-2
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Leste- Avenida da Leie para a Rua da Águia.
+      Oeste- Avenida da Lei, para a Avenida Zênite e para a Estrada do Falcão.
+    rooms:
+    - room:bri.lei.avenida-da-lei-3
+  - text: |-
+      Norte  - Rua das Cerejeiras
+      Leste  - Rua das Rosas
+      Sul    - Rua dos Trevos
+                Entradas para:
+                 - Para a Rua das Samambaias
+                 - Para a Rua das Orquídeas
+                 - Para a Rua das Macieiras
+       Oeste - Avenida Zênite
+    rooms:
+    - room:bri.na-praca-das-flores
+  - text: |-
+      No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
+      dela placas com as seguintes inscrições entalhadas:
+      Leste- Rua do Mercado.
+      Oeste- Rua do Mercado, para a Avenida Zênite e para a Estrada do Falcão.
+    rooms:
+    - room:bri.mercado.rua-do-mercado
+  examined: true
+  rooms:
+  - room:bri.a-grande-estrada-leste-2
+  - room:bri.a-grande-estrada-leste-4
+  - room:bri.a-grande-estrada-leste-9
+  - room:bri.a-praca-de-bri
+  - room:bri.estrada-horizonte
+  - room:bri.estrada-horizonte-2
+  - room:bri.estrada-horizonte-3
+  - room:bri.lei.avenida-da-lei-3
+  - room:bri.mercado.rua-do-mercado
+  - room:bri.mercado.rua-do-mercado-2
+  - room:bri.na-praca-das-flores
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.quadro
+  name: quadro
+  kind: scenery
+  descriptions:
+  - text: 'Em um quadro fixado na parede, você lê:'
+    rooms:
+    - room:valfenda.no-emporio-das-casas-compra-venda
+  examined: true
+  rooms:
+  - room:valfenda.no-emporio-das-casas-compra-venda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.quadro-foi-pendurado-na-parede-aqui
+  name: Um quadro foi pendurado na parede aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      +----------------------------------------------------------------------------+
+      |               H o s p e d a r i a   S o n o   C e r r a d o                |
+      |                           Quadro de Avisos                                 |
+      +----------------------------------------------------------------------------+
+      | Caro hóspede,                                                              |
+      |                                                                            |
+      |    Para  seu  melhor  conforto,  por  favor  queira pagar sua diária  logo |
+      | na entrada  do  estabelecimento.  Todos  os negócios  poderão ser tratados |
+      | diretamente com o Sr. Tantarel, que estará sempre disponível  para atendê- |
+      | lo da  melhor  forma  possível.  Ao adquirir a chave do seu quarto, diante |
+      | do pagamento de 10 (dez) moedas  de ouro, o cliente  poderá  permanecer  o |
+      | tempo  que  for  necessário,  desde que na saída a chave seja entregue  ao |
+      | mesmo.  Os  quartos  dispõem  de  água,  comida e cama, não sendo tolerado |
+      | qualquer tipo de dano ou tentativa de trapaça ao patrimônio da Hospedaria, |
+      | assim como o importúnio dos demais hóspedes.                               |
+      |                                                                            |
+      |                                                       Gratos pela atenção, |
+      |                                                                A Gerência. |
+      +----------------------------------------------------------------------------+
+    rooms:
+    - room:archet.hospedaria-sono-cerrado
+  examined: true
+  rooms:
+  - room:archet.hospedaria-sono-cerrado
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.tanque-foi-preenchido-com-agua-ate-sua-borda
+  name: Um tanque foi preenchido com água até sua borda.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.tanque-formado-pela-nascente-de-um-corrego-jaz-a
+  name: Um tanque formado pela nascente de um córrego jaz aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.na-entrada-do-jardim-de-imladris
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.tapecaria
+  name: tapeçaria
+  kind: scenery
+  descriptions:
+  - text: |-
+      Você olha mais atentamente a tapeçaria... e vê que ela não está
+      totalmente presa à parede, e pode ser movida para mostrar uma passagem
+      para norte! Digite OPEN TAPEÇARIA para movê-la.
+    rooms:
+    - room:academia.a-sala-da-atencao
+  examined: true
+  rooms:
+  - room:academia.a-sala-da-atencao
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varias-estantes-umas-ao-lado-da-outra-algumas-so
+  name: Várias estantes, umas ao lado da outra, algumas sobre as demais, estão aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.outro-corredor-pela-biblioteca-2
+  - room:valfenda.outro-corredor-pela-biblioteca-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varios-bancos-de-pedras-claras-estao-espalhados-
+  name: Vários bancos de pedras claras estão espalhados ao longo da praça.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.na-praca-das-flores
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varios-leitos-estao-organizados-em-fileiras
+  name: Vários leitos estão organizados em fileiras.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Os leitos são formados por camas cobertas com um enchido de palha e ervas.
+      Acima disto, um lençol foi estendido sobre cada uma, de modo a facilitar a
+      troca de tecido sujo.
+    rooms:
+    - room:academia.sala-de-cura
+  examined: true
+  rooms:
+  - room:academia.sala-de-cura
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.aguas-reluzentes-como-cristal-absorvem-as-ondas-
+  name: Águas reluzentes como cristal absorvem as ondas deixadas por seus passos.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa
+  - room:valfenda.floresta-pinheiros.em-uma-pequena-lagoa-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.arvore-com-varias-camadas-de-folhas-e-cheia-de-i
+  name: Uma árvore, com várias camadas de folhas, e cheia de inscrições jaz aqui.
+  kind: scenery
+  descriptions:
+  - text: Agora você reconhece a folhagem da famosa árvore dos contos, que atapetaesse jardim de Valfenda. Várias camadas de folhas secas como papiro, cheias
+    rooms:
+    - room:valfenda.no-extremo-sul-do-jardim-flores
+  examined: true
+  rooms:
+  - room:valfenda.no-extremo-sul-do-jardim-flores
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
