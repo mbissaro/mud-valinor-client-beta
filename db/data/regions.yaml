@@ -115,9 +115,32 @@
   tags: [caça, farm-de-gold, portal-contextual]
   notes: >
     "Floresta ao extremo norte" da Academia. Bestiário variado, farm de
-    gold (bezerro/slice/Narinë), e uma entrada secreta (!s) que leva a
-    destinos diferentes em visitas diferentes.
-  sources: ["catalogo.md", "notas.md#Amplo Bosque (nível 1)"]
+    gold (bezerro/slice/Narinë). Nas bordas norte e sul há seis "pequenas
+    construções de pedras" com porta, cada uma a guilda de uma classe:
+    Academia de Combate (guerreiro), Gruta Profunda (ladrão), Acampamento dos
+    Rangers (sul); Pequeno Templo (clérigo), Círculo Natural (druida), Torre
+    Mágica (mago) (norte). Na borda leste, uma pequena trilha leva à Trilha
+    de Pedras Claras, à ponte e à Vila dos Aventureiros.
+  sources: ["catalogo.md", "notas.md#Amplo Bosque (nível 1)", "logs/raw.log"]
+  confidence: confirmed
+- id: region:vila-aventureiros
+  name: Vila dos Aventureiros
+  parent: region:bosque
+  kind: city
+  safety: safe
+  danger: 1
+  level_range: [1, 6]
+  navigation: linear
+  atmosphere: [murada, comercial, acolhedora]
+  tags: [lojas, cura, taverna]
+  notes: >
+    Vila murada a leste do Amplo Bosque, depois da Trilha e da Ponte de
+    Pedras Claras, sobre um rio. Uma rua só (Rua da Honra) entre o Portão
+    Ocidental e o Portão Oriental (este sem saída), com a Praça da Coragem
+    (mangueira, fonte, prefeito hobbit Trungo Tronco) no meio. Lojas de
+    armaduras, utilidades, armas, roupas e magia, a Taverna Cajado Torto e a
+    Casa de Cura com a curandeira Dhayme.
+  sources: ["logs/raw.log"]
   confidence: confirmed
 
 - id: region:bosque.formigueiro
@@ -282,4 +305,40 @@
     bênção; Námo/Vairë "julgam" por alguns minutos e depois o personagem é
     teleportado de volta ao ponto de retorno. Salas achadas na mineração do raw.log.
   sources: ["notas.md#Lições aprendidas (gerais)", "logs/raw.log"]
+  confidence: confirmed
+
+- id: region:esgaroth
+  name: Esgaroth, a Cidade do Lago
+  kind: city
+  safety: guarded
+  danger: 0
+  navigation: grid
+  atmosphere: [mercantil, lacustre, movimentado]
+  tags: [cidade-natal, ponto-de-retorno, bombas-dagua, guardas-gps]
+  notes: >
+    Cidade sobre palafitas no Lago Comprido, em dois níveis (plataforma de
+    madeira em cima, rampas do mercado e ancoradouros embaixo). Anel de
+    avenidas perimetrais (Oeste, Norte, Leste, Sul) cortado pela Avenida
+    Transversal; Mercados Central e Setentrional; Ponte de Baixo. Praças com
+    bomba d'água grátis; guardas levam o visitante a seis pontos fixos.
+    Ponto de retorno no Coração do Mercado. Área 0-115 no comando `areas`.
+  sources: ["notas.md#Esgaroth (Cidade do Lago)", "logs/raw.log"]
+  confidence: confirmed
+
+- id: region:esgaroth.grande-ponte
+  name: Estrada do Lago e Grande Ponte
+  kind: road
+  parent: region:esgaroth
+  safety: guarded
+  danger: 0
+  navigation: linear
+  atmosphere: [imponente, aberto]
+  tags: [acesso, ponte, saida-da-academia]
+  notes: >
+    Saída da Academia para personagens de Esgaroth ("À porta da Academia de
+    Aventureiros"), a Estrada do Lago com placa (Bosque das Folhas Verdes,
+    Ponte do rio da Floresta, Cemitério, Aldeia de Lago Comprido) e a Grande
+    Ponte de dois níveis (pedra embaixo, madeira em cima) até a Avenida
+    Perimetral Oeste. Guarda no Acesso à Grande Ponte.
+  sources: ["notas.md#Esgaroth (Cidade do Lago)", "logs/raw.log"]
   confidence: confirmed

@@ -28,8 +28,29 @@
   examined: false
   found_in:
   - uma bela estante
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:afiada-pena-de-escrituras
+  name: uma afiada pena de escrituras
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 1
+    price: 10
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -53,6 +74,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:anel-de-bronze-com-topazios
+  name: um anel de bronze com topázios
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mevildon <no dedo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:anel-de-prata-incrustado-com-turmalinas
+  name: um anel de prata incrustado com turmalinas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <no dedo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:anel-do-guarda-da-vila
   name: um anel do guarda da vila
   kind: item
@@ -60,6 +101,19 @@
   examined: false
   worn_by:
   - O guarda <no dedo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:anel-dos-guardas-da-cidade
+  name: um anel dos guardas da cidade
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <no dedo>
+  - O guarda Lainever <no dedo>
+  - O guarda Lairebaude <no dedo>
+  - O guarda Tourvigouh <no dedo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -87,6 +141,16 @@
     stock: Ilim.
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:avental-de-couro-de-olifante
+  name: um avental de couro de olifante
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Phrantes <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -120,6 +184,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:barrete-verde-enfeitado-com-uma-pluma
+  name: um barrete verde enfeitado com uma pluma
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bela-abotoadura-de-prata
+  name: uma bela abotoadura de prata
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O ourives Fonstipéll <no pulso>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bela-coroa-dourada
   name: uma bela coroa dourada
   kind: item
@@ -130,6 +214,18 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:belissima-coroa-cintilante
+  name: uma belíssima coroa cintilante
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Estë <na cabeça>
+  - Námo <na cabeça>
+  - Vairë <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bengala-da-viuva
   name: a bengala da viúva
   kind: item
@@ -137,6 +233,26 @@
   examined: false
   worn_by:
   - A viúva <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bermudao-xadrez
+  name: um bermudão xadrez
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O velho pescador <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bodoque-de-guerra
+  name: um bodoque de guerra
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O armeiro Disneck <empunhando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -155,6 +271,41 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:bolo-de-sementes
+  name: um bolo de sementes
+  kind: item
+  category: comida e bebida
+  examined: false
+  worn_by:
+  - A serva Bertilde <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolsa-presa-num-bordao
+  name: uma bolsa presa num bordão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bombinha-achocolatada
+  name: uma bombinha achocolatada
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:botas-pretas
   name: as botas pretas
   kind: item
@@ -163,6 +314,16 @@
   worn_by:
   - O Guardião do Norte <nos pés>
   - O guarda <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bracelete-de-contra-maldicao
+  name: um bracelete de contra-maldição
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <nos braços>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -180,7 +341,16 @@
   name: um bracelete metálico
   kind: item
   category: equipamento
-  examined: false
+  description: |-
+    Apesar de simples, esse bracelete metálico foi muito bem forjado. É
+    perceptível o quão resistente ele é, o tornando uma ótima proteção para
+    quem for entrar em combate. Na face lateral dele, jaz inscrito o símbolo
+    da Academia dos Aventureiros.
+  examined: true
+  weight: cerca de meio quilograma
+  wear:
+  - pulso
+  condition: em perfeito estado
   worn_at:
   - no pulso
   found_in:
@@ -197,7 +367,10 @@
   name: um cabresto arrebentado
   kind: item
   category: outro
-  examined: false
+  description: |-
+    Este é um pequeno cabresto que seguraria tranquilamente um bezerro jovem,
+    se não estivesse arrebentado.
+  examined: true
   dropped_by:
   - um bezerro
   actions:
@@ -242,6 +415,23 @@
   examined: false
   worn_by:
   - Mestre Toric <segurando>
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-branca
+  name: uma calça branca
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <nas pernas>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -317,6 +507,30 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:calca-de-couro-marrom
+  name: uma calça de couro marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O mercador de ouriversária Thordim <nas pernas>
+  - O vendedor de armaduras Feodor <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-de-seda-negra
+  name: uma calça de seda negra
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mevildon <nas pernas>
+  - O agente dos correios Rabelais <nas pernas>
+  - O jovem Belodon <nas pernas>
+  - O ourives Fonstipéll <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:calca-marrom
   name: uma calça marrom
   kind: item
@@ -329,13 +543,30 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:calca-muito-estampada
+  name: uma calça muito estampada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um comprador de cristais <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:calca-preta-de-algodao
   name: uma calça preta de algodão
   kind: item
   category: equipamento
-  examined: false
+  description: Uma calça preta simples, feita de algodão.
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - pernas
+  condition: em perfeito estado
   worn_at:
   - nas pernas
+  worn_by:
+  - Phrantes <nas pernas>
   actions:
   - pegou
   - vestiu
@@ -352,12 +583,36 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:camisa-branca-com-pulsos-e-gola-de-cor-laranja
+  name: uma camisa branca com pulsos e gola de cor laranja
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O leiteiro Daradim <no corpo>
+  - O vendedor de armaduras Feodor <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-branca-de-cetim
+  name: uma camisa branca de cetim
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mevildon <no corpo>
+  - O agente dos correios Rabelais <no corpo>
+  - O ourives Fonstipéll <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:camisa-de-algodao
   name: uma camisa de algodão
   kind: item
   category: equipamento
   examined: false
   worn_by:
+  - Domick <no corpo>
   - O Guardião do Norte <no corpo>
   - O herói Kheodred <no corpo>
   - O lojista <no corpo>
@@ -371,11 +626,27 @@
   category: equipamento
   description: Uma camisa ordinária, feita de um tecido marrom.
   examined: true
+  weight: cerca de meio quilograma
+  wear:
+  - corpo
+  condition: em perfeito estado
   worn_at:
   - no corpo
   actions:
   - pegou
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-verde
+  name: uma camisa verde
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O jovem Belodon <no corpo>
+  - O merceeiro mercador Alastor <no corpo>
+  - O taverneiro Dostolieve <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -417,12 +688,17 @@
   found_in:
   - um pequeno armário
   shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 1
+    price: 10
+    stock: Ilim.
   - room: room:valfenda.o-cartografo
     level: 1
     price: 10
     stock: Ilim.
   rooms:
   - room:academia.a-sala-dos-conteiners
+  - room:esgaroth.loja-alfarrabio-novo
   - room:valfenda.o-cartografo
   actions:
   - deu
@@ -469,6 +745,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:capa-amarelada-com-fundo-escarlate
+  name: uma capa amarelada com fundo escarlate
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:capa-cinzenta
   name: uma capa cinzenta
   kind: item
@@ -486,6 +772,21 @@
   examined: false
   worn_by:
   - Dori <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:capa-para-livros
+  name: uma capa para livros
+  kind: item
+  category: livro
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 2
+    price: 20
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -513,10 +814,12 @@
   name: um caroço de maçã
   kind: item
   category: comida e bebida
-  examined: false
+  examined: true
+  weight: menos de 100 g
   ground_line: Um caroço de maçã foi jogado aqui.
   rooms:
   - room:academia.o-corredor-silencioso
+  - room:academia.o-refeitorio
   - room:bri.avenida-zenite-2
   - room:bri.biblioteca.a-ala-oeste
   - room:valfenda.as-margens-da-floresta
@@ -524,8 +827,19 @@
   actions:
   - deu
   - jogou
+  - pegou
   - recebeu
   item: item:caroco-maca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:casaco-de-algodao-marrom
+  name: um casaco de algodão marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - no corpo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -533,12 +847,27 @@
   name: um casaco preto
   kind: item
   category: equipamento
-  examined: false
+  description: Um casaco resistente, feito de tecido negro.
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - corpo
+  condition: em perfeito estado
   worn_at:
   - no corpo
   actions:
   - pegou
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cesto-com-flores
+  name: um cesto com flores
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -572,6 +901,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:chapeu-pontudo
+  name: um chapéu pontudo
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O mago <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:chave-do-portao-norte-de-bri
   name: a chave do portão norte de Bri
   kind: item
@@ -586,7 +925,11 @@
   name: uma chave metálica
   kind: item
   category: outro
-  examined: false
+  description: |-
+    Ela é pequena, mas seu segredo parece ser bem detalhado. Em suas laterais,
+    jaz inscrito o símbolo da Academia dos Aventureiros.
+  examined: true
+  weight: menos de 100 g
   found_in:
   - uma bela estante
   ground_line: Uma chave metálica jaz largada.
@@ -597,6 +940,16 @@
   actions:
   - jogou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:chave-metalica-em-uma-bela-estante
+  name: uma chave metálica em uma bela estante
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -618,10 +971,23 @@
   name: um cinto de couro
   kind: item
   category: equipamento
-  examined: false
+  description: |-
+    Um cinto de couro, que parece bastante resistente. Na sua fivela há o
+    brasão da Academia de Aventureiros.
+  examined: true
+  weight: cerca de 300 g
+  wear:
+  - cintura
+  condition: em perfeito estado
   worn_at:
   - na cintura
   worn_by:
+  - Mevildon <na cintura>
+  - O capitão da guarda Brandivaus <na cintura>
+  - O guarda Lainever <na cintura>
+  - O guarda Lairebaude <na cintura>
+  - O guarda Tourvigouh <na cintura>
+  - O mercador de ouriversária Thordim <na cintura>
   - Zurg <na cintura>
   found_in:
   - uma bela estante
@@ -630,6 +996,16 @@
   actions:
   - colocou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cinto-de-fitas-trancadas
+  name: um cinto de fitas trançadas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <na cintura>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -653,11 +1029,23 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cinturao-de-couro
+  name: um cinturão de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cogumelo-comestivel
   name: um cogumelo comestível
   kind: item
   category: comida e bebida
-  examined: false
+  description: Todos os cogumelos são comestíveis... Porém, alguns apenas uma vez.
+  examined: true
+  weight: menos de 100 g
   shops:
   - room: room:academia.o-refeitorio
     level: 0
@@ -665,6 +1053,9 @@
     stock: Ilim.
   rooms:
   - room:academia.o-refeitorio
+  actions:
+  - come
+  - comprou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -698,6 +1089,17 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:colete-de-seda-negra
+  name: um colete de seda negra
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A vendedora Ilde <no corpo>
+  - O mercador de ouriversária Thordim <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:colete-entreaberto
   name: um colete entreaberto
   kind: item
@@ -705,6 +1107,16 @@
   examined: false
   worn_by:
   - Nedhellener <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cureta-de-prata-de-lei
+  name: uma cureta de prata de lei
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <empunhando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -745,7 +1157,18 @@
   examined: false
   ground_line: Uma delicada camisa clara foi abandonada aqui.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:valfenda.sala-de-doacoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:delicado-colar-de-perolas
+  name: um delicado colar de pérolas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <no pescoço>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -774,7 +1197,35 @@
   examined: true
   ground_line: Uma desgastada bainha de couro foi largada aqui.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:valfenda.sala-de-doacoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:doce-boca-de-donzela
+  name: um doce boca de donzela
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:duas-botinas-de-couro-de-topeira
+  name: duas botinas de couro de topeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Farzel Luzumbra <nos pés>
+  - Um comprador de cristais <nos pés>
+  - Um homem comum <nos pés>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -788,10 +1239,30 @@
     Academia de Aventureiros.
   examined: true
   weight: cerca de 100 g
+  shops:
+  - room: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+    level: 1
+    price: 31
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.estrela-da-manha-loja-de-magia
   actions:
   - bebeu
   - pegou
   item: item:elixir
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:elmete-de-ferro-reluzente
+  name: um elmete de ferro reluzente
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <na cabeça>
+  - O guarda Lainever <na cabeça>
+  - O guarda Lairebaude <na cabeça>
+  - O guarda Tourvigouh <na cabeça>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -823,7 +1294,9 @@
   - na cabeça
   found_in:
   - uma bela estante
+  ground_line: Um elmo metálico jaz largado.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.deposito-de-armaduras
   actions:
   - colocou
@@ -843,6 +1316,29 @@
     stock: Ilim.
   rooms:
   - room:bri.ponei.o-ponei-saltitante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:enorme-e-pesada-armadura-metalica
+  name: uma enorme e pesada armadura metálica
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Domick <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:escudo-com-as-armas-de-esgaroth
+  name: um escudo com as armas de Esgaroth
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <como escudo>
+  - O guarda Lainever <como escudo>
+  - O guarda Lairebaude <como escudo>
+  - O guarda Tourvigouh <como escudo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -882,6 +1378,19 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:espada-esclavonia
+  name: uma espada esclavônia
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <empunhando>
+  - O guarda Lainever <empunhando>
+  - O guarda Lairebaude <empunhando>
+  - O guarda Tourvigouh <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:espada-longa
   name: uma espada longa
   kind: item
@@ -917,11 +1426,52 @@
   - empunhando
   found_in:
   - uma bela estante
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   actions:
   - empunhou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espadim-de-chocolate
+  name: um espadim de chocolate
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espelho-com-moldura-de-ouro
+  name: um espelho com moldura de ouro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espineleiras-de-couro
+  name: uma espineleiras de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <no tornozelo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -929,12 +1479,41 @@
   name: o etéreo manto dos mortos
   kind: item
   category: equipamento
-  examined: false
+  description: |-
+    Este obscuro manto possui, indubitavelmente, alguma propriedade mágica. Ao
+    observá-lo com atenção, você nota que ele parece fino e transparente, mas se
+    voltado contra a luz torna-se espesso e opaco. É como se ele fosse desaparecer
+    a qualquer momento!
+  examined: true
+  weight: menos de 100 g
+  wear:
+  - sobre o corpo
   worn_at:
   - sobre o corpo
   actions:
   - recebeu
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:exuberante-vestido-de-matelasse
+  name: um exuberante vestido de matelassê
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mirenya <sobre o corpo>
+  - Uma moça de taberna <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:faixa-vermelha
+  name: uma faixa vermelha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dantalion <na cintura>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -954,7 +1533,8 @@
   name: uma fatia de carne de um grande macaco
   kind: item
   category: comida e bebida
-  examined: false
+  examined: true
+  weight: cerca de 100 g
   actions:
   - come
   - deu
@@ -1072,7 +1652,15 @@
   name: uma fina camisa de seda
   kind: item
   category: equipamento
-  examined: false
+  description: |-
+    O tecido é extremamente leve e macio. A seda chega a ser quase como fios de
+    prata. Botões de madeira fecham a camisa até a altura do pescoço, cuja gola
+    possui detalhes mais escuros pintados nas pontas.
+  examined: true
+  weight: cerca de 100 g
+  wear:
+  - corpo
+  condition: em perfeito estado
   worn_by:
   - Eartitton <no corpo>
   - Faelar Anor <no corpo>
@@ -1084,8 +1672,32 @@
   rooms:
   - room:valfenda.a-alfaiataria
   actions:
+  - colocou
   - pegou
   item: item:camisa-seda
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fina-cimeira-de-ferro
+  name: uma fina cimeira de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <sobre o rosto>
+  - O guarda Lainever <sobre o rosto>
+  - O guarda Lairebaude <sobre o rosto>
+  - O guarda Tourvigouh <nos olhos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fina-vela-prateada
+  name: uma fina vela prateada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma moça de taberna <como luz>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1105,11 +1717,16 @@
   category: outro
   examined: false
   shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 1
+    stock: Ilim.
   - room: room:valfenda.o-cartografo
     level: 0
     price: 1
     stock: Ilim.
   rooms:
+  - room:esgaroth.loja-alfarrabio-novo
   - room:valfenda.o-cartografo
   sources:
   - logs/transcript.log
@@ -1128,6 +1745,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:folhinha-de-hortela-acucarada
+  name: uma folhinha de hortelã-açucarada
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:formao
   name: um formão
   kind: item
@@ -1135,6 +1767,23 @@
   examined: false
   worn_by:
   - O saqueador de túmulos <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:garra-de-madeira
+  name: uma garra de madeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Domick <segurando>
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1183,6 +1832,28 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:gorjal-de-ferro-gasto
+  name: um gorjal de ferro gasto
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda Lainever <no pescoço>
+  - O guarda Lairebaude <no pescoço>
+  - O guarda Tourvigouh <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grande-livro-intitulado-as-cronicas-de-arda
+  name: um grande livro intitulado 'As crônicas de Arda'
+  kind: item
+  category: livro
+  examined: false
+  worn_by:
+  - Vairë <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:grande-mochila-de-viagem
   name: uma grande mochila de viagem
   kind: item
@@ -1190,6 +1861,26 @@
   examined: false
   worn_by:
   - Narinë <nas costas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grande-vela-dourada
+  name: uma grande vela dourada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um homem comum <como luz>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:grande-vestido-florido
+  name: um grande vestido florido
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1223,6 +1914,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:grosso-livro-de-ciencias
+  name: um grosso livro de ciências
+  kind: item
+  category: livro
+  examined: false
+  worn_by:
+  - Dantalion <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:guia-do-aventureiro
   name: O Guia do Aventureiro
   kind: item
@@ -1232,6 +1933,31 @@
   - colocou
   - deu
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:guloseima-de-fada-perdida
+  name: uma guloseima de fada perdida
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:imensa-cesta-de-doces
+  name: uma imensa cesta de doces
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1245,13 +1971,23 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:jaqueta-vermelha
+  name: uma jaqueta vermelha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:lamparina
   name: uma lamparina
   kind: item
   category: equipamento
   examined: true
   weight: cerca de 300 g
-  light: 120 horas
+  light: 65 horas
   worn_at:
   - como luz
   shops:
@@ -1288,6 +2024,36 @@
   examined: false
   worn_by:
   - Dori <como luz>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:laco-rosa-adornado-com-uma-esfera-branca
+  name: um laço rosa adornado com uma esfera branca
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:lenco-de-renda
+  name: um lenço de renda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:leve-tunica-verde-com-bordados-de-flores
+  name: uma leve túnica verde com bordados de flores
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mago <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1346,6 +2112,16 @@
     ordem, mas com pouca diferença de tempo entre cada um; e a partir deles,
     dizem os eldar, as palavras um, dois e três foram feitas: os mais antigos
     de todos os numerais.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:livro-intitulado-dicionario-de-quenya
+  name: um livro intitulado 'Dicionário de Quenya'
+  kind: item
+  category: livro
+  examined: false
+  worn_by:
+  - Abbigalye <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1443,6 +2219,41 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:livro-intitulado-uma-aventura-de-verda
+  name: um livro intitulado 'Uma aventura de Verda
+  kind: item
+  category: livro
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 200
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:longa-e-rustica-tunica-marrom
+  name: uma longa e rústica túnica marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A serva Bertilde <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:longa-tenaz
+  name: uma longa tenaz
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Phrantes <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:longa-tunica-negra
   name: uma longa túnica negra
   kind: item
@@ -1464,13 +2275,31 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:longo-vestido-bordado-com-perolas
+  name: um longo vestido bordado com pérolas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:machado-metalico
   name: um machado metálico
   kind: item
   category: equipamento
   examined: false
   worn_by:
+  - Domick <empunhando>
   - O herói Kheodred <empunhando>
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1499,6 +2328,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:manto-cinza-brilhante
+  name: um manto cinza brilhante
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Estë <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:manto-do-coveiro
   name: o manto do coveiro
   kind: item
@@ -1506,6 +2345,27 @@
   examined: false
   worn_by:
   - O coveiro <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:manto-negro
+  name: um manto negro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Asilë <sobre o corpo>
+  - Námo <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:manto-purpura
+  name: um manto púrpura
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Vairë <sobre o corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1606,6 +2466,36 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:mapa-das-cercanias-de-lago-comprido
+  name: um mapa das cercanias de Lago Comprido
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 5
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-de-aldeia-de-lago-comprido
+  name: um mapa de Aldeia de Lago Comprido
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:mapa-de-archet
   name: um mapa de Archet
   kind: item
@@ -1651,6 +2541,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:mapa-de-esgaroth
+  name: o mapa de Esgaroth
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:mapa-de-valfenda
   name: um mapa de Valfenda
   kind: item
@@ -1664,6 +2569,21 @@
   rooms:
   - room:valfenda.o-cartografo
   item: item:mapa-valfenda
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mapa-do-bosque-das-folhas-verdes
+  name: um mapa do Bosque das Folhas Verdes
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1683,15 +2603,66 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:mapa-do-cemiterio-de-lago-comprido
+  name: um mapa do Cemitério de Lago Comprido
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:esgaroth.loja-alfarrabio-novo
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.loja-alfarrabio-novo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:martelo-coroado
+  name: um martelo coroado
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Phrantes <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:maca-metalica
   name: uma maça metálica
   kind: item
-  category: outro
-  examined: false
+  category: equipamento
+  description: |-
+    Muito bem forjada, esta maça foi cuidadosamente feita para grandes
+    batalhas. Feita a partir de algum metal escuro, ela traz inscrita em sua
+    superfície o símbolo da Academia dos Aventureiros.
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - empunhando
+  condition: em perfeito estado
   found_in:
   - uma bela estante
+  shops:
+  - room: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    level: 1
+    price: 101
+    stock: Ilim.
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:maca-metalica-em-uma-bela-estante
+  name: uma maça metálica em uma bela estante
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1699,9 +2670,24 @@
   name: uma maçã
   kind: item
   category: comida e bebida
-  examined: false
+  description: |-
+    É uma pequena maçã de qualidade baixa. Um pouco dura, azeda e de casca grossa.
+    Em todo caso, ajuda a matar a fome.
+  examined: true
   actions:
+  - come
   - comeu
+  - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:medalhao-de-ferro
+  name: um medalhão de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dantalion <no pescoço>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1789,6 +2775,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:modesta-sandalia-de-tiras
+  name: uma modesta sandália de tiras
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:moeda-de-ouro
+  name: uma moeda de ouro
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:moedas
   name: algumas moedas
   kind: item
@@ -1799,22 +2805,184 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
-- id: obj:par-de-botas-de-couro
-  name: um par de botas de couro
+- id: obj:monte-de-faixas-ensanguentadas
+  name: um monte de faixas ensanguentadas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um leproso <na cabeça>
+  - Um leproso <nas mãos>
+  - Um leproso <nas pernas>
+  - Um leproso <no pescoço>
+  - Um leproso <nos braços>
+  - Um leproso <sobre o rosto>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:mascara-para-trabalhos-metalurgicos
+  name: uma máscara para trabalhos metalúrgicos
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Phrantes <sobre o rosto>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:ossos-de-alguma-ave
+  name: os ossos de alguma ave
+  kind: item
+  category: outro
+  examined: false
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pacotinho-de-balinhas-surpresa
+  name: um pacotinho de balinhas surpresa
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 8
+    stock: '1'
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-belos-brincos-de-ametista
+  name: um par de belos brincos de ametista
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <nas orelhas>
+  - Florbela, a esposa de Mevildon <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-anas
+  name: um par de botas anãs
   kind: item
   category: equipamento
   examined: false
   worn_at:
   - nos pés
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-com-fivela
+  name: uma par de botas com fivela
+  kind: item
+  category: equipamento
+  examined: false
   worn_by:
+  - Um jovem mago <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-com-fivelas-douradas
+  name: um par de botas com fivelas douradas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O agente dos correios Rabelais <nos pés>
+  - O ourives Fonstipéll <nos pés>
+  - O vendedor de armaduras Feodor <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-da-guarda
+  name: um par de botas da guarda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <nos pés>
+  - O guarda Lainever <nos pés>
+  - O guarda Lairebaude <nos pés>
+  - O guarda Tourvigouh <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-de-cavalo
+  name: um par de botas de cavalo
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O velho pescador <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-de-couro
+  name: um par de botas de couro
+  kind: item
+  category: equipamento
+  description: |-
+    Apesar de simples, esse par de botas de couro foi muito bem forjado. É
+    perceptível o quão forte ele é, o tornando uma boa proteção para quem for
+    entrar em combate. Além disso, essas botas parecem ser bem confortáveis
+    para longas caminhadas. Na face externa delas, jaz inscrito o símbolo da
+    Academia dos Aventureiros.
+  examined: true
+  weight: cerca de 1 kg
+  wear:
+  - pés
+  condition: em perfeito estado
+  worn_at:
+  - nos pés
+  worn_by:
+  - Domick <nos pés>
   - Mestre Toric <nos pés>
+  - Mevildon <nos pés>
+  - O armeiro Disneck <nos pés>
+  - O jovem Belodon <nos pés>
+  - O leiteiro Daradim <nos pés>
   - O lojista <nos pés>
+  - O mercador de ouriversária Thordim <nos pés>
+  - O merceeiro mercador Alastor <nos pés>
+  - Phrantes <nos pés>
   found_in:
   - uma bela estante
   rooms:
   - room:academia.deposito-de-armaduras
   actions:
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-de-couro-de-orc
+  name: um par de botas de couro de orc
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O taverneiro Dostolieve <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-botas-de-couro-marrom
+  name: um par de botas de couro marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-braceletes-dourados
+  name: um par de braceletes dourados
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <nos braços>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1838,6 +3006,27 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:par-de-brincos-brilhantes
+  name: um par de brincos brilhantes
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Abbigalye <nas orelhas>
+  - Asilë <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-brincos-com-poderes-curativos
+  name: um par de brincos com poderes curativos
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:par-de-calcas-escuras
   name: um par de calças escuras
   kind: item
@@ -1848,12 +3037,40 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:par-de-calcas-surradas
+  name: um par de calças surradas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O armeiro Disneck <nas pernas>
+  - O curandeiro alucinado <nas pernas>
+  - O leiteiro Daradim <nas pernas>
+  - O merceeiro mercador Alastor <nas pernas>
+  - O taverneiro Dostolieve <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-cubiteiras-de-ferro
+  name: um par de cubiteiras de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <nos braços>
+  - O guarda Lainever <nos braços>
+  - O guarda Lairebaude <nos braços>
+  - O guarda Tourvigouh <nos braços>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:par-de-delicados-sapatos-de-couro
   name: um par de delicados sapatos de couro
   kind: item
   category: equipamento
   examined: false
   worn_by:
+  - Abbigalye <nos pés>
   - Zurg <nos pés>
   sources:
   - logs/transcript.log
@@ -1868,11 +3085,25 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:par-de-luvas-brancas
+  name: um par de luvas brancas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <nas mãos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:par-de-luvas-de-couro
   name: um par de luvas de couro
   kind: item
   category: equipamento
-  examined: false
+  examined: true
+  weight: cerca de 300 g
+  wear:
+  - mãos
+  condition: em perfeito estado
   worn_at:
   - nas mãos
   worn_by:
@@ -1880,11 +3111,36 @@
   - O herói Kheodred <nas mãos>
   found_in:
   - uma bela estante
+  ground_line: Um par de luvas de couro foi deixado aqui.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.deposito-de-armaduras
   actions:
   - colocou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-luvas-de-renda
+  name: um par de luvas de renda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Florbela, a esposa de Mevildon <nas mãos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-manoplas-de-couro
+  name: um par de manoplas de couro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <nas mãos>
+  - O guarda Lainever <nas mãos>
+  - O guarda Lairebaude <nas mãos>
+  - O guarda Tourvigouh <nas mãos>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1909,7 +3165,16 @@
   name: um par de perneiras metálicas
   kind: item
   category: equipamento
-  examined: false
+  description: |-
+    Apesar de simples, esse par de perneiras metálicas foi muito bem forjado.
+    É perceptível o quão resistente ele é, o tornando uma ótima proteção para
+    quem for entrar em combate. Na face das perneiras, jaz inscrito o símbolo
+    da Academia dos Aventureiros.
+  examined: true
+  weight: de 5 a 10 kg
+  wear:
+  - pernas
+  condition: em perfeito estado
   worn_at:
   - nas pernas
   found_in:
@@ -1930,6 +3195,59 @@
   examined: false
   worn_by:
   - A viúva <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sandalias-de-tiras-bordadas
+  name: um par de sandálias de tiras bordadas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A mercadora de rendas Moriana <nos pés>
+  - Florbela, a esposa de Mevildon <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sapatilhas-brancas
+  name: um par de sapatilhas brancas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sapatilhas-cobertas-de-veludo
+  name: um par de sapatilhas cobertas de veludo
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A vendedora Ilde <nos pés>
+  - Mirenya <nos pés>
+  - Uma moça de taberna <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sapatilhas-de-madeira
+  name: um par de sapatilhas de madeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A serva Bertilde <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-sapatos-de-couro-macio
+  name: um par de sapatos de couro macio
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Asilë <nos pés>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1955,9 +3273,9 @@
   examined: false
   shops:
   - room: room:academia.o-refeitorio
-    level: 1
+    level: 0
     price: 1
-    stock: '1'
+    stock: Ilim.
   rooms:
   - room:academia.o-refeitorio
   actions:
@@ -1980,6 +3298,19 @@
     stock: Ilim.
   rooms:
   - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:peitoral-de-ferro
+  name: um peitoral de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <no corpo>
+  - O guarda Lainever <no corpo>
+  - O guarda Lairebaude <no corpo>
+  - O guarda Tourvigouh <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2087,11 +3418,82 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pequena-lamparina
+  name: uma pequena lamparina
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Uma pequena lamparina foi deixada aqui.
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  item: item:lamparina
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequena-pocao-amarela
+  name: uma pequena poção amarela
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+    level: 1
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.estrela-da-manha-loja-de-magia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequena-pocao-azul
+  name: uma pequena poção azul
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+    level: 1
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.estrela-da-manha-loja-de-magia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequena-pocao-verde
+  name: uma pequena poção verde
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+    level: 1
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:vila-aventureiros.estrela-da-manha-loja-de-magia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequeno-lampiao
+  name: um pequeno lampião
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <como luz>
+  - O guarda Lainever <como luz>
+  - O guarda Lairebaude <como luz>
+  - O guarda Tourvigouh <como luz>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:perdiz-assada
   name: uma perdiz assada
   kind: item
   category: comida e bebida
-  examined: false
+  examined: true
+  weight: cerca de meio quilograma
   shops:
   - room: room:academia.o-refeitorio
     level: 0
@@ -2099,6 +3501,9 @@
     stock: Ilim.
   rooms:
   - room:academia.o-refeitorio
+  actions:
+  - come
+  - comprou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2121,7 +3526,23 @@
   name: um pergaminho de retorno
   kind: item
   category: pergaminho
-  examined: false
+  description: |-
+    No pergaminho, você lê: Fim do treinamento
+        Parabéns! Você chegou ao fim do seu treinamento.
+        Esse treinamento apresentou os comandos básicos, mas há muito mais
+    que não foi falado aqui. Além disso, é normal que você não lembre de
+    tudo que foi falado.
+        Lembre-se do mais importante: há ajuda para todos os comandos,
+    acessível com o comando HELP. E você também pode pedir ajuda (pelo
+    CHAT), porém tente antes encontrar a resposta sozinho.
+        Veja também o site do MUD: http://mud.valinor.com.br que tem
+    muitas informações úteis.
+        Seguindo a leste, você será levado à entrada da Academia de
+    Aventureiros, onde todos os iniciantes podem lutar, comprar
+    equipamentos, aprender perícias, e todo o resto. Posteriormente, você
+    poderá sair para explorar o mundo.
+        Bom divertimento!
+  examined: true
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
     level: 1
@@ -2129,6 +3550,7 @@
     stock: Ilim.
   ground_line: Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.provisoes-para-jovens-aventureiros
   - room:valfenda.olhos-para-o-vale
   actions:
@@ -2161,6 +3583,58 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pesada-calca-de-canvas
+  name: uma pesada calça de canvas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Farzel Luzumbra <nas pernas>
+  - Um homem comum <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesada-capa-de-trico-azul
+  name: uma pesada capa de tricô azul
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Farzel Luzumbra <sobre o corpo>
+  - Um homem comum <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesada-capa-negra
+  name: uma pesada capa negra
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - sobre o corpo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesada-capa-negra-para-o-merceeiro-mercador-alas
+  name: uma pesada capa negra para o merceeiro mercador Alastor
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - deu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesadas-luvas-de-ferreiro
+  name: pesadas luvas de ferreiro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Phrantes <nas mãos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:pesado-colete-marrom
   name: um pesado colete marrom
   kind: item
@@ -2168,6 +3642,46 @@
   examined: false
   worn_by:
   - Um menestrel <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesado-elmo-de-metal
+  name: um pesado elmo de metal
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Domick <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pirulito-arco-iris
+  name: um pirulito arco-íris
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pirulito-volta-e-vai
+  name: um pirulito volta-e-vai
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:esgaroth.praca-da-flechada-precisa
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2248,6 +3762,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pulseira-de-athelas-seca-trancada
+  name: uma pulseira de athelas seca trançada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <no pulso>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:pao-bem-recheado-para-viagem
   name: um pão bem recheado para viagem
   kind: item
@@ -2259,6 +3783,16 @@
   - deu
   - pegou
   - recebeu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:rede-de-pesca
+  name: uma rede de pesca
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O velho pescador <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2289,7 +3823,9 @@
   - no pescoço
   found_in:
   - uma bela estante
+  ground_line: Um resistente colarinho metálico foi deixado aqui.
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.deposito-de-armaduras
   actions:
   - colocou
@@ -2317,6 +3853,29 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:saia-de-veludo-negro
+  name: uma saia de veludo negro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A vendedora Ilde <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:saio-de-malhas-de-ferro
+  name: um saio de malhas de ferro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O capitão da guarda Brandivaus <nas pernas>
+  - O guarda Lainever <nas pernas>
+  - O guarda Lairebaude <nas pernas>
+  - O guarda Tourvigouh <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:sapatilhas-de-madeira
   name: as sapatilhas de madeira
   kind: item
@@ -2324,6 +3883,29 @@
   examined: false
   worn_by:
   - Nedhellener <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:sapatos-de-couro-de-carneiro
+  name: sapatos de couro de carneiro
+  kind: item
+  category: comida e bebida
+  examined: false
+  worn_by:
+  - Dantalion <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:simples-camisa-de-percal
+  name: uma simples camisa de percal
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Farzel Luzumbra <no corpo>
+  - O velho pescador <no corpo>
+  - Um comprador de cristais <no corpo>
+  - Um homem comum <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2356,11 +3938,99 @@
 - id: obj:tosca-bainha-de-couro
   name: uma tosca bainha de couro
   kind: item
-  category: outro
-  examined: false
+  category: equipamento
+  description: |-
+    Uma tosca bainha de um couro negro e um tanto ressecado. Fixada a ela há
+    duas tiras de couro com a finalidade de serem amarradas na cintura.
+  examined: true
+  weight: cerca de 100 g
+  wear:
+  - cintura
+  capacity: Média
   actions:
+  - colocou
   - pegou
   item: item:bainha-couro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:touca-de-renda-branca
+  name: uma touca de renda branca
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tunica-azul
+  name: uma túnica azul
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O mago <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tunica-de-pele-de-cervo
+  name: uma túnica de pele de cervo
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O armeiro Disneck <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tunica-manchada-por-pocoes
+  name: uma túnica manchada por poções
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O curandeiro alucinado <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:tunica-roxa
+  name: uma túnica roxa
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dantalion <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:velha-tunica-em-farrapos
+  name: uma velha túnica em farrapos
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um leproso <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-branco-de-algodao
+  name: um vestido branco de algodão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Asilë <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-branco-com-detalhes-bordados-a-ouro
+  name: um vestido branco, com detalhes bordados a ouro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Abbigalye <sobre o corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2389,6 +4059,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:vestido-lilas-com-mangas-de-renda
+  name: um vestido lilás com mangas de renda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A mercadora de rendas Moriana <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-rosa
+  name: um vestido rosa
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Aerith <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:viseira-de-ferro
   name: uma viseira de ferro
   kind: item
@@ -2409,6 +4099,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:xale-bordado-com-estrelas
+  name: um xale bordado com estrelas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - A doceira Hannendel <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:xale-preto
   name: um xale preto
   kind: item
@@ -2426,9 +4126,95 @@
   - text: A passagem está fechada.
     rooms:
     - room:bri.fora-do-portao-sul
+  - text: Apenas trevas...
+    rooms:
+    - room:bri.fora-do-portao-sul
   examined: true
   rooms:
   - room:bri.fora-do-portao-sul
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.adentrar
+  name: adentrar
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.hall-de-entrada-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.alfaitaria
+  name: alfaitaria
+  kind: scenery
+  descriptions:
+  - text: |-
+      Alfaitaria Agulha de Ouro
+      Os mais finos serviços de alfaiataria
+      feitos por mestre Elveödhras. Vendas
+      de cortes finos, e peças raras, vindos
+      de Gondor.
+    rooms:
+    - room:esgaroth.avenida-transversal-7
+  examined: true
+  rooms:
+  - room:esgaroth.avenida-transversal-7
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.alguma-coisa-passa-proxima-aos-seus-pes
+  name: Alguma coisa passa próxima aos seus pés...
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bosque.formigueiro.a-sala-circular
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.amontoado-de-cartas-esta-acomodado-em-armarios-d
+  name: Um amontoado de cartas está acomodado em armários de compartimentos quadrados...
+  kind: scenery
+  descriptions:
+  - text: |-
+      Alguns envelopes e pacotes mal cabem nos armários, mas estão bem separados
+      e seguros em seus compartimentos, identificados por letras... A, B, C, D... Z.
+      Alguns envelopes são dourados, outros deixam entrever cartas escritas em papel
+      timbrado e perfumado. Alguns envelopes trazem nomes de destinatários que você
+      talvez conheça: Beneóquio, Brandivaus, Mary Knob, Huidobro, Dostolieve, Kiar,
+      Ceredir...
+    rooms:
+    - room:esgaroth.correio-do-lago
+  examined: true
+  rooms:
+  - room:esgaroth.correio-do-lago
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.antigo
+  name: antigo
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2523,12 +4309,129 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.arcada
+  name: arcada
+  kind: scenery
+  descriptions:
+  - text: |-
+      Uma ampla arcada na parede leste leva à entrada da Academia. Siga por
+      ela para continuar. Há também uma arcada na parede norte, que leva de
+      volta à sala anterior.
+    rooms:
+    - room:academia.fim-do-treinamento
+  - text: |-
+      Uma arcada a oeste leva às salas onde são ensinadas as coisas que um
+      aventureiro precisa saber. Outra arcada, a norte, leva ao corredor
+      principal da academia.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+  - text: |-
+      Uma arcada a norte leva à sala de cura, e uma a sul leva ao resto do
+      corredor.
+    rooms:
+    - room:academia.um-corredor-3
+  - text: Uma arcada ao sul leva de volta ao corredor.
+    rooms:
+    - room:academia.sala-de-cura
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  - room:academia.fim-do-treinamento
+  - room:academia.sala-de-cura
+  - room:academia.um-corredor-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.arco-de-madeira-coberto-de-trepadeiras-e-flores-
   name: Um arco de madeira, coberto de trepadeiras e flores brancas, jaz aqui.
   kind: scenery
   examined: false
   rooms:
   - room:valfenda.no-jardim-um-caminho-entre-canteiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.armaduras
+  name: armaduras
+  kind: scenery
+  descriptions:
+  - text: |-
+      Há vários tipos de armaduras nas estantes. Você pode pegar uma se
+      estiver precisando.
+    rooms:
+    - room:academia.deposito-de-armaduras
+  examined: true
+  rooms:
+  - room:academia.deposito-de-armaduras
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.armas
+  name: armas
+  kind: scenery
+  descriptions:
+  - text: |-
+      Há vários tipos de armas nas estantes. Você pode pegar uma se estiver
+      precisando.
+    rooms:
+    - room:academia.deposito-de-armas
+  examined: true
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.atencao
+  name: atenção
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.avenida
+  name: avenida
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  - text: |-
+      Norte
+      Avenida Perimetral Leste, Acesso ao Mercado de Peixes,
+      Acesso à Rua Oposta, Taverna do Rei Sob a Montanha,
+      Praça Floresta das Trevas, Avenida Perimetral Norte.
+      Oeste
+      Acesso ao Quartel da Guarda, Avenida Transversal,
+      Acesso à Viela do Herói, Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.praca-montanha-solitaria
+  examined: true
+  rooms:
+  - room:esgaroth.praca-montanha-solitaria
+  - room:esgaroth.quartel-da-guarda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2556,6 +4459,79 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.balcao-coberto-de-cera-e-marcas-de-fogo-separa-o
+  name: Um balcão coberto de cera e marcas de fogo separa os fundos da loja.
+  kind: scenery
+  descriptions:
+  - text: |-
+      O balcão é feito de madeira escura, coberto de marcas de cera e queimaduras
+      de fogo sobre a madeira. Por alguns momentos, é possível quase enxergar
+      algum padrão nos pigos de cera derretida, mas isso é apenas impressão sua.
+    rooms:
+    - room:esgaroth.lampadario-luz-cegante
+  - text: |-
+      A plaqueta é de madeira simples e clara, sua mensagem é
+      objetiva e parece ter sido deixada pelo dono da loja:
+      "VOLTO EM HORÁRIO COMERCIAL."
+      Bom, agora só resta a você esperar o horário certo e respeitar o bom
+      comércio...
+    rooms:
+    - room:esgaroth.lampadario-luz-cegante
+  examined: true
+  rooms:
+  - room:esgaroth.lampadario-luz-cegante
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.balde-de-chumbo-foi-colocado-sob-o-cano-da-bomba
+  name: Um balde de chumbo foi colocado sob o cano da bomba.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs: Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs- Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    - room:esgaroth.praca-da-flechada-precisa
+  - text: |-
+      É um balde de chumbo, muito, muito pesado. É usado em conjunto com as bombas
+      d'água de Esgaroth.
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    - room:esgaroth.praca-da-flechada-precisa
+    - room:esgaroth.praca-floresta-das-trevas
+  examined: true
+  rooms:
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
+  - room:esgaroth.praca-montanha-solitaria
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.banco-de-pedras-azuis-esta-aqui-ao-redor-da-font
   name: Um banco de pedras azuis está aqui ao redor da fonte.
   kind: scenery
@@ -2566,12 +4542,89 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.bancos-circundam-a-fonte
+  name: Bancos circundam a fonte.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Grandes e de alguma maneira mística confortáveis e frescos, esses bancos
+      de pedras claras circundam a fonte e depois a si mesmos, assim criando
+      muito espaço para as pessoas sentarem.
+    rooms:
+    - room:vila-aventureiros.praca-da-coragem
+  examined: true
+  rooms:
+  - room:vila-aventureiros.praca-da-coragem
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.barris-de-manteiga-foram-estocados-no-canto-da-c
+  name: Alguns barris de manteiga foram estocados no canto da cozinha.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.cozinha
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.batente
+  name: batente
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.bela-cristaleira-de-madeira-foi-colocada-aqui-pa
+  name: Uma bela cristaleira de madeira foi colocada aqui para guardar louças.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Este é um belo móvel, as portas de madeira escura possuem no centro dois belos
+      vidros para permitir a visão das louças em seu interior.
+    rooms:
+    - room:esgaroth.copa
+  examined: true
+  rooms:
+  - room:esgaroth.copa
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.bela-fonte-de-pedras-verdes-esta-aqui-no-centro-
   name: Uma bela fonte de pedras verdes está aqui no centro do círculo.
   kind: scenery
   examined: false
   rooms:
   - room:valfenda.um-circulo-florido
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.belo
+  name: belo
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.hall-de-entrada-3
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2597,6 +4650,70 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.belo-carregamento-de-cristais-jaz-aqui-cuidadosa
+  name: Um belo carregamento de cristais jaz aqui, cuidadosamente envolto em palha.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Você não pode ver nada da beleza destes cristais, pois estão cuidadosamente
+      armazenados em caixotes de madeira, recheados de palha clara, para prevenir
+      qualquer choque. Nos caixotes em tinta azul bem delineada, há letras toscas
+      nas quais se lê 'Vale Ringló'.
+    rooms:
+    - room:esgaroth.no-ancoradouro-de-mercadorias-frageis
+  examined: true
+  rooms:
+  - room:esgaroth.no-ancoradouro-de-mercadorias-frageis
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.bomba-d-agua-esta-aqui-pronta-para-puxar-agua-do
+  name: Uma bomba d'água está aqui, pronta para puxar água do lago.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
+  - room:esgaroth.praca-montanha-solitaria
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.boneco
+  name: boneco
+  kind: scenery
+  descriptions:
+  - text: Um boneco feito de palha, parecendo um espantalho.
+    rooms:
+    - room:academia.o-centro-do-jardim
+  examined: true
+  rooms:
+  - room:academia.o-centro-do-jardim
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.boneco-de-palha-e-madeira-jaz-aqui-indicando-os-
+  name: Um boneco de palha e madeira jaz aqui, indicando os pontos mortais.
+  kind: scenery
+  descriptions:
+  - text: |-
+      É quase impossível olhar este boneco e não sorrir, ele é recheado de palha, em
+      seu interior há pedaços de madeira. Ele veste farrapos de homem, mas no seu
+      rosto alguns aprendizes pintaram desenhos de maquiagem para fazer galhofas.
+      Uma plaquinha no pescoço dele está rabiscada com nomes de inimigos de
+      perigosos da Terra-média. Você consegue ler um deles em destaque: DERMEISTER.
+    rooms:
+    - room:esgaroth.quartel-da-guarda-2
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.boneco-de-palha-esta-aqui
   name: Um boneco de palha está aqui.
   kind: scenery
@@ -2604,6 +4721,82 @@
   rooms:
   - room:academia.o-leste-do-jardim
   - room:academia.o-oeste-do-jardim
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.brisa-do-lago-contrasta-com-a-movimentacao-da-vi
+  name: A brisa do lago contrasta com a movimentação da vila...
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.no-mercado-setentrional
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cabideiro-de-ferro-jaz-aqui-com-cacarolas-pendur
+  name: Um cabideiro de ferro jaz aqui, com caçarolas penduradas em seus ganchos.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esse enorme cabideiro não passa de uma barra de ferro, cheia de ganchos, que
+      foi colocada entre as paredes. Ela parece muito prática para pendurar muitos
+      utensílios de cozinha.
+    rooms:
+    - room:esgaroth.cozinha
+  examined: true
+  rooms:
+  - room:esgaroth.cozinha
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cabideiro-de-madeira-para-chapeus-e-casacos-foi-
+  name: Um cabideiro de madeira, para chapéus e casacos, foi colocado aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      O cabideiro é alto, mas de braços pequenos, e na ponta de cada braço se vê uma
+      bola de ferro brilhante. Alguns chapéus e casacos indicam que o senhor dessa
+      cidade recebe muitas visitas.
+    rooms:
+    - room:esgaroth.a-entrada-da-casa-grande
+  examined: true
+  rooms:
+  - room:esgaroth.a-entrada-da-casa-grande
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cadeira
+  name: cadeira
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta cadeira é feita de mármore, mas o fato dela estar gasta e fixada no chão
+      faz você pensar duas vezes antes de pegá-la e levá-la consigo.
+    rooms:
+    - room:bosque.formigueiro.a-pequena-sala
+  examined: true
+  rooms:
+  - room:bosque.formigueiro.a-pequena-sala
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cadeiras
+  name: cadeiras
+  kind: scenery
+  descriptions:
+  - text: |-
+      Várias mesas e cadeiras ocupam a maior parte da sala. Muitas delas
+      estão ocupadas por alunos.
+    rooms:
+    - room:academia.o-refeitorio
+  examined: true
+  rooms:
+  - room:academia.o-refeitorio
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2628,12 +4821,276 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.capitao
+  name: capitão
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.carga-de-gengibre-foi-descarregada-aqui-e-espalh
+  name: Uma carga de gengibre foi descarregada aqui e espalha um perfume salutar...
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta carga de gengibre parece ter sido descarregada recentemente, pouco de
+      pode ver  pelo trançado da estopa, mas um cheiro peculiar e forte passa
+      através dela e se espalha em redor... É o perfume do gengibre.
+    rooms:
+    - room:esgaroth.no-agitado-mercado-central
+  examined: true
+  rooms:
+  - room:esgaroth.no-agitado-mercado-central
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.carrinho-de-mao-foi-estacionado-aqui-para-cargas
+  name: Um carrinho de mão foi estacionado aqui, para cargas leves.
+  kind: scenery
+  descriptions:
+  - text: |-
+      O carrinho de mão é feito em madeira e possui duas rodas, com um suporte
+      na parte dianteira para que fique equilibrado quando está estacionado.
+      Sua capacidade é grande, embora exija uma boa dose de trabalho manual.
+    rooms:
+    - room:esgaroth.no-ancoradouro-vago
+  examined: true
+  rooms:
+  - room:esgaroth.no-ancoradouro-vago
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cartaz
+  name: cartaz
+  kind: scenery
+  descriptions:
+  - text: |-
+      O cartaz é largo e o papel claro mostra que é recente, nele estão desenhados
+      quatro homens antipáticos. O primeiro é magro, narigudo e de olhos maus; o
+      segundo é enorme e forte como um touro; o terceiro tem um rosto fino e algumas
+      rugas na testa lhe dão um certo ar intelectual; e por fim o quarto tem uma
+      esquisita careta apavorada. Antes que você imagine quem serão esses quatro
+      procurados, uma legenda esclarece tudo na borda do papel: Beringol de
+      Losanarch, Anatole Braço-Forte, Gautier filho de Blanchot, Daudet o covarde.
+      ---CRIME: Roubo do Banco de Esgaroth. RECOMPENSA: 1000 moedas cada!----
+    rooms:
+    - room:esgaroth.quartel-da-guarda-3
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cartazes
+  name: cartazes
+  kind: scenery
+  descriptions:
+  - text: |-
+      Alguns cartazes dizem:
+      NÃO SAIA DE CASA SEM LEVAR PERGAMINHOS DE RETORNO.
+      CURE-SE ANTES DAS LUTAS.
+      NÃO CRIE 6000 C0GUMELOS.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+  - text: |-
+      Mestra Tsythia anotou alguma coisa em um velho diário de classe.
+      Alguns cartazes dizem:
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.chama-dourada-arde-silenciosamente-na-lareira
   name: Uma chama dourada arde silenciosamente na lareira.
   kind: scenery
   examined: false
   rooms:
   - room:valfenda.o-salao-do-fogo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cidade
+  name: cidade
+  kind: scenery
+  descriptions:
+  - text: |-
+      A Prefeitura informa aos mercadores ambulantes:
+      Senhores, por favor recordem seus lugares de andança nas rampas!
+      O ponto de venda de cada um é um auxílio ao freguês e uma marca do
+      mercador...
+      Não podemos nos ocupar em resolver vossas querelas ou até disputas
+      comerciais! O mercado Setentrional é reservado para movimentação de
+      produtos de Valle e Erebor, pedimos aos senhores que recordem a boa
+      conduta e civilidade necessária para que nossos famosos mercados não
+      se transformem num caos.
+      Mestres da Cidade
+    rooms:
+    - room:esgaroth.ao-sul-do-mercado-setentrional
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  - room:esgaroth.ao-sul-do-mercado-setentrional
+  - room:esgaroth.hall-de-entrada-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.circulacao
+  name: circulação
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.construcao
+  name: construção
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.corredor
+  name: corredor
+  kind: scenery
+  descriptions:
+  - text: |-
+      Mapa da Academia de Aventureiros
+          O mapa representa a planta-baixa da Academia de Aventureiros, onde se
+      destaca um corredor central que percorre o sentido norte-sul e dá acesso a
+      salas a leste a oeste.
+          Na extremidade sul deste corredor, fica o saguão de entrada com a loja
+      ao leste e a entrada para as salas de treinamento ao oeste.
+          O corredor inicia-se ao norte do saguão de entrada e da acesso ao
+      refeitório ao leste e à sala de estudos ao oeste.
+          O corredor continua ao norte, onde dá acesso a sala de estudos de
+      idiomas ao leste e a sala de treinamento de perícias ao oeste; a oeste
+      desta última sala, fica a sala de treinamento de magias.
+          O corredor continua ao norte, onde dá acesso ao depósito de armas
+      ao leste e ao depósito de armaduras ao oeste.
+          Ao norte desse último segmento fica a sala de curta. Ao norte,
+      leste e oeste da sala de cura ficam três diferentes salas de combate.
+    rooms:
+    - room:academia.o-corredor-silencioso
+  examined: true
+  rooms:
+  - room:academia.o-corredor-silencioso
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.direcoes
+  name: direções
+  kind: scenery
+  descriptions:
+  - text: |-
+      Sul
+      Avenida Transversal,  Salão da Cidade, Quartel da Guarda,
+      Avenida Perimetral Sul.
+      Norte
+      Caneca D'Ouro, Banco, Alfaiataria Agulha de Ouro,
+      Joalheria, Avenida Perimetral Norte.
+      Leste
+      Rua Oposta, Correios,  Papelaria Pena de Crebain,
+      Casa Mística, Casas de Cura, Casa de Doações,
+      Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - text: |-
+      Sul
+      Avenida Perimetral Leste, Taverna do Rei Sob a Montanha,
+      Acesso à Rua Oposta, Entrada do Mercado de Peixes,
+      Praça Montanha Solitária, Avenida Perimentral Sul.
+      Oeste
+      Avenida Perimetral Norte, Taverna do Rei Sob a Montanha,
+      Acesso ao Mercado Setentrional, Avenida Transversal,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Sul
+      Travessa Norte,  Padaria, Rua de Cima, Ponte
+      Estalagem do Orc Degolado, Rua de Baixo,
+      Travessa Sul, Biblioteca, Avenida Perimetral Oeste
+      Leste
+      Mercado Setentrional, Avenida Transversal,
+      Taverna do Rei Sob a Montanha, Praça Floresta das
+      Trevas, Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  - text: |-
+      Sul
+      Avenida Tranversal:  Alto do Mercado, Banco,
+      Alfaiataria Agulha de Ouro, Joalheria Dedo de
+      Prata, Caneca D'Ouro.
+      Leste
+      Praça Floresta das Trevas, Acesso aos Mercados
+      Setentrional e Central.
+      Oeste
+      Acesso aos Mercados Setentrional e Central,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.avenida-perimetral-norte-5
+  - text: |-
+      Noroeste -  Viela do Herói, Travessa Sul
+      Nordeste -  Salão da Cidade
+      Leste -     Viela do Herói
+      Sul -       Viela do Herói, Avenida Perimetral Sul
+      Sudoeste -  Biblioteca de Esgaroth
+      Sudeste -   Casa Grande
+    rooms:
+    - room:esgaroth.praca-da-flechada-precisa
+  examined: true
+  rooms:
+  - room:esgaroth.avenida-perimetral-norte-5
+  - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2648,12 +5105,39 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.dois-bancos-de-madeira-foram-colocados-aqui
+  name: Dois bancos de madeira foram colocados aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
+  - room:esgaroth.praca-montanha-solitaria
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.dois-bancos-de-pedra-foram-colocados-aqui
   name: Dois bancos de pedra foram colocados aqui.
   kind: scenery
   examined: false
   rooms:
   - room:bri.aguia.rua-da-aguia-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.duzia-de-cadeiras-com-espaldar-alto-foi-colocada
+  name: Uma dúzia de cadeiras com espaldar alto foi colocada em torno da mesa.
+  kind: scenery
+  descriptions:
+  - text: Eis um belo trabalho de marcenaria. Todas as cadeiras são extremamente bem
+    rooms:
+    - room:esgaroth.salao-de-banquetes
+  examined: true
+  rooms:
+  - room:esgaroth.salao-de-banquetes
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2678,6 +5162,43 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.entrada
+  name: entrada
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.escada
+  name: escada
+  kind: scenery
+  descriptions:
+  - text: |-
+      É como se suas barras fossem feita do mais lustroso aço, e poderiam muito bem
+      funcionar como clavas de poder cosiderável, mas oras... Você definitavamente
+      não pode pegá-la já que estão firmemente presas na parede rochosa.
+    rooms:
+    - room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
+  examined: true
+  rooms:
+  - room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.esquilo-abandonou-a-seguranca-das-arvores-para-c
   name: Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   kind: scenery
@@ -2687,6 +5208,23 @@
   - room:estrada-leste.a-grande-estrada-do-leste-35
   - room:estrada-leste.escalando-o-desfiladeiro-3
   - room:estrada-leste.nos-limites-de-uma-floresta-sombria-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.estantes
+  name: estantes
+  kind: scenery
+  descriptions:
+  - text: |-
+      As paredes estão ocupadas por estantes com livros nas mais variadas
+      línguas, algumas escritas em alfabetos que você nunca viu antes. É
+      melhor não mexer neles.
+    rooms:
+    - room:academia.sala-de-estudo-de-linguas
+  examined: true
+  rooms:
+  - room:academia.sala-de-estudo-de-linguas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2717,7 +5255,14 @@
 - id: obj:cenario.fileiras-de-cadeiras-ocupam-quase-metade-da-sala
   name: Fileiras de cadeiras ocupam quase metade da sala.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      São cinco fileiras com cinco cadeiras cada lado a lado. As cadeiras
+      parecem ser confortáveis e possuem o braço direito de apoio maior para que
+      os aprendizes possam colocar algo em cima do mesmo.
+    rooms:
+    - room:academia.a-sala-dos-objetos
+  examined: true
   rooms:
   - room:academia.a-sala-dos-objetos
   sources:
@@ -2730,6 +5275,7 @@
   examined: false
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2790,6 +5336,7 @@
            um escudo metálico
            um par de luvas de couro
     rooms:
+    - room:academia.a-sala-da-atencao
     - room:academia.deposito-de-armaduras
     - room:academia.sala-de-estudos
     - room:valfenda.na-entrada-do-jardim-de-imladris
@@ -2862,6 +5409,24 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.folhagem-da-grande-mangueira-farfalha-com-o-vent
+  name: A folhagem da grande mangueira farfalha com o vento.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Frondosa e belíssima são palavras que começam a descrever o quanto a
+      natureza caprichou nessa mangueira de densa folhagem verde. No alto, há
+      mais de 50 metros do chão, A copa piramidal espalha sua enorme sombra pelo
+      ambiente.
+    rooms:
+    - room:vila-aventureiros.praca-da-coragem
+  examined: true
+  rooms:
+  - room:vila-aventureiros.praca-da-coragem
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.folhagens
   name: folhagens
   kind: scenery
@@ -2874,6 +5439,33 @@
   examined: true
   rooms:
   - room:bri.fora-do-portao-sul
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fonte
+  name: fonte
+  kind: scenery
+  descriptions:
+  - text: |-
+      A estátua e a fonte sobre a qual está instalada formam um monumento à Bard,
+      herói de Esgaroth e de Valle, e representa um homem esticando um arco até a
+      orelha, olhando para o alto, de onde um terrível dragão ataca. Em uma placa
+      de bronze, descreve-se a cena que a estátua retrata:
+         " O dragão arremeteu mais uma vez, mais baixo do que nunca e, no
+           momento em que se voltava para o mergulho, sua barriga brilhou,
+           branca, as chamas das gemas faiscando no luar - exceto em um ponto.
+           O grande arco zuniu. A flecha negra voou da corda, direto para o
+           vazio no lado esquerdo do peito, perto de onde saía a pata
+           dianteira. Ali entrou e sumiu, farpa, haste e pena, tão violento
+           foi seu vôo. Com um guincho que ensurdeceu os homens, derrubou
+           árvores e partiu pedras, Smaug arremessou-se em chamas pelo ar,
+           virou-se e caiu das alturas, derrotado. "
+    rooms:
+    - room:esgaroth.praca-da-flechada-precisa
+  examined: true
+  rooms:
+  - room:esgaroth.praca-da-flechada-precisa
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2897,13 +5489,22 @@
       mármore branco, e colocada sobre uma nascente de agua cristalina. O
       gotejar contínuo da água parece pedir que você tome um gole.
     rooms:
+    - room:academia.a-academia-de-aventureiros
+    - room:academia.o-refeitorio
     - room:academia.sala-de-cura
+    - room:vila-aventureiros.praca-da-coragem
+  - text: |-
+      Mestra Tsythia anotou alguma coisa em um velho diário de classe.
+      Uma fonte esculpida com muito cuidado a partir de um único bloco de
+    rooms:
+    - room:academia.a-academia-de-aventureiros
   examined: true
   rooms:
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-refeitorio
   - room:academia.sala-de-cura
   - room:valfenda.uma-sala-de-espera
+  - room:vila-aventureiros.praca-da-coragem
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2911,9 +5512,17 @@
 - id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
   name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
+      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
+      a frequência de seu uso.
+    rooms:
+    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  examined: true
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -2951,7 +5560,19 @@
 - id: obj:cenario.grande-fogao-a-lenha-ocupa-a-parede-norte
   name: Um grande fogão a lenha ocupa a parede norte.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Sobre a chapa do fogão borbulham algumas panelas de ferro. Na parte
+      inferior, há uma abertura por onde a lenha pode ser introduzida na
+      fornalha. Uma pilha de lenha foi colocada próximo ao fogão.
+    rooms:
+    - room:academia.o-refeitorio
+  - text: |-
+      Uma pilha de lenha, usada para alimentar o grande fogão que existe
+      na sala.
+    rooms:
+    - room:academia.o-refeitorio
+  examined: true
   rooms:
   - room:academia.o-refeitorio
   sources:
@@ -2978,6 +5599,16 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.grande-mesa-redonda-ocupa-o-centro-da-sala-para-
+  name: Uma grande mesa redonda ocupa o centro da sala para os banquetes...
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.salao-de-banquetes
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.grande-mural-foi-instalado-aqui
   name: Um grande mural foi instalado aqui.
   kind: scenery
@@ -2988,12 +5619,36 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.grande-saca-de-cevada-aguarda-embarcar-aqui-e-es
+  name: Uma grande saca de cevada aguarda embarcar aqui, e espalha um perfume doce.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.no-lado-oeste-do-mercado-central-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.grande-arvore-caiu-aqui-bloqueando-o-caminho-a-l
   name: Uma grande árvore caiu aqui, bloqueando o caminho a leste.
   kind: scenery
   examined: false
   rooms:
   - room:eriador.cemiterio.a-arvore-caida
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.hall
+  name: hall
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.hall-de-entrada-3
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3029,6 +5684,16 @@
   - room:bri.mercado.rua-do-mercado-2
   - room:bri.mercado.rua-do-mercado-5
   - room:bri.no-comeco-da-rua-das-cerejeiras
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-um-cinto-de-couro-aqui
+  name: Há um cinto de couro aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-academia-de-aventureiros
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3145,16 +5810,95 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.idiomas
+  name: idiomas
+  kind: scenery
+  descriptions:
+  - text: |-
+      Mapa da Academia de Aventureiros
+          O mapa representa a planta-baixa da Academia de Aventureiros, onde se
+      destaca um corredor central que percorre o sentido norte-sul e dá acesso a
+      salas a leste a oeste.
+          Na extremidade sul deste corredor, fica o saguão de entrada com a loja
+      ao leste e a entrada para as salas de treinamento ao oeste.
+          O corredor inicia-se ao norte do saguão de entrada e da acesso ao
+      refeitório ao leste e à sala de estudos ao oeste.
+          O corredor continua ao norte, onde dá acesso a sala de estudos de
+      idiomas ao leste e a sala de treinamento de perícias ao oeste; a oeste
+      desta última sala, fica a sala de treinamento de magias.
+          O corredor continua ao norte, onde dá acesso ao depósito de armas
+      ao leste e ao depósito de armaduras ao oeste.
+          Ao norte desse último segmento fica a sala de curta. Ao norte,
+      leste e oeste da sala de cura ficam três diferentes salas de combate.
+    rooms:
+    - room:academia.o-corredor-silencioso
+  examined: true
+  rooms:
+  - room:academia.o-corredor-silencioso
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.imponencia
+  name: imponência
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.hall-de-entrada-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.importancia
+  name: importância
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.janelas
   name: janelas
   kind: scenery
   descriptions:
+  - text: |-
+      Há duas amplas janelas na sala: uma na parede oeste e uma na parede
+      sul. Graças a elas a sala é bem iluminada.
+    rooms:
+    - room:academia.fim-do-treinamento
   - text: Através da janela, você pode avistar o Amplo Bosque lá em baixo.
     rooms:
+    - room:academia.a-sala-da-atencao
     - room:academia.a-sala-da-observacao
   examined: true
   rooms:
+  - room:academia.a-sala-da-atencao
   - room:academia.a-sala-da-observacao
+  - room:academia.fim-do-treinamento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.jaula
+  name: jaula
+  kind: scenery
+  descriptions:
+  - text: Através das barras de metal, você avista o interior da jaula.
+    rooms:
+    - room:academia.a-sala-do-combate
+  examined: true
+  rooms:
+  - room:academia.a-sala-do-combate
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3179,6 +5923,22 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.lama
+  name: lama
+  kind: scenery
+  descriptions:
+  - text: |-
+      É escura feito breu e parece algo vindo de algum banheiro, na superfície
+      dessa COISA o odor é absolutamente INSUPORTÁVEL.
+    rooms:
+    - room:bosque.formigueiro.a-galeria-subterranea
+  examined: true
+  rooms:
+  - room:bosque.formigueiro.a-galeria-subterranea
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.lapides
   name: lapides
   kind: scenery
@@ -3198,12 +5958,45 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.livros
+  name: livros
+  kind: scenery
+  descriptions:
+  - text: |-
+      Há algumas estantes com vários livros sobre magia, mas a maioria deles
+      está no chão mesmo.
+    rooms:
+    - room:academia.sala-de-treino-de-magias
+  examined: true
+  rooms:
+  - room:academia.sala-de-treino-de-magias
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.lapide-de-marmore-negro-foi-posta-aqui-parcialme
   name: Uma lápide de mármore negro foi posta aqui, parcialmente enterrada.
   kind: scenery
   examined: false
   rooms:
   - room:eriador.cemiterio.a-lapide-caida
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.madeira
+  name: madeira
+  kind: scenery
+  descriptions:
+  - text: |-
+      O tecido é extremamente leve e macio. A seda chega a ser quase como fios de
+      prata. Botões de madeira fecham a camisa até a altura do pescoço, cuja gola
+      possui detalhes mais escuros pintados nas pontas.
+    rooms:
+    - room:vila-aventureiros.cajado-torto-taverna
+  examined: true
+  rooms:
+  - room:vila-aventureiros.cajado-torto-taverna
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3231,6 +6024,34 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.mercado
+  name: mercado
+  kind: scenery
+  descriptions:
+  - text: |-
+      AVISOS
+      Mercadorias deixadas nos atracadouros, em período noturno,
+      ficam à merce de possíveis ladrões.
+      A venda de peixe deve se restringir ao mercado de pesca:
+      não abuse, seu desrespeito trará infortúnios com os
+      os guardas e nossa prisão.
+      Desentendimentos entre fregueses e mercadores devem ser
+      resolvidos com diálogo. Bravatas e desafios podem ser perigosos
+      para ambas as partes: Não esqueça que mercadores são unidos entre
+      si pelo ouro!
+    rooms:
+    - room:esgaroth.no-meio-do-mercado-central
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  - room:esgaroth.no-meio-do-mercado-central
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.mesa
   name: mesa
   kind: scenery
@@ -3243,6 +6064,56 @@
   examined: true
   rooms:
   - room:academia.o-refeitorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mesas
+  name: mesas
+  kind: scenery
+  descriptions:
+  - text: |-
+      Várias mesas e cadeiras ocupam a maior parte da sala. Muitas delas
+      estão ocupadas por alunos.
+    rooms:
+    - room:academia.o-refeitorio
+  - text: |-
+      Várias mesas com cadeiras ocupam a maior parte da sala. Há alunos
+      estudando em algumas delas.
+    rooms:
+    - room:academia.sala-de-estudos
+  - text: Várias mesas estão dispostas pela sala. Alguns alunos estudam nelas.
+    rooms:
+    - room:academia.sala-de-estudo-de-linguas
+  examined: true
+  rooms:
+  - room:academia.o-refeitorio
+  - room:academia.sala-de-estudo-de-linguas
+  - room:academia.sala-de-estudos
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mestres
+  name: mestres
+  kind: scenery
+  descriptions:
+  - text: |-
+      A Prefeitura informa aos mercadores ambulantes:
+      Senhores, por favor recordem seus lugares de andança nas rampas!
+      O ponto de venda de cada um é um auxílio ao freguês e uma marca do
+      mercador...
+      Não podemos nos ocupar em resolver vossas querelas ou até disputas
+      comerciais! O mercado Setentrional é reservado para movimentação de
+      produtos de Valle e Erebor, pedimos aos senhores que recordem a boa
+      conduta e civilidade necessária para que nossos famosos mercados não
+      se transformem num caos.
+      Mestres da Cidade
+    rooms:
+    - room:esgaroth.ao-sul-do-mercado-setentrional
+  examined: true
+  rooms:
+  - room:esgaroth.ao-sul-do-mercado-setentrional
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3555,6 +6426,38 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.monte-de-bosta-foi-feito-aqui-por-algum-cavalo-d
+  name: Um monte de bosta foi feito aqui por algum cavalo de carga...
+  kind: scenery
+  descriptions:
+  - text: |-
+      Um generoso monte de bosta seca, feito certamente por algum cavalo de
+      tração. Algumas moscas zumbem em redor dele, alimentando-se...
+    rooms:
+    - room:esgaroth.na-ponte-de-baixo-2
+    - room:esgaroth.no-lado-leste-do-mercado-central
+  examined: true
+  rooms:
+  - room:esgaroth.na-ponte-de-baixo-2
+  - room:esgaroth.no-lado-leste-do-mercado-central
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.movimentacao
+  name: movimentação
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.mural-bem-legal-esta-aqui-no-meio-do-nada
   name: Um mural bem legal está aqui no meio do nada.
   kind: scenery
@@ -3568,6 +6471,23 @@
   - room:valfenda.no-jardim-um-caminho-entre-canteiros
   - room:valfenda.no-jardim-um-caminho-entre-canteiros-2
   - room:valfenda.no-jardim-um-caminho-entre-canteiros-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.marmore
+  name: mármore
+  kind: scenery
+  descriptions:
+  - text: |-
+      O piso é de mármore, e está muito limpo e bem cuidado. No entanto,
+      pode-se notar que ele está um pouco gasto devido ao grande número de
+      pessoas que já passou por aqui.
+    rooms:
+    - room:academia.fim-do-treinamento
+  examined: true
+  rooms:
+  - room:academia.fim-do-treinamento
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3613,6 +6533,13 @@
            uma caneta-tinteiro
     rooms:
     - room:academia.a-sala-dos-conteiners
+  - text: |-
+      Apesar de caber no canto da sala, ele não é pequeno, mas sim bem espaçoso.
+      Feito de madeira escura, ele possui duas portas.
+      Um pequeno armário contém:
+           Nada.
+    rooms:
+    - room:academia.a-sala-dos-conteiners
   examined: true
   rooms:
   - room:academia.a-sala-dos-conteiners
@@ -3644,6 +6571,107 @@
   examined: false
   rooms:
   - room:valfenda.o-bosquepraca
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.noroeste
+  name: noroeste
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.nota
+  name: nota
+  kind: scenery
+  descriptions:
+  - text: |-
+      A Casa de Cura
+      Tanto aqui, quanto em vários locais da Terra-Média, é possível encontrar
+      curandeiros que agilizam o tratamento de ferimentos e removem vários tipos
+      de magias danosas, como 'Cegueira', 'Envenenamento' ou 'Maldição'.
+      Outro recurso útil para recuperar pontos de vida, movimento e mana, é a
+      utilização de camas, colchonetes e afins, pois ao dormir ou descansar
+      sobre estes, a restauração do seu personagem ocorrerá de forma muito mais
+      rápida. Portanto, aproveite os leitos da Casa de Cura dormindo neles com o
+      comando SLEEP LEITO. Após recuperar-se, poderá se levantar digitando
+      STAND.
+      Número de pontos de vida, mana e movimento recuperados . é tanto maior
+      quanto os pontos de constituição, . inteligência e destreza do personagem
+      respectivamente.
+      (OOC) Para mais informações, digite HELP SLEEP e HELP STAND.
+    rooms:
+    - room:vila-aventureiros.casa-de-cura
+  examined: true
+  rooms:
+  - room:vila-aventureiros.casa-de-cura
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ossos-de-uma-ave-foram-deixados-aqui
+  name: Alguns ossos de uma ave foram deixados aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.padrao
+  name: padrão
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.paredes
+  name: paredes
+  kind: scenery
+  descriptions:
+  - text: |-
+      As paredes são pintadas de branco. Nas paredes sul e oeste, há duas
+      amplas janelas que iluminam o ambiente. Na parede leste, há uma arcada
+      levando à entrada da Academia, e na parede norte há uma arcada levando
+      de volta à sala anterior.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+    - room:academia.fim-do-treinamento
+    - room:academia.um-corredor-3
+  - text: |-
+      As paredes estão ocupadas por estantes com livros nas mais variadas
+      línguas, algumas escritas em alfabetos que você nunca viu antes. É
+      melhor não mexer neles.
+    rooms:
+    - room:academia.sala-de-estudo-de-linguas
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  - room:academia.fim-do-treinamento
+  - room:academia.sala-de-estudo-de-linguas
+  - room:academia.um-corredor-3
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3692,6 +6720,7 @@
   examined: false
   rooms:
   - room:bri.mercado.o-correio-de-bri
+  - room:esgaroth.correio-do-lago
   - room:valfenda.servico-de-correios
   sources:
   - logs/raw.log
@@ -3782,9 +6811,54 @@
           Bom divertimento!
     rooms:
     - room:academia.fim-do-treinamento
+  - text: |-
+      Um pedestal feito de maneira nobre, sobre o qual está apoiado um
+      pergaminho. Você sente que deveria ler o pergaminho. (DICA: digite
+      LOOK PERGAMINHO para lê-lo.)
+    rooms:
+    - room:academia.fim-do-treinamento
   examined: true
   rooms:
   - room:academia.fim-do-treinamento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pilha-de-barris-de-macas-esta-aqui-amontoada-e-p
+  name: Uma pilha de barris de maçãs está aqui, amontoada, e prestes a sair rolando.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Você examina essa pilha de barris sem maior interesse, são cinco pequenos
+      barris de madeira escuro, rotulados claramente com o emblema de Esgaroth, a
+      cidade do lago, no bojo. Estão cheios de saborosas e perfumadas maçãs
+      vermelhas; o destino desta carga não se pode prever, mas talvez sejam os
+      salões do rei elfo Thranduil na Floresta das Trevas...
+    rooms:
+    - room:esgaroth.no-ancoradouro-abarrotado
+  examined: true
+  rooms:
+  - room:esgaroth.no-ancoradouro-abarrotado
+  - room:esgaroth.no-meio-do-mercado-central
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pilha-de-farelos-jaz-sobre-a-rampa-deixada-por-a
+  name: Uma pilha de farelos jaz sobre a rampa, deixada por algum carregamento...
+  kind: scenery
+  descriptions:
+  - text: |-
+      A pilha de farelos parece ter vindo de algum saco de grãos que se furou ou
+      arrebentou durante o carregamento. O cheiro é ruim, como se ela já
+      tivesse tomado chuva e fermentado...
+    rooms:
+    - room:esgaroth.na-rua-dos-caramujos
+    - room:esgaroth.no-agitado-mercado-central
+  examined: true
+  rooms:
+  - room:esgaroth.na-rua-dos-caramujos
+  - room:esgaroth.no-agitado-mercado-central
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3795,6 +6869,22 @@
   examined: false
   rooms:
   - room:valfenda.o-cartografo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.piso
+  name: piso
+  kind: scenery
+  descriptions:
+  - text: |-
+      O piso é de mármore. Ele está muito limpo, porém um tanto quanto gasto
+      devido ao grande número de pessoas que passam por aqui.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3818,6 +6908,17 @@
     rooms:
     - room:bri.biblioteca.o-escritorio-do-copista
   - text: |-
+      Salve Gentil Viajante!
+      Esta é Esgaroth, a cidade do lago e de grandes mercados, esperamos
+      que sua passagem seja longa e próspera!
+      Para chegar na cidade tome a ponte superior seguindo rumo Leste.
+      Por favor, tome a entrada sudeste para ir pela ponte de baixo, se
+      estiver conduzindo carroças, rebanhos, ou caravanas: isso lhe
+      levará diretamente ao Mercado Central.
+      Mestres da Cidade do lago
+    rooms:
+    - room:esgaroth.grande-ponte.acesso-a-grande-ponte
+  - text: |-
       ______________________________________
         /                                      \
         | Norte:    Mina abandonada (cuidado!)  |
@@ -3830,6 +6931,14 @@
     rooms:
     - room:bri.colina.uma-bifurcacao-no-caminho
   - text: |-
+      _ ESGAROTH - CIDADE DO LAGO _
+      Caminhos dos passantes:
+      Nordeste - Avenida Perimetral Oeste (Dentro de Esgaroth)
+      Sudeste - Avenida Perimetral Oeste (Dentro de Esgaroth)
+      Oeste - Ponte e mais adiante a Estrada do Lago (Fora de Esgaroth)
+    rooms:
+    - room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
+  - text: |-
       Posicionada na base da estátua, uma placa dourada e quadrada com pinos nos
       cantos exibe: "Descanse em paz, Uthar Darkbane".
     rooms:
@@ -3839,6 +6948,11 @@
       Digite 'HELP MAIL' para aprender lidar com ele.
     rooms:
     - room:bri.mercado.o-correio-de-bri
+  - text: |-
+      Sobre a porta ao leste, há uma placa dizendo 'Armas'. Sobre a porta a
+      oeste, a placa diz 'Armaduras'.
+    rooms:
+    - room:academia.um-corredor-3
   - text: |-
       Sobre a placa, você lê:
         "Serviço de cópia de livros
@@ -3850,12 +6964,71 @@
     - room:eriador.cemiterio.a-lapide-caida
   examined: true
   rooms:
+  - room:academia.um-corredor-3
   - room:bri.biblioteca.o-escritorio-do-copista
   - room:bri.biblioteca.o-saguao-de-entrada-da-biblioteca
   - room:bri.colina.uma-bifurcacao-no-caminho
   - room:bri.lei.avenida-da-lei-2
   - room:bri.mercado.o-correio-de-bri
   - room:eriador.cemiterio.a-lapide-caida
+  - room:esgaroth.grande-ponte.acesso-a-grande-ponte
+  - room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.placa-de-madeira-esta-aqui-indicando-as-direcoes
+  name: Uma placa de madeira está aqui, indicando as direções e lugares.
+  kind: scenery
+  descriptions:
+  - text: |-
+      # | Sul      - Bosque das Folhas Verdes, Ponte sobre o rio da    |
+      # |            Floresta, Cemitério de Lago Comprido.             |
+      #  >------------------------------------------------------------<
+      # | Norte    - Aldeia de Lago Comprido.                          |
+      #  >------------------------------------------------------------<
+      # | Leste    - Acesso à grande Ponte (Esgaroth)                  |
+      #  >------------------------------------------------------------<
+      # | Oeste    - Academia de Aventureiros                          |
+      # \______________________________________________________________/
+      #
+      #
+      #
+      |
+    rooms:
+    - room:esgaroth.grande-ponte.na-estrada-do-lago-entrada-para-a-grande-ponte
+  examined: true
+  rooms:
+  - room:esgaroth.grande-ponte.na-estrada-do-lago-entrada-para-a-grande-ponte
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.planta
+  name: planta
+  kind: scenery
+  descriptions:
+  - text: |-
+      O quadro tem um mapa da Academia de Aventureiros.
+          O mapa representa a planta-baixa da Academia de Aventureiros, onde se
+      destaca um corredor central que percorre o sentido norte-sul e dá acesso a
+      salas a leste a oeste.
+          Na extremidade sul deste corredor, fica o saguão de entrada com a loja
+      ao leste e a entrada para as salas de treinamento ao oeste.
+          O corredor inicia-se ao norte do saguão de entrada e da acesso ao
+      refeitório ao leste e à sala de estudos ao oeste.
+          O corredor continua ao norte, onde dá acesso a sala de estudos de
+      idiomas ao leste e a sala de treinamento de perícias ao oeste; a oeste
+      desta última sala, fica a sala de treinamento de magias.
+          O corredor continua ao norte, onde dá acesso ao depósito de armas
+      ao leste e ao depósito de armaduras ao oeste.
+          Ao norte desse último segmento fica a sala de curta. Ao norte,
+      leste e oeste da sala de cura ficam três diferentes salas de combate.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
+  examined: true
+  rooms:
+  - room:academia.a-academia-de-aventureiros
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3875,9 +7048,62 @@
       -Eleuvis, Julho de 2003
     rooms:
     - room:bri.mansao-knob.o-portao-principal
+  - text: |-
+      A plaqueta é de madeira simples e clara, sua mensagem é
+      objetiva e parece ter sido deixada pelo dono da loja:
+      "VOLTO EM HORÁRIO COMERCIAL."
+      Bom, agora só resta a você esperar o horário certo e respeitar o bom
+      comércio...
+    rooms:
+    - room:esgaroth.correio-do-lago
+    - room:esgaroth.lampadario-luz-cegante
   examined: true
   rooms:
   - room:bri.mansao-knob.o-portao-principal
+  - room:esgaroth.correio-do-lago
+  - room:esgaroth.lampadario-luz-cegante
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.poltrona-vermelha-parece-tao-confortavel-que-te-
+  name: Uma poltrona vermelha parece tão confortável que te convida a cochilar...
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta poltrona é grande, como se fosse preparada para alguém deveras obeso.
+      Seus braços são extremamente fofos, bem como o espaldar largo e alto. Ela
+      foi cuidadosamente forrada de veludo vermelho, muito felpudo, e preso com
+      muitos botões igualmente recobertos desse tecido belo.
+    rooms:
+    - room:esgaroth.a-entrada-da-casa-grande
+  examined: true
+  rooms:
+  - room:esgaroth.a-entrada-da-casa-grande
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.porta
+  name: porta
+  kind: scenery
+  descriptions:
+  - text: |-
+      Sobre a porta ao leste, há uma placa dizendo 'Armas'. Sobre a porta a
+      oeste, a placa diz 'Armaduras'.
+    rooms:
+    - room:academia.um-corredor-3
+  - text: A porta a oeste leva ao corredor.
+    rooms:
+    - room:academia.o-refeitorio
+  - text: A porta está fechada.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:academia.o-refeitorio
+  - room:academia.um-corredor-3
+  - room:esgaroth.quartel-da-guarda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3929,6 +7155,30 @@
     rooms:
     - room:bri.estrada-horizonte
   - text: |-
+      Sul
+      Avenida Transversal,  Salão da Cidade, Quartel da Guarda,
+      Avenida Perimetral Sul.
+      Norte
+      Caneca D'Ouro, Banco, Alfaiataria Agulha de Ouro,
+      Joalheria, Avenida Perimetral Norte.
+      Leste
+      Rua Oposta, Correios,  Papelaria Pena de Crebain,
+      Casa Mística, Casas de Cura, Casa de Doações,
+      Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - text: |-
+      Sul
+      Avenida Perimetral Leste, Taverna do Rei Sob a Montanha,
+      Acesso à Rua Oposta, Entrada do Mercado de Peixes,
+      Praça Montanha Solitária, Avenida Perimentral Sul.
+      Oeste
+      Avenida Perimetral Norte, Taverna do Rei Sob a Montanha,
+      Acesso ao Mercado Setentrional, Avenida Transversal,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
       No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
       dela placas com as seguintes inscrições entalhadas:
       Leste- A Grande Estrada do Leste, para a Rua da Águia, para a Avenida
@@ -3936,6 +7186,17 @@
       Oeste- A Grande Estrada do Leste e para a Estrada do Falcão.
     rooms:
     - room:bri.a-grande-estrada-leste-9
+  - text: |-
+      Sul
+      Travessa Norte,  Padaria, Rua de Cima, Ponte
+      Estalagem do Orc Degolado, Rua de Baixo,
+      Travessa Sul, Biblioteca, Avenida Perimetral Oeste
+      Leste
+      Mercado Setentrional, Avenida Transversal,
+      Taverna do Rei Sob a Montanha, Praça Floresta das
+      Trevas, Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
   - text: |-
       No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
       dela placas com as seguintes inscrições entalhadas:
@@ -3945,6 +7206,19 @@
     rooms:
     - room:bri.estrada-horizonte-2
     - room:bri.estrada-horizonte-3
+  - text: |-
+      Sul
+      Avenida Tranversal:  Alto do Mercado, Banco,
+      Alfaiataria Agulha de Ouro, Joalheria Dedo de
+      Prata, Caneca D'Ouro.
+      Leste
+      Praça Floresta das Trevas, Acesso aos Mercados
+      Setentrional e Central.
+      Oeste
+      Acesso aos Mercados Setentrional e Central,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.avenida-perimetral-norte-5
   - text: |-
       No topo de um poste de madeira, uma haste metálica foi parafusada e pendem
       dela placas com as seguintes inscrições entalhadas:
@@ -3977,6 +7251,15 @@
       Oeste- Rua do Mercado, para a Avenida Zênite e para a Estrada do Falcão.
     rooms:
     - room:bri.mercado.rua-do-mercado
+  - text: |-
+      Noroeste -  Viela do Herói, Travessa Sul
+      Nordeste -  Salão da Cidade
+      Leste -     Viela do Herói
+      Sul -       Viela do Herói, Avenida Perimetral Sul
+      Sudoeste -  Biblioteca de Esgaroth
+      Sudeste -   Casa Grande
+    rooms:
+    - room:esgaroth.praca-da-flechada-precisa
   examined: true
   rooms:
   - room:bri.a-grande-estrada-leste-2
@@ -3990,6 +7273,118 @@
   - room:bri.mercado.rua-do-mercado
   - room:bri.mercado.rua-do-mercado-2
   - room:bri.na-praca-das-flores
+  - room:esgaroth.avenida-perimetral-norte-5
+  - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.poca-de-agua-suja-se-acumula-chapinhando-quando-
+  name: Uma poça de água suja se acumula, chapinhando quando passam nela...
+  kind: scenery
+  descriptions:
+  - text: |-
+      A poça de água exala um odor de grãos fermentados, excrementos e urina. Ela
+      parece ter sido formada por alguma chuva recente.
+    rooms:
+    - room:esgaroth.alto-do-mercado-8
+    - room:esgaroth.avenida-perimetral-norte-4
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-8
+  - room:esgaroth.avenida-perimetral-norte-4
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.praca
+  name: praça
+  kind: scenery
+  descriptions:
+  - text: |-
+      Norte
+      Avenida Perimetral Leste, Acesso ao Mercado de Peixes,
+      Acesso à Rua Oposta, Taverna do Rei Sob a Montanha,
+      Praça Floresta das Trevas, Avenida Perimetral Norte.
+      Oeste
+      Acesso ao Quartel da Guarda, Avenida Transversal,
+      Acesso à Viela do Herói, Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.praca-montanha-solitaria
+  examined: true
+  rooms:
+  - room:esgaroth.praca-montanha-solitaria
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.prefeitura
+  name: prefeitura
+  kind: scenery
+  descriptions:
+  - text: |-
+      A Prefeitura informa aos mercadores ambulantes:
+      Senhores, por favor recordem seus lugares de andança nas rampas!
+      O ponto de venda de cada um é um auxílio ao freguês e uma marca do
+      mercador...
+      Não podemos nos ocupar em resolver vossas querelas ou até disputas
+      comerciais! O mercado Setentrional é reservado para movimentação de
+      produtos de Valle e Erebor, pedimos aos senhores que recordem a boa
+      conduta e civilidade necessária para que nossos famosos mercados não
+      se transformem num caos.
+      Mestres da Cidade
+    rooms:
+    - room:esgaroth.ao-sul-do-mercado-setentrional
+  examined: true
+  rooms:
+  - room:esgaroth.ao-sul-do-mercado-setentrional
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.problemas
+  name: problemas
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.protetor-de-ferro-para-os-bracos-esta-caido-aqui
+  name: Um protetor de ferro para os braços está caído aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:academia.a-academia-de-aventureiros
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.predios
+  name: prédios
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -3998,12 +7393,51 @@
   name: quadro
   kind: scenery
   descriptions:
+  - text: |-
+      O quadro tem um mapa da Academia de Aventureiros.
+          O mapa representa a planta-baixa da Academia de Aventureiros, onde se
+      destaca um corredor central que percorre o sentido norte-sul e dá acesso a
+      salas a leste a oeste.
+          Na extremidade sul deste corredor, fica o saguão de entrada com a loja
+      ao leste e a entrada para as salas de treinamento ao oeste.
+          O corredor inicia-se ao norte do saguão de entrada e da acesso ao
+      refeitório ao leste e à sala de estudos ao oeste.
+          O corredor continua ao norte, onde dá acesso a sala de estudos de
+      idiomas ao leste e a sala de treinamento de perícias ao oeste; a oeste
+      desta última sala, fica a sala de treinamento de magias.
+          O corredor continua ao norte, onde dá acesso ao depósito de armas
+      ao leste e ao depósito de armaduras ao oeste.
+          Ao norte desse último segmento fica a sala de curta. Ao norte,
+      leste e oeste da sala de cura ficam três diferentes salas de combate.
+    rooms:
+    - room:academia.a-academia-de-aventureiros
   - text: 'Em um quadro fixado na parede, você lê:'
     rooms:
     - room:valfenda.no-emporio-das-casas-compra-venda
   examined: true
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:valfenda.no-emporio-das-casas-compra-venda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.quadro-com-as-leis-de-esgaroth-jaz-aqui-pendurad
+  name: Um quadro com as leis de Esgaroth jaz aqui pendurado na parede.
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4041,12 +7475,90 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.quartel
+  name: quartel
+  kind: scenery
+  descriptions:
+  - text: |-
+      1. NUNCA manipule fogo levianamente.
+      2. Respeite o mercador: honre a compra.
+      3. Não leve embora os baldes das bombas de água.
+      4. Evite circular com animais na rampa superior.
+      5. A venda de peixes é restrita ao mercado de peixes.
+      6. Respeites os mestres da cidade e os guardas.
+    rooms:
+    - room:esgaroth.quartel-da-guarda
+  examined: true
+  rooms:
+  - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.restos-de-um-eixo-de-carroca-jazem-aqui-quebrado
+  name: Os restos de um eixo de carroça jazem aqui, quebrados...
+  kind: scenery
+  descriptions:
+  - text: |-
+      O eixo parece ter pertencido a alguma pequena carroça, como das muitas
+      que chegam e saem trazendo mercadorias para as grandes cidades. Após
+      ter sido trocado, foi jogado para o lado nas ruas, como outros lixos...
+    rooms:
+    - room:esgaroth.rua-de-cima-2
+  examined: true
+  rooms:
+  - room:esgaroth.rua-de-cima-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.saca-de-sementes-de-papoula-jaz-aqui-aguardando-
+  name: Uma saca de sementes de papoula jaz aqui, aguardando seu dono...
+  kind: scenery
+  examined: false
+  rooms:
+  - room:esgaroth.no-lado-oeste-do-mercado-central
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.salao
+  name: salão
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+    - room:esgaroth.hall-de-entrada-3
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  - room:esgaroth.hall-de-entrada-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.sobriedade
+  name: sobriedade
+  kind: scenery
+  descriptions:
+  - text: É tudo o que restou de uma maçã.
+    rooms:
+    - room:esgaroth.alto-do-mercado-11
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.tanque-foi-preenchido-com-agua-ate-sua-borda
   name: Um tanque foi preenchido com água até sua borda.
   kind: scenery
   examined: false
   rooms:
   - room:academia.deposito-de-armas
+  - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4078,6 +7590,137 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.taverna
+  name: taverna
+  kind: scenery
+  descriptions:
+  - text: |-
+      8                                 8
+          *___8_________________________________8___*
+          |                         \\      //|\   _|
+          |  A TAVERNA DO DRAGÃO  |\/|\_   // | \_/ |
+          |                      (oo )\ \_//  /\/   |
+          |                      //_/\_\/ /  /      |
+          |                     @@/  |=\  \ snd     |
+          |                          \ =\_          |
+          |                                         |
+          |                    Bem-vindos, viajantes|
+          \_________________________________________/
+    rooms:
+    - room:esgaroth.alto-do-mercado-9
+  examined: true
+  rooms:
+  - room:esgaroth.alto-do-mercado-9
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.tina-de-madeira-cheia-de-agua-jaz-aqui-para-os-s
+  name: Uma tina de madeira, cheia de água, jaz aqui para os serviços de cozinha.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta tina de madeira é redonda e imensa, com grossas placas de ferro em redor,
+      formando duas linhas de reforço em sua estrutura. Ela deve ter sido besuntada
+      com fortes misturas impermeabilizantes; está cheia até acima da metade e dentro
+      dela reflete sua cara curiosa e enxerida no reflexo.
+    rooms:
+    - room:esgaroth.cozinha
+  examined: true
+  rooms:
+  - room:esgaroth.cozinha
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.tochas
+  name: tochas
+  kind: scenery
+  descriptions:
+  - text: |-
+      Há quatro tochas na sala, uma em cada canto. Elas ajudam a iluminar o
+      ambiente, junto com a luz que entra pelas janelas.
+    rooms:
+    - room:academia.fim-do-treinamento
+  examined: true
+  rooms:
+  - room:academia.fim-do-treinamento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.viajantes
+  name: viajantes
+  kind: scenery
+  descriptions:
+  - text: |-
+      Sul
+      Avenida Transversal,  Salão da Cidade, Quartel da Guarda,
+      Avenida Perimetral Sul.
+      Norte
+      Caneca D'Ouro, Banco, Alfaiataria Agulha de Ouro,
+      Joalheria, Avenida Perimetral Norte.
+      Leste
+      Rua Oposta, Correios,  Papelaria Pena de Crebain,
+      Casa Mística, Casas de Cura, Casa de Doações,
+      Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - text: |-
+      Sul
+      Avenida Perimetral Leste, Taverna do Rei Sob a Montanha,
+      Acesso à Rua Oposta, Entrada do Mercado de Peixes,
+      Praça Montanha Solitária, Avenida Perimentral Sul.
+      Oeste
+      Avenida Perimetral Norte, Taverna do Rei Sob a Montanha,
+      Acesso ao Mercado Setentrional, Avenida Transversal,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Sul
+      Travessa Norte,  Padaria, Rua de Cima, Ponte
+      Estalagem do Orc Degolado, Rua de Baixo,
+      Travessa Sul, Biblioteca, Avenida Perimetral Oeste
+      Leste
+      Mercado Setentrional, Avenida Transversal,
+      Taverna do Rei Sob a Montanha, Praça Floresta das
+      Trevas, Avenida Perimetral Leste.
+    rooms:
+    - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  - text: |-
+      Sul
+      Avenida Tranversal:  Alto do Mercado, Banco,
+      Alfaiataria Agulha de Ouro, Joalheria Dedo de
+      Prata, Caneca D'Ouro.
+      Leste
+      Praça Floresta das Trevas, Acesso aos Mercados
+      Setentrional e Central.
+      Oeste
+      Acesso aos Mercados Setentrional e Central,
+      Avenida Perimetral Oeste.
+    rooms:
+    - room:esgaroth.avenida-perimetral-norte-5
+  - text: |-
+      Noroeste -  Viela do Herói, Travessa Sul
+      Nordeste -  Salão da Cidade
+      Leste -     Viela do Herói
+      Sul -       Viela do Herói, Avenida Perimetral Sul
+      Sudoeste -  Biblioteca de Esgaroth
+      Sudeste -   Casa Grande
+    rooms:
+    - room:esgaroth.praca-da-flechada-precisa
+  examined: true
+  rooms:
+  - room:esgaroth.avenida-perimetral-norte-5
+  - room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  - room:esgaroth.praca-da-flechada-precisa
+  - room:esgaroth.praca-floresta-das-trevas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.varias-estantes-umas-ao-lado-da-outra-algumas-so
   name: Várias estantes, umas ao lado da outra, algumas sobre as demais, estão aqui.
   kind: scenery
@@ -4085,6 +7728,24 @@
   rooms:
   - room:valfenda.outro-corredor-pela-biblioteca-2
   - room:valfenda.outro-corredor-pela-biblioteca-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varias-mesas-e-cadeiras-estao-espalhadas-por-aqu
+  name: Várias mesas e cadeiras estão espalhadas por aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      A madeira deste móvel, assim como a de todos aqui, é escura e desgastada.
+      Ela está coberta por manchas de vinho, rum , gordura e por marcas de facas
+      e outros instrumentos de corte. Uma manchinha na borda parece sangue, e não
+      seria de estranhar, pois com a quantidade de brigas que há por aqui...
+    rooms:
+    - room:esgaroth.taverna-do-rei-sob-a-montanha
+  examined: true
+  rooms:
+  - room:esgaroth.taverna-do-rei-sob-a-montanha
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4109,9 +7770,45 @@
       troca de tecido sujo.
     rooms:
     - room:academia.sala-de-cura
+    - room:vila-aventureiros.casa-de-cura
   examined: true
   rooms:
   - room:academia.sala-de-cura
+  - room:vila-aventureiros.casa-de-cura
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.w
+  name: w
+  kind: scenery
+  descriptions:
+  - text: Você para sua busca...
+    rooms:
+    - room:bosque.o-amplo-bosque-25
+  examined: true
+  rooms:
+  - room:bosque.o-amplo-bosque-25
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.agua
+  name: água
+  kind: scenery
+  descriptions:
+  - text: |-
+      Ela parece escura e tenebrosa, e exala um terrível mau cheiro. Você
+      se pergunta se alguma coisa sobrevive muito tempo mergulhada ali.
+    rooms:
+    - room:bosque.formigueiro.a-galeria-aquatica
+    - room:bosque.formigueiro.os-limites-da-galeria-aquatica
+    - room:bosque.formigueiro.uma-curva-na-galeria-aquatica
+  examined: true
+  rooms:
+  - room:bosque.formigueiro.a-galeria-aquatica
+  - room:bosque.formigueiro.os-limites-da-galeria-aquatica
+  - room:bosque.formigueiro.uma-curva-na-galeria-aquatica
   sources:
   - logs/raw.log
   - logs/transcript.log

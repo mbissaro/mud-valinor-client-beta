@@ -32,8 +32,17 @@ REGION_SEEDS = [
      r"Iniciantes e Experientes|Fim do Treinamento|Provisões para Jovens|O Refeitório|A Academia de Aventureiros$|"
      r"O (Centro|Leste|Oeste) do Jardim$)", "region:academia"),
     (r"^Os Salões de Espera$", "region:saloes-espera"),
+    (r"^(À porta da Academia de Aventureiros|Na Estrada do Lago|Acesso à Grande Ponte|Na Grande Ponte de Esgaroth|"
+     r"Na Parte Mais Oeste da Ponte|Próximo ao Meio d[ae]|Atravessando o Meio da Ponte|A Vista da Cidade num Trecho|"
+     r"Bifurcação da Ponte Superior|Divisão \w+ da Ponte$|Na Extremidade \w+ da Ponte$)", "region:esgaroth.grande-ponte"),
+    (r"^(Avenida Perimetral|Esquina das Perimetrais|Praça (Floresta das Trevas|Montanha Solitária|da Flechada Precisa)|"
+     r"Avenida Transversal|Alto do Mercado|No Centro de Esgaroth|Rua Oposta|Viela do Herói|Rua de (Cima|Baixo)|"
+     r".*Rua dos Caramujos|.*Ponte de Baixo|.*Mercado (Central|Setentrional)|Na Rampa Intermediária|.*Rua das Pulgas|"
+     r"No Ancoradouro|Quartel da Guarda)", "region:esgaroth"),
     (r"^(O Amplo Bosque|A Academia de Combate|A Torre Mágica|O Acampamento dos Rangers|A Gruta Profunda|"
-     r"A Trilha de Pedras Claras)$", "region:bosque"),
+     r"A Trilha de Pedras Claras|A Ponte de Pedras Claras|O Pequeno Templo|O Círculo Natural)$", "region:bosque"),
+    (r"^(Portão Ocidental|Portão Oriental|Rua da Honra|Praça da Coragem|Cajado Torto - Taverna|Casa de Cura|"
+     r"Elmo de Pedra - |Loucura ou Aventura - |O Orc Esfolado - |Bom Patrão - |Estrela da Manhã - )", "region:vila-aventureiros"),
     (r"^(Um Ponto de Junção sob o Portão Sul|Outra Interseção|Uma Junção na Galeria|(Uma|A) Curva no Túnel da Galeria)$", "region:bosque.formigueiro"),
     (r"^Rua do Mercado$", "region:bri.mercado"),
     (r"^Rua da Águia$", "region:bri.aguia"),
@@ -490,7 +499,7 @@ def find_players(tr: str) -> set[str]:
     players |= {m[1] for m in re.finditer(r"^\(OOC\) ([A-Z]\w+)(?: [A-Z]\w+)? (disse|perguntou|exclamou|falou)", tr, re.M)}
     # mestres de pericia (Zurg, Domick...) tambem falam no OOC: sao NPCs curados, nao jogadores
     npcs = {w for n in yaml.safe_load((DATA / "npcs.yaml").read_text()) for w in n["name"].split()}
-    return players - npcs - {"Halbarion", "Você"}
+    return players - npcs - {"Halbarion", "Dorgrin", "Você"}  # nossos personagens
 
 
 # ---------------------------------------------------------------- main

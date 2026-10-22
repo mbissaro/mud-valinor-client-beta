@@ -1901,3 +1901,106 @@ não esquecer o colete salva-vidas antes de entrar no rio
 (`say Preciso de um colete` para pegar um). Saída `e` daqui segue o
 curso do rio pra leste (não explorada ainda). Pode ser um acesso
 alternativo/aquático não testado ainda — ou só flavor de pescador.
+
+## Segundo personagem: Dorgrin (anão clérigo, Esgaroth), criado 2026-10-22
+Criação: NOVO, nome, senha 2x, email em branco, sexo, raça Anao (idade
+60-120, altura 100-145cm, peso 40-70kg), cidade natal, classe, Modo
+Aural. Anão só pode escolher Bri, Archet ou Esgaroth (Erebor, Moria,
+Ered Luin recusadas). Começa com 26hp 94 mana 100mv, casaco de algodão,
+capa negra, botas anãs, Guia do Aventureiro, 0 ouro. Magias a 0%:
+Armadura, Causar Dano Leve, Curar Ferimentos Leves, Missil Magico
+(praticar na guilda de clérigos, Pequeno Templo do Bosque).
+- POLICY 4: nunca dois personagens conectados ao mesmo tempo. QUIT
+  num, depois login no outro. MAIL fica bloqueado ("até seu personagem
+  ser aprovado") enquanto o nome não for aprovado; registro de alt vai
+  por mudmail para os maiar (comando `maiar` lista quem são).
+- A Academia é a mesma para todos, mas o `d` do saguão depende da
+  cidade natal: Halbarion sai em Bri, Dorgrin sai em "À porta da
+  Academia de Aventureiros" (saídas e, u), perto de Esgaroth.
+- Tutorial do 2º andar é obrigatório e one-way: n e e s s w w u,
+  `get chave estante`, `unlock n chave`, `open n`, n, `open tapeçaria`,
+  n, e e e -> Corredor Silencioso.
+- Zurg (refeitório, n n n e do saguão): `say comida` dá carne de coelho
+  grátis (uma vez); ensina de graça `practice 'fatiar carne'` e
+  `practice cozinhar`; vende cantil 16, cogumelo 2, carne de coelho 1,
+  perdiz assada 2. O refeitório tem um grande fogão a lenha.
+- Ficar parado muito tempo: "Você desapareceu no Vazio" e o servidor
+  derruba a conexão. Basta reconectar.
+
+## Comando `areas`: todas as áreas e faixas de nível
+Bri 1-100, Biblioteca de Bri 1-10, Estrada Leste 10-20, Fazenda do Sr.
+Magote 40-55, Floresta Velha 5-15, Floresta de Pinheiros 1-5, Vila dos
+Anões 10-35, Academia 1-8, Acampamento Norte do Vale do Anduin 30-75,
+Alcatéia de Rhudaur 15-25, Aldeia de Lago Comprido 10-20, Archet 1-100,
+Colinas dos Túmulos 15-25, Galerias Subterrâneas 5-30, Beirágua 20-30,
+Bosque Sagrado 5-20, Bosque das Folhas Verdes 5-15, Caminho para as
+Montanhas Sombrias 5-15, Carrocha 10-25, Cemitério de Lago Comprido
+5-30, Charneca Etten 90-100, Creche Anã 1-5, Esgaroth 0-115, Estrada de
+Lago Comprido 0-100, Estrado 5-20, Fortaleza Terra-Pardense 10-70, Fosso
+Branco 15-25, Guilda Arcana 50-100, Isengard 60-80, Jardim de Imladris
+4-9, Lago Comprido 5-15, Limiar do Ermo 30-50, Mata dos Trolls 50-70, O
+Cemitério 5-10, Rio Anduin parte 1 40-50, Templo de Andrakaus 1-100,
+Bosques das Colinas do Sul 5-10, Sonhos do Bardo 10-50, Passagem Alta
+10-30, Rio da Floresta 15-25, Ruínas de Framsburg 75-95, Sapântano
+10-20, Sede do Brandevin 35-45, Sítio Knob 0-10, Terras Profanas 5-15,
+Terras de Beorn 5-40, Topo do Vento 1-100, Trilha Élfica na Floresta das
+Trevas 15-75, Vale do Mago 10-45, Valfenda 1-100, Vila dos Elfos
+Jangadeiros 25-35, (PK) Refúgio Sombrio 90-100.
+- Vila dos Anões (10-35): da praça de Bri, oeste até 'A Interseção',
+  depois sul pelo Caminho Verde até um acesso a nordeste. Abaixo dela
+  fica a Creche Anã (1-5): labirinto, bonecas com anel útil, crianças
+  anãs ladras. Alcançável pelo Halbarion.
+
+## Esgaroth (Cidade do Lago)
+Entrada: Estrada do Lago, placa: S Bosque das Folhas Verdes / Ponte do
+rio da Floresta / Cemitério; N Aldeia de Lago Comprido; E Grande Ponte;
+W Academia. Acesso à Grande Ponte (guarda Lairebaude, tosca placa), 7
+salas de ponte para leste, Bifurcação da Ponte Superior (placa), ne ne
+até a Avenida Perimetral Oeste.
+- Ponto de retorno: "No Centro de Esgaroth: o Coração do Mercado"
+  (Brandivaus, capitão da guarda; Asilë, aprendiz de espadas).
+- Água grátis: nas praças (Floresta das Trevas, Montanha Solitária,
+  Flechada Precisa) `push alavanca` enche o balde, `drink balde`. Não
+  levar o balde (lei da cidade, quadro no Quartel da Guarda).
+- Lojas vistas: Lampadário Luz Cegante; Empório de Armaduras
+  Mão-de-Ferro (Feodor) e Casa de Armas Mão-de-Ferro (Disneck), filhos
+  de Tercevans; Ancoradouro Abarrotado (Alastor, merceeiro, troca
+  itens por comida); Correio do Lago (Rabelais); Taverna do Rei sob a
+  Montanha (Dostolieve); doceira Hannendel (doces 2-8 ouro);
+  Alfarrábio Novo (Ilde): capa para livros 20, pena de escrituras 10,
+  caneta-tinteiro 10, mapas de Esgaroth/Aldeia/Bosque/Cemitério 3,
+  mapa das cercanias de Lago Comprido 5, livro 'Uma aventura de
+  Verda...' 200, folha de papel 1.
+- Praça da Flechada Precisa: monumento de Bard flechando o dragão.
+  Poste: NW Viela do Herói/Travessa Sul, NE Salão da Cidade, E Viela do
+  Herói, S Viela do Herói/Av. Perimetral Sul, SW Biblioteca (na verdade
+  o Alfarrábio Novo), SE Casa Grande.
+- Casa Grande (entrada, saídas s nw): cabideiro, poltrona vermelha de
+  veludo, Narag (homem de negócios esperando o mestre da cidade),
+  Florbela, Belodon (filho do senhor, vive correndo pela cidade).
+
+## Salões de Espera (morte)
+Morto vai aos Salões de Espera: Estë dá o "etéreo manto dos mortos";
+Námo e Vairë presentes. Após o veredito, volta ao saguão da Academia.
+Itens que não cabem ao saquear o corpo ficam no chão quando ele some.
+Morte zera a fome.
+- Guardas de Esgaroth (Lairebaude, Lainever, filhos de Lairemel) são
+  "GPS": `look <guarda>` faz ele oferecer escolta; teclar o número
+  leva você na hora: [1] Coração do Mercado (retorno), [2] Estrada do
+  Lago/entrada da Grande Ponte (Academia), [3] Ancoradouro Abarrotado
+  (Alastor), [4] Praça da Flechada Precisa, [5] Praça Floresta das
+  Trevas, [6] Praça Montanha Solitária. Avisam que não vão ajudar
+  sempre.
+- Alastor (Ancoradouro Abarrotado) troca QUALQUER item por comida:
+  `give <item> alastor` -> uma maçã ("pequena maçã de qualidade baixa,
+  dura, azeda"). Salva personagem sem ouro. Barris de maçãs com o
+  emblema de Esgaroth, destinadas aos salões de Thranduil.
+- Sede/fome em "MORRENDO" quase zeram a regeneração de movimento
+  (+1 por tick). Beber na bomba devolve o ritmo normal (~15 mv/tick
+  descansando).
+- Lojas fecham à noite: Empório de Armaduras com plaqueta "Volto em
+  horário comercial!".
+- Poste da Av. Perimetral Norte: Sul = Avenida Transversal (Alto do
+  Mercado, Banco, Alfaiataria Agulha de Ouro, Joalheria Dedo de Prata,
+  Caneca D'Ouro); Leste = Praça Floresta das Trevas, acesso aos
+  Mercados Setentrional e Central; Oeste = idem, Av. Perimetral Oeste.

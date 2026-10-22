@@ -23,7 +23,7 @@
   - Um grande livro de regras foi colocado sobre um pedestal aqui.
   links:
     n: room:academia.iniciantes-e-experientes
-  visits: 2
+  visits: 3
   sources:
   - logs/raw.log:293
   confidence: confirmed
@@ -45,7 +45,7 @@
   - Um guardião de pedra está ajudando os jogadores aqui.
   links:
     n: room:academia.a-sala-da-observacao
-  visits: 1
+  visits: 2
   sources:
   - logs/raw.log:440
   confidence: confirmed
@@ -69,7 +69,7 @@
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
   links:
     n: room:academia.a-sala-da-movimentacao
-  visits: 9
+  visits: 15
   sources:
   - logs/raw.log:454
   confidence: confirmed
@@ -95,7 +95,7 @@
   links:
     e: room:academia.a-sala-da-ajuda
     s: room:academia.a-sala-da-observacao
-  visits: 11
+  visits: 15
   sources:
   - logs/raw.log:470
   confidence: confirmed
@@ -121,7 +121,7 @@
   links:
     e: room:academia.a-sala-dos-objetos
     w: room:academia.a-sala-da-movimentacao
-  visits: 8
+  visits: 11
   sources:
   - logs/raw.log:616
   confidence: confirmed
@@ -143,13 +143,13 @@
   mobs:
   - Um meio-elfo está orientando os alunos.
   objects:
-  - Ao lado da janela, jaz uma grande placa.
   - Fileiras de cadeiras ocupam quase metade da sala.
+  - Ao lado da janela, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
   links:
     s: room:academia.a-sala-dos-conteiners
     w: room:academia.a-sala-da-ajuda
-  visits: 8
+  visits: 12
   sources:
   - logs/raw.log:659
   confidence: confirmed
@@ -176,7 +176,7 @@
   links:
     n: room:academia.a-sala-dos-objetos
     s: room:academia.a-sala-da-comunicacao
-  visits: 7
+  visits: 10
   sources:
   - logs/raw.log:758
   confidence: confirmed
@@ -203,7 +203,7 @@
   links:
     n: room:academia.a-sala-dos-conteiners
     w: room:academia.a-sala-do-auto-conhecimento
-  visits: 6
+  visits: 9
   sources:
   - logs/raw.log:997
   confidence: confirmed
@@ -225,12 +225,12 @@
   mobs:
   - Uma elfa está orientando os alunos.
   objects:
-  - Na parede norte, jaz uma grande placa.
   - (Brilhando) Pendurado no centro da sala, jaz um espelho.
+  - Na parede norte, jaz uma grande placa.
   links:
     e: room:academia.a-sala-da-comunicacao
     w: room:academia.a-sala-da-preparacao
-  visits: 6
+  visits: 9
   sources:
   - logs/raw.log:1110
   confidence: confirmed
@@ -256,7 +256,7 @@
   links:
     e: room:academia.a-sala-do-auto-conhecimento
     u: room:academia.a-sala-das-portas
-  visits: 6
+  visits: 9
   sources:
   - logs/raw.log:1235
   confidence: confirmed
@@ -278,11 +278,11 @@
   - '!e'
   - d
   objects:
-  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Fixada na parede, jaz uma bela estante.
+  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   links:
     n: room:academia.a-sala-da-atencao
-  visits: 4
+  visits: 8
   sources:
   - logs/raw.log:1326
   confidence: confirmed
@@ -300,14 +300,14 @@
     caminhos escondidos, e você sente vontade de examiná-lo com mais atenção.
     Uma grande arcada a sul leva de volta à sala anterior.
   exits:
-  - s
+  - '!s'
   exits_variants:
   - '!s'
   - s
   objects:
-  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Fixada na parede, jaz uma bela estante.
-  visits: 4
+  - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  visits: 8
   sources:
   - logs/raw.log:1383
   confidence: confirmed
@@ -330,12 +330,12 @@
   mobs:
   - Uma hobbit está orientando os alunos.
   objects:
-  - Fixada na parede, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede, jaz uma grande placa.
   - Uma chave metálica jaz largada.
   links:
     e: room:academia.a-sala-das-habilidades
-  visits: 6
+  visits: 11
   sources:
   - logs/raw.log:1429
   confidence: confirmed
@@ -351,7 +351,7 @@
   - '?'
   objects:
   - Um jovem orc furioso urra em sua direção.
-  visits: 3
+  visits: 5
   sources:
   - logs/raw.log:1553
   confidence: inferred
@@ -373,11 +373,11 @@
   mobs:
   - Um homem está orientando os alunos.
   objects:
-  - Fixada na parede sul, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede sul, jaz uma grande placa.
   links:
     e: room:academia.fim-do-treinamento
-  visits: 4
+  visits: 8
   sources:
   - logs/raw.log:1598
   confidence: confirmed
@@ -399,7 +399,7 @@
   - Um pergaminho está sobre um pedestal. Você sente vontade de lê-lo.
   links:
     e: room:academia.o-corredor-silencioso
-  visits: 4
+  visits: 7
   sources:
   - logs/raw.log:1711
   confidence: confirmed
@@ -430,7 +430,7 @@
     e: room:academia.sala-de-estudos
     n: room:academia.o-corredor-silencioso-2
     w: room:academia.a-sala-da-observacao
-  visits: 16
+  visits: 25
   sources:
   - logs/raw.log:1743
   confidence: confirmed
@@ -461,6 +461,16 @@
   - A ilustre diretora da Academia de Aventureiros está aqui.
   objects:
   - A fonte de mármore goteja água cristalina.
+  - Alguns ossos de uma ave foram deixados aqui.
+  - Uma desgastada bainha de couro foi largada aqui.
+  - Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
+  - Uma delicada camisa clara foi abandonada aqui.
+  - (Brilhando) Uma pequena lamparina foi deixada aqui.
+  - Um resistente colarinho metálico foi deixado aqui.
+  - Um protetor de ferro para os braços está caído aqui.
+  - Um elmo metálico jaz largado.
+  - Há um cinto de couro aqui.
+  - Um par de luvas de couro foi deixado aqui.
   links:
     d: room:bri.entrada-para-a-academia
     e: room:academia.deposito-de-armas
@@ -468,7 +478,7 @@
     s: room:bosque.o-amplo-bosque-14
     u: room:academia.o-corredor-silencioso
     w: room:academia.deposito-de-armaduras
-  visits: 130
+  visits: 148
   sources:
   - logs/raw.log:1791
   confidence: confirmed
@@ -491,7 +501,7 @@
   - Fixada na parede, jaz uma bela estante.
   links:
     e: room:academia.a-academia-de-aventureiros
-  visits: 21
+  visits: 24
   sources:
   - logs/raw.log:1812
   confidence: inferred
@@ -511,13 +521,13 @@
   mobs:
   - Um cuteleiro examina algumas armas.
   objects:
-  - Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
-  - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
-  - Um tanque foi preenchido com água até sua borda.
   - Fixada na parede, jaz uma bela estante.
+  - Um tanque foi preenchido com água até sua borda.
+  - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
+  - Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
   links:
     w: room:academia.a-academia-de-aventureiros
-  visits: 28
+  visits: 31
   sources:
   - logs/raw.log:1887
   confidence: inferred
@@ -543,7 +553,7 @@
     n: room:academia.um-corredor-2
     s: room:academia.a-academia-de-aventureiros
     w: room:academia.sala-de-treino-de-pericias
-  visits: 70
+  visits: 83
   sources:
   - logs/raw.log:1930
   confidence: inferred
@@ -561,7 +571,7 @@
   - Domick, Mestre do Conhecimento, está aqui lendo, aguardando alunos.
   links:
     e: room:academia.um-corredor
-  visits: 6
+  visits: 8
   sources:
   - logs/raw.log:1944
   confidence: confirmed
@@ -586,7 +596,7 @@
     n: room:academia.um-corredor-3
     s: room:academia.um-corredor
     w: room:academia.provisoes-para-jovens-aventureiros
-  visits: 96
+  visits: 110
   sources:
   - logs/raw.log:2039
   confidence: inferred
@@ -611,7 +621,7 @@
     n: room:academia.o-centro-do-jardim
     s: room:academia.um-corredor-2
     w: room:academia.sala-de-cura
-  visits: 302
+  visits: 317
   sources:
   - logs/raw.log:2056
   confidence: inferred
@@ -644,7 +654,7 @@
     e: room:academia.um-corredor-3
     n: room:bosque.o-amplo-bosque
     s: room:academia.um-corredor-3
-  visits: 261
+  visits: 271
   sources:
   - logs/raw.log:2079
   confidence: confirmed
@@ -685,7 +695,7 @@
     n: room:bosque.o-amplo-bosque-2
     s: room:academia.o-centro-do-jardim
     w: room:bosque.o-amplo-bosque-3
-  visits: 980
+  visits: 988
   sources:
   - logs/raw.log:2094
   confidence: confirmed
@@ -734,8 +744,8 @@
     s: room:bosque.o-amplo-bosque-3
     se: room:bosque.o-amplo-bosque-9
     sw: room:bosque.o-amplo-bosque-8
-    w: room:bosque.o-amplo-bosque-5
-  visits: 304
+    w: room:bosque.o-amplo-bosque-7
+  visits: 327
   sources:
   - logs/raw.log:2147
   confidence: confirmed
@@ -755,14 +765,14 @@
   exits:
   - e
   mobs:
-  - Mestre Toric brilha sob uma aura branca.
   - Um Mestre da Cura está aqui, cuidando dos alunos.
+  - Mestre Toric brilha sob uma aura branca.
   objects:
   - A fonte de mármore goteja água cristalina.
   - Vários leitos estão organizados em fileiras.
   links:
     e: room:academia.um-corredor-3
-  visits: 139
+  visits: 144
   sources:
   - logs/raw.log:2205
   confidence: confirmed
@@ -798,7 +808,7 @@
     e: room:bosque.o-amplo-bosque
     n: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque
-  visits: 824
+  visits: 830
   sources:
   - logs/raw.log:2301
   confidence: confirmed
@@ -823,15 +833,15 @@
   - sw
   mobs:
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
-  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Uma cobra gigantesca rasteja lentamente.
   - Um filhote de urso está perdido.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um lobo sorrateiro está procurando sua matilha.
   - Um grande macaco imita seus movimentos.
-  - Uma vespa enorme voa em sua direção.
   - Um felino ágil fareja algo.
+  - Uma vespa enorme voa em sua direção.
   - Um bezerro assustado perdeu-se por aqui.
   links:
     e: room:bosque.o-amplo-bosque-3
@@ -840,7 +850,7 @@
     s: room:bosque.o-amplo-bosque-21
     sw: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-2
-  visits: 37
+  visits: 42
   sources:
   - logs/raw.log:2358
   confidence: confirmed
@@ -905,8 +915,8 @@
   - Um lobo sorrateiro está procurando sua matilha.
   - Um filhote de urso está perdido.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
-  - Um grande macaco imita seus movimentos.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
@@ -917,7 +927,7 @@
     s: room:bosque.o-amplo-bosque-18
     sw: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-2
-  visits: 41
+  visits: 48
   sources:
   - logs/raw.log:2614
   confidence: confirmed
@@ -937,7 +947,7 @@
   - Um homem está aqui, vendendo equipamento para aventureiros.
   links:
     e: room:academia.um-corredor-2
-  visits: 26
+  visits: 29
   sources:
   - logs/raw.log:2964
   confidence: confirmed
@@ -959,9 +969,10 @@
   objects:
   - A fonte de mármore goteja água cristalina.
   - Um grande fogão a lenha ocupa a parede norte.
+  - Um caroço de maçã foi jogado aqui.
   links:
     w: room:academia.um-corredor-3
-  visits: 19
+  visits: 25
   sources:
   - logs/raw.log:4723
   confidence: confirmed
@@ -1001,7 +1012,7 @@
     ne: room:bosque.o-amplo-bosque-2
     s: room:bosque.o-amplo-bosque-23
     se: room:bosque.o-amplo-bosque-2
-  visits: 74
+  visits: 76
   sources:
   - logs/raw.log:17759
   confidence: confirmed
@@ -1029,15 +1040,15 @@
   - n e s w ne nw
   mobs:
   - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Uma cobra gigantesca rasteja lentamente.
+  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
+  - Um felino ágil fareja algo.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um filhote de urso está perdido.
-  - Um felino ágil fareja algo.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um lobo sorrateiro está procurando sua matilha.
-  - Uma vespa enorme voa em sua direção.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um grande macaco imita seus movimentos.
+  - Uma vespa enorme voa em sua direção.
   - Um bezerro assustado perdeu-se por aqui.
   links:
     e: room:bosque.o-amplo-bosque-9
@@ -1046,7 +1057,7 @@
     nw: room:bosque.o-amplo-bosque-2
     s: room:bosque.a-gruta-profunda
     w: room:bosque.o-amplo-bosque-9
-  visits: 38
+  visits: 47
   sources:
   - logs/raw.log:18245
   confidence: confirmed
@@ -1072,7 +1083,7 @@
   - Uma anã está orientando os aprendizes.
   links:
     n: room:bosque.o-amplo-bosque-8
-  visits: 5
+  visits: 8
   sources:
   - logs/raw.log:18264
   confidence: confirmed
@@ -1096,18 +1107,19 @@
   mobs:
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um lobo sorrateiro está procurando sua matilha.
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um felino ágil fareja algo.
-  - Uma vespa enorme voa em sua direção.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
-  - Um filhote de urso está perdido.
+  - Uma vespa enorme voa em sua direção.
   - Uma cobra gigantesca rasteja lentamente.
+  - Um filhote de urso está perdido.
+  - Um grande macaco imita seus movimentos.
   links:
     e: room:bosque.o-amplo-bosque-8
     n: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-8
-  visits: 21
+  visits: 24
   sources:
   - logs/raw.log:18314
   confidence: confirmed
@@ -1130,17 +1142,19 @@
   - ne
   - nw
   mobs:
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um felino ágil fareja algo.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
-  - Um felino ágil fareja algo.
-  - Voando tranquilamente, um grande pássaro azul canta suavemente.
+  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um lobo sorrateiro está procurando sua matilha.
+  - Um filhote de urso está perdido.
   links:
     e: room:bosque.o-amplo-bosque-11
     w: room:bosque.o-amplo-bosque-8
-  visits: 12
+  visits: 16
   sources:
   - logs/raw.log:18388
   confidence: confirmed
@@ -1162,12 +1176,13 @@
   - nw
   mobs:
   - Um filhote de urso está perdido.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Uma cobra gigantesca rasteja lentamente.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
-  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   links:
+    n: room:bosque.o-amplo-bosque-6
     w: room:bosque.o-amplo-bosque-10
-  visits: 3
+  visits: 5
   sources:
   - logs/raw.log:18405
   confidence: confirmed
@@ -1190,11 +1205,12 @@
   mobs:
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um filhote de urso está perdido.
   links:
     e: room:bosque.o-amplo-bosque-10
     n: room:bosque.o-amplo-bosque-13
     ne: room:bosque.o-amplo-bosque-2
-  visits: 4
+  visits: 5
   sources:
   - logs/raw.log:18523
   confidence: confirmed
@@ -1220,19 +1236,19 @@
   - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um grande macaco imita seus movimentos.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
+  - Uma cobra gigantesca rasteja lentamente.
   - Um lobo sorrateiro está procurando sua matilha.
+  - Um bezerro assustado perdeu-se por aqui.
   - Um felino ágil fareja algo.
   - Uma vespa enorme voa em sua direção.
-  - Uma cobra gigantesca rasteja lentamente.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
-  - Um bezerro assustado perdeu-se por aqui.
   links:
     e: room:bosque.o-amplo-bosque-2
     n: room:bosque.o-amplo-bosque-25
-    s: room:bosque.o-amplo-bosque-12
+    s: room:bosque.o-amplo-bosque-25
     se: room:bosque.o-amplo-bosque-2
-  visits: 18
+  visits: 27
   sources:
   - logs/raw.log:18540
   confidence: confirmed
@@ -1302,7 +1318,7 @@
   - Um mago está aqui, para auxiliá-lo a lutar.
   objects:
   - Um boneco de palha está aqui.
-  visits: 8
+  visits: 11
   sources:
   - logs/raw.log:19008
   confidence: confirmed
@@ -1326,24 +1342,28 @@
   - se
   exits_variants:
   - '!n e s w'
+  - '!n e s w se'
   - '!n e s w sw'
+  - n e s w
   - n e s w se
+  - n e s w sw
   mobs:
   - Um lobo sorrateiro está procurando sua matilha.
-  - Voando tranquilamente, um grande pássaro azul canta suavemente.
-  - Um felino ágil fareja algo.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Um filhote de urso está perdido.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Um felino ágil fareja algo.
   - Um bezerro assustado perdeu-se por aqui.
+  - Um filhote de urso está perdido.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
   links:
     e: room:bosque.o-amplo-bosque-17
+    n: room:bosque.o-pequeno-templo
     s: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-17
-  visits: 23
+  visits: 32
   sources:
   - logs/raw.log:28644
   confidence: confirmed
@@ -1368,17 +1388,17 @@
   - Uma cobra gigantesca rasteja lentamente.
   - Um felino ágil fareja algo.
   - Um filhote de urso está perdido.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
-  - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Um lobo sorrateiro está procurando sua matilha.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
+  - Um lobo sorrateiro está procurando sua matilha.
+  - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um grande macaco imita seus movimentos.
   links:
     e: room:bosque.o-amplo-bosque-19
     s: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-15
-  visits: 34
+  visits: 37
   sources:
   - logs/raw.log:35141
   confidence: confirmed
@@ -1409,7 +1429,7 @@
     e: room:bosque.o-amplo-bosque-15
     s: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-15
-  visits: 38
+  visits: 42
   sources:
   - logs/raw.log:35169
   confidence: confirmed
@@ -1433,19 +1453,21 @@
   - nw
   - sw
   mobs:
-  - Uma cobra gigantesca rasteja lentamente.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Um lobo sorrateiro está procurando sua matilha.
+  - Uma cobra gigantesca rasteja lentamente.
   - Um felino ágil fareja algo.
-  - Um grande macaco imita seus movimentos.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
+  - Uma raposa preguiçosa vaga sem rumo pelo bosque.
+  - Um grande macaco imita seus movimentos.
   links:
     e: room:bosque.a-trilha-de-pedras-claras
     n: room:bosque.o-amplo-bosque-6
     s: room:bosque.o-amplo-bosque-6
     sw: room:bosque.o-amplo-bosque-2
-  visits: 5
+    w: room:bosque.o-amplo-bosque-2
+  visits: 8
   sources:
   - logs/raw.log:35612
   confidence: confirmed
@@ -1466,7 +1488,7 @@
   - w
   links:
     w: room:bosque.o-amplo-bosque-18
-  visits: 1
+  visits: 4
   sources:
   - logs/raw.log:35633
   confidence: confirmed
@@ -1490,10 +1512,12 @@
   - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um filhote de urso está perdido.
   - Um lobo sorrateiro está procurando sua matilha.
+  - Uma vespa enorme voa em sua direção.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   links:
     s: room:bosque.o-amplo-bosque-6
     w: room:bosque.o-amplo-bosque-16
-  visits: 3
+  visits: 4
   sources:
   - logs/raw.log:35768
   confidence: confirmed
@@ -1520,17 +1544,18 @@
   mobs:
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Uma cobra gigantesca rasteja lentamente.
   - Um felino ágil fareja algo.
-  - Um lobo sorrateiro está procurando sua matilha.
+  - Uma cobra gigantesca rasteja lentamente.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Uma vespa enorme voa em sua direção.
   - Um filhote de urso está perdido.
+  - Um bezerro assustado perdeu-se por aqui.
   links:
     e: room:bosque.o-amplo-bosque-24
     n: room:bosque.o-amplo-bosque-21
     se: room:bosque.o-amplo-bosque-2
-  visits: 9
+  visits: 10
   sources:
   - logs/raw.log:36051
   confidence: confirmed
@@ -1558,10 +1583,10 @@
   - Uma cobra gigantesca rasteja lentamente.
   - Um grande macaco imita seus movimentos.
   - Um lobo sorrateiro está procurando sua matilha.
-  - Um felino ágil fareja algo.
-  - Um filhote de urso está perdido.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Um felino ágil fareja algo.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
+  - Um filhote de urso está perdido.
   - Uma vespa enorme voa em sua direção.
   links:
     n: room:bosque.o-amplo-bosque-4
@@ -1569,7 +1594,7 @@
     s: room:bosque.o-amplo-bosque-20
     sw: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-2
-  visits: 36
+  visits: 44
   sources:
   - logs/raw.log:36178
   confidence: confirmed
@@ -1593,8 +1618,8 @@
   - sw
   mobs:
   - Uma cobra gigantesca rasteja lentamente.
-  - Um filhote de urso está perdido.
   - Um felino ágil fareja algo.
+  - Um filhote de urso está perdido.
   links:
     e: room:bosque.o-amplo-bosque-15
   visits: 2
@@ -1632,9 +1657,10 @@
   - Um lobo sorrateiro está procurando sua matilha.
   links:
     n: room:bosque.o-amplo-bosque-7
+    s: room:bosque.o-amplo-bosque-2
     sw: room:bosque.o-amplo-bosque-2
     w: room:bosque.o-amplo-bosque-24
-  visits: 11
+  visits: 12
   sources:
   - logs/raw.log:36852
   confidence: confirmed
@@ -1657,14 +1683,14 @@
   - se
   - sw
   mobs:
-  - Um lobo sorrateiro está procurando sua matilha.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um felino ágil fareja algo.
   links:
     e: room:bosque.o-amplo-bosque-23
@@ -1695,15 +1721,19 @@
   - ne
   - se
   mobs:
-  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um filhote de urso está perdido.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
-  - Um bezerro assustado perdeu-se por aqui.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
+  - Uma cobra gigantesca rasteja lentamente.
+  - Um bezerro assustado perdeu-se por aqui.
+  - Um felino ágil fareja algo.
+  - Um lobo sorrateiro está procurando sua matilha.
   links:
+    n: room:bosque.o-amplo-bosque-13
     s: room:bosque.o-amplo-bosque-13
     se: room:bosque.o-amplo-bosque-2
-  visits: 3
+  visits: 7
   sources:
   - logs/raw.log:37294
   confidence: confirmed
@@ -1723,7 +1753,7 @@
   - n
   links:
     n: room:saloes-espera.os-saloes-de-espera-2
-  visits: 4
+  visits: 8
   sources:
   - logs/raw.log:43037
   confidence: confirmed
@@ -1743,7 +1773,7 @@
   links:
     n: room:saloes-espera.os-saloes-de-espera-3
     s: room:saloes-espera.os-saloes-de-espera
-  visits: 6
+  visits: 8
   sources:
   - logs/raw.log:43049
   confidence: confirmed
@@ -1769,7 +1799,7 @@
   links:
     n: room:saloes-espera.os-saloes-de-espera-4
     s: room:saloes-espera.os-saloes-de-espera-2
-  visits: 5
+  visits: 7
   sources:
   - logs/raw.log:43072
   confidence: confirmed
@@ -1790,13 +1820,13 @@
   exits:
   - s
   mobs:
-  - Námo brilha sob uma aura branca.
-  - Vairë brilha sob uma aura branca.
   - Námo, o Senhor de Mandos, está aqui, te observando.
+  - Námo brilha sob uma aura branca.
   - Vairë, a Senhora do Tempo, está aqui, escrevendo seus Registros.
+  - Vairë brilha sob uma aura branca.
   links:
     s: room:saloes-espera.os-saloes-de-espera-3
-  visits: 5
+  visits: 8
   sources:
   - logs/raw.log:43094
   confidence: confirmed
@@ -1817,7 +1847,9 @@
   - n
   mobs:
   - Um elfo está orientando os aprendizes.
-  visits: 2
+  links:
+    n: room:bosque.o-amplo-bosque-8
+  visits: 4
   sources:
   - logs/raw.log:49719
   confidence: confirmed
@@ -1842,7 +1874,7 @@
   - Um homem está orientando os aprendizes.
   links:
     s: room:bosque.a-academia-de-combate
-  visits: 1
+  visits: 4
   sources:
   - logs/raw.log:50056
   confidence: confirmed
@@ -1864,7 +1896,7 @@
   - Um elfo está orientando os aprendizes.
   links:
     n: room:bosque.o-amplo-bosque-8
-  visits: 3
+  visits: 6
   sources:
   - logs/raw.log:50358
   confidence: confirmed
@@ -1887,7 +1919,7 @@
   - Um mago está aqui, para auxiliá-lo a lutar.
   objects:
   - Um boneco de palha está aqui.
-  visits: 4
+  visits: 6
   sources:
   - logs/raw.log:52832
   confidence: confirmed
@@ -1907,7 +1939,7 @@
   - Abbigalye espera pelos seus alunos aqui.
   links:
     w: room:academia.um-corredor-2
-  visits: 2
+  visits: 4
   sources:
   - logs/raw.log:57882
   confidence: confirmed
@@ -1927,7 +1959,7 @@
   - O mago Herenvardo está aqui, aguardando alunos.
   links:
     w: room:academia.um-corredor
-  visits: 3
+  visits: 5
   sources:
   - logs/raw.log:58090
   confidence: confirmed
@@ -1946,11 +1978,11 @@
   exits:
   - w
   objects:
-  - Há um grande mural aqui, coberto de folhas de papel.
   - Fixada na parede, jaz uma bela estante.
+  - Há um grande mural aqui, coberto de folhas de papel.
   links:
     w: room:academia.o-corredor-silencioso
-  visits: 3
+  visits: 5
   sources:
   - logs/raw.log:59396
   confidence: confirmed
@@ -1969,7 +2001,7 @@
   links:
     n: room:bri.estrada-horizonte
     u: room:academia.a-academia-de-aventureiros
-  visits: 21
+  visits: 22
   sources:
   - logs/raw.log:65683
   confidence: confirmed
@@ -1998,7 +2030,7 @@
     n: room:bri.biblioteca.em-frente-a-biblioteca-de-bri
     s: room:bri.entrada-para-a-academia
     w: room:bri.estrada-horizonte-2
-  visits: 26
+  visits: 27
   sources:
   - logs/raw.log:65693
   confidence: confirmed
@@ -2157,7 +2189,7 @@
   links:
     e: room:bri.estrada-horizonte
     w: room:bri.estrada-horizonte-3
-  visits: 18
+  visits: 19
   sources:
   - logs/raw.log:66236
   confidence: confirmed
@@ -2177,7 +2209,7 @@
   links:
     e: room:bri.estrada-horizonte-2
     w: room:bri.a-praca-de-bri
-  visits: 21
+  visits: 22
   sources:
   - logs/raw.log:66248
   confidence: confirmed
@@ -2204,8 +2236,8 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Há uma fonte de mármore aqui, gotejando água cristalina.
   - Em frente à fonte há dois bancos de pedra.
+  - Há uma fonte de mármore aqui, gotejando água cristalina.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   links:
     e: room:bri.estrada-horizonte-3
@@ -2213,7 +2245,7 @@
     ne: room:bri.colina.um-caminho-arborizado
     s: room:bri.a-grande-estrada-leste
     w: room:bri.a-grande-estrada-leste-7
-  visits: 49
+  visits: 50
   sources:
   - logs/raw.log:66263
   confidence: confirmed
@@ -2247,7 +2279,7 @@
     n: room:bri.a-praca-de-bri
     s: room:bri.a-grande-estrada-leste-2
     w: room:bri.a-casa-mathom
-  visits: 40
+  visits: 41
   sources:
   - logs/raw.log:66292
   confidence: confirmed
@@ -2296,8 +2328,8 @@
   - u
   mobs:
   - O Sr. Carrapicho está aqui, esbanjando seu sorriso.
-  - Um bardo afina calmamente as cordas de seu banjo.
   - Um guarda está patrulhando aqui.
+  - Um bardo afina calmamente as cordas de seu banjo.
   links:
     n: room:bri.ponei.o-ponei-saltitante
     s: room:bri.ponei.o-patio-do-ponei-saltitante
@@ -2324,9 +2356,9 @@
   - e
   - s
   mobs:
-  - Um homem tranqüilo está aqui, embaralhando algumas cartas.
   - Um gato preto está aqui descansando.
   - Nob está aqui, misturando bebidas atrás do balcão.
+  - Um homem tranqüilo está aqui, embaralhando algumas cartas.
   - Dori está aqui, sentado sobre um banco.
   objects:
   - Há várias mesas com bancos aqui.
@@ -2349,8 +2381,8 @@
   - s
   - u
   mobs:
-  - Um obscuro homem do norte está aqui.
   - O Guardião do Norte está sob uma estranha mistura de luz e sombras.
+  - Um obscuro homem do norte está aqui.
   - Um velho homem está caminhando por aqui.
   objects:
   - Uma majestosa macieira cresce aqui.
@@ -2577,8 +2609,8 @@
   - nw
   - se
   mobs:
-  - Uma criança transborda de alegria, cantarolando aqui.
   - Um velho homem está caminhando por aqui.
+  - Uma criança transborda de alegria, cantarolando aqui.
   links:
     n: room:bri.uma-trilha
     nw: room:eriador.estrada-norte.a-velha-estrada-norte
@@ -2632,7 +2664,7 @@
     n: room:bri.a-grande-estrada-leste
     s: room:bri.a-grande-estrada-leste-3
     w: room:bri.mercado.rua-do-mercado-3
-  visits: 30
+  visits: 31
   sources:
   - logs/raw.log:67049
   confidence: confirmed
@@ -2775,7 +2807,7 @@
   links:
     n: room:bri.a-grande-estrada-leste-2
     s: room:bri.a-grande-estrada-leste-4
-  visits: 16
+  visits: 17
   sources:
   - logs/raw.log:67220
   confidence: confirmed
@@ -2802,7 +2834,7 @@
     n: room:bri.a-grande-estrada-leste-3
     s: room:bri.dentro-do-portao-sul
     w: room:bri.lei.avenida-da-lei-4
-  visits: 20
+  visits: 21
   sources:
   - logs/raw.log:67229
   confidence: confirmed
@@ -2828,7 +2860,7 @@
     n: room:bri.a-grande-estrada-leste-4
     s: room:bri.fora-do-portao-sul
     sw: room:bri.a-guarita-do-portao-sul
-  visits: 19
+  visits: 20
   sources:
   - logs/raw.log:67234
   confidence: confirmed
@@ -2876,7 +2908,7 @@
     d: room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
     n: room:bri.dentro-do-portao-sul
     s: room:bri.sobre-um-passadico-3
-  visits: 14
+  visits: 15
   sources:
   - logs/raw.log:67298
   confidence: confirmed
@@ -2921,8 +2953,8 @@
   - s
   mobs:
   - O comerciante está em pé aqui.
-  - Um guarda está patrulhando aqui.
   - Um velho homem está caminhando por aqui.
+  - Um guarda está patrulhando aqui.
   links:
     s: room:bri.mercado.rua-do-mercado-3
   visits: 2
@@ -2959,8 +2991,8 @@
   - n
   - e
   mobs:
-  - Entre as fileiras de armários, um carteiro despreocupado arruma uma coisa ou outra pela sala.
   - Um curioso passarinho azul caminha aqui.
+  - Entre as fileiras de armários, um carteiro despreocupado arruma uma coisa ou outra pela sala.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
   links:
@@ -3167,8 +3199,8 @@
   - s
   - w
   mobs:
-  - Um guarda está patrulhando aqui.
   - O cão abandonado está dormindo aqui.
+  - Um guarda está patrulhando aqui.
   links:
     s: room:bri.aguia.rua-da-aguia-4
   visits: 1
@@ -4220,8 +4252,8 @@
   - Umaro está sob uma estranha mistura de luz e sombras.
   - Umaro, o líder da guarda de Archet, observa a todos com cara de poucos amigos.
   objects:
-  - Um banco de pedras azuis está aqui ao redor da fonte.
   - Uma grande fonte circular jorra água cristalina aqui.
+  - Um banco de pedras azuis está aqui ao redor da fonte.
   links:
     e: room:archet.rua-dos-oficios-2
   visits: 1
@@ -4614,11 +4646,11 @@
   - '!sw'
   mobs:
   - solicitar um aposento.
+  - intensidade. A recepção da hospedaria é decorada com tons claros e
+  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
   - O barulho da rua lá fora ainda pode ser ouvido, porém com bem menos
   - rústicos, deixando você bem à vontade. Ao norte há uma cortina
   - escondendo a passagem para o norte. Grandes poltronas de muitos
-  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
-  - intensidade. A recepção da hospedaria é decorada com tons claros e
   visits: 1
   sources:
   - logs/raw.log:69043
@@ -4720,7 +4752,7 @@
     e: room:academia.a-biblioteca-dos-aventureiros
     n: room:academia.o-corredor-silencioso-3
     s: room:academia.o-corredor-silencioso
-  visits: 3
+  visits: 9
   sources:
   - logs/raw.log:69313
   confidence: confirmed
@@ -4741,7 +4773,7 @@
   - Há um mural aqui, onde podem ser afixadas mensagens.
   links:
     w: room:academia.o-corredor-silencioso-2
-  visits: 1
+  visits: 4
   sources:
   - logs/raw.log:69322
   confidence: inferred
@@ -4764,7 +4796,7 @@
   links:
     e: room:academia.a-sala-dos-professores
     s: room:academia.o-corredor-silencioso-2
-  visits: 2
+  visits: 6
   sources:
   - logs/raw.log:69352
   confidence: confirmed
@@ -4785,7 +4817,7 @@
   - Na parede sul está  pendurado um mural cheio de notas.
   links:
     w: room:academia.o-corredor-silencioso-3
-  visits: 1
+  visits: 4
   sources:
   - logs/raw.log:69365
   confidence: confirmed
@@ -4807,7 +4839,7 @@
   links:
     n: room:bosque.formigueiro.a-juncao-tripla
     u: room:bri.fora-do-portao-sul
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70013
   confidence: confirmed
@@ -4826,7 +4858,7 @@
   links:
     e: room:bosque.formigueiro.a-curva-no-tunel-da-galeria
     s: room:bosque.formigueiro.um-ponto-de-juncao-sob-o-portao-sul
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70019
   confidence: inferred
@@ -4843,7 +4875,7 @@
   links:
     n: room:bosque.formigueiro.uma-curva-no-tunel-da-galeria
     w: room:bosque.formigueiro.a-juncao-tripla
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70024
   confidence: confirmed
@@ -4858,7 +4890,7 @@
   links:
     s: room:bosque.formigueiro.a-curva-no-tunel-da-galeria
     w: room:bosque.formigueiro.uma-juncao-na-galeria
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70028
   confidence: confirmed
@@ -4874,7 +4906,7 @@
   links:
     e: room:bosque.formigueiro.uma-curva-no-tunel-da-galeria
     n: room:bosque.formigueiro.uma-juncao
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70032
   confidence: confirmed
@@ -4894,7 +4926,7 @@
   links:
     n: room:bosque.formigueiro.outra-intersecao
     s: room:bosque.formigueiro.uma-juncao-na-galeria
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70039
   confidence: inferred
@@ -4913,8 +4945,9 @@
   mobs:
   - O pequeno morcego de aparência feroz está pendurado no teto.
   links:
+    n: room:bosque.formigueiro.a-galeria-subterranea
     s: room:bosque.formigueiro.uma-juncao
-  visits: 2
+  visits: 5
   sources:
   - logs/raw.log:70044
   confidence: confirmed
@@ -5462,8 +5495,8 @@
   exits:
   - s
   mobs:
-  - Lady Knob está apavorada com sua presença.
   - O jardineiro trabalha duro para produzir legumes frescos.
+  - Lady Knob está apavorada com sua presença.
   links:
     s: room:bri.mansao-knob.um-cruzamento
   visits: 2
@@ -5612,8 +5645,8 @@
   exits:
   - n
   objects:
-  - Um chicote de equitação foi jogado aqui.
   - Uma calça de couro foi arremessada aqui no chão.
+  - Um chicote de equitação foi jogado aqui.
   links:
     n: room:bri.mansao-knob.os-alojamentos-dos-cavalos
   visits: 1
@@ -6212,7 +6245,7 @@
   links:
     e: room:estrada-leste.a-grande-estrada-do-leste-6
     nw: room:bri.colina.contornando-a-colina-de-bri
-  visits: 7
+  visits: 9
   sources:
   - logs/raw.log:81897
   confidence: confirmed
@@ -6234,7 +6267,7 @@
   links:
     ne: room:estrada-leste.a-grande-estrada-do-leste-7
     w: room:estrada-leste.a-grande-estrada-do-leste-5
-  visits: 6
+  visits: 7
   sources:
   - logs/raw.log:81909
   confidence: confirmed
@@ -6922,8 +6955,8 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   visits: 1
   sources:
   - logs/raw.log:83179
@@ -7053,9 +7086,9 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
+  - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - Uma enorme estátua de três criaturas petrificadas jaz aqui.
-  - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
   sources:
   - logs/raw.log:83258
@@ -7138,10 +7171,10 @@
   - w
   - se
   mobs:
-  - Glorfindel brilha sob uma aura branca.
-  - Um imponente cavalo branco está aqui aguardando as ordens de seu senhor.
   - Glorfindel, o Senhor-Élfico, está aqui.
+  - Glorfindel brilha sob uma aura branca.
   - Asfaloth brilha sob uma aura branca.
+  - Um imponente cavalo branco está aqui aguardando as ordens de seu senhor.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -7186,8 +7219,8 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   visits: 1
   sources:
   - logs/raw.log:83404
@@ -7509,15 +7542,15 @@
   - se
   - sw
   mobs:
-  - (Montada) Uma obediente égua aguarda aqui.
-  - A Guardiã cuida para que a ordem seja absolutamente preservada.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - A Guardiã elfa brilha sob uma aura branca.
+  - A Guardiã cuida para que a ordem seja absolutamente preservada.
+  - (Montada) Uma obediente égua aguarda aqui.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
-  - Um grande círculo de bancos de pedra está montado aqui.
-  - Algumas estátuas estão dispostas sobre pedestais aqui.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  - Um grande círculo de bancos de pedra está montado aqui.
+  - No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
+  - Algumas estátuas estão dispostas sobre pedestais aqui.
   links:
     nw: room:valfenda.uma-alameda-de-juniperos
     se: room:valfenda.uma-alameda-de-populos
@@ -7600,11 +7633,11 @@
   - Uma joaninha amarela voa alegremente aqui.
   - Um beija-flor sobrevoa em redor, procurando uma flor...
   objects:
-  - Um antigo e reverenciável salgueiro-chorão estende seus galhos.
   - Fixada na parede, jaz uma bela estante.
-  - Um mural bem legal está aqui no meio do nada.
   - Um tanque formado pela nascente de um córrego jaz aqui.
   - Um canteiro, em forma de meia lua, foi construido em redor do salgueiro.
+  - Um antigo e reverenciável salgueiro-chorão estende seus galhos.
+  - Um mural bem legal está aqui no meio do nada.
   links:
     n: room:valfenda.no-jardim-um-caminho-entre-canteiros
     w: room:valfenda.uma-alameda-de-juniperos-2
@@ -8047,8 +8080,8 @@
   exits:
   - s
   mobs:
-  - Celorien Ramo-Verde sela algumas cartas, enquanto vigia os armários.
   - Um curioso passarinho azul caminha aqui.
+  - Celorien Ramo-Verde sela algumas cartas, enquanto vigia os armários.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
   links:
@@ -8569,8 +8602,8 @@
   - w
   objects:
   - Uma bela fonte de pedras verdes está aqui no centro do círculo.
-  - Um belo banco com runas élficas circunda a fonte.
   - Uma majestosa macieira cresce aqui.
+  - Um belo banco com runas élficas circunda a fonte.
   links:
     e: room:valfenda.uma-alameda-de-alteias
     w: room:valfenda.uma-alameda-de-olmeiros
@@ -9643,11 +9676,11 @@
   exits:
   - w
   mobs:
-  - Isilië brilha sob uma aura branca.
   - Isilië, a curandeira, pacientemente auxilia os feridos.
+  - Isilië brilha sob uma aura branca.
   objects:
-  - Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
   - A fonte de mármore goteja água cristalina.
+  - Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
   links:
     w: room:valfenda.a-casa-de-descanso
   visits: 4
@@ -9733,3 +9766,3588 @@
   sources:
   - logs/raw.log:92686
   confidence: confirmed
+- id: room:bosque.o-pequeno-templo
+  title: O Pequeno Templo
+  region: region:bosque
+  safe: false
+  description: |-
+    O pequeno espaço foi bem usado para proporcionar ao mestre dos clérigos
+    tudo o que ele precisa para ensinar os jovens iniciados. Dez fileiras de
+    bancos estão de frente ao altar, de onde o mestre pode palestrar para
+    todos. No leste, pequenas escrivaninhas estão enfileiradas próximas da
+    parede e servem de local para os jovens estudantes. No oeste, alguns
+    armários e biombos cercam leitos onde os aprendizes transformam seus
+    estudos em prática. Ao sul, grandes portas duplas garantem a segurança do
+    templo.
+  exits:
+  - s
+  mobs:
+  - Um meio-elfo está orientando os aprendizes.
+  - O mestre Edhregol brilha sob uma aura branca.
+  links:
+    s: room:bosque.o-amplo-bosque-15
+  visits: 3
+  sources:
+  - logs/raw.log:100035
+  confidence: confirmed
+- id: room:bosque.o-circulo-natural
+  title: O Círculo Natural
+  region: region:bosque
+  safe: false
+  description: |-
+    Pelo jeito, a pequena construção de pedras era só uma grande ilusão para
+    proteger esse local magnífico. Árvores, flores, animais e um extenso
+    gramado expressam da forma mais simples e elegante a imensidão da
+    natureza. Em meio às árvores que substituem os muros de lugares fechados,
+    os sons dos pequenos animais, as belíssimas flores de todos os tipos, o
+    cheiro das diversas ervas e o tapete macio de grama verde que lhe convida
+    a um descanso, você percebe o quanto a magia natural pode ser simples e
+    poderosa se aprendida corretamente. Ao sul, você volta para o bosque.
+  exits:
+  - s
+  mobs:
+  - Um hobbit está orientando os aprendizes.
+  links:
+    s: room:bosque.o-amplo-bosque-15
+  visits: 3
+  sources:
+  - logs/raw.log:100443
+  confidence: confirmed
+- id: room:bosque.a-trilha-de-pedras-claras-2
+  title: A Trilha de Pedras Claras
+  region: region:bosque
+  safe: false
+  description: |-
+    Uma brisa amena vinda do norte acaricia o seu rosto tão logo você chega
+    neste local. Uma estreita trilha de pedras claras inicia-se diante de seus
+    pés, conduzindo de forma segura os viajantes entre o interior de uma
+    verdejante floresta de árvores antigas e frondosas, protegida pelos elfos,
+    e o Amplo Bosque. A densa vegetação e uma densa névoa lhe impossibilita de
+    enxergar muito adiante, mas a trilha segue para o oeste. No leste, uma
+    PONTE foi construída sobre um rio de águas claras e velozes.
+  exits:
+  - e
+  - w
+  - '?'
+  links:
+    w: room:bosque.a-trilha-de-pedras-claras
+  visits: 3
+  sources:
+  - logs/raw.log:100846
+  confidence: confirmed
+- id: room:bosque.a-ponte-de-pedras-claras
+  title: A Ponte de Pedras Claras
+  region: region:bosque
+  safe: false
+  description: |-
+    Uma brisa forte vinda do norte lhe rodeia tão logo você chega neste local.
+    Uma estreita ponte de pedras claras inicia-se diante de seus pés,
+    conduzindo de forma segura os viajantes entre as margens opostas do rio de
+    águas claras e velozes. Uma densa névoa lhe impossibilita de enxergar
+    muito adiante, mas a ponte segue para o leste. No oeste, a TRILHA de
+    Pedras Claras segue mata à dentro.
+  exits:
+  - e
+  - '?'
+  links:
+    e: room:bosque.a-ponte-de-pedras-claras-2
+  visits: 3
+  sources:
+  - logs/raw.log:100884
+  confidence: confirmed
+- id: room:bosque.a-ponte-de-pedras-claras-2
+  title: A Ponte de Pedras Claras
+  region: region:bosque
+  safe: false
+  description: |-
+    Uma brisa forte vinda do norte lhe rodeia tão logo você chega neste local.
+    Uma estreita ponte de pedras claras inicia-se diante de seus pés,
+    conduzindo de forma segura os viajantes entre as margens opostas do rio de
+    águas claras e velozes. Uma densa névoa lhe impossibilita de enxergar
+    muito adiante, mas a ponte segue para o oeste. No Leste, a TRILHA de
+    Pedras Claras segue floresta à dentro.
+  exits:
+  - w
+  - '?'
+  links:
+    w: room:bosque.a-ponte-de-pedras-claras
+  visits: 3
+  sources:
+  - logs/raw.log:100916
+  confidence: confirmed
+- id: room:bosque.a-trilha-de-pedras-claras-3
+  title: A Trilha de Pedras Claras
+  region: region:bosque
+  safe: false
+  description: |-
+    Uma brisa amena vinda do norte acaricia o seu rosto tão logo você chega
+    neste local. Uma estreita trilha de pedras claras inicia-se diante de seus
+    pés, conduzindo de forma segura os viajantes entre o interior de uma
+    verdejante floresta de árvores antigas e frondosas, protegida pelos elfos,
+    e a pequena Vila dos Aventureiros. A densa vegetação e uma densa névoa lhe
+    impossibilita de enxergar muito adiante, mas a trilha segue para o leste.
+    No oeste, uma PONTE foi construída sobre um rio de águas claras e velozes.
+  exits:
+  - e
+  - w
+  - '?'
+  links:
+    e: room:bosque.a-trilha-de-pedras-claras-4
+  visits: 3
+  sources:
+  - logs/raw.log:100937
+  confidence: confirmed
+- id: room:bosque.a-trilha-de-pedras-claras-4
+  title: A Trilha de Pedras Claras
+  region: region:bosque
+  safe: false
+  description: |-
+    Uma brisa amena vinda do norte acaricia o seu rosto tão logo você chega
+    neste local. Uma estreita trilha de pedras claras inicia-se diante de seus
+    pés, conduzindo de forma segura os viajantes entre a pequena Vila dos
+    Aventureiros e o interior de uma verdejante floresta de árvores antigas e
+    frondosas, protegida pelos elfos. A densa vegetação e uma densa névoa lhe
+    impossibilita de enxergar muito adiante, mas a trilha segue para o oeste.
+    No leste, um portão guarda a entrada da vila.
+  exits:
+  - e
+  - w
+  links:
+    e: room:vila-aventureiros.portao-ocidental
+    w: room:bosque.a-trilha-de-pedras-claras-3
+  visits: 2
+  sources:
+  - logs/raw.log:100964
+  confidence: confirmed
+- id: room:vila-aventureiros.portao-ocidental
+  title: Portão Ocidental
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Ao olhar para o leste, dando as costas para o paredão de pedras que cerca
+    a vila, você tem um vislumbre da pequena Vila dos Aventureiros, uma região
+    frequentada principalmente por viajantes pouco experientes, que em busca
+    de aventura e conhecimento cruzam os pesados portões da muralha para terem
+    lições básicas de como sobreviver. Na rua principal, além das belas
+    árvores, muitas lojas com casinhas no segundo andar são visíveis, mas o
+    que mais lhe atrai é a bonita placa, que com palavras amigas saúda quem
+    acabou de chegar do interior da floresta ao oeste.
+  exits:
+  - e
+  - w
+  links:
+    e: room:vila-aventureiros.rua-da-honra
+    w: room:bosque.a-trilha-de-pedras-claras-4
+  visits: 4
+  sources:
+  - logs/raw.log:100975
+  confidence: confirmed
+- id: room:vila-aventureiros.rua-da-honra
+  title: Rua da Honra
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    A rua estende-se de leste a oeste em um percurso sempre delineado pelas
+    árvores, que pela grossura de seus troncos e raízes expostas mostram ser
+    tão antigas quanto as suas irmãs de copa verde além das muralhas, na
+    floresta. Não muito distante das árvores, muitas lojas com casinhas em
+    cima servem de comércio e abrigo aos moradores da vila, e muitos deles
+    passeiam por aqui, seja a pé ou guiando carroças puxadas a cavalo. Ao
+    leste, o movimento é intenso, pois naquela direção fica a praça central. E
+    ao oeste, ficam os portões da muralha.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  links:
+    e: room:vila-aventureiros.rua-da-honra-2
+    n: room:vila-aventureiros.elmo-de-pedra-loja-de-armaduras
+    s: room:vila-aventureiros.loucura-ou-aventura-loja-de-utilidades
+    w: room:vila-aventureiros.portao-ocidental
+  visits: 8
+  sources:
+  - logs/raw.log:100986
+  confidence: confirmed
+- id: room:vila-aventureiros.elmo-de-pedra-loja-de-armaduras
+  title: Elmo de Pedra - Loja de Armaduras
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Cada pedra usada nas paredes, chão ou nos marcos de portas e janelas foi
+    tão bem moldada e encaixada de forma tão harmoniosa que seria impossível
+    encontrar um vão, o que torna óbvio que esta é uma construção anã. Na
+    parte norte da sala há caixotes, cestos, prateleiras e um balcão, todos
+    cobertos de mercadorias de boa aparência. Do leste, vindos através de uma
+    janela, o inconfundível tinir do martelo contra a bigorna e uma onda de ar
+    quente invadem o aposento.
+  exits:
+  - s
+  links:
+    s: room:vila-aventureiros.rua-da-honra
+  visits: 3
+  sources:
+  - logs/raw.log:101095
+  confidence: confirmed
+- id: room:vila-aventureiros.loucura-ou-aventura-loja-de-utilidades
+  title: Loucura ou Aventura - Loja de Utilidades
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Quem administra esta loja resolveu que era uma boa idéia expor o seu
+    produto em cada pedaço do teto e das paredes de madeira, cobrindo-as quase
+    inteiramente. Por todos os lados há bolsas, sacolas e mochilas penduradas,
+    exigindo que homens e elfos desviem a cabeça ao passar. À direita da
+    entrada há um balcão, com a maior parte da superfície ocupada por itens
+    imprescindíveis a quem deseja se aventurar pelas perigosas estradas da
+    Terra-média, tais como cantis, lamparinas e tochas. Atrás do balcão, uma
+    estante guarda documentos que podem ser úteis. E se tudo isso já não fosse
+    o bastante, ainda existem alguns armários fechados mantendo suas
+    mercadorias em total segredo.
+  exits:
+  - n
+  links:
+    n: room:vila-aventureiros.rua-da-honra
+  visits: 4
+  sources:
+  - logs/raw.log:101182
+  confidence: confirmed
+- id: room:vila-aventureiros.rua-da-honra-2
+  title: Rua da Honra
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    A rua estende-se de leste a oeste em um percurso sempre delineado pelas
+    árvores, que pela grossura de seus troncos e raízes expostas mostram ser
+    tão antigas quanto as suas irmãs de copa verde além das muralhas, na
+    floresta. Não muito distante das árvores, muitas lojas com casinhas em
+    cima servem de comércio e abrigo aos moradores da vila, e muitos deles
+    passeiam por aqui, seja a pé ou guiando carroças puxadas a cavalo. Ao
+    leste, o movimento é maior, pois naquela direção fica a praça central. E ao
+    oeste, a rua continua.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  links:
+    n: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+    s: room:vila-aventureiros.bom-patrao-loja-de-roupas
+    w: room:vila-aventureiros.rua-da-honra
+  visits: 9
+  sources:
+  - logs/raw.log:101263
+  confidence: confirmed
+- id: room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  title: O Orc Esfolado - Loja de Armas
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    As paredes de pedra polida refletem o brilho vermelho do voraz fogo aceso
+    na forja instalada junto ao canto nordeste da sala, aumentando a já
+    nauseante sensação de abafamento, que é pouco amenizada pelas duas
+    pequenas janelas, a leste e oeste. O fogo, alimentado pela lenha empilhada
+    junto à parede norte, pode ainda ser atiçado com o uso de um grande fole.
+    Fixada na parede, uma estante contém amostras dos mais finos modelos
+    criados pelo mestre armeiro que aqui trabalha, à vista de quem passa pela
+    rua, através da porta, ao sul.
+  exits:
+  - s
+  mobs:
+  - Um cuteleiro examina algumas armas.
+  objects:
+  - Um tanque foi preenchido com água até sua borda.
+  - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
+  - Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
+  links:
+    s: room:vila-aventureiros.rua-da-honra-2
+  visits: 4
+  sources:
+  - logs/raw.log:101293
+  confidence: confirmed
+- id: room:vila-aventureiros.bom-patrao-loja-de-roupas
+  title: Bom Patrão - Loja de Roupas
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    O interior da loja segue os moldes arredondados das paredes, com um
+    pequeno balcão disposto a oeste, destinado ao vendedor. Os produtos,
+    geralmente roupas e parafernálias utilizadas como vestimentas, foram
+    colocados tanto em cabideiros quanto em prateleiras fixadas nas paredes,
+    na mais organizada bagunça! Ao norte, do lado da porta, um pequeno patamar
+    exibe bonitos acessórios em uma vitrine, e na parede, acima e atrás do
+    balcão, um relógio de madeira indica as horas.
+  exits:
+  - n
+  links:
+    n: room:vila-aventureiros.rua-da-honra-2
+  visits: 3
+  sources:
+  - logs/raw.log:101397
+  confidence: confirmed
+- id: room:vila-aventureiros.praca-da-coragem
+  title: Praça da Coragem
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Este lugar fica no centro da aldeia, onde a rua principal dá lugar à uma
+    bela e espaçosa praça. As pedras do chão acompanham o formato do local, em
+    elipses concêntricas em relação à majestosa mangueira que cresce no
+    centro. Próxima das raízes e sob a sombra da árvore, em uma brecha no
+    círculo de bancos, há uma fonte de mármore onde brota água fresca e
+    cristalina, à disposição de quem passa por aqui.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  mobs:
+  - Um hobbit bem arrumado observa o movimento.
+  objects:
+  - A fonte de mármore goteja água cristalina.
+  - A folhagem da grande mangueira farfalha com o vento.
+  - Bancos circundam a fonte.
+  links:
+    e: room:vila-aventureiros.rua-da-honra-3
+    n: room:vila-aventureiros.cajado-torto-taverna
+    s: room:vila-aventureiros.casa-de-cura
+    w: room:vila-aventureiros.rua-da-honra-2
+  visits: 8
+  sources:
+  - logs/raw.log:101462
+  confidence: confirmed
+- id: room:vila-aventureiros.cajado-torto-taverna
+  title: Cajado Torto - Taverna
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    A música alegre, a bebida abundante e as dançarinas animam a taverna da
+    vila, e um cajado torto, cuja madeira já desbotou, é exibido sobre a
+    prateleira de bebidas, dando motivo ao nome do lugar. Ao evitar observar a
+    confusão de pessoas dançando, é possível encostar-se em algum banquinho
+    junto ao balcão, local onde também grande parte das fofocas do povoado
+    circulam. Para quem veio atrás de uma boa refeição, há as mesinhas,
+    dispostas a oeste, próximas aos músicos que dão vida à taverna. A sul está
+    a porta da saída.
+  exits:
+  - s
+  mobs:
+  - A simpatia desse homem contagia quem o rodeia.
+  links:
+    s: room:vila-aventureiros.praca-da-coragem
+  visits: 2
+  sources:
+  - logs/raw.log:101598
+  confidence: confirmed
+- id: room:vila-aventureiros.casa-de-cura
+  title: Casa de Cura
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    São vários leitos dispostos lado a lado que garantem um pouco de conforto
+    aos feridos que aqui chegam e esperam pelo atendimento do clérigo, que não
+    só restaura a vitalidade, mas também cura maldições, envenenamentos e
+    demais enfermidades, tanto do corpo quanto da alma. Para quem chega e tem
+    a paciência de ler, ao lado de cada leito foi deixada uma nota, com
+    algumas explicações úteis sobre curas em geral. Ao norte, você volta para
+    a vila.
+  exits:
+  - n
+  mobs:
+  - Uma jovem curandeira auxilia os doentes.
+  objects:
+  - Vários leitos estão organizados em fileiras.
+  links:
+    n: room:vila-aventureiros.praca-da-coragem
+  visits: 2
+  sources:
+  - logs/raw.log:101718
+  confidence: confirmed
+- id: room:vila-aventureiros.rua-da-honra-3
+  title: Rua da Honra
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    A rua estende-se de leste a oeste em um percurso sempre delineado pelas
+    árvores, que pela grossura de seus troncos e raízes expostas mostram ser
+    tão antigas quanto as suas irmãs de copa verde além das muralhas, na
+    floresta. Não muito distante das árvores, muitas lojas com casinhas em
+    cima servem de comércio e abrigo aos moradores da vila, e muitos deles
+    passeiam por aqui, seja a pé ou guiando carroças puxadas a cavalo. Ao
+    oeste, o movimento é maior, pois naquela direção fica a praça central. E
+    ao leste, a rua continua.
+  exits:
+  - e
+  - s
+  - w
+  links:
+    s: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+  visits: 5
+  sources:
+  - logs/raw.log:101860
+  confidence: confirmed
+- id: room:vila-aventureiros.estrela-da-manha-loja-de-magia
+  title: Estrela da Manhã - Loja de Magia
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Uma dezena de estantes se enfileiram atrás do balcão, que colocado bem
+    próximo da entrada da loja, oferece pouco espaço para os clientes. A
+    organização do local, com suas poções coloridas, pergaminhos mágicos e
+    varinhas de efeitos poderosos, é impecável e feita de forma ordenada e
+    alguns dos produtos (os mais caros e atraentes), foram dispostos em frente
+    a uma pequena janela retangular de bordas arredondadas, com a clara
+    intenção de atrair os novatos que chegam na vila. De uma porta no fundo da
+    loja, é possível avistar feiches coloridos e ouvir estálos mágicos.
+  exits:
+  - n
+  mobs:
+  - Uma meio-elfa flutua pela loja enquanto atende os clientes.
+  visits: 3
+  sources:
+  - logs/raw.log:101889
+  confidence: confirmed
+- id: room:vila-aventureiros.rua-da-honra-4
+  title: Rua da Honra
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    A rua estende-se de leste a oeste em um percurso sempre delineado pelas
+    árvores, que pela grossura de seus troncos e raízes expostas mostram ser
+    tão antigas quanto as suas irmãs de copa verde além das muralhas, na
+    floresta. Não muito distante das árvores, muitas lojas com casinhas em
+    cima servem de comércio e abrigo aos moradores da vila, e muitos deles
+    passeiam por aqui, seja a pé ou guiando carroças puxadas a cavalo. Ao
+    oeste, o movimento é intenso, pois naquela direção fica a praça central. E
+    ao leste, ficam os portões da muralha.
+  exits:
+  - e
+  - w
+  links:
+    e: room:vila-aventureiros.portao-oriental
+    w: room:vila-aventureiros.rua-da-honra-3
+  visits: 4
+  sources:
+  - logs/raw.log:101968
+  confidence: confirmed
+- id: room:vila-aventureiros.portao-oriental
+  title: Portão Oriental
+  region: region:vila-aventureiros
+  safe: false
+  description: |-
+    Ao olhar para o oeste, dando as costas para o paredão de pedras que cerca
+    a vila, você tem um vislumbre da pequena Vila dos Aventureiros, uma região
+    frequentada principalmente por viajantes pouco experientes, que em busca
+    de aventura e conhecimento cruzam os pesados portões da muralha para terem
+    lições básicas de como sobreviver. Na rua principal, além das belas
+    árvores, muitas lojas com casinhas no segundo andar são visíveis, mas o
+    que mais lhe atrai é a bonita placa, que com palavras amigas saúda quem
+    acabou de chegar do interior da floresta ao leste.
+  exits:
+  - w
+  links:
+    w: room:vila-aventureiros.rua-da-honra-4
+  visits: 1
+  sources:
+  - logs/raw.log:102013
+  confidence: confirmed
+- id: room:bosque.formigueiro.a-galeria-subterranea
+  title: A Galeria Subterrânea
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está mergulhado na lama e lodo até os tornozelos. Esta é uma interseção
+    com túneis indo para leste, sul e oeste.
+  exits:
+  - e
+  - s
+  - w
+  links:
+    e: room:bosque.formigueiro.a-sala-circular
+  visits: 3
+  sources:
+  - logs/raw.log:103259
+  confidence: inferred
+- id: room:bosque.formigueiro.a-sala-circular
+  title: A Sala Circular
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Ao entrar esta sala, ela começa a girar - primeiro lentamente, depois cada
+    vez mais rápido - Você fica totalmente confuso de onde possa ser o lado de
+    cima ou o de baixo, porém a única certeza é a de que a saída fica na
+    direção oposta de onde estava quando você entrou. Só há esse único caminho.
+  exits:
+  - e
+  objects:
+  - Alguma coisa passa próxima aos seus pés...
+  links:
+    e: room:bosque.formigueiro.a-pequena-sala
+  visits: 3
+  sources:
+  - logs/raw.log:103286
+  confidence: inferred
+- id: room:bosque.formigueiro.a-pequena-sala
+  title: A Pequena Sala
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    A única coisa interessante nesta sala é uma cadeira, e que ela está presa
+    ao chão de pedra. Uma porta leva para o sul e outra para oeste até as trevas.
+  exits:
+  - e
+  - s
+  links:
+    e: room:bosque.formigueiro.os-limites-da-galeria-aquatica
+    s: room:bosque.formigueiro.um-tunel-na-galeria
+  visits: 5
+  sources:
+  - logs/raw.log:103322
+  confidence: inferred
+- id: room:bosque.formigueiro.os-limites-da-galeria-aquatica
+  title: Os Limites da Galeria Aquática
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está em uma sala onde metade do chão é tomado pela água. Enquanto
+    ela flui para leste, uma porta segue para oeste.
+  exits:
+  - e
+  - w
+  links:
+    e: room:bosque.formigueiro.uma-curva-na-galeria-aquatica
+    w: room:bosque.formigueiro.a-pequena-sala
+  visits: 5
+  sources:
+  - logs/raw.log:103348
+  confidence: inferred
+- id: room:bosque.formigueiro.uma-curva-na-galeria-aquatica
+  title: Uma Curva na Galeria Aquática
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você não vê nada além da água na qual está mergulhado até os quadris.
+    A galeria parece curvar-se, levando para sul e oeste.
+  exits:
+  - s
+  - w
+  links:
+    s: room:bosque.formigueiro.a-galeria-aquatica
+    w: room:bosque.formigueiro.os-limites-da-galeria-aquatica
+  visits: 5
+  sources:
+  - logs/raw.log:103373
+  confidence: inferred
+- id: room:bosque.formigueiro.a-galeria-aquatica
+  title: A Galeria Aquática
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você não vê nada além da água na qual está mergulhado até os quadris. A
+    galeria parece curvar-se, levando para sul e norte.
+  exits:
+  - n
+  - s
+  links:
+    n: room:bosque.formigueiro.uma-curva-na-galeria-aquatica
+  visits: 6
+  sources:
+  - logs/raw.log:103395
+  confidence: inferred
+- id: room:bosque.formigueiro.um-tunel-na-galeria
+  title: Um Túnel na Galeria
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está num lugar que lembra uma imunda galeria, como se você costumasse
+    vir aqui! Você pode ver duas saídas seguindo para norte e sul.
+  exits:
+  - n
+  - s
+  links:
+    s: room:bosque.formigueiro.a-grande-galeria
+  visits: 3
+  sources:
+  - logs/raw.log:103465
+  confidence: inferred
+- id: room:bosque.formigueiro.a-grande-galeria
+  title: A Grande Galeria
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está em um enorme túnel da galeria. Ele estende-se para o sul e é
+    realmente largo. Uma porta leva para leste daqui.
+  exits:
+  - n
+  - e
+  - s
+  links:
+    e: room:bosque.formigueiro.o-corredor-escuro
+    s: room:bosque.formigueiro.o-final-sul-do-grande-tunel
+  visits: 4
+  sources:
+  - logs/raw.log:103484
+  confidence: inferred
+- id: room:bosque.formigueiro.o-corredor-escuro
+  title: O Corredor Escuro
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você não pode enxergar muito longe, mesmo com uma fonte de luz. O corredor
+    segue através de uma passagem ao sul. Uma porta leva para leste.
+  exits:
+  - s
+  - w
+  links:
+    s: room:bosque.formigueiro.a-passagem-escura
+    w: room:bosque.formigueiro.a-grande-galeria
+  visits: 2
+  sources:
+  - logs/raw.log:103505
+  confidence: inferred
+- id: room:bosque.formigueiro.a-passagem-escura
+  title: A Passagem Escura
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você não vê nada além do chão onde põe o pé. A passagem parece prosseguir
+    para norte e sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - O imenso rato subterrâneo parece estar faminto.
+  links:
+    n: room:bosque.formigueiro.o-corredor-escuro
+  visits: 11
+  sources:
+  - logs/raw.log:103510
+  confidence: inferred
+- id: room:bosque.formigueiro.o-final-sul-do-grande-tunel
+  title: O Final Sul do Grande Túnel
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está com água até os joelhos. Uma porta leva para oeste daqui. O
+    túnel estende-se para o norte.
+  exits:
+  - n
+  - w
+  links:
+    w: room:bosque.formigueiro.a-piscina-na-galeria
+  visits: 1
+  sources:
+  - logs/raw.log:103747
+  confidence: inferred
+- id: room:bosque.formigueiro.a-piscina-na-galeria
+  title: A Piscina na Galeria
+  region: region:bosque.formigueiro
+  safe: false
+  description: |-
+    Você está com água até a cintura. Para o norte fica a entrada desta sala.
+    Uma porta simples leva para leste.
+  exits:
+  - n
+  - e
+  mobs:
+  - A pequena aranha peluda tenta esconder-se ao perceber sua presença.
+  visits: 2
+  sources:
+  - logs/raw.log:103760
+  confidence: inferred
+- id: room:esgaroth.grande-ponte.a-porta-da-academia-de-aventureiros
+  title: À porta da Academia de Aventureiros
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Acima, após uma escadinha, está a porta para a Academia de
+    Aventureiros, local de treino dos novatos da Terra-média. Ao
+    leste você observa uma grande ponte de madeira e, ao final
+    dela, está Esgaroth, grande cidade construída sobre as águas
+    de Lago Comprido.
+  exits:
+  - e
+  - u
+  links:
+    e: room:esgaroth.grande-ponte.na-estrada-do-lago-entrada-para-a-grande-ponte
+  visits: 2
+  sources:
+  - logs/raw.log:106559
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.na-estrada-do-lago-entrada-para-a-grande-ponte
+  title: 'Na Estrada do Lago: Entrada para a Grande Ponte'
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Você vê logo adiante no leste os contornos de Esgaroth, bela e erguida
+    sobre um lago de águas escuras. Durante o dia você verá as casas e
+    prédios baixos reluzirem ao sol, e durante a noite poderá sonhar com os
+    luzeiros que faíscam nas janelas das tavernas, sob o olhar de bardos e
+    lindas donzelas. As rugas na estradinha evocam as caravanas mercantes
+    com sacas de tempero perfumado e sotaques raramente vistos. Eis a
+    agitada Cidade do Lago!
+  exits:
+  - n
+  - e
+  - s
+  - w
+  mobs:
+  - Um leproso cambaleia por aqui em um estado miserável.
+  objects:
+  - Uma placa de madeira está aqui, indicando as direções e lugares.
+  links:
+    e: room:esgaroth.grande-ponte.acesso-a-grande-ponte
+  visits: 2
+  sources:
+  - logs/raw.log:106585
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.acesso-a-grande-ponte
+  title: Acesso à Grande Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Nessas proximidades da Estrada do Lago você pisa numa enorme estrutura de
+    pedras bem afiladas, que um pouco mais ao leste se transforma na Grande Ponte
+    de entrada para a cidade de Esgaroth! Eis que este é o marco de acesso para a
+    cidade, e aparentemente é um pouco difícil não se impressionar com a ponte,
+    arquitetada em dois níveis erguidos com materiais completamente diversos: o
+    nível da base inferior é todo construído em resistente pedra, ao passo que o
+    superior erguido sobre ele é uma obra pioneira feita em madeira. Uma tosca
+    placa de madeira foi pregada aqui para orientar os viajantes.
+  exits:
+  - e
+  - w
+  - se
+  mobs:
+  - Lairebaude, filho de Lairemel, caminha por aqui cuidando da segurança.
+  links:
+    e: room:esgaroth.grande-ponte.na-grande-ponte-de-esgaroth
+    se: room:esgaroth.desvio-para-a-ponte-de-baixo
+  visits: 5
+  sources:
+  - logs/raw.log:106684
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.na-grande-ponte-de-esgaroth
+  title: Na Grande Ponte de Esgaroth
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Você pisa com passos firmes as grandes tábuas de madeira maiores que o
+    comprimento de seus pés; as toras cortadas e enfileiradas numa arte de
+    marcenaria louvável foram dispostas tão juntas umas às outras que você mal vê
+    quaisquer vãos entre elas, quanto menos algum resquício da movimentação de
+    cargas que ocorre no nível inferior da ponte.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.na-parte-mais-oeste-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:106787
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.na-parte-mais-oeste-da-ponte
+  title: Na Parte Mais Oeste da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    A circunferência das vigas de madeira, grossas, oferece bons pilares para a
+    ponte, e uma pequena mureta de madeira em ambos os lados do caminho parece lhe
+    convidar a uma parada tranquila em que se possa sentar e observar a água
+    escura do lago com seus movimentos suaves ao sabor da brisa.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.proximo-ao-meio-da-grande-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:106820
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.proximo-ao-meio-da-grande-ponte
+  title: Próximo ao Meio da Grande Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Ora, as toras são muito unidas, mas é possível ouvir neste ponto um ranger
+    da madeira sob seus pés! Não se preocupe, já isso é apenas o atrito entre as
+    madeiras do piso superior da ponte, então não há nada com que se desassossegar:
+    seria preciso muito para fazer ruir uma construção tão solidamente erguida!
+    Aqui a única coisa a se pensar é o rumo a seguir - a leste para a cidade ou a
+    oeste para as cercanias fora dela.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.atravessando-o-meio-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:106868
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.atravessando-o-meio-da-ponte
+  title: Atravessando o Meio da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Uma brisa suave afaga seu rosto enquanto você cruza a parte central da grande
+    ponte. As grossas vigas de madeira e os arcos desenhados entre elas de alguma
+    forma soam como um pouco da ostentação particular de Esgaroth. Não há entalhes
+    de qualquer espécie na madeira das toras; todavia, quiçá por seu tamanho
+    avantajado ou por sua disposição, há na construção dessa travessia uma grande
+    opulência.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.proximo-ao-meio-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:106919
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.proximo-ao-meio-da-ponte
+  title: Próximo ao Meio da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Aqui, próximo ao meio da ponte, embora mais do lado leste, o caminho parece
+    tranqüilo mesmo com o fluxo sempre constante de aventureiros e habitantes
+    passando pelo local. Apesar de estarem quase todos sempre muito apressados e
+    carregados, não há indícios de grandes cargas; porém, um pouco de paciência e
+    espera bastam para fazer ouvir o barulho das carroças atravessando pelo nível
+    inferior.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.a-vista-da-cidade-num-trecho-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:106966
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.a-vista-da-cidade-num-trecho-da-ponte
+  title: A Vista da Cidade num Trecho da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    A madeira range suavemente sob seus pés, mas é apenas por causa do peso
+    sobre ela. Esse rangido é quase inaudível se comparado ao burburinho que se
+    ouve de dentro da cidade. Isso sem contar a bela vista da cidade que já se
+    vê daqui.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
+  visits: 3
+  sources:
+  - logs/raw.log:107003
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
+  title: Bifurcação da Ponte Superior
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    Você pára por um breve instante na bifurcação da ponte. Aqui se
+    entrecruzam os dois braços leste que se ligam à Cidade do Lago e o
+    segmento central da ponte de saída e entrada. Há uma placa aqui
+    indicando as direções aos passantes.
+  exits:
+  - w
+  - ne
+  - se
+  links:
+    ne: room:esgaroth.grande-ponte.divisao-nordeste-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:107036
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.divisao-nordeste-da-ponte
+  title: Divisão Nordeste da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    O caminho parece ligeiramente mais estreito aqui, mas certamente isso é apenas
+    uma mera impressão, talvez em decorrência da encruzilhada da ponte que fica a
+    sudoeste ou até da visão da Avenida Perimetral Oeste, que vista daqui parece
+    ser bem larga. Destarte, se você prestar atenção no comprimento das vigas do
+    chão aqui e depois no meio da ponte, terminará vendo que ambas têm exatamente
+    o mesmo tamanho, tal qual se tivessem sido minuciosamente medidas pelos
+    construtores da cidade.
+  exits:
+  - ne
+  - sw
+  links:
+    ne: room:esgaroth.grande-ponte.na-extremidade-nordeste-da-ponte
+  visits: 3
+  sources:
+  - logs/raw.log:107084
+  confidence: confirmed
+- id: room:esgaroth.grande-ponte.na-extremidade-nordeste-da-ponte
+  title: Na Extremidade Nordeste da Ponte
+  region: region:esgaroth.grande-ponte
+  safe: false
+  description: |-
+    O calçamento da Avenida Perimetral Oeste está a leste e você percebe estar
+    pisando numa das extremidades leste da Grande Ponte. Alguns metros adiante
+    a oeste já se pisa nas imensas e resistentes toras de madeira que perfazem
+    o piso superior. As muretas laterais se resumem a dois grossos troncos
+    paralelos, em posição horizontal, com pequeno intervalo entre si: é comum
+    os habitantes se debruçarem sobre eles e passarem alguns dias ensolarados
+    a pescar nas muretas da ponte.
+  exits:
+  - ne
+  - sw
+  links:
+    ne: room:esgaroth.avenida-perimetral-oeste
+  visits: 3
+  sources:
+  - logs/raw.log:107140
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Opa! Aqui fica a ligação entre o braço nordeste da grande ponte e a Avenida
+    Perimetral Oeste, logo a sudoeste já se vê os chamativos arcos da ponte que
+    leva até as margens do lago e para a estrada. Um prédio imenso é visível logo
+    mais ao sul, e se destaca por ter uma bisonha estátua na frente, enquanto no
+    leste uma estreita e pequena rua leva para o alto do mercado, que é repleto de
+    lojas. A Avenida Perimetral Oeste segue entre norte e sul para além de vista.
+    Há um poste aqui, indicando as direções e lugares para os viajantes.
+  exits:
+  - n
+  - e
+  - s
+  - sw
+  links:
+    n: room:esgaroth.avenida-perimetral-oeste-2
+  visits: 5
+  sources:
+  - logs/raw.log:107194
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste-2
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Observando sobre a mureta, vê-se a cidade seca além do lago, na margem do lago
+    ao redor da ponte. A leste, nada há senão armazéns, e distante para o nordeste
+    construções alvas tomam todo o horizonte. A avenida prossegue no sentido
+    sul-norte.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.avenida-perimetral-oeste-3
+  visits: 5
+  sources:
+  - logs/raw.log:107288
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste-3
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Este é um recanto pouco interessante da Cidade do Lago, não há nada realmente
+    interessante por aqui. Só o que se vê é um conjunto de armazéns na quadra leste
+    e algumas edificações claras além deles. A avenida segue ao norte e ao sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Lainever, filho de Lairemel, está aqui vigiando a movimentação das ruas.
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    n: room:esgaroth.avenida-perimetral-oeste-4
+  visits: 5
+  sources:
+  - logs/raw.log:107328
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste-4
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A avenida ocidental segue para o norte, onde parece estar próxima do fim, e
+    para o sul, distante. Uma rua parte daqui no sentido leste, provavelmente em
+    direção ao mercado. Embora ela siga inicialmente para o leste, vê-se que logo
+    adiante ela se desvia um pouco, indo para sudeste. Armazéns estão na quadra
+    sudeste e casas alvas ocupam toda a visão a nordeste.
+  exits:
+  - n
+  - e
+  - s
+  mobs:
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    n: room:esgaroth.avenida-perimetral-oeste-5
+  visits: 5
+  sources:
+  - logs/raw.log:107362
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste-5
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Caminhando seguidamente pela Perimetral Oeste, você repara na silenciosa
+    beleza das construções a leste, que embora não se pareçam umas com as outras,
+    aparentam seguir algum tipo de ordem. Mas o que mais chama sua atenção é a
+    coloração clara que elas possuem, contrastando com o restante da cidade. A
+    avenida continua para o sul e para o norte.
+  exits:
+  - n
+  - s
+  mobs:
+  - Um gato vadio ronrona por aqui, farejando o mercado de peixes...
+  - Uma moça de taberna cruza seu caminho, com olhos inteligentes e rápidos.
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    n: room:esgaroth.avenida-perimetral-oeste-6
+  visits: 5
+  sources:
+  - logs/raw.log:107398
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-oeste-6
+  title: Avenida Perimetral Oeste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Daqui se pode ver claramente a extremidade norte da avenida ocidental, onde a
+    Perimetral faz mais uma curva brusca, contornando as casas e sobrados brancos
+    que ocupam toda essa região. A avenida continua ao norte e ao sul.
+  exits:
+  - n
+  - e
+  - s
+  links:
+    n: room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  visits: 5
+  sources:
+  - logs/raw.log:107449
+  confidence: confirmed
+- id: room:esgaroth.esquina-das-perimetrais-oeste-e-norte
+  title: Esquina das Perimetrais Oeste e Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Do ponto noroeste da cidade, pode-se ver a Avenida Perimetral seguir ao sul e
+    a leste. As construções daqui são tão pouco movimentadas que certamente não
+    passam de residências, construídas com madeiras claras, em contraste com a
+    madeira mais escura com a qual a própria cidade é erguida. Há um poste, aqui,
+    indicando as direções e lugares para os viajantes.
+  exits:
+  - e
+  - s
+  links:
+    e: room:esgaroth.avenida-perimetral-norte
+  visits: 5
+  sources:
+  - logs/raw.log:107481
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Pelo extremo norte da cidade, quase em seu canto noroeste, não há nada sequer
+    a própria Perimetral, que aqui segue do oeste para o leste. Residências alvas
+    tomam toda a borda da avenida, ao sul.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-2
+  visits: 5
+  sources:
+  - logs/raw.log:107545
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-2
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Seguindo ainda pela parte mais setentrional da cidade, nada de interessante se
+    pode avistar. Ao sul, um arco indica a entrada para o mercado do norte ao
+    nível do lago. Mais distante ao sul observa-se construções monótonas e alvas,
+    a ao norte apenas o lago calmo e imenso. A da própria via segue para o oeste e
+    para o leste.
+  exits:
+  - e
+  - s
+  - w
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-3
+  visits: 5
+  sources:
+  - logs/raw.log:107577
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-3
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Caminhando ainda pela parte mais setentrional da cidade, nada aqui o faz
+    lembrar do vibrante comércio da cidade. Há apenas o lago calmo e imenso ao
+    norte e alvas residências ao sul, além da própria via que segue para o oeste e
+    para o leste.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-4
+  visits: 5
+  sources:
+  - logs/raw.log:107614
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-4
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Desse ponto da avenida setentrional, além do lago e das residências anexas, se
+    pode ver mais distante ao leste o início da grande avenida que corta a cidade
+    de norte a sul.
+  exits:
+  - e
+  - w
+  objects:
+  - Uma poça de água suja se acumula, chapinhando quando passam nela...
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-5
+  visits: 5
+  sources:
+  - logs/raw.log:107642
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-5
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Com vista aguçada pode-se observar o mercado central da cidade através da
+    porção norte da Avenida Transversal, longe ao sul. A perimetral segue para o
+    leste e para o oeste, e uma pequena casa na esquina sudeste exala tabaco.
+    Há um poste, aqui, indicando as direções e lugares para os viajantes.
+  exits:
+  - e
+  - s
+  - w
+  - se
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-6
+    s: room:esgaroth.avenida-transversal-6
+  visits: 13
+  sources:
+  - logs/raw.log:107677
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-6
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ao leste e ao oeste prolonga-se o segmento norte da Avenida Perimetral, e ao
+    sul um arco marca um dos acessos ao Mercado Setentrional. Pode-se observar
+    grandes e imponentes casarões mais além ao sul. O lago ergue-se no horizonte
+    norte como se fosse o próprio mar.
+  exits:
+  - e
+  - s
+  - w
+  mobs:
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  links:
+    e: room:esgaroth.avenida-perimetral-norte-7
+    s: room:esgaroth.acesso-ao-mercado-setentrional
+    w: room:esgaroth.avenida-perimetral-norte-5
+  visits: 21
+  sources:
+  - logs/raw.log:107749
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-norte-7
+  title: Avenida Perimetral Norte
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Quase no extremo nordeste da cidade, e contrastando com o calmo lago ao norte
+    e os sóbrios casarões distantes ao sul, uma taverna do pior tipo se apresenta
+    a essa altura da avenida, com sua porta anexa ao sul.
+  exits:
+  - e
+  - s
+  - w
+  mobs:
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  links:
+    e: room:esgaroth.praca-floresta-das-trevas
+    s: room:esgaroth.taverna-do-rei-sob-a-montanha
+    w: room:esgaroth.avenida-perimetral-norte-6
+  visits: 27
+  sources:
+  - logs/raw.log:107785
+  confidence: confirmed
+- id: room:esgaroth.praca-floresta-das-trevas
+  title: Praça Floresta das Trevas
+  region: region:esgaroth
+  safe: false
+  description: |-
+    O encontro das Perimetrais Leste e Norte recebeu um tratamento especial e
+    foi transformado em praça. Não obstante, é mal freqüentada graças aos
+    tipos incomuns que aqui surgem vindos da taverna que se apossou desse
+    ponto da cidade. Sem dúvida o nome da praça acabou mostrando-se bastante
+    adequado. Há um poste, aqui, indicando as direções e lugares para os
+    viajantes.
+  exits:
+  - s
+  - w
+  - sw
+  mobs:
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
+  - Dois bancos de madeira foram colocados aqui.
+  - Uma bomba d'água está aqui, pronta para puxar água do lago.
+  links:
+    s: room:esgaroth.avenida-perimetral-leste
+    sw: room:esgaroth.taverna-do-rei-sob-a-montanha
+    w: room:esgaroth.avenida-perimetral-norte-7
+  visits: 24
+  sources:
+  - logs/raw.log:107824
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Quase no ponto mais setentrional da Perimetral Leste, a sobriedade dos
+    casarões é rompida pelo estardalhaço humano e arquitetônico que é a taverna ao
+    oeste. A Avenida Perimetral segue ao norte e ao sul.
+  exits:
+  - n
+  - s
+  - w
+  mobs:
+  - Tourvigouh, filho de Tuorvi, caminha por aqui observando a movimentação.
+  links:
+    n: room:esgaroth.praca-floresta-das-trevas
+    s: room:esgaroth.avenida-perimetral-leste-2
+  visits: 41
+  sources:
+  - logs/raw.log:107920
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-2
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Caminhando continuamente pela avenida oriental, nada há a não ser a brisa
+    vinda do lago e a imponência dos casarões a oeste. A avenida prolonga-se até
+    onde a vista pode alcançar e talvez além, para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Tourvigouh, filho de Tuorvi, caminha por aqui observando a movimentação.
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste
+    s: room:esgaroth.avenida-perimetral-leste-3
+  visits: 18
+  sources:
+  - logs/raw.log:107955
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-3
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Seguindo pela avenida oriental, nada há a não ser a brisa vinda do lago e a
+    imponência dos casarões a oeste. A avenida prolonga-se até aonde a vista pode
+    alcançar a talvez além, para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-2
+    s: room:esgaroth.avenida-perimetral-leste-4
+  visits: 38
+  sources:
+  - logs/raw.log:108019
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-4
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ainda pela avenida perimetral leste, nada há a não ser a brisa vinda do lago e
+    a imponência dos casarões a oeste. A avenida prolonga-se até aonde a vista
+    pode alcançar a talvez além, para o norte e para o sul.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-3
+    s: room:esgaroth.avenida-perimetral-leste-5
+  visits: 18
+  sources:
+  - logs/raw.log:108050
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-5
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Na mais oriental das avenidas, teus sentidos são assaltados quase que apenas
+    pelo tranqüilo lago a leste e os polidos casarões a oeste, embora seja
+    possível para alguém atento perceber nesse ponto a agitação do mercado
+    central. A via segue na direção norte-sul.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-4
+    s: room:esgaroth.avenida-perimetral-leste-6
+  visits: 18
+  sources:
+  - logs/raw.log:108081
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-6
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui, embora a calmaria do lago e a nobreza dos casarões sejam as sensações
+    mais comuns, sendo mais atento se pode perceber também o calor do mercado. A
+    avenida prossegue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Aerith caminha pelas ruas de Esgaroth, vendendo flores.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-5
+    s: room:esgaroth.avenida-perimetral-leste-7
+  visits: 45
+  sources:
+  - logs/raw.log:108115
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-7
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esse local da cidade apresenta uma mistura de ambientes que só em uma cidade
+    tão compacta quanto Esgaroth é possível: a brisa do lago sereno a leste, a
+    altivez dos casarões a noroeste, o calor do mercado a oeste e a simplicidade
+    das casas ao sudoeste. A avenida segue para o norte e para o sul, e há uma
+    pequena rua a oeste, cheia de lojas, e que parte em direção ao mercado.
+    Há um poste aqui, indicando as direções e lugares para os viajantes.
+  exits:
+  - n
+  - s
+  - w
+  mobs:
+  - Aerith caminha pelas ruas de Esgaroth, vendendo flores.
+  - Um comprador de cristais leva sua compra com um cuidado quase maternal.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-6
+    s: room:esgaroth.avenida-perimetral-leste-8
+  visits: 18
+  sources:
+  - logs/raw.log:108155
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-8
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A única movimentação que se pode perceber daqui está distante, a oeste, e vem
+    do mercado. Esse local em específico é na verdade bastante calmo, com algumas
+    casas modestas seguindo a avenida e a brisa que vem do lago. A avenida segue
+    para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Aerith caminha pelas ruas de Esgaroth, vendendo flores.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-7
+    s: room:esgaroth.avenida-perimetral-leste-9
+  visits: 31
+  sources:
+  - logs/raw.log:108242
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-9
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Alguém mais abastado pode se sentir deslocado nessa região. Pessoas
+    empobrecidas moram aqui, em casas simples, feitas com madeiras de tipos
+    diversos. Algumas são ainda tintadas em padrões coloridos, mas nada aqui
+    parece ter ordem ou plano. A avenida prossegue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Um homem comum anda por aqui, trocando olhares com alguma moça...
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-8
+    s: room:esgaroth.avenida-perimetral-leste-10
+  visits: 11
+  sources:
+  - logs/raw.log:108277
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-10
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Essa é a parte pobre de Esgaroth. A oeste uma lojinha de instrumentos
+    musicais chama a atenção. O Lago Comprido fica a leste, e é tão largo que
+    a margem oposta dele é apenas algo pequeno próximo ao horizonte. A avenida
+    segue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  - w
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-9
+    s: room:esgaroth.avenida-perimetral-leste-11
+  visits: 11
+  sources:
+  - logs/raw.log:108300
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-11
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui, além de todas as casas simples que ocupam quase toda a visão, pode-se
+    ver uma construção maior distante a sudoeste. Um arco a oeste com a uma placa
+    onde se lê "Mercado de Peixes" leva você a uma escadaria, e traz um cheiro
+    forte e inconfundível de peixe fresco. O lago a leste está calmo, e a avenida
+    segue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  - w
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-10
+    s: room:esgaroth.avenida-perimetral-leste-12
+  visits: 29
+  sources:
+  - logs/raw.log:108334
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-12
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Daqui se pode observar uma praça distante ao sul. As casas simples a oeste
+    ainda são predominantes, mas além delas se observa claramente uma construção
+    grande, sem nada especialmente atrativo mas ainda assim altiva. A avenida
+    oriental segue no sentido norte-sul.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-11
+    s: room:esgaroth.avenida-perimetral-leste-13
+  visits: 11
+  sources:
+  - logs/raw.log:108377
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-leste-13
+  title: Avenida Perimetral Leste
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Uma praça ao sul marca a extremidade do segmento oriental da Perimetral. Além
+    de algumas casas simples, a oeste se observa uma imponente construção, e a
+    avenida prossegue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  mobs:
+  - Dantalion, um estrangeiro, caminha pelas ruas da cidade.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-12
+    s: room:esgaroth.praca-montanha-solitaria
+  visits: 35
+  sources:
+  - logs/raw.log:108407
+  confidence: confirmed
+- id: room:esgaroth.praca-montanha-solitaria
+  title: Praça Montanha Solitária
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esse é o canto sudeste de Esgaroth, uma praça simples mas bem cuidada. Daqui,
+    a Avenida Perimetral segue para o norte e para o oeste. Ao norte a avenida vai
+    até onde a vista alcança, e predominam casas humildes. A oeste ela não é tão
+    grande e só o que se vê são prédios imponentes. Há um poste aqui, indicando
+    as direções e lugares para os viajantes.
+  exits:
+  - n
+  - w
+  mobs:
+  - Dantalion, um estrangeiro, caminha pelas ruas da cidade.
+  objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
+  - Dois bancos de madeira foram colocados aqui.
+  - Uma bomba d'água está aqui, pronta para puxar água do lago.
+  links:
+    n: room:esgaroth.avenida-perimetral-leste-13
+    w: room:esgaroth.avenida-perimetral-sul
+  visits: 11
+  sources:
+  - logs/raw.log:108441
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-sul
+  title: Avenida Perimetral Sul
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A Avenida Perimetral Sul se estende entre leste e oeste, mas o que chama sua
+    atenção é um prédio austero ao norte: é o Quartel da cidade. É grande, porém
+    simples e de cores sóbrias. Há grades reluzentes de ferro em algumas janelas,
+    e nas paredes você nota cartazes pregados.
+  exits:
+  - n
+  - e
+  - w
+  links:
+    e: room:esgaroth.praca-montanha-solitaria
+    n: room:esgaroth.quartel-da-guarda
+    w: room:esgaroth.avenida-perimetral-sul-2
+  visits: 12
+  sources:
+  - logs/raw.log:108554
+  confidence: confirmed
+- id: room:esgaroth.quartel-da-guarda
+  title: Quartel da Guarda
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Na entrada do quartel, você não se sente exatamente confortável. Não é uma
+    construção tosca, mas para o padrão dos prédios públicos de Esgaroth é
+    bastante simples. Ao lado do batente da porta principal jaz um antigo e já
+    amarelado cartaz em pergaminho grosso que se destaca um pouco da parede e
+    chama sua atenção. Ao norte pode-se entrar na sala do capitão através de uma
+    porta, ou pode-se contornar essa sala seguindo a oeste. Ao sul segue a Avenida
+    Perimetral Sul.
+  exits:
+  - '!n'
+  - s
+  - w
+  objects:
+  - Um quadro com as leis de Esgaroth jaz aqui pendurado na parede.
+  links:
+    s: room:esgaroth.avenida-perimetral-sul
+    w: room:esgaroth.quartel-da-guarda-2
+  visits: 18
+  sources:
+  - logs/raw.log:108592
+  confidence: confirmed
+- id: room:esgaroth.quartel-da-guarda-2
+  title: Quartel da Guarda
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Dentro do prédio robusto do quartel não há nada de muito interesse a quem
+    está à procura das belezas dessa cidade. Ainda assim, não se pode dizer
+    que o prédio seja descuidado. Os soldados da cidade e os aprendizes
+    parecem passar um bom tempo aqui, seja conversando, seja partilhando
+    conhecimentos. Há um pequeno cartaz na parede que chama sua atenção.
+    Ao norte e a leste você segue por dentro do prédio; ao sul fica a Avenida
+    Meridional e a oeste fica a Avenida Transversal.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  objects:
+  - Um boneco de palha e madeira jaz aqui, indicando os pontos mortais.
+  links:
+    e: room:esgaroth.quartel-da-guarda
+    n: room:esgaroth.quartel-da-guarda-3
+  visits: 9
+  sources:
+  - logs/raw.log:108711
+  confidence: confirmed
+- id: room:esgaroth.quartel-da-guarda-3
+  title: Quartel da Guarda
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Construída com a mesma madeira que o assoalho da plataforma, o quartel não é
+    um edifício bonito, mas com certeza é resistente. Você pode sair do quartel
+    para a Avenida Transversal a oeste ou seguir para o sul, conhecendo o restante
+    do quartel. Há algumas armas antigas nas paredes e um clima de bastante ordem
+    por aqui. Parece ser o ambiente ideal para aprendizagem de lutas. Apenas um
+    cartaz colorido na parede destoa e chama sua atenção.
+  exits:
+  - s
+  - w
+  mobs:
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    w: room:esgaroth.avenida-transversal
+  visits: 7
+  sources:
+  - logs/raw.log:108771
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Entre a bela e altiva Casa Grande a oeste e o sóbrio Quartel da Guarda a leste,
+    a Avenida Transversal segue para o norte e para o sul. Há ainda uma passagem a
+    noroeste.
+  exits:
+  - n
+  - e
+  - s
+  - '!w'
+  - nw
+  mobs:
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    n: room:esgaroth.avenida-transversal-2
+  visits: 7
+  sources:
+  - logs/raw.log:108828
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-2
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    O grande hall do Salão da Cidade está logo a oeste. Outros grandes prédios são
+    claramente visíveis logo ao sul, dos dois lados da avenida. Seguindo-a para o
+    norte pode-se chegar ao mercado. Uma bem cuidada passagem está a sudoeste.
+  exits:
+  - n
+  - s
+  - w
+  - sw
+  links:
+    n: room:esgaroth.avenida-transversal-3
+    sw: room:esgaroth.viela-do-heroi
+    w: room:esgaroth.hall-de-entrada-2
+  visits: 14
+  sources:
+  - logs/raw.log:108858
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-3
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui o segmento sul da Avenida Transversal encontra o mercado, logo ao norte.
+    A oeste fica o pomposo Salão da Cidade, e ao sul a avenida prossegue,
+    margeada por grandes prédios públicos.
+  exits:
+  - n
+  - s
+  - w
+  mobs:
+  - Um gato vadio ronrona por aqui, farejando o mercado de peixes...
+  links:
+    n: room:esgaroth.alto-do-mercado
+    s: room:esgaroth.avenida-transversal-2
+  visits: 19
+  sources:
+  - logs/raw.log:108890
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Na esquina do mercado com a Avenida Transversal, porção sul, você pode
+    observar toda a movimentação do mercado, bem como a imponência dos
+    edifícios públicos que ficam ao sul. O mercado prossegue para o nordeste e
+    para o sudoeste, e ao o sul fica a Avenida Transversal, seção sul. Ao
+    leste você vê a porta de entrada de um lampadário.
+  exits:
+  - e
+  - s
+  - ne
+  - sw
+  mobs:
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
+  - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  links:
+    e: room:esgaroth.lampadario-luz-cegante
+    ne: room:esgaroth.alto-do-mercado-2
+    sw: room:esgaroth.alto-do-mercado-4
+  visits: 28
+  sources:
+  - logs/raw.log:108929
+  confidence: confirmed
+- id: room:esgaroth.lampadario-luz-cegante
+  title: 'Lampadário: Luz Cegante'
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Eis a Faísca Longa, o melhor lugar de Esgaroth para comprar luzes, um
+    negócio de família dos mais antigos e bem conceituados, embora um tanto
+    misterioso, por causa do segredo das receitas da família Luzumbra.
+    Uma miríade de velas estão empilhadas em caixas, com os mais variados
+    tamanhos, cores e materiais: sebos fedorentos como gambás, perfumados
+    como incenso; algumas velhas podem durar horas, outras até dias! A loja
+    parece muito completa, há lampiões, lanternas, candeias, tochas e archotes,
+    toda forma e receita de iluminação está presente! Dizem que algumas
+    destas luzes tem propriedades especiais e talvez seja bom respeitar o lugar.
+  exits:
+  - w
+  mobs:
+  - Farzel Luzumbra mexe um caldeirão com cera derretida e mistura algo à receita.
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
+  - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  objects:
+  - Um balcão coberto de cera e marcas de fogo separa os fundos da loja.
+  links:
+    w: room:esgaroth.alto-do-mercado
+  visits: 17
+  sources:
+  - logs/raw.log:108977
+  confidence: inferred
+- id: room:esgaroth.alto-do-mercado-2
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Olhando para a cerca de madeira que separa a rua da abertura para o lago, você
+    não se sente seguro de que ela realmente possa impedir alguém de cair lá para
+    baixo. A leste fica uma papelaria, e o mercado segue para o sudoeste e para o
+    norte. Descendo vai-se ao mercado do lago.
+  exits:
+  - n
+  - d
+  - sw
+  mobs:
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
+  - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  links:
+    n: room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    sw: room:esgaroth.alto-do-mercado
+  visits: 28
+  sources:
+  - logs/raw.log:109108
+  confidence: confirmed
+- id: room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  title: 'No Centro de Esgaroth: o Coração do Mercado'
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você está no coração de Esgaroth, no centro do mercado de Esgaroth! A Cidade
+    do Lago. O alto do mercado fica em torno de uma abertura circular, com uma
+    ligeira saliência em direção ao lago, de onde se pode observar em posição
+    privilegiada todo o local. É também uma esquina entre o mercado e uma rua
+    estreita vinda do leste, e que parece cheia de entradas de lugares e lojas,
+    como tudo mais por aqui. Há um poste aqui, indicando as direções e lugares
+    para os viajantes.
+  exits:
+  - n
+  - e
+  - s
+  mobs:
+  - Asilë, a aprendiz de espadas, está em pé aqui.
+  - Brandivaus, o capitão da guarda, está atento ao movimento.
+  objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
+  - Dois bancos de madeira foram colocados aqui.
+  - Uma bomba d'água está aqui, pronta para puxar água do lago.
+  links:
+    e: room:esgaroth.rua-oposta
+    n: room:esgaroth.alto-do-mercado-3
+  visits: 25
+  sources:
+  - logs/raw.log:109144
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-3
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Em frente aos correios - a leste daqui - predominam pessoas portando papéis e
+    outros pacotes pequenos, ao invés de mercadorias de todos os tipos, mais comum
+    no mercado. Escadas a oeste descem até o Mercado Central. O mercado prossegue
+    para o sul e para o noroeste.
+  exits:
+  - s
+  - d
+  - nw
+  mobs:
+  - Uma moça de taberna cruza seu caminho, com olhos inteligentes e rápidos.
+  links:
+    d: room:esgaroth.no-lado-leste-do-mercado-central
+    nw: room:esgaroth.alto-do-mercado-5
+    s: room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+  visits: 25
+  sources:
+  - logs/raw.log:109301
+  confidence: confirmed
+- id: room:esgaroth.no-lado-leste-do-mercado-central
+  title: No Lado Leste do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Efetivamente é curioso que este lugar consiga acomodar as cargas, todos esses
+    ambulantes e ainda os fregueses! É tanta gente caminhando por aqui em dias de
+    maior movimento que os esbarrões são tomados como coisa corriqueira, bem como
+    o falatório sedutor dos mercadores extremamente habilidosos em propagar suas
+    mercadorias, e o essencial: sempre sair lucrando no preço da barganha! Pelo
+    jeito os mercadores são tão diversificados entre si quanto os fregueses e
+    caminham por aqui de acordo com seu alvedrio. Uma precária escadinha parece
+    levar ao alto do mercado.
+  exits:
+  - s
+  - u
+  - d
+  - nw
+  mobs:
+  - Um jovem mago, estudante dos mistérios, passa pela cidade.
+  objects:
+  - Um monte de bosta foi feito aqui por algum cavalo de carga...
+  links:
+    s: room:esgaroth.no-ancoradouro-abarrotado
+    u: room:esgaroth.alto-do-mercado-3
+  visits: 20
+  sources:
+  - logs/raw.log:109336
+  confidence: confirmed
+- id: room:esgaroth.no-ancoradouro-abarrotado
+  title: No Ancoradouro Abarrotado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ai, assim é difícil até achar lugar que dê pé pra se pisar! Será que esses
+    barquinhos não podem arranjar carregadores mais velozes? Não bastassem as
+    cargas que chegam, há também as pequenas mercadorias de compradores, que
+    preferem sair da cidade de barco, a fim de fugir do perigo de algum eventual
+    ladrão na estrada. E para completar isso, há sempre ainda algum mercador
+    ambulante que resolve estender seus produtos pelo chão.
+  exits:
+  - n
+  - s
+  mobs:
+  - Alastor, o merceeiro mercador, está aqui para trocar itens por comida.
+  - Lainever, filho de Lairemel, está aqui vigiando a movimentação das ruas.
+  objects:
+  - Uma pilha de barris de maçãs está aqui, amontoada, e prestes a sair rolando.
+  links:
+    n: room:esgaroth.no-lado-leste-do-mercado-central
+    s: room:esgaroth.no-ancoradouro-vago
+  visits: 18
+  sources:
+  - logs/raw.log:109400
+  confidence: confirmed
+- id: room:esgaroth.no-ancoradouro-vago
+  title: No Ancoradouro Vago
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Um raro espaço vago entre as rampas do mercado se encontra aqui, disponível
+    para agregar o próximo barco a chegar, e após isso sendo rapidamente liberado
+    para que não haja problemas com entrechoque de embarcações no pequeno círculo
+    de água no centro do mercado. Não é de se espantar que alguns comerciantes
+    muito espertos, se aproveitando disso, prefiram abordar as pessoas nesse
+    trecho em que há mais espaço para exibir seus produtos. Uma precária escadinha
+    parece levar ao alto do Mercado...
+  exits:
+  - n
+  - u
+  - sw
+  objects:
+  - Um carrinho de mão foi estacionado aqui, para cargas leves.
+  links:
+    n: room:esgaroth.no-ancoradouro-abarrotado
+    sw: room:esgaroth.na-entrada-do-caminho-obscuro
+    u: room:esgaroth.alto-do-mercado-2
+  visits: 15
+  sources:
+  - logs/raw.log:109506
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-4
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Defronte o edifício do Salão da Cidade, importante ponto de Esgaroth que
+    acumula as funções de salão de festas, tribunal, câmara legislativa e mural de
+    anúncios, pode-se ter ampla vista de todo o mercado, que segue para o nordeste
+    e para o oeste. A entrada do salão fica ao sul.
+  exits:
+  - s
+  - w
+  - ne
+  links:
+    s: room:esgaroth.hall-de-entrada
+    w: room:esgaroth.alto-do-mercado-11
+  visits: 12
+  sources:
+  - logs/raw.log:109580
+  confidence: confirmed
+- id: room:esgaroth.hall-de-entrada
+  title: Hall de Entrada
+  region: region:esgaroth
+  safe: false
+  description: |-
+    As ruas ao norte e a leste parecem mundanas e sujas se comparadas com esta
+    pequena entrada para o prédio. E se desta parte de pouca importância para o
+    prédio já é possível notar grandes diferenças, então alguns pares de olhos
+    vão se encher de emoção ao seguir o caminho do sudeste. As saídas estão ao
+    norte e a leste.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  - sw
+  links:
+    e: room:esgaroth.avenida-transversal-3
+    n: room:esgaroth.alto-do-mercado-4
+  visits: 13
+  sources:
+  - logs/raw.log:109619
+  confidence: inferred
+- id: room:esgaroth.alto-do-mercado-5
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Desse canto do mercado você pode ver uma miríade de pequenas lojas ao oeste;
+    ao sul parece um pouco menos movimentado, e pelo norte chega uma grande
+    avenida com várias grandes lojas. O mercado continua ao noroeste e ao sudeste,
+    e ao norte se vai para o braço norte da Avenida Transversal.
+  exits:
+  - n
+  - nw
+  - se
+  mobs:
+  - Uma moça de taberna cruza seu caminho, com olhos inteligentes e rápidos.
+  links:
+    n: room:esgaroth.avenida-transversal-4
+    nw: room:esgaroth.alto-do-mercado-6
+    se: room:esgaroth.alto-do-mercado-3
+  visits: 13
+  sources:
+  - logs/raw.log:110217
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-4
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A imponente parede da Casa Bancária, feita de madeira nobre e escura, com
+    grandes tábuas largas e robustas como pedra, muito bem envernizada e polida,
+    com um grande busto masculino entalhado em alto relevo bem no centro, sem
+    janelas, encanta e assombra a leste, enquanto a oeste se vê o cardápio do dia
+    através da janela. A avenida segue para o norte e para o sul.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.avenida-transversal-5
+    s: room:esgaroth.alto-do-mercado-5
+  visits: 9
+  sources:
+  - logs/raw.log:110251
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-5
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A oeste, o aroma apetitoso e a entrada luxuosa do Caneca D'Ouro; a leste, a
+    entrada da Casa Bancária, verdadeira casa-fortaleza com uma porta sempre
+    fechada e pequena para a altivez da construção. Para o norte e para o sul, a
+    avenida se prolonga.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  links:
+    n: room:esgaroth.avenida-transversal-7
+    s: room:esgaroth.avenida-transversal-4
+  visits: 4
+  sources:
+  - logs/raw.log:110288
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-6
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    No coração da cidade, a madeira bastante gasta e já sem verniz do chão dá uma
+    idéia da quantidade de pessoas que passam por aqui. O mercado continua para o
+    sudeste e para o oeste, e para o norte há uma loja de armaduras.
+  exits:
+  - n
+  - w
+  - se
+  links:
+    n: room:esgaroth.no-emporio-de-armaduras-mao-de-ferro
+    se: room:esgaroth.alto-do-mercado-5
+  visits: 9
+  sources:
+  - logs/raw.log:110362
+  confidence: confirmed
+- id: room:esgaroth.no-emporio-de-armaduras-mao-de-ferro
+  title: No Empório de Armaduras Mão-de-Ferro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Encostado na parede leste, uma armadura completa que há muito já perdeu seu
+    brilho. Escudos estão por toda parte, e elmos ocupam a prateleira mais alta.
+    Ao sul chega-se ao mercado, e ao oeste uma porta dá acesso à loja de armas.
+  exits:
+  - s
+  - w
+  mobs:
+  - Feodor, filho de Tercevans, está aqui cuidando das armaduras.
+  - Lainever, filho de Lairemel, está aqui vigiando a movimentação das ruas.
+  links:
+    w: room:esgaroth.na-casa-de-armas-mao-de-ferro
+  visits: 6
+  sources:
+  - logs/raw.log:110401
+  confidence: inferred
+- id: room:esgaroth.na-casa-de-armas-mao-de-ferro
+  title: Na Casa de Armas Mão-de-Ferro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Espadas e machados, arcos e martelos ocupam toda a parede norte, pendurados ou
+    em prateleiras. Nada parece ser muito especial, contudo. Saindo ao sul, vai-se
+    para o mercado, e portas laterais levam para a loja de armaduras a leste, e
+    para o ferreiro a oeste.
+  exits:
+  - e
+  - s
+  - w
+  mobs:
+  - Disneck, filho de Tercevans, está aqui afiando uma espada.
+  - Um homem comum anda por aqui, trocando olhares com alguma moça...
+  links:
+    s: room:esgaroth.alto-do-mercado-7
+  visits: 5
+  sources:
+  - logs/raw.log:110465
+  confidence: inferred
+- id: room:esgaroth.alto-do-mercado-7
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Caminhando pela parte norte do mercado, têm-se uma bela vista dos prédios
+    públicos distantes ao sul. O mercado segue para o leste e para o sudoeste,
+    e ao norte fica uma pequena loja de armas.
+  exits:
+  - n
+  - e
+  - sw
+  links:
+    e: room:esgaroth.alto-do-mercado-6
+  visits: 5
+  sources:
+  - logs/raw.log:110517
+  confidence: confirmed
+- id: room:esgaroth.rua-oposta
+  title: Rua Oposta
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A oeste dessa rua fica o movimentadíssimo mercado de Esgaroth, com suas muitas
+    lojas - mesmo que a maior parte do comércio seja atacadista e ocorra fora
+    delas, no próprio lago sob o mercado, sobre barcos. Para leste, avista-se ao
+    longe a avenida oriental. Ao norte fica o correio e ao sul uma papelaria.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  mobs:
+  - Um homem comum anda por aqui, trocando olhares com alguma moça...
+  links:
+    e: room:esgaroth.rua-oposta-2
+    n: room:esgaroth.correio-do-lago
+  visits: 11
+  sources:
+  - logs/raw.log:110629
+  confidence: confirmed
+- id: room:esgaroth.correio-do-lago
+  title: Correio do Lago
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Um balcão de serviços postais fica no canto desse local, e há mesas para
+    se terminar de escrever as correspondências. Em uma parede ficam
+    instaladas as caixas postais, onde são colocadas as correspondências de
+    todos os habitantes de Esgaroth. Uma placa ao lado do balcão possui
+    instruções detalhadas sobre como enviar mensagens para outros jogadores, e
+    vale a pena ser lida.
+  exits:
+  - s
+  mobs:
+  - Um curioso passarinho azul caminha aqui.
+  - Rabelais, o agente dos correios, está ocupado separando cartas.
+  - Um homem comum anda por aqui, trocando olhares com alguma moça...
+  objects:
+  - Um amontoado de cartas está acomodado em armários de compartimentos quadrados...
+  - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
+  links:
+    s: room:esgaroth.rua-oposta
+  visits: 15
+  sources:
+  - logs/raw.log:110669
+  confidence: inferred
+- id: room:esgaroth.rua-oposta-2
+  title: Rua Oposta
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esse é o meio do caminho entre o mercado e a Perimetral Leste, percebe alguém
+    mais atento. Também é curioso reparar no contraste entre as dezenas de ruídos
+    que se somam e vêm do mercado a oeste com a serenidade do lago a leste. Uma
+    casa estranha chama sua atenção ao sul.
+  exits:
+  - e
+  - s
+  - w
+  links:
+    e: room:esgaroth.rua-oposta-3
+  visits: 7
+  sources:
+  - logs/raw.log:110770
+  confidence: confirmed
+- id: room:esgaroth.rua-oposta-3
+  title: Rua Oposta
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Essa rua é a ligação entre o mercado e a avenida oriental. Mas apesar do
+    coração da cidade ser o mercado, a impressão que se tem olhando tanto para os
+    casarões ao norte quanto para as humildes casas ao sul é que nenhum deles
+    parece ligar muito para isso. A rua segue para leste até a avenida e para
+    oeste, onde após vencer-se uma boa distância se chega ao mercado.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.avenida-perimetral-leste-7
+  visits: 19
+  sources:
+  - logs/raw.log:110818
+  confidence: confirmed
+- id: room:esgaroth.taverna-do-rei-sob-a-montanha
+  title: Taverna do Rei sob a Montanha
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Essa taverna é suja, apertada, e cheira mal. Não sem razão, ela é muito
+    mal freqüentada. Os tipos mais suspeitos podem ser vistos por aqui a todo
+    tempo. Algumas mesas toscas estão dispostas sem nenhuma ordem pelo local,
+    e atrás do balcão um sujeito mal encarado atende os fregueses. Como fica
+    na esquina entre as Perimetrais Norte e Leste, pode-se sair para ambas, ou
+    para a praça que marca o encontro delas, a nordeste. Um bom ponto para uma
+    taverna, certamente.
+  exits:
+  - n
+  - e
+  - ne
+  mobs:
+  - Dostolieve, o taverneiro, está aqui silenciosamente vendendo bebidas.
+  objects:
+  - Várias mesas e cadeiras estão espalhadas por aqui.
+  links:
+    e: room:esgaroth.avenida-perimetral-leste
+    n: room:esgaroth.avenida-perimetral-norte-7
+  visits: 23
+  sources:
+  - logs/raw.log:111070
+  confidence: inferred
+- id: room:esgaroth.acesso-ao-mercado-setentrional
+  title: Acesso ao Mercado Setentrional
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Um enorme arco de madeira, firmemente alicerçado e de perfeitos encaixes, está
+    aqui próximo da Avenida Perimetral Norte, marcando a entrada dos Mercados que
+    ficam sob a plataforma da cidade do Lago; a descida é larga, por isso é
+    possível vislumbrar algo do movimento no Lado Leste do Mercado Setentrional lá
+    embaixo...
+  exits:
+  - n
+  - d
+  links:
+    d: room:esgaroth.na-ponta-leste-do-mercado-setentrional
+    n: room:esgaroth.avenida-perimetral-norte-6
+  visits: 9
+  sources:
+  - logs/raw.log:111246
+  confidence: confirmed
+- id: room:esgaroth.avenida-perimetral-sul-2
+  title: Avenida Perimetral Sul
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A vista norte daqui é toda tomada pelo quartel. Ao sul, o lago. Longe a oeste
+    se vê uma esquina, e mais distante ainda ao leste fica uma praça. A avenida se
+    estende ao longo na direção do caminho feito pelo sol.
+  exits:
+  - n
+  - e
+  - w
+  mobs:
+  - Darchabel vistoria o movimento, e discretamente observa você...
+  links:
+    n: room:esgaroth.quartel-da-guarda-2
+  visits: 3
+  sources:
+  - logs/raw.log:111658
+  confidence: confirmed
+- id: room:esgaroth.viela-do-heroi
+  title: Viela do Herói
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A passagem que segue para oeste em direção a praça aqui bifurca-se ao redor de
+    uma estátua. Segue para nordeste e sudeste, até a Transversal. Ao norte está
+    o Salão da Cidade e ao sul fica a Casa Grande.
+  exits:
+  - w
+  - ne
+  - se
+  mobs:
+  - Lainever, filho de Lairemel, está aqui vigiando a movimentação das ruas.
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    ne: room:esgaroth.avenida-transversal-2
+    w: room:esgaroth.viela-do-heroi-2
+  visits: 4
+  sources:
+  - logs/raw.log:111817
+  confidence: confirmed
+- id: room:esgaroth.viela-do-heroi-2
+  title: Viela do Herói
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A oeste pode-se observar uma grande e suntuosa praça, enquanto a passagem
+    segue para leste por entre a Casa Grande e o Salão da Cidade até chegar na
+    Avenida Transversal.
+  exits:
+  - e
+  - w
+  mobs:
+  - Mirenya, filha de Garan, caminha carregando um saco de roupa suja.
+  links:
+    e: room:esgaroth.viela-do-heroi
+    w: room:esgaroth.praca-da-flechada-precisa
+  visits: 6
+  sources:
+  - logs/raw.log:111862
+  confidence: confirmed
+- id: room:esgaroth.praca-da-flechada-precisa
+  title: Praça da Flechada Precisa
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esta praça é muito maior do que se poderia supor pelas passagens que dão
+    acesso até ela - e bela. O tratamento especial que ela recebeu vem desde a
+    construção da plataforma, atestado pela disposição circular das tábuas do
+    assoalho aqui. Bancos ao redor de uma fonte a tornam útil. Os prédios da
+    Biblioteca a sudoeste, do Salão da Cidade a nordeste e da Casa Grande a
+    sudeste completam a paisagem. Todos eles possuem varandas sobre a praça.
+    Há um poste aqui, indicando as direções e lugares para os viajantes.
+  exits:
+  - e
+  - s
+  - ne
+  - nw
+  - se
+  - sw
+  mobs:
+  - Hannendel, a velha doceira, está aqui com uma cesta cheia de guloseimas!
+  objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
+  - Dois bancos de madeira foram colocados aqui.
+  - Uma bomba d'água está aqui, pronta para puxar água do lago.
+  links:
+    e: room:esgaroth.viela-do-heroi-2
+    se: room:esgaroth.a-entrada-da-casa-grande
+    sw: room:esgaroth.loja-alfarrabio-novo
+  visits: 5
+  sources:
+  - logs/raw.log:111942
+  confidence: confirmed
+- id: room:esgaroth.loja-alfarrabio-novo
+  title: Loja - Alfarrábio Novo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Efetivamente este prédio possui um interior tão impressionante quanto o
+    seu exterior! Apesar das pilhas de papéis amontoadas pelo cômodo, o lugar
+    ainda não perde o encanto; seus olhos acompanham as paredes nas quais
+    prateleiras abarrotadas acumulam toda sorte de tinteiros, folhas e
+    volumes. Pelas mesas polidas vêem-se empilhadas várias encadernações, ao
+    passo que através da porta a nordeste ainda é possível vislumbrar o vulto
+    escuro de um imenso dragão na fonte da praça. Uma porta de vidros
+    coloridos ao sudoeste dá acesso à Biblioteca.
+  exits:
+  - ne
+  - sw
+  mobs:
+  - Ilde, a vendedora, está atrás do balcão te encarando com seu ar professoral.
+  links:
+    ne: room:esgaroth.praca-da-flechada-precisa
+  visits: 2
+  sources:
+  - logs/raw.log:112217
+  confidence: inferred
+- id: room:esgaroth.a-entrada-da-casa-grande
+  title: A Entrada da Casa Grande
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Pronta para satisfazer as expectativas até dos mais exigentes, a Casa Grande
+    mostra logo em sua entrada toda a riqueza ostentada nos seus vários cômodos.
+    As paredes foram ornadas por seis tapeçarias que louvam os momentos mais
+    importantes da história de Esgaroth, enquanto nas colunas de pedra há nichos
+    para lampiões com detalhes em prata. Pela porta de entrada é possível ver o
+    vulto negro do dragão amedrontando os transeuntes na praça, ao passo que uma
+    porta de duas folhas parece convidativa ao sul.
+  exits:
+  - s
+  - nw
+  mobs:
+  - Um homem espera falar com o mestre da cidade, e nem nota sua existência.
+  - Florbela está aqui pensando no seu próximo vestido.
+  - Belodon está por aqui pensando em aventuras.
+  objects:
+  - Uma poltrona vermelha parece tão confortável que te convida a cochilar...
+  - Um cabideiro de madeira, para chapéus e casacos, foi colocado aqui.
+  links:
+    nw: room:esgaroth.praca-da-flechada-precisa
+    s: room:esgaroth.corredor-terreo
+  visits: 4
+  sources:
+  - logs/raw.log:112356
+  confidence: inferred
+- id: room:esgaroth.corredor-terreo
+  title: Corredor Térreo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    São admiráveis o capricho e a riqueza dos detalhes nesta construção! Em todas
+    as paredes deste corredor foram colocados quadros dos antigos senhores dessa
+    cidade, e as molduras antigas banhadas em ouro conservam ainda o seu brilho
+    original. O corredor segue iluminado com opções de portas adiante, enquanto
+    ao sul a entrada do Salão de Banquetes lhe prenuncia talvez alguma comemoração
+    futura.
+  exits:
+  - n
+  - e
+  - s
+  mobs:
+  - Belodon está por aqui pensando em aventuras.
+  - Mevildon, um dos mestres da cidade, está aqui pensando em riquezas.
+  - Bertilde, a serva, está aqui limpando tudo com cuidado.
+  - Florbela está aqui pensando no seu próximo vestido.
+  links:
+    e: room:esgaroth.seguindo-pelo-corredor
+    n: room:esgaroth.a-entrada-da-casa-grande
+  visits: 3
+  sources:
+  - logs/raw.log:112510
+  confidence: inferred
+- id: room:esgaroth.seguindo-pelo-corredor
+  title: Seguindo pelo Corredor...
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A boa iluminação e conforto tornam um exame completo deste prédio tentador.
+    Seguindo pelo leste é possível discernir os contornos de uma escada, ao passo
+    que as luzes do gabinete de despachos escapam pela porta aberta ao norte e o
+    som de vozes ecoa vindo do sul.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  links:
+    s: room:esgaroth.copa
+  visits: 2
+  sources:
+  - logs/raw.log:112597
+  confidence: inferred
+- id: room:esgaroth.copa
+  title: Copa
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Com portas ao norte, a leste e a oeste, este cômodo liga as dependências dos
+    serviçais e as dos senhores: por isso é fácil adivinhar que o calor do leste
+    esconde a agitação da cozinha. As paredes aqui foram cobertas de prateleiras
+    repletas de pratos de porcelana reservados aos banquetes; uma cristaleira
+    deixa entrever por suas portas semi-abertas alguns objetos guardados.
+  exits:
+  - n
+  - e
+  - w
+  objects:
+  - Uma bela cristaleira de madeira foi colocada aqui para guardar louças.
+  links:
+    e: room:esgaroth.cozinha
+    w: room:esgaroth.salao-de-banquetes
+  visits: 3
+  sources:
+  - logs/raw.log:112612
+  confidence: inferred
+- id: room:esgaroth.cozinha
+  title: Cozinha
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ao abrir a porta um golpe de ar quente envolve você e chama logo sua
+    atenção para um enorme forno de tijolinhos vermelhos que espalha calor e
+    ilumina boa parte do lugar! O ar daqui parece ter sabor com tantas comidas
+    sendo preparadas, e há ainda uma coleção de temperos que foi
+    cuidadosamente organizada em armários com portas de vidro; alguns pães
+    ainda quentes após sair do forno esfriam sobre uma longa mesa de madeira
+    riscada do uso e a luz do forno reflete-se numa pilha de panelas e
+    caldeirões.
+  exits:
+  - w
+  objects:
+  - Um cabideiro de ferro jaz aqui, com caçarolas penduradas em seus ganchos.
+  - Uma tina de madeira, cheia de água, jaz aqui para os serviços de cozinha.
+  - Alguns barris de manteiga foram estocados no canto da cozinha.
+  links:
+    w: room:esgaroth.copa
+  visits: 2
+  sources:
+  - logs/raw.log:112663
+  confidence: inferred
+- id: room:esgaroth.salao-de-banquetes
+  title: Salão de Banquetes
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Fascinante... Um lustre magnífico pende do teto oferecendo a iluminação
+    principal, porém outras muitas velas coloridas luzem dentro de caixinhas de
+    cristal ao longo do salão; elas foram todas cuidadosamente colocadas sobre as
+    mesas ou próximas das janelas. Aliás, as janelas são um espetáculo à parte,
+    com longos arcos e vitrais azuis com vista para as ruas; elas foram todas
+    encimadas por cortinas de veludo azul e refletem a luz do lustre como se
+    fossem espelhos.
+  exits:
+  - n
+  - e
+  mobs:
+  - Bertilde, a serva, está aqui limpando tudo com cuidado.
+  objects:
+  - Uma grande mesa redonda ocupa o centro da sala para os banquetes...
+  - Uma dúzia de cadeiras com espaldar alto foi colocada em torno da mesa.
+  links:
+    n: room:esgaroth.corredor-terreo
+  visits: 2
+  sources:
+  - logs/raw.log:112726
+  confidence: inferred
+- id: room:esgaroth.na-ponta-leste-do-mercado-setentrional
+  title: Na Ponta Leste do Mercado Setentrional
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui é a ponta leste do Mercado Setentrional. O movimento é bem constante
+    com muitos mercadores e compradores, especialmente de Valle e Erebor! Se
+    tiver ouro no bolso é melhor tomar cuidado, pois certamente algum mercador
+    daqui conseguirá lhe fazer comprar algo bem caro; os produtos dessa parte
+    dos mercados são mais refinados, e as rampas ficam lotadas de comerciantes
+    da própria cidade que vêm se abastecer aqui.
+  exits:
+  - w
+  - u
+  mobs:
+  - Thordim, o anão mercador de jóias, está aqui com uma cara irritada.
+  links:
+    u: room:esgaroth.acesso-ao-mercado-setentrional
+    w: room:esgaroth.no-mercado-setentrional
+  visits: 5
+  sources:
+  - logs/raw.log:115683
+  confidence: confirmed
+- id: room:esgaroth.no-mercado-setentrional
+  title: No Mercado Setentrional
+  region: region:esgaroth
+  safe: false
+  description: |-
+    As rampas do Mercado Setentrional, durante o dia, chegam talvez a tremer um
+    pouco com o rodar constante de carrinhos de mercadorias passando por aqui,
+    arrastados por homens como se fossem genuínas lojas ambulantes! Não vai ser
+    preciso procurar para achar um, basta olhar para o lado: certamente haverá um
+    bem aí! E cuidado, pois se você leva algum ouro no bolso ele não deverá durar
+    muito: os mercadores daqui são famosos por sua persuasão!
+  exits:
+  - e
+  - w
+  objects:
+  - A brisa do lago contrasta com a movimentação da vila...
+  links:
+    e: room:esgaroth.na-ponta-leste-do-mercado-setentrional
+    w: room:esgaroth.no-meio-do-mercado-setentrional
+  visits: 5
+  sources:
+  - logs/raw.log:115747
+  confidence: confirmed
+- id: room:esgaroth.no-meio-do-mercado-setentrional
+  title: No Meio do Mercado Setentrional
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você parece estar no meio do Mercado Setentrional. As rampas seguem para leste
+    e oeste e em suas extremidades pode-se ver distintamente os acessos ao piso
+    superior da cidade. A agitação aqui costuma ser grande, atraindo sempre muita
+    gente em busca principalmente de objetos mais caros e refinados! Aqui as rampas
+    se entrecruzam, e um caminho intermediário liga este lugar ao Mercado Central
+    mais ao sul.
+  exits:
+  - e
+  - s
+  - w
+  mobs:
+  - Moriana está aqui, com um carrinho coberto de mercadorias caras.
+  links:
+    e: room:esgaroth.no-mercado-setentrional
+    s: room:esgaroth.ao-sul-do-mercado-setentrional
+  visits: 5
+  sources:
+  - logs/raw.log:115779
+  confidence: confirmed
+- id: room:esgaroth.ao-sul-do-mercado-setentrional
+  title: Ao Sul do Mercado Setentrional
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A rampa menor que interliga o Mercado Setentrional ao Central parece gasta.
+    E as ripas, entre as colunas, estão constantemente cobertas com tapeçarias
+    em tons berrantes onde os mercadores expõem bagatelas. Aqui muitos aproveitam
+    para perambular, pois podem seduzir os fregueses que vêm tanto do Mercado ao
+    norte quanto do Central ao sul; a julgar pela placa que a prefeitura pregou
+    na coluna parece que não é incomum esse transito desregulado de mercadores
+    gerar brigas. Uma placa de madeira foi pregada na viga, pelos mestres
+    da cidade!
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.no-meio-do-mercado-setentrional
+    s: room:esgaroth.na-rampa-intermediaria
+  visits: 5
+  sources:
+  - logs/raw.log:115844
+  confidence: confirmed
+- id: room:esgaroth.na-rampa-intermediaria
+  title: Na Rampa Intermediária
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esta é a rampa intermediária que liga os Mercados Setentrional e Central.
+    Ela é sempre movimentada e, não bastasse isto, há sempre os ambulantes que
+    insistem em atravancar as rampas que, se não chegam a ser estreitas, também
+    não são largas, oras! É melhor tomar cuidado ou vai acabar esbarrando em
+    algum deles e quebrando algo.
+  exits:
+  - n
+  - s
+  links:
+    n: room:esgaroth.ao-sul-do-mercado-setentrional
+    s: room:esgaroth.no-meio-do-mercado-central
+  visits: 5
+  sources:
+  - logs/raw.log:115954
+  confidence: confirmed
+- id: room:esgaroth.no-meio-do-mercado-central
+  title: No Meio do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Hum, cuidado pra que não lhe pisem os pés! Aqui é o ponto principal do Mercado
+    Central, e diante de você se abre um círculo de rampas em redor das águas.
+    Estes são os caminhos mais vivos da cidade. Há nas vigas avisos toscos que
+    falam de caravanas e cargas com mil destinos. Há sempre gente diferente vinda
+    das terras em redor, afora os mercadores ambulantes daqui. Cuidado para não
+    atrapalhar os negócios de alguém! Uma placa de madeira jaz pregada aqui.
+    A rampa parece bem próxima da água, por uma prancha inclinada parece possível
+    descer ao nível da água aqui, mas tome cuidado para não se machucar no
+    gancho e nas roldanas usados para puxar mercadorias lá de baixo!
+  exits:
+  - n
+  - w
+  - d
+  - se
+  mobs:
+  - Barto, o carregador, passa por aqui levando um saco nas costas.
+  objects:
+  - Uma pilha de barris de maçãs está aqui, amontoada, e prestes a sair rolando.
+  links:
+    n: room:esgaroth.na-rampa-intermediaria
+    w: room:esgaroth.no-lado-oeste-do-mercado-central
+  visits: 5
+  sources:
+  - logs/raw.log:115980
+  confidence: confirmed
+- id: room:esgaroth.no-lado-oeste-do-mercado-central
+  title: No Lado Oeste do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A movimentação do Mercado Central não se resume só a mercadores, mas também a
+    pequenos barquinhos que saem e entram na cidade por esse pequeno ancoradouro
+    circular, em torno do qual se forma o Mercado Central. As rampas sobre a água
+    aqui não possuem as ripas entre as vigas, usadas de cercas nas outras partes,
+    de modo que os barquinhos que saem e chegam podem se movimentar livremente,
+    bem como os carregadores, que são muitos!
+  exits:
+  - e
+  - sw
+  objects:
+  - Uma saca de sementes de papoula jaz aqui, aguardando seu dono...
+  links:
+    e: room:esgaroth.no-meio-do-mercado-central
+    sw: room:esgaroth.no-ancoradouro-de-mercadorias-frageis
+  visits: 5
+  sources:
+  - logs/raw.log:116227
+  confidence: confirmed
+- id: room:esgaroth.no-ancoradouro-de-mercadorias-frageis
+  title: No Ancoradouro de Mercadorias Frágeis
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ei, cuidado ai! Aparentemente dentro dos caixotes deixados à mercê da sorte
+    aqui, entre palha e papel, há delicadas peças de cerâmica, vidro e porcelana
+    vindas sabe-se lá donde. Nestas rampas de madeira, sustentadas entre as vigas,
+    há sempre mercadorias e pessoas apressadas, e ninguém parece muito receoso de
+    tropeçar ou se desequilibrar e cair na água, o que é possível, já que por causa
+    dos desembarques aqui não há qualquer cerca, por mais tosca que seja!
+  exits:
+  - ne
+  - sw
+  mobs:
+  - O curandeiro alucinado está aqui procurando doenças e maldições em você!
+  objects:
+  - Um belo carregamento de cristais jaz aqui, cuidadosamente envolto em palha.
+  links:
+    ne: room:esgaroth.no-lado-oeste-do-mercado-central
+    sw: room:esgaroth.no-lado-oeste-do-mercado-central-2
+  visits: 5
+  sources:
+  - logs/raw.log:116275
+  confidence: confirmed
+- id: room:esgaroth.no-lado-oeste-do-mercado-central-2
+  title: No Lado Oeste do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Imagine só como deve ser esse mercado em dias de maior movimento! Decerto
+    caminhar nessas rampas é quase uma aventura, pois não há cercas aqui para
+    proteger de uma queda na água. Bem no canto uma estreita uma escada de madeira
+    leva à plataforma superior da cidade, não muito larga, de madeira grossa
+    e escura: lá em cima parece ser bastante interessante de se explorar!
+  exits:
+  - s
+  - w
+  - u
+  - ne
+  objects:
+  - Uma grande saca de cevada aguarda embarcar aqui, e espalha um perfume doce.
+  links:
+    ne: room:esgaroth.no-ancoradouro-de-mercadorias-frageis
+    s: room:esgaroth.em-frente-da-estrebaria
+    w: room:esgaroth.inicio-da-rua-dos-caramujos
+  visits: 8
+  sources:
+  - logs/raw.log:116334
+  confidence: confirmed
+- id: room:esgaroth.em-frente-da-estrebaria
+  title: Em Frente da Estrebaria
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Opa! Você ouve sons estranhos vindos do interior da estrebaria, cujo acesso
+    fica por esta entrada a oeste, uma arcada de madeira, bem caprichada com uma
+    bela mão de tinta clara, definitivamente chama atenção de quem passa aqui nas
+    rampas do Mercado Central. Pode ser um bom passatempo desviar os olhos, e
+    admirar de pertinho, o outro lado do mercado com rampas iguais a esta...
+  exits:
+  - n
+  - s
+  - w
+  links:
+    n: room:esgaroth.no-lado-oeste-do-mercado-central-2
+    s: room:esgaroth.no-agitado-mercado-central
+  visits: 6
+  sources:
+  - logs/raw.log:116394
+  confidence: inferred
+- id: room:esgaroth.no-agitado-mercado-central
+  title: No Agitado Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A água se agita num barulho suave, batendo entre as vigas embaixo das tábuas
+    sob seus pés; as rampas do Mercado Central formam um círculo em redor da água
+    do lago, um círculo em aberto ao sul pelo qual acontece a entrada e a saída de
+    embarcações. Uau! Aqui parece ser o lugar no qual se encontra todo o tipo de
+    mercador, e isso sem necessidade de lojas, mas simplesmente numa espécie de
+    comércio informal dos mais agitados e intrigantes! É impossível saber o que se
+    comprará. Uma escadinha, um pouco precária, leva ao Alto do Mercado...
+  exits:
+  - n
+  - w
+  - u
+  - se
+  objects:
+  - Uma pilha de farelos jaz sobre a rampa, deixada por algum carregamento...
+  - Uma carga de gengibre foi descarregada aqui e espalha um perfume salutar...
+  links:
+    n: room:esgaroth.em-frente-da-estrebaria
+    u: room:esgaroth.alto-do-mercado-8
+    w: room:esgaroth.junto-do-mercado-central
+  visits: 8
+  sources:
+  - logs/raw.log:116435
+  confidence: confirmed
+- id: room:esgaroth.junto-do-mercado-central
+  title: Junto do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui, tão pertinho do Mercado Central, a madeira da rampa é mais larga:
+    afinal, a movimentação nos horários diurnos certamente é das grandes! Um
+    pouco a leste não há cercas nas rampas para facilitar o entra e sai
+    contínuo dos barcos, e mesmo aqui já há pequenas cargas atravancando a
+    estreita rampa. Quem sabe o que pode haver entre todas as mercadorias quem
+    passam por esse trecho...
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.no-agitado-mercado-central
+    w: room:esgaroth.na-rua-das-pulgas-ao-sul-da-estrebaria
+  visits: 7
+  sources:
+  - logs/raw.log:116491
+  confidence: confirmed
+- id: room:esgaroth.na-rua-das-pulgas-ao-sul-da-estrebaria
+  title: 'Na Rua das Pulgas: Ao Sul da Estrebaria'
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A rampa segue margeada ao norte pela parede da Estrebaria e ao sul pela
+    cerca. Um pouco a oeste ainda é possível ver a entrada de uma ponte. A rua
+    das pulgas é estreita e tão curta que nem poderia ser chamada de rua, mas
+    é repleta de má fama e tão mal iluminada que levanta fortes suspeitas.
+    Por vezes, um vulto ladino passa por você, enquanto uma mulher sedutora
+    ergue olhos brilhantes de um cantinho escuro à espera de alguém... Cheiro
+    de esterco, urina e peixe enche o ar, misturado à fritura e bebida.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.junto-do-mercado-central
+    w: room:esgaroth.na-mal-afamada-rua-das-pulgas
+  visits: 7
+  sources:
+  - logs/raw.log:116531
+  confidence: confirmed
+- id: room:esgaroth.na-mal-afamada-rua-das-pulgas
+  title: Na Mal Afamada Rua das Pulgas
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Seguindo pelas rampas sob a plataforma de Esgaroth, você nota que veio
+    parar na pior parte da zona portuária, onde os barcos mais pobres atracam
+    e os viajantes menos honestos vêm buscar algo mais que comida. Vez ou
+    outra, um vulto furtivo passa por você e seria bom checar seus bolsos!
+    A rampa é estreita e está coberta de excrementos, restos de peixe e
+    resquícios de lama trazidos nas rodas das carroças. O ar cheira peixe
+    frito, bosta e álcool. Cuidado, as estalagens dessas bandas vendem ensopados
+    de ostras com carne de rato e bebidas piores que urina de cavalo...
+  exits:
+  - e
+  - w
+  mobs:
+  - Uma bela mulher encosta-se à parede, discretamente, esperando alguém...
+  links:
+    e: room:esgaroth.na-rua-das-pulgas-ao-sul-da-estrebaria
+    w: room:esgaroth.na-rua-das-pulgas-proximo-a-ponte
+  visits: 8
+  sources:
+  - logs/raw.log:116576
+  confidence: confirmed
+- id: room:esgaroth.na-rua-das-pulgas-proximo-a-ponte
+  title: 'Na Rua das Pulgas: Próximo à Ponte...'
+  region: region:esgaroth
+  safe: false
+  description: |-
+    As tábuas de madeira da rampa aqui se fundem com os alicerces da ponte
+    inferior, destinada à passagem de cargas. Estreita e suja de excrementos,
+    a rampa não tem lampiões que a iluminem bem, sendo escura, fedorenta
+    e muito suspeita em todos os horários do dia. Ela contorna a estrebaria,
+    e o brilho da água jaz bem ao lado, dizem que ladrões roubam e matam
+    suas vítimas, empurrando-as na água. Dizem que maus negócios são feitos
+    aqui... Há um cheiro de pobreza, esperteza e muito mais no ar...
+  exits:
+  - e
+  - nw
+  mobs:
+  - Serge está aqui, com seu olhar maldoso, esperando roubar alguém...
+  links:
+    e: room:esgaroth.na-mal-afamada-rua-das-pulgas
+    nw: room:esgaroth.extremidade-sudeste-da-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:116638
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-8
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Essa esquina é um dos principais pontos de entrada para o mercado, já que a
+    rua que chega a oeste daqui vai direto até a ponte. O próprio mercado, nesse
+    ponto, segue para norte e sudeste. Uma escada a leste desce para o Mercado
+    Central.
+  exits:
+  - n
+  - w
+  - d
+  - se
+  objects:
+  - Uma poça de água suja se acumula, chapinhando quando passam nela...
+  links:
+    n: room:esgaroth.alto-do-mercado-9
+  visits: 2
+  sources:
+  - logs/raw.log:116757
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-9
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Esse parece ser o recanto mais alegre do mercado, com a animação da taverna a
+    oeste, sempre aberta. Mas é bom não se exceder, no extremo oposto do mercado
+    está um homem da lei carrancudo, sempre de olho nesse lugar. O mercado continua
+    para o norte e para o sul.
+  exits:
+  - n
+  - s
+  - w
+  links:
+    n: room:esgaroth.alto-do-mercado-10
+  visits: 2
+  sources:
+  - logs/raw.log:116788
+  confidence: confirmed
+- id: room:esgaroth.alto-do-mercado-10
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Daqui pode-se ver o imenso prédio da estalagem ao sudoeste, que aparentemente é
+    o maior daqui, e nota-se também que a parte mais visitada do mercado fica ao
+    nordeste, onde a concentração de lojas parece ser maior. Para o oeste, vai-se
+    por uma rua que chega direto a ponte que liga Esgaroth à margem do lago. Para o
+    sul e para o nordeste segue o mercado. Para baixo pode-se descer ao mercado no
+    nível do lago.
+  exits:
+  - s
+  - w
+  - d
+  - ne
+  links:
+    w: room:esgaroth.rua-de-cima
+  visits: 2
+  sources:
+  - logs/raw.log:116833
+  confidence: confirmed
+- id: room:esgaroth.rua-de-cima
+  title: Rua de Cima
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Ao leste vê-se claramente o mercado e suas várias lojas, ao sul fica o alto
+    prédio da estalagem e a quadra ao norte é ocupada por galpões. A rua se estende
+    ao leste e ao oeste.
+  exits:
+  - e
+  - w
+  links:
+    w: room:esgaroth.rua-de-cima-2
+  visits: 2
+  sources:
+  - logs/raw.log:116870
+  confidence: confirmed
+- id: room:esgaroth.rua-de-cima-2
+  title: Rua de Cima
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A visão ao sul é dominada por um edifício muito alto, e galpões tomam toda a
+    quadra ao norte. Esse ponto é exatamente o meio do caminho entre o mercado e a
+    avenida perimetral. A rua segue para o oeste e para o leste.
+  exits:
+  - e
+  - w
+  objects:
+  - Os restos de um eixo de carroça jazem aqui, quebrados...
+  links:
+    w: room:esgaroth.rua-de-cima-3
+  visits: 2
+  sources:
+  - logs/raw.log:116896
+  confidence: confirmed
+- id: room:esgaroth.rua-de-cima-3
+  title: Rua de Cima
+  region: region:esgaroth
+  safe: false
+  description: |-
+    O sul é todo tomado por um alto prédio, e ao norte encontram-se vários
+    edifícios térreos e extensos. A oeste está o final da rua, em uma grande
+    avenida com vista para o lago, e para o leste ela estende-se até o mercado.
+  exits:
+  - e
+  - w
+  links:
+    w: room:esgaroth.avenida-perimetral-oeste
+  visits: 2
+  sources:
+  - logs/raw.log:116928
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-6
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Em um dos extremos da avenida que cruza a cidade de norte a sul, nota-se com
+    facilidade que as lojas dessa região são grandes, de alto padrão. Mais ao
+    norte chega-se a avenida setentrional, e ao sul a avenida prossegue. Pode-se
+    apreciar os finos cortes na vitrine da grande alfaiataria que fica ao oeste,
+    ou entrar na joalheria a leste.
+  exits:
+  - n
+  - e
+  - s
+  links:
+    e: room:esgaroth.entrada-da-joalheria-dedo-de-prata
+    n: room:esgaroth.avenida-perimetral-norte-5
+    s: room:esgaroth.avenida-transversal-7
+  visits: 6
+  sources:
+  - logs/raw.log:117449
+  confidence: confirmed
+- id: room:esgaroth.avenida-transversal-7
+  title: Avenida Transversal
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Os casarões além das lojas a leste combinam bem com o padrão luxoso das lojas
+    da região. Maravilhas da ourivesaria podem ser vistas na joalheria, a leste,
+    e a oeste fica a entrada da refinada alfaiataria 'Agulha de Ouro'. A avenida
+    prolonga-se para o norte, e ainda para o sul, e uma placa na frente da
+    alfaitaria atrai sua atenção, quase do seu lado.
+  exits:
+  - n
+  - s
+  - w
+  links:
+    n: room:esgaroth.avenida-transversal-6
+    s: room:esgaroth.avenida-transversal-5
+  visits: 5
+  sources:
+  - logs/raw.log:117457
+  confidence: confirmed
+- id: room:esgaroth.inicio-da-rua-dos-caramujos
+  title: Início da Rua dos Caramujos
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você chega no que parece ser o princípio de uma pequena rampa, chamada pelos
+    moradores de Esgaroth de rua, mais por sua fama do que por sua extensão. O
+    nome peculiar veio de uma infestação de caramujos d'água doce, há muitos anos
+    exterminada. Essa rampa segue de leste a oeste, sendo margeada ao norte por
+    uma tosca cerca de ripas entre as vigas, e ao sul pela parede da Estrebaria.
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.no-lado-oeste-do-mercado-central-2
+    w: room:esgaroth.na-rua-dos-caramujos
+  visits: 4
+  sources:
+  - logs/raw.log:118483
+  confidence: confirmed
+- id: room:esgaroth.na-rua-dos-caramujos
+  title: Na Rua dos Caramujos
+  region: region:esgaroth
+  safe: false
+  description: |-
+    As tábuas da rampa que serve de caminho parecem gastas, porém são largas e
+    resistentes, como devem precisar os mercadores daqui! A rampa é margeada dum
+    lado pela cerquinha (ao norte) e do outro pela parede da Estrebaria (ao sul).
+    Ao leste você ouve distintamente o barulho do Mercado Central. Talvez seja o
+    tipo de lugar em que sempre se encontra um mercador, seja dia ou alta noite.
+  exits:
+  - e
+  - w
+  objects:
+  - Uma pilha de farelos jaz sobre a rampa, deixada por algum carregamento...
+  links:
+    e: room:esgaroth.inicio-da-rua-dos-caramujos
+    w: room:esgaroth.na-rua-dos-caramujos-2
+  visits: 4
+  sources:
+  - logs/raw.log:118523
+  confidence: confirmed
+- id: room:esgaroth.na-rua-dos-caramujos-2
+  title: Na Rua dos Caramujos
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Talvez muitos visitantes não compreendam o estranho nome dessa rua que
+    contorna a parede norte da Estrebaria; todavia, embora não haja atualmente a
+    infestação de caramujos d'água doce que houve outrora, é possível encontrar às
+    vezes um desses bichos pegajosos se arrastando pela parede da Estrebaria de um
+    lado da rua, ou mesmo na tosca cerca de madeira do outro lado! As tábuas dessa
+    rampa não são boas pra eles, pois acabam pisoteados pelos pescadores... Eca!
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.na-rua-dos-caramujos
+    w: room:esgaroth.no-fim-da-rua-dos-caramujos
+  visits: 4
+  sources:
+  - logs/raw.log:118560
+  confidence: confirmed
+- id: room:esgaroth.no-fim-da-rua-dos-caramujos
+  title: No Fim da Rua dos Caramujos
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Plaft! Seu pé por acaso se prende numa tábua solta da tosca rampa de madeira.
+    Ela é bem larga, e como os caminhos parecem bem cuidados, essa tabuinha solta
+    é certamente uma exceção que será consertada com a máxima presteza pelos
+    marceneiros da cidade! As madeiras formam no nível inferior essas rampas,
+    retas e sem declives, que foram alicerçadas nas vigas da plataforma que
+    sustenta a Cidade do Lago; margeando as rampas e pregadas nas vigas há toscas
+    cercas frágeis de madeira baixa, e além delas a água escura do lago reluz
+    suavemente.
+  exits:
+  - e
+  - sw
+  links:
+    e: room:esgaroth.na-rua-dos-caramujos-2
+    sw: room:esgaroth.extremidade-nordeste-da-ponte-de-baixo
+  visits: 4
+  sources:
+  - logs/raw.log:118601
+  confidence: confirmed
+- id: room:esgaroth.extremidade-nordeste-da-ponte-de-baixo
+  title: Extremidade Nordeste da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A ponte parece terminar, pois aqui sua base de pedra se cruza com as rampas de
+    madeira no nível inferior de Esgaroth. Pequenas e toscas rampas de madeira
+    foram construídas entre as vigas de alicerce do piso superior e entre elas umas
+    finas ripas de madeira fazem o papel de cercas precárias. A leste, logo à
+    frente, encontra-se a ruela dos Caramujos, e um pouco além nesse mesmo rumo
+    estão também os mercados da cidade.
+  exits:
+  - ne
+  - sw
+  links:
+    ne: room:esgaroth.no-fim-da-rua-dos-caramujos
+    sw: room:esgaroth.divisao-nordeste-da-ponte-de-baixo
+  visits: 4
+  sources:
+  - logs/raw.log:118652
+  confidence: confirmed
+- id: room:esgaroth.divisao-nordeste-da-ponte-de-baixo
+  title: Divisão Nordeste da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Há dois profundos sulcos nas pedras: eis uma amostra do ritmo constante das
+    carroças de carga entrando e saindo por este nível da ponte. Aparentemente
+    tudo se constitui em sinais do crescimento do comércio de Esgaroth! É possível
+    ver, entre montículos de cereais derrubados, as pequenas marcas de patas dos
+    animais, e não são apenas cavalos! Talvez seja melhor andar rápido: afinal,
+    nunca se sabe quando é que um vendedor obstruirá seu caminho com um rebanho de
+    carneiros sendo levado até o Mercado.
+  exits:
+  - ne
+  - sw
+  links:
+    ne: room:esgaroth.extremidade-nordeste-da-ponte-de-baixo
+    sw: room:esgaroth.encruzilhada-da-ponte-de-baixo
+  visits: 4
+  sources:
+  - logs/raw.log:118698
+  confidence: confirmed
+- id: room:esgaroth.encruzilhada-da-ponte-de-baixo
+  title: Encruzilhada da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Eis que o caminho da ponte se abre numa encruzilhada que segue para nordeste e
+    sudeste no rumo de Esgaroth, e ainda para oeste na direção da Estrada do Lago:
+    é preciso escolher! As pedras parecem muito gastas e as colunas de pedra
+    aqui parecem mais grossas como se fossem reforçadas. Olhando para baixo você
+    percebe que até o chão parece mais sulcado nesse trecho, formando pequenas
+    poças nos desníveis. Talvez seja melhor andar rápido antes que o movimento
+    aqui se adense!
+  exits:
+  - w
+  - ne
+  - se
+  links:
+    ne: room:esgaroth.divisao-nordeste-da-ponte-de-baixo
+    se: room:esgaroth.divisao-sudeste-da-ponte-de-baixo
+    w: room:esgaroth.na-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:118748
+  confidence: confirmed
+- id: room:esgaroth.na-ponte-de-baixo
+  title: Na Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Embora a largura da ponte seja considerável e na ponte inferior haja, a
+    intervalos, pequenas aberturas nas pedras pelas quais o ar circula, ainda
+    assim é possível se sentir ligeiramente oprimido entre as paredes de pedra e o
+    teto de madeira que forma o piso do nível superior. Todavia, aqui parece ser
+    destinado a um tráfego tão ligeiro que os camponeses e comerciantes pouco
+    tempo têm de refletir acerca disso ao atravessarem apressados com suas cargas,
+    sempre entrando e saindo da Cidade.
+  exits:
+  - e
+  - w
+  mobs:
+  - Oinbas Espada-Larga passa por aqui, vigiando a ordem na cidade.
+  links:
+    e: room:esgaroth.encruzilhada-da-ponte-de-baixo
+    w: room:esgaroth.quase-no-meio-da-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:118793
+  confidence: confirmed
+- id: room:esgaroth.quase-no-meio-da-ponte-de-baixo
+  title: Quase no Meio da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você parece estar próximo do meio da ponte e já pode até mesmo ver com mais
+    clareza uma das ruas do lado oeste de Esgaroth, embora não possa ver bem o que
+    exatamente há nela. A saída leste da ponte, que segue para fora da cidade,
+    parece apenas um ponto menor vista daqui, ainda mais com seu desvio e declive;
+    talvez seja melhor prosseguir em um dos lados para não atrapalhar qualquer
+    carroça que esteja atravessando!
+  exits:
+  - e
+  - w
+  mobs:
+  - Oinbas Espada-Larga passa por aqui, vigiando a ordem na cidade.
+  links:
+    e: room:esgaroth.na-ponte-de-baixo
+    w: room:esgaroth.no-meio-da-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:118848
+  confidence: confirmed
+- id: room:esgaroth.no-meio-da-ponte-de-baixo
+  title: No Meio da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aqui já parece ser o meio do comprimento da ponte, e é possível ver as
+    aberturas de saídas, as duas a leste e uma outra a oeste, todas não muito
+    distantes. Uma brisa suave entra por aberturas pequenas na parte superior das
+    paredes de pedra, próximas dos encaixes que suportam as vigas do nível
+    superior de madeira da ponte. Entre alguns vãos mínimos das madeiras é
+    possível ver sombras e ouvir os passos de pessoas que atravessam pelo nível de
+    cima. Cuidado ao olhar pra cima, ou alguma poeira cairá em seus olhos!
+  exits:
+  - e
+  - w
+  links:
+    e: room:esgaroth.quase-no-meio-da-ponte-de-baixo
+    w: room:esgaroth.na-ponte-de-baixo-2
+  visits: 6
+  sources:
+  - logs/raw.log:118881
+  confidence: confirmed
+- id: room:esgaroth.na-ponte-de-baixo-2
+  title: Na Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Pling! Pling! Pluft! E não é que bem no meio de sua testa uma volumosa gota
+    d'água encardida cai, vinda de uma poça no nível superior da ponte que goteja
+    aqui no nível de baixo? Que azar, hein? No chão de pedras pequenas e bem
+    juntas uma diminuta e ainda mais encardida poça se perfez a partir dessa de
+    cima, porém aqui ela parece ainda mais imunda entre as marcas deixadas pelo
+    tráfego constante de mercadorias, carroças e até animais. Opa, não é que
+    seus pés estão bem dentro dessa poça feculenta? Ecaaaa!
+  exits:
+  - e
+  - sw
+  objects:
+  - Um monte de bosta foi feito aqui por algum cavalo de carga...
+  links:
+    e: room:esgaroth.no-meio-da-ponte-de-baixo
+    sw: room:esgaroth.acesso-a-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:118932
+  confidence: confirmed
+- id: room:esgaroth.acesso-a-ponte-de-baixo
+  title: Acesso à Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Aparentemente este é o nível inferior da grande ponte de Esgaroth e ainda a
+    base do superior. O estado marcado das pequenas pedras no chão deixa-lhe
+    entrever que esse nível parece ser voltado especialmente para a passagem de
+    cargas, carroças e animais; enfim, de alguma forma essa estratégia parece
+    ressaltar um pouco mais a fama próspera e comercial da Cidade do Lago.
+  exits:
+  - w
+  - ne
+  links:
+    ne: room:esgaroth.na-ponte-de-baixo-2
+    w: room:esgaroth.desvio-para-a-ponte-de-baixo
+  visits: 6
+  sources:
+  - logs/raw.log:118975
+  confidence: confirmed
+- id: room:esgaroth.desvio-para-a-ponte-de-baixo
+  title: Desvio para a Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    O chão se inclina quase imperceptivelmente e as pedras escuras do calçamento
+    parecem se inclinar formando um leve declive, que embora suave aumenta
+    gradativamente levando ao nível inferior da ponte e comunicando ambos os
+    níveis. O calçamento parece ter umas pequenas pedras soltas e ser um tanto
+    escorregadio, como se o peso das carroças danificasse constantemente o serviço
+    dos obreiros da cidade. Entretanto, sem dúvida, é muito seguro de se passar
+    nesse trecho.
+  exits:
+  - e
+  - nw
+  links:
+    e: room:esgaroth.acesso-a-ponte-de-baixo
+    nw: room:esgaroth.grande-ponte.acesso-a-grande-ponte
+  visits: 6
+  sources:
+  - logs/raw.log:119018
+  confidence: confirmed
+- id: room:esgaroth.divisao-sudeste-da-ponte-de-baixo
+  title: Divisão Sudeste da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você está a sudeste da encruzilhada e ainda pode ver um pouco adiante as ruas
+    da plataforma inferior da Cidade. Como esse nível inferior da ponte parece
+    ser voltado para a passagem de cargas, talvez seja melhor você se apressar ou
+    na próxima vez atravessar pela ponte de cima: certamente a vista será muito
+    apreciável!
+  exits:
+  - nw
+  - se
+  links:
+    nw: room:esgaroth.encruzilhada-da-ponte-de-baixo
+    se: room:esgaroth.extremidade-sudeste-da-ponte-de-baixo
+  visits: 4
+  sources:
+  - logs/raw.log:119151
+  confidence: confirmed
+- id: room:esgaroth.extremidade-sudeste-da-ponte-de-baixo
+  title: Extremidade Sudeste da Ponte de Baixo
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você nota que o chão de pedras da ponte aqui se cruza com as rampas de madeira
+    do nível inferior da cidade, num encaixe bem feito, típico do trabalho dos
+    marceneiros de Esgaroth. Sob a plataforma ficam os famosos mercados que cedem
+    fama ao comércio daqui, todos cheios de mercadores apressados, que caminham
+    entre as rampas estreitas. Se forçar a vista, um pouco a leste é até
+    possível ver algo do Mercado Central e de sua movimentação.
+  exits:
+  - nw
+  - se
+  links:
+    nw: room:esgaroth.divisao-sudeste-da-ponte-de-baixo
+    se: room:esgaroth.na-rua-das-pulgas-proximo-a-ponte
+  visits: 4
+  sources:
+  - logs/raw.log:119186
+  confidence: confirmed
+- id: room:esgaroth.hall-de-entrada-2
+  title: Hall de Entrada
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Localiza-se aqui o Hall de Entrada do Salão da Cidade, apesar de não ser o
+    único. A leste há a Avenida Transversal, uma movimentada via pela qual passam
+    centenas de pessoas por dia. Mas mesmo com esse marcante fato, os aposentos
+    desse edifício são inexplicavelmente bem cuidados. Para o norte, existe outra
+    parte do Hall de Entrada; a oeste, um salão com acesso para o segundo andar;
+    e, a noroeste, um Salão para grandes festejos.
+  exits:
+  - n
+  - e
+  - w
+  - nw
+  links:
+    n: room:esgaroth.hall-de-entrada
+  visits: 3
+  sources:
+  - logs/raw.log:120732
+  confidence: inferred
+- id: room:esgaroth.alto-do-mercado-11
+  title: Alto do Mercado
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Por mais fascinante que a circulação de pessoas e mercadorias possa parecer, é
+    a sobriedade do Salão da Cidade ao sul daqui que mais chama tua atenção. Mesmo
+    com toda a importância que tem e com a movimentação que possui, ele permanece
+    sereno, como se estivesse alheio aos problemas mundanos. O mercado segue para
+    o noroeste e para o leste.
+  exits:
+  - e
+  - s
+  - nw
+  links:
+    s: room:esgaroth.hall-de-entrada-3
+  visits: 2
+  sources:
+  - logs/raw.log:120811
+  confidence: confirmed
+- id: room:esgaroth.hall-de-entrada-3
+  title: Hall de Entrada
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Uma grande diferença é possível notar ao adentrar o Hall do Salão da Cidade. A
+    imponência parece ter entrado em peso aqui, e cada ripa de madeira envernizada
+    reluz à luz do dia, da noite e de velas. Ao sul, há um belo e espaçoso Salão
+    para grandes comemorações e eventos.
+  exits:
+  - n
+  - e
+  - s
+  links:
+    e: room:esgaroth.hall-de-entrada
+  visits: 2
+  sources:
+  - logs/raw.log:120847
+  confidence: inferred
+- id: room:esgaroth.entrada-da-joalheria-dedo-de-prata
+  title: Entrada da Joalheria Dedo de Prata
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Um suntuoso hall de entrada recebe os que adentram esta loja, com as paredes
+    forradas de retratos de pessoas e paisagens, e uma bela luminária de cristal
+    no teto. Ao sul se adentra a loja em si, e ao oeste se pode ir para a Avenida
+    Transversal.
+  exits:
+  - s
+  - w
+  links:
+    s: room:esgaroth.na-joalheria-dedo-de-prata
+    w: room:esgaroth.avenida-transversal-6
+  visits: 3
+  sources:
+  - logs/raw.log:121655
+  confidence: inferred
+- id: room:esgaroth.na-joalheria-dedo-de-prata
+  title: Na Joalheria Dedo de Prata
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Uma coleção infindável de colares e brincos e anéis e tudo o mais pode ser
+    vislumbrada daqui, dentro de prateleiras com portas de vidro especialmente
+    feitas para isso. A saída da loja está ao norte além do hall.
+  exits:
+  - n
+  mobs:
+  - Fonstipéll, o ourives, está aqui trabalhando em uma bela jóia.
+  links:
+    n: room:esgaroth.entrada-da-joalheria-dedo-de-prata
+  visits: 2
+  sources:
+  - logs/raw.log:121680
+  confidence: inferred
+- id: room:esgaroth.na-entrada-do-caminho-obscuro
+  title: Na Entrada do Caminho Obscuro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Por dentre a agitação destas ruas de comércio, que margeiam num círculo de
+    rampas a água do lago, você está diante da a entrada de um caminho estreito
+    que se volta para sudeste; com baixa movimentação e de rampas mais estreitas,
+    ele parece um pouco obscuro em relação ao mercado; todavia, a agitação dos
+    mercadores por aqui é sempre tão grande que mal se pode comparar muito esses
+    detalhes.
+  exits:
+  - ne
+  - se
+  - sw
+  links:
+    se: room:esgaroth.nas-proximidades-do-mercado-central
+  visits: 2
+  sources:
+  - logs/raw.log:121985
+  confidence: inferred
+- id: room:esgaroth.nas-proximidades-do-mercado-central
+  title: Nas Proximidades do Mercado Central
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você se encontra muito próximo do Mercado Central: prova disto é que sem
+    esforço poderá ouvir os sons dele, somente um pouco a sudeste! Entretando, o
+    contraste se faz entre este caminho e lá, posto que a iluminação fraca daqui,
+    e o trânsito apressado das pessoas, não permitem que mercadores adotem essa
+    estreita rampa como um bom ponto de venda. Ao longe, seguindo pelo caminho
+    obscuro e além de uma curva para o sul, é possível ver um reflexo de luz mais
+    forte indicando a existência do Mercado de Peixes naqueles lados.
+  exits:
+  - nw
+  - se
+  links:
+    se: room:esgaroth.no-caminho-obscuro
+  visits: 2
+  sources:
+  - logs/raw.log:122019
+  confidence: confirmed
+- id: room:esgaroth.no-caminho-obscuro
+  title: No Caminho Obscuro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    As rampas estreitas e a frágil cerca de ripas, entre as vigas, parecem estar
+    com as madeiras escurecidas, talvez com um pouco de limo; o fato é que nesse
+    caminho as madeiras sofreram um sutil desnível que as expôs drasticamente,
+    deixando-as quase em contato com a água escura do lago nos dias em que chove
+    muito, destarte seu estado não é muito elogiável. Os sons do Mercado Central
+    podem ser ouvidos ao nordeste, e isso contrasta de alguma forma com esse
+    pedaço dos caminhos na plataforma inferior...
+  exits:
+  - nw
+  - se
+  links:
+    se: room:esgaroth.em-meio-a-um-caminho-obscuro
+  visits: 2
+  sources:
+  - logs/raw.log:122061
+  confidence: inferred
+- id: room:esgaroth.em-meio-a-um-caminho-obscuro
+  title: Em Meio a um Caminho Obscuro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    Você caminha em meio ao caminho obscuro, sob a plataforma superior, e parece
+    estar justamente no meio dele, bem no trecho mais escuro e no ponto em que a
+    rampa afundou num declive para o lago. Aqui é um lugar ligeiramente um pouco
+    escondido; é escuro mesmo quando é dia, parece ser talvez um ponto procurado
+    apenas para negócios um pouco suspeitos, desses que não seriam bem vistos para
+    acontecer no Mercado Central ou no Setentrional...
+  exits:
+  - nw
+  - se
+  links:
+    se: room:esgaroth.um-caminho-obscuro
+  visits: 2
+  sources:
+  - logs/raw.log:122122
+  confidence: inferred
+- id: room:esgaroth.um-caminho-obscuro
+  title: Um Caminho Obscuro
+  region: region:esgaroth
+  safe: false
+  description: |-
+    A rampa estreita e escurecida parece bem firme sob seus pés, e as ripas finas
+    entre as vigas de sustentação da plataforma superior estão bem conservadas e
+    são grossas, dando segurança a qualquer habitante de Esgaroth que resolva
+    inspecionar os alicerces da cidade. O som e luz dos mercados podem ser vistos
+    a noroeste, ao passo que o cheiro de peixes chega ainda forte das docas e do
+    mercado pesqueiro ao sul.
+  exits:
+  - s
+  - nw
+  links:
+    s: room:valfenda.floresta-pinheiros.uma-curva-no-caminho-2
+  visits: 2
+  sources:
+  - logs/raw.log:122156
+  confidence: inferred
+- id: room:valfenda.floresta-pinheiros.uma-curva-no-caminho-2
+  title: Uma Curva no Caminho
+  region: region:valfenda.floresta-pinheiros
+  safe: false
+  description: |-
+    O caminho de rampas, sobre as águas do lago, faz uma curva aqui se tornando um
+    pouco escuro e estranhamente suspeito. Um declive leve na rampa parece mostrar
+    que ela está gasta e se inclinou para baixo na direção do lago, estando por
+    isso escurecida pela umidade. Uma luz suave pode ser vista bem adiante a
+    noroeste na direção do Mercado Central e ainda ao sul pros lados das docas e
+    do Mercado de Peixes...
+  exits:
+  - n
+  - s
+  links:
+    s: room:valfenda.floresta-pinheiros.cruzamento-das-docas-e-do-mercado
+  visits: 2
+  sources:
+  - logs/raw.log:122201
+  confidence: confirmed
+- id: room:valfenda.floresta-pinheiros.cruzamento-das-docas-e-do-mercado
+  title: Cruzamento das Docas e do Mercado
+  region: region:valfenda.floresta-pinheiros
+  safe: false
+  description: |-
+    Olhando para cima você percebe que as muitas vigas de sustentação aqui dão um
+    aspecto curioso a esse cruzamento. Ao sul é possível ver alguns precários
+    balcões perdidos do mercado de peixes, ao passo que uma claridade diferente a
+    leste deixa ver a rampa das docas, que não ficam ocultas sob a plataforma.
+  exits:
+  - n
+  - e
+  - s
+  - w
+  mobs:
+  - O velho pescador está aqui, pensando em como comercializar os peixes...
+  visits: 2
+  sources:
+  - logs/raw.log:122239
+  confidence: inferred
