@@ -342,3 +342,39 @@
     Perimetral Oeste. Guarda no Acesso à Grande Ponte.
   sources: ["notas.md#Esgaroth (Cidade do Lago)", "logs/raw.log"]
   confidence: confirmed
+
+- id: region:estrado
+  name: Estrado, a vila hobbit
+  kind: city
+  parent: region:estrada-leste
+  safety: guarded
+  danger: 2
+  navigation: grid
+  atmosphere: [rural, bucolico, inventivo]
+  tags: [hobbit, fazendas, laboratorios, thain, nivel-5-20]
+  notes: >
+    Vila hobbit ao norte da Grande Estrada do Leste (área de nível 5-20,
+    governada pelo Thain Rungo). Trilha de entrada com estátua de granito,
+    fazendas (olivas, pepinos, framboesas, cebolas, inhames, melões, trevos),
+    curral e estábulo com pôneis, escritórios do Thain, armazéns de "itens
+    perdidos", laboratórios de alquimistas e marceneiros (alavanca vermelha
+    que aciona uma catapulta), beco com Oficina de Obras e alçapão para um
+    subsolo escuro com a passagem para a câmara do rei. Sem fonte de água.
+  sources: ["notas.md#Estrado (vila hobbit, nível 5-20)", "logs/raw.log"]
+  confidence: confirmed
+
+- id: region:floresta-chet
+  name: Floresta Chet
+  kind: wilderness
+  parent: region:estrado
+  safety: hostile
+  danger: 4
+  navigation: linear
+  atmosphere: [sombrio, selvagem]
+  tags: [hobgoblins, troll-pedagio, hobbits-desaparecidos]
+  notes: >
+    Trilha a partir de Estrado (placa avisa que muitos hobbits desapareceram
+    na floresta Chet e que há hobgoblins). Campo supercrescido, colina e as
+    Árvores Caídas, onde um troll cobra pedágio de 2 moedas de ouro.
+  sources: ["notas.md#Estrado (vila hobbit, nível 5-20)", "logs/raw.log"]
+  confidence: confirmed

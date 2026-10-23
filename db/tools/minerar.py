@@ -70,6 +70,16 @@ REGION_SEEDS = [
      r"Uma Passagem Bem Guardada|O Cartógrafo|No Empório das Casas|Um Círculo Florido|Os Salões de Elrond|"
      r"Uma Alameda de|Encontro das Alamedas|Entre as Alamedas|Às Margens da Floresta$|Olhos para o Vale$|A Estrada Rochosa$|"
      r"A Casa de Descanso$|A Recepção$|Uma Sala de Espera$)", "region:valfenda"),
+    (r"^(Uma Trilha Estreita|A Trilha Acaba|Um Campo Supercrescido|No Limite do Campo Aberto|O Caminho se Fecha|"
+     r"Na Base de uma Pequena Colina|A Parte Norte da Colina|As Árvores Caídas|Aprofundando-se em Chet|Uma Trilha Pela Floresta Chet|Perto de Estrado|Perto de Archet)$", "region:floresta-chet"),
+    (r"^Uma Estrada Muito Utilizada$", "region:archet"),
+    (r"^(A Caminho de Estrado|Uma Curva na Trilha|Uma Curva na Estrada|O Caminho Aumenta|Uma Clareira na Floresta|"
+     r"A Caminho de Chet|O Cultivar de Olivas|Uma Plantação de |O Cultivo de Framboesas|Uma Horta de Cebolas|"
+     r"Um Mar de Trevos|A Entrada do Curral|O Curral|Um Abrigo para os Animais|A Estrada do Estábulo|O Estábulo|"
+     r"A Cocheira|Um Som Distante|Saliências no Solo|O Fim do Caminho|Um Enorme Escritório|O Escritório do Thain|"
+     r"Um Estranho Jardim|Um Armazém Bagunçado|Muito Bem Armazenados|Frascos Borbulhando|Um Pequeno Laboratório|"
+     r"Um Amontoado de Engrenagens|Armazém$|Um Pequeno Beco sem Saída|Oficina de Obras|Uma Toca Bem Cuidada|"
+     r"A Toca dos Cristais)", "region:estrado"),
 ]
 
 PROMPT = re.compile(r"<\d+hp \d+m \d+mv> ?")

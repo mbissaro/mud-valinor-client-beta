@@ -2004,3 +2004,92 @@ Morte zera a fome.
   Mercado, Banco, Alfaiataria Agulha de Ouro, Joalheria Dedo de Prata,
   Caneca D'Ouro); Leste = Praça Floresta das Trevas, acesso aos
   Mercados Setentrional e Central; Oeste = idem, Av. Perimetral Oeste.
+
+## Terceiro personagem: Tolmo (hobbit ladino, Bri), criado 2026-10-22
+Criação: hobbit pode ter 33-66 anos, 80-120cm, 15-40kg. Cidades natais
+permitidas: Bri, Archet, Esgaroth. Começa com 17hp 110 mana 200mv máx,
+chapéu de couro, camisa verde, casaco preto, calça preta. Carrega no
+máximo 5 itens. Nome aprovado no mesmo dia; mudmail de registro alt
+enviado. Se a conexão cair no meio da criação, o servidor guarda o que
+já foi respondido e retoma (com Modo Aural antes da senha).
+- Estante de armaduras da Academia: bracelete, botas e cinto servem no
+  nível 1; perneiras e colarinho exigem nível 3. Hobbit usa botas sem
+  problema. `get all estante` só pega 4 itens de cada vez.
+- Comando `exits` funciona no escuro e mostra o nome das salas vizinhas
+  iluminadas (e marca portas fechadas e saídas secretas).
+- `help estrado`: vila do outro lado da colina de Bri, maioria hobbit,
+  engenhosos (ciências, cultivo, erva de cachimbo). Thain eleito: Rungo.
+  Área de treino, nível 5-20, vizinha de Archet e da Grande Estrada.
+- `help beirágua`: vila hobbit, boa para iniciantes, itens bons para
+  vender; a leste, na floresta, hobgoblins agressivos. De Bri: Portão Sul,
+  Grande Estrada do Leste para leste, passagem ao norte. De Archet: trilha
+  pela Floresta Chet, na entrada da cidade.
+- Uma hora do jogo leva uns 4-5 minutos reais. À noite as salas ao ar
+  livre ficam escuras ("Está escuro ..."); as tocas continuam iluminadas.
+
+## Estrado (vila hobbit, nível 5-20)
+Rota a pé do saguão da Academia (Bri): `d n w w w s s s s s s s s e e se
+e ne e ne e e se n`. A sala da estrada antes do `n` diz "Ao norte, ainda
+pode-se ver algumas casas dos habitantes de Estrado". Na estrada cada
+passo custa até 8mv.
+- A Caminho de Estrado (s nw) -> A Caminho de Estrado (ne se) -> Uma
+  Curva na Trilha (e nw sw): "Você poderia jurar que viu algo reluzindo
+  na beira da estrada" — item escondido, precisa de `search` (o Tolmo
+  ainda não tem).
+- Um Som Distante (n e w): "Um hobbit de aparência particularmente vil
+  guarda o caminho norte".
+- Laboratórios ("Um Pequeno Laboratório", mesmo título, descrições
+  diferentes): um barulhento com marceneiros inventores e alquimistas
+  hobbit; ao lado, "Um Amontoado de Engrenagens" (engrenagem enorme de
+  madeira escura com luva de metal sextavada). O laboratório silencioso
+  tem "um enorme e estranho objeto" zunindo (caixa ornamental com tubos
+  estriados; pela pequena porta dá para sentir algo, mas "uma busca um
+  pouco mais minuciosa parece ser necessária") e uma pequena alavanca
+  vermelha brilhante. NPC nomeado: inspetor Veril (hobbit arrogante que
+  olha por cima dos óculos).
+- `push alavanca` = CATAPULTA: "O chão se abre e você cai sentado sobre
+  o braço de uma enorme catapulta... ZOOM! Você atravessa a vila
+  descrevendo uma parábola em pleno ar" e cai numa cama com mola em "Uma
+  Toca Bem Cuidada" (smial com mobília de qualidade, crianças hobbit com
+  bumerangue). `pull alavanca`: "Isto já está desativado."
+- Armazém (a oeste dos laboratórios): caixas rotuladas, uma escada de
+  madeira velha ("útil para se alcançar pequenas alturas"), caixa velha
+  "PREGOS" (prego sujo e enferrujado) e caixa nova "JARDINAGEM" (enorme
+  tesoura de poda, "a antítese da filosofia da coisa"). Peguei a escada
+  e a tesoura.
+- Rua escura a oeste da Toca Bem Cuidada: N Oficina de Obras, S A Toca
+  dos Cristais (fechada), W rua.
+- Oficina de Obras: marceneiro de aura vermelha, "ardiloso e
+  misterioso", que sempre para no mesmo lugar; CADEIRA de couro com
+  rodinhas. `look arrumação`/`look chão` mostra o contorno de uma porta
+  oculta; `open alçapão` abre a saída secreta `d`. Embaixo (escuro):
+  sala com uma criatura e porta a leste; `open e` = "a passagem para a
+  câmara do rei"; a câmara (escura, duas criaturas) tem saídas S
+  (fechada) e W. Voltar: `w`, `u`.
+- Sem água em Estrado: o Tolmo recitou o pergaminho de retorno (veio no kit de novato, texto:
+  "Os perdidos sempre reencontram conforto no ambiente de seus lares.") e voltou ao saguão da
+  Academia. Bebeu na fonte de mármore, vendeu a escada de madeira e a tesoura de poda (itens de
+  Estrado) a Narinë por 1 moeda cada, comprou lamparina (2), pegou carne grátis do Zurg
+  (`say comida`; ele pede para voltar em alguns minutos depois da 1ª) e dormiu nos leitos da Cura:
+  movimento 46 -> 175 em menos de 1 minuto real.
+- Comida em Estrado: Horta de Cebolas tem cebolas no chão (`get cebola`, `eat cebola`).
+- Escada de madeira: "velha e acabada... ainda é útil para se alcançar pequenas alturas".
+  Tesoura de poda: "enorme e afiada... antítese da filosofia" do jardineiro.
+
+### Estrado: trilha Chet até Archet e salas de aula (Tolmo)
+- De "A Caminho de Estrado" (a que tem saída ne/se) a saída `nw` leva a "Uma Curva na Trilha" -> `nw` "Perto de Estrado" -> 16 salas "Uma Trilha Pela Floresta Chet" (sempre duas saídas; zigue-zague n/s/se/nw) -> "Perto de Archet" (troncos cortados, Archet ao norte) -> "Uma Estrada Muito Utilizada" (n Entrada de Archet, se/sw estrada). Rota Archet -> Estrado (da Uma Estrada Muito Utilizada): `se`, depois seguir `s s s se s s se s se s s s s s s se s se` ate "Perto de Estrado"; `se` chega na Curva na Trilha. Trilha sem combate (nivel 1, noite, hp 17).
+- Salas de aula (descobertas ao final da exploracao): "Uma Ampla Sala de Aula" (professor Groto Cascalva, criancas hobbit, estante de carvalho, pintura do centro da vila com a estatua de granito segurando uma placa) e "Uma Pequena Sala de Aula" (professora Petula Cascalva, mesa com quebra-cabecas, brinquedos; ensina filosofia). Saidas w / e entre elas.
+- Dormir em qualquer sala fechada regenera mv rapido se alimentado.
+- Fome volta rapido para hobbit de nivel 1 (cebolas nao saciam por muito tempo).
+
+### Estrado: subsolo dos hobgoblins e casas (Tolmo, nível 1)
+- Do Beco sem Saída (n = Oficina de Obras, e = Uma Toca Bem Cuidada, s = A Toca dos Cristais, w = Curva na Estrada): na Oficina `look chão` mostra um contorno de porta oculta, `open alçapão`, `d`.
+- "A Sala do Tesouro" (hobgoblins): tesoureiro hobgoblin velho de óculos contando dinheiro (não ataca, "parece um pouco mais forte" que o Tolmo nv1); mesa com anotações coberta de terra ("como se alguém tivesse subido sobre a mesa"; a terra treme por experiências mal sucedidas); `open e` abre a passagem para a câmara do rei. Há luz sem lamparina.
+- "A Câmara do Rei": carcaças e peles frescas nas paredes, tochas, trono de granito bruto com caveiras entalhadas e musgo; o rei dos hobgoblins (insano, músculos rasgando as roupas, "um pouco mais forte") e 2 guarda-costas hobgoblin de elite, todos com Aura Vermelha. Não atacaram quem entrou e saiu. Saídas: w (volta) e s fechada.
+- Casas ("smials") a oeste da Curva na Estrada, sul e oeste com porta fechada (`open s`, `open w`): "Uma Toca Suja" (mulher hobbit, casaco resistente de tecido negro no chão) e "Um Lar Mal Cuidado" (cama, cadeira, armários vazios, nenhuma criança). "A Toca dos Cristais": mulher hobbit e mesas com engrenagens, junções e molas.
+- Placa da estátua de granito: "Nossos Heróis Caídos", nomes de hobbits mortos em batalha ou trabalhando; a maior honra de um hobbit é morrer jovem exercendo sua função.
+
+## Beirágua (nível 20-30) - help
+- Vila de tocas enfileiradas na margem norte do lago, jardins, Dragão Verde, perto da Colina de Bolsão. Mestre de perícias e magias: Celussë, a mestra da água. Atração: bons itens para hobbits.
+- Dica: cuidado para não se perder nas plantações; "você veio do norte".
+- Rota de Bri: portão oeste, Bosques das Colinas do Sul, Grande Estrada do Leste, ponte do rio Brandevin, depois oeste até a área (atenção às placas). De Archet: trilha sudoeste da entrada, sul pela Velha Estrada do Norte até A Interseção, de lá pelos bosques. Beirágua é a vila após Sapântano (help 'sapântano').
