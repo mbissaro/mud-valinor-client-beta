@@ -10219,6 +10219,7 @@
   title: look casa
   body: Um casaco resistente, feito de tecido negro.
   rooms:
+  - room:bri.a-casa-mathom
   - room:estrado.uma-toca-suja
   sources:
   - logs/transcript.log
@@ -10417,6 +10418,169 @@
     no desespero...
   rooms:
   - room:estrada-leste.a-grande-estrada-do-leste-40
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cantil
+  kind: look
+  title: look cantil
+  body: |-
+    Este cantil foi muito bem feito com alumínio e couro. Na parte da frente
+    do mesmo e em sua tampa, jaz inscrito o símbolo da Academia dos
+    Aventureiros.
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-flor
+  kind: look
+  title: look flor
+  body: |-
+    O perfume adocicado desta flor se espalha pelo ambiente do mesmo modo que faz
+    a sua mente divagar, levando-o para mundos distantes e pacíficos, que banhados
+    pelo calor dourado e reconfortante do sol lhe transmitem uma pura e renovadora
+    energia.
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porta-7
+  kind: look
+  title: look porta
+  body: |-
+    Para a Estrada Leste.Você tenta ver adiante...
+    A Grande Estrada Leste
+    Você caminha pela parte sul da Grande Estrada Leste. Para o oeste, por
+    trás de uma cerca baixa de madeira, pode-se ver uma casa simples de pedra,
+    com um só andar e telhado de palha, usada pelos habitantes como depósito
+    de generalidades. Ao leste, por baixo de um grande arco do qual pende uma
+    placa de madeira, fica o pátio da famosa estalagem: o Pônei Saltitante. Dos
+    dois pavilhões que formam a estalagem saem sonoras e animadas gargalhadas.
+    A estrada pavimentada estende-se para norte e sul, onde pode-se ver uma
+    interseção.
+    Saídas: n e s w
+    Há um cesto para lixo aqui.
+    Um guarda está patrulhando aqui.
+  rooms:
+  - room:bri.a-grande-estrada-leste
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-artefato
+  kind: look
+  title: look artefato
+  body: |-
+    Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
+    revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
+    fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
+    bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
+    haste presente em um dos lados.
+  rooms:
+  - room:bri.a-grande-estrada-leste
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cachimbo
+  kind: look
+  title: look cachimbo
+  body: |-
+    Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
+    revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
+    fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
+    bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
+    haste presente em um dos lados.
+  rooms:
+  - room:bri.a-casa-mathom
+  - room:bri.a-grande-estrada-leste
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-brincos
+  kind: look
+  title: look brincos
+  body: |-
+    É um pequeno par de brincos, sendo cada um adornado com uma grande pérola
+    branca. É mais uma das obras de arte do ourives Fonstipéll, o melhor e o
+    único de Esgaroth!
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-flor-dourada
+  kind: look
+  title: look flor dourada
+  body: |-
+    O perfume adocicado desta flor se espalha pelo ambiente do mesmo modo que faz
+    a sua mente divagar, levando-o para mundos distantes e pacíficos, que banhados
+    pelo calor dourado e reconfortante do sol lhe transmitem uma pura e renovadora
+    energia.
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-pergaminho-2
+  kind: look
+  title: look pergaminho
+  body: |-
+    Inscrito no pergaminho, você lê:
+    "Os perdidos sempre reencontram conforto no ambiente de seus lares."
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-flor
+  kind: look
+  title: examine flor
+  body: |-
+    O perfume adocicado desta flor se espalha pelo ambiente do mesmo modo que faz
+    a sua mente divagar, levando-o para mundos distantes e pacíficos, que banhados
+    pelo calor dourado e reconfortante do sol lhe transmitem uma pura e renovadora
+    energia.
+    Isto pesa menos de 100 g.
+    Isto é usado nas posições: segurando.
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-guarda-5
+  kind: look
+  title: look guarda
+  body: |-
+    Este é um hobbit bem treinado. Ele pode não ter muita força, mas sabe se
+    virar com sua habilidade com armas.
+    Um guarda hobbit está perfeitamente saudável.
+    Um guarda hobbit está usando:
+    <no pescoço>      uma capa xadrez esfarrapada
+    <empunhando>      uma leve espada curta
+    <como escudo>     um escudo cravejado de pregos
+  rooms:
+  - room:estrado.um-som-distante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-guarda
+  kind: look
+  title: consider guarda
+  body: |-
+    Um guarda hobbit seria um grande professor para você!
+    Um guarda hobbit parece um pouco mais forte que você.
+  rooms:
+  - room:estrado.um-som-distante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.search-chao
+  kind: look
+  title: search chão
+  body: O que?
+  rooms:
+  - room:estrado.uma-curva-na-trilha
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12528,6 +12692,7 @@
        2x  O corpo de um lobo sorrateiro está se decompondo aqui.
        2x  O corpo de um bezerro está coberto de vermes.
        2x  O corpo de um bezerro está envolto em um cheiro nauseabundo.
+       2x  O corpo de Tolmo está coberto de insetos.
        1x  O corpo de um grande pássaro azul está coberto de insetos.
        1x  O corpo de um grande pássaro azul está se decompondo aqui.
        1x  O corpo de um grande pássaro azul está coberto de vermes.
@@ -12540,7 +12705,6 @@
        1x  O corpo de um lobo sorrateiro foi abandonado aqui.
        1x  O corpo de Halbarion está se decompondo aqui.
        1x  O corpo da pequena aranha foi abandonado aqui.
-       1x  O corpo de Tolmo está coberto de insetos.
   sources:
   - logs/transcript.log
   confidence: confirmed

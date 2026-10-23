@@ -805,7 +805,11 @@
   name: um cantil de aventureiro
   kind: item
   category: comida e bebida
-  examined: false
+  description: |-
+    Este cantil foi muito bem feito com alumínio e couro. Na parte da frente
+    do mesmo e em sua tampa, jaz inscrito o símbolo da Academia dos
+    Aventureiros.
+  examined: true
   shops:
   - room: room:academia.o-refeitorio
     level: 1
@@ -1908,6 +1912,24 @@
   examined: false
   worn_by:
   - Um menestrel <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:flor-dourada
+  name: uma flor dourada
+  kind: item
+  category: equipamento
+  description: |-
+    O perfume adocicado desta flor se espalha pelo ambiente do mesmo modo que faz
+    a sua mente divagar, levando-o para mundos distantes e pacíficos, que banhados
+    pelo calor dourado e reconfortante do sol lhe transmitem uma pura e renovadora
+    energia.
+  examined: true
+  weight: menos de 100 g
+  wear:
+  - segurando
+  actions:
+  - pegou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4562,6 +4584,27 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.alguem-abandonou-um-belissimo-cachimbo-aqui-que-
+  name: Alguém abandonou um belíssimo cachimbo aqui, que jaz caído no chão.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
+      revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
+      fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
+      bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
+      haste presente em um dos lados.
+    rooms:
+    - room:bri.a-casa-mathom
+    - room:bri.a-grande-estrada-leste
+  examined: true
+  rooms:
+  - room:bri.a-casa-mathom
+  - room:bri.a-grande-estrada-leste
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.alto-trono-de-granito-bruto-foi-esculpido-aqui
   name: Um alto trono de granito bruto foi esculpido aqui.
   kind: scenery
@@ -4795,6 +4838,25 @@
   examined: true
   rooms:
   - room:estrado.um-lar-mal-cuidado
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.artefato
+  name: artefato
+  kind: scenery
+  descriptions:
+  - text: |-
+      Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
+      revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
+      fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
+      bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
+      haste presente em um dos lados.
+    rooms:
+    - room:bri.a-grande-estrada-leste
+  examined: true
+  rooms:
+  - room:bri.a-grande-estrada-leste
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5307,6 +5369,16 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.cantil-de-aventureiro-esta-juntando-po
+  name: Um cantil de aventureiro está juntando pó.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.capitao
   name: capitão
   kind: scenery
@@ -5568,6 +5640,24 @@
   examined: true
   rooms:
   - room:academia.o-corredor-silencioso
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.delicado-par-de-brincos-de-perolas-encanta-os-ol
+  name: Um delicado par de brincos de pérolas encanta os olhos de qualquer dama de bom gosto.
+  kind: scenery
+  flags: (Brilhando)
+  descriptions:
+  - text: |-
+      É um pequeno par de brincos, sendo cada um adornado com uma grande pérola
+      branca. É mais uma das obras de arte do ourives Fonstipéll, o melhor e o
+      único de Esgaroth!
+    rooms:
+    - room:bri.a-casa-mathom
+  examined: true
+  rooms:
+  - room:bri.a-casa-mathom
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5982,14 +6072,7 @@
 - id: obj:cenario.fixada-ao-chao-uma-bigorna-aguarda-que-alguma-li
   name: Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
   kind: scenery
-  descriptions:
-  - text: |-
-      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
-      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
-      a frequência de seu uso.
-    rooms:
-    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
-  examined: true
+  examined: false
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6126,6 +6209,25 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.flor-de-muitas-petalas-brilha-como-o-ouro
+  name: Uma flor de muitas pétalas brilha como o ouro.
+  kind: scenery
+  flags: (Brilhando)
+  descriptions:
+  - text: |-
+      O perfume adocicado desta flor se espalha pelo ambiente do mesmo modo que faz
+      a sua mente divagar, levando-o para mundos distantes e pacíficos, que banhados
+      pelo calor dourado e reconfortante do sol lhe transmitem uma pura e renovadora
+      energia.
+    rooms:
+    - room:bri.a-casa-mathom
+  examined: true
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.folhagem-da-grande-mangueira-farfalha-com-o-vent
   name: A folhagem da grande mangueira farfalha com o vento.
   kind: scenery
@@ -6229,7 +6331,14 @@
 - id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
   name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
+      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
+      a frequência de seu uso.
+    rooms:
+    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  examined: true
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6243,6 +6352,16 @@
   examined: false
   rooms:
   - room:bri.mercado.a-oficina-do-ferreiro
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-artefato-repousa-no-chao-com-partes-que-l
+  name: Um grande artefato repousa no chão, com partes que lembram as de um cachimbo.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-casa-mathom
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -7957,6 +8076,22 @@
   kind: scenery
   descriptions:
   - text: |-
+      Para a Estrada Leste.Você tenta ver adiante...
+      A Grande Estrada Leste
+      Você caminha pela parte sul da Grande Estrada Leste. Para o oeste, por
+      trás de uma cerca baixa de madeira, pode-se ver uma casa simples de pedra,
+      com um só andar e telhado de palha, usada pelos habitantes como depósito
+      de generalidades. Ao leste, por baixo de um grande arco do qual pende uma
+      placa de madeira, fica o pátio da famosa estalagem: o Pônei Saltitante. Dos
+      dois pavilhões que formam a estalagem saem sonoras e animadas gargalhadas.
+      A estrada pavimentada estende-se para norte e sul, onde pode-se ver uma
+      interseção.
+      Saídas: n e s w
+      Há um cesto para lixo aqui.
+      Um guarda está patrulhando aqui.
+    rooms:
+    - room:bri.a-grande-estrada-leste
+  - text: |-
       Pequenas engrenagens e molas distribuem-se dentro deste objeto. Um silvo ou
       zunido flui adiante como ondas sem um oceano. À medida que você examina por
       dentro, seus dedos tateiam algo. Embora você não pareça ter descoberto nada.
@@ -7979,6 +8114,7 @@
   rooms:
   - room:academia.o-refeitorio
   - room:academia.um-corredor-3
+  - room:bri.a-grande-estrada-leste
   - room:esgaroth.quartel-da-guarda
   - room:estrado.um-pequeno-laboratorio
   sources:
@@ -8460,6 +8596,16 @@
   rooms:
   - room:esgaroth.alto-do-mercado-11
   - room:esgaroth.hall-de-entrada-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ser-poderoso-esqueceu-um-portal-extradimensional
+  name: Um ser poderoso esqueceu um portal extradimensional aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:bri.a-casa-mathom
   sources:
   - logs/raw.log
   - logs/transcript.log
