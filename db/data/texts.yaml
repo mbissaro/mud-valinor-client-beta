@@ -918,6 +918,30 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:help.help-experiencia
+  kind: help
+  title: help experiencia
+  body: |-
+    Seu personagem cresce em poder por ganhar experiência. Digite LEVEL para ver
+    quantos pontos de experiência você precisa para os próximos níveis.
+    Você ganha experiência por:
+       Inflingir dano a um oponente;
+       fazer parte de um grupo que mata um oponente;
+       ter sucesso enquanto aprendendo uma habilidade ou magia no uso real dela
+    você perde experiência por:
+       ser alvo de algumas magias (como 'Drenar Energia');
+       morrer.
+    A experiência que você vai ganhar de uma luta depende de vários fatores:
+    quantos jogadores fazem parte do grupo; o seu nível versus o nível de seu
+    oponente; o seu alinhamento versus o alinhamento do oponente, e vários
+    outros fatores
+    A criatura também vai ganhar experiência de combate com você; se a
+    inteligência da criatura for mais alta que a sua, ela vai ter vantagem
+    sobre você no próximo combate.
+    Veja também: HELP RECLASS.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:look.examine-orbe
   kind: look
   title: examine orbe
@@ -10584,6 +10608,27 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:look.examine-objeto
+  kind: look
+  title: examine objeto
+  body: |-
+    Aparentemente uma caixa ornamental com tubos estriados saltando em ângulos
+    retos, este discreto objeto zunidor é realmente estranho. Uma pequena porta
+    está situada no painel frontal, sugerindo um melhor exame.
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.search-objeto
+  kind: look
+  title: search objeto
+  body: Você não pode procurar nisto!
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:shop-list.provisoes-para-jovens-aventureiros
   kind: shop-list
   title: Provisões para Jovens Aventureiros
@@ -12685,6 +12730,7 @@
        5x  O corpo de um grande macaco foi abandonado aqui.
        5x  O corpo de um morcego peludo foi abandonado aqui.
        4x  O corpo de uma raposa preguiçosa foi abandonado aqui.
+       4x  O corpo de Tolmo está envolto em um cheiro nauseabundo.
        3x  O corpo de Tolmo foi abandonado aqui.
        2x  A cabeça de uma raposa preguiçosa está se decompondo aqui.
        2x  O corpo de uma raposa preguiçosa está envolto em um cheiro nauseabundo.
