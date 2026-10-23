@@ -462,10 +462,7 @@
   name: uma caixa com um rótulo, aparentemente nova,
   kind: item
   category: outro
-  description: |-
-    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
-    Em seu rótulo, vê-se escrito: PREGOS.
-  examined: true
+  examined: false
   ground_line: Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -4366,7 +4363,10 @@
   name: uma velha caixa de madeira com o rótulo rompido
   kind: item
   category: outro
-  examined: false
+  description: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  examined: true
   ground_line: Uma velha caixa de madeira com o rótulo rompido foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -4903,6 +4903,33 @@
   kind: scenery
   descriptions:
   - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs: Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs- Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    - room:esgaroth.praca-da-flechada-precisa
+  - text: |-
       É um balde de chumbo, muito, muito pesado. É usado em conjunto com as bombas
       d'água de Esgaroth.
     rooms:
@@ -5105,35 +5132,7 @@
 - id: obj:cenario.bomba-d-agua-esta-aqui-pronta-para-puxar-agua-do
   name: Uma bomba d'água está aqui, pronta para puxar água do lago.
   kind: scenery
-  descriptions:
-  - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs: Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.praca-floresta-das-trevas
-  - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs- Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
-    - room:esgaroth.praca-da-flechada-precisa
-  examined: true
+  examined: false
   rooms:
   - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
   - room:esgaroth.praca-da-flechada-precisa

@@ -10996,6 +10996,7 @@
     O mago falou 'Certo! Treine suas habilidades com este boneco.'
     O mago exclamou 'Levanta-te, monte de palha!'
     O mago exclamou 'De novo? Você acabou de lutar! Dê chance para outros!'
+    O mago falou 'Olá, Tolmo! Diga 'desejo lutar' para testar suas habilidades com um boneco de luta.'
   rooms:
   - room:academia.o-centro-do-jardim
   sources:
@@ -12539,6 +12540,7 @@
        1x  O corpo de um lobo sorrateiro foi abandonado aqui.
        1x  O corpo de Halbarion está se decompondo aqui.
        1x  O corpo da pequena aranha foi abandonado aqui.
+       1x  O corpo de Tolmo está coberto de insetos.
   sources:
   - logs/transcript.log
   confidence: confirmed
