@@ -143,8 +143,8 @@
   mobs:
   - Um meio-elfo está orientando os alunos.
   objects:
-  - Ao lado da janela, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Ao lado da janela, jaz uma grande placa.
   - Fileiras de cadeiras ocupam quase metade da sala.
   links:
     s: room:academia.a-sala-dos-conteiners
@@ -278,8 +278,8 @@
   - '!e'
   - d
   objects:
-  - Fixada na parede, jaz uma bela estante.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede, jaz uma bela estante.
   links:
     n: room:academia.a-sala-da-atencao
   visits: 9
@@ -305,8 +305,8 @@
   - '!s'
   - s
   objects:
-  - Fixada na parede, jaz uma bela estante.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede, jaz uma bela estante.
   visits: 9
   sources:
   - logs/raw.log:1383
@@ -330,8 +330,8 @@
   mobs:
   - Uma hobbit está orientando os alunos.
   objects:
-  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Fixada na parede, jaz uma grande placa.
+  - (Brilhando) Um misterioso orbe atrai a sua atenção.
   - Uma chave metálica jaz largada.
   links:
     e: room:academia.a-sala-das-habilidades
@@ -373,8 +373,8 @@
   mobs:
   - Um homem está orientando os alunos.
   objects:
-  - Fixada na parede sul, jaz uma grande placa.
   - (Brilhando) Um misterioso orbe atrai a sua atenção.
+  - Fixada na parede sul, jaz uma grande placa.
   links:
     e: room:academia.fim-do-treinamento
   visits: 9
@@ -462,15 +462,15 @@
   objects:
   - A fonte de mármore goteja água cristalina.
   - Alguns ossos de uma ave foram deixados aqui.
-  - (Brilhando) Uma pequena lamparina foi deixada aqui.
-  - Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
   - Uma delicada camisa clara foi abandonada aqui.
+  - Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
+  - (Brilhando) Uma pequena lamparina foi deixada aqui.
   - Uma desgastada bainha de couro foi largada aqui.
   - Um elmo metálico jaz largado.
+  - Um resistente colarinho metálico foi deixado aqui.
   - Um protetor de ferro para os braços está caído aqui.
   - Há um cinto de couro aqui.
   - Um par de luvas de couro foi deixado aqui.
-  - Um resistente colarinho metálico foi deixado aqui.
   links:
     d: room:bri.entrada-para-a-academia
     e: room:academia.deposito-de-armas
@@ -521,9 +521,9 @@
   mobs:
   - Um cuteleiro examina algumas armas.
   objects:
-  - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
-  - Fixada na parede, jaz uma bela estante.
   - Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
+  - Fixada na parede, jaz uma bela estante.
+  - Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   - Um tanque foi preenchido com água até sua borda.
   links:
     w: room:academia.a-academia-de-aventureiros
@@ -768,8 +768,8 @@
   - Mestre Toric brilha sob uma aura branca.
   - Um Mestre da Cura está aqui, cuidando dos alunos.
   objects:
-  - Vários leitos estão organizados em fileiras.
   - A fonte de mármore goteja água cristalina.
+  - Vários leitos estão organizados em fileiras.
   links:
     e: room:academia.um-corredor-3
   visits: 152
@@ -1236,8 +1236,8 @@
   - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um grande macaco imita seus movimentos.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Uma cobra gigantesca rasteja lentamente.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Um bezerro assustado perdeu-se por aqui.
   - Um felino ágil fareja algo.
   - Uma vespa enorme voa em sua direção.
@@ -1353,8 +1353,8 @@
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um felino ágil fareja algo.
-  - Um bezerro assustado perdeu-se por aqui.
   - Um filhote de urso está perdido.
+  - Um bezerro assustado perdeu-se por aqui.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
@@ -1391,8 +1391,8 @@
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Um grande macaco imita seus movimentos.
   links:
     e: room:bosque.o-amplo-bosque-19
@@ -1454,8 +1454,8 @@
   - sw
   mobs:
   - Um javali gordão anda quase deitado de tão pesado que ele é.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Uma cobra gigantesca rasteja lentamente.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Um felino ágil fareja algo.
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
@@ -1512,8 +1512,8 @@
   - Um javali gordão anda quase deitado de tão pesado que ele é.
   - Um filhote de urso está perdido.
   - Um lobo sorrateiro está procurando sua matilha.
-  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   - Uma vespa enorme voa em sua direção.
+  - Voando tranquilamente, um grande pássaro azul canta suavemente.
   links:
     s: room:bosque.o-amplo-bosque-6
     w: room:bosque.o-amplo-bosque-16
@@ -1618,8 +1618,8 @@
   - sw
   mobs:
   - Uma cobra gigantesca rasteja lentamente.
-  - Um filhote de urso está perdido.
   - Um felino ágil fareja algo.
+  - Um filhote de urso está perdido.
   links:
     e: room:bosque.o-amplo-bosque-15
   visits: 2
@@ -1683,14 +1683,14 @@
   - se
   - sw
   mobs:
-  - Um lobo sorrateiro está procurando sua matilha.
   - Um javali gordão anda quase deitado de tão pesado que ele é.
+  - Um lobo sorrateiro está procurando sua matilha.
   - Uma raposa preguiçosa vaga sem rumo pelo bosque.
   - Um grande macaco imita seus movimentos.
   - Uma cobra gigantesca rasteja lentamente.
   - Voando tranquilamente, um grande pássaro azul canta suavemente.
-  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um filhote de urso está perdido.
+  - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Um felino ágil fareja algo.
   links:
     e: room:bosque.o-amplo-bosque-23
@@ -1727,8 +1727,8 @@
   - Um coelho veloz saltita pelo bosque atrás de mais comida.
   - Uma cobra gigantesca rasteja lentamente.
   - Um bezerro assustado perdeu-se por aqui.
-  - Um lobo sorrateiro está procurando sua matilha.
   - Um felino ágil fareja algo.
+  - Um lobo sorrateiro está procurando sua matilha.
   links:
     n: room:bosque.o-amplo-bosque-13
     s: room:bosque.o-amplo-bosque-13
@@ -1820,10 +1820,10 @@
   exits:
   - s
   mobs:
+  - Námo brilha sob uma aura branca.
   - Vairë brilha sob uma aura branca.
   - Vairë, a Senhora do Tempo, está aqui, escrevendo seus Registros.
   - Námo, o Senhor de Mandos, está aqui, te observando.
-  - Námo brilha sob uma aura branca.
   links:
     s: room:saloes-espera.os-saloes-de-espera-3
   visits: 11
@@ -2359,8 +2359,8 @@
   - s
   mobs:
   - Um gato preto está aqui descansando.
-  - Nob está aqui, misturando bebidas atrás do balcão.
   - Um homem tranqüilo está aqui, embaralhando algumas cartas.
+  - Nob está aqui, misturando bebidas atrás do balcão.
   - Dori está aqui, sentado sobre um banco.
   objects:
   - Há várias mesas com bancos aqui.
@@ -2613,8 +2613,8 @@
   - nw
   - se
   mobs:
-  - Uma criança transborda de alegria, cantarolando aqui.
   - Um velho homem está caminhando por aqui.
+  - Uma criança transborda de alegria, cantarolando aqui.
   links:
     n: room:bri.uma-trilha
     nw: room:eriador.estrada-norte.a-velha-estrada-norte
@@ -2764,8 +2764,8 @@
   exits:
   - n
   mobs:
-  - A armeira está bastante ocupada, lustrando seu capacete.
   - Um guarda está patrulhando aqui.
+  - A armeira está bastante ocupada, lustrando seu capacete.
   links:
     n: room:bri.mercado.rua-do-mercado-2
   visits: 1
@@ -2958,8 +2958,8 @@
   - s
   mobs:
   - O comerciante está em pé aqui.
-  - Um guarda está patrulhando aqui.
   - Um velho homem está caminhando por aqui.
+  - Um guarda está patrulhando aqui.
   links:
     s: room:bri.mercado.rua-do-mercado-3
   visits: 2
@@ -2996,8 +2996,8 @@
   - n
   - e
   mobs:
-  - Um curioso passarinho azul caminha aqui.
   - Entre as fileiras de armários, um carteiro despreocupado arruma uma coisa ou outra pela sala.
+  - Um curioso passarinho azul caminha aqui.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
   links:
@@ -3833,8 +3833,8 @@
   - '!ne'
   - '!se'
   objects:
-  - Uma pequena fonte circular de pedras claras jaz aqui, jorrando água cristalina.
   - Vários bancos de pedras claras estão espalhados ao longo da praça.
+  - Uma pequena fonte circular de pedras claras jaz aqui, jorrando água cristalina.
   links:
     n: room:bri.no-comeco-da-rua-das-cerejeiras
     w: room:bri.avenida-zenite-3
@@ -3879,12 +3879,12 @@
   exits:
   - e
   objects:
-  - (Brilhando) Um delicado par de brincos de pérolas encanta os olhos de qualquer dama de bom gosto.
   - (Brilhando) Uma flor de muitas pétalas brilha como o ouro.
-  - Um cantil de aventureiro está juntando pó.
-  - Alguém abandonou um belíssimo cachimbo aqui, que jaz caído no chão.
+  - (Brilhando) Um delicado par de brincos de pérolas encanta os olhos de qualquer dama de bom gosto.
   - Um ser poderoso esqueceu um portal extradimensional aqui.
   - Um grande artefato repousa no chão, com partes que lembram as de um cachimbo.
+  - Um cantil de aventureiro está juntando pó.
+  - Alguém abandonou um belíssimo cachimbo aqui, que jaz caído no chão.
   links:
     e: room:bri.a-grande-estrada-leste
   visits: 8
@@ -4267,8 +4267,8 @@
   - Umaro, o líder da guarda de Archet, observa a todos com cara de poucos amigos.
   - Umaro está sob uma estranha mistura de luz e sombras.
   objects:
-  - Um banco de pedras azuis está aqui ao redor da fonte.
   - Uma grande fonte circular jorra água cristalina aqui.
+  - Um banco de pedras azuis está aqui ao redor da fonte.
   links:
     e: room:archet.rua-dos-oficios-2
     s: room:archet.a-entrada-de-archet
@@ -4682,12 +4682,12 @@
   - '!se'
   - '!sw'
   mobs:
-  - rústicos, deixando você bem à vontade. Ao norte há uma cortina
-  - solicitar um aposento.
-  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
-  - escondendo a passagem para o norte. Grandes poltronas de muitos
-  - intensidade. A recepção da hospedaria é decorada com tons claros e
   - O barulho da rua lá fora ainda pode ser ouvido, porém com bem menos
+  - solicitar um aposento.
+  - rústicos, deixando você bem à vontade. Ao norte há uma cortina
+  - intensidade. A recepção da hospedaria é decorada com tons claros e
+  - escondendo a passagem para o norte. Grandes poltronas de muitos
+  - lugares foram colocadas aqui para que você possa aguardar a sua vez de
   links:
     s: room:archet.hospedaria-sono-cerrado
   visits: 2
@@ -5299,8 +5299,8 @@
   - e
   - w
   mobs:
-  - O Senhor Macieira canta alegremente com os pássaros ao seu redor.
   - Rowlie Macieira brilha sob uma aura branca.
+  - O Senhor Macieira canta alegremente com os pássaros ao seu redor.
   links:
     e: room:bri.a-grande-estrada-leste-3
   visits: 2
@@ -5538,8 +5538,8 @@
   exits:
   - s
   mobs:
-  - Lady Knob está apavorada com sua presença.
   - O jardineiro trabalha duro para produzir legumes frescos.
+  - Lady Knob está apavorada com sua presença.
   links:
     s: room:bri.mansao-knob.um-cruzamento
   visits: 2
@@ -6481,8 +6481,8 @@
   - n
   - w
   mobs:
-  - Um passarinho salta assustado fugindo de você.
   - (Montada) Uma obediente égua aguarda aqui.
+  - Um passarinho salta assustado fugindo de você.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
@@ -6897,8 +6897,8 @@
   - sw
   mobs:
   - (Montada) Uma obediente égua aguarda aqui.
-  - Um esquilo cinzento busca proteção ao se esconder aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
+  - Um esquilo cinzento busca proteção ao se esconder aqui.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -7024,8 +7024,8 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   visits: 1
   sources:
   - logs/raw.log:83179
@@ -7155,9 +7155,9 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
+  - Uma enorme estátua de três criaturas petrificadas jaz aqui.
   - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
-  - Uma enorme estátua de três criaturas petrificadas jaz aqui.
   visits: 1
   sources:
   - logs/raw.log:83258
@@ -7242,8 +7242,8 @@
   mobs:
   - Asfaloth brilha sob uma aura branca.
   - Glorfindel brilha sob uma aura branca.
-  - Glorfindel, o Senhor-Élfico, está aqui.
   - Um imponente cavalo branco está aqui aguardando as ordens de seu senhor.
+  - Glorfindel, o Senhor-Élfico, está aqui.
   objects:
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   visits: 1
@@ -7288,8 +7288,8 @@
   - (Montada) Uma obediente égua aguarda aqui.
   - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
+  - Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   visits: 1
   sources:
   - logs/raw.log:83404
@@ -7612,14 +7612,14 @@
   - sw
   mobs:
   - (Montada) Uma obediente égua aguarda aqui.
-  - Vato Nogueira está aqui, sentado sobre a bela égua.
   - A Guardiã cuida para que a ordem seja absolutamente preservada.
   - A Guardiã elfa brilha sob uma aura branca.
+  - Vato Nogueira está aqui, sentado sobre a bela égua.
   objects:
-  - Algumas estátuas estão dispostas sobre pedestais aqui.
-  - No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
   - (atrelado à bela égua) Uma pequena charrete foi deixada aqui.
   - Um grande círculo de bancos de pedra está montado aqui.
+  - No centro do bosque, uma fonte em cascata borrifa orvalho na grama.
+  - Algumas estátuas estão dispostas sobre pedestais aqui.
   links:
     nw: room:valfenda.uma-alameda-de-juniperos
     se: room:valfenda.uma-alameda-de-populos
@@ -7702,11 +7702,11 @@
   - Uma joaninha amarela voa alegremente aqui.
   - Um beija-flor sobrevoa em redor, procurando uma flor...
   objects:
-  - Um mural bem legal está aqui no meio do nada.
-  - Um tanque formado pela nascente de um córrego jaz aqui.
   - Um canteiro, em forma de meia lua, foi construido em redor do salgueiro.
   - Fixada na parede, jaz uma bela estante.
+  - Um mural bem legal está aqui no meio do nada.
   - Um antigo e reverenciável salgueiro-chorão estende seus galhos.
+  - Um tanque formado pela nascente de um córrego jaz aqui.
   links:
     n: room:valfenda.no-jardim-um-caminho-entre-canteiros
     w: room:valfenda.uma-alameda-de-juniperos-2
@@ -7728,8 +7728,8 @@
   mobs:
   - Uma joaninha amarela voa alegremente aqui.
   objects:
-  - Um mural bem legal está aqui no meio do nada.
   - Um arco de madeira, coberto de trepadeiras e flores brancas, jaz aqui.
+  - Um mural bem legal está aqui no meio do nada.
   links:
     e: room:valfenda.no-jardim-um-caminho-entre-canteiros-2
     s: room:valfenda.na-entrada-do-jardim-de-imladris
@@ -7792,8 +7792,8 @@
   mobs:
   - Uma preguiçosa lagarta verde se arrasta, procurando comer as cecílias...
   objects:
-  - Um mural bem legal está aqui no meio do nada.
   - Algumas pedras grandes estão aqui como bancos.
+  - Um mural bem legal está aqui no meio do nada.
   links:
     nw: room:valfenda.jardins-ervas-perfumadas-2
     s: room:valfenda.no-jardim-um-caminho-entre-canteiros-3
@@ -8149,8 +8149,8 @@
   exits:
   - s
   mobs:
-  - Um curioso passarinho azul caminha aqui.
   - Celorien Ramo-Verde sela algumas cartas, enquanto vigia os armários.
+  - Um curioso passarinho azul caminha aqui.
   objects:
   - 'Pendurada em um poleiro, uma folha de papel OOC anuncia: "Tweets recentes".'
   links:
@@ -8671,8 +8671,8 @@
   - w
   objects:
   - Um belo banco com runas élficas circunda a fonte.
-  - Uma majestosa macieira cresce aqui.
   - Uma bela fonte de pedras verdes está aqui no centro do círculo.
+  - Uma majestosa macieira cresce aqui.
   links:
     e: room:valfenda.uma-alameda-de-alteias
     w: room:valfenda.uma-alameda-de-olmeiros
@@ -9722,8 +9722,8 @@
   exits:
   - e
   objects:
-  - Uma desgastada bainha de couro foi largada aqui.
   - Uma delicada camisa clara foi abandonada aqui.
+  - Uma desgastada bainha de couro foi largada aqui.
   links:
     e: room:valfenda.a-recepcao
   visits: 4
@@ -9745,8 +9745,8 @@
   exits:
   - w
   mobs:
-  - Isilië brilha sob uma aura branca.
   - Isilië, a curandeira, pacientemente auxilia os feridos.
+  - Isilië brilha sob uma aura branca.
   objects:
   - Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
   - A fonte de mármore goteja água cristalina.
@@ -9827,8 +9827,8 @@
   exits:
   - w
   objects:
-  - Diversas cadeiras circulam uma mesa de centro.
   - Junto à parede leste, crepita uma lareira.
+  - Diversas cadeiras circulam uma mesa de centro.
   links:
     w: room:bri.ponei.o-ponei-saltitante
   visits: 2
@@ -9851,8 +9851,8 @@
   exits:
   - s
   mobs:
-  - O mestre Edhregol brilha sob uma aura branca.
   - Um meio-elfo está orientando os aprendizes.
+  - O mestre Edhregol brilha sob uma aura branca.
   links:
     s: room:bosque.o-amplo-bosque-15
   visits: 3
@@ -10173,8 +10173,8 @@
   mobs:
   - Um hobbit bem arrumado observa o movimento.
   objects:
-  - A folhagem da grande mangueira farfalha com o vento.
   - Bancos circundam a fonte.
+  - A folhagem da grande mangueira farfalha com o vento.
   - A fonte de mármore goteja água cristalina.
   links:
     e: room:vila-aventureiros.rua-da-honra-3
@@ -11073,9 +11073,9 @@
   mobs:
   - Um comprador de cristais leva sua compra com um cuidado quase maternal.
   objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
   - Dois bancos de madeira foram colocados aqui.
   - Uma bomba d'água está aqui, pronta para puxar água do lago.
-  - Um balde de chumbo foi colocado sob o cano da bomba.
   links:
     s: room:esgaroth.avenida-perimetral-leste
     sw: room:esgaroth.taverna-do-rei-sob-a-montanha
@@ -11366,9 +11366,9 @@
   mobs:
   - Dantalion, um estrangeiro, caminha pelas ruas da cidade.
   objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
   - Dois bancos de madeira foram colocados aqui.
   - Uma bomba d'água está aqui, pronta para puxar água do lago.
-  - Um balde de chumbo foi colocado sob o cano da bomba.
   links:
     n: room:esgaroth.avenida-perimetral-leste-13
     w: room:esgaroth.avenida-perimetral-sul
@@ -11550,8 +11550,8 @@
   - ne
   - sw
   mobs:
-  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   links:
     e: room:esgaroth.lampadario-luz-cegante
     ne: room:esgaroth.alto-do-mercado-2
@@ -11578,8 +11578,8 @@
   - w
   mobs:
   - Farzel Luzumbra mexe um caldeirão com cera derretida e mistura algo à receita.
-  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   objects:
   - Um balcão coberto de cera e marcas de fogo separa os fundos da loja.
   links:
@@ -11602,8 +11602,8 @@
   - d
   - sw
   mobs:
-  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   - Daradim, o leiteiro, passa por aqui arrastando um pequeno carrinho.
+  - Uma vaca malhada arrasta um carro de laticínios, e rumina mansa...
   links:
     n: room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
     sw: room:esgaroth.alto-do-mercado
@@ -11628,12 +11628,12 @@
   - e
   - s
   mobs:
-  - Brandivaus, o capitão da guarda, está atento ao movimento.
   - Asilë, a aprendiz de espadas, está em pé aqui.
+  - Brandivaus, o capitão da guarda, está atento ao movimento.
   objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
   - Dois bancos de madeira foram colocados aqui.
   - Uma bomba d'água está aqui, pronta para puxar água do lago.
-  - Um balde de chumbo foi colocado sob o cano da bomba.
   links:
     e: room:esgaroth.rua-oposta
     n: room:esgaroth.alto-do-mercado-3
@@ -12149,9 +12149,9 @@
   mobs:
   - Hannendel, a velha doceira, está aqui com uma cesta cheia de guloseimas!
   objects:
+  - Um balde de chumbo foi colocado sob o cano da bomba.
   - Dois bancos de madeira foram colocados aqui.
   - Uma bomba d'água está aqui, pronta para puxar água do lago.
-  - Um balde de chumbo foi colocado sob o cano da bomba.
   links:
     e: room:esgaroth.viela-do-heroi-2
     se: room:esgaroth.a-entrada-da-casa-grande
@@ -12204,8 +12204,8 @@
   - Florbela está aqui pensando no seu próximo vestido.
   - Belodon está por aqui pensando em aventuras.
   objects:
-  - Um cabideiro de madeira, para chapéus e casacos, foi colocado aqui.
   - Uma poltrona vermelha parece tão confortável que te convida a cochilar...
+  - Um cabideiro de madeira, para chapéus e casacos, foi colocado aqui.
   links:
     nw: room:esgaroth.praca-da-flechada-precisa
     s: room:esgaroth.corredor-terreo
@@ -12299,9 +12299,9 @@
   exits:
   - w
   objects:
-  - Um cabideiro de ferro jaz aqui, com caçarolas penduradas em seus ganchos.
   - Alguns barris de manteiga foram estocados no canto da cozinha.
   - Uma tina de madeira, cheia de água, jaz aqui para os serviços de cozinha.
+  - Um cabideiro de ferro jaz aqui, com caçarolas penduradas em seus ganchos.
   links:
     w: room:esgaroth.copa
   visits: 2
@@ -12326,8 +12326,8 @@
   mobs:
   - Bertilde, a serva, está aqui limpando tudo com cuidado.
   objects:
-  - Uma grande mesa redonda ocupa o centro da sala para os banquetes...
   - Uma dúzia de cadeiras com espaldar alto foi colocada em torno da mesa.
+  - Uma grande mesa redonda ocupa o centro da sala para os banquetes...
   links:
     n: room:esgaroth.corredor-terreo
   visits: 2
@@ -12589,8 +12589,8 @@
   - u
   - se
   objects:
-  - Uma pilha de farelos jaz sobre a rampa, deixada por algum carregamento...
   - Uma carga de gengibre foi descarregada aqui e espalha um perfume salutar...
+  - Uma pilha de farelos jaz sobre a rampa, deixada por algum carregamento...
   links:
     n: room:esgaroth.em-frente-da-estrebaria
     u: room:esgaroth.alto-do-mercado-8
@@ -13572,8 +13572,8 @@
   exits:
   - e
   objects:
-  - Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
   - Uma velha caixa de madeira com o rótulo rompido foi deixada aqui.
+  - Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
   - Encostaram uma escada de madeira na parede aqui.
   links:
     e: room:estrado.um-pequeno-laboratorio-2
@@ -13913,14 +13913,15 @@
   - '!e s w sw'
   - e s w sw
   mobs:
-  - Um fazendeiro cuida de suas plantações com toda a dedicação.
   - Um pônei negro afugenta as moscas com a cauda aqui.
+  - Um pônei branco afugenta as moscas com a cauda aqui.
+  - Um fazendeiro cuida de suas plantações com toda a dedicação.
   links:
     e: room:estrado.o-curral
     s: room:estrado.a-estrada-do-estabulo
     sw: room:estrado.o-cultivo-de-framboesas
     w: room:estrado.uma-horta-de-cebolas
-  visits: 12
+  visits: 15
   sources:
   - logs/raw.log:125393
   confidence: confirmed
@@ -13948,7 +13949,7 @@
     n: room:estrado.a-entrada-do-curral
     nw: room:estrado.uma-horta-de-cebolas
     w: room:estrado.o-cultivo-de-framboesas
-  visits: 9
+  visits: 10
   sources:
   - logs/raw.log:125413
   confidence: confirmed
@@ -13966,10 +13967,11 @@
   - w
   mobs:
   - Uma vaca malhada rumina pacientemente aqui.
+  - Uma porca está aqui, a procura de lama para se jogar.
   links:
     e: room:estrado.um-abrigo-para-os-animais
     w: room:estrado.a-entrada-do-curral
-  visits: 4
+  visits: 6
   sources:
   - logs/raw.log:125792
   confidence: confirmed
@@ -13990,7 +13992,7 @@
   - Uma enorme manjedoura foi construída aqui para alimentar os animais.
   links:
     w: room:estrado.o-curral
-  visits: 2
+  visits: 3
   sources:
   - logs/raw.log:125842
   confidence: confirmed
@@ -14010,8 +14012,9 @@
   - Um pônei negro afugenta as moscas com a cauda aqui.
   - Um pônei branco afugenta as moscas com a cauda aqui.
   links:
+    e: room:estrado.a-cocheira
     w: room:estrado.a-estrada-do-estabulo
-  visits: 3
+  visits: 4
   sources:
   - logs/raw.log:125935
   confidence: confirmed
@@ -14033,7 +14036,7 @@
   - Uma enorme manjedoura foi construída aqui para alimentar os animais.
   links:
     w: room:estrado.o-estabulo
-  visits: 2
+  visits: 3
   sources:
   - logs/raw.log:126003
   confidence: confirmed
@@ -14089,9 +14092,9 @@
   - e
   - nw
   mobs:
-  - Uma criança hobbit está aqui, saltando sobre pedras.
-  - Uma criança hobbit está aqui, arremessando um bumerangue.
   - Um hobbit vaga por aqui, a caminho do trabalho.
+  - Uma criança hobbit está aqui, arremessando um bumerangue.
+  - Uma criança hobbit está aqui, saltando sobre pedras.
   objects:
   - Uma placa de madeira meio pensa foi fincada no chão aqui.
   links:
@@ -14812,8 +14815,8 @@
   exits:
   - w
   mobs:
-  - Uma criança hobbit está aqui, perdida em pensamentos.
   - Este professor toma a atenção de seus alunos meramente com sua presença.
+  - Uma criança hobbit está aqui, perdida em pensamentos.
   objects:
   - Uma enorme estante de carvalho foi colocada aqui.
   links:

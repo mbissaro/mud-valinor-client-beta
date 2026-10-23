@@ -462,10 +462,7 @@
   name: uma caixa com um rótulo, aparentemente nova,
   kind: item
   category: outro
-  description: |-
-    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
-    Em seu rótulo, vê-se escrito: PREGOS.
-  examined: true
+  examined: false
   ground_line: Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -4388,7 +4385,10 @@
   name: uma velha caixa de madeira com o rótulo rompido
   kind: item
   category: outro
-  examined: false
+  description: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  examined: true
   ground_line: Uma velha caixa de madeira com o rótulo rompido foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -4587,20 +4587,9 @@
 - id: obj:cenario.alguem-abandonou-um-belissimo-cachimbo-aqui-que-
   name: Alguém abandonou um belíssimo cachimbo aqui, que jaz caído no chão.
   kind: scenery
-  descriptions:
-  - text: |-
-      Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
-      revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
-      fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
-      bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
-      haste presente em um dos lados.
-    rooms:
-    - room:bri.a-casa-mathom
-    - room:bri.a-grande-estrada-leste
-  examined: true
+  examined: false
   rooms:
   - room:bri.a-casa-mathom
-  - room:bri.a-grande-estrada-leste
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4965,6 +4954,33 @@
   kind: scenery
   descriptions:
   - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs: Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs- Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    - room:esgaroth.praca-da-flechada-precisa
+  - text: |-
       É um balde de chumbo, muito, muito pesado. É usado em conjunto com as bombas
       d'água de Esgaroth.
     rooms:
@@ -5167,35 +5183,7 @@
 - id: obj:cenario.bomba-d-agua-esta-aqui-pronta-para-puxar-agua-do
   name: Uma bomba d'água está aqui, pronta para puxar água do lago.
   kind: scenery
-  descriptions:
-  - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs: Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.praca-floresta-das-trevas
-  - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs- Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
-    - room:esgaroth.praca-da-flechada-precisa
-  examined: true
+  examined: false
   rooms:
   - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
   - room:esgaroth.praca-da-flechada-precisa
@@ -6073,7 +6061,14 @@
 - id: obj:cenario.fixada-ao-chao-uma-bigorna-aguarda-que-alguma-li
   name: Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
+      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
+      a frequência de seu uso.
+    rooms:
+    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  examined: true
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6332,14 +6327,7 @@
 - id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
   name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   kind: scenery
-  descriptions:
-  - text: |-
-      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
-      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
-      a frequência de seu uso.
-    rooms:
-    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
-  examined: true
+  examined: false
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6360,9 +6348,20 @@
 - id: obj:cenario.grande-artefato-repousa-no-chao-com-partes-que-l
   name: Um grande artefato repousa no chão, com partes que lembram as de um cachimbo.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Essa espécie de cachimbo lembra até uma chaleira. É um grande recipiente
+      revestido de vidro onde se põe a erva -- muita erva, por sinal. Feito para
+      fumar em um grupo de várias pessoas, esse artefato cumpre seu papel muito
+      bem, caso usado corretamente. Passado de mão em mão, basta tragar pela
+      haste presente em um dos lados.
+    rooms:
+    - room:bri.a-casa-mathom
+    - room:bri.a-grande-estrada-leste
+  examined: true
   rooms:
   - room:bri.a-casa-mathom
+  - room:bri.a-grande-estrada-leste
   sources:
   - logs/raw.log
   - logs/transcript.log
