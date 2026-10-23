@@ -2093,3 +2093,10 @@ passo custa até 8mv.
 - Vila de tocas enfileiradas na margem norte do lago, jardins, Dragão Verde, perto da Colina de Bolsão. Mestre de perícias e magias: Celussë, a mestra da água. Atração: bons itens para hobbits.
 - Dica: cuidado para não se perder nas plantações; "você veio do norte".
 - Rota de Bri: portão oeste, Bosques das Colinas do Sul, Grande Estrada do Leste, ponte do rio Brandevin, depois oeste até a área (atenção às placas). De Archet: trilha sudoeste da entrada, sul pela Velha Estrada do Norte até A Interseção, de lá pelos bosques. Beirágua é a vila após Sapântano (help 'sapântano').
+
+### Tolmo: morte no caminho para Beirágua (nível 1, 17 hp)
+- Rota percorrida: Portão Oeste de Bri, `w` x4 até A Interseção, depois Grande Estrada do Leste a oeste: 3 salas "A Grande Estrada do Leste", bifurcação n s nw se com um grande cogumelo ("topo coberto com substância de cheiro de mofo"), depois cruzamento de três trilhas (n, e, w; a estrada segue sudeste-noroeste). Pela entrada `w` desse bifurcação há "Uma Pequena e Escura Trilha no Bosque" (saídas e s) fora da estrada.
+- help "Bosques das Colinas do Sul" (nível 5-10; vizinhas Bri, Floresta Velha, Colina dos Túmulos, Sede do Brandevin, Fosso Branco): wargs agressivos, ninhada de aranhas assassinas, figuras que saem de Chet/Floresta Velha à noite; "evite sair da trilha da Grande Estrada do Leste"; choupana de John, o lenhador (mapa do local) e refúgio do Druida; Onae, o Guardião, procura Lothab, perdido na Floresta Velha.
+- Um warg furioso atacou o Tolmo ao andar a noroeste no cruzamento: golpes "MASSACROU" tiraram 16 de 17 hp em poucos segundos, `flee` não adiantou (1 hp -> morte). Morte nº 1 do Tolmo, XP 0.
+- Salões de Espera de novo: ao chegar, `stand`; arco ao norte: corredor com Estë, depois a sala circular com Námo e Vairë, que dizem que o veredicto "não será rápido" (aguardar). Andar nessa sala gasta movimento (168 -> 99).
+- Lição: nível 1 não atravessa os Bosques das Colinas do Sul nem à noite nem de dia; para documentar Beirágua/Sapântano/Fosso Branco é preciso nível 5+ ou escolta. Hobbit 17 hp morre em 2 golpes de warg.

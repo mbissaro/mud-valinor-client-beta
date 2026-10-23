@@ -24,8 +24,12 @@
 - id: obj:adaga-metalica
   name: uma adaga metálica
   kind: item
-  category: outro
+  category: equipamento
   examined: false
+  worn_at:
+  - empunhando
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   shops:
@@ -36,6 +40,9 @@
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  actions:
+  - empunhou
+  - pegou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -71,6 +78,16 @@
   examined: false
   worn_by:
   - A Guardiã elfa <nas costas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:anel-com-uma-pedra-verde
+  name: um anel com uma pedra verde
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um enorme troll <no dedo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -136,7 +153,7 @@
   - O guarda <no corpo>
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
-    level: 6
+    level: 5
     price: 5
     stock: Ilim.
   rooms:
@@ -151,6 +168,16 @@
   examined: false
   worn_by:
   - Phrantes <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:avental-xadrez-de-algodao
+  name: um avental xadrez de algodão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma mulher hobbit <na cintura>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -243,6 +270,17 @@
   examined: false
   worn_by:
   - O velho pescador <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:blusa-marrom
+  name: uma blusa marrom
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma criança hobbit <no corpo>
+  - Uma mulher hobbit <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -353,6 +391,8 @@
   condition: em perfeito estado
   worn_at:
   - no pulso
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   rooms:
@@ -360,6 +400,16 @@
   actions:
   - colocou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bumerangue
+  name: um bumerangue
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma criança hobbit <empunhando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -405,6 +455,20 @@
     stock: Ilim.
   rooms:
   - room:valfenda.a-casa-de-refeicoes
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caixa-com-um-rotulo-aparentemente-nova
+  name: uma caixa com um rótulo, aparentemente nova,
+  kind: item
+  category: outro
+  description: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  examined: true
+  ground_line: Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
+  rooms:
+  - room:estrado.armazem
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -539,6 +603,9 @@
   worn_by:
   - O herói Kheodred <nas pernas>
   - O lojista <nas pernas>
+  - Um hobbit <nas pernas>
+  - Um marceneiro hobbit <nas pernas>
+  - Uma criança hobbit <nas pernas>
   - Zurg <nas pernas>
   sources:
   - logs/transcript.log
@@ -632,6 +699,8 @@
   condition: em perfeito estado
   worn_at:
   - no corpo
+  worn_by:
+  - Um marceneiro hobbit <no corpo>
   actions:
   - pegou
   - vestiu
@@ -647,6 +716,21 @@
   - O jovem Belodon <no corpo>
   - O merceeiro mercador Alastor <no corpo>
   - O taverneiro Dostolieve <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-verde-de-algodao
+  name: uma camisa verde de algodão
+  kind: item
+  category: equipamento
+  examined: false
+  worn_at:
+  - no corpo
+  dropped_by:
+  - Tolmo
+  actions:
+  - pegou
+  - vestiu
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -790,6 +874,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:capa-xadrez-esfarrapada
+  name: uma capa xadrez esfarrapada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um guarda hobbit <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:capuz-roxo-berrante
   name: um capuz roxo berrante
   kind: item
@@ -855,9 +949,32 @@
   condition: em perfeito estado
   worn_at:
   - no corpo
+  dropped_by:
+  - Tolmo
   actions:
   - pegou
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cebola
+  name: uma cebola
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - come
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cesta-de-vime
+  name: uma cesta de vime
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um marceneiro hobbit <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -868,6 +985,16 @@
   examined: false
   worn_by:
   - Aerith <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cetro-retorcido
+  name: um cetro retorcido
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O rei dos hobgoblins <empunhando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -886,8 +1013,15 @@
   kind: item
   category: equipamento
   examined: false
+  worn_at:
+  - na cabeça
   worn_by:
   - Vato Nogueira <na cabeça>
+  dropped_by:
+  - Tolmo
+  actions:
+  - colocou
+  - pegou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -989,6 +1123,8 @@
   - O guarda Tourvigouh <na cintura>
   - O mercador de ouriversária Thordim <na cintura>
   - Zurg <na cintura>
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   rooms:
@@ -1043,7 +1179,10 @@
   name: um cogumelo comestível
   kind: item
   category: comida e bebida
-  description: Todos os cogumelos são comestíveis... Porém, alguns apenas uma vez.
+  description: |-
+    Ele é grande e seu topo está coberto com uma substância que emite um
+    fraco cheiro de mofo. Não é a coisa mais gostosa que você já viu, mas
+    no desespero...
   examined: true
   weight: menos de 100 g
   shops:
@@ -1304,6 +1443,19 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:enorme-caixa-de-madeira
+  name: uma enorme caixa de madeira
+  kind: item
+  category: outro
+  description: 'Sobre a caixa, um rótulo indica: Itens perdidos.'
+  examined: true
+  ground_line: Uma enorme caixa de madeira foi deixada aqui, junto com pilhas de tranqueiras.
+  rooms:
+  - room:estrado.muito-bem-armazenados
+  - room:estrado.um-armazem-baguncado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:enorme-caneca-de-cerveja
   name: uma enorme caneca de cerveja
   kind: item
@@ -1319,6 +1471,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:enorme-clava
+  name: uma enorme clava
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda-costas hobgoblin <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:enorme-e-pesada-armadura-metalica
   name: uma enorme e pesada armadura metálica
   kind: item
@@ -1326,6 +1488,35 @@
   examined: false
   worn_by:
   - Domick <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:enorme-tesoura-de-poda
+  name: uma enorme tesoura de poda
+  kind: item
+  category: outro
+  description: |-
+    Para uma profissão tão pacífica quanto a de um jardineiro, esta enorme e
+    afiada tesoura chega a ser a antítese da filosofia da coisa.
+  examined: true
+  found_in:
+  - uma caixa de madeira com um rótulo novinho
+  rooms:
+  - room:estrado.armazem
+  actions:
+  - deu
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:escada-de-madeira
+  name: uma escada de madeira
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - deu
+  - pegou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1339,6 +1530,16 @@
   - O guarda Lainever <como escudo>
   - O guarda Lairebaude <como escudo>
   - O guarda Tourvigouh <como escudo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:escudo-cravejado-de-pregos
+  name: um escudo cravejado de pregos
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um guarda hobbit <como escudo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1368,6 +1569,8 @@
   condition: em perfeito estado
   worn_at:
   - como escudo
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   rooms:
@@ -1401,7 +1604,7 @@
   - O guarda <empunhando>
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
-    level: 1
+    level: 5
     price: 8
     stock: Ilim.
   rooms:
@@ -1929,6 +2132,10 @@
   kind: item
   category: livro
   examined: false
+  worn_at:
+  - segurando
+  dropped_by:
+  - Tolmo
   actions:
   - colocou
   - deu
@@ -1990,6 +2197,8 @@
   light: 65 horas
   worn_at:
   - como luz
+  dropped_by:
+  - Tolmo
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
     level: 0
@@ -2044,6 +2253,16 @@
   examined: false
   worn_by:
   - Florbela, a esposa de Mevildon <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:leve-espada-curta
+  name: uma leve espada curta
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um guarda hobbit <empunhando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2234,6 +2453,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:longa-bata-de-laboratorio
+  name: uma longa bata de laboratório
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um alquimista hobbit <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:longa-capa-com-capuz
+  name: uma longa capa com capuz
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um hobbit <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:longa-e-rustica-tunica-marrom
   name: uma longa e rústica túnica marrom
   kind: item
@@ -2282,6 +2521,16 @@
   examined: false
   worn_by:
   - Florbela, a esposa de Mevildon <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:macabro-oculos-de-lentes-graudas
+  name: um macabro óculos de lentes graúdas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O tesoureiro <nos olhos>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2335,6 +2584,16 @@
   examined: false
   worn_by:
   - Estë <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:manto-de-pele-remendado
+  name: um manto de pele remendado
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O rei dos hobgoblins <sobre o corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2947,6 +3206,8 @@
   - O mercador de ouriversária Thordim <nos pés>
   - O merceeiro mercador Alastor <nos pés>
   - Phrantes <nos pés>
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   rooms:
@@ -3109,6 +3370,8 @@
   worn_by:
   - O Guardião do Norte <nas mãos>
   - O herói Kheodred <nas mãos>
+  dropped_by:
+  - Tolmo
   found_in:
   - uma bela estante
   ground_line: Um par de luvas de couro foi deixado aqui.
@@ -3153,7 +3416,7 @@
   - O guarda <nas mãos>
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
-    level: 7
+    level: 3
     price: 3
     stock: Ilim.
   rooms:
@@ -3185,6 +3448,16 @@
   - pegou
   - recebeu
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-perneiras-metalicas-em-uma-bela-estante
+  name: um par de perneiras metálicas em uma bela estante
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3301,6 +3574,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pedra-redonda-e-plana
+  name: uma pedra redonda e plana
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma criança hobbit <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:peitoral-de-ferro
   name: um peitoral de ferro
   kind: item
@@ -3333,6 +3616,24 @@
   actions:
   - pegou
   - recebeu
+  - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pequena-calca-preta-de-algodao
+  name: uma pequena calça preta de algodão
+  kind: item
+  category: equipamento
+  description: |-
+    Uma pequena calça preta, feita de algodão. Pelo tamanho, ela deve
+    pertencer a algum hobbit.
+  examined: true
+  worn_at:
+  - nas pernas
+  dropped_by:
+  - Tolmo
+  actions:
+  - pegou
   - vestiu
   sources:
   - logs/transcript.log
@@ -3543,6 +3844,9 @@
     poderá sair para explorar o mundo.
         Bom divertimento!
   examined: true
+  weight: menos de 100 g
+  dropped_by:
+  - Tolmo
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
     level: 1
@@ -3622,6 +3926,16 @@
   examined: false
   actions:
   - deu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pesada-cota-de-malha
+  name: uma pesada cota de malha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O guarda-costas hobgoblin <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3725,6 +4039,30 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:prego-sujo-e-enferrujado
+  name: um prego sujo e enferrujado
+  kind: item
+  category: outro
+  examined: false
+  found_in:
+  - uma caixa de madeira com o rótulo rompido
+  rooms:
+  - room:estrado.armazem
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:prego-sujo-e-enferrujado-em-uma-caixa-de-madeira
+  name: um prego sujo e enferrujado em uma caixa de madeira com o rótulo rompido
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:protetor-de-ferro
   name: um protetor de ferro
   kind: item
@@ -3750,7 +4088,7 @@
   - O guarda <nos braços>
   shops:
   - room: room:academia.provisoes-para-jovens-aventureiros
-    level: 2
+    level: 4
     price: 3
     stock: Ilim.
   rooms:
@@ -3830,6 +4168,16 @@
   actions:
   - colocou
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:resistente-colarinho-metalico-em-uma-bela-estant
+  name: um resistente colarinho metálico em uma bela estante
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3964,6 +4312,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:trapo-imundo
+  name: um trapo imundo
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - O tesoureiro <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:tunica-azul
   name: uma túnica azul
   kind: item
@@ -4001,6 +4359,17 @@
   examined: false
   worn_by:
   - Dantalion <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:velha-caixa-de-madeira-com-o-rotulo-rompido
+  name: uma velha caixa de madeira com o rótulo rompido
+  kind: item
+  category: outro
+  examined: false
+  ground_line: Uma velha caixa de madeira com o rótulo rompido foi deixada aqui.
+  rooms:
+  - room:estrado.armazem
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4119,6 +4488,20 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.2-caixa
+  name: 2.caixa
+  kind: scenery
+  descriptions:
+  - text: 'Este rótulo parece recém-colocado. Nele, você vê escrito: JARDINAGEM.'
+    rooms:
+    - room:estrado.armazem
+  examined: true
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.abertura
   name: abertura
   kind: scenery
@@ -4175,6 +4558,23 @@
   examined: false
   rooms:
   - room:bosque.formigueiro.a-sala-circular
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.alto-trono-de-granito-bruto-foi-esculpido-aqui
+  name: Um alto trono de granito bruto foi esculpido aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Grande e macabro, existem formas de caveiras e outros ossos entalhados na
+      superfície desse horrível trono. Entre as frestas rugosas da rocha no qual
+      foi esculpido, o musgo se aglomerou aos montes.
+    rooms:
+    - room:academia.a-camara-do-rei
+  examined: true
+  rooms:
+  - room:academia.a-camara-do-rei
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4385,6 +4785,20 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.armarios
+  name: armários
+  kind: scenery
+  descriptions:
+  - text: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+    rooms:
+    - room:estrado.um-lar-mal-cuidado
+  examined: true
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.atencao
   name: atenção
   kind: scenery
@@ -4489,33 +4903,6 @@
   kind: scenery
   descriptions:
   - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs: Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.praca-floresta-das-trevas
-  - text: |-
-      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
-      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
-      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
-      alavanca precisa ser empurrada para baixo para que a água venha através do
-      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
-      traz um recado muito útil da prefeitura:
-      Caros Moradores e Viajantes: Usem as bombas com civilidade!
-      Empurre a alavanca para que a água caia no balde.
-      Obs- Não tentem levar os baldes da prefeitura consigo!
-      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
-    rooms:
-    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
-    - room:esgaroth.praca-da-flechada-precisa
-  - text: |-
       É um balde de chumbo, muito, muito pesado. É usado em conjunto com as bombas
       d'água de Esgaroth.
     rooms:
@@ -4559,6 +4946,18 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.banquinha-de-madeira-esta-aqui-mostrando-seus-pr
+  name: Uma banquinha de madeira está aqui mostrando seus produtos para quem passa.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:archet.rua-das-distracoes
+  - room:archet.rua-das-distracoes-2
+  - room:archet.rua-das-distracoes-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.barris-de-manteiga-foram-estocados-no-canto-da-c
   name: Alguns barris de manteiga foram estocados no canto da cozinha.
   kind: scenery
@@ -4585,6 +4984,41 @@
   examined: true
   rooms:
   - room:esgaroth.quartel-da-guarda
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.beira
+  name: beira
+  kind: scenery
+  descriptions:
+  - text: |-
+      MUD Valinor. Usa leitor de tela num cliente de MUD? Conecte na porta 4002:
+      sem desenhos e com o modo aural já ligado.
+                                                              _a         ,
+                  0'              _                          _!4       /'
+                jP d0            d0                          /        J'
+                                                            "
+               a,_aaaa,    aaaaaaaaaaaa,   a _aaaa _aaaa  _0La    _a,   aa,
+              !0L9!!4#0   !!!P!!!!!!!!!   !00!!!400!!!00L !!00   J!00a "!0'
+               00    4P    _'              01    01   "#1   00      40L a'
+              j#000#00P   d'              j#1_dLa' _daJ'    00       40P
+              !!!!!!!!   d0,        _0,   "'  !!    !!      00       d'
+                         40L,       jP                      00      J
+                          4000aaaad0!                       00     01
+                            !!!!!!'                        j0P    "000'
+                                                           "
+       Baseado no SMAUG, escrito por  Thoric (Derek Snider),  Altrag, Blodkai,
+       Haus, Narn,  Scryn,  Swordbearer, Tricops,  Gorog, Rennard,  Grishnakh,
+       Fireblade e Nivek. Inclui código do DikuMUD, por Hans Staerfeldt, Katja
+            Nyboe, Tom Madsen, Michael Seifert e Sebastian Hammer.
+       * Digite o nome do seu personagem, ou 'NOVO' para criar um personagem *
+      Personagem:
+    rooms:
+    - room:estrado.uma-curva-na-trilha
+  examined: true
+  rooms:
+  - room:estrado.uma-curva-na-trilha
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4671,7 +5105,35 @@
 - id: obj:cenario.bomba-d-agua-esta-aqui-pronta-para-puxar-agua-do
   name: Uma bomba d'água está aqui, pronta para puxar água do lago.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro. Ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs: Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.praca-floresta-das-trevas
+  - text: |-
+      Opa, isto é uma bela engenhoca! Eis uma bomba de puxar água, bem arcaica;
+      ela é feita de uma pequena armação de madeira, que ampara um cano de ferro
+      escuro, ele desce direto até as águas calmas do lago lá embaixo. Uma dura
+      alavanca precisa ser empurrada para baixo para que a água venha através do
+      cano e caia no balde de chumbo colocado sob ele. Uma pequena placa na bomba
+      traz um recado muito útil da prefeitura:
+      Caros Moradores e Viajantes: Usem as bombas com civilidade!
+      Empurre a alavanca para que a água caia no balde.
+      Obs- Não tentem levar os baldes da prefeitura consigo!
+      OOC: Use o comando PUSH alavanca para acionar o dispositivo!
+    rooms:
+    - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
+    - room:esgaroth.praca-da-flechada-precisa
+  examined: true
   rooms:
   - room:esgaroth.no-centro-de-esgaroth-o-coracao-do-mercado
   - room:esgaroth.praca-da-flechada-precisa
@@ -4774,13 +5236,24 @@
   kind: scenery
   descriptions:
   - text: |-
+      Ela possui um belo couro que ficou mais macio ainda com o uso. Esta
+      cadeira foi construída com rodas em sua base para que aquele sentado
+      nela possa se mover em todas as direções entre as várias mesas.
+    rooms:
+    - room:estrado.oficina-de-obras
+  - text: |-
       Esta cadeira é feita de mármore, mas o fato dela estar gasta e fixada no chão
       faz você pensar duas vezes antes de pegá-la e levá-la consigo.
     rooms:
     - room:bosque.formigueiro.a-pequena-sala
+  - text: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+    rooms:
+    - room:estrado.um-lar-mal-cuidado
   examined: true
   rooms:
   - room:bosque.formigueiro.a-pequena-sala
+  - room:estrado.oficina-de-obras
+  - room:estrado.um-lar-mal-cuidado
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4797,6 +5270,20 @@
   examined: true
   rooms:
   - room:academia.o-refeitorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cama
+  name: cama
+  kind: scenery
+  descriptions:
+  - text: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+    rooms:
+    - room:estrado.um-lar-mal-cuidado
+  examined: true
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4920,12 +5407,54 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.cebola-lacrimeja-seus-olhos-so-de-encarar
+  name: Uma cebola lacrimeja seus olhos só de encarar...
+  kind: scenery
+  descriptions:
+  - text: |-
+      Ela é grande e cheirosa. Sua pele macia e fria se torna
+      agradável de se apalpar. Um pouco de terra ainda está presa a sua
+      raiz e suas hastes foram machucadas.
+    rooms:
+    - room:estrado.uma-horta-de-cebolas
+  examined: true
+  rooms:
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.chama-dourada-arde-silenciosamente-na-lareira
   name: Uma chama dourada arde silenciosamente na lareira.
   kind: scenery
   examined: false
   rooms:
   - room:valfenda.o-salao-do-fogo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.chao
+  name: chão
+  kind: scenery
+  descriptions:
+  - text: |-
+      Feito de um belo padrão de tábuas de madeira, os minúsculos blocos
+      formam uma convergência de elipses e espirais. Eles atraem seus olhos,
+      como se puxassem você para dentro. Parece ter algo estranho em seus
+      desenhos. Algo que deixa sua mente irrequieta.
+    rooms:
+    - room:estrado.um-enorme-escritorio
+  - text: |-
+      À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+      cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+      porta oculta ou algo do tipo.
+    rooms:
+    - room:estrado.oficina-de-obras
+  examined: true
+  rooms:
+  - room:estrado.oficina-de-obras
+  - room:estrado.um-enorme-escritorio
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -4987,9 +5516,30 @@
       6. Respeites os mestres da cidade e os guardas.
     rooms:
     - room:esgaroth.quartel-da-guarda
+  - text: Liso por fora, as fendas e fissuras que correm através de seu interior mostram
+    rooms:
+    - room:estrado.o-escritorio-do-thain
   examined: true
   rooms:
   - room:esgaroth.quartel-da-guarda
+  - room:estrado.o-escritorio-do-thain
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.contorno
+  name: contorno
+  kind: scenery
+  descriptions:
+  - text: |-
+      À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+      cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+      porta oculta ou algo do tipo.
+    rooms:
+    - room:estrado.oficina-de-obras
+  examined: true
+  rooms:
+  - room:estrado.oficina-de-obras
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5128,6 +5678,23 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.duas-gigantescas-arvores-caidas-interrompem-dras
+  name: Duas gigantescas árvores caídas interrompem drasticamente o caminho aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      A trilha a qual você seguia foi abruptamente interrompida por duas
+      árvores arqueadas, fazendo um ângulo agudo em relação com o solo, formando
+      um "X". Não parece ter sido conseqüência de um fenômeno natural.
+    rooms:
+    - room:floresta-chet.as-arvores-caidas
+  examined: true
+  rooms:
+  - room:floresta-chet.as-arvores-caidas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.duzia-de-cadeiras-com-espaldar-alto-foi-colocada
   name: Uma dúzia de cadeiras com espaldar alto foi colocada em torno da mesa.
   kind: scenery
@@ -5152,12 +5719,119 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.encostaram-uma-escada-de-madeira-na-parede-aqui
+  name: Encostaram uma escada de madeira na parede aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta escada está velha e acabada. Os pregos mal conseguem mantê-la
+      íntegra, devido a sua madeira podre. Entretanto, ela ainda é útil para
+      se alcançar pequenas alturas.
+    rooms:
+    - room:estrado.armazem
+    - room:estrado.uma-horta-de-cebolas
+  examined: true
+  rooms:
+  - room:estrado.armazem
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-e-estranho-objeto-zune-discretamente-aqui
+  name: Um enorme e estranho objeto zune discretamente aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Aparentemente uma caixa ornamental com tubos estriados saltando em ângulos
+      retos, este discreto objeto zunidor é realmente estranho. Uma pequena porta
+      está situada no painel frontal, sugerindo um melhor exame.
+    rooms:
+    - room:estrado.um-pequeno-laboratorio
+  examined: true
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-e-pesada-engrenagem-jaz-inerte-aqui
+  name: Uma enorme e pesada engrenagem jaz inerte aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Seu interior é feito de uma madeira densa e escura. Pórem ela está
+      envolvida por uma luva de metal, que modela sua forma sextavada. Não dá
+      para saber o que ela faz aqui, mas ela deve ter uma função importante
+      em algum lugar.
+    rooms:
+    - room:estrado.um-amontoado-de-engrenagens
+  examined: true
+  rooms:
+  - room:estrado.um-amontoado-de-engrenagens
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-estante-de-carvalho-foi-colocada-aqui
+  name: Uma enorme estante de carvalho foi colocada aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Feita a mão, de pedaços de madeira de carvalho, esta estante mostra o orgulho
+      e carinho de um amador relativamente abençoado. Cada prateleira foi entalhada
+      a mão, obviamente usando quaisquer ferramentas que seu dono possuísse na
+      ocasião. Independente das ferramentas usadas, os esforços resultaram em um
+      magnífico trabalho.
+    rooms:
+    - room:estrado.uma-ampla-sala-de-aula
+  examined: true
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.enorme-estatua-de-tres-criaturas-petrificadas-ja
   name: Uma enorme estátua de três criaturas petrificadas jaz aqui.
   kind: scenery
   examined: false
   rooms:
   - room:estrada-leste.nos-limites-de-uma-floresta-sombria-5
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-hobbit-entalhado-em-granito-permanece-aqu
+  name: Um enorme hobbit entalhado em granito permanece aqui, segurando uma placa.
+  kind: scenery
+  descriptions:
+  - text: A placa de bronze fica a muitos pés de altura. Cada polegada de sua
+    rooms:
+    - room:estrado.o-caminho-aumenta
+  examined: true
+  rooms:
+  - room:estrado.o-caminho-aumenta
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.enorme-manjedoura-foi-construida-aqui-para-alime
+  name: Uma enorme manjedoura foi construída aqui para alimentar os animais.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Feita de madeira, a manjedoura está sempre cheia do capim mais fresco
+      para manter os animais sempre muito bem alimentados. Ela é tão grande
+      e tão larga, tão cheia de capim fofo e cheiroso, que parece até com
+      uma cama natural... Aliás, parece possível dormir nela.
+    rooms:
+    - room:estrado.a-cocheira
+    - room:estrado.um-abrigo-para-os-animais
+  examined: true
+  rooms:
+  - room:estrado.a-cocheira
+  - room:estrado.um-abrigo-para-os-animais
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5242,6 +5916,43 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.estrada
+  name: estrada
+  kind: scenery
+  descriptions:
+  - text: |-
+      O chão de terra batido do caminho guarda ainda na terra aqui e ali
+      a pegada profunda ou leve de algum viajante, um vago sinal de um
+      pó brilhante parece jazer no chão, mas a pista está tão fraca neste
+      ponto que é impossíveldizer para que lado ela segue. Ichi... Vai ter
+      que seesforçar mais e dar sorte!
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-11
+    - room:estrada-leste.a-grande-estrada-do-leste-14
+  examined: true
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-11
+  - room:estrada-leste.a-grande-estrada-do-leste-14
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.estatua
+  name: estátua
+  kind: scenery
+  descriptions:
+  - text: |-
+      À medida que você desvia os olhos sobre este enorme pedaço de granito, você
+      vê uma enorme placa de bronze polido. Muitos nomes estão escritos sobre ela.
+    rooms:
+    - room:estrado.o-caminho-aumenta
+  examined: true
+  rooms:
+  - room:estrado.o-caminho-aumenta
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.estatuas-estao-dispostas-sobre-pedestais-aqui
   name: Algumas estátuas estão dispostas sobre pedestais aqui.
   kind: scenery
@@ -5272,7 +5983,14 @@
 - id: obj:cenario.fixada-ao-chao-uma-bigorna-aguarda-que-alguma-li
   name: Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
+      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
+      a frequência de seu uso.
+    rooms:
+    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  examined: true
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -5512,14 +6230,7 @@
 - id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
   name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   kind: scenery
-  descriptions:
-  - text: |-
-      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
-      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
-      a frequência de seu uso.
-    rooms:
-    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
-  examined: true
+  examined: false
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -5543,6 +6254,16 @@
   examined: false
   rooms:
   - room:valfenda.uma-alameda-de-populos-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-cogumelo-cresce-por-perto
+  name: Um grande cogumelo cresce por perto.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-40
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5796,6 +6517,16 @@
   rooms:
   - room:bri.biblioteca.a-ala-leste
   - room:bri.biblioteca.a-ala-oeste
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-uma-velha-carroca-aqui
+  name: Há uma velha carroça aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrado.o-fim-do-caminho
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6057,13 +6788,36 @@
   kind: scenery
   descriptions:
   - text: |-
+      Pequenos e complexos, estes objetos mostram uma extraordinária
+      atenção para os detalhes. Um em particular parece-se com uma
+      estranha aranha, com longas e frágeis pernas que terminam em afiadas
+      lâminas. Um esquema ao lado do dispositivo faz uma demonstração dele
+      descascando uma maçã.
+    rooms:
+    - room:estrado.um-enorme-escritorio
+  - text: |-
+      Agora você tem certeza, realmente esse resíduo é espesso demais para ser
+      poeira, até mesmo para um lugar imundo como este. É terra, como se ela
+      tivesse caído ou deixada ali por alguém que subiu sobre a mesa.
+    rooms:
+    - room:academia.a-sala-do-tesouro
+  - text: |-
+      Há vários quebra-cabeças arranjados sobre a mesa. Eles parecem bem
+      complexos em detalhes. Olhando para eles, você se maravilha com a
+      intrínseca complexidade.
+    rooms:
+    - room:estrado.uma-pequena-sala-de-aula
+  - text: |-
       Várias mesas e cadeiras ocupam a maior parte da sala. Muitas delas
       estão ocupadas por alunos.
     rooms:
     - room:academia.o-refeitorio
   examined: true
   rooms:
+  - room:academia.a-sala-do-tesouro
   - room:academia.o-refeitorio
+  - room:estrado.um-enorme-escritorio
+  - room:estrado.uma-pequena-sala-de-aula
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6072,6 +6826,14 @@
   name: mesas
   kind: scenery
   descriptions:
+  - text: |-
+      Esta mesa possui os itens mais interessantes. Minúsculos exemplos de
+      engrenagens, junções e molas estão cuidadosamente dispostas sobre sua
+      superfície. À medida que você os examina, alguns menores que a unha do
+      polegar, você se surpreende com a habilidade usada para criar estes tipos
+      de coisa.
+    rooms:
+    - room:estrado.a-toca-dos-cristais
   - text: |-
       Várias mesas e cadeiras ocupam a maior parte da sala. Muitas delas
       estão ocupadas por alunos.
@@ -6090,6 +6852,7 @@
   - room:academia.o-refeitorio
   - room:academia.sala-de-estudo-de-linguas
   - room:academia.sala-de-estudos
+  - room:estrado.a-toca-dos-cristais
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6617,6 +7380,16 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.oliveiras-se-agrupam-apesar-de-igualmente-espaca
+  name: Algumas oliveiras se agrupam apesar de igualmente espaçadas no solo.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrado.o-cultivar-de-olivas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.ossos-de-uma-ave-foram-deixados-aqui
   name: Alguns ossos de uma ave foram deixados aqui.
   kind: scenery
@@ -6672,6 +7445,39 @@
   - room:academia.fim-do-treinamento
   - room:academia.sala-de-estudo-de-linguas
   - room:academia.um-corredor-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.passo
+  name: passo
+  kind: scenery
+  descriptions:
+  - text: |-
+      _a         ,
+                  0'              _                          _!4       /'
+                jP d0            d0                          /        J'
+                                                            "
+               a,_aaaa,    aaaaaaaaaaaa,   a _aaaa _aaaa  _0La    _a,   aa,
+              !0L9!!4#0   !!!P!!!!!!!!!   !00!!!400!!!00L !!00   J!00a "!0'
+               00    4P    _'              01    01   "#1   00      40L a'
+              j#000#00P   d'              j#1_dLa' _daJ'    00       40P
+              !!!!!!!!   d0,        _0,   "'  !!    !!      00       d'
+                         40L,       jP                      00      J
+                          4000aaaad0!                       00     01
+                            !!!!!!'                        j0P    "000'
+                                                           "
+       Baseado no SMAUG, escrito por  Thoric (Derek Snider),  Altrag, Blodkai,
+       Haus, Narn,  Scryn,  Swordbearer, Tricops,  Gorog, Rennard,  Grishnakh,
+       Fireblade e Nivek. Inclui código do DikuMUD, por Hans Staerfeldt, Katja
+            Nyboe, Tom Madsen, Michael Seifert e Sebastian Hammer.
+       * Digite o nome do seu personagem, ou 'NOVO' para criar um personagem *
+      Personagem:
+    rooms:
+    - room:valfenda.floresta-pinheiros.cruzamento-das-docas-e-do-mercado
+  examined: true
+  rooms:
+  - room:valfenda.floresta-pinheiros.cruzamento-das-docas-e-do-mercado
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6759,6 +7565,22 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.pequena-alavanca-reside-no-interior-do-objeto-es
+  name: Uma pequena alavanca reside no interior do objeto escorado na parede.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Esta minúscula alavanca parece ser feita de algum tipo de material vermelho e
+      brilhante. Movimentável ao toque, você nunca viu nada como isso.
+    rooms:
+    - room:estrado.um-pequeno-laboratorio
+  examined: true
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.pequena-caixa-de-ferramentas-jaz-no-chao
   name: Uma pequena caixa de ferramentas jaz no chão.
   kind: scenery
@@ -6785,6 +7607,16 @@
   examined: false
   rooms:
   - room:bri.mansao-knob.oeste-da-porta-da-frente
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pequenos-arbustos-exibem-seus-ramos-carregados-d
+  name: Pequenos arbustos exibem seus ramos carregados de framboesas.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrado.o-cultivo-de-framboesas
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6869,6 +7701,22 @@
   examined: false
   rooms:
   - room:valfenda.o-cartografo
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.pintura
+  name: pintura
+  kind: scenery
+  descriptions:
+  - text: |-
+      A pintura descreve o centro da vila. Uma alta figura de um hobbit
+      esculpido em granito. Ele parece segurar uma placa.
+    rooms:
+    - room:estrado.uma-ampla-sala-de-aula
+  examined: true
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -7004,6 +7852,27 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.placa-de-madeira-meio-pensa-foi-fincada-no-chao-
+  name: Uma placa de madeira meio pensa foi fincada no chão aqui.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Cuidado!
+      Muitos hobbits desapareceram enquanto caminhavam através dos traiçoeiros
+      caminhos oferecidos pela floresta Chet. Há hobgoblins atuando nesta área.
+      Explore cautelosamente, há muitas coisas para se descobrir ainda. Lembre-se
+      de sempre olhar duas vezes antes de dar o próximo passo, quer seja para frente,
+      quer seja para trás. Você nunca sabe o que pode estar te esperando.
+      Hobbits de Estrado.
+    rooms:
+    - room:floresta-chet.uma-trilha-estreita
+  examined: true
+  rooms:
+  - room:floresta-chet.uma-trilha-estreita
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.planta
   name: planta
   kind: scenery
@@ -7089,6 +7958,14 @@
   kind: scenery
   descriptions:
   - text: |-
+      Pequenas engrenagens e molas distribuem-se dentro deste objeto. Um silvo ou
+      zunido flui adiante como ondas sem um oceano. À medida que você examina por
+      dentro, seus dedos tateiam algo. Embora você não pareça ter descoberto nada.
+      Uma busca um pouco mais minuciosa parece ser necessária se você quiser
+      desvendar esta misteriosa caixa.
+    rooms:
+    - room:estrado.um-pequeno-laboratorio
+  - text: |-
       Sobre a porta ao leste, há uma placa dizendo 'Armas'. Sobre a porta a
       oeste, a placa diz 'Armaduras'.
     rooms:
@@ -7104,6 +7981,39 @@
   - room:academia.o-refeitorio
   - room:academia.um-corredor-3
   - room:esgaroth.quartel-da-guarda
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.porteira
+  name: porteira
+  kind: scenery
+  descriptions:
+  - text: |-
+      A entrada do estábulo.
+      Você tenta ver adiante...
+      A Estrada do Estábulo
+      Um enorme cercado de madeira inicia-se aqui e segue para leste até
+      encontrar um porteira, mas ainda vai além, contornando o estábulo e
+      mantendo seus cavalos presos e seguros.
+      Saídas: n e w nw
+    rooms:
+    - room:estrado.a-estrada-do-estabulo
+  - text: |-
+      A entrada do curral.Você tenta ver adiante...
+      Você falhou.
+    rooms:
+    - room:estrado.o-curral
+  - text: A porteira está fechada.
+    rooms:
+    - room:estrado.a-entrada-do-curral
+    - room:estrado.a-estrada-do-estabulo
+  examined: true
+  rooms:
+  - room:estrado.a-entrada-do-curral
+  - room:estrado.a-estrada-do-estabulo
+  - room:estrado.o-curral
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -7495,6 +8405,23 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.quebra
+  name: quebra
+  kind: scenery
+  descriptions:
+  - text: |-
+      Há vários quebra-cabeças arranjados sobre a mesa. Eles parecem bem
+      complexos em detalhes. Olhando para eles, você se maravilha com a
+      intrínseca complexidade.
+    rooms:
+    - room:estrado.uma-pequena-sala-de-aula
+  examined: true
+  rooms:
+  - room:estrado.uma-pequena-sala-de-aula
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.restos-de-um-eixo-de-carroca-jazem-aqui-quebrado
   name: Os restos de um eixo de carroça jazem aqui, quebrados...
   kind: scenery
@@ -7548,6 +8475,22 @@
   examined: true
   rooms:
   - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.sudoeste
+  name: sudoeste
+  kind: scenery
+  descriptions:
+  - text: |-
+      ALERTA: O MUD será finalizado em caráter emergencial. Devemos voltar ao funcionamento normal em poucos minutos. Consulte o site para maiores informações.
+      Seu personagem foi salvo.
+    rooms:
+    - room:estrado.uma-curva-na-trilha
+  examined: true
+  rooms:
+  - room:estrado.uma-curva-na-trilha
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -7615,6 +8558,23 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.terra
+  name: terra
+  kind: scenery
+  descriptions:
+  - text: |-
+      Agora você tem certeza, realmente esse resíduo é espesso demais para ser
+      poeira, até mesmo para um lugar imundo como este. É terra, como se ela
+      tivesse caído ou deixada ali por alguém que subiu sobre a mesa.
+    rooms:
+    - room:academia.a-sala-do-tesouro
+  examined: true
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.tina-de-madeira-cheia-de-agua-jaz-aqui-para-os-s
   name: Uma tina de madeira, cheia de água, jaz aqui para os serviços de cozinha.
   kind: scenery
@@ -7645,6 +8605,25 @@
   examined: true
   rooms:
   - room:academia.fim-do-treinamento
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.trilha
+  name: trilha
+  kind: scenery
+  descriptions:
+  - text: |-
+      O chão de terra batido do caminho guarda ainda na terra aqui e ali
+      a pegada profunda ou leve de algum viajante, um vago sinal de um
+      pó brilhante parece jazer no chão, mas a pista está tão fraca neste
+      ponto que é impossíveldizer para que lado ela segue. Ichi... Vai ter
+      que seesforçar mais e dar sorte!
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-11
+  examined: true
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-11
   sources:
   - logs/raw.log
   - logs/transcript.log

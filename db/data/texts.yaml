@@ -785,6 +785,139 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:help.help-hobbit
+  kind: help
+  title: help hobbit
+  body: |-
+    Quando o fogo luminoso do Sol entrou no Mundo surgiu a raça de Homens.
+    É dito que naquela mesma Era também surgiram no Leste os seres que
+    foram chamados de Hobbits, que diziam ser relacionadas com os Homens,
+    contudo eles eram menores que Anões, e a medida de suas vidas era de
+    aproximadamente cem anos.
+    Os hobbits no geral têm uma altura entre 1,20m e 1,30m. Por natureza
+    o temperamento dos Hobbits é pacífico e gentil. Seus cabelos são
+    marrons e quase sempre ondulados, e sempre caminham de pés descalços,
+    (que são enormes). São pessoas modestas e conservadoras, gostam de cuidar
+    das vidas umas das outras, e quase sempre passam toda a vida na mesma
+    aldeia. Se um dos seus se mostra excessivamente aventureiro ou enérgico
+    é logo considerado indiscreto. O único excesso dos Hobbits é o de se
+    vestir com roupas enfeitadas, e (se possível) fazer seis refeições em
+    um único dia. Uma das suas excentricidades é a arte de fumar; dizem
+    ter sido eles que inventaram a "erva de cachimbo" e dizem ser a sua
+    contribuição ao mundo.
+    Raça:
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-estrado
+  kind: help
+  title: help estrado
+  body: |-
+    ESTRADO
+    Descrição
+    Esta vila, localizada do lado oposto ao da colina de Bri, tem habitantes,
+    engenhosos por natureza: adoram estudar as ciências, cultivar a terra e
+    apreciar suas ervas dentro de um bom cachimbo. A maioria da população é
+    formada por hobbits, embora se possa encontrar alguns humanos pela vila. O
+    Atual Thain eleito é Rungo, que se pouco ocupado com as preocupações dessa
+    região rural.
+    Informações Gerais
+    Tipo de área:
+    Treino
+    Nível recomendado:
+    5 ao 20
+    Áreas vizinhas:
+    Archet e a Grande Estrada do Leste.
+    Mestres de perícias e magias:
+    O eremita.
+    Próximo, Mostrar tudo, Repetir, Voltar, ou Sair: [P]
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-beiragua
+  kind: help
+  title: help beirágua
+  body: |-
+    Atrações:
+    Boa área para treino de iniciantes, itens bons para se vender.
+    Dicas
+    Além da vila dos hobbits, mais ao leste, em meio à Floresta, a
+    região costuma ser habitada por hobgoblins, muitos deles agressivos.
+    Todo cuidado é pouco se você for iniciante.
+    Direções
+    De Archet, siga pela trilha pela Floresta Chet, logo na entrada da
+    cidade. De Bri, saia pelo portão sul e pegue a Grande Estrada do Leste
+    em direção leste, entrando em uma passagem ao norte. De Imladris,
+    igualmente pegue a Grande Estrada do Leste, mas em direção oeste,
+    entrando pelo mesmo acesso norte, nas proximidades de Bri.
+    Veja HELP ARCHET e HELP 'ESTRADA LESTE' para maiores informações.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-procurar
+  kind: help
+  title: help procurar
+  body: |-
+    Sintaxe: search
+    Sintaxe: search <container>
+    Essa abilidade revela objetos que eventualmente estejam ocultos. Aplicar
+    essa perícia com sucesso vai depender então da observação indireta que as
+    descrições dos lugares trazem. Pode parecer um pouco subjetiva demais por
+    depender de interpretação, mas essa é uma daquelas coisas que exigem tempo
+    para pegar o jeito. Jogadores mais experientes também têm boas dicas sobre
+    onde se pode encontrar agulhas em palheiros.
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-sapantano
+  kind: help
+  title: help sapântano
+  body: |-
+    'SAPANTANO' 'SAPÂNTANO'
+    Descrição
+    O Condado dos Hobbits é dividido em quatro partes, as chamadas quartas
+    nomeadas de Norte, Sul, Leste, Oeste, que por sua vez se dividiam em
+    povoados menores. Sapâtano é um povoado da Quarta Leste, sabe-se que os
+    hobbits dessa região são bastante grandes (para os padrões hobbitescos), de
+    pernas fortes e mais volumosas; são conhecidos ainda por terem entre si
+    bastante sangue grado, o que se comprova por alguns deles apresentarem uma
+    fina penugem no queixo. Aparentemente, pertence a eles o mérito de iniciar
+    a construção de casas grandes e celeiros na região.
+    Informações Gerais
+    Tipo de área:
+    Treino
+    Nível recomendado:
+    10 ao 20
+    Áreas vizinhas:
+    Beirágua e Fosso Branco.
+    Próximo, Mostrar tudo, Repetir, Voltar, ou Sair: [P]
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-bosques-das-colinas-do-sul
+  kind: help
+  title: help bosques das colinas do sul
+  body: |-
+    'OS BOSQUES DAS COLINAS DO SUL' 'BOSQUES DAS COLINAS DO SUL'
+    Descrição
+    Nesses bosques habitam animais silvestres que levam suas vidas em paz,
+    não sendo influenciados pelo que acontece ao seu redor. Mesmo assim,
+    você pode ouvir rumores sobre algumas figuras perigosas que saem das
+    Florestas de Chet ou Floresta Velha durante a noite para atacar os
+    viajantes nas grandes estradas.
+    Informações Gerais
+    Tipo de área:
+    Treino
+    Nível recomendado:
+    5 ao 10
+    Áreas vizinhas:
+    A Vila de Bri, A Floresta Velha, A Colina dos Túmulos, Sede do
+    Brandevin, Fosso Branco.
+    Mestres de perícias e magias:
+    Próximo, Mostrar tudo, Repetir, Voltar, ou Sair: [P]
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:look.examine-orbe
   kind: look
   title: examine orbe
@@ -9138,6 +9271,1155 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:look.look-passo
+  kind: look
+  title: look passo
+  body: |-
+    _a         ,
+                0'              _                          _!4       /'
+              jP d0            d0                          /        J'
+                                                          "
+             a,_aaaa,    aaaaaaaaaaaa,   a _aaaa _aaaa  _0La    _a,   aa,
+            !0L9!!4#0   !!!P!!!!!!!!!   !00!!!400!!!00L !!00   J!00a "!0'
+             00    4P    _'              01    01   "#1   00      40L a'
+            j#000#00P   d'              j#1_dLa' _daJ'    00       40P
+            !!!!!!!!   d0,        _0,   "'  !!    !!      00       d'
+                       40L,       jP                      00      J
+                        4000aaaad0!                       00     01
+                          !!!!!!'                        j0P    "000'
+                                                         "
+     Baseado no SMAUG, escrito por  Thoric (Derek Snider),  Altrag, Blodkai,
+     Haus, Narn,  Scryn,  Swordbearer, Tricops,  Gorog, Rennard,  Grishnakh,
+     Fireblade e Nivek. Inclui código do DikuMUD, por Hans Staerfeldt, Katja
+          Nyboe, Tom Madsen, Michael Seifert e Sebastian Hammer.
+     * Digite o nome do seu personagem, ou 'NOVO' para criar um personagem *
+    Personagem:
+  rooms:
+  - room:valfenda.floresta-pinheiros.cruzamento-das-docas-e-do-mercado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-estante-5
+  kind: look
+  title: look in estante
+  body: |-
+    Uma bela estante contém:
+         um bracelete metálico
+         um par de botas de couro
+         um cinto de couro
+         um par de perneiras metálicas
+         um elmo metálico
+         um resistente colarinho metálico
+         um escudo metálico
+         um par de luvas de couro
+  rooms:
+  - room:academia.deposito-de-armaduras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-estante-6
+  kind: look
+  title: look in estante
+  body: |-
+    Uma bela estante contém:
+         uma adaga metálica
+         uma espada metálica
+         uma maça metálica
+  rooms:
+  - room:academia.deposito-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-sudoeste
+  kind: look
+  title: look sudoeste
+  body: |-
+    ALERTA: O MUD será finalizado em caráter emergencial. Devemos voltar ao funcionamento normal em poucos minutos. Consulte o site para maiores informações.
+    Seu personagem foi salvo.
+  rooms:
+  - room:estrado.uma-curva-na-trilha
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-beira
+  kind: look
+  title: look beira
+  body: |-
+    MUD Valinor. Usa leitor de tela num cliente de MUD? Conecte na porta 4002:
+    sem desenhos e com o modo aural já ligado.
+                                                            _a         ,
+                0'              _                          _!4       /'
+              jP d0            d0                          /        J'
+                                                          "
+             a,_aaaa,    aaaaaaaaaaaa,   a _aaaa _aaaa  _0La    _a,   aa,
+            !0L9!!4#0   !!!P!!!!!!!!!   !00!!!400!!!00L !!00   J!00a "!0'
+             00    4P    _'              01    01   "#1   00      40L a'
+            j#000#00P   d'              j#1_dLa' _daJ'    00       40P
+            !!!!!!!!   d0,        _0,   "'  !!    !!      00       d'
+                       40L,       jP                      00      J
+                        4000aaaad0!                       00     01
+                          !!!!!!'                        j0P    "000'
+                                                         "
+     Baseado no SMAUG, escrito por  Thoric (Derek Snider),  Altrag, Blodkai,
+     Haus, Narn,  Scryn,  Swordbearer, Tricops,  Gorog, Rennard,  Grishnakh,
+     Fireblade e Nivek. Inclui código do DikuMUD, por Hans Staerfeldt, Katja
+          Nyboe, Tom Madsen, Michael Seifert e Sebastian Hammer.
+     * Digite o nome do seu personagem, ou 'NOVO' para criar um personagem *
+    Personagem:
+  rooms:
+  - room:estrado.uma-curva-na-trilha
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-algo
+  kind: look
+  title: look algo
+  body: |-
+    Uma pequena calça preta, feita de algodão. Pelo tamanho, ela deve
+    pertencer a algum hobbit.
+  rooms:
+  - room:estrado.uma-curva-na-trilha
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-marceneiro
+  kind: look
+  title: look marceneiro
+  body: |-
+    Você vê um hobbit que está concentrado profundamente em alguma invenção
+    que está a ponto de conceber. Seu cabelo é branco, mas ele parece
+    razoavelmente forte.
+    Um marceneiro hobbit está perfeitamente saudável.
+    Um marceneiro hobbit está usando:
+    <no corpo>        uma camisa marrom
+    <segurando>       uma cesta de vime
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.o-escritorio-do-thain
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-pequeno-laboratorio-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-enorme
+  kind: look
+  title: look enorme
+  body: |-
+    Seu interior é feito de uma madeira densa e escura. Pórem ela está
+    envolvida por uma luva de metal, que modela sua forma sextavada. Não dá
+    para saber o que ela faz aqui, mas ela deve ter uma função importante
+    em algum lugar.
+  rooms:
+  - room:estrado.um-amontoado-de-engrenagens
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-caixa
+  kind: look
+  title: look caixa
+  body: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-escada-3
+  kind: look
+  title: look escada
+  body: |-
+    Esta escada está velha e acabada. Os pregos mal conseguem mantê-la
+    íntegra, devido a sua madeira podre. Entretanto, ela ainda é útil para
+    se alcançar pequenas alturas.
+  rooms:
+  - room:estrado.armazem
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-2-caixa
+  kind: look
+  title: look 2.caixa
+  body: 'Este rótulo parece recém-colocado. Nele, você vê escrito: JARDINAGEM.'
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-rotulo
+  kind: look
+  title: look rótulo
+  body: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-caixa
+  kind: look
+  title: look in caixa
+  body: Está fechado.
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-2-caixa
+  kind: look
+  title: look in 2.caixa
+  body: Está fechado.
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-caixa-2
+  kind: look
+  title: look in caixa
+  body: |-
+    Uma caixa de madeira com o rótulo rompido contém:
+         um prego sujo e enferrujado
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-2-caixa-2
+  kind: look
+  title: look in 2.caixa
+  body: |-
+    Uma caixa de madeira com um rótulo novinho contém:
+         uma enorme tesoura de poda
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-tesoura
+  kind: look
+  title: look tesoura
+  body: |-
+    Para uma profissão tão pacífica quanto a de um jardineiro, esta enorme e
+    afiada tesoura chega a ser a antítese da filosofia da coisa.
+  rooms:
+  - room:estrado.armazem
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-alquimista
+  kind: look
+  title: look alquimista
+  body: |-
+    Este é um hobbit bem treinado. Ele pode não ter muita força, mas ele sabe
+    se virar com suas habilidades científicas.
+    Um alquimista hobbit está perfeitamente saudável.
+    Um alquimista hobbit está usando:
+    <sobre o corpo>   uma longa bata de laboratório
+  rooms:
+  - room:estrado.um-pequeno-laboratorio-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-7
+  kind: look
+  title: look hobbit
+  body: |-
+    Ele exibe uma cara arrogante e inspeciona você da cabeça aos pés. Observando
+    você por cima dos óculos, resmunga algo e torce o nariz a e boca. Ignorando
+    você de imediato, dá as costas e volta a contar ou checar algo em uma folha
+    perfeitamente engomada.
+    O inspetor Veril está perfeitamente saudável.
+    O inspetor Veril está usando:
+    <nos olhos>       (Brilhando) um óculos de leitura
+    <no corpo>        uma camisa verde
+    <sobre o corpo>   um formal sobretudo azul-marinho
+    <segurando>       um caderno de anotações
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-objeto
+  kind: look
+  title: look objeto
+  body: |-
+    Aparentemente uma caixa ornamental com tubos estriados saltando em ângulos
+    retos, este discreto objeto zunidor é realmente estranho. Uma pequena porta
+    está situada no painel frontal, sugerindo um melhor exame.
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-alavanca
+  kind: look
+  title: look alavanca
+  body: |-
+    Esta minúscula alavanca parece ser feita de algum tipo de material vermelho e
+    brilhante. Movimentável ao toque, você nunca viu nada como isso.
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porta-6
+  kind: look
+  title: look porta
+  body: |-
+    Pequenas engrenagens e molas distribuem-se dentro deste objeto. Um silvo ou
+    zunido flui adiante como ondas sem um oceano. À medida que você examina por
+    dentro, seus dedos tateiam algo. Embora você não pareça ter descoberto nada.
+    Uma busca um pouco mais minuciosa parece ser necessária se você quiser
+    desvendar esta misteriosa caixa.
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-crianca
+  kind: look
+  title: look criança
+  body: |-
+    O pequeno garoto parece tão inocente, brincando aqui. Você chega a querer
+    participar da brincadeira.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <empunhando>      um bumerangue
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
+  - room:estrado.um-pequeno-beco-sem-saida
+  - room:estrado.uma-toca-bem-cuidada
+  - room:estrado.uma-toca-suja
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-marceneiro-2
+  kind: look
+  title: look marceneiro
+  body: |-
+    Este hobbit não cruzará os olhos com você em hipótese alguma. Ele é diferente
+    dos demais encontrados aqui, ele é ardiloso e misterioso. Movimenta-se pela
+    sala, porém parecendo sempre parar no mesmo lugar.
+    O traidor está perfeitamente saudável.
+    O traidor está usando:
+    <sobre o corpo>   uma imunda bata de laboratório
+    <nas mãos>        luvas de algodão
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-8
+  kind: look
+  title: look hobbit
+  body: |-
+    Este hobbit não cruzará os olhos com você em hipótese alguma. Ele é diferente
+    dos demais encontrados aqui, ele é ardiloso e misterioso. Movimenta-se pela
+    sala, porém parecendo sempre parar no mesmo lugar.
+    O traidor está perfeitamente saudável.
+    O traidor está usando:
+    <sobre o corpo>   uma imunda bata de laboratório
+    <nas mãos>        luvas de algodão
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cadeira-2
+  kind: look
+  title: look cadeira
+  body: |-
+    Ela possui um belo couro que ficou mais macio ainda com o uso. Esta
+    cadeira foi construída com rodas em sua base para que aquele sentado
+    nela possa se mover em todas as direções entre as várias mesas.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesa-2
+  kind: look
+  title: look mesa
+  body: |-
+    À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+    cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+    porta oculta ou algo do tipo.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-arrumacao
+  kind: look
+  title: look arrumação
+  body: |-
+    À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+    cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+    porta oculta ou algo do tipo.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mobilia
+  kind: look
+  title: look mobília
+  body: |-
+    À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+    cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+    porta oculta ou algo do tipo.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-chao-2
+  kind: look
+  title: look chão
+  body: |-
+    À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+    cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+    porta oculta ou algo do tipo.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-contorno
+  kind: look
+  title: look contorno
+  body: |-
+    À medida que você observa a sala, seus olhos se fixam no chão. Um exame
+    cuidadoso mostra um fino contorno no chão, quase como se lá houvesse uma
+    porta oculta ou algo do tipo.
+  rooms:
+  - room:estrado.oficina-de-obras
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-crianca-2
+  kind: look
+  title: look criança
+  body: |-
+    O pequeno garoto parece tão inocente, brincando aqui. Você chega a querer
+    participar da brincadeira.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <segurando>       (Brilhando) uma pedra redonda e plana
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.a-caminho-de-chet-2
+  - room:estrado.o-caminho-aumenta
+  - room:estrado.uma-toca-bem-cuidada
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-9
+  kind: look
+  title: look hobbit
+  body: |-
+    O pequeno garoto parece tão inocente, brincando aqui. Você chega a querer
+    participar da brincadeira.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <segurando>       (Brilhando) uma pedra redonda e plana
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.uma-toca-bem-cuidada
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cebola
+  kind: look
+  title: look cebola
+  body: |-
+    Ela é grande e cheirosa. Sua pele macia e fria se torna
+    agradável de se apalpar. Um pouco de terra ainda está presa a sua
+    raiz e suas hastes foram machucadas.
+  rooms:
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porteira
+  kind: look
+  title: look porteira
+  body: A porteira está fechada.
+  rooms:
+  - room:estrado.a-entrada-do-curral
+  - room:estrado.a-estrada-do-estabulo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porteira-2
+  kind: look
+  title: look porteira
+  body: |-
+    A entrada do curral.Você tenta ver adiante...
+    Você falhou.
+  rooms:
+  - room:estrado.o-curral
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porca
+  kind: look
+  title: look porca
+  body: Nojenta. Não há melhor palavra para definir esse suíno gordo e asqueroso.
+  rooms:
+  - room:estrado.um-abrigo-para-os-animais
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-manjedoura
+  kind: look
+  title: look manjedoura
+  body: |-
+    Feita de madeira, a manjedoura está sempre cheia do capim mais fresco
+    para manter os animais sempre muito bem alimentados. Ela é tão grande
+    e tão larga, tão cheia de capim fofo e cheiroso, que parece até com
+    uma cama natural... Aliás, parece possível dormir nela.
+  rooms:
+  - room:estrado.a-cocheira
+  - room:estrado.um-abrigo-para-os-animais
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-ponei
+  kind: look
+  title: look pônei
+  body: |-
+    Pequeno mas forte, o pônei negro parece ter sido muito bem treinado e
+    preparado para as mais longas caminhadas, mesmo nos mais irregulares
+    solos.
+    Um pônei negro está perfeitamente saudável.
+  rooms:
+  - room:estrado.o-estabulo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-porteira-3
+  kind: look
+  title: look porteira
+  body: |-
+    A entrada do estábulo.
+    Você tenta ver adiante...
+    A Estrada do Estábulo
+    Um enorme cercado de madeira inicia-se aqui e segue para leste até
+    encontrar um porteira, mas ainda vai além, contornando o estábulo e
+    mantendo seus cavalos presos e seguros.
+    Saídas: n e w nw
+  rooms:
+  - room:estrado.a-estrada-do-estabulo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-ponei-2
+  kind: look
+  title: look pônei
+  body: |-
+    Pequeno mas forte, o pônei branco parece ter sido muito bem treinado e
+    preparado para as mais longas caminhadas, mesmo nos mais irregulares
+    solos.
+    Um pônei branco está perfeitamente saudável.
+  rooms:
+  - room:estrado.a-cocheira
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-15
+  kind: look
+  title: look placa
+  body: |-
+    Cuidado!
+    Muitos hobbits desapareceram enquanto caminhavam através dos traiçoeiros
+    caminhos oferecidos pela floresta Chet. Há hobgoblins atuando nesta área.
+    Explore cautelosamente, há muitas coisas para se descobrir ainda. Lembre-se
+    de sempre olhar duas vezes antes de dar o próximo passo, quer seja para frente,
+    quer seja para trás. Você nunca sabe o que pode estar te esperando.
+    Hobbits de Estrado.
+  rooms:
+  - room:floresta-chet.uma-trilha-estreita
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-camundongo
+  kind: look
+  title: look camundongo
+  body: |-
+    O camundongo é um belo e pequeno bichinho.
+    Um camundongo está perfeitamente saudável.
+  rooms:
+  - room:floresta-chet.no-limite-do-campo-aberto
+  - room:floresta-chet.um-campo-supercrescido
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-enorme-2
+  kind: look
+  title: look enorme
+  body: |-
+    O troll é uma fera baixa, porém entroncada, com tez humanóide, porém
+    com olhos e presas de uma besta feroz.
+    Um enorme troll está perfeitamente saudável.
+    Um enorme troll está usando:
+    <no dedo>         (Brilhando) (Zunindo) um anel com uma pedra verde
+  rooms:
+  - room:floresta-chet.as-arvores-caidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-arvores
+  kind: look
+  title: look árvores
+  body: |-
+    A trilha a qual você seguia foi abruptamente interrompida por duas
+    árvores arqueadas, fazendo um ângulo agudo em relação com o solo, formando
+    um "X". Não parece ter sido conseqüência de um fenômeno natural.
+  rooms:
+  - room:floresta-chet.as-arvores-caidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-troll
+  kind: look
+  title: look troll
+  body: |-
+    O troll é uma fera baixa, porém entroncada, com tez humanóide, porém
+    com olhos e presas de uma besta feroz.
+    Um enorme troll está perfeitamente saudável.
+    Um enorme troll está usando:
+    <no dedo>         (Brilhando) (Zunindo) um anel com uma pedra verde
+  rooms:
+  - room:floresta-chet.as-arvores-caidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-10
+  kind: look
+  title: look hobbit
+  body: |-
+    Este é um hobbit bem treinado. Ele pode não ter muita força, mas sabe se
+    virar com sua habilidade com armas.
+    Um guarda hobbit está perfeitamente saudável.
+    Um guarda hobbit está usando:
+    <no pescoço>      uma capa xadrez esfarrapada
+    <empunhando>      uma leve espada curta
+    <como escudo>     um escudo cravejado de pregos
+  rooms:
+  - room:estrado.um-som-distante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mulher-2
+  kind: look
+  title: look mulher
+  body: Esta mulher mal percebe sua intrusão e depois retorna ao seu trabalho. Ela
+  rooms:
+  - room:estrado.um-enorme-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesa-3
+  kind: look
+  title: look mesa
+  body: |-
+    Pequenos e complexos, estes objetos mostram uma extraordinária
+    atenção para os detalhes. Um em particular parece-se com uma
+    estranha aranha, com longas e frágeis pernas que terminam em afiadas
+    lâminas. Um esquema ao lado do dispositivo faz uma demonstração dele
+    descascando uma maçã.
+  rooms:
+  - room:estrado.um-enorme-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-chao-3
+  kind: look
+  title: look chão
+  body: |-
+    Feito de um belo padrão de tábuas de madeira, os minúsculos blocos
+    formam uma convergência de elipses e espirais. Eles atraem seus olhos,
+    como se puxassem você para dentro. Parece ter algo estranho em seus
+    desenhos. Algo que deixa sua mente irrequieta.
+  rooms:
+  - room:estrado.um-enorme-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-11
+  kind: look
+  title: look hobbit
+  body: |-
+    O Thain parece ser capaz de te dar uma boa surra. Ele não apenas demonstra
+    força, é ainda sábio e equipado. É melhor você não se meter com ele.
+    O Thain Rungo está perfeitamente saudável.
+    O Thain Rungo está usando:
+    <nos olhos>       (Brilhando) um óculos de leitura
+    <no pescoço>      um colar de contas
+    <no corpo>        um colete de couro negro
+    <no dedo>         um anel do morcego
+    <empunhando>      (Brilhando) uma espada encrustada
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.o-escritorio-do-thain
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-construcao-2
+  kind: look
+  title: look construção
+  body: Liso por fora, as fendas e fissuras que correm através de seu interior mostram
+  rooms:
+  - room:estrado.o-escritorio-do-thain
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-alquimista-2
+  kind: look
+  title: look alquimista
+  body: |-
+    Este é um hobbit bem treinado. Ele pode não ter muita força mas ele sabe
+    se virar com suas habilidades científicas.
+    Um alquimista hobbit está perfeitamente saudável.
+    Um alquimista hobbit está usando:
+    <sobre o corpo>   uma longa bata de laboratório
+  rooms:
+  - room:estrado.um-armazem-baguncado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-caixa-2
+  kind: look
+  title: look caixa
+  body: 'Sobre a caixa, um rótulo indica: Itens perdidos.'
+  rooms:
+  - room:estrado.muito-bem-armazenados
+  - room:estrado.um-armazem-baguncado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-alquimista-3
+  kind: look
+  title: look alquimista
+  body: Este é um hobbit bem treinado. Ele pode não ter muita força mas ele sabe
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-rotulo-2
+  kind: look
+  title: look rótulo
+  body: É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+  rooms:
+  - room:estrado.armazem
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-pergaminho-2
+  kind: look
+  title: examine pergaminho
+  body: |-
+    Inscrito no pergaminho, você lê:
+    "Os perdidos sempre reencontram conforto no ambiente de seus lares."
+    Isto pesa menos de 100 g.
+  rooms:
+  - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-estrada
+  kind: look
+  title: look estrada
+  body: |-
+    O chão de terra batido do caminho guarda ainda na terra aqui e ali
+    a pegada profunda ou leve de algum viajante, um vago sinal de um
+    pó brilhante parece jazer no chão, mas a pista está tão fraca neste
+    ponto que é impossíveldizer para que lado ela segue. Ichi... Vai ter
+    que seesforçar mais e dar sorte!
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-11
+  - room:estrada-leste.a-grande-estrada-do-leste-14
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-trilha
+  kind: look
+  title: look trilha
+  body: |-
+    O chão de terra batido do caminho guarda ainda na terra aqui e ali
+    a pegada profunda ou leve de algum viajante, um vago sinal de um
+    pó brilhante parece jazer no chão, mas a pista está tão fraca neste
+    ponto que é impossíveldizer para que lado ela segue. Ichi... Vai ter
+    que seesforçar mais e dar sorte!
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-11
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-crianca-3
+  kind: look
+  title: look criança
+  body: |-
+    O pequeno garoto parece tão inocente sentado e estudando. Você chega a querer
+    tomá-lo no colo para abraçá-lo.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-pintura
+  kind: look
+  title: look pintura
+  body: |-
+    A pintura descreve o centro da vila. Uma alta figura de um hobbit
+    esculpido em granito. Ele parece segurar uma placa.
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-estante-4
+  kind: look
+  title: look estante
+  body: |-
+    Feita a mão, de pedaços de madeira de carvalho, esta estante mostra o orgulho
+    e carinho de um amador relativamente abençoado. Cada prateleira foi entalhada
+    a mão, obviamente usando quaisquer ferramentas que seu dono possuísse na
+    ocasião. Independente das ferramentas usadas, os esforços resultaram em um
+    magnífico trabalho.
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-professor
+  kind: look
+  title: look professor
+  body: |-
+    Groto Cascalva é o melhor exemplo de um hobbit. Ele parece pequeno e fraco,
+    mas ao mesmo tempo uma criatura inteligente que poderia superar você.
+    O professor Groto está perfeitamente saudável.
+    O professor Groto está usando:
+    <no corpo>        um colete de couro
+    <empunhando>      um cajado retorcido
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.uma-ampla-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-crianca-4
+  kind: look
+  title: look criança
+  body: |-
+    O pequeno garoto parece tão inocente sentado e estudando. Você chega a querer
+    tomá-lo no colo para abracá-lo.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.uma-pequena-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesa-4
+  kind: look
+  title: look mesa
+  body: |-
+    Há vários quebra-cabeças arranjados sobre a mesa. Eles parecem bem
+    complexos em detalhes. Olhando para eles, você se maravilha com a
+    intrínseca complexidade.
+  rooms:
+  - room:estrado.uma-pequena-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-quebra
+  kind: look
+  title: look quebra
+  body: |-
+    Há vários quebra-cabeças arranjados sobre a mesa. Eles parecem bem
+    complexos em detalhes. Olhando para eles, você se maravilha com a
+    intrínseca complexidade.
+  rooms:
+  - room:estrado.uma-pequena-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mulher-3
+  kind: look
+  title: look mulher
+  body: |-
+    Pétula Cascalva é baixa e corcunda, parece centenária! Ela está ocupada
+    ensinando as crianças sobre filosofia, aparentemente.
+    A professora Pétula está perfeitamente saudável.
+    A professora Pétula está usando:
+    <nos olhos>       (Brilhando) um óculos de leitura
+    <no corpo>        um colete de couro
+    <nas pernas>      uma saia rendada
+  rooms:
+  - room:estrado.uma-pequena-sala-de-aula
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-estatua
+  kind: look
+  title: look estátua
+  body: |-
+    À medida que você desvia os olhos sobre este enorme pedaço de granito, você
+    vê uma enorme placa de bronze polido. Muitos nomes estão escritos sobre ela.
+  rooms:
+  - room:estrado.o-caminho-aumenta
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-16
+  kind: look
+  title: look placa
+  body: A placa de bronze fica a muitos pés de altura. Cada polegada de sua
+  rooms:
+  - room:estrado.o-caminho-aumenta
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mulher-4
+  kind: look
+  title: look mulher
+  body: |-
+    A mulher é baixa e corcunda, porém age como uma mulher muitas vezes mais
+    bela. Ela começa a olhar com bastante interesse para você...
+    Uma mulher hobbit está perfeitamente saudável.
+    Uma mulher hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <na cintura>      um avental xadrez de algodão
+  rooms:
+  - room:estrado.a-toca-dos-cristais
+  - room:estrado.uma-toca-suja
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-casa-2
+  kind: look
+  title: look casa
+  body: Um casaco resistente, feito de tecido negro.
+  rooms:
+  - room:estrado.uma-toca-suja
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cama
+  kind: look
+  title: look cama
+  body: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cadeira-3
+  kind: look
+  title: look cadeira
+  body: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-armarios
+  kind: look
+  title: look armários
+  body: Toda a mobília aqui é básica ao extremo e parece te pouco ou raro uso.
+  rooms:
+  - room:estrado.um-lar-mal-cuidado
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-12
+  kind: look
+  title: look hobbit
+  body: |-
+    Este é o melhor exemplo de um hobbit de Estrado. Ele parece pequeno e fraco,
+    mas ao mesmo tempo uma inteligente criatura que poderia superar você.
+    Um hobbit está perfeitamente saudável.
+    Um hobbit está usando:
+    <sobre o corpo>   uma longa capa com capuz
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.uma-curva-na-estrada
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-13
+  kind: look
+  title: look hobbit
+  body: |-
+    O pequeno garoto parece tão inocente, brincando aqui. Você chega a querer
+    participar da brincadeira.
+    Uma criança hobbit está perfeitamente saudável.
+    Uma criança hobbit está usando:
+    <no corpo>        uma blusa marrom
+    <empunhando>      um bumerangue
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:estrado.um-pequeno-beco-sem-saida
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesas-5
+  kind: look
+  title: look mesas
+  body: |-
+    Esta mesa possui os itens mais interessantes. Minúsculos exemplos de
+    engrenagens, junções e molas estão cuidadosamente dispostas sobre sua
+    superfície. À medida que você os examina, alguns menores que a unha do
+    polegar, você se surpreende com a habilidade usada para criar estes tipos
+    de coisa.
+  rooms:
+  - room:estrado.a-toca-dos-cristais
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-tesoureiro
+  kind: look
+  title: look tesoureiro
+  body: |-
+    O tesoureiro é um velho hobgoblin de óculos. É como se ele pudesse ver apenas
+    a alguns centímetros de distância.
+    O tesoureiro está perfeitamente saudável.
+    O tesoureiro está usando:
+    <nos olhos>       um macabro óculos de lentes graúdas
+    <sobre o corpo>   um trapo imundo
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesa-5
+  kind: look
+  title: look mesa
+  body: |-
+    Agora você tem certeza, realmente esse resíduo é espesso demais para ser
+    poeira, até mesmo para um lugar imundo como este. É terra, como se ela
+    tivesse caído ou deixada ali por alguém que subiu sobre a mesa.
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-tesoureiro
+  kind: look
+  title: consider tesoureiro
+  body: |-
+    O tesoureiro seria um grande professor para você!
+    O tesoureiro parece um pouco mais forte que você.
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-terra
+  kind: look
+  title: look terra
+  body: |-
+    Agora você tem certeza, realmente esse resíduo é espesso demais para ser
+    poeira, até mesmo para um lugar imundo como este. É terra, como se ela
+    tivesse caído ou deixada ali por alguém que subiu sobre a mesa.
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.search-mesa
+  kind: look
+  title: search mesa
+  body: O que?
+  rooms:
+  - room:academia.a-sala-do-tesouro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-rei
+  kind: look
+  title: look rei
+  body: |-
+    O rei é um hobgoblin de aparência insana cujos músculos moldam seus trajes,
+    acabando com o sofisticado efeito que ele estava tentando impor.
+    O rei dos hobgoblins está perfeitamente saudável.
+    O rei dos hobgoblins está usando:
+    <sobre o corpo>   (Aura Vermelha) (Brilhando) um manto de pele remendado
+    <empunhando>      (Aura Vermelha) um cetro retorcido
+  rooms:
+  - room:academia.a-camara-do-rei
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-guarda-4
+  kind: look
+  title: look guarda
+  body: |-
+    Este é um dos guardas de elite hobgoblin. Ele permanece ereto para sua baixa
+    estatura. Ele abre um sorriso, mostrando suas presas, enquanto prepara-se
+    para atacar.
+    O guarda-costas hobgoblin está perfeitamente saudável.
+    O guarda-costas hobgoblin está usando:
+    <no corpo>        uma pesada cota de malha
+    <empunhando>      uma enorme clava
+  rooms:
+  - room:academia.a-camara-do-rei
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-trono
+  kind: look
+  title: look trono
+  body: |-
+    Grande e macabro, existem formas de caveiras e outros ossos entalhados na
+    superfície desse horrível trono. Entre as frestas rugosas da rocha no qual
+    foi esculpido, o musgo se aglomerou aos montes.
+  rooms:
+  - room:academia.a-camara-do-rei
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-rei
+  kind: look
+  title: consider rei
+  body: |-
+    O rei dos hobgoblins seria um grande professor para você!
+    O rei dos hobgoblins parece um pouco mais forte que você.
+  rooms:
+  - room:academia.a-camara-do-rei
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cogumelo
+  kind: look
+  title: look cogumelo
+  body: |-
+    Ele é grande e seu topo está coberto com uma substância que emite um
+    fraco cheiro de mofo. Não é a coisa mais gostosa que você já viu, mas
+    no desespero...
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-40
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:shop-list.provisoes-para-jovens-aventureiros
   kind: shop-list
   title: Provisões para Jovens Aventureiros
@@ -9341,6 +10623,28 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:shop-list.provisoes-para-jovens-aventureiros-2
+  kind: shop-list
+  title: Provisões para Jovens Aventureiros
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         5     Ilim.    uma armadura cristada                              5
+     2         5     Ilim.    uma espada longa                                   8
+     3         4     Ilim.    um protetor de ferro para os braços                3
+     4         3     Ilim.    um par de manoplas de ferro                        3
+     5         1     Ilim.    um cantil de aventureiro                          15
+     6         1     Ilim.    um colchonete de penas                            10
+     7         1     Ilim.    um pergaminho de identificação                     1
+     8         1     Ilim.    um pergaminho de retorno                           1
+     9         0     Ilim.    um dado de seis faces                              4
+     10        0     Ilim.    um dado de vinte faces                             4
+     11        0     Ilim.    uma fatia de pão                                   1
+     12        0     Ilim.    uma lamparina                                      2
+  rooms:
+  - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:speech.o-guardiao
   kind: speech
   title: O Guardião
@@ -9365,6 +10669,7 @@
     O professor Servan falou 'Ei Halbarion, você concluiu seus estudos comigo, ccaso queira, você já pode ir para sua próxima aula.'
     O professor Servan perguntou 'Olá, Halbarion! Precisa estudar tudo novamente?'
     O professor Servan exclamou 'Olá Dorgrin!'
+    O professor Servan exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-da-observacao
   sources:
@@ -9389,6 +10694,7 @@
     O professor Pildo falou 'Você poderá comprar uma fonte de luz nas lojas existentes nas cidades ou até mesmo encontrar alguma perdida pelo mundo.'
     O professor Pildo falou 'Muito bem, Halbarion! Você concluiu seus estudos comigo e já pode avançar para a próxima sala de conhecimentos.'
     O professor Pildo exclamou 'Olá Dorgrin!'
+    O professor Pildo exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-da-movimentacao
   sources:
@@ -9412,6 +10718,7 @@
     A professora Duelda falou 'Desta forma, você poderá encontrar lugares para explorar ou para treinar.'
     A professora Duelda falou 'Muito bem, Halbarion. Você concluiu seus estudos comigo. Agora você já pode ir para a próxima sala de conhecimento.'
     A professora Duelda exclamou 'Olá Dorgrin!'
+    A professora Duelda exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-da-ajuda
   sources:
@@ -9428,6 +10735,7 @@
     O professor Elundhir falou 'NO início, quando precisar de mais água e comida, procure o refeitório da academia.'
     O professor Elundhir falou 'Pois bem Halbarion, com isso, você concluiu seus estudos comigo. Para continuar seu aprendizado, vá para a próxima sala de conhecimento.'
     O professor Elundhir exclamou 'Olá Dorgrin!'
+    O professor Elundhir exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-dos-objetos
   sources:
@@ -9446,6 +10754,7 @@
     O professor Mithrael falou 'Ela foi feita para você, só você pode usar.'
     O professor Mithrael falou 'Muito bem, Halbarion. Você concluiu seus estudos comigo. Agora você já pode ir para a próxima sala de conhecimento.'
     O professor Mithrael falou 'Ei Dorgrin, você ainda não concluiu seus estudos com o professor Elundhir. Caso queira terminá-los, volte para lá e fale com ele.'
+    O professor Mithrael falou 'Ei Tolmo, você ainda não concluiu seus estudos com o professor Elundhir. Caso queira terminá-los, volte para lá e fale com ele.'
   rooms:
   - room:academia.a-sala-dos-conteiners
   sources:
@@ -9464,6 +10773,7 @@
     A professora Erisha falou 'Ótimo Halbarion! Você acabou de enviar uma mensagem IC e privada.'
     A professora Erisha falou 'Ei Halbarion, você finalizou seus estudos comigo. Para continuar seu aprendizado vá para a próxima sala de conhecimento.'
     A professora Erisha falou 'Ei Dorgrin, você ainda não concluiu seus estudos com o professor Mithrael. Caso queira terminá-los, volte para lá e fale com ele.'
+    A professora Erisha falou 'Ei Tolmo, você ainda não concluiu seus estudos com o professor Mithrael. Caso queira terminá-los, volte para lá e fale com ele.'
   rooms:
   - room:academia.a-sala-da-comunicacao
   sources:
@@ -9482,6 +10792,7 @@
     A professora Idhissiel falou 'Você precisará de moedas de ouro para comprar objetos em lojas; comidas e bebidas em estalagens; fazer negócios com outras pessoas; e assim por diante.'
     A professora Idhissiel falou 'Ei Halbarion, você concluiu seus  estudos comigo.'
     A professora Idhissiel falou 'Ei Dorgrin, você ainda não concluiu seus estudos com a professora Erisha. Caso queira terminá-los, volte para lá e fale com ela.'
+    A professora Idhissiel falou 'Ei Tolmo, você ainda não concluiu seus estudos com a professora Erisha. Caso queira terminá-los, volte para lá e fale com ela.'
   rooms:
   - room:academia.a-sala-do-auto-conhecimento
   sources:
@@ -9505,6 +10816,8 @@
     O professor Dogrod falou 'Com isso concluímos seus estudos comigo, Halbarion.'
     O professor Dogrod falou 'Ei Dorgrin, você ainda não concluiu seus estudos com a professora Idhissiel. Caso queira terminá-los, volte para lá e fale com ela.'
     O professor Dogrod exclamou 'Olá Dorgrin!'
+    O professor Dogrod falou 'Ei Tolmo, você ainda não concluiu seus estudos com a professora Idhissiel. Caso queira terminá-los, volte para lá e fale com ela.'
+    O professor Dogrod exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-da-preparacao
   sources:
@@ -9527,6 +10840,7 @@
     A professora Bhieda exclamou 'Muito bem Halbarion, você  concluiu seus estudos comigo, parabéns!'
     A professora Bhieda falou 'Agora você já pode ir para a próxima sala de conhecimento, Halbarion. Boa sorte.'
     A professora Bhieda exclamou 'Olá Dorgrin!'
+    A professora Bhieda exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-do-combate
   sources:
@@ -9552,6 +10866,8 @@
     O professor Rodhvan falou 'Dito isto, concluímos nossos estudos, Halbarion.'
     O professor Rodhvan falou 'Ei Dorgrin, você ainda não concluiu seus estudos com a professora Bhieda. Caso queira terminá-los, volte para lá e fale com ela.'
     O professor Rodhvan exclamou 'Olá Dorgrin!'
+    O professor Rodhvan falou 'Ei Tolmo, você ainda não concluiu seus estudos com a professora Bhieda. Caso queira terminá-los, volte para lá e fale com ela.'
+    O professor Rodhvan exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.a-sala-das-habilidades
   sources:
@@ -9560,7 +10876,9 @@
 - id: text:speech.phrantes
   kind: speech
   title: Phrantes
-  body: Phrantes exclamou 'Olá Halbarion!'
+  body: |-
+    Phrantes exclamou 'Olá Halbarion!'
+    Phrantes exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -9591,6 +10909,7 @@
     Narinë falou 'Desculpe Halbarion, mas isso é uma das poucas coisas que não me interessam'
     Narinë disse, 'Isto não me interessa'.
     Narinë exclamou 'Obrigado Halbarion, farei bom uso disto!'
+    Narinë exclamou 'Obrigado Tolmo, farei bom uso disto!'
   rooms:
   - room:academia.o-centro-do-jardim
   sources:
@@ -9620,6 +10939,7 @@
     O lojista exclamou 'Olá Halbarion!'
     O lojista sussurrou para você 'Eu compro e vendo itens, Halbarion. Fique a vontade para me vender armaduras, armas, roupas, tesouros ou comidas.'
     O lojista disse, 'Isto não me interessa'.
+    O lojista exclamou 'Olá Tolmo!'
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
   sources:
@@ -9643,6 +10963,10 @@
     Zurg sussurrou para você 'Prove este delicioso pedaço de carne, Dorgrin!'
     Zurg ponderou 'Calma, Dorgrin, preciso assar mais carne...'
     Zurg falou 'Volte daqui a alguns minutos.'
+    Zurg exclamou 'Seja bem-vindo, senhor Tolmo!'
+    Zurg sussurrou para você 'Prove este delicioso pedaço de carne, Tolmo!'
+    Zurg perguntou 'Olá, Tolmo, há quanto tempo que não nos vemos?'
+    Zurg ponderou 'Calma, Tolmo, preciso assar mais carne...'
   rooms:
   - room:academia.o-refeitorio
   sources:
@@ -9683,6 +11007,8 @@
   body: |-
     Estë falou 'Vista este manto, Halbarion'
     Estë disse 'Seja bem-vindo, Halbarion. Námo e Vairë estão lhe esperando logo à frente'
+    Estë falou 'Vista este manto, Tolmo'
+    Estë disse 'Seja bem-vindo, Tolmo. Námo e Vairë estão lhe esperando logo à frente'
   rooms:
   - room:saloes-espera.os-saloes-de-espera-3
   sources:
@@ -9699,6 +11025,7 @@
     Námo disse 'Porém, aqueles que se opuseram a vontade de Ilúvatar serão julgados pelo Conselho dos Maiar, devendo aguardar tal julgamento sob minha custódia'
     Námo disse 'Você deverá aguardar até eu pronunciar meu veredicto, que será baseado unicamente nas sábias palavras de Vairë. Esta decisão não será rápida. Aguarde aqui ou retorne quando estiver preparado para recebê-la'
     Námo disse 'Você será agora enviado a sua terra natal sob um novo hröa. Saiba porém, que nos Dias Antigos esta graça era dada apenas aos mais valorosos arautos do Único, e espero apenas que você a usufrua sabiamente.'
+    Námo disse 'Salve Tolmo, seja bem-vindo aos meus domínios. Sou Námo, o Senhor dos Salões de Espera'
   rooms:
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
@@ -9762,6 +11089,7 @@
     O guarda sussurrou para você 'A Grande Estrada do Leste passa por dentro da vila de Bri. Pode-se ir em duas direções nela: a oeste da Praça de Bri, ela continua por quilômetros, passando por florestas e vários vilarejos hobbit.'
     O guarda sussurrou para você 'Seguindo-a pelo sul da Praça de Bri, no entanto, ela contorna a vila e passa ao lado de uma pequena vila de hobbits, pelo Topo do Vento, pela Mata dos Trolls e termina em Valfenda.'
     O guarda sussurrou para você 'A Praça de Bri se localiza no centro da vila de Bri. Siga na direção oeste três vezes chegará lá.'
+    O guarda sussurrou para você 'Tenha cuidado, Tolmo... seu lugar é na Academia de Aventureiros, tente não sair da vila de Bri ou encontrará perigos!'
   rooms:
   - room:bri.a-grande-estrada-leste
   - room:bri.a-guarita-do-portao-sul
@@ -9771,6 +11099,7 @@
   - room:bri.estrada-horizonte
   - room:bri.estrada-horizonte-3
   - room:bri.fora-do-portao-norte
+  - room:estrada-leste.a-grande-estrada-do-leste-9
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10247,6 +11576,38 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:speech.um-marceneiro-hobbit
+  kind: speech
+  title: Um marceneiro hobbit
+  body: Um marceneiro hobbit falou 'Ah sim, deve ser isso.'
+  rooms:
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-pequeno-laboratorio-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.o-troll
+  kind: speech
+  title: O troll
+  body: |-
+    O troll perguntou 'Quem vem lá?'
+    O troll falou 'Aqueles que não possuem a chave, não atravessam a parede viva sem pagamento!'
+    O troll falou 'O honorário são 2 moedas de ouro!'
+    O troll falou 'Do contrário, apenas sobre meu cadáver você trafegará livremente!'
+  rooms:
+  - room:floresta-chet.as-arvores-caidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.nauk
+  kind: speech
+  title: Nauk
+  body: Nauk perguntou 'Olá Tolmo! Estou perdido! Você pode me ajudar a chegar na Academia?'
+  rooms:
+  - room:archet.rua-das-batalhas-4
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:tip.help-compare-isso-ira-te-ajudar-numa-terrivel-qu
   kind: tip
   title: 'HELP COMPARE. Isso irá te ajudar numa terrível questão: qual'
@@ -10259,6 +11620,9 @@
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10274,6 +11638,9 @@
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10289,6 +11656,9 @@
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10305,6 +11675,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10321,6 +11694,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10336,6 +11712,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10351,6 +11730,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10366,6 +11748,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10381,6 +11766,9 @@
   - room:bosque.o-amplo-bosque-21
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10395,6 +11783,9 @@
   - room:bosque.o-amplo-bosque-2
   - room:bosque.o-amplo-bosque-21
   - room:bri.dentro-do-portao-sul
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10409,6 +11800,9 @@
   - room:academia.sala-de-cura
   - room:bosque.o-amplo-bosque-21
   - room:bri.dentro-do-portao-sul
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10423,6 +11817,9 @@
   - room:academia.provisoes-para-jovens-aventureiros
   - room:academia.sala-de-cura
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10437,6 +11834,9 @@
   - room:academia.provisoes-para-jovens-aventureiros
   - room:academia.sala-de-cura
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10451,6 +11851,8 @@
   - room:academia.provisoes-para-jovens-aventureiros
   - room:academia.sala-de-cura
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.um-pequeno-laboratorio
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10464,6 +11866,8 @@
   - room:academia.provisoes-para-jovens-aventureiros
   - room:academia.sala-de-cura
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10479,6 +11883,8 @@
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-21
   - room:bosque.o-amplo-bosque-7
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.curva-entre-arvores
   sources:
   - logs/transcript.log
@@ -10494,6 +11900,8 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -10509,6 +11917,8 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -10524,6 +11934,9 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-pequena-sala-de-aula
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -10540,6 +11953,9 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-pequena-sala-de-aula
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -10556,6 +11972,9 @@
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-15
   - room:bosque.o-amplo-bosque-21
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-pequena-sala-de-aula
+  - room:estrado.uma-toca-bem-cuidada
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -10571,6 +11990,9 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.o-amplo-bosque-15
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-pequena-sala-de-aula
+  - room:estrado.uma-toca-bem-cuidada
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10585,6 +12007,9 @@
   - room:academia.provisoes-para-jovens-aventureiros
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
+  - room:estrado.oficina-de-obras
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10601,6 +12026,9 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.a-gruta-profunda
+  - room:estrado.oficina-de-obras
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10617,6 +12045,8 @@
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
   - room:bosque.a-gruta-profunda
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10634,6 +12064,8 @@
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
   - room:bri.mercado.a-tenda-do-escriba
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10650,6 +12082,8 @@
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
   - room:bri.mercado.a-tenda-do-escriba
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10666,6 +12100,8 @@
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
   - room:bri.mercado.a-tenda-do-escriba
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10681,6 +12117,8 @@
   - room:bosque.a-gruta-profunda
   - room:bosque.o-amplo-bosque
   - room:bri.mercado.a-tenda-do-escriba
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10697,6 +12135,8 @@
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
   - room:valfenda.uma-majestosa-arcada
   sources:
@@ -10715,6 +12155,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:esgaroth.viela-do-heroi-2
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10731,6 +12173,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:esgaroth.loja-alfarrabio-novo
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10745,6 +12189,8 @@
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10758,6 +12204,8 @@
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10772,6 +12220,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.uma-toca-bem-cuidada
+  - room:floresta-chet.na-base-de-uma-pequena-colina
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10787,6 +12237,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10802,6 +12254,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10819,6 +12273,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10834,6 +12290,8 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10849,6 +12307,8 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10864,6 +12324,9 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10880,6 +12343,9 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10894,6 +12360,9 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10909,6 +12378,9 @@
   - room:bri.dentro-do-portao-sul
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   - room:saloes-espera.os-saloes-de-espera-4
   sources:
   - logs/transcript.log
@@ -10924,6 +12396,9 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.ponei.o-ponei-saltitante
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
+  - room:estrado.uma-toca-bem-cuidada
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10938,6 +12413,8 @@
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.ponei.o-ponei-saltitante
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10951,6 +12428,8 @@
   - room:academia.sala-de-cura
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10964,6 +12443,8 @@
   - room:academia.sala-de-cura
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10977,6 +12458,8 @@
   - room:academia.sala-de-cura
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10990,6 +12473,8 @@
   - room:academia.sala-de-cura
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -11003,6 +12488,8 @@
   - room:academia.sala-de-cura
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
+  - room:estrado.um-som-distante
+  - room:estrado.uma-horta-de-cebolas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -11033,6 +12520,7 @@
        5x  O corpo de um grande macaco foi abandonado aqui.
        5x  O corpo de um morcego peludo foi abandonado aqui.
        4x  O corpo de uma raposa preguiçosa foi abandonado aqui.
+       3x  O corpo de Tolmo foi abandonado aqui.
        2x  A cabeça de uma raposa preguiçosa está se decompondo aqui.
        2x  O corpo de uma raposa preguiçosa está envolto em um cheiro nauseabundo.
        2x  O corpo de Halbarion está coberto de vermes.
