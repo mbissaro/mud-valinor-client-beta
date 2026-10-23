@@ -11818,6 +11818,17 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:speech.alguem
+  kind: speech
+  title: Alguém
+  body: |-
+    Alguém sussurrou para você 'Ei!'
+    Alguém sussurrou para você 'Estou colecionando coisas, pago uma moeda em qualquer coisa que você me der!'
+  rooms:
+  - room:academia.um-corredor-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:tip.help-compare-isso-ira-te-ajudar-numa-terrivel-qu
   kind: tip
   title: 'HELP COMPARE. Isso irá te ajudar numa terrível questão: qual'
@@ -12270,6 +12281,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
@@ -12288,6 +12300,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
@@ -12306,6 +12319,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.o-amplo-bosque
   - room:bosque.o-amplo-bosque-2
@@ -12324,6 +12338,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.o-amplo-bosque
   - room:bri.mercado.a-tenda-do-escriba
@@ -12341,6 +12356,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
@@ -12360,6 +12376,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
@@ -12378,6 +12395,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
@@ -12395,6 +12413,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.a-gruta-profunda
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
@@ -12411,6 +12430,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -12426,6 +12446,7 @@
   rooms:
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:academia.sala-de-estudo-de-linguas
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
@@ -12440,6 +12461,7 @@
   title: Para ver o que tem dentro de uma bolsa, digite EXAMINE nome_
   body: 'Dica: Para ver o que tem dentro de uma bolsa, digite EXAMINE nome_da_bolsa. Veja mais em HELP CONTAINERS.'
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:bosque.formigueiro.a-piscina-na-galeria
@@ -12457,6 +12479,7 @@
   title: 'Há muitas opções de jogo que você pode configurar. Descubra '
   body: 'Dica: Há muitas opções de jogo que você pode configurar. Descubra todas em HELP CONFIG, é muito útil!'
   rooms:
+  - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:bosque.formigueiro.a-piscina-na-galeria
