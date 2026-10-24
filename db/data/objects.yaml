@@ -589,6 +589,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:bule
+  name: um bule
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.utensilios
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:sapantano.utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bumerangue
   name: um bumerangue
   kind: item
@@ -629,6 +644,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cachimbo-de-barro
+  name: um cachimbo de barro
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.fumos-e-cachimbos
+    level: 0
+    price: 5
+    stock: Ilim.
+  rooms:
+  - room:sapantano.fumos-e-cachimbos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cachimbo-de-madeira
   name: um cachimbo de madeira
   kind: item
@@ -663,7 +693,10 @@
   name: uma caixa com um rótulo, aparentemente nova,
   kind: item
   category: outro
-  examined: false
+  description: |-
+    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
+    Em seu rótulo, vê-se escrito: PREGOS.
+  examined: true
   ground_line: Uma caixa com um rótulo, aparentemente nova, foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -1377,6 +1410,13 @@
   examined: false
   worn_by:
   - Franco Boncorpo <na cabeça>
+  shops:
+  - room: room:sapantano.utensilios
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:sapantano.utensilios
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1658,6 +1698,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:coice-de-cavalo-doido
+  name: coice de cavalo doido
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.taverna-tronco-flutuante
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:colchonete-de-penas
   name: um colchonete de penas
   kind: item
@@ -1829,6 +1884,21 @@
     stock: Ilim.
   rooms:
   - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:dose-de-vertigem-espiral
+  name: uma dose de vertigem-espiral
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.taverna-tronco-flutuante
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2155,6 +2225,21 @@
     stock: Ilim.
   rooms:
   - room:esgaroth.praca-da-flechada-precisa
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:espanador-de-penas
+  name: um espanador de penas
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.utensilios
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:sapantano.utensilios
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3623,6 +3708,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:martelo-de-madeira
+  name: um martelo de madeira
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.uma-ferramentaria
+    level: 14
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:maca-metalica
   name: uma maça metálica
   kind: item
@@ -3683,6 +3783,21 @@
   examined: false
   worn_by:
   - Dantalion <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:melhor-malte-da-quarta-leste
+  name: o melhor malte da Quarta Leste
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.taverna-tronco-flutuante
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -5003,6 +5118,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pa-concava
+  name: uma pá côncava
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.uma-ferramentaria
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:pao-bem-recheado-para-viagem
   name: um pão bem recheado para viagem
   kind: item
@@ -5161,6 +5291,13 @@
   examined: false
   worn_by:
   - Franco Boncorpo <no pescoço>
+  shops:
+  - room: room:sapantano.utensilios
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:sapantano.utensilios
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -5204,6 +5341,21 @@
   examined: false
   worn_by:
   - Dantalion <nos pés>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:serra
+  name: uma serra
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.uma-ferramentaria
+    level: 10
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:sapantano.uma-ferramentaria
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -5450,10 +5602,7 @@
   name: uma velha caixa de madeira com o rótulo rompido
   kind: item
   category: outro
-  description: |-
-    É uma caixa por demais usada. Parece que foi trocada de lugar várias vezes.
-    Em seu rótulo, vê-se escrito: PREGOS.
-  examined: true
+  examined: false
   ground_line: Uma velha caixa de madeira com o rótulo rompido foi deixada aqui.
   rooms:
   - room:estrado.armazem
@@ -5542,6 +5691,21 @@
   examined: false
   worn_by:
   - Aerith <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vidro-com-vaga-lumes
+  name: um vidro com vaga-lumes
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:sapantano.utensilios
+    level: 1
+    price: 15
+    stock: Ilim.
+  rooms:
+  - room:sapantano.utensilios
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -10027,6 +10191,16 @@
   examined: true
   rooms:
   - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.sol-avermelhado-desaparece-no-horizonte-ao-oeste
+  name: O Sol avermelhado desaparece no horizonte ao oeste.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:sapantano.transversal
   sources:
   - logs/raw.log
   - logs/transcript.log

@@ -990,6 +990,31 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:help.help-sede
+  kind: help
+  title: help sede
+  body: |-
+    Sintaxe:  drink <objeto>              - bebe o líquido do objeto.
+    Sintaxe:  eat   <objeto>              - come o objeto
+              eat   <objeto> <container>  - come o objeto que estava dentro do
+    cont.
+    DRINK faz com que seu personagem beba de uma fonte ou de um frasco de
+    bebida, para aliviar sua sede.
+    EAT faz com que seu personagem coma um item de comida, ou uma pílula mágica
+    (cuja função é similar a poções).
+    Quando você está faminto ou sedento (você verá mensagens a cada tick que
+    dirão que você está faminto, ou morrendo de sede, isto poderá ser checado
+    também com um SCORE), você não irá recuperar hp/mn/mvs tão
+    rapidamente como faria se estivesse bem alimentado e hidratado.
+    Se você ficar faminto ou sedento por muito tempo, seu estado mental irá
+    começar a sofrer. Suas habilidades de combate serão afetadas negativamente,
+    sua coordenação irá abaixar e você pode até ficar alucinado ou depressivo.
+    Comendo, bebendo e um pouco de descanso irá resolver estes problemas depois
+    de um curto período.
+    Próximo, Mostrar tudo, Repetir, Voltar, ou Sair: [P]
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:look.examine-orbe
   kind: look
   title: examine orbe
@@ -11820,6 +11845,22 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:look.look-1-hobbit
+  kind: look
+  title: look 1.hobbit
+  body: |-
+    Mais forte que a maioria dos hobbits dessa vila, esse artesão deve trabalhar
+    com algo bem menos delicado que construir tijelas. Seu ofício está relacionado
+    com carregamento de peso ou construção de casas.
+    Um trabalhador hobbit está perfeitamente saudável.
+    Um trabalhador hobbit está usando:
+    <no corpo>        um terno azul-marinho
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.curva-do-meio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:shop-list.provisoes-para-jovens-aventureiros
   kind: shop-list
   title: Provisões para Jovens Aventureiros
@@ -12151,6 +12192,58 @@
      19        1     Ilim.    uma camisa xadrez                                 16
   rooms:
   - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.uma-ferramentaria
+  kind: shop-list
+  title: Uma Ferramentaria
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1        14     Ilim.    um martelo de madeira                              2
+     2        10     Ilim.    uma serra                                          2
+     3         0     Ilim.    uma pá côncava                                     2
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.utensilios
+  kind: shop-list
+  title: Utensílios
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         1     Ilim.    um vidro com vaga-lumes                           15
+     2         0     Ilim.    um bule                                            1
+     3         0     Ilim.    um espanador de penas                              1
+     4         0     Ilim.    um rolo de corda                                   1
+     5         0     Ilim.    uma cesta de palha                                 1
+  rooms:
+  - room:sapantano.utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.taverna-tronco-flutuante
+  kind: shop-list
+  title: Taverna Tronco Flutuante
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         0     Ilim.    coice de cavalo doido                              2
+     2         0     Ilim.    o melhor malte da Quarta Leste                     4
+     3         0     Ilim.    uma dose de vertigem-espiral                       3
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.fumos-e-cachimbos
+  kind: shop-list
+  title: Fumos e Cachimbos
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         0     Ilim.    um cachimbo de barro                               5
+  rooms:
+  - room:sapantano.fumos-e-cachimbos
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -13221,6 +13314,17 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:speech.irwando-cova
+  kind: speech
+  title: Irwando Cova
+  body: |-
+    Irwando Cova ponderou 'Está com sono, Halbarion? São duas moedas de ouro...'
+    Irwando Cova exclamou '...se quiser fica aqui essa noite!'
+  rooms:
+  - room:sapantano.estalagem-campo-silvestre
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:tip.help-compare-isso-ira-te-ajudar-numa-terrivel-qu
   kind: tip
   title: 'HELP COMPARE. Isso irá te ajudar numa terrível questão: qual'
@@ -13230,6 +13334,7 @@
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
+  - room:beiragua.uma-sala-de-jantar
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -13248,6 +13353,7 @@
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
+  - room:beiragua.uma-sala-de-jantar
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -13266,6 +13372,7 @@
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:academia.um-corredor-3
+  - room:beiragua.uma-sala-de-jantar
   - room:bosque.a-academia-de-combate
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -14026,6 +14133,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.ponei.o-ponei-saltitante
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -14043,6 +14151,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.ponei.o-ponei-saltitante
   - room:estrada-leste.a-grande-estrada-do-leste-5
@@ -14059,6 +14168,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.mercado.a-tenda-do-escriba
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.um-som-distante
@@ -14074,6 +14184,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.um-som-distante
@@ -14089,6 +14200,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.um-som-distante
@@ -14104,6 +14216,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.um-som-distante
@@ -14119,6 +14232,7 @@
   - room:academia.a-academia-de-aventureiros
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
+  - room:beiragua.uma-sala-de-jantar
   - room:bri.dentro-do-portao-sul
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.um-som-distante
