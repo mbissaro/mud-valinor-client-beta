@@ -21,6 +21,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:abobrinha
+  name: uma abobrinha
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:adaga-metalica
   name: uma adaga metálica
   kind: item
@@ -78,6 +93,21 @@
   examined: false
   worn_by:
   - A Guardiã elfa <nas costas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:ameixa-madura
+  name: uma ameixa madura
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -158,6 +188,17 @@
     stock: Ilim.
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:avental
+  name: um avental
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dehantir Boncorpo <na cintura>
+  - Mamãe Boncorpo <na cintura>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -263,6 +304,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:berinjela
+  name: uma berinjela
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bermudao-xadrez
   name: um bermudão xadrez
   kind: item
@@ -270,6 +326,21 @@
   examined: false
   worn_by:
   - O velho pescador <nas pernas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:beterraba
+  name: uma beterraba
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -291,6 +362,66 @@
   examined: false
   worn_by:
   - O armeiro Disneck <empunhando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolo-de-cenoura
+  name: um bolo de cenoura
+  kind: item
+  category: comida e bebida
+  examined: false
+  found_in:
+  - um forno
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  actions:
+  - deu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolo-de-cenoura-de-um-forno
+  name: um bolo de cenoura de um forno
+  kind: item
+  category: comida e bebida
+  description: |-
+    Tem um cheiro bom, pois está fresco. Tal como as cenouras, ele possui uma
+    cor alaranjada. É bastante fofo, já que foi feito por mãos habilidosas de
+    algum hobbit.
+  examined: true
+  weight: cerca de meio quilograma
+  actions:
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolo-de-chocolate
+  name: um bolo de chocolate
+  kind: item
+  category: comida e bebida
+  examined: false
+  found_in:
+  - um forno
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  actions:
+  - colocou
+  - come
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bolo-de-chocolate-de-um-forno
+  name: um bolo de chocolate de um forno
+  kind: item
+  category: comida e bebida
+  description: |-
+    Um bolinho de chocolate, bem doce e macio, do agrado das crianças. Ele tem
+    um cheiro agradável, que quando quente, se espalha por todo o ambiente,
+    atraindo as pessoas gulosas ou famintas.
+  examined: true
+  weight: cerca de meio quilograma
+  actions:
+  - pegou
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -319,6 +450,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:bolsa-de-mantimentos
+  name: uma bolsa de mantimentos
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bolsa-presa-num-bordao
   name: uma bolsa presa num bordão
   kind: item
@@ -326,6 +472,21 @@
   examined: false
   worn_by:
   - Um jovem mago <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bomba-de-chocolate
+  name: uma bomba de chocolate
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -403,6 +564,31 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:brincos-de-estrelas
+  name: brincos de estrelas
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dora Boncorpo <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:bulbo-de-alface
+  name: um bulbo de alface
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:bumerangue
   name: um bumerangue
   kind: item
@@ -443,17 +629,32 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cachimbo-de-madeira
+  name: um cachimbo de madeira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Basso Boffin <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cacho-de-uvas
   name: um cacho de uvas
   kind: item
   category: outro
   examined: false
   shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
   - room: room:valfenda.a-casa-de-refeicoes
     level: 0
     price: 3
     stock: Ilim.
   rooms:
+  - room:fosso-branco.boncorpo-hortifruti
   - room:valfenda.a-casa-de-refeicoes
   sources:
   - logs/transcript.log
@@ -483,6 +684,39 @@
     stock: Ilim.
   rooms:
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-azul-escura
+  name: uma calça azul-escura
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Tom Boffin <nas pernas>
+  - Um jovem mensageiro <nas pernas>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 18
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:calca-bege
+  name: uma calça bege
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 22
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -592,6 +826,26 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:calca-folgada
+  name: uma calça folgada
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dehantir Boncorpo <nas pernas>
+  - Franco Boncorpo <nas pernas>
+  - Grand Boncorpo <nas pernas>
+  - Um trabalhador hobbit <nas pernas>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 23
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:calca-marrom
   name: uma calça marrom
   kind: item
@@ -602,6 +856,7 @@
   - O lojista <nas pernas>
   - Um hobbit <nas pernas>
   - Um marceneiro hobbit <nas pernas>
+  - Um pescador <nas pernas>
   - Uma criança hobbit <nas pernas>
   - Zurg <nas pernas>
   sources:
@@ -647,6 +902,23 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:camisa-amarela
+  name: uma camisa amarela
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mensageiro <no corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 21
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:camisa-branca-com-pulsos-e-gola-de-cor-laranja
   name: uma camisa branca com pulsos e gola de cor laranja
   kind: item
@@ -684,6 +956,24 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:camisa-laranja
+  name: uma camisa laranja
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Codumbras Pealvo <no corpo>
+  - Franco Boncorpo <no corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 23
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:camisa-marrom
   name: uma camisa marrom
   kind: item
@@ -704,6 +994,38 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:camisa-ornada
+  name: uma camisa ornada
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 1
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-social-branca
+  name: uma camisa social branca
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Tom Boffin <no corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 24
+    price: 21
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:camisa-verde
   name: uma camisa verde
   kind: item
@@ -713,6 +1035,7 @@
   - O jovem Belodon <no corpo>
   - O merceeiro mercador Alastor <no corpo>
   - O taverneiro Dostolieve <no corpo>
+  - Um pescador <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -725,9 +1048,31 @@
   - no corpo
   dropped_by:
   - Tolmo
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 20
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   actions:
   - pegou
   - vestiu
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:camisa-xadrez
+  name: uma camisa xadrez
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 1
+    price: 16
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -743,6 +1088,21 @@
     stock: Ilim.
   rooms:
   - room:archet.os-saguoes-de-outono
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:caneca-de-fosso-branco
+  name: uma caneca de Fosso Branco
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -773,6 +1133,10 @@
     level: 1
     price: 10
     stock: Ilim.
+  - room: room:fosso-branco.servico-de-postagens-rapidas
+    level: 1
+    price: 11
+    stock: Ilim.
   - room: room:valfenda.o-cartografo
     level: 1
     price: 10
@@ -780,6 +1144,7 @@
   rooms:
   - room:academia.a-sala-dos-conteiners
   - room:esgaroth.loja-alfarrabio-novo
+  - room:fosso-branco.servico-de-postagens-rapidas
   - room:valfenda.o-cartografo
   actions:
   - deu
@@ -810,6 +1175,7 @@
     do mesmo e em sua tampa, jaz inscrito o símbolo da Academia dos
     Aventureiros.
   examined: true
+  weight: cerca de 2 kg
   shops:
   - room: room:academia.o-refeitorio
     level: 1
@@ -819,9 +1185,14 @@
     level: 1
     price: 15
     stock: Ilim.
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 16
+    stock: Ilim.
   rooms:
   - room:academia.o-refeitorio
   - room:academia.provisoes-para-jovens-aventureiros
+  - room:fosso-branco.armarinhos-cascadovo
   actions:
   - deu
   - pegou
@@ -895,6 +1266,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:carambola
+  name: uma carambola
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:caro-relogio-de-bolso
   name: um caro relógio de bolso
   kind: item
@@ -958,6 +1344,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:casaco-xadrez
+  name: um casaco xadrez
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 22
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cebola
   name: uma cebola
   kind: item
@@ -966,6 +1367,16 @@
   actions:
   - come
   - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cesta-de-palha
+  name: uma cesta de palha
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Franco Boncorpo <na cabeça>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1102,6 +1513,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:chuchu
+  name: um chuchu
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cinto-de-couro
   name: um cinto de couro
   kind: item
@@ -1172,7 +1598,25 @@
   category: equipamento
   examined: false
   worn_by:
+  - Tom Boffin <na cintura>
   - Um jovem mago <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cinturao-gasto
+  name: um cinturão gasto
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um pescador <na cintura>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 21
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1229,6 +1673,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:colete-de-couro-negro
+  name: um colete de couro negro
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um pescador <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:colete-de-seda-negra
   name: um colete de seda negra
   kind: item
@@ -1247,6 +1701,21 @@
   examined: false
   worn_by:
   - Nedhellener <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:colete-verde-de-brim
+  name: um colete verde de brim
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 25
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1285,8 +1754,13 @@
     level: 0
     price: 4
     stock: Ilim.
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 0
+    price: 4
+    stock: Ilim.
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
+  - room:fosso-branco.armarinhos-cascadovo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1323,6 +1797,7 @@
   - room:bri.avenida-zenite
   actions:
   - jogou
+  - recebeu
   item: item:maca
   sources:
   - logs/transcript.log
@@ -1467,8 +1942,13 @@
     level: 0
     price: 4
     stock: Ilim.
+  - room: room:fosso-branco.taverna-rama-verde
+    level: 0
+    price: 4
+    stock: Ilim.
   rooms:
   - room:bri.ponei.o-ponei-saltitante
+  - room:fosso-branco.taverna-rama-verde
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1492,14 +1972,33 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:enorme-saia-rodada-florida
+  name: uma enorme saia rodada florida
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Brisa Boffin <nas pernas>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 17
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:enorme-tesoura-de-poda
   name: uma enorme tesoura de poda
   kind: item
-  category: outro
+  category: equipamento
   description: |-
     Para uma profissão tão pacífica quanto a de um jardineiro, esta enorme e
     afiada tesoura chega a ser a antítese da filosofia da coisa.
   examined: true
+  worn_by:
+  - Um jardineiro <empunhando>
   found_in:
   - uma caixa de madeira com um rótulo novinho
   rooms:
@@ -1711,6 +2210,23 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:faixa-preta
+  name: uma faixa preta
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dehantir Boncorpo <na cabeça>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 22
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:faixa-vermelha
   name: uma faixa vermelha
   kind: item
@@ -1718,6 +2234,18 @@
   examined: false
   worn_by:
   - Dantalion <na cintura>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:fatia-de-carne
+  name: uma fatia de carne
+  kind: item
+  category: comida e bebida
+  examined: false
+  actions:
+  - colocou
+  - pegou
+  item: item:fatia-carne
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -1834,6 +2362,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:figo
+  name: um figo
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:fina-calca-de-seda
   name: uma fina calça de seda
   kind: item
@@ -1877,6 +2420,7 @@
   - room:valfenda.a-alfaiataria
   actions:
   - colocou
+  - deu
   - pegou
   item: item:camisa-seda
   sources:
@@ -1943,12 +2487,17 @@
     level: 0
     price: 1
     stock: Ilim.
+  - room: room:fosso-branco.servico-de-postagens-rapidas
+    level: 0
+    price: 1
+    stock: Ilim.
   - room: room:valfenda.o-cartografo
     level: 0
     price: 1
     stock: Ilim.
   rooms:
   - room:esgaroth.loja-alfarrabio-novo
+  - room:fosso-branco.servico-de-postagens-rapidas
   - room:valfenda.o-cartografo
   sources:
   - logs/transcript.log
@@ -1957,7 +2506,18 @@
   name: uma folha negra
   kind: item
   category: outro
-  examined: false
+  description: |-
+    Este é um pequeno poleiro ornamentado com três varinhas horizontais onde um
+    pássaro pode descansar, presas em uma haste vertical ligada a uma base de
+    sustentação. Perto da vara mais baixa, há um pote com água e outro com alpiste.
+    Na haste principal, há um espaço especial para pendurar uma folha de papel.
+    Um passarinho azul percebe que há alguém olhando para o papel e começa a atualizar as informações.
+    Escrito na folha de papel, você vê:
+    ----------------------------------------------------------
+    Não há nenhum tweet recente citando o MUD.
+    ----------------------------------------------------------
+    Informações atualizadas em 24/10 às 12:29:48
+  examined: true
   dropped_by:
   - um grande e nojento morcego
   actions:
@@ -1992,6 +2552,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:frasco-vazio
+  name: um frasco vazio
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 6
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:garra-de-madeira
   name: uma garra de madeira
   kind: item
@@ -2019,8 +2594,13 @@
     level: 0
     price: 3
     stock: Ilim.
+  - room: room:fosso-branco.taverna-rama-verde
+    level: 0
+    price: 3
+    stock: Ilim.
   rooms:
   - room:bri.ponei.o-ponei-saltitante
+  - room:fosso-branco.taverna-rama-verde
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2054,6 +2634,51 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:garrafa-de-vinho
+  name: uma garrafa de vinho
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.taverna-rama-verde
+    level: 0
+    price: 10
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:gigantesco-bife
+  name: um gigantesco bife
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.taverna-rama-verde-2
+    level: 0
+    price: 4
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:girassol
+  name: um girassol
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 25
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:gorjal-de-ferro-gasto
   name: um gorjal de ferro gasto
   kind: item
@@ -2083,6 +2708,13 @@
   examined: false
   worn_by:
   - Narinë <nas costas>
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 16
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2207,6 +2839,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:jardineira
+  name: uma jardineira
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma menina hobbit <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:lamparina
   name: uma lamparina
   kind: item
@@ -2223,8 +2865,13 @@
     level: 0
     price: 2
     stock: Ilim.
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 0
+    price: 2
+    stock: Ilim.
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
+  - room:fosso-branco.armarinhos-cascadovo
   actions:
   - colocou
   - comprou
@@ -2272,6 +2919,26 @@
   examined: false
   worn_by:
   - Florbela, a esposa de Mevildon <na cabeça>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:leve-blusa-de-cetim
+  name: uma leve blusa de cetim
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Brisa Boffin <no corpo>
+  - Dehantir Boncorpo <no corpo>
+  - Grand Boncorpo <no corpo>
+  - Um trabalhador hobbit <no corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 19
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2533,6 +3200,23 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:longo-vestido-azul
+  name: um longo vestido azul
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Dora Boncorpo <sobre o corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 21
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:longo-vestido-bordado-com-perolas
   name: um longo vestido bordado com pérolas
   kind: item
@@ -2550,6 +3234,24 @@
   examined: false
   worn_by:
   - O tesoureiro <nos olhos>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:macacao-surrado
+  name: um macacão surrado
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Marbo Pealvo <no corpo>
+  - Um jardineiro <no corpo>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 18
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -2834,6 +3536,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:mapa-de-fosso-branco
+  name: um mapa de Fosso Branco
+  kind: item
+  category: mapa
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:mapa-de-valfenda
   name: um mapa de Valfenda
   kind: item
@@ -3029,6 +3746,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:mochila-azul
+  name: uma mochila azul
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um jovem mensageiro <nos ombros>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:mochila-dos-aventureiros-de-halbarion
   name: a mochila dos aventureiros de Halbarion
   kind: item
@@ -3098,6 +3825,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:morangos-com-creme
+  name: morangos com creme
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:mascara-para-trabalhos-metalurgicos
   name: uma máscara para trabalhos metalúrgicos
   kind: item
@@ -3105,6 +3847,38 @@
   examined: false
   worn_by:
   - Phrantes <sobre o rosto>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:nabo
+  name: um nabo
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 1
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:ordinaria-calca-xadrez
+  name: uma ordinária calça xadrez
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Codumbras Pealvo <nas pernas>
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 24
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3304,6 +4078,42 @@
   examined: false
   worn_by:
   - O curandeiro alucinado <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-brincos-de-esmeralda
+  name: um par de brincos de esmeralda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Brisa Boffin <nas orelhas>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-brincos-de-perolas
+  name: um par de brincos de pérolas
+  kind: item
+  category: outro
+  examined: false
+  actions:
+  - colocou
+  - pegou
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:par-de-calcas-curtas-com-suspensorio
+  name: um par de calças curtas com suspensório
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.tecelaria-e-loja-de-roupas
+    level: 18
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3568,11 +4378,18 @@
     level: 0
     price: 1
     stock: Ilim.
+  - room: room:fosso-branco.taverna-rama-verde-2
+    level: 0
+    price: 1
+    stock: Ilim.
   rooms:
   - room:academia.o-refeitorio
+  - room:fosso-branco.taverna-rama-verde-2
   actions:
+  - colocou
   - come
   - comprou
+  - pegou
   - recebeu
   item: item:carne-coelho
   sources:
@@ -3600,6 +4417,21 @@
   examined: false
   worn_by:
   - Uma criança hobbit <segurando>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:peito-de-um-frango
+  name: o peito de um frango
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.taverna-rama-verde-2
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde-2
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3726,6 +4558,7 @@
   - room:estrada-leste.um-atalho-2
   - room:estrada-leste.um-atalho-3
   - room:estrada-leste.um-atalho-4
+  - room:fosso-branco.largo-da-carroca
   - room:valfenda.a-estrada-rochosa
   - room:valfenda.a-ponte-sobre-o-bruinen
   - room:valfenda.as-margens-da-floresta
@@ -3871,10 +4704,15 @@
     level: 1
     price: 1
     stock: Ilim.
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 1
+    stock: Ilim.
   ground_line: Um pergaminho de retorno foi abandonado aqui, sem a mínima atenção.
   rooms:
   - room:academia.a-academia-de-aventureiros
   - room:academia.provisoes-para-jovens-aventureiros
+  - room:fosso-branco.armarinhos-cascadovo
   - room:valfenda.olhos-para-o-vale
   actions:
   - colocou
@@ -3884,6 +4722,21 @@
   - recebeu
   - recitou
   item: item:pergaminho-retorno
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pergaminho-em-branco
+  name: um pergaminho em branco
+  kind: item
+  category: pergaminho
+  examined: false
+  shops:
+  - room: room:fosso-branco.armarinhos-cascadovo
+    level: 1
+    price: 6
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -3989,6 +4842,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pijama-com-estampas-de-frangos-assados-e-bolos
+  name: um pijama com estampas de frangos assados e bolos
+  kind: item
+  category: comida e bebida
+  examined: false
+  worn_by:
+  - Basso Boffin <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:pirulito-arco-iris
   name: um pirulito arco-íris
   kind: item
@@ -4026,6 +4889,16 @@
   examined: false
   worn_by:
   - O saqueador de túmulos <como escudo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pochete-de-ervas
+  name: uma pochete de ervas
+  kind: item
+  category: comida e bebida
+  examined: false
+  worn_by:
+  - Basso Boffin <na cintura>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4144,6 +5017,66 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:pao-de-mel
+  name: um pão de mel
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pe-de-hobbit
+  name: um pé-de-hobbit
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:pera-macia
+  name: uma pêra macia
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:rabanete
+  name: um rabanete
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.boncorpo-hortifruti
+    level: 0
+    price: 2
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:rede-de-pesca
   name: uma rede de pesca
   kind: item
@@ -4221,6 +5154,16 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:rolo-de-corda
+  name: um rolo de corda
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Franco Boncorpo <no pescoço>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:saia-de-veludo-negro
   name: uma saia de veludo negro
   kind: item
@@ -4277,6 +5220,76 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:sonho-com-creme-especial
+  name: um sonho com creme especial
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 7
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:sonho-de-morango-e-chocolate
+  name: um sonho de morango e chocolate
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 6
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:suculenta-costeleta-de-porco
+  name: uma suculenta costeleta de porco
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.taverna-rama-verde-2
+    level: 0
+    price: 3
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:suspiro
+  name: um suspiro
+  kind: item
+  category: outro
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 1
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:terno-azul-marinho
+  name: um terno azul-marinho
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um trabalhador hobbit <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:tocha
   name: uma tocha
   kind: item
@@ -4303,6 +5316,21 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: obj:torta-de-morango
+  name: uma torta de morango
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 11
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:tosca-bainha-de-couro
   name: uma tosca bainha de couro
   kind: item
@@ -4317,8 +5345,19 @@
   capacity: Média
   actions:
   - colocou
+  - deu
   - pegou
   item: item:bainha-couro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:touca-de-flor
+  name: uma touca de flor
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Uma menina hobbit <na cabeça>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4339,6 +5378,21 @@
   examined: false
   worn_by:
   - O tesoureiro <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:trufa-de-chocolate-ao-rum
+  name: uma trufa de chocolate ao rum
+  kind: item
+  category: comida e bebida
+  examined: false
+  shops:
+  - room: room:fosso-branco.doceria-do-rolico
+    level: 0
+    price: 6
+    stock: Ilim.
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4379,6 +5433,16 @@
   examined: false
   worn_by:
   - Dantalion <sobre o corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vara-de-pescar
+  name: uma vara de pescar
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Um pescador <segurando>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4448,6 +5512,16 @@
   examined: false
   worn_by:
   - Marry Knob <no corpo>
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:vestido-de-trancas
+  name: um vestido de tranças
+  kind: item
+  category: equipamento
+  examined: false
+  worn_by:
+  - Mamãe Boncorpo <no corpo>
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -4521,6 +5595,23 @@
   examined: true
   rooms:
   - room:estrado.armazem
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.2-gaveta
+  name: 2.gaveta
+  kind: scenery
+  descriptions:
+  - text: |-
+      Ela é pequena e antiga. E aparentemente andaram fazendo alguma limpeza por
+      aqui recentemente, pois você não vê nenhum grão de poeira sobre a madeira
+      encerada. Há duas gavetas na parte mais interna dela.
+    rooms:
+    - room:beiragua.um-modesto-escritorio
+  examined: true
+  rooms:
+  - room:beiragua.um-modesto-escritorio
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5008,6 +6099,23 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.bancos-brancos-estao-dispostos-ao-longo-da-estra
+  name: Alguns bancos brancos estão dispostos ao longo da estrada.
+  kind: scenery
+  descriptions:
+  - text: |-
+      São banquinhos brancos caiados, formados por tijolos e tábuas de madeira.
+      Oferecem conforto para aqueles que gostam de apenas ver o tempo passar.
+    rooms:
+    - room:fosso-branco.um-caminho-de-areia
+  examined: true
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia
+  - room:fosso-branco.um-caminho-de-areia-10
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.bancos-circundam-a-fonte
   name: Bancos circundam a fonte.
   kind: scenery
@@ -5339,6 +6447,26 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.cama-de-ebano-com-um-colchao-de-espessura-desigu
+  name: Uma cama de ébano com um colchão de espessura desigual não parece tão convidativa.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Apesar de feita para hobbits, esta cama é maior do que as dimensões de um
+      pequeno. É feita de ébano, como a poltrona com a qual combina, e completa
+      o quarto de Basso Boffin, o curandeiro. Observando o colchão, nota-se que
+      a sua espessura não é uniforme: um dos lados é mais afundado que o outro!
+      O motivo é facilmente detectado, atentando-se para a imensa barriga do
+      hobbit e supondo, com razão, que ele tem um lado preferido nessa cama.
+    rooms:
+    - room:fosso-branco.toca-atras-das-portas-3
+  examined: true
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.camas-simples-com-colchoes-de-folhas-de-mallorn-
   name: Camas simples com colchões de folhas de mallorn ocupam os cantos da sala.
   kind: scenery
@@ -5423,6 +6551,25 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.carroca-mediana-bastante-usada-mas-bem-cuidada-a
+  name: Uma carroça mediana, bastante usada, mas bem cuidada, aguarda seu condutor e sua carga.
+  kind: scenery
+  flags: (atrelado a Meia-Branca)
+  descriptions:
+  - text: |-
+      Feita de madeira, de cima a baixo e de dentro para fora. É uma carroça das
+      mais comuns. Possui duas rodas e dois conjuntos de bancos: um banco para
+      passageiros e um outro para o condutor, que utilizando a força de algum
+      animal, faz a carroça andar com tudo o que há em seu interior.
+    rooms:
+    - room:fosso-branco.largo-da-carroca
+  examined: true
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.cartaz
   name: cartaz
   kind: scenery
@@ -5481,6 +6628,21 @@
   examined: true
   rooms:
   - room:estrado.uma-horta-de-cebolas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.cesto-de-madeira-pendurado-em-uma-estaca-velha-e
+  name: Um cesto de madeira pendurado em uma estaca velha é usado como lixeira.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  - room:fosso-branco.o-jardim-da-taverna
+  - room:fosso-branco.um-caminho-de-areia
+  - room:fosso-branco.um-caminho-de-areia-10
+  - room:fosso-branco.um-caminho-de-areia-14
+  - room:fosso-branco.um-caminho-de-areia-8
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5560,6 +6722,16 @@
   examined: true
   rooms:
   - room:esgaroth.alto-do-mercado-11
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.colocaram-uma-cadeira-de-balanco-aqui
+  name: Colocaram uma cadeira de balanço aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:beiragua.uma-varanda
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5730,6 +6902,7 @@
   examined: false
   rooms:
   - room:academia.a-sala-de-estar-do-ponei-saltitante
+  - room:fosso-branco.taverna-rama-verde-2
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -5952,6 +7125,20 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.escrivaninha-de-mogno-foi-colocada-no-canto
+  name: Uma escrivaninha de mogno foi colocada no canto.
+  kind: scenery
+  descriptions:
+  - text: Ela é pequena e antiga. E aparentemente andaram fazendo alguma limpeza por
+    rooms:
+    - room:beiragua.um-modesto-escritorio
+  examined: true
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.esquilo-abandonou-a-seguranca-das-arvores-para-c
   name: Um esquilo abandonou a segurança das árvores para colher algumas frutas frescas.
   kind: scenery
@@ -6062,14 +7249,7 @@
 - id: obj:cenario.fixada-ao-chao-uma-bigorna-aguarda-que-alguma-li
   name: Fixada ao chão, uma bigorna aguarda que alguma liga de metal derretido seja moldada sobre sua plataforma.
   kind: scenery
-  descriptions:
-  - text: |-
-      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
-      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
-      a frequência de seu uso.
-    rooms:
-    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
-  examined: true
+  examined: false
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6225,6 +7405,38 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.flores
+  name: flores
+  kind: scenery
+  descriptions:
+  - text: |-
+      Nesse jardim você observa um grande canteiro, demarcado por pedras brancas
+      em todo seu perímetro. Também existem grandes pedras dividindo-o ao meio,
+      permitindo que se caminhe por ele sem pisotear as flores. Do lado esquerdo
+      pode-se ver uma planta carnívora mais afastada das outras, um pé de verbena
+      azulada rodeado de pequeninas farfaras amarelas, um grande lírio branco e
+      cravos mesclados de vermelho e branco. Do lado direito vislumbram-se rosas,
+      gérberas alaranjadas, frésias multicoloridas e um grande girassol no centro
+      de um círculo de tulipas vermelhas.
+    rooms:
+    - room:fosso-branco.o-jardim-da-taverna
+  examined: true
+  rooms:
+  - room:fosso-branco.o-jardim-da-taverna
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.fogao-bem-quente-assando-algo-de-cheiro-doce-no-
+  name: Um fogão bem quente assando algo de cheiro doce no forno.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.folhagem-da-grande-mangueira-farfalha-com-o-vent
   name: A folhagem da grande mangueira farfalha com o vento.
   kind: scenery
@@ -6328,7 +7540,14 @@
 - id: obj:cenario.forja-a-carvao-foi-posicionada-em-um-canto-proxi
   name: Uma forja a carvão foi posicionada em um canto próximo à bigorna.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Em sua base, enormes parafusos atravessam furos que a prendem muito bem ao
+      chão. Feita de um metal negro, alguns riscos e falhas na lateral denunciam
+      a frequência de seu uso.
+    rooms:
+    - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
+  examined: true
   rooms:
   - room:academia.deposito-de-armas
   - room:vila-aventureiros.o-orc-esfolado-loja-de-armas
@@ -6339,9 +7558,16 @@
 - id: obj:cenario.forja-esta-ardendo-em-chamas-no-canto-da-sala
   name: Uma forja está ardendo em chamas no canto da sala.
   kind: scenery
-  examined: false
+  descriptions:
+  - text: |-
+      Aparentemente, a forja é mantida acesa a maior parte do dia. Qualquer
+      objeto colocado dentro dela seria rapidamente consumido pelas chamas.
+    rooms:
+    - room:fosso-branco.casa-de-pedra-de-teto-alto
+  examined: true
   rooms:
   - room:bri.mercado.a-oficina-do-ferreiro
+  - room:fosso-branco.casa-de-pedra-de-teto-alto
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6363,6 +7589,28 @@
   rooms:
   - room:bri.a-casa-mathom
   - room:bri.a-grande-estrada-leste
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-canteiro-e-dividido-em-dois-por-um-caminh
+  name: Um grande canteiro é dividido em dois por um caminho de pedras.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Nesse jardim você observa um grande canteiro, demarcado por pedras brancas
+      em todo seu perímetro. Também existem grandes pedras dividindo-o ao meio,
+      permitindo que se caminhe por ele sem pisotear as flores. Do lado esquerdo
+      pode-se ver uma planta carnívora mais afastada das outras, um pé de verbena
+      azulada rodeado de pequeninas farfaras amarelas, um grande lírio branco e
+      cravos mesclados de vermelho e branco. Do lado direito vislumbram-se rosas,
+      gérberas alaranjadas, frésias multicoloridas e um grande girassol no centro
+      de um círculo de tulipas vermelhas.
+    rooms:
+    - room:fosso-branco.o-jardim-da-taverna
+  examined: true
+  rooms:
+  - room:fosso-branco.o-jardim-da-taverna
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6425,6 +7673,16 @@
   examined: false
   rooms:
   - room:archet.rua-dos-oficios
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.grande-formigueiro-foi-construido-aqui
+  name: Um grande formigueiro foi construído aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-44
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6510,6 +7768,23 @@
   rooms:
   - room:valfenda.a-pinacoteca
   - room:valfenda.a-pinacoteca-2
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.ha-um-belo-quadro-na-parede
+  name: Há um belo quadro na parede.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Pouco iluminada pela luz, você vê uma adaga pintada. Sua lâmina é curva e
+      prateada. E há também muitas pedras incrustadas na base da arma e runas
+      desenhada por toda ela. A bainha parece firmemente atada com tiras de couro.
+    rooms:
+    - room:beiragua.um-modesto-escritorio
+  examined: true
+  rooms:
+  - room:beiragua.um-modesto-escritorio
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -6941,6 +8216,32 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.mesa-de-madeira-bem-trabalhada-esta-aqui
+  name: Uma mesa de madeira bem trabalhada está aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:beiragua.uma-sala-de-jantar
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mesa-quadrada-esta-repleta-de-garrafas
+  name: Uma mesa quadrada está repleta de garrafas.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Sua superfície está nua e gasta, com farpas amolecidas pela umidade e sujeira
+      das sobras e líquidos que foram derramados sobre ela.
+    rooms:
+    - room:fosso-branco.taverna-rama-verde
+  examined: true
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.mesas
   name: mesas
   kind: scenery
@@ -6972,6 +8273,16 @@
   - room:academia.sala-de-estudo-de-linguas
   - room:academia.sala-de-estudos
   - room:estrado.a-toca-dos-cristais
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.mesas-e-bancos-de-pernas-altas-estao-a-disposica
+  name: Mesas e bancos de pernas altas estão à disposição dos clientes.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -7646,6 +8957,7 @@
   rooms:
   - room:bri.mercado.o-correio-de-bri
   - room:esgaroth.correio-do-lago
+  - room:fosso-branco.servico-de-postagens-rapidas
   - room:valfenda.servico-de-correios
   sources:
   - logs/raw.log
@@ -7906,6 +9218,28 @@
     rooms:
     - room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
   - text: |-
+      A placa indica algumas direções:
+        Norte: Para Sapântano
+        Oeste: Para Beirágua e a Vila dos Hobbits
+        Sudeste: Para Fosso Branco, a ponte sobre o Rio Brandevin, a sede do
+          Brandevin, Cricôncavo, Bri, Archet e Estrado.
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-62
+  - text: |-
+      Sobre a placa, você lê:
+        Leste: Para Bri, Estrado, Archet e Valfenda
+        Oeste: Para Sapântano, Beirágua, Fosso Branco e outras vilas do Condado.
+        Sul: Para a Sede do Brandevin e Cricôncavo.
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-50
+  - text: |-
+      A placa indica algumas direções:
+        Noroeste: Para Beirágua
+        Leste: Para Sapântano, Fosso Branco, a ponte sobre o Rio Brandevin, a
+          sede do Brandevin, Cricôncavo, Bri, Archet e Estrado.
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-71
+  - text: |-
       Posicionada na base da estátua, uma placa dourada e quadrada com pinos nos
       cantos exibe: "Descanse em paz, Uthar Darkbane".
     rooms:
@@ -7929,6 +9263,12 @@
   - text: Você vê o apenas nome 'Thomas' escrito na placa.
     rooms:
     - room:eriador.cemiterio.a-lapide-caida
+  - text: |-
+      A placa diz:
+       Não toque se não for comprar!
+    rooms:
+    - room:sapantano.uma-ferramentaria
+    - room:sapantano.utensilios
   examined: true
   rooms:
   - room:academia.um-corredor-3
@@ -7940,6 +9280,45 @@
   - room:eriador.cemiterio.a-lapide-caida
   - room:esgaroth.grande-ponte.acesso-a-grande-ponte
   - room:esgaroth.grande-ponte.bifurcacao-da-ponte-superior
+  - room:estrada-leste.a-grande-estrada-do-leste-50
+  - room:estrada-leste.a-grande-estrada-do-leste-62
+  - room:estrada-leste.a-grande-estrada-do-leste-71
+  - room:sapantano.uma-ferramentaria
+  - room:sapantano.utensilios
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.placa-com-trepadeiras-enroscadas-indica-as-direc
+  name: Uma placa com trepadeiras enroscadas indica as direções.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Direções:
+      Norte e Sul: Para Fosso Branco
+      Sudeste: Para a Toca de Cura, Sede do Brandevin, Bri, Archet e Estrado
+      Oeste: Para Sapântano e Beirágua
+    rooms:
+    - room:estrada-leste.a-grande-estrada-do-leste-58
+  - text: |-
+      Direções:
+      Sudeste: Taverna Rama Verde
+      Norte: Barraca de Frutas, Correio e Armarinhos Cascadovo
+      Sudoeste: Carroceiro e Ponto de Retorno
+    rooms:
+    - room:fosso-branco.atravessando-fosso-branco-2
+  - text: |-
+      Direções:
+      Sudeste: Ferreiro, Casa de Animais
+      Nordeste: Ponto de Retorno, Região Norte
+      Noroeste: Barraca de Tecidos
+    rooms:
+    - room:fosso-branco.um-caminho-de-areia-13
+  examined: true
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-58
+  - room:fosso-branco.atravessando-fosso-branco-2
+  - room:fosso-branco.um-caminho-de-areia-13
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -8118,6 +9497,16 @@
   - room:bri.a-grande-estrada-leste
   - room:esgaroth.quartel-da-guarda
   - room:estrado.um-pequeno-laboratorio
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.portal-de-madeira-cheio-de-flores-recebe-os-visi
+  name: Um portal de madeira cheio de flores recebe os visitantes de Fosso Branco.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-54
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -8342,6 +9731,23 @@
   rooms:
   - room:esgaroth.alto-do-mercado-8
   - room:esgaroth.avenida-perimetral-norte-4
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.poco-de-tijolos-possui-um-balde-cheio-de-agua-fr
+  name: Um poço de tijolos possui um balde cheio de água fresca.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Você começa a sentir umas pontadas de fome.
+      É um poço redondo feito com tijolinhos. Sobre ele, um pequeno telhado oferece
+    rooms:
+    - room:fosso-branco.um-caminho-de-areia
+  examined: true
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia
+  - room:fosso-branco.um-caminho-de-areia-10
   sources:
   - logs/raw.log
   - logs/transcript.log
@@ -8774,6 +10180,39 @@
   - logs/raw.log
   - logs/transcript.log
   confidence: confirmed
+- id: obj:cenario.velha-cadeira-de-madeira-aqui-esta-encostada
+  name: Uma velha cadeira de madeira aqui está encostada.
+  kind: scenery
+  descriptions:
+  - text: |-
+      Ela é completamente quadrada e lembra muito o esqueleto de um projeto ainda não
+      acabado.
+    rooms:
+    - room:fosso-branco.taverna-rama-verde
+  examined: true
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.velha-maquina-de-tear-esta-preparada-com-seus-mu
+  name: Uma velha máquina de tear está preparada com seus muitos novelos de lã.
+  kind: scenery
+  descriptions:
+  - text: |-
+      A engenhoca é antiga, mas está limpa e bem cuidada. Colocados sobre seus
+      suportes estão nove novelos de lã, cujos fios transpassam através de guias
+      até o local onde pinças entrançam-se habilidosamente em peças de roupa.
+    rooms:
+    - room:fosso-branco.tecelaria-e-loja-de-roupas
+  examined: true
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
 - id: obj:cenario.viajantes
   name: viajantes
   kind: scenery
@@ -8900,6 +10339,30 @@
   rooms:
   - room:academia.sala-de-cura
   - room:vila-aventureiros.casa-de-cura
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varios-pequenos-bancos-de-madeira-estao-aqui
+  name: Vários pequenos bancos de madeira estão aqui.
+  kind: scenery
+  examined: false
+  rooms:
+  - room:fosso-branco.o-jardim-da-taverna
+  sources:
+  - logs/raw.log
+  - logs/transcript.log
+  confidence: confirmed
+- id: obj:cenario.varios-toneis-de-cerveja-estao-empilhados-aqui
+  name: Vários tonéis de cerveja estão empilhados aqui.
+  kind: scenery
+  descriptions:
+  - text: Grandes recipientes de madeira sobrepostos formam uma enorme parede de aduelas.
+    rooms:
+    - room:sapantano.taverna-tronco-flutuante
+  examined: true
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
   sources:
   - logs/raw.log
   - logs/transcript.log

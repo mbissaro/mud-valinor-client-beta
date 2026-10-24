@@ -942,6 +942,54 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:help.help-condutores
+  kind: help
+  title: help condutores
+  body: |-
+    Condutores são NPCs que atuam como cocheiros de aluguel em Cidades Natais,
+    acampamentos ou vilas pequenas e oferecem transporte para áreas próximas
+    mediante pagamento. Normalmente eles esperam por clientes próximo às praças
+    ou dos centros das áreas. Como muitos NPCs do MUD Valinor, eles respondem a
+    algumas frases e ações bem definidas. Três passos são necessários para
+    viajar: acomodar-se sobre a charrete, pagar pela corrida e solicitar o
+    destino. Cada corrida custa cinco moedas, que devem ser entregues com o
+    comando GIVE. Os condutores são particularmente cuidadosos com o dinheiro
+    recebido e lembrarão quantas moedas lhe foram dadas, mesmo depois de você
+    desconectar ou o MUD reiniciar. Seu personagem pode pagar de forma
+    fracionada e eles pedirão para você completar o valor; Após isto, seu
+    personagem pode usar o serviço quando bem entender e, se seu personagem
+    entregar mais que cinco moedas, eles lembrarão do crédito adicional nas
+    próximas viagens. Isto é útil para certas viagens arriscadas: basta pagar
+    antecipadamente e seu personagem poderá retornar mesmo sem ter dinheiro em
+    mãos no momento da partida. Paga a viagem, solicite o destino dizendo
+    "nome-da-área-de-destino"; Cada condutor tem seus destinos específicos,
+    para saber os destinos de cada condutor, olhe para o condutor com o comando
+    LOOK. Nota: Dada a quantidade de descrições de salas exibidas, as viagens
+    podem ser complicadas para deficientes visuais usando sintetizadores de
+    voz. Use as opções "CONFIG +BRIEF" e "CONFIG +GAG" para mitigar isto.
+    Leia também: NPCs, SIT, PUT, GIVE, SAY
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:help.help-cozinhar
+  kind: help
+  title: help cozinhar
+  body: |-
+    Sintaxe: COOK <item>
+    Esta perícia permite cozinhar comida. Certos alimentos disponíveis no MUD
+    precisam ser cozidos antes do consumo, por exemplo, a carne extraída da
+    natureza com perícias como "Fatiar Carne" e "Pescar".
+    Itens que precisam ser cozidos, mas ainda não o foram, exibem a mensagem
+    "Você precisa cozinhar isto antes" quando seu personagem tenta comê-los com
+    o comando EAT. Quando devidamente cozidos, eles são sinalizados com uma
+    flag "(Cozido)" nas listagens de objetos da sala e inventário. O comando
+    EXAMINE também mostra o estado desses alimentos (cru, cozido, queimado, etc.)
+    Esta perícia exige a presença de fogo (que pode ser criado com a perícia
+    "Acender Fogueiras").
+    Veja também: FOGUEIRAS, FATIAR CARNE, PESCAR, EAT
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:look.examine-orbe
   kind: look
   title: examine orbe
@@ -10629,6 +10677,1149 @@
   sources:
   - logs/transcript.log
   confidence: confirmed
+- id: text:look.examine-cantil
+  kind: look
+  title: examine cantil
+  body: |-
+    Este cantil foi muito bem feito com alumínio e couro. Na parte da frente
+    do mesmo e em sua tampa, jaz inscrito o símbolo da Academia dos
+    Aventureiros.
+    Isto pesa cerca de 2 kg.
+    Isto contém um líquido cristalino até pouco mais de três quartos da sua capacidade.
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-mochila-10
+  kind: look
+  title: look in mochila
+  body: |-
+    A mochila dos aventureiros de Halbarion contém:
+         (Brilhando) uma lamparina
+         um pergaminho de retorno
+         (Brilhando) um par de brincos de pérolas
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-mochila-4
+  kind: look
+  title: examine mochila
+  body: |-
+    Feita por ábeis artesãos anões, essa mochila é perfeita para qualquer
+    aventura. Por dentro, ela é recoberta por um tecido liso e macio. E por
+    fora, ela foi feita a partir de algum couro resistente que foi trabalhado
+    até ficar bem flexível. O símbolo da Academia dos Aventureiros a adorna, a
+    deixando ainda mais bela.
+    Isto pesa cerca de 2 kg.
+    Isto é usado nas posições: costas.
+    Capacidade: Gigantesca.
+    A mochila dos aventureiros de Halbarion contém:
+         (Brilhando) uma lamparina
+         um pergaminho de retorno
+         (Brilhando) um par de brincos de pérolas
+         um pedaço de carne de coelho
+  rooms:
+  - room:bri.a-casa-mathom
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-sapo
+  kind: look
+  title: consider sapo
+  body: |-
+    O sapo seria um grande professor para você!
+    Você precisará de um pouco de sorte...
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-40
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-sapo
+  kind: look
+  title: look sapo
+  body: |-
+    A cabeça dele se ergue a pelo menos dois metros do chão. Este sem
+    dúvida é o mais incrível anfíbio que você já viu. Ele não parece ter
+    se interessado muito por você. Grossas gotas de muco que parecem até
+    corda pingam de suas narinas, enquanto seus grandes olhos se voltam
+    para baixo, procurando por informações sobre você, como grandes
+    pérolas negras. Uma fedorenta gosma branca cobre a maior parte de
+    suas costas. Este sapo é conhecido por gostar de destruir várias
+    coisas - peixes, pássaros, wargs, árvores, pedras, pessoas e qualquer
+    coisa que ele ache interessante. Graças a Eru ele está entediado!
+    O sapo está perfeitamente saudável.
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-40
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-17
+  kind: look
+  title: look placa
+  body: |-
+    Sobre a placa, você lê:
+      Leste: Para Bri, Estrado, Archet e Valfenda
+      Oeste: Para Sapântano, Beirágua, Fosso Branco e outras vilas do Condado.
+      Sul: Para a Sede do Brandevin e Cricôncavo.
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-50
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-14
+  kind: look
+  title: look hobbit
+  body: |-
+    Você observa esse hobbit enorme (de gordo) sentado e imagina que ele esteja
+    cochilando. Porém, é somente sua preguiça fora do comum, que mal lhe permite
+    abrir os olhos completamente, na maior parte do tempo. Sentado o dia todo em
+    sua poltrona de madeira negra, ele apenas arregala os olhos quando o cheiro
+    de seus bolos preferidos sendo assados na outra sala adentra o recinto. Que
+    tal trazer um para ele?
+    Basso Boffin está perfeitamente saudável.
+    Basso Boffin está usando:
+    <sobre o corpo>   um pijama com estampas de frangos assados e bolos
+    <segurando>       um cachimbo de madeira
+    <na cintura>      uma pochete de ervas
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-hobbit
+  kind: look
+  title: consider hobbit
+  body: |-
+    Basso Boffin seria um grande professor para você!
+    Você pode preparar seu funeral!
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cama-2
+  kind: look
+  title: look cama
+  body: |-
+    Apesar de feita para hobbits, esta cama é maior do que as dimensões de um
+    pequeno. É feita de ébano, como a poltrona com a qual combina, e completa
+    o quarto de Basso Boffin, o curandeiro. Observando o colchão, nota-se que
+    a sua espessura não é uniforme: um dos lados é mais afundado que o outro!
+    O motivo é facilmente detectado, atentando-se para a imensa barriga do
+    hobbit e supondo, com razão, que ele tem um lado preferido nessa cama.
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-poltrona-2
+  kind: look
+  title: look poltrona
+  body: |-
+    Você observa esse hobbit enorme (de gordo) sentado e imagina que ele esteja
+    cochilando. Porém, é somente sua preguiça fora do comum, que mal lhe permite
+    abrir os olhos completamente, na maior parte do tempo. Sentado o dia todo em
+    sua poltrona de madeira negra, ele apenas arregala os olhos quando o cheiro
+    de seus bolos preferidos sendo assados na outra sala adentra o recinto. Que
+    tal trazer um para ele?
+    Basso Boffin está perfeitamente saudável.
+    Basso Boffin está usando:
+    <sobre o corpo>   um pijama com estampas de frangos assados e bolos
+    <segurando>       um cachimbo de madeira
+    <na cintura>      uma pochete de ervas
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-fogao
+  kind: look
+  title: look in fogão
+  body: |-
+    Um forno contém:
+         um bolo de cenoura
+         um bolo de chocolate
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-bolo
+  kind: look
+  title: examine bolo
+  body: |-
+    Tem um cheiro bom, pois está fresco. Tal como as cenouras, ele possui uma
+    cor alaranjada. É bastante fofo, já que foi feito por mãos habilidosas de
+    algum hobbit.
+    Isto pesa cerca de meio quilograma.
+    Este alimento está fresco.
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.examine-chocolate
+  kind: look
+  title: examine chocolate
+  body: |-
+    Um bolinho de chocolate, bem doce e macio, do agrado das crianças. Ele tem
+    um cheiro agradável, que quando quente, se espalha por todo o ambiente,
+    atraindo as pessoas gulosas ou famintas.
+    Isto pesa cerca de meio quilograma.
+    Este alimento está fresco.
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-18
+  kind: look
+  title: look placa
+  body: |-
+    Direções:
+    Norte e Sul: Para Fosso Branco
+    Sudeste: Para a Toca de Cura, Sede do Brandevin, Bri, Archet e Estrado
+    Oeste: Para Sapântano e Beirágua
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-58
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-condestavel
+  kind: look
+  title: look condestável
+  body: |-
+    Nomeado pelo Prefeito do Condado como um dos condestáveis da Quarta Leste,
+    Balofofo Cascadovo conseguiu o cargo por influência de seu pai, Barafofo,
+    condestável agora aposentado. Como seu progenitor, Balofofo é extremamente
+    atento, embora não no que deveria: a tradição de glutonaria de Fosso Branco
+    fala muito mais forte e ele pode ser visto sempre concentrado em sua coxa
+    de frango ou olhando com avidez para as janelinhas da Doceria na outra rua.
+    Balofofo Cascadovo está perfeitamente saudável.
+    Balofofo Cascadovo está usando:
+    <na cabeça>       um chapéu redondo com uma pena
+    <no corpo>        uma camisa ornada
+    <como escudo>     uma bandeja de metal
+    <segurando>       uma coxa de frango
+    <nas pernas>      uma ordinária calça xadrez
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-58
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-poco
+  kind: look
+  title: look poço
+  body: |-
+    Você começa a sentir umas pontadas de fome.
+    É um poço redondo feito com tijolinhos. Sobre ele, um pequeno telhado oferece
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-bancos-2
+  kind: look
+  title: look bancos
+  body: |-
+    São banquinhos brancos caiados, formados por tijolos e tábuas de madeira.
+    Oferecem conforto para aqueles que gostam de apenas ver o tempo passar.
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mensageiro
+  kind: look
+  title: look mensageiro
+  body: |-
+    Esse é um dos mensageiros do Serviço de Postagens Rápidas do Condado. Hobbit
+    jovem e bem disposto, ele passa o dia correndo através das vilas, carregando
+    uma mochila azul a tiracolo repleta de correspondências e encomendas vindas
+    de todas as partes do Condado.
+    Um jovem mensageiro está perfeitamente saudável.
+    Um jovem mensageiro está usando:
+    <nos ombros>      uma mochila azul
+    <no corpo>        uma camisa amarela
+    <nas pernas>      uma calça azul-escura
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia-5
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-15
+  kind: look
+  title: look hobbit
+  body: |-
+    Melilot é a feliz e bem alimentada esposa de Balofofo Cascadovo, condestável
+    de Fosso Branco. Não tem a barriga tão protuberante quanto a de seu marido,
+    mas sempre usa enormes saias rodadas para disfarçar a que adquiriu por
+    consumir freneticamente balinhas de mel que carrega escondidas nos bolsos.
+    Melilot Cascadovo está perfeitamente saudável.
+    Melilot Cascadovo está usando:
+    <no corpo>        uma camisa verde de algodão
+    <nas pernas>      uma enorme saia rodada florida
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-folha
+  kind: look
+  title: look folha
+  body: |-
+    Este é um pequeno poleiro ornamentado com três varinhas horizontais onde um
+    pássaro pode descansar, presas em uma haste vertical ligada a uma base de
+    sustentação. Perto da vara mais baixa, há um pote com água e outro com alpiste.
+    Na haste principal, há um espaço especial para pendurar uma folha de papel.
+    Um passarinho azul percebe que há alguém olhando para o papel e começa a atualizar as informações.
+    Escrito na folha de papel, você vê:
+    ----------------------------------------------------------
+    Não há nenhum tweet recente citando o MUD.
+    ----------------------------------------------------------
+    Informações atualizadas em 24/10 às 12:29:48
+  rooms:
+  - room:fosso-branco.servico-de-postagens-rapidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-16
+  kind: look
+  title: look hobbit
+  body: |-
+    Como todo honorável morador dessa vila, Dudo Roliço ostenta uma respeitável
+    pança. Seu sobrenome, aliás, é dos mais importantes na região. Porém, ainda
+    que tenha o formato de um pequeno barril, esse hobbit é bastante ágil. É o
+    líder dos Mensageiros de Fosso Branco, mas também leva cartas dos moradores
+    a todas as outras vilas do Condado.
+    Dudo Roliço está perfeitamente saudável.
+    Dudo Roliço está usando:
+    <no corpo>        uma camisa amarela
+    <nas pernas>      uma calça azul-escura
+  rooms:
+  - room:fosso-branco.servico-de-postagens-rapidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-passarinho
+  kind: look
+  title: look passarinho
+  body: |-
+    A penagem azulada recobre quase todo o corpo rechonchudo deste curioso
+    animalzinho, deixando pouco espaço para qualquer outra cor -- apenas o
+    marrom do bico e das patas e o preto quase absoluto dos olhos. Destacam-se
+    ainda uma pena permanentemente arrepiada no topo da sua cabeça e o nome
+    'Twitter' em uma plaquinha prateada pendurada no pescoço.
+    (OOC) Digite "TWITTER <mensagem>" para deixar uma mensagem de até 120
+    caracteres no Twitter do MUD e siga @mudvalinor para acompalhá-las.
+    Um passarinho azul está perfeitamente saudável.
+  rooms:
+  - room:fosso-branco.servico-de-postagens-rapidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-17
+  kind: look
+  title: look hobbit
+  body: |-
+    Dehantir é o dono do hortifruti mais famoso da região. Ou seria, se seus
+    conterrâneos apreciassem seus produtos mais do que suculentas carnes,
+    apetitosos doces ou saborosas cervejas. Mesmo assim, a todos que aparecem
+    em sua afastada barraquinha ele atende com um sorriso, incentivando o
+    consumo de alimentos mais saudáveis e enumerando os benefícios que esses
+    alimentos trazem à saúde.
+    Dehantir Boncorpo está perfeitamente saudável.
+    Dehantir Boncorpo está usando:
+    <na cabeça>       uma faixa preta
+    <no corpo>        uma leve blusa de cetim
+    <na cintura>      um avental
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-19
+  kind: look
+  title: look placa
+  body: |-
+    Direções:
+    Sudeste: Taverna Rama Verde
+    Norte: Barraca de Frutas, Correio e Armarinhos Cascadovo
+    Sudoeste: Carroceiro e Ponto de Retorno
+  rooms:
+  - room:fosso-branco.atravessando-fosso-branco-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mesa-6
+  kind: look
+  title: look mesa
+  body: |-
+    Sua superfície está nua e gasta, com farpas amolecidas pela umidade e sujeira
+    das sobras e líquidos que foram derramados sobre ela.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-cadeira-4
+  kind: look
+  title: look cadeira
+  body: |-
+    Ela é completamente quadrada e lembra muito o esqueleto de um projeto ainda não
+    acabado.
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-codumbras
+  kind: look
+  title: look codumbras
+  body: |-
+    Ele grita e gargalha como um louco ao balançar o corpo em movimentos saltados.
+    Qualquer barulho soaria como uma música incentivante para seus tropeços e
+    passos mirabolantes e malabaristicos.
+    Codumbras Pealvo está perfeitamente saudável.
+    Codumbras Pealvo está usando:
+    <no corpo>        uma camisa laranja
+    <nas pernas>      uma ordinária calça xadrez
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-18
+  kind: look
+  title: look hobbit
+  body: |-
+    De olhos vermelhos e sorriso tolo, sua embriaguez se torna óbvia. Ele
+    parece saudar alguém que não se vê e por vezes levanta os braços e ombros
+    dando vivas para o ar.
+    Tom Boffin está perfeitamente saudável.
+    Tom Boffin está usando:
+    <no corpo>        uma camisa social branca
+    <na cintura>      um cinturão de couro
+    <nas pernas>      uma calça azul-escura
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-2-hobbit
+  kind: look
+  title: look 2.hobbit
+  body: |-
+    Ele grita e gargalha como um louco ao balançar o corpo em movimentos saltados.
+    Qualquer barulho soaria como uma música incentivante para seus tropeços e
+    passos mirabolantes e malabaristicos.
+    Codumbras Pealvo está perfeitamente saudável.
+    Codumbras Pealvo está usando:
+    <no corpo>        uma camisa laranja
+    <nas pernas>      uma ordinária calça xadrez
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-dora
+  kind: look
+  title: look dora
+  body: |-
+    Dora Boncorpo está perfeitamente saudável.
+    Dora Boncorpo está usando:
+    <nas orelhas>     (Brilhando) brincos de estrelas
+    <sobre o corpo>   um longo vestido azul
+  rooms:
+  - room:fosso-branco.taverna-rama-verde-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-canteiro
+  kind: look
+  title: look canteiro
+  body: |-
+    Nesse jardim você observa um grande canteiro, demarcado por pedras brancas
+    em todo seu perímetro. Também existem grandes pedras dividindo-o ao meio,
+    permitindo que se caminhe por ele sem pisotear as flores. Do lado esquerdo
+    pode-se ver uma planta carnívora mais afastada das outras, um pé de verbena
+    azulada rodeado de pequeninas farfaras amarelas, um grande lírio branco e
+    cravos mesclados de vermelho e branco. Do lado direito vislumbram-se rosas,
+    gérberas alaranjadas, frésias multicoloridas e um grande girassol no centro
+    de um círculo de tulipas vermelhas.
+  rooms:
+  - room:fosso-branco.o-jardim-da-taverna
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-flores
+  kind: look
+  title: look flores
+  body: |-
+    Nesse jardim você observa um grande canteiro, demarcado por pedras brancas
+    em todo seu perímetro. Também existem grandes pedras dividindo-o ao meio,
+    permitindo que se caminhe por ele sem pisotear as flores. Do lado esquerdo
+    pode-se ver uma planta carnívora mais afastada das outras, um pé de verbena
+    azulada rodeado de pequeninas farfaras amarelas, um grande lírio branco e
+    cravos mesclados de vermelho e branco. Do lado direito vislumbram-se rosas,
+    gérberas alaranjadas, frésias multicoloridas e um grande girassol no centro
+    de um círculo de tulipas vermelhas.
+  rooms:
+  - room:fosso-branco.o-jardim-da-taverna
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-marbo
+  kind: look
+  title: look marbo
+  body: |-
+    Marbo cuida de levar pessoas e produtos entre as cidades do condado em suas
+    viagens. É comum ver um ou dois hobbits de carona em sua carroça. Se quiser
+    usar seus serviços de transporte, basta sentar na carroça.
+    Marbo Pealvo está perfeitamente saudável.
+    Marbo Pealvo está usando:
+    <no corpo>        um macacão surrado
+    Marbo Pealvo falou 'Halbarion, eu posso levá-lo para Bri, Sapântano, Beirágua, Sede do Brandevin, Fazenda do Magote e Fosso Branco'
+    (OOC) Leia HELP CONDUTORES para aprender a interagir com esse NPC.
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-carroca
+  kind: look
+  title: look carroça
+  body: |-
+    Feita de madeira, de cima a baixo e de dentro para fora. É uma carroça das
+    mais comuns. Possui duas rodas e dois conjuntos de bancos: um banco para
+    passageiros e um outro para o condutor, que utilizando a força de algum
+    animal, faz a carroça andar com tudo o que há em seu interior.
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-ponei-3
+  kind: look
+  title: look pônei
+  body: Meia-Branca está perfeitamente saudável.
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-19
+  kind: look
+  title: look hobbit
+  body: |-
+    Dada sua atividade, você não esperaria nada menos que uma fofa barriga para
+    este alegre hobbit. Também, pudera: além de ser o maior fazedor de doces da
+    região, ele é da tradicional família Roliço, famosa não apenas pelas formas
+    redondas de seus membros, como por ser de trabalhadores dedicados. Sua pele
+    clara evidencia seu rosto rosado, que se acentua quando Dorgo abre um largo
+    sorriso para os clientes.
+    Dorgo Roliço está perfeitamente saudável.
+    Dorgo Roliço está usando:
+    <na cabeça>       um chapéu de cozinheiro bem alto
+    <sobre o corpo>   um avental branco
+    <nas pernas>      uma pequena calça preta de algodão
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-20
+  kind: look
+  title: look placa
+  body: |-
+    Direções:
+    Sudeste: Ferreiro, Casa de Animais
+    Nordeste: Ponto de Retorno, Região Norte
+    Noroeste: Barraca de Tecidos
+  rooms:
+  - room:fosso-branco.um-caminho-de-areia-13
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-brisa
+  kind: look
+  title: look brisa
+  body: |-
+    Seus cabelos cacheados lhe cobrem o rosto, mas não ofuscam sua jovialidade
+    e pele macia e igualmente clara. Moça bem cuidada, suas mãos delicadas são
+    pequeninas e mais belas que o normal para uma pessoa.
+    Brisa Boffin está perfeitamente saudável.
+    Brisa Boffin está usando:
+    <nas orelhas>     um par de brincos de esmeralda
+    <no corpo>        uma leve blusa de cetim
+    <nas pernas>      uma enorme saia rodada florida
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-tear
+  kind: look
+  title: look tear
+  body: |-
+    A engenhoca é antiga, mas está limpa e bem cuidada. Colocados sobre seus
+    suportes estão nove novelos de lã, cujos fios transpassam através de guias
+    até o local onde pinças entrançam-se habilidosamente em peças de roupa.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-20
+  kind: look
+  title: look hobbit
+  body: |-
+    Frago Bateferro está perfeitamente saudável.
+    Frago Bateferro está usando:
+    <no pescoço>      um babador
+    <no corpo>        um macacão
+    <empunhando>      um martelo de ferreiro
+    <segurando>       uma enorme caneca de cerveja
+  rooms:
+  - room:fosso-branco.casa-de-pedra-de-teto-alto
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-forja
+  kind: look
+  title: look forja
+  body: |-
+    Aparentemente, a forja é mantida acesa a maior parte do dia. Qualquer
+    objeto colocado dentro dela seria rapidamente consumido pelas chamas.
+  rooms:
+  - room:fosso-branco.casa-de-pedra-de-teto-alto
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-21
+  kind: look
+  title: look hobbit
+  body: |-
+    A despeito de seu jeitão grosseiro, Bronco é bastante cuidadoso com todos
+    os animais sob sua tutela. Gosta de conversar com cada um deles pela manhã,
+    enquanto os alimenta. Com as outras pessoas ele só fala o suficiente. Algo
+    de que gosta bastante é mascar (e cuspir) fumo, o que faz constantemente.
+    Suas roupas de trabalho estão sempre sujas de esterco, comida de animais e
+    palha, dando-lhe um aspecto quase maltrapilho.
+    Bronco Monteiro está perfeitamente saudável.
+    Bronco Monteiro está usando:
+    <na cabeça>       um amarelado chapéu de palha
+    <no corpo>        uma camisa xadrez
+    <nas pernas>      um par de calças curtas com suspensório
+  rooms:
+  - room:fosso-branco.uma-pequena-casa-para-animais
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-21
+  kind: look
+  title: look placa
+  body: |-
+    A placa indica algumas direções:
+      Norte: Para Sapântano
+      Oeste: Para Beirágua e a Vila dos Hobbits
+      Sudeste: Para Fosso Branco, a ponte sobre o Rio Brandevin, a sede do
+        Brandevin, Cricôncavo, Bri, Archet e Estrado.
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-62
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-22
+  kind: look
+  title: look hobbit
+  body: |-
+    Mais forte que a maioria dos hobbits dessa vila, esse artesão deve trabalhar
+    com algo bem menos delicado que construir tijelas. Seu ofício está relacionado
+    com carregamento de peso ou construção de casas.
+    Um trabalhador hobbit está perfeitamente saudável.
+    Um trabalhador hobbit está usando:
+    <no corpo>        um terno azul-marinho
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.transversal
+  - room:sapantano.uma-cabana
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-menininha
+  kind: look
+  title: look menininha
+  body: |-
+    Comportada e educada, essa mocinha olha preocupada para todos os lados. Como
+    se desesperadamente e a muito tempo procurasse alguém. Ela olha timidamente
+    para você e recua em seguida. Provavelmente não deseja falar com estranhos.
+    Uma menina hobbit está perfeitamente saudável.
+    Uma menina hobbit está usando:
+    <na cabeça>       uma touca de flor
+    <no corpo>        uma jardineira
+  rooms:
+  - room:sapantano.transversal
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-senhora
+  kind: look
+  title: look senhora
+  body: |-
+    Idosa, mas esperta, Acácia Brandebuque colhe alguns ramos e os examina dando
+    uma exalada profunda em cada um. Ela alterna os ramalhetes como alguém
+    experiente e capaz de dizer a qualidade das plantas só pelo cheiro.
+    Acácia Brandebuque está perfeitamente saudável.
+    Acácia Brandebuque está usando:
+    <segurando>       uma cesta de palha
+  rooms:
+  - room:sapantano.plantacao-de-medicinais
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-wando
+  kind: look
+  title: look wando
+  body: |-
+    Irwando ou Wando para os amigos, ajuda seus pais como pode. Prefere pegar um
+    bico em qualquer taverna a ir brincar com seus colegas de idade. Se precisar
+    de um lugar para descansar pode dirigir a palavra a ele.
+    Irwando Cova está perfeitamente saudável.
+    Irwando Cova está usando:
+    <no corpo>        um colete verde de brim
+    <nas pernas>      uma calça bege
+  rooms:
+  - room:sapantano.estalagem-campo-silvestre
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-23
+  kind: look
+  title: look hobbit
+  body: |-
+    Juntando suas coisas em pilhas sem muita atenção, Grand trabalha com o corpo
+    e a mente em lugares diferentes. Fisicamente ele está aqui, mas sabe-se lá
+    que tipo de sonho ele está tendo por trás de seu olhar distante para a janela.
+    Grand Boncorpo está perfeitamente saudável.
+    Grand Boncorpo está usando:
+    <no corpo>        uma leve blusa de cetim
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-22
+  kind: look
+  title: look placa
+  body: |-
+    A placa diz:
+     Não toque se não for comprar!
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  - room:sapantano.utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-24
+  kind: look
+  title: look hobbit
+  body: |-
+    Ele é um Boncorpo. Não dava pra saber se não perguntasse pois Franco é mais
+    normal que o de costume. Não possui característica ou hábito que o rotule a
+    determinada família. Chega a ser tão comum quanto suspeito.
+    Franco Boncorpo está perfeitamente saudável.
+    Franco Boncorpo está usando:
+    <na cabeça>       uma cesta de palha
+    <no pescoço>      um rolo de corda
+    <no corpo>        uma camisa laranja
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-toneis
+  kind: look
+  title: look tonéis
+  body: Grandes recipientes de madeira sobrepostos formam uma enorme parede de aduelas.
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-25
+  kind: look
+  title: look hobbit
+  body: |-
+    Sempre prestativo, ele faz questão de parar o que está fazendo para tirar
+    brincadeiras com as crianças. Que por sinal, já estão acostumadas com as
+    boas piadas do tio Lauro, assim ele é conhecido.
+    Lauro Cova está perfeitamente saudável.
+    Lauro Cova está usando:
+    <no corpo>        uma leve blusa de cetim
+    <na cintura>      um avental
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-2-hobbit-2
+  kind: look
+  title: look 2.hobbit
+  body: |-
+    Suas risadas e gestos são desinibidas e alegres. Ele age como se estivesse
+    tonto, mas não demonstra nenhum sinal de que esteja se sentindo mal.
+    Um beberrão está perfeitamente saudável.
+    Um beberrão está usando:
+    <no corpo>        um colete verde de brim
+    <na cintura>      um rolo de corda
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-26
+  kind: look
+  title: look hobbit
+  body: |-
+    Mais forte que a maioria dos hobbits dessa vila, esse artesão deve trabalhar
+    com algo bem menos delicado que construir tijelas. Seu ofício está relacionado
+    com carregamento de peso ou construção de casas.
+    Um trabalhador hobbit está perfeitamente saudável.
+    Um trabalhador hobbit está usando:
+    <no corpo>        uma leve blusa de cetim
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.uma-cabana-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-27
+  kind: look
+  title: look hobbit
+  body: |-
+    Ela tem mania de limpeza. Se deixassem, ela varreria ou espanaria até a estrada
+    que pisa. Você não a reconhesse de nenhuma família embora tenha visto muitas
+    vestidas igual a ela. Talvez nessa mesma vila.
+    Uma camareira está perfeitamente saudável.
+    Uma camareira está usando:
+    <no corpo>        uma leve blusa de cetim
+    <nas pernas>      uma pesada saia de trapos
+  rooms:
+  - room:sapantano.uma-toca-funda-4
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-28
+  kind: look
+  title: look hobbit
+  body: |-
+    Ela também olha para você... e franze a testa quando observa suas roupas.
+    Em seguida, o convida para um chá. Mamãe Boncorpo adora mimar seus visitantes.
+    Mamãe Boncorpo está perfeitamente saudável.
+    Mamãe Boncorpo está usando:
+    <no corpo>        um vestido de tranças
+    <na cintura>      um avental
+  rooms:
+  - room:sapantano.uma-toca-funda-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-29
+  kind: look
+  title: look hobbit
+  body: |-
+    Seu trabalho é contínuo. Caixote após caixote, ela os preenche com ervas de
+    fumo, embala e os acomoda em uma grande pilha. Quando o serviós está concluído,
+    ela aguarda pacientemente pelo seu fornecedor.
+    Petra Cova está perfeitamente saudável.
+    Petra Cova está usando:
+    <no corpo>        um vestido de tranças
+  rooms:
+  - room:sapantano.fumos-e-cachimbos
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-30
+  kind: look
+  title: look hobbit
+  body: |-
+    Ele repete para si mesmo enquanto depena compenetradamente o rabo da galinha:
+    "Crescer, engordar e pôr." Seu olhar parece o de um paranóico, embora ele
+    aparentemente não esteja vendo você.
+    Nelson Villa está perfeitamente saudável.
+    Nelson Villa está usando:
+    <no corpo>        uma leve blusa de cetim
+    <segurando>       uma galinha
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:sapantano.um-celeiro
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-placa-23
+  kind: look
+  title: look placa
+  body: |-
+    A placa indica algumas direções:
+      Noroeste: Para Beirágua
+      Leste: Para Sapântano, Fosso Branco, a ponte sobre o Rio Brandevin, a
+        sede do Brandevin, Cricôncavo, Bri, Archet e Estrado.
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-71
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-31
+  kind: look
+  title: look hobbit
+  body: |-
+    Sua grande pança não o impede de se abaixar bem próximo da terra, com as duas
+    mão apoiadas no chão, para examiná-la cuidadosamente. Ele vira os olhos como
+    quem tenta ouvir algo no chão, ou como quem observa algo que você não consegue
+    saber o que seria.
+    Um jardineiro está perfeitamente saudável.
+    Um jardineiro está usando:
+    <no corpo>        um macacão surrado
+    <empunhando>      uma enorme tesoura de poda
+  rooms:
+  - room:beiragua.jardim-alem-da-colina
+  - room:beiragua.por-entre-jardins-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-32
+  kind: look
+  title: look hobbit
+  body: |-
+    Mesmo sendo um homem do campo, um fazendeiro, o velho Tom Villa gosta de
+    uma boa briga se esta for necessária. Sua pose é orgulhosa e seu olhar não
+    se intimida.
+    O velho Tom Villa está perfeitamente saudável.
+    O velho Tom Villa está usando:
+    <no corpo>        uma camisa social branca
+    <na cintura>      um cinto de cipó nodoso
+    <nas pernas>      uma calça azul-escura
+  rooms:
+  - room:beiragua.trilha-sul
+  - room:beiragua.viela-para-o-lago
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-mulher-5
+  kind: look
+  title: look mulher
+  body: |-
+    Celussë devolve seu olhar, notando de imediato sua presença, pois a
+    ela nada escapa. E você se surpreende, como parece bela esta que é uma
+    das mais sábias entre as mortais, pequenas linhas se desenham já em
+    torno de seus olhos azuis e profundos como o mar, porém, sem
+    prejudicar a beleza dessa mestra. Ela está envolta por uma aura
+    inexprimível, os longos cabelos loiros caem pelas costas em uma
+    trança, e as feições sempre frescas transbordam um grande conhecimento
+    nas artes da água.
+    Celussë, a mestra da água está perfeitamente saudável.
+  rooms:
+  - room:beiragua.beirando-a-agua
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.consider-mulher
+  kind: look
+  title: consider mulher
+  body: |-
+    Celussë, a mestra da água seria uma grande professora para você!
+    Você pode preparar seu funeral!
+  rooms:
+  - room:beiragua.beirando-a-agua
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-33
+  kind: look
+  title: look hobbit
+  body: |-
+    Bela moça educada, esta hobbit simpática enrola as mechas castanhas do cabelo
+    encaracolado nos dedos da pequenina e delicada mão. O breve olhar de seus
+    olhos amendoados e espertos é de um tom resplandecedor.
+    Rosa Villa está perfeitamente saudável.
+    Rosa Villa está usando:
+    <no corpo>        uma jardineira
+  rooms:
+  - room:beiragua.a-alameda-sul-2
+  - room:beiragua.uma-sala-de-jantar
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-gorducho
+  kind: look
+  title: look gorducho
+  body: |-
+    As dobras que a banha lhe faz na cintura e as bochechas protuberantes
+    denunciam o que esse hobbit pode estar fazedo aqui tão desconfiado. Até há
+    pouco ele parecia procurar algo avidamente.
+    Jelly está perfeitamente saudável.
+    Jelly está usando:
+    <no pescoço>      (Brilhando) uma jóia em gargantilha
+    <no corpo>        um casaco xadrez
+    <nas pernas>      uma calça folgada
+  rooms:
+  - room:beiragua.uma-cozinha
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-escrivaninha
+  kind: look
+  title: look escrivaninha
+  body: Ela é pequena e antiga. E aparentemente andaram fazendo alguma limpeza por
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-quadro-5
+  kind: look
+  title: look quadro
+  body: |-
+    Pouco iluminada pela luz, você vê uma adaga pintada. Sua lâmina é curva e
+    prateada. E há também muitas pedras incrustadas na base da arma e runas
+    desenhada por toda ela. A bainha parece firmemente atada com tiras de couro.
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-escrivaninha
+  kind: look
+  title: look in escrivaninha
+  body: |-
+    A segunda gaveta da escrivaninha contém:
+         Nada.
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-gaveta
+  kind: look
+  title: look in gaveta
+  body: |-
+    A segunda gaveta da escrivaninha contém:
+         Nada.
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-in-1-gaveta
+  kind: look
+  title: look in 1.gaveta
+  body: |-
+    A segunda gaveta da escrivaninha contém:
+         Nada.
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-2-gaveta
+  kind: look
+  title: look 2.gaveta
+  body: |-
+    Ela é pequena e antiga. E aparentemente andaram fazendo alguma limpeza por
+    aqui recentemente, pois você não vê nenhum grão de poeira sobre a madeira
+    encerada. Há duas gavetas na parte mais interna dela.
+  rooms:
+  - room:beiragua.um-modesto-escritorio
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-senhor-2
+  kind: look
+  title: look senhor
+  body: |-
+    Ele parece sadio e sábio. Mas uma coisa interessante incomoda em seu
+    comportamento: ele parece falar algo bem baixo como um resmungo quando olha
+    para você e você olha pra ele. Ele constantemente desvia o olhar e tenta se
+    esconder sob os cabelos grisalhos vez ou outra.
+    Um dos hobbits mais velhos está perfeitamente saudável.
+    Um dos hobbits mais velhos está usando:
+    <no corpo>        um casaco xadrez
+    <nas pernas>      uma calça azul-escura
+  rooms:
+  - room:beiragua.trilha-sul
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-se
+  kind: look
+  title: look se
+  body: A porta está fechada.
+  rooms:
+  - room:beiragua.trilha-norte
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-pescador
+  kind: look
+  title: look pescador
+  body: |-
+    Despreocupado e apático, ele não faz questão de se importar com você em toda a
+    sua sonolência. Você já viu lagartixas mais ativas ao amanhecer e chega a se
+    perguntar se esse hobbit não estaria dormindo em pé.
+    Um pescador está perfeitamente saudável.
+    Um pescador está usando:
+    <no corpo>        uma camisa verde
+    <sobre o corpo>   um colete de couro negro
+    <segurando>       uma vara de pescar
+    <na cintura>      um cinturão gasto
+    <nas pernas>      uma calça marrom
+  rooms:
+  - room:beiragua.acaba-aqui
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-hobbit-34
+  kind: look
+  title: look hobbit
+  body: |-
+    Ele está sempre de olho em algo. Nem um segundo ele relaxa um pouco para poder
+    se concentrar em algo que não seja mecânico ou sistemático. Uma prova disso é
+    sua aparência desleixada, cabelos assanhados e unhas sujas.
+    Um moleiro está perfeitamente saudável.
+    Um moleiro está usando:
+    <no corpo>        uma camisa marrom
+    <nas pernas>      uma ordinária calça xadrez
+  rooms:
+  - room:beiragua.um-moinho
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:look.look-entroncado
+  kind: look
+  title: look entroncado
+  body: |-
+    Você não o havia notado até ele passar bem perto. Ele é baixo mesmo para os
+    padrões de um hobbit e seus braços são desproporcionalmente longos. Ele quase
+    sai de perto de você quando percebe que você olha curioso.
+    Nick está perfeitamente saudável.
+    Nick está usando:
+    <nas orelhas>     argolas de marfim
+    <no corpo>        uma leve blusa de cetim
+    <nas pernas>      uma calça bege
+  rooms:
+  - room:beiragua.uma-plantacao-de-arroz
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
 - id: text:shop-list.provisoes-para-jovens-aventureiros
   kind: shop-list
   title: Provisões para Jovens Aventureiros
@@ -10851,6 +12042,115 @@
      12        0     Ilim.    uma lamparina                                      2
   rooms:
   - room:academia.provisoes-para-jovens-aventureiros
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.servico-de-postagens-rapidas
+  kind: shop-list
+  title: Serviço de Postagens Rápidas
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         1     Ilim.    uma caneta-tinteiro                               11
+     2         0     Ilim.    uma folha de papel                                 1
+  rooms:
+  - room:fosso-branco.servico-de-postagens-rapidas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.boncorpo-hortifruti
+  kind: shop-list
+  title: Boncorpo Hortifruti
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         1     Ilim.    um nabo                                            2
+     2         0     Ilim.    morangos com creme                                 2
+     3         0     Ilim.    um bulbo de alface                                 1
+     4         0     Ilim.    um cacho de uvas                                   2
+     5         0     Ilim.    um chuchu                                          2
+     6         0     Ilim.    um figo                                            2
+     7         0     Ilim.    um rabanete                                        2
+     8         0     Ilim.    uma abobrinha                                      3
+     9         0     Ilim.    uma ameixa madura                                  2
+     10        0     Ilim.    uma berinjela                                      3
+     11        0     Ilim.    uma beterraba                                      2
+     12        0     Ilim.    uma carambola                                      2
+     13        0     Ilim.    uma pêra macia                                     2
+  rooms:
+  - room:fosso-branco.boncorpo-hortifruti
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.taverna-rama-verde
+  kind: shop-list
+  title: Taverna Rama Verde
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         0     Ilim.    uma enorme caneca de cerveja                       4
+     2         0     Ilim.    uma garrafa de cerveja                             3
+     3         0     Ilim.    uma garrafa de vinho                              10
+  rooms:
+  - room:fosso-branco.taverna-rama-verde
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.taverna-rama-verde-2
+  kind: shop-list
+  title: Taverna Rama Verde
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         0     Ilim.    o peito de um frango                               2
+     2         0     Ilim.    um gigantesco bife                                 4
+     3         0     Ilim.    um pedaço de carne de coelho                       1
+     4         0     Ilim.    uma suculenta costeleta de porco                   3
+  rooms:
+  - room:fosso-branco.taverna-rama-verde-2
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.doceria-do-rolico
+  kind: shop-list
+  title: Doceria do Roliço
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1         0     Ilim.    um pão de mel                                      3
+     2         0     Ilim.    um pé-de-hobbit                                    1
+     3         0     Ilim.    um sonho com creme especial                        7
+     4         0     Ilim.    um sonho de morango e chocolate                    6
+     5         0     Ilim.    um suspiro                                         1
+     6         0     Ilim.    uma bomba de chocolate                             4
+     7         0     Ilim.    uma torta de morango                              11
+     8         0     Ilim.    uma trufa de chocolate ao rum                      6
+  rooms:
+  - room:fosso-branco.doceria-do-rolico
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:shop-list.tecelaria-e-loja-de-roupas
+  kind: shop-list
+  title: Tecelaria e Loja de Roupas
+  body: |-
+    Núm    Nível    Quant    Item                                           Preço
+     1        25     Ilim.    um colete verde de brim                            3
+     2        24     Ilim.    uma camisa social branca                          21
+     3        24     Ilim.    uma ordinária calça xadrez                         2
+     4        23     Ilim.    uma calça folgada                                  2
+     5        23     Ilim.    uma camisa laranja                                 1
+     6        22     Ilim.    um casaco xadrez                                   2
+     7        22     Ilim.    uma calça bege                                     2
+     8        22     Ilim.    uma faixa preta                                    1
+     9        21     Ilim.    um cinturão gasto                                  1
+     10       21     Ilim.    um longo vestido azul                              2
+     11       21     Ilim.    uma camisa amarela                                 3
+     12       20     Ilim.    uma camisa verde de algodão                        1
+     13       19     Ilim.    uma leve blusa de cetim                            2
+     14       18     Ilim.    um macacão surrado                                 1
+     15       18     Ilim.    um par de calças curtas com suspensório            3
+     16       18     Ilim.    uma calça azul-escura                              2
+     17       17     Ilim.    uma enorme saia rodada florida                     1
+     18        1     Ilim.    uma camisa ornada                                 11
+     19        1     Ilim.    uma camisa xadrez                                 16
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -11192,6 +12492,7 @@
     Mestra Tsythia falou 'Procure o Zurg no refeitório.'
     Mestra Tsythia ponderou 'Você já pode beber por seus próprios meios, Halbarion...'
     Mestra Tsythia sussurrou para você 'Seja bem-vindo à Terra-Média, Dorgrin!'
+    Mestra Tsythia sussurrou para você 'Seja bem-vindo à Terra-Média, Tolmo!'
   rooms:
   - room:academia.a-academia-de-aventureiros
   sources:
@@ -11302,6 +12603,7 @@
     O guarda sussurrou para você 'Tenha cuidado, Tolmo... seu lugar é na Academia de Aventureiros, tente não sair da vila de Bri ou encontrará perigos!'
   rooms:
   - room:bri.a-grande-estrada-leste
+  - room:bri.a-grande-estrada-leste-7
   - room:bri.a-guarita-do-portao-sul
   - room:bri.dentro-do-portao-norte
   - room:bri.dentro-do-portao-sul
@@ -11334,6 +12636,8 @@
     O Guardião do Norte sussurrou para você 'Caso precise de algo mais, diga 'preciso de ajuda' para mim.'
     O Guardião do Norte sussurrou para você 'Os mais aptos para ajudar você são os guardas dos portões da vila: você encontrará um deles a poucos metros ao norte daqui, no Portão Norte. Quando achá-lo, olhe para ele.'
     O Guardião do Norte exclamou 'Há um cesto de lixo ao norte daqui, Halbarion. Jogue isto lá!'
+    O Guardião do Norte exclamou 'Olá, Halbarion! Já fazia 1 mês que não via você... é bom revê-lo!'
+    O Guardião do Norte ponderou 'Tome essa maçã! Hoje estou de bom humor...'
   rooms:
   - room:bri.avenida-zenite
   sources:
@@ -11826,6 +13130,94 @@
     Alguém sussurrou para você 'Estou colecionando coisas, pago uma moeda em qualquer coisa que você me der!'
   rooms:
   - room:academia.um-corredor-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.basso-boffin
+  kind: speech
+  title: Basso Boffin
+  body: |-
+    Basso Boffin disse solenemente 'sunimod'.
+    Basso Boffin exclamou 'oba, meu bolo de cenoura!'
+    Basso Boffin falou 'obrigado! e como prometi, aí vai'
+    Basso Boffin disse solenemente, 'Curar Ferimentos Criticos'.
+    Basso Boffin disse solenemente 'naimad'.
+  rooms:
+  - room:fosso-branco.toca-atras-das-portas-3
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.balofofo-cascadovo
+  kind: speech
+  title: Balofofo Cascadovo
+  body: |-
+    Balofofo Cascadovo perguntou 'Bem-vindo a Fosso Branco, será que posso lhe ajudar?'
+    Balofofo Cascadovo falou 'Eu sou um dos condestáveis da Quarta Leste, espero que aproveite sua passagem pelo Condado'
+  rooms:
+  - room:estrada-leste.a-grande-estrada-do-leste-58
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.melilot-cascadovo
+  kind: speech
+  title: Melilot Cascadovo
+  body: Melilot Cascadovo disse, 'Isto não me interessa'.
+  rooms:
+  - room:fosso-branco.armarinhos-cascadovo
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.marbo-pealvo
+  kind: speech
+  title: Marbo Pealvo
+  body: Marbo Pealvo falou 'Halbarion, eu posso levá-lo para Bri, Sapântano, Beirágua, Sede do Brandevin, Fazenda do Magote e Fosso Branco'
+  rooms:
+  - room:fosso-branco.largo-da-carroca
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.brisa-boffin
+  kind: speech
+  title: Brisa Boffin
+  body: Brisa Boffin disse, 'Isto não me interessa'.
+  rooms:
+  - room:fosso-branco.tecelaria-e-loja-de-roupas
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.grand-boncorpo
+  kind: speech
+  title: Grand Boncorpo
+  body: Grand Boncorpo disse 'Desculpe-me, mas você poderia voltar amanhã?'.
+  rooms:
+  - room:sapantano.uma-ferramentaria
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.franco-boncorpo
+  kind: speech
+  title: Franco Boncorpo
+  body: Franco Boncorpo disse 'Desculpe-me, mas você poderia voltar amanhã?'.
+  rooms:
+  - room:sapantano.utensilios
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.lauro-cova
+  kind: speech
+  title: Lauro Cova
+  body: Lauro Cova disse 'Desculpe-me, mas você poderia voltar amanhã?'.
+  rooms:
+  - room:sapantano.taverna-tronco-flutuante
+  sources:
+  - logs/transcript.log
+  confidence: confirmed
+- id: text:speech.petra-cova
+  kind: speech
+  title: Petra Cova
+  body: Petra Cova disse 'Desculpe-me, mas você poderia voltar mais tarde?'.
+  rooms:
+  - room:sapantano.fumos-e-cachimbos
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12327,6 +13719,7 @@
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
+  - room:sapantano.uma-toca-funda
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -12345,6 +13738,7 @@
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
+  - room:sapantano.uma-toca-funda
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -12364,6 +13758,7 @@
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
   - room:saloes-espera.os-saloes-de-espera-4
+  - room:sapantano.uma-toca-funda
   - room:valfenda.uma-majestosa-arcada
   sources:
   - logs/transcript.log
@@ -12384,6 +13779,7 @@
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
+  - room:sapantano.uma-toca-funda
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12403,6 +13799,7 @@
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
+  - room:sapantano.uma-toca-funda
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12420,6 +13817,7 @@
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
+  - room:sapantano.uma-toca-funda
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12436,6 +13834,7 @@
   - room:estrada-leste.a-grande-estrada-do-leste-5
   - room:estrado.uma-toca-bem-cuidada
   - room:floresta-chet.na-base-de-uma-pequena-colina
+  - room:sapantano.uma-toca-funda
   sources:
   - logs/transcript.log
   confidence: confirmed
@@ -12447,6 +13846,7 @@
   - room:academia.o-centro-do-jardim
   - room:academia.sala-de-cura
   - room:academia.sala-de-estudo-de-linguas
+  - room:beiragua.um-modesto-escritorio
   - room:bosque.formigueiro.a-piscina-na-galeria
   - room:bri.mercado.a-tenda-do-escriba
   - room:bri.mercado.rua-do-mercado-2
@@ -12730,7 +14130,7 @@
   kind: remains
   title: Restos de criaturas (decomposição)
   body: |2-
-     558x  Uma grande poça de sangue está espalhada pelo chão.
+     560x  Uma grande poça de sangue está espalhada pelo chão.
      347x  O corpo de um javali gordão foi abandonado aqui.
      183x  O corpo de um javali gordão está coberto de vermes.
      180x  O corpo de um javali gordão está envolto em um cheiro nauseabundo.
@@ -12762,6 +14162,7 @@
        2x  O corpo de um bezerro está coberto de vermes.
        2x  O corpo de um bezerro está envolto em um cheiro nauseabundo.
        2x  O corpo de Tolmo está coberto de insetos.
+       2x  O corpo do grande lobo grisalho foi abandonado aqui.
        1x  O corpo de um grande pássaro azul está coberto de insetos.
        1x  O corpo de um grande pássaro azul está se decompondo aqui.
        1x  O corpo de um grande pássaro azul está coberto de vermes.

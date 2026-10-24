@@ -378,3 +378,59 @@
     Árvores Caídas, onde um troll cobra pedágio de 2 moedas de ouro.
   sources: ["notas.md#Estrado (vila hobbit, nível 5-20)", "logs/raw.log"]
   confidence: confirmed
+
+- id: region:fosso-branco
+  name: Fosso Branco
+  kind: city
+  parent: region:estrada-leste
+  safety: guarded
+  danger: 1
+  navigation: grid
+  atmosphere: [rural, acolhedor, hobbit]
+  tags: [hobbit, condado, lojas, correio, carroca]
+  notes: >
+    Vila hobbit a oeste da ponte do Brandevin, cortada pela Estrada Scari.
+    Toca Atrás das Portas (curandeiro Basso Boffin), Armarinhos Cascadovo,
+    Serviço de Postagens Rápidas, Boncorpo Hortifruti, Taverna Rama Verde,
+    Doceria do Roliço, Largo da Carroça (carroça para Bri, Sapântano,
+    Beirágua, Sede do Brandevin e Fazenda do Magote, 5 moedas), tecelaria,
+    forja e casa de animais. Poço de tijolos com água.
+  sources: ["notas.md#Fosso Branco"]
+  confidence: confirmed
+
+- id: region:sapantano
+  name: Sapântano
+  kind: city
+  parent: region:estrada-leste
+  safety: guarded
+  danger: 1
+  navigation: grid
+  atmosphere: [rural, pantanoso, hobbit]
+  tags: [hobbit, condado, plantacoes, nivel-10-20]
+  notes: >
+    Vila hobbit de área de treino (nível 10-20) ao norte da estrada, com
+    ruas em voltas e curvas (Transversal, Volta do Meio para Dentro,
+    Curvas de Dentro/do Centro/do Meio/de Fora), plantações de condimentos,
+    medicinais e fumo, estalagem, taverna, ferramentaria, celeiro e a Toca
+    Funda. As lojas fecham à noite.
+  sources: ["notas.md#Sapântano (help: área de treino, nível 10-20)"]
+  confidence: confirmed
+
+- id: region:beiragua
+  name: Beirágua
+  kind: city
+  parent: region:estrada-leste
+  safety: guarded
+  danger: 1
+  navigation: maze
+  atmosphere: [rural, lacustre, hobbit]
+  tags: [hobbit, condado, lago, fazenda, labirinto, nivel-20-30]
+  notes: >
+    Vila hobbit à beira de um lago, depois de Sapântano. Caminhos para o
+    Amplo Lago com casas e jardins, trilhas (Sul, Sudoeste, Oeste, Norte)
+    com moinho, ponte de pedra e tocas sob a colina, a margem com cais e a
+    casa de pesca Tornozelo Molhado, Celussë (mestra da água) e uma fazenda
+    com labirinto de cinco plantações (trigo, cevada, milho, arroz,
+    algodão). A estrada a oeste está bloqueada por árvores.
+  sources: ["notas.md#Beirágua (mapeada)"]
+  confidence: confirmed

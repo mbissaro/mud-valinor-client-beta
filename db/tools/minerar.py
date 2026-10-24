@@ -62,6 +62,18 @@ REGION_SEEDS = [
      r"O Túmulo do Guerreiro Desconhecido|As Profanas Terras da Morte|A Morte de uma Criança|Um Túmulo Subterrâneo)$", "region:eriador.cemiterio"),
     (r"^O Caminho Verde", "region:eriador.caminho-verde"),
     (r"^(A Entrada de Archet|Rua dos Ofícios|Rua das Distrações|Rua das Batalhas|Hospedaria Sono Cerrado|A Torre N|A Torre S|Os Saguões de)", "region:archet"),
+    (r"^(Entre a Estrada Leste e Fosso Branco|Toca Atrás das Portas|Um Caminho de Areia|Armarinhos Cascadovo|"
+     r"Serviço de Postagens Rápidas|Boncorpo Hortifruti|Atravessando Fosso Branco|Estrada Scari|Taverna Rama Verde|"
+     r"O Jardim da Taverna|Largo da Carroça|Doceria do Roliço|Tecelaria e Loja de Roupas|Casa de Pedra de Teto Alto|"
+     r"Uma Pequena Casa para Animais)$", "region:fosso-branco"),
+    (r"^(Transversal|Fim da Transversal|Volta do Meio para Dentro (Sul|Norte)|Centro da Volta do Meio para Dentro Sul|"
+     r"Curva de Dentro|Curva de Fora|Curva do Centro|Curva do Meio|Travessa (Dentro Meio|Fora Meio Norte|Fora Meio Sul)|"
+     r"Plantação de (Condimentos|Fumo|Medicinais)|Estalagem Campo Silvestre|Uma Cabana|Uma Ferramentaria|Utensílios|"
+     r"Taverna Tronco Flutuante|Fumos e Cachimbos|Um Celeiro|Uma Toca Funda)$", "region:sapantano"),
+    (r"^(Caminho para o Amplo Lago|Por Entre Jardins|Trilha (Sul|Sudoeste|Oeste|Norte)|Viela para o Lago|Beirando a Água|"
+     r"Tornozelo Molhado|Um Pequeno Cais|Uma Descida do Barranco|Um Moinho|Ponte Sobre O Água|Toca sob a Colina|"
+     r"Jardim d'Além Colina|Jardim Além da Colina|Acaba Aqui|O Início da Alameda|A Alameda Sul|O Pátio|Uma Varanda|"
+     r"Um Modesto Escritório|Uma Plantação de (Trigo|Cevada|Milho|Arroz|Algodão))$", "region:beiragua"),
     (r"^(A Grande Estrada do Leste|A Última Ponte|Nos Limites de uma Floresta Sombria|O Vau do Bruinen)$", "region:estrada-leste"),
     (r"^(Em Uma Pequena Lagoa|Uma Pequena Clareira|Um Caminho Através da Floresta|Uma Junção no Caminho da Floresta|"
      r"Uma Clareira Escura Fora da Caverna|Uma Interseção no Caminho|Uma Curva no Caminho|Uma Ladeira de Pedras|"
@@ -94,7 +106,7 @@ MOB_POS = re.compile(r"(está (em pé|sentad[oa]|dormindo|descansando|deitad[oa]
 FAIL = re.compile(r"^(Você não (vê|encontra|consegue)|Não (há|existe|vejo)|Esta pessoa não|Isto não|Hã\?|Huh\?|Este comando não|Você não possui|"
                   r"Você não está|Você não tem|Não foi possível|Ninguém)")
 # mensagens assincronas que caem no meio da resposta de um comando (so tiramos as do comeco)
-NOISE = re.compile(r"( foi para o | foi para a | voou para | voou d| chegou\.| chegou d| saltitou | partiu)|^(Começa |"
+NOISE = re.compile(r"( foi para o | foi para a | voou para | voou d| chegou\.| chegou d| saltitou | partiu| está à espreita)|^(Começa |"
                    r"A noite começa|O sol |A lua |Murmúrios ecoam|Uma paz benfazeja|O dia |Você está com (fome|sede)|"
                    r"Você está MORRENDO|===|Com um encantamento)|ÿ")
 LOOKV = {"look", "l", "examine", "exa", "glance", "consider", "con", "read", "ler", "listen", "search", "vasculhar"}

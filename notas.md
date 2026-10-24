@@ -2113,3 +2113,54 @@ passo custa até 8mv.
 - Sem achado após 20+ tentativas na Curva na Trilha (o brilho na beira da estrada) e 14 no Curral; a Entrada do Curral e a Estrada do Estábulo (12 tentativas) também vazias. Provável que sejam só ambientação ou exijam perícia maior.
 - Sem cantil o Halbarion fica sem água em Estrado (sem fonte); fome pega rápido ao ficar tentando `search` (MORRENDO DE FOME em ~5 minutos). Cebolas do chão da Horta de Cebolas resolvem.
 - Buscas finais em Estrado (Halbarion): Abrigo para os Animais 10 tentativas e Cocheira 10 tentativas, sem achado (O Estábulo e O Curral também sem achado). Com isso todas as salas de Estrado têm busca registrada; o único achado oculto foi a alavanca do laboratório silencioso.
+
+## Viagem do Halbarion a Beirágua (nível 6) — Fosso Branco, Sapântano, Beirágua
+
+### Rota de Bri a Beirágua (testada ida e volta)
+- Da Academia: `d n w w w` (Praça de Bri), depois `w` x12 pela Estrada Horizonte e Portão Oeste até a Grande Estrada do Leste (sala com saídas e nw).
+- Bosques: `nw nw w w nw nw` (sala do grande cogumelo, n s nw se), `nw` (cruzamento de três trilhas), `nw nw w w w` (sala do formigueiro, e w).
+- Colinas: `w nw w nw sw w nw w` até a sala da PLACA do Brandevin (e s w): "Leste: Bri, Estrado, Archet e Valfenda / Oeste: Sapântano, Beirágua, Fosso Branco e outras vilas do Condado / Sul: Sede do Brandevin e Cricôncavo".
+- `w` Ponte sobre o Brandevin, `nw w nw w nw` (portal de flores de madeira de Fosso Branco), `w` (entroncamento com a Estrada Scari, n e sw), `sw w` (estrada de Fosso Branco, casa do curandeiro ao sul), `nw` (placa de Fosso Branco, n s w se).
+- `w nw w sw nw w nw` até a placa de Sapântano (n w se: "Norte: Sapântano / Oeste: Beirágua e a Vila dos Hobbits"), `w sw sw w nw w sw sw w` até a placa "Noroeste: Para Beirágua". A estrada a oeste está bloqueada por árvores ("deixando apenas um caminho menor, a noroeste"); não há acesso à Vila dos Hobbits por ali.
+- `nw w w nw n` entra em Beirágua (Caminho para o Amplo Lago).
+- Perigos do trecho dos bosques: grande lobo grisalho (95–142 xp, golpes "machucou muito", até -34 hp numa luta) e grande lobo negro (43–78 xp). Cada round de combate gasta ~3 mv. Na volta foram 3 lobos entre o Portão Oeste e o formigueiro.
+- Os bosques depois da estrada são escuros: segurar a lamparina (pegar da mochila numa sala iluminada).
+
+### Fome e sede na viagem
+- Uma maçã da macieira da Avenida Zênite mata a fome por pouco tempo; numa viagem longa ela volta em ~30 min de jogo. Comer 2 maçãs seguidas deixa "satisfeito". Levar 8+ maçãs.
+- "MORRENDO DE FOME" + "MORRENDO DE SEDE" tiram ~8 hp e ~37 mv por tick; o mv some muito rápido sem que apareça mensagem nova.
+- Carne crua (`fatia de carne` de `slice corpo`) precisa de fogo: `cook` responde "Não há fogo aqui!". A cozinha da fazenda de Beirágua não tem fogo. `help cozinhar`: COOK exige fogueira (perícia Acender Fogueiras).
+- O Guardião do Norte dá uma maçã de presente ao rever o personagem depois de muito tempo; ele pega caroços jogados no chão e manda jogá-los no cesto de lixo ao norte.
+- Pergaminho de retorno leva ao saguão da Academia (ponto de retorno do Halbarion). O guarda da Estrada Horizonte só dá pergaminho quando acha que o personagem "não parece experiente"; desta vez só ofereceu direções ("preciso de ajuda" lista os locais de Bri).
+
+### Fosso Branco
+- Toca Atrás das Portas (casa do curandeiro, ao sul da estrada): Sala, Cozinha (fogão e forno; `look in fogão` mostra bolo de cenoura e bolo de chocolate, `get bolo fogão`) e Quarto de Basso Boffin, curandeiro obeso de pijama de frangos, cachimbo e pochete de ervas. `give cenoura basso` faz ele lançar 3x Curar Ferimentos Críticos e uma bênção.
+- Sala da placa: Balofofo Cascadovo, condestável da Quarta Leste (glutão, "o frango parece mais apetitoso").
+- Metade norte (Um Caminho de Areia): poço de tijolos (`fill cantil poço`), Armarinhos Cascadovo (Melilot Cascadovo: girassol 11, cantil 16, frasco vazio 6, mapa de Fosso Branco 1, pergaminho de retorno 1, pergaminho em branco 6, caneca de Fosso Branco 4, grande mochila de viagem 16, dado de vinte faces 4, bolsa de mantimentos 3, lamparina 2), Serviço de Postagens Rápidas (Dudo Roliço: caneta-tinteiro 11, folha de papel 1; poleiro com a folha OOC "Tweets recentes" e o passarinho azul 'Twitter', comando TWITTER; um jovem mensageiro anda pela vila), Boncorpo Hortifruti (Dehantir Boncorpo, 13 produtos de 1 a 3 moedas).
+- Atravessando Fosso Branco (Estrada Scari, placa: Taverna SE; Frutas/Correio/Armarinhos N; Carroceiro/Ponto de Retorno SW). A Estrada Scari segue para o norte (não explorada).
+- Taverna Rama Verde: salão com Codumbras Pealvo dançando e Tom Boffin cantando, mesa e cadeira (caneca de cerveja 4, garrafa de cerveja 3, vinho 10); saleta com Dora Boncorpo (peito de frango 2, bife 4, carne de coelho 1, costeleta 3); Jardim da Taverna com canteiro de flores e bancos.
+- Largo da Carroça: Marbo Pealvo e a pônei Meia-Branca. Carroça para Bri, Sapântano, Beirágua, Sede do Brandevin, Fazenda do Magote e Fosso Branco, 5 moedas (paga com GIVE, senta na carroça, diz o destino; o condutor guarda crédito — `help condutores`).
+- Doceria do Roliço (Dorgo Roliço): pão de mel 3, pé-de-hobbit 1, sonho de creme 7, sonho de morango 6, suspiro 1, bomba 4, torta de morango 11, trufa 6.
+- Metade sul: placa (Ferreiro/Casa de Animais SE, Ponto de Retorno NE, Barraca de Tecidos NW); Tecelaria e Loja de Roupas (Brisa Boffin, tear com 9 novelos, 19 peças de roupa); Casa de Pedra de Teto Alto (Frago Bateferro, forja; `list` não funciona); Uma Pequena Casa para Animais (Bronco Monteiro: coelhinho 10, tordo 10, gato 15, lagarto 40, pônei sujo 55).
+- Brincos de pérolas da Casa-Mathom: Melilot e Brisa não compram.
+
+### Sapântano (help: área de treino, nível 10-20)
+- Ruas: Transversal, Volta do Meio para Dentro Sul/Norte, Centro da Volta, Curvas (de Dentro, do Centro, do Meio, de Fora), Travessas (Fora Meio Sul/Norte, Dentro Meio), Fim da Transversal (ameixeiras, rio com ilha, pântanos).
+- Plantações de Condimentos (busca vazia), Medicinais (Acácia Brandebuque com uma cesta) e Fumo.
+- Estalagem Campo Silvestre (Irwando "Wando" Cova; a sala a leste é trancada), cabanas de trabalhadores hobbit, Ferramentaria (Grand Boncorpo; placa "Não toque se não for comprar!"), Utensílios (Franco Boncorpo), Taverna Tronco Flutuante (Lauro Cova, tonéis, beberrões), Fumos e Cachimbos (Petra Cova), Celeiro (Nelson Villa: frangote 10, galinha choca 10, vaca leiteira 15).
+- Toca Funda (~7 salas: quarto, despensa, sala com lareira, oficina): camareira e Mamãe Boncorpo, que convida para o chá.
+- NPCs andando: menininha hobbit que "parece esperar alguém" (preocupada, procura alguém — possível quest) e menino hobbit.
+- À noite todas as lojas dizem "volte amanhã".
+- Faltam: pontas de rua (Curva do Meio w e ne; Transversal s) e as listas das lojas de dia.
+
+### Beirágua (mapeada)
+- Entrada pelo sul: Caminho para o Amplo Lago (várias salas iguais: casas a leste com hortas e varandas). Junções (e s nw), (e nw se) e (e w nw se).
+- Por Entre Jardins: três salas de hortas floridas a leste das junções, ligadas por portões na cerca (`open se`, "passagem na cerca"). Um jardineiro com tesoura de poda e "um dos hobbits mais velhos" (resmunga e desvia o olhar; casaco xadrez, calça azul-escura) andam por ali.
+- Trilha Sul (3 salas, e-w), com o velho Tom Villa (fazendeiro orgulhoso que "gosta de uma boa briga"; camisa social branca, cinto de cipó nodoso, calça azul-escura).
+- Trilha Sudoeste (n e ne sw): ne Viela para o Lago; n leva à Trilha Oeste; sw O Início da Alameda.
+- Margem do lago: Viela para o Lago -> Beirando a Água (várias salas; o caminho de pedra fica acima da água, num barranco de rochas). Ramos: Tornozelo Molhado (casa de pesca sobre estacas, ao norte), dois Pequenos Cais (tábuas sobre estacas que terminam onde não se vê o fundo), Uma Descida do Barranco (barranco de areia erodido, lago raso até uma cerca, plantas aquáticas além). Celussë, a mestra da água, fica numa das salas Beirando a Água.
+- Trilha Oeste (2 salas): e Um Moinho (roda d'água move eixo de madeira e engrenagens que trituram cereais; um moleiro desleixado de unhas sujas; `list` não funciona), ne Ponte Sobre O Água (ponte de pedras em arco sobre o rio, vista para o lago; o jovem Tom Villa, carrancudo, de camisa laranja, colete de couro e bracelete com brasão, anda por ali).
+- Trilha Norte (entre colinas): três tocas "Toca sob a Colina" (pilares de madeira, prateleiras, "espaço para uma boa festa"), cada uma com porta para um "Jardim Além da Colina" (flores, arbustos, cipós descendo a encosta até o lago). Um jardineiro de pança grande examina a grama em um deles. A trilha termina em "Acaba Aqui" (palanque de terra sobre o lago), onde um pescador sonolento balança a vara de pescar.
+- A Alameda Sul (Rosa Villa, a jardineira: hobbit simpática de cabelo castanho encaracolado) leva à fazenda: "entrada para a fazenda" (`open s`), O Pátio, porta (`open s`), Sala de Estar (tapete vermelho redondo, tapeçarias, três corredores), Quarto de Dormir, Armário de Roupas, Sala de Jantar (candelabro, mesa longa sempre arrumada, quadros de paisagens), Cozinha (abóboras enfileiradas, conchas penduradas sobre apoio de mármore; Jelly, hobbit gorducho desconfiado com uma jóia em gargantilha brilhante), Modesto Escritório (papéis amassados, cheiro de mofo; escrivaninha de mogno pequena e antiga, recém-limpa, com duas gavetas — a segunda está vazia; belo quadro de uma adaga curva prateada com pedras incrustadas e runas, bainha atada com tiras de couro), porta `open s` para Uma Varanda (cadeira de balanço, vista das plantações).
+- Labirinto das plantações (ao sul da Varanda): 5 salas, uma por cultura, todas com "você veio do norte". Ligações: Trigo (se Milho, sw Cevada, n Varanda — o n não aparece nas saídas); Cevada (se Milho, sw Cevada, nw Arroz, ne Algodão); Milho (ne Arroz, se Arroz, sw Cevada, nw Milho); Arroz (se Cevada, nw Arroz, ne Algodão, sw Milho); Algodão (ne Milho, sw Cevada, nw Arroz, se Trigo). Para sair: chegar no Algodão e ir `se` (Trigo), depois `n`. Nick, "um entroncado pequenino" de braços longos e argolas de marfim, e "um esperto pequenino" andam pelas plantações. Atravessar o labirinto gasta movimento e fome rápido.
+- Não achados: Dragão Verde e Colina de Bolsão (o help cita, mas a estrada a oeste está bloqueada).
