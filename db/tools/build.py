@@ -97,7 +97,7 @@ def load_all() -> dict[str, list[dict[str, Any]]]:
     data: dict[str, list[dict[str, Any]]] = {}
     for kind, spec in TYPES.items():
         path = DATA / spec["file"]
-        items = yaml.safe_load(path.read_text()) if path.exists() else []
+        items = yaml.safe_load(path.read_text(encoding="utf-8")) if path.exists() else []
         data[kind] = items or []
     return data
 
@@ -200,14 +200,14 @@ def cmd_sqlite() -> None:
 
 def cmd_export_json() -> None:
     data = load_all()
-    JSON_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    JSON_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Gerado {JSON_PATH}")
 
 
 def cmd_pending() -> None:
     ingested_path = DATA / "_ingested.yaml"
-    ingested = set(yaml.safe_load(ingested_path.read_text()) or []) if ingested_path.exists() else set()
-    headers = [l[3:].strip() for l in NOTAS_PATH.read_text().splitlines() if l.startswith("## ")]
+    ingested = set(yaml.safe_load(ingested_path.read_text(encoding="utf-8")) or []) if ingested_path.exists() else set()
+    headers = [l[3:].strip() for l in NOTAS_PATH.read_text(encoding="utf-8").splitlines() if l.startswith("## ")]
     pending = [h for h in headers if h not in ingested]
     print(f"{len(headers)} cabecalhos em notas.md, {len(ingested)} ja ingeridos, {len(pending)} pendentes:")
     for h in pending:

@@ -32,6 +32,8 @@ jobs:
             asset: valinor-macos-x86_64
     runs-on: ${{ matrix.os }}
     container: ${{ matrix.container }}
+    env:
+      PYTHONUTF8: "1"  # Windows: a base e os testes são UTF-8, não cp1252
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
