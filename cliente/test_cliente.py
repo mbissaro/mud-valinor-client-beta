@@ -315,7 +315,7 @@ def test_keepalive_tcp():
     srv = socket.create_server(("127.0.0.1", 0))
     c = socket.create_connection(srv.getsockname())
     vigia.keepalive(c)
-    assert c.getsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE) == 1
+    assert c.getsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE)  # o macOS devolve 8, não 1
     idle = getattr(socket, "TCP_KEEPIDLE", getattr(socket, "TCP_KEEPALIVE", None))  # o macOS chama de KEEPALIVE
     if idle is not None and sys.platform != "win32":  # o Windows aceita, mas nem sempre devolve no getsockopt
         assert c.getsockopt(socket.IPPROTO_TCP, idle) == 60

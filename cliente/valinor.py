@@ -33,7 +33,7 @@ from painel import DOCKS, MAX_WALK, MOUSE_OFF, PANEL_MIN_COLS, Painel
 from vigia import Vigia, keepalive
 
 HOST, PORT = "mud.valinor.com.br", 4000
-VERSAO = "0.1.0"
+VERSAO = "0.1.1"
 QUIET = 0.4  # segundos de silêncio do servidor que fecham uma resposta quando o prompt não é o padrão
 STD_PROMPT = "<0hp 0m 0mv> "  # o prompt personalizado vira este antes do parser de salas
 SGR_IN = r"(?:\x1b\[[0-9;]*m)*"  # com as cores ligadas o servidor colore cada número do prompt
