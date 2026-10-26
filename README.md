@@ -23,15 +23,43 @@ Feito em Python puro com `curses`. A única dependência é o PyYAML, usado para
 - **Barras de hp, mana e movimento** lidas do prompt, aviso antes do Vazio e keepalive TCP.
 - **Cores** tiradas de uma paleta de pôr do sol (`FC-pallete.png`), em 256 cores, com volta ao tema básico em
   terminais de 8/16 cores.
+- **Modo leitor de tela** (`--leitor`): o jogo em texto corrido, sem painéis nem símbolos, para NVDA, Orca e VoiceOver.
 - **Sem automação**: o cliente só envia o que você digita ou pede (veja [Regras do Valinor](#regras-do-valinor-policy-4)).
 
 ## Instalação
 
-Requisitos:
+Use um terminal com 256 cores e mouse, como Konsole, GNOME Terminal, kitty, iTerm2 ou Windows Terminal.
 
-- Python 3.9 ou mais novo, no Linux ou no macOS (no Windows, use o WSL).
-- PyYAML.
-- Um terminal com 256 cores e mouse, como Konsole, GNOME Terminal, kitty, iTerm2 ou Windows Terminal.
+### Binário
+
+Baixe o arquivo do seu sistema em [Releases](https://github.com/turing-lucas/mud-valinor-client-beta/releases). Ele
+já traz o Python, a base do mapa e o logo:
+
+| Sistema | Arquivo |
+|---|---|
+| Linux x86_64 (Debian 11, Ubuntu 20.04, RHEL 9 ou mais novos) | `valinor-linux-x86_64` |
+| macOS com Apple Silicon | `valinor-macos-arm64` |
+| macOS com Intel | `valinor-macos-x86_64` |
+| Windows 10 ou 11 | `valinor-windows-x86_64.exe` |
+
+Deixe o binário numa pasta sua: o `.credenciais` e a pasta `logs/` ficam ao lado dele.
+
+```bash
+chmod +x valinor-linux-x86_64
+./valinor-linux-x86_64          # ou: ./valinor-linux-x86_64 <host> <porta>
+```
+
+- No macOS, o arquivo baixado vem bloqueado porque não é assinado. Libere com
+  `xattr -d com.apple.quarantine valinor-macos-arm64`, ou clique com o botão direito e escolha Abrir.
+- No Windows, rode `.\valinor-windows-x86_64.exe` no Windows Terminal.
+- `--versao` confere a base e o logo sem abrir a tela.
+
+Os binários de Windows e macOS passam pelos testes e pelo `--versao` no GitHub Actions, mas ainda não foram usados de
+verdade nesses sistemas. Se algo não funcionar, abra uma issue.
+
+### Pelo código
+
+Requisitos: Python 3.9 ou mais novo e PyYAML. No Windows, instale também o `windows-curses`.
 
 ```bash
 git clone https://github.com/turing-lucas/mud-valinor-client-beta.git
@@ -43,8 +71,8 @@ python3 cliente/valinor.py              # ou: python3 cliente/valinor.py <host> 
 
 ### Personagens
 
-O seletor lê os personagens de um arquivo `.credenciais` na raiz do projeto. Cada personagem é um par
-`Personagem<X>` / `Senha<X>` com o mesmo sufixo:
+O seletor lê os personagens de um arquivo `.credenciais` na raiz do projeto, ou na pasta do binário. Cada personagem
+é um par `Personagem<X>` / `Senha<X>` com o mesmo sufixo:
 
 ```text
 Personagem: Fulano
@@ -75,9 +103,21 @@ porque o Valinor não permite dois personagens online ao mesmo tempo.
 | Barra de status | hp, mana e movimento em barrinhas, sala, região, rota e conexão |
 
 Com 154 colunas ou mais, o cliente mostra três colunas: texto, mapa e equipamento em cima do who. Entre 90 e 153
-colunas, fica uma coluna só com abas **Mapa · Equipamento · Who**. F2 ou um clique na aba troca o painel.
+colunas, fica uma coluna só com abas **Mapa · Equipamento · Who**. F2 ou um clique na aba troca o painel. Com menos de
+90 colunas, como no 80×24 padrão, o painel abre por cima do texto com `/mapa`, `/eq`, `/who` ou F2, e Esc volta ao
+texto.
 
 ![Terminal estreito: uma coluna com abas](docs/img/estreito.png)
+
+### Leitor de tela
+
+`valinor --leitor` (ou `python3 cliente/valinor.py --leitor`) troca a tela por texto corrido, como num telnet. O texto
+do jogo sai na ordem em que chega, sem cores, molduras, barras ou símbolos, e o cursor fica sempre no fim. Cada linha
+digitada vai para o jogo, e as setas trazem os comandos anteriores no Linux e no macOS.
+
+O seletor vira uma lista numerada: digite o número e Enter. O login automático, os logs, o keepalive e o aviso antes do
+Vazio continuam iguais. Quando o jogo pede a senha, o que você digita não aparece na tela. Ctrl+D fecha o cliente; saia
+do jogo antes com `quit`. Mapa, painéis e autocomplete existem só na tela normal.
 
 ## Mapa e rotas
 
@@ -147,6 +187,9 @@ desligado, a não ser que a linha comece com `/`.
 
 - **hp**, **m** e **mv** viram barrinhas lidas do prompt (`<84hp 100m 199mv>`). O máximo vem do `score` ou do maior
   valor já visto. A barra de hp fica amarela na metade, e qualquer barra fica vermelha em um quarto.
+- Com um prompt personalizado no jogo, o cliente aprende o formato dele: who, equipamento e mapa continuam
+  funcionando, e as barras andam se o prompt tiver um número seguido de `hp`, `m` (ou `mn`) e `mv` (`84hp` ou `84/84hp`), em
+  qualquer ordem e com outras coisas no meio. Sem isso as barras ficam paradas e o cliente avisa.
 - O cliente conta o tempo sem digitar. Aos 6 minutos, toca um aviso e mostra na barra quanto falta para o Vazio
   (8–10 min) e para o servidor desconectar (cerca de 4 min depois).
 - O socket usa keepalive TCP para a conexão não cair à toa. Nenhum comando de jogo é enviado para manter você online.
@@ -181,7 +224,7 @@ desligado, a não ser que a linha comece com `/`.
 | F2 | troca o painel quando há uma coluna só |
 | F3 | próxima aba de conversa |
 | F5 | envia `eq` e `inv` |
-| Esc | fecha a lista; com a linha vazia numa aba, volta ao Jogo |
+| Esc | fecha a lista; com a linha vazia, sai da aba de conversa ou fecha o painel que cobre o texto |
 | Ctrl-A / Ctrl-E | início / fim da linha |
 | Ctrl-U / Ctrl-W | apaga até o início / a palavra anterior |
 | Ctrl-L | redesenha a tela |
@@ -216,7 +259,7 @@ O cliente grava tudo em `logs/` (fora do git):
 - `logs/transcript.log` — a sessão legível, sem as senhas;
 - `logs/chat.log` — só as linhas de conversa.
 
-Para testes, `VALINOR_LOGS=<pasta>` grava em outra pasta e `VALINOR_CRED=<arquivo>` lê outro arquivo de personagens.
+No binário, `logs/` fica na pasta do executável. Para testes, `VALINOR_LOGS=<pasta>` grava em outra pasta e `VALINOR_CRED=<arquivo>` lê outro arquivo de personagens.
 
 ## A base de dados
 
@@ -250,6 +293,22 @@ Depois de jogar e atualizar a base, `/recarregar` relê o `db/valinor.json` sem 
 ```bash
 python3 cliente/test_cliente.py
 python3 db/tools/test_build.py
+```
+
+## Gerar os binários
+
+O workflow `.github/workflows/binarios.yml` gera os quatro binários com o PyInstaller no GitHub Actions. Ele roda à
+mão (Actions › binarios › Run workflow) ou numa tag `v*`, que também publica os arquivos numa Release. O de Linux é
+gerado num Debian 11 para rodar em qualquer distribuição com glibc 2.31 ou mais nova.
+
+Para gerar só o do seu sistema:
+
+```bash
+pip install pyyaml pyinstaller
+python3 db/tools/build.py export-json
+pyinstaller --onefile --name valinor --paths db/tools \
+  --add-data "db/valinor.json:db" --add-data "cliente/logo.txt:." cliente/valinor.py
+./dist/valinor --versao
 ```
 
 ## Licença

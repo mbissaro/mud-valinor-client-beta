@@ -14,7 +14,6 @@ import curses
 import locale
 import os
 import re
-import select
 import socket
 import sys
 import time
@@ -25,18 +24,20 @@ import completar
 import logo
 import mapa
 import paleta as P
-from conexao import LOGS, load_chars, other_connections, secret, secrets, telnet
-from conversa import Conversa
+import leitor
+from conexao import ANSI, ASKS_PW, LOGS, WIN, load_chars, secrets, telnet, wait
+from conversa import Conversa, who_scan
 from logo import IDLE_FRAME, Abertura
-from mochila import Mochila
-from painel import DOCKS, MAX_WALK, MOUSE_OFF, Painel
+from mochila import EQ_HEAD, INV_HEAD, Mochila
+from painel import DOCKS, MAX_WALK, MOUSE_OFF, PANEL_MIN_COLS, Painel
 from vigia import Vigia, keepalive
 
 HOST, PORT = "mud.valinor.com.br", 4000
-ANSI = re.compile(r"\x1b\[([0-9;]*)([A-Za-z])")
+VERSAO = "0.1.0"
+QUIET = 0.4  # segundos de silêncio do servidor que fecham uma resposta quando o prompt não é o padrão
+STD_PROMPT = "<0hp 0m 0mv> "  # o prompt personalizado vira este antes do parser de salas
 SGR_IN = r"(?:\x1b\[[0-9;]*m)*"  # com as cores ligadas o servidor colore cada número do prompt
 PROMPT = re.compile(rf"<{SGR_IN}(-?\d+)hp {SGR_IN}(-?\d+)m {SGR_IN}(-?\d+)mv{SGR_IN}> ?")
-ASKS_PW = re.compile(r"senha[^\n]*:\s*$", re.I)  # prompt pedindo senha, ainda sem quebra de linha
 MAXES = re.compile(r"(Vida|Mana|Movimento):\s*-?\d+\s*(?:/|de)\s*(\d+)")  # do score, com e sem Modo Aural
 HOLD = re.compile(r"<[-\dhpmv \x1b\[;]{0,80}$")  # começo de prompt partido entre dois pacotes
 CHAT = re.compile(r"^\(OOC\) .+ (disse|perguntou|exclamou)|para você '")
@@ -63,6 +64,21 @@ THEME = {  # cor do FC-pallete.png (paleta.py) em 256 cores, cor em 8 cores
     "far": (P.LILAC, curses.COLOR_WHITE), "text": (P.MIST, curses.COLOR_WHITE), "peek": (P.PINK, curses.COLOR_MAGENTA),
 }
 
+VITALS = [re.compile(rf"(-?\d+)(?:/(\d+))?\s*{k}\b", re.I) for k in ("hp", "m(?:n|a|ana)?", "mv")]
+
+
+def vitals(prompt: str) -> list[tuple[int, int | None]] | None:
+    """hp, m e mv de um prompt personalizado, em qualquer ordem e com outras coisas no meio: (atual, máximo ou None)."""
+    got = [r.search(prompt) for r in VITALS]
+    return [(int(m[1]), int(m[2]) if m[2] else None) for m in got] if all(got) else None
+
+
+def shape(prompt: str) -> re.Pattern:
+    """Molde de um prompt personalizado: os números mudam, o resto fica igual."""
+    parts = re.split(r"(-?\d+)", prompt)
+    return re.compile("".join(r"-?\d+" if p.lstrip("-").isdigit() else re.escape(p) for p in parts) + " ?")
+
+
 def cut(line: list, a: int, b: int) -> list:
     out, pos = [], 0
     for t, at in line:
@@ -76,7 +92,7 @@ def cut(line: list, a: int, b: int) -> list:
 def wrap(line: list, w: int) -> list[list]:
     """Quebra uma linha de segmentos (texto, atributo) em pedaços de até w colunas, de preferência no espaço."""
     text = "".join(t for t, _ in line)
-    if len(text) <= w:
+    if len(text) <= w or w < 1:
         return [line]
     cuts, start = [], 0
     while len(text) - start > w:
@@ -94,6 +110,8 @@ def wrap(line: list, w: int) -> list[list]:
 class App(Painel, Abertura, Mochila, Vigia, Conversa):
     def __init__(self, scr, host: str, port: int) -> None:
         self.scr, self.host, self.port = scr, host, port
+        curses.raw()
+        scr.nodelay(True)
         self.base = mapa.Base()
         self.lines: deque = deque(maxlen=SCROLLBACK)  # cada linha: lista de (texto, atributo curses)
         self.partial: list = []
@@ -104,6 +122,9 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         self.hpos = 0
         self.sock: socket.socket | None = None
         self.masked, self.ingame, self.quit_at = False, False, 0.0
+        self.rx_at, self.std_prompt = 0.0, False  # último dado do servidor; já veio um prompt <Nhp Nm Nmv>
+        self.digest_at = 0.0  # última resposta processada, pelo prompt (track) ou pelo silêncio (settle)
+        self.prompt_re: re.Pattern | None = None  # molde do prompt personalizado, aprendido no silêncio
         self.stats: tuple | None = None
         self.maxstats = [1, 1, 1]
         self.room: str | None = None  # id na base
@@ -113,7 +134,8 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         self.center: str | None = None  # sala escolhida com /mapa <sala>
         self.target: str | None = None
         self.route: list = []
-        self.panel, self.ctrlc, self.running, self.dirty = True, 0.0, True, True
+        self.panel = scr.getmaxyx()[1] >= PANEL_MIN_COLS  # estreito, o painel cobre o texto: só abre quando pedir
+        self.ctrlc, self.running, self.dirty = 0.0, True, True
         self.chars = load_chars()
         self.picking, self.pick, self.confirm, self.others = False, 0, False, []
         self.login: dict | None = None  # login automático do personagem escolhido no seletor
@@ -187,11 +209,11 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         self.sock.setblocking(False)
         keepalive(self.sock)
         self.idle_reset()
-        self.tbuf, self.roomtxt, self.ingame = b"", "", False
+        self.tbuf, self.roomtxt, self.ingame, self.std_prompt, self.prompt_re = b"", "", False, False, None
         self.stats, self.maxstats, self.room, self.live, self.live_exits = None, [1, 1, 1], None, None, set()
         self.center, self.target, self.route = None, None, []
         self.bag, self.bag_at = {}, 0.0
-        self.tr.write(f"=== NOVA CONEXÃO {time.strftime('%F %T')} ===\n")
+        self.tr.write(f"=== NOVA CONEXÃO {time.strftime('%Y-%m-%d %H:%M:%S')} ===\n")
         self.tr.flush()
 
     def close(self, why: str) -> None:
@@ -223,6 +245,7 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
             return
         self.raw.write(raw)
         self.raw.flush()
+        self.rx_at = time.time()
         data, echo, self.tbuf = telnet(self.tbuf + raw)
         if echo is not None:
             self.masked = echo
@@ -253,87 +276,11 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         if self.masked or hidden:  # senha: não vai para o histórico nem para o transcript
             self.push([("› ", self.th["accent"]), ("•" * 8, self.th["dim"])])
             return
-        self.tr.write(f"\n>>> [{time.strftime('%T')}] {cmd}\n")
+        self.tr.write(f"\n>>> [{time.strftime('%H:%M:%S')}] {cmd}\n")
         self.tr.flush()
         self.push([("› ", self.th["accent"]), (cmd, self.th["dim"])])
         self.moved = mapa.DIRS.get(cmd.strip().lower())
         self.comp.learn(cmd)
-
-    def autologin(self) -> None:
-        """Manda nome, senha e o Enter da tela de novidades uma vez só, quando o servidor pede cada um."""
-        lg = self.login
-        if not lg:
-            return
-        tail = "".join(t for t, _ in self.partial)
-        recent = " ".join("".join(t for t, _ in l) for l in list(self.lines)[-3:])
-        if lg["step"] == 0 and tail.rstrip().endswith("Personagem:"):
-            lg["step"] = 1
-            self.send(lg["name"])
-        elif lg["step"] == 1 and "Senha" in tail:
-            pw = secret("Senha" + lg["suf"])
-            if not pw:
-                self.login = None
-                return self.say("senha não encontrada no .credenciais: digite na mão", "bad")
-            lg["step"] = 2
-            self.send(pw, hidden=True)
-        elif lg["step"] == 2 and "Tecle ENTER" in recent + tail:
-            self.login = None
-            self.send("")
-        if self.ingame or "incorreta" in (recent + tail).lower():
-            self.login = None
-
-    # ------------------------------------------------------------------ seletor de personagem
-    def options(self) -> list[tuple]:
-        return self.chars + [("Outro", "digitar nome e senha na mão (ou NOVO)", None)]
-
-    def open_picker(self) -> None:
-        self.picking, self.confirm, self.login, self.others = True, False, None, other_connections()
-        self.pick = min(self.pick, len(self.options()) - 1)
-        self.dirty = True
-
-    def choose(self) -> None:
-        if self.others and not self.confirm:
-            self.confirm = True
-            return
-        name, _, suf = self.options()[self.pick]
-        self.picking, self.confirm = False, False
-        self.login = {"name": name, "suf": suf, "step": 0} if suf is not None else None
-        self.char = name if suf is not None else None
-        self.say(f"entrando com {name}" if suf is not None else "login manual: digite o nome e a senha", "dim")
-        self.connect()
-
-    def key_pick(self, ch) -> None:
-        n = len(self.options())
-        if ch in (curses.KEY_UP, curses.KEY_DOWN):
-            self.pick, self.confirm = (self.pick + (1 if ch == curses.KEY_DOWN else -1)) % n, False
-        elif isinstance(ch, str) and ch.isdigit() and 1 <= int(ch) <= n:
-            self.pick = int(ch) - 1
-            self.choose()
-        elif ch in ("\n", "\r", curses.KEY_ENTER):
-            self.choose()
-        elif ch in ("\x1b", "\x03"):
-            self.running = False
-        elif ch in (curses.KEY_PPAGE, curses.KEY_NPAGE, curses.KEY_RESIZE):
-            self.picking = False
-            self.key(ch)
-            self.picking = True
-
-    def draw_picker(self, y: int, W: int, opts: list) -> None:
-        self.put(y, 0, "─" * W, self.th["far"])
-        self.put(y + 1, 2, "Escolha o personagem", self.th["accent"] | curses.A_BOLD)
-        for i, (name, label, _) in enumerate(opts):
-            on = i == self.pick
-            x = self.put(y + 2 + i, 2, ("❯ " if on else "  ") + f"{i + 1}. {name:<12}",
-                         self.th["accent"] | curses.A_BOLD if on else self.th["text"])
-            self.put(y + 2 + i, x, label, self.th["dim"])
-        n = y + 2 + len(opts)
-        if self.others:
-            self.put(n, 2, f"⚠ já há outra conexão aberta ({', '.join(self.others)}): dois personagens online ao mesmo"
-                           " tempo viola a POLICY 4", self.th["bad"])
-            n += 1
-        hint = "Enter de novo para conectar mesmo assim" if self.confirm else \
-            f"↑↓ escolhe · Enter conecta · 1-{len(opts)} atalho · Esc sai"
-        self.put(n, 2, hint, self.th["accent" if self.confirm else "dim"])
 
     # ------------------------------------------------------------------ texto do servidor
     def track(self, plain: str) -> None:
@@ -345,6 +292,35 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         if not last:
             return
         done, self.roomtxt = self.roomtxt[:last.end()], self.roomtxt[last.start():]
+        self.std_prompt = True
+        self.digest(done)
+
+    def settle(self) -> None:
+        """Prompt fora do padrão (personalizado no jogo): sem ele para marcar o fim da resposta, o silêncio do servidor
+        marca. A sala, o equipamento ou o who chegando também dizem que você já está no jogo."""
+        done = self.roomtxt
+        self.roomtxt = done[done.rfind("\n") + 1:]  # como no track, a linha do prompt fica: o título da sala vem nela
+        entered = self.ingame or "Saídas:" in done or EQ_HEAD in done or INV_HEAD in done or who_scan(done) is not None
+        tail = self.roomtxt.strip()
+        known = entered and not self.masked and any(c.isdigit() for c in tail)  # a linha sem quebra no fim é o prompt
+        if known:
+            self.prompt_re = shape(tail)
+        if self.prompt_re:
+            done = self.prompt_re.sub(STD_PROMPT, done)
+        self.digest(done)
+        v = vitals(tail) if known else None
+        if v:
+            self.stats = tuple(c for c, _ in v)
+            self.maxstats = [mx or max(old, c) for (c, mx), old in zip(v, self.maxstats)]
+        if entered and not self.ingame and not self.masked:
+            self.ingame = True
+            if not v:
+                self.say("não achei hp, m e mv no seu prompt: as barras ficam paradas. O cliente procura um número "
+                         "seguido de hp, m e mv (84hp ou 84/84hp), em qualquer ordem.", "dim")
+
+    def digest(self, done: str) -> None:
+        """Uma resposta inteira do servidor: máximos do score, equipamento, who e a sala, se veio uma."""
+        self.digest_at = time.time()
         for m in MAXES.finditer(done):  # o prompt só traz o atual; o máximo vem quando você digita score
             self.maxstats[("Vida", "Mana", "Movimento").index(m[1])] = int(m[2])
         self.bag_scan(done)
@@ -541,7 +517,7 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
     # ------------------------------------------------------------------ teclado
     def key(self, ch) -> None:
         self.dirty = True
-        if ch == curses.KEY_MOUSE:
+        if ch == curses.KEY_MOUSE or (ch == "\x1b" and self.mouse_on and not WIN and self.sgr_next()):
             return self.on_mouse()
         if ch == curses.KEY_F2 and not self.picking:
             self.panel, self.dock = True, DOCKS[(DOCKS.index(self.dock) + 1) % len(DOCKS)]
@@ -611,6 +587,8 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         elif ch == "\x1b":
             if pop:
                 self.hide, self.tab = self.inp, False
+            elif not self.inp and self.panel and self.scr.getmaxyx()[1] < PANEL_MIN_COLS:
+                self.panel = False  # o painel que cobria o texto
             elif not self.inp and self.chan is not None:
                 self.set_chan(None)
             else:
@@ -625,6 +603,8 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
             else:
                 self.ctrlc = time.time()
         elif ch == curses.KEY_RESIZE:
+            if WIN:
+                curses.resize_term(0, 0)  # o PDCurses só pega o tamanho novo da janela assim
             curses.update_lines_cols()
         elif isinstance(ch, str) and ch.isprintable():
             self.inp, self.cur = self.inp[:self.cur] + ch + self.inp[self.cur:], self.cur + 1
@@ -661,14 +641,15 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         glowing = self.picking and self.logo and W >= self.logo_w + 4  # no seletor o logo toma a tela toda
         cols = [] if glowing else self.docks(W)
         ow = cols[0][0] if cols else W
-        self.outw = ow - 2
+        if ow > 0:  # com o painel cobrindo o texto, fica a última largura
+            self.outw = ow - 2
         head = 0 if self.picking else 1  # faixa das abas de conversa
-        if head:
+        if head and ow > 0:
             self.draw_tabs(0, ow)
-        used = head + self.draw_output(head, bottom - head, ow)
+        used = head + (self.draw_output(head, bottom - head, ow) if ow > 0 else 0)  # ow 0: o painel cobre o texto
         if glowing and bottom - used >= self.logo_h + 2:
             self.draw_logo(used + (bottom - used - self.logo_h) // 2, (W - self.logo_w) // 2)
-        elif self.chan and used == head:
+        elif self.chan and used == head and ow > 0:
             who = "todos (chat)" if self.chan == "global" else self.talk[self.chan]["name"] + " (tell)"
             self.put(head + 1, 2, f"nada aqui ainda · o que você digitar vai para {who}", self.th["far"], ow)
         self.draw_docks(cols, bottom)
@@ -681,7 +662,7 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
             on = top + i == self.sel % len(full)
             x = self.put(bottom + 3 + i, 2, ("› " if on else "  ") + f"{c:<{cw}}", self.th["accent"] if on else self.th["text"])
             self.put(bottom + 3 + i, x, desc, self.th["dim"])
-        if self.hover in self.hits.values() and not self.picking:
+        if self.hover in self.hits.values() and not self.picking and ow > 0:
             self.draw_preview(bottom, ow)
         elif self.spot_hover and self.spot_hover[0] == "item" and self.spot_hover in self.spots.values():
             self.draw_card(bottom)
@@ -735,6 +716,9 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
     # ------------------------------------------------------------------ laço
     def run(self) -> None:
         self.welcome()
+        if not self.panel:
+            self.say(f"terminal com {self.scr.getmaxyx()[1]} colunas: mapa, equipamento e who abrem por cima do texto "
+                     f"(/mapa, /eq, /who ou F2; Esc volta). Com {PANEL_MIN_COLS}+ colunas ficam ao lado.", "dim")
         self.splash()
         self.set_mouse(True)
         self.open_picker()
@@ -742,10 +726,10 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
             frame = self.anim()
             if self.dirty or frame:
                 self.draw()
-            fds = [sys.stdin] + ([self.sock] if self.sock else [])
-            ready, _, _ = select.select(fds, [], [], frame or 0.2)
-            if self.sock in ready:
+            if self.sock in wait([self.sock] if self.sock else [], frame or 0.2):
                 self.recv()
+            if self.rx_at > self.digest_at and time.time() - self.rx_at > QUIET * (4 if self.std_prompt else 1):
+                self.settle()  # veio texto sem o prompt padrão no fim (com o padrão, o track já cuidou)
             while True:
                 try:
                     ch = self.scr.get_wch()
@@ -769,21 +753,44 @@ class App(Painel, Abertura, Mochila, Vigia, Conversa):
         return IDLE_FRAME if self.bag_glowing() or (self.picking and self.logo) else None
 
 
+def utf8_locale() -> None:
+    """O curses precisa de locale UTF-8 para acentos e bordas. LANG ou LC_* apontando para um locale que não existe
+    na máquina (comum no SSH vindo do macOS, que manda LC_CTYPE=UTF-8) derrubava o cliente antes de abrir."""
+    for name in ("", "C.UTF-8", "C.utf8", "en_US.UTF-8", "UTF-8"):
+        try:
+            locale.setlocale(locale.LC_ALL, name)
+        except locale.Error:
+            continue
+        if WIN or "utf" in locale.nl_langinfo(locale.CODESET).lower():
+            return
+
+
+def versao() -> int:
+    """`valinor --versao`: confere sem abrir a tela que a base, o logo e o terminfo estão no lugar (teste dos binários)."""
+    b, art = mapa.Base(), logo.load()
+    if not WIN:
+        curses.setupterm(os.environ.get("TERM") or "xterm-256color", sys.stdout.fileno())
+    print(f"Valinor {VERSAO} · base: {len(b.rooms)} salas, {len(b.data['object'])} objetos · logo: "
+          f"{'ok' if art else 'faltando'}")
+    return 0 if b.rooms and art else 1
+
+
 def main() -> None:
-    host = sys.argv[1] if len(sys.argv) > 1 else HOST
-    port = int(sys.argv[2]) if len(sys.argv) > 2 else PORT
-    locale.setlocale(locale.LC_ALL, "")
+    if mapa.FROZEN and not WIN:  # o ncurses do binário procura o terminfo onde foi compilado; esses são os do sistema
+        os.environ.setdefault("TERMINFO_DIRS", "/etc/terminfo:/lib/terminfo:/usr/share/terminfo:")
+    if sys.argv[1:] == ["--versao"]:
+        sys.exit(versao())
+    args = [a for a in sys.argv[1:] if a != "--leitor"]
+    host, port = args[0] if args else HOST, int(args[1]) if len(args) > 1 else PORT
+    if "--leitor" in sys.argv:
+        return leitor.Leitor(host, port).run()
+    utf8_locale()
     os.environ.setdefault("ESCDELAY", "25")
-
-    def start(scr) -> None:
-        curses.raw()
-        scr.nodelay(True)
-        App(scr, host, port).run()
-
     try:
-        curses.wrapper(start)
+        curses.wrapper(lambda scr: App(scr, host, port).run())
     finally:
-        os.write(1, MOUSE_OFF)  # devolve o terminal sem o modo de mouse, mesmo se o cliente cair
+        if not WIN:
+            os.write(1, MOUSE_OFF)  # devolve o terminal sem o modo de mouse, mesmo se o cliente cair
 
 
 if __name__ == "__main__":

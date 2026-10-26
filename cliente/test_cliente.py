@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import completar  # noqa: E402
 import conversa  # noqa: E402
 import conexao  # noqa: E402
+import leitor  # noqa: E402
 import logo  # noqa: E402
 import mapa  # noqa: E402
 import mochila  # noqa: E402
@@ -315,9 +316,64 @@ def test_keepalive_tcp():
     c = socket.create_connection(srv.getsockname())
     vigia.keepalive(c)
     assert c.getsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE) == 1
-    assert c.getsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE) == 60
+    idle = getattr(socket, "TCP_KEEPIDLE", getattr(socket, "TCP_KEEPALIVE", None))  # o macOS chama de KEEPALIVE
+    if idle is not None and sys.platform != "win32":  # o Windows aceita, mas nem sempre devolve no getsockopt
+        assert c.getsockopt(socket.IPPROTO_TCP, idle) == 60
     c.close()
     srv.close()
+
+
+def test_locale_inexistente_nao_derruba():
+    """LC_ALL apontando para um locale que a máquina não tem: o cliente cai num UTF-8 que exista em vez de quebrar."""
+    import os
+    import subprocess
+    if sys.platform == "win32":  # lá o locale vem do sistema e o PDCurses escreve em UTF-16 direto
+        return
+    code = "import locale, valinor; valinor.utf8_locale(); print(locale.nl_langinfo(locale.CODESET))"
+    env = {**os.environ, "LC_ALL": "xx_XX.UTF-8", "LANG": "xx_XX.UTF-8"}
+    out = subprocess.run([sys.executable, "-c", code], cwd=Path(__file__).parent, env=env, capture_output=True, text=True)
+    assert out.returncode == 0 and "utf" in out.stdout.lower(), out.stderr
+
+
+class Doca(painel.Painel):
+    panel, dock = True, "equip"
+
+
+def test_painel_no_terminal_estreito():
+    """Com 80 colunas o painel pedido cobre o texto (antes sumia sem aviso); com espaço fica ao lado."""
+    d = Doca()
+    assert d.docks(80) == [(0, 79, ("equip",))]
+    assert [names for _, _, names in d.docks(200)] == [("mapa",), ("equip", "who")]
+    assert d.docks(120)[0][2] == ("equip",) and d.docks(120)[0][0] > 80
+    d.panel = False
+    assert d.docks(80) == []
+
+
+def test_prompt_personalizado_nao_esconde_a_sala():
+    """No SMAUG o título vem na linha do prompt; com um prompt próprio o molde aprendido tira ele do título."""
+    real = "<84hp 100m 191mv> Estrada Scari\r\nMuito perto de Fosso Branco, se aqui fosse um morro toda a vila seria " \
+           "visível.\n\rSaídas: n w\r\n\r\n"
+    mine = "[Halb] 84/84hp 100/100m 191/191mv > "
+    text = real.replace("<84hp 100m 191mv> ", "[Halb] 80/84hp 99/100m 190/191mv > ") + mine
+    assert mapa.last_room(text)["title"] != "Estrada Scari"
+    fixed = valinor.shape(mine.strip()).sub(valinor.STD_PROMPT, text)
+    assert mapa.last_room(fixed)["title"] == "Estrada Scari"
+    assert valinor.shape("<-5hp 0m 3mv>").fullmatch("<84hp 100m 191mv> ")
+
+
+def test_vitais_de_prompt_personalizado():
+    """hp, m e mv em qualquer ordem, com máximo ou sem, e com outras coisas no meio."""
+    assert valinor.vitals("[Halb] 41/84hp 100/100m 30/110mv > ") == [(41, 84), (100, 100), (30, 110)]
+    assert valinor.vitals("\x1b[31mMv:190mv HP: 84hp\x1b[m (Mana 99m) Exp:1200 >") == [(84, None), (99, None), (190, None)]
+    assert valinor.vitals("<-5hp 0m 3mv> ") == [(-5, None), (0, None), (3, None)]
+    assert valinor.vitals("<3294hp 1650mn 1037mv 26.920.426XP O tarde>") == [(3294, None), (1650, None), (1037, None)]
+    assert valinor.vitals("[Halb] 84hp 191mv > ") is None  # sem mana: não inventa
+    assert valinor.wrap([("abc", 0)], 0) == [[("abc", 0)]]  # painel cobrindo o texto: sem laço infinito
+
+def test_leitor_texto_limpo():
+    """Modo leitor de tela: sem cores, \\r nem tabulação, que o leitor leria como lixo."""
+    assert leitor.clean("\x1b[1;33mSaídas:\x1b[0m n\tw\n\r") == "Saídas: n    w\n"
+
 
 if __name__ == "__main__":
     for name, fn in list(globals().items()):

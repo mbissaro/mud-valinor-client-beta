@@ -35,7 +35,7 @@ class Completer:
         self.args: Counter = Counter()
         self.recent: dict[str, None] = {}  # comandos inteiros, o mais recente por último
         try:
-            lines = transcript.read_text(errors="replace").splitlines()
+            lines = transcript.read_text(encoding="utf-8", errors="replace").splitlines()
         except OSError:
             lines = []
         asked = False

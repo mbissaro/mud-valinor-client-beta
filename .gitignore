@@ -14,3 +14,8 @@ db/valinor.json
 # editor
 *.swp
 __pycache__/
+
+# binários do PyInstaller (.github/workflows/binarios.yml)
+/build/
+/dist/
+/valinor.spec

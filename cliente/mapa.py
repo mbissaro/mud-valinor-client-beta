@@ -10,7 +10,9 @@ from collections import defaultdict, deque
 from pathlib import Path
 from typing import Callable
 
-MUD = Path(__file__).resolve().parent.parent
+FROZEN = getattr(sys, "frozen", False)  # binário do PyInstaller
+MUD = Path(sys.executable).parent if FROZEN else Path(__file__).resolve().parent.parent  # logs/ e .credenciais
+BASE = Path(getattr(sys, "_MEIPASS", MUD)) / "db" / "valinor.json"  # no binário a base vai dentro dele
 sys.path.insert(0, str(MUD / "db" / "tools"))
 from minerar import DIRS, parse_rooms, words  # noqa: E402
 
@@ -56,12 +58,12 @@ def speedwalk(dirs: list[str]) -> str:
 
 
 class Base:
-    def __init__(self, path: Path = MUD / "db" / "valinor.json") -> None:
+    def __init__(self, path: Path = BASE) -> None:
         self.path = path
         self.load()
 
     def load(self) -> None:
-        d = json.loads(self.path.read_text())
+        d = json.loads(self.path.read_text(encoding="utf-8"))
         self.data = d
         self.rooms = {r["id"]: r for r in d["room"]}
         self.regions = {r["id"]: r["name"] for r in d["region"]}

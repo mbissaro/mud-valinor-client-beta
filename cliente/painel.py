@@ -14,6 +14,7 @@ import textwrap
 import time
 
 import mapa
+from conexao import WIN
 
 MAP_STYLE = {"cur": "accent", "room": "text", "route": "route", "peek": "peek", "link": "dim", "far": "far",
              "new": "new"}
@@ -27,6 +28,21 @@ BAR = 8  # células da barrinha de hp/m/mv
 PANEL_MIN_COLS = 90
 DOCK_MIN, DOCK_MAX, TEXT_MIN = 36, 50, 80  # largura das colunas da direita e o mínimo que fica para o texto
 DOCKS = ("mapa", "equip", "who")
+
+
+def win_mouse() -> tuple[int, int, int, bool] | None:
+    """Evento do PDCurses no formato do SGR: (botão, x, y, apertou). 0 esquerdo, 2 direito, 64/65 roda, 35 movimento."""
+    try:
+        _, x, y, _, st = curses.getmouse()
+    except curses.error:
+        return None
+    for flag, b, press in (("REPORT_MOUSE_POSITION", 35, True), ("BUTTON1_PRESSED", 0, True), ("BUTTON1_CLICKED", 0, True),
+                           ("BUTTON1_DOUBLE_CLICKED", 0, True), ("BUTTON1_RELEASED", 0, False),
+                           ("BUTTON3_PRESSED", 2, True), ("BUTTON3_CLICKED", 2, True), ("BUTTON4_PRESSED", 64, True),
+                           ("BUTTON5_PRESSED", 65, True)):  # movimento antes: arrastar não vira clique
+        if st & getattr(curses, flag, 0):
+            return b, x, y, press
+    return None
 
 
 def bar(v: int, mx: int, n: int = BAR) -> tuple[str, str]:
@@ -50,24 +66,49 @@ class Painel:
 
     def set_mouse(self, on: bool) -> None:
         """1003 = o terminal manda também o movimento (para o hover); desligado, o terminal volta a selecionar texto.
-        Sem curses.mousemask de propósito: o ncurses 6.2 descarta o movimento sem botão apertado."""
-        if on and curses.tigetstr("kmous") != b"\x1b[<":  # sem isso o evento SGR chegaria como texto digitado
-            self.mouse_on = False
-            return self.say(f"mouse indisponível neste terminal (TERM={os.environ.get('TERM', '?')})", "dim")
+        Sem curses.mousemask de propósito: o ncurses 6.2 descarta o movimento sem botão apertado. No Windows não há
+        sequência de terminal: o PDCurses entrega o mouse pelo getmouse."""
         self.mouse_on = on
-        os.write(1, MOUSE_ON if on else MOUSE_OFF)
+        if WIN:
+            curses.mousemask((curses.ALL_MOUSE_EVENTS | curses.REPORT_MOUSE_POSITION) if on else 0)
+            curses.mouseinterval(0)  # aperta e solta separados; o duplo clique é contado aqui (DOUBLE_CLICK)
+        else:
+            os.write(1, MOUSE_ON if on else MOUSE_OFF)
+
+    def sgr_next(self) -> bool:
+        """Terminfo cujo kmous não é o do SGR (macOS, TERM=screen no tmux): o evento chega como ESC [ < b;x;yM digitado.
+        Depois de um ESC, olha se vem [<; se não, devolve as teclas para a fila e o ESC segue como Esc."""
+        got, end = [], time.time() + SGR_WAIT
+        for want in "[<":
+            ch = self.get_ch(end)
+            if ch is None:
+                break
+            got.append(ch)
+            if ch != want:
+                break
+        else:
+            return True
+        for ch in reversed(got):
+            curses.ungetch(ch) if isinstance(ch, int) else curses.unget_wch(ch)
+        return False
+
+    def get_ch(self, end: float) -> str | int | None:
+        """Próxima tecla da fila; se o resto do evento ainda não chegou (ssh, terminal lento), espera até end."""
+        while True:
+            try:
+                return self.scr.get_wch()
+            except curses.error:
+                left = end - time.time()
+                if left <= 0 or not select.select([sys.stdin], [], [], left)[0]:
+                    return None
 
     def read_mouse(self) -> tuple[int, int, int, bool] | None:
         """Depois do KEY_MOUSE (o ESC [ < do terminfo), o resto do evento SGR fica na fila: b;x;y e M (aperta) ou m."""
+        if WIN:
+            return win_mouse()
         s, end = "", time.time() + SGR_WAIT
         while len(s) < 16 and not s.endswith(("M", "m")):
-            try:
-                ch = self.scr.get_wch()
-            except curses.error:  # ainda não chegou: espera um pouco em vez de deixar o resto virar tecla
-                left = end - time.time()
-                if left <= 0 or not select.select([sys.stdin], [], [], left)[0]:
-                    break
-                continue
+            ch = self.get_ch(end)
             if not isinstance(ch, str):
                 break
             s += ch
@@ -205,8 +246,10 @@ class Painel:
     def docks(self, W: int) -> list[tuple[int, int, tuple]]:
         """Colunas da direita: (x do separador, largura, painéis de cima para baixo). Com espaço, o mapa numa coluna e
         o equipamento em cima do who na outra; sem, uma coluna só com abas (F2 ou clique troca)."""
-        if not self.panel or W < PANEL_MIN_COLS:
+        if not self.panel:
             return []
+        if W < PANEL_MIN_COLS:  # estreito: o painel cobre o texto até o Esc
+            return [(0, W - 1, (self.dock,))]
         dw = min(DOCK_MAX, (W - TEXT_MIN - 2) // 2)
         if dw >= DOCK_MIN:
             return [(W - 2 * dw - 2, dw, ("mapa",)), (W - dw - 1, dw, ("equip", "who"))]
@@ -226,6 +269,8 @@ class Painel:
                     self.spots[(0, cx, cx + len(label))] = ("dock", name)
                     cx = self.put(0, cx, label, (self.th["accent"] | curses.A_BOLD | curses.A_REVERSE) if on
                                   else self.th["dim"], x + w - 2) + 1
+                if sep == 0:
+                    self.put(0, cx + 1, "Esc volta ao texto", self.th["far"], x + w - 2)
                 top, rows = 2, bottom - 2
             if names == ("equip", "who"):
                 wh = min(rows // 2, max(5, len(self.who) + 2))

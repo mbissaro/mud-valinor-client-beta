@@ -2,15 +2,23 @@
 from __future__ import annotations
 
 import os
+import re
+import select
 import subprocess
+import sys
+import time
 from pathlib import Path
 
 import mapa
 
 CRED = Path(os.environ.get("VALINOR_CRED", mapa.MUD / ".credenciais"))  # Personagem<X>: nome / Senha<X>: senha
 LOGS = Path(os.environ.get("VALINOR_LOGS", mapa.MUD / "logs"))  # VALINOR_LOGS=<pasta> nos testes
+WIN = sys.platform == "win32"
+KEY_POLL = 0.03  # no Windows o teclado não entra no select: de quanto em quanto tempo o laço olha as teclas
 LABELS = {"": "humano guerreiro · Bri", "Anao": "anão clérigo · Esgaroth", "Hobbit": "hobbit ladino · Bri"}
 IAC, DONT, DO, WONT, WILL, SB, SE, ECHO = 255, 254, 253, 252, 251, 250, 240, 1
+ANSI = re.compile(r"\x1b\[([0-9;]*)([A-Za-z])")
+ASKS_PW = re.compile(r"senha[^\n]*:\s*$", re.I)  # prompt pedindo senha, ainda sem quebra de linha
 
 
 def telnet(buf: bytes) -> tuple[bytes, bool | None, bytes]:
@@ -44,9 +52,20 @@ def telnet(buf: bytes) -> tuple[bytes, bool | None, bytes]:
     return bytes(out), echo, buf[i:]
 
 
+def wait(socks: list, timeout: float) -> list:
+    """Espera tecla ou dado do servidor e devolve os sockets com dado. No Windows o select só aceita socket: espera
+    no máximo KEY_POLL e quem chama lê as teclas sem bloquear (nodelay)."""
+    if not WIN:
+        return [f for f in select.select([sys.stdin, *socks], [], [], timeout)[0] if f is not sys.stdin]
+    if socks:
+        return select.select(socks, [], [], min(timeout, KEY_POLL))[0]
+    time.sleep(min(timeout, KEY_POLL))
+    return []
+
+
 def _rows() -> list[tuple[str, str]]:
-    try:
-        return [tuple(l.split(": ", 1)) for l in CRED.read_text().splitlines() if ": " in l]
+    try:  # utf-8-sig: o Bloco de Notas do Windows pode gravar com BOM
+        return [tuple(l.split(": ", 1)) for l in CRED.read_text(encoding="utf-8-sig").splitlines() if ": " in l]
     except OSError:
         return []
 
@@ -74,7 +93,7 @@ def other_connections() -> list[str]:
     try:
         if subprocess.run(["pgrep", "-f", "[s]ocat - TCP:mud.valinor"], capture_output=True).stdout.strip():
             out.append("mud.sh")
-        pids = subprocess.run(["pgrep", "-f", r"^(\S*/)?python[0-9.]* \S*valinor\.py"], capture_output=True,
+        pids = subprocess.run(["pgrep", "-f", r"^([^ ]*/)?(python[0-9.]* [^ ]*valinor\.py|valinor(-[a-z0-9_]+)*( |$))"], capture_output=True,
                               text=True).stdout.split()
         if {int(p) for p in pids} - {os.getpid(), os.getppid()}:
             out.append("outro cliente")

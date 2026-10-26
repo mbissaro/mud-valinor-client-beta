@@ -5,15 +5,13 @@ from __future__ import annotations
 
 import curses
 import math
-import select
-import sys
 import time
 from functools import lru_cache
 from pathlib import Path
 
 import mapa
 import paleta as P
-from conexao import LOGS
+from conexao import LOGS, other_connections, secret, wait
 
 HERE = Path(__file__).parent
 TXT = HERE / "logo.txt"
@@ -148,8 +146,9 @@ def render() -> list[str]:
 
 
 class Abertura:
-    """Parte do App da abertura (logo e caixa de boas-vindas): usa scr, th, put, push, base, host, port, rich, logo,
-    logo_h, logo_w, t0 e glowp dele."""
+    """Parte do App da abertura (logo, caixa de boas-vindas, seletor de personagem e login automático): usa scr, th, put,
+    push, say, send, connect, key, base, host, port, rich, logo, logo_h, logo_w, t0, glowp, chars, pick, partial,
+    lines e ingame dele."""
 
     def glow(self, rgb: tuple) -> int:
         n = xterm(rgb)
@@ -183,8 +182,14 @@ class Abertura:
             self.draw_logo((H - self.logo_h) // 2, (W - self.logo_w) // 2)
             self.scr.refresh()
             left = INTRO - (time.time() - self.t0)
-            if left <= 0 or select.select([sys.stdin], [], [], min(left, FRAME))[0]:
+            if left <= 0:
                 break
+            wait([], min(left, FRAME))
+            try:
+                self.scr.get_wch()  # tecla: pula a abertura
+                break
+            except curses.error:
+                pass
         try:
             while True:
                 self.scr.get_wch()  # descarta a tecla que pulou a abertura
@@ -198,7 +203,7 @@ class Abertura:
             [(f"  {self.host}:{self.port}", d)], \
             [(f"  base: {len(self.base.rooms)} salas · {len(self.base.regions)} regiões · {len(self.base.data['object'])} objetos", d)], \
             [("  logs em " + (str(LOGS.relative_to(mapa.MUD)) if mapa.MUD in LOGS.parents else "…" + str(LOGS)[-40:]), d)], \
-            [("  /ajuda para os comandos do cliente", d)]
+            [("  /ajuda para os comandos do cliente", d)], [("  leitor de tela: feche e rode valinor --leitor", d)]
         w = 2 + max(len("".join(t for t, _ in r)) for r in rows)
         self.push([("╭" + "─" * w + "╮", a)])
         for r in rows:
@@ -206,6 +211,82 @@ class Abertura:
             self.push([("│ ", a)] + list(r) + [(" " * (w - n - 1) + "│", a)])
         self.push([("╰" + "─" * w + "╯", a)])
         self.push([])
+
+    # ------------------------------------------------------------------ seletor de personagem e login
+    def autologin(self) -> None:
+        """Manda nome, senha e o Enter da tela de novidades uma vez só, quando o servidor pede cada um."""
+        lg = self.login
+        if not lg:
+            return
+        tail = "".join(t for t, _ in self.partial)
+        recent = " ".join("".join(t for t, _ in l) for l in list(self.lines)[-3:])
+        if lg["step"] == 0 and tail.rstrip().endswith("Personagem:"):
+            lg["step"] = 1
+            self.send(lg["name"])
+        elif lg["step"] == 1 and "Senha" in tail:
+            pw = secret("Senha" + lg["suf"])
+            if not pw:
+                self.login = None
+                return self.say("senha não encontrada no .credenciais: digite na mão", "bad")
+            lg["step"] = 2
+            self.send(pw, hidden=True)
+        elif lg["step"] == 2 and "Tecle ENTER" in recent + tail:
+            self.login = None
+            self.send("")
+        if self.ingame or "incorreta" in (recent + tail).lower():
+            self.login = None
+
+    def options(self) -> list[tuple]:
+        return self.chars + [("Outro", "digitar nome e senha na mão (ou NOVO)", None)]
+
+    def open_picker(self) -> None:
+        self.picking, self.confirm, self.login, self.others = True, False, None, other_connections()
+        self.pick = min(self.pick, len(self.options()) - 1)
+        self.dirty = True
+
+    def choose(self) -> None:
+        if self.others and not self.confirm:
+            self.confirm = True
+            return
+        name, _, suf = self.options()[self.pick]
+        self.picking, self.confirm = False, False
+        self.login = {"name": name, "suf": suf, "step": 0} if suf is not None else None
+        self.char = name if suf is not None else None
+        self.say(f"entrando com {name}" if suf is not None else "login manual: digite o nome e a senha", "dim")
+        self.connect()
+
+    def key_pick(self, ch) -> None:
+        n = len(self.options())
+        if ch in (curses.KEY_UP, curses.KEY_DOWN):
+            self.pick, self.confirm = (self.pick + (1 if ch == curses.KEY_DOWN else -1)) % n, False
+        elif isinstance(ch, str) and ch.isdigit() and 1 <= int(ch) <= n:
+            self.pick = int(ch) - 1
+            self.choose()
+        elif ch in ("\n", "\r", curses.KEY_ENTER):
+            self.choose()
+        elif ch in ("\x1b", "\x03"):
+            self.running = False
+        elif ch in (curses.KEY_PPAGE, curses.KEY_NPAGE, curses.KEY_RESIZE):
+            self.picking = False
+            self.key(ch)
+            self.picking = True
+
+    def draw_picker(self, y: int, W: int, opts: list) -> None:
+        self.put(y, 0, "─" * W, self.th["far"])
+        self.put(y + 1, 2, "Escolha o personagem", self.th["accent"] | curses.A_BOLD)
+        for i, (name, label, _) in enumerate(opts):
+            on = i == self.pick
+            x = self.put(y + 2 + i, 2, ("❯ " if on else "  ") + f"{i + 1}. {name:<12}",
+                         self.th["accent"] | curses.A_BOLD if on else self.th["text"])
+            self.put(y + 2 + i, x, label, self.th["dim"])
+        n = y + 2 + len(opts)
+        if self.others:
+            self.put(n, 2, f"⚠ já há outra conexão aberta ({', '.join(self.others)}): dois personagens online ao mesmo"
+                           " tempo viola a POLICY 4", self.th["bad"])
+            n += 1
+        hint = "Enter de novo para conectar mesmo assim" if self.confirm else \
+            f"↑↓ escolhe · Enter conecta · 1-{len(opts)} atalho · Esc sai"
+        self.put(n, 2, hint, self.th["accent" if self.confirm else "dim"])
 
 
 if __name__ == "__main__":

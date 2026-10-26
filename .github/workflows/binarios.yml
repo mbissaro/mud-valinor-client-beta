@@ -1,0 +1,69 @@
+# Binários do cliente (PyInstaller, um arquivo só por sistema). Roda à mão (Actions > binarios > Run workflow) ou
+# numa tag v*, que também publica os quatro arquivos numa Release.
+name: binarios
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            container: python:3.12-bullseye  # glibc 2.31: o binário roda em Debian 11+, Ubuntu 20.04+, RHEL 9
+            asset: valinor-linux-x86_64
+          - os: windows-latest
+            asset: valinor-windows-x86_64.exe
+            extra: windows-curses
+          - os: macos-latest
+            asset: valinor-macos-arm64
+          - os: macos-15-intel
+            asset: valinor-macos-x86_64
+    runs-on: ${{ matrix.os }}
+    container: ${{ matrix.container }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        if: ${{ !matrix.container }}
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pyyaml "pyinstaller>=6" ${{ matrix.extra }}
+      - run: python db/tools/build.py export-json
+      - run: python cliente/test_cliente.py
+      - run: >
+          pyinstaller --onefile --name valinor --paths db/tools
+          --add-data "db/valinor.json:db" --add-data "cliente/logo.txt:." cliente/valinor.py
+      - run: |
+          exe=dist/valinor; [ -f "$exe.exe" ] && exe="$exe.exe"
+          "./$exe" --versao
+          mkdir out && mv "$exe" "out/${{ matrix.asset }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: out/${{ matrix.asset }}
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "$GITHUB_REF_NAME" out/* --repo "$GITHUB_REPOSITORY" --title "Valinor $GITHUB_REF_NAME"
+          --notes "Cliente de terminal do Valinor em um arquivo só. Veja Download no README."

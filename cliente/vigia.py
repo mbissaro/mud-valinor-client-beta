@@ -23,9 +23,12 @@ def keepalive(sock: socket.socket) -> None:
     """Sonda TCP vazia depois de 1 min sem tráfego: roteador e NAT não derrubam a conexão parada, e uma queda de verdade
     aparece em ~2 min em vez de ficar muda. Fica abaixo do telnet: o jogo não vê comando nenhum."""
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
-    for opt, v in (("TCP_KEEPIDLE", 60), ("TCP_KEEPINTVL", 20), ("TCP_KEEPCNT", 4)):
-        if hasattr(socket, opt):
-            sock.setsockopt(socket.IPPROTO_TCP, getattr(socket, opt), v)
+    for opt, v in (("TCP_KEEPIDLE", 60), ("TCP_KEEPALIVE", 60), ("TCP_KEEPINTVL", 20), ("TCP_KEEPCNT", 4)):
+        if hasattr(socket, opt):  # TCP_KEEPALIVE é o KEEPIDLE do macOS
+            try:
+                sock.setsockopt(socket.IPPROTO_TCP, getattr(socket, opt), v)
+            except OSError:  # Windows antigo: fica só o SO_KEEPALIVE, com o tempo padrão do sistema
+                pass
 
 
 def notify(text: str) -> None:
