@@ -182,10 +182,8 @@ class Painel:
                    ("   /andar ou duplo clique vai até lá", self.th["dim"])])
 
     def closed(self, rid: str, d: str) -> bool:
-        """Porta fechada nessa saída: na sala atual vale o que o servidor mostrou agora, nas outras, a base."""
-        if rid == self.room and self.live:
-            return f"!{d}" in next(iter(self.live["exits"]), "").split()
-        return f"!{d}" in self.base.rooms[rid].get("exits", [])
+        """Porta fechada: na sala atual vale o que o servidor mostrou agora, nas outras, a base."""
+        return self.base.closed(rid, d, self.live if rid == self.room else None)
 
     def door_ahead(self, cmd: str) -> None:
         """Você digitou uma direção que o servidor acabou de mostrar fechada (o ! das Saídas): o open vai antes, no
@@ -195,19 +193,12 @@ class Painel:
             self.send(f"open {d}")
 
     def cmd_andar(self) -> None:
-        """Speedwalk que você dispara: manda os passos da rota de uma vez. Porta fechada no caminho: abre, passa e
-        para do outro lado, porque se ela estiver trancada o passo falha e o resto sairia da sala errada."""
+        """Speedwalk que você dispara: manda os passos da rota de uma vez, parando depois da porta fechada."""
         if not self.sock or not self.ingame:
             return self.say("entre no jogo antes de andar", "bad")
         if not self.route:
             return self.say("sem rota: /rota <sala> ou clique numa sala do mapa", "dim")
-        walk, src, door = [], self.room, None
-        for d, dest in self.route[:MAX_WALK]:
-            if self.closed(src, d):
-                walk, door = walk + [f"open {d}", d], f"porta {d} de {self.base.rooms[src]['title']}"
-                break
-            walk.append(d)
-            src = dest
+        walk, door = self.base.walk(self.room, self.route, self.live, MAX_WALK)
         for cmd in walk:
             self.send(cmd)
         self.moved = None  # vários passos de uma vez: a sala é achada pelo texto, não pela última direção

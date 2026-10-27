@@ -19,6 +19,20 @@ LABELS = {"": "humano guerreiro · Bri", "Anao": "anão clérigo · Esgaroth", "
 IAC, DONT, DO, WONT, WILL, SB, SE, ECHO = 255, 254, 253, 252, 251, 250, 240, 1
 ANSI = re.compile(r"\x1b\[([0-9;]*)([A-Za-z])")
 ASKS_PW = re.compile(r"senha[^\n]*:\s*$", re.I)  # prompt pedindo senha, ainda sem quebra de linha
+STD_PROMPT = "<0hp 0m 0mv> "  # o prompt personalizado vira este antes do parser de salas
+VITALS = [re.compile(rf"(-?\d+)(?:/(\d+))?\s*{k}\b", re.I) for k in ("hp", "m(?:n|a|ana)?", "mv")]
+
+
+def vitals(prompt: str) -> list[tuple[int, int | None]] | None:
+    """hp, m e mv de um prompt personalizado, em qualquer ordem e com outras coisas no meio: (atual, máximo ou None)."""
+    got = [r.search(prompt) for r in VITALS]
+    return [(int(m[1]), int(m[2]) if m[2] else None) for m in got] if all(got) else None
+
+
+def shape(prompt: str) -> re.Pattern:
+    """Molde de um prompt personalizado: os números mudam, o resto fica igual."""
+    parts = re.split(r"(-?\d+)", prompt)
+    return re.compile("".join(r"-?\d+" if p.lstrip("-").isdigit() else re.escape(p) for p in parts) + " ?")
 
 
 def telnet(buf: bytes) -> tuple[bytes, bool | None, bytes]:

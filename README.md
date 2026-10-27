@@ -23,7 +23,9 @@ Feito em Python puro com `curses`. A única dependência é o PyYAML, usado para
 - **Barras de hp, mana e movimento** lidas do prompt, aviso antes do Vazio e keepalive TCP.
 - **Cores** tiradas de uma paleta de pôr do sol (`FC-pallete.png`), em 256 cores, com volta ao tema básico em
   terminais de 8/16 cores.
-- **Modo leitor de tela** (`--leitor`): o jogo em texto corrido, sem painéis nem símbolos, para NVDA, Orca e VoiceOver.
+- **Modo leitor de tela**: liga sozinho com NVDA, JAWS, Narrador, Orca, Fenrir ou VoiceOver. O jogo vem em texto
+  corrido, sem painéis nem símbolos. O prompt só é lido quando muda. Tell e chat tocam um sino. Mapa e rotas saem
+  por extenso.
 - **Sem automação**: o cliente só envia o que você digita ou pede (veja [Regras do Valinor](#regras-do-valinor-policy-4)).
 
 ## Instalação
@@ -111,13 +113,38 @@ texto.
 
 ### Leitor de tela
 
-`valinor --leitor` (ou `python3 cliente/valinor.py --leitor`) troca a tela por texto corrido, como num telnet. O texto
-do jogo sai na ordem em que chega, sem cores, molduras, barras ou símbolos, e o cursor fica sempre no fim. Cada linha
-digitada vai para o jogo, e as setas trazem os comandos anteriores no Linux e no macOS.
+O cliente entra sozinho no modo leitor de tela quando acha um leitor de tela ligado:
 
-O seletor vira uma lista numerada: digite o número e Enter. O login automático, os logs, o keepalive e o aviso antes do
-Vazio continuam iguais. Quando o jogo pede a senha, o que você digita não aparece na tela. Ctrl+D fecha o cliente; saia
-do jogo antes com `quit`. Mapa, painéis e autocomplete existem só na tela normal.
+- NVDA, JAWS ou Narrador no Windows;
+- Orca, Fenrir, TDSR ou Speakup no Linux;
+- VoiceOver no macOS.
+
+Também dá para forçar: `valinor --leitor` (ou `python3 cliente/valinor.py --leitor`) liga o modo, e `--visual` volta
+para a tela com painéis.
+
+O jogo sai em texto corrido, como num telnet: na ordem em que chega, sem cores, molduras, barras ou símbolos. O cursor
+fica sempre no fim. Cada linha digitada vai para o jogo. No Linux e no macOS, as setas trazem os comandos anteriores.
+
+O que muda para quem ouve:
+
+- **Prompt calado quando não muda.** Ele é lido quando a vida, a mana ou o movimento mudam. `/status` lê o prompt na
+  hora, e `/prompt` faz o cliente ler sempre.
+- **Uma linha em branco no máximo** entre as respostas.
+- **Sino** quando alguém manda tell, chat ou sussurro. `/som` desliga.
+- **Reler sem caçar com o cursor.** `/rever 5` relê as 5 últimas linhas do jogo, e `/conversas` relê as últimas
+  conversas.
+- **Mapa por extenso.** `/sala` lê a sala atual pela base: região, descrição, saídas com o destino e porta fechada.
+- **Rota por extenso.** `/rota taverna` diz o caminho assim: "rota até Taverna Rama Verde, 2 passos: sul, sudeste".
+  `/andar` anda até lá e avisa quando você chega.
+- **Busca.** `/busca` procura na base.
+- **Portas.** Como na tela normal, uma direção com porta fechada manda o `open` antes.
+- **Ajuda.** `/ajuda` lista os comandos.
+
+No jogo, `config +aural` faz o Valinor trocar as próprias tabelas e símbolos (o who, por exemplo) por frases.
+
+O seletor de personagem vira uma lista numerada: digite o número e Enter. O login automático, os logs, o keepalive e o
+aviso antes do Vazio continuam iguais; o aviso também toca o sino. Quando o jogo pede a senha, o que você digita não
+aparece na tela. Ctrl+D fecha o cliente; saia do jogo antes com `quit`.
 
 ## Mapa e rotas
 

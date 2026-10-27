@@ -375,6 +375,34 @@ def test_leitor_texto_limpo():
     assert leitor.clean("\x1b[1;33mSaídas:\x1b[0m n\tw\n\r") == "Saídas: n    w\n"
 
 
+
+def test_leitor_cala_prompt_repetido_e_acha_a_sala():
+    """Leitor de tela: o prompt igual não é relido, a sala vem da base, a rota sai por extenso e o tell toca o sino."""
+    import contextlib
+    import io
+    import tempfile
+    leitor.LOGS = Path(tempfile.mkdtemp())
+    lt, out, sent = leitor.Leitor("localhost", 1), io.StringIO(), []
+    lt.sock, lt.send = True, lambda cmd, hidden=False: sent.append(cmd)
+    with contextlib.redirect_stdout(out):
+        lt.take("<84hp 100m 161mv> ")
+        lt.take(SCARI.replace("<84hp 100m 161mv> ", "", 1))  # a resposta do look, que vem depois do prompt
+        lt.take("\n\r(OOC) Fulano disse telepaticamente 'oi'\r\n\r\n<80hp 100m 161mv> ")
+        lt.slash("/rot taverna rama verde")
+        lt.slash("/andar")
+    text = out.getvalue()
+    assert text.count("<84hp 100m 161mv>") == 1 and text.count("<80hp 100m 161mv>") == 1 and "\n\n\n" not in text
+    assert lt.room == "room:fosso-branco.estrada-scari-5" and "Estrada Scari" in lt.lines
+    assert "\a" in text and lt.talk[-1].startswith("(OOC) Fulano") and lt.prompt == "<80hp 100m 161mv>"
+    assert "7 passos: sudoeste, sul, sudoeste, sul, oeste, sul, sudeste." in text
+    assert sent == ["sw", "s", "sw", "s", "w", "s", "open se", "se"]  # a taverna tem porta: abre e entra
+    assert leitor.spoken(["n", "n", "e"]) == "2 norte, leste"
+    lt.live, lt.last_sent = {"exits": ["e u !n"]}, ""
+    lt.typed("norte")
+    assert sent[-2:] == ["open n", "norte"]
+    assert leitor.screen_reader() in (True, False)  # não quebra em nenhum sistema
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

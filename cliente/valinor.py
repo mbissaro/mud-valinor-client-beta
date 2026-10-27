@@ -25,7 +25,7 @@ import logo
 import mapa
 import paleta as P
 import leitor
-from conexao import ANSI, ASKS_PW, LOGS, WIN, load_chars, secrets, telnet, wait
+from conexao import ANSI, ASKS_PW, LOGS, STD_PROMPT, WIN, load_chars, secrets, shape, telnet, vitals, wait
 from conversa import Conversa, who_scan
 from logo import IDLE_FRAME, Abertura
 from mochila import EQ_HEAD, INV_HEAD, Mochila
@@ -33,9 +33,8 @@ from painel import DOCKS, MAX_WALK, MOUSE_OFF, PANEL_MIN_COLS, Painel
 from vigia import Vigia, keepalive
 
 HOST, PORT = "mud.valinor.com.br", 4000
-VERSAO = "0.1.1"
+VERSAO = "0.1.2"
 QUIET = 0.4  # segundos de silêncio do servidor que fecham uma resposta quando o prompt não é o padrão
-STD_PROMPT = "<0hp 0m 0mv> "  # o prompt personalizado vira este antes do parser de salas
 SGR_IN = r"(?:\x1b\[[0-9;]*m)*"  # com as cores ligadas o servidor colore cada número do prompt
 PROMPT = re.compile(rf"<{SGR_IN}(-?\d+)hp {SGR_IN}(-?\d+)m {SGR_IN}(-?\d+)mv{SGR_IN}> ?")
 MAXES = re.compile(r"(Vida|Mana|Movimento):\s*-?\d+\s*(?:/|de)\s*(\d+)")  # do score, com e sem Modo Aural
@@ -63,20 +62,6 @@ THEME = {  # cor do FC-pallete.png (paleta.py) em 256 cores, cor em 8 cores
     "bad": (P.CRIMSON, curses.COLOR_RED), "new": (P.SUN, curses.COLOR_YELLOW), "route": (P.HOUSE, curses.COLOR_CYAN),
     "far": (P.LILAC, curses.COLOR_WHITE), "text": (P.MIST, curses.COLOR_WHITE), "peek": (P.PINK, curses.COLOR_MAGENTA),
 }
-
-VITALS = [re.compile(rf"(-?\d+)(?:/(\d+))?\s*{k}\b", re.I) for k in ("hp", "m(?:n|a|ana)?", "mv")]
-
-
-def vitals(prompt: str) -> list[tuple[int, int | None]] | None:
-    """hp, m e mv de um prompt personalizado, em qualquer ordem e com outras coisas no meio: (atual, máximo ou None)."""
-    got = [r.search(prompt) for r in VITALS]
-    return [(int(m[1]), int(m[2]) if m[2] else None) for m in got] if all(got) else None
-
-
-def shape(prompt: str) -> re.Pattern:
-    """Molde de um prompt personalizado: os números mudam, o resto fica igual."""
-    parts = re.split(r"(-?\d+)", prompt)
-    return re.compile("".join(r"-?\d+" if p.lstrip("-").isdigit() else re.escape(p) for p in parts) + " ?")
 
 
 def cut(line: list, a: int, b: int) -> list:
@@ -780,9 +765,9 @@ def main() -> None:
         os.environ.setdefault("TERMINFO_DIRS", "/etc/terminfo:/lib/terminfo:/usr/share/terminfo:")
     if sys.argv[1:] == ["--versao"]:
         sys.exit(versao())
-    args = [a for a in sys.argv[1:] if a != "--leitor"]
+    args = [a for a in sys.argv[1:] if a not in ("--leitor", "--visual")]
     host, port = args[0] if args else HOST, int(args[1]) if len(args) > 1 else PORT
-    if "--leitor" in sys.argv:
+    if "--leitor" in sys.argv or ("--visual" not in sys.argv and leitor.screen_reader()):
         return leitor.Leitor(host, port).run()
     utf8_locale()
     os.environ.setdefault("ESCDELAY", "25")

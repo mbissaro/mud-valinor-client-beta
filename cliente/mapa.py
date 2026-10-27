@@ -117,6 +117,24 @@ class Base:
                     q.append(b)
         return None
 
+    def closed(self, rid: str, d: str, live: dict | None = None) -> bool:
+        """Porta fechada nessa saída. live é a sala atual como o servidor acabou de mostrar: vale mais que a base."""
+        if live:
+            return f"!{d}" in next(iter(live["exits"]), "").split()
+        return f"!{d}" in self.rooms[rid].get("exits", [])
+
+    def walk(self, here: str, route: list[Step], live: dict | None, limit: int) -> tuple[list[str], str | None]:
+        """Comandos do speedwalk (até limit passos) e a porta onde ele para: porta fechada no caminho é aberta,
+        atravessada, e o resto fica para depois, porque se ela estiver trancada o passo falha e o resto sairia da sala
+        errada."""
+        cmds, src = [], here
+        for d, dest in route[:limit]:
+            if self.closed(src, d, live if src == here else None):
+                return cmds + [f"open {d}", d], f"porta {d} de {self.rooms[src]['title']}"
+            cmds.append(d)
+            src = dest
+        return cmds, None
+
     def nearest(self, src: str | None, query: str) -> tuple[str, list[Step]] | None:
         """Sala mais próxima cujo título, região ou id casa com a busca; sem posição, a primeira que casar."""
         ok = lambda r: matches(query, self.rooms[r]["title"], self.region(r), r)  # noqa: E731
