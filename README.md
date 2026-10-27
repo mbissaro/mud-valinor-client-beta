@@ -130,7 +130,10 @@ O que muda para quem ouve:
 - **Prompt calado quando não muda.** Ele é lido quando a vida, a mana ou o movimento mudam. `/status` lê o prompt na
   hora, e `/prompt` faz o cliente ler sempre.
 - **Uma linha em branco no máximo** entre as respostas.
-- **Sino** quando alguém manda tell, chat ou sussurro. `/som` desliga.
+- **Sons do Fantasy Chess** para o que acontece antes da fala: seu golpe, golpe que você leva, esquiva, bloqueio,
+  morte do bicho (lobo tem uivo próprio), nível novo, item pego ou vestido, porta, comida, bebida, tell, chat, vida
+  abaixo de 30% e aviso do Vazio. Tocam pelo sistema (Windows, `afplay` no macOS, `paplay`/`pw-play`/`aplay` no
+  Linux); sem nenhum, tell, chat e aviso tocam o sino do terminal. `/som` liga e desliga.
 - **Reler sem caçar com o cursor.** `/rever 5` relê as 5 últimas linhas do jogo, e `/conversas` relê as últimas
   conversas.
 - **Mapa por extenso.** `/sala` lê a sala atual pela base: região, descrição, saídas com o destino e porta fechada.
@@ -143,7 +146,7 @@ O que muda para quem ouve:
 No jogo, `config +aural` faz o Valinor trocar as próprias tabelas e símbolos (o who, por exemplo) por frases.
 
 O seletor de personagem vira uma lista numerada: digite o número e Enter. O login automático, os logs, o keepalive e o
-aviso antes do Vazio continuam iguais; o aviso também toca o sino. Quando o jogo pede a senha, o que você digita não
+aviso antes do Vazio continuam iguais; o aviso também toca um som. Quando o jogo pede a senha, o que você digita não
 aparece na tela. Ctrl+D fecha o cliente; saia do jogo antes com `quit`.
 
 ## Mapa e rotas

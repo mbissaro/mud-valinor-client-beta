@@ -382,8 +382,9 @@ def test_leitor_cala_prompt_repetido_e_acha_a_sala():
     import io
     import tempfile
     leitor.LOGS = Path(tempfile.mkdtemp())
-    lt, out, sent = leitor.Leitor("localhost", 1), io.StringIO(), []
+    lt, out, sent, played = leitor.Leitor("localhost", 1), io.StringIO(), [], []
     lt.sock, lt.send = True, lambda cmd, hidden=False: sent.append(cmd)
+    lt.som.play = lambda name: played.append(name) or False  # sem tocador: a conversa toca o sino
     with contextlib.redirect_stdout(out):
         lt.take("<84hp 100m 161mv> ")
         lt.take(SCARI.replace("<84hp 100m 161mv> ", "", 1))  # a resposta do look, que vem depois do prompt
@@ -401,6 +402,34 @@ def test_leitor_cala_prompt_repetido_e_acha_a_sala():
     lt.typed("norte")
     assert sent[-2:] == ["open n", "norte"]
     assert leitor.screen_reader() in (True, False)  # não quebra em nenhum sistema
+
+
+def test_sons_do_fantasy_chess():
+    """Cada evento do jogo com o seu som, os mais recentes primeiro, e todo som da tabela existe em sons/."""
+    import contextlib
+    import io
+    import tempfile
+    import sons
+    assert sons.cue("Você MASSACRA um javali gordão com seu golpe fulminante!") == "sword-stroke"
+    assert sons.cue("Um javali gordão DESTRUIU você com seu golpe esmagador!") in ("punch4-exagered", "punch5-exagered")
+    assert sons.cue("O golpe de um javali gordão acertou você levemente.") in ("punch1", "punch3", "punch2-slow")
+    assert sons.cue("Você se esquivou do ataque de um coelho veloz.") == "miss1"
+    assert sons.cue("Um lobo sorrateiro está MORTO!!") == "wolf2"
+    assert sons.cue("PARABÉNS! Você atingiu seu 3º nível de experiência!!") == "levelup1"
+    assert sons.cue("Você abriu a porta.") == "container-open" and sons.cue("Você pegou uma lamparina.") == "item-take"
+    assert sons.cue("Você está com fome.") is None
+    names = {n for _, ns in sons.CUES for n in ns} | {sons.TELL, sons.CHAT, sons.LOWHP, sons.IDLE}
+    assert all((sons.DIR / f"{n}.wav").exists() for n in names)
+    leitor.LOGS = Path(tempfile.mkdtemp())
+    lt, played = leitor.Leitor("localhost", 1), []
+    lt.som.play, lt.som.max = lambda name: played.append(name) or True, 3
+    with contextlib.redirect_stdout(io.StringIO()) as out:
+        lt.take("<84hp 100m 161mv> ")
+        lt.take("\n\rVocê MASSACRA um javali gordão com seu golpe fulminante!\r\nUm javali gordão DESTRUIU você com seu "
+                "golpe esmagador!\r\nUm javali gordão está MORTO!!\r\n\r\n<20hp 100m 161mv> ")
+        lt.take("\n\r(OOC) Fulano disse 'oi'\r\n\r\n<20hp 100m 161mv> ")
+    assert played[0] == "lowhp" and played[1].startswith("bandit-death") and len(played) == 4 and played[3] == "spin-full"
+    assert "\a" not in out.getvalue()  # tocou: sem sino
 
 
 if __name__ == "__main__":

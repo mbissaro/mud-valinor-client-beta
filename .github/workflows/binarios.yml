@@ -45,7 +45,7 @@ jobs:
       - run: python cliente/test_cliente.py
       - run: >
           pyinstaller --onefile --name valinor --paths db/tools
-          --add-data "db/valinor.json:db" --add-data "cliente/logo.txt:." cliente/valinor.py
+          --add-data "db/valinor.json:db" --add-data "cliente/logo.txt:." --add-data "cliente/sons:sons" cliente/valinor.py
       - run: |
           exe=dist/valinor; [ -f "$exe.exe" ] && exe="$exe.exe"
           "./$exe" --versao

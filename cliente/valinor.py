@@ -33,7 +33,7 @@ from painel import DOCKS, MAX_WALK, MOUSE_OFF, PANEL_MIN_COLS, Painel
 from vigia import Vigia, keepalive
 
 HOST, PORT = "mud.valinor.com.br", 4000
-VERSAO = "0.1.2"
+VERSAO = "0.1.3"
 QUIET = 0.4  # segundos de silêncio do servidor que fecham uma resposta quando o prompt não é o padrão
 SGR_IN = r"(?:\x1b\[[0-9;]*m)*"  # com as cores ligadas o servidor colore cada número do prompt
 PROMPT = re.compile(rf"<{SGR_IN}(-?\d+)hp {SGR_IN}(-?\d+)m {SGR_IN}(-?\d+)mv{SGR_IN}> ?")

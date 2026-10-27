@@ -3,7 +3,8 @@ corrido, como num telnet, sem painel, moldura, barra ou símbolo. O texto do ser
 cores, e cada linha digitada vai para o jogo: o leitor de tela lê o que chega e o cursor fica sempre no fim.
 
 Feito para ouvir: o prompt só é lido quando vida, mana ou movimento mudam (/prompt troca), linhas em branco seguidas
-viram uma e tell, chat ou sussurro de outra pessoa toca o sino. Os comandos do cliente começam com / (/ajuda lista):
+viram uma, e golpe, morte, nível, item, porta, conversa e vida baixa tocam os sons do Fantasy Chess (sons.py; /som
+desliga). Os comandos do cliente começam com / (/ajuda lista):
 reler as últimas linhas ou conversas, ler o prompt, a sala atual pela base, a rota por extenso e o /andar.
 Ficam o seletor com login automático, os logs, o keepalive TCP e o aviso antes do Vazio. Nada é mandado sozinho além do
 login do personagem escolhido: o /andar e o open da porta fechada saem do seu Enter, como no cliente com painéis."""
@@ -21,6 +22,7 @@ from itertools import groupby
 from pathlib import Path
 
 import mapa
+import sons
 from conexao import (ANSI, ASKS_PW, LOGS, STD_PROMPT, WIN, load_chars, other_connections, secret, shape, telnet,
                      vitals)
 from conversa import chat_of
@@ -34,6 +36,7 @@ except ImportError:
 
 WAIT = 1.0  # segundos esperando a resposta antes de abrir a próxima linha: se for o pedido de senha, ela vem escondida
 REREAD = 10  # linhas que /rever e /conversas releem sem número
+LOW = 0.3  # vida abaixo disso do máximo toca o alerta, uma vez a cada queda
 NAMES = {"n": "norte", "s": "sul", "e": "leste", "w": "oeste", "ne": "nordeste", "nw": "noroeste", "se": "sudeste",
          "sw": "sudoeste", "u": "cima", "d": "baixo"}
 READERS = "orca|fenrir|tdsr|VoiceOver"  # nome do processo: Orca, Fenrir e TDSR no Linux, VoiceOver no macOS
@@ -43,7 +46,7 @@ COMMANDS = {
     "/conversas": f"/conversas número: relê os últimos tells, chats e sussurros, {REREAD} sem número",
     "/status": "lê o prompt agora, mesmo sem mudança",
     "/prompt": "troca entre ler o prompt sempre ou só quando vida, mana ou movimento mudam",
-    "/som": "liga ou desliga o sino de tell, chat e sussurro",
+    "/som": "liga ou desliga os sons",
     "/sala": "/sala nome: o que a base sabe da sala, a atual sem nome: região, descrição, saídas e o que tem nela",
     "/rota": "/rota sala ou região: o caminho mais curto, por extenso; /rota sozinho apaga",
     "/andar": f"manda a rota de uma vez, até {MAX_WALK} passos; abre a porta do caminho e para depois dela",
@@ -85,7 +88,7 @@ class Leitor:
         self.base = mapa.Base()
         self.lines: deque = deque(maxlen=500)  # o que o jogo escreveu, para o /rever
         self.talk: deque = deque(maxlen=200)
-        self.every, self.bell = False, True  # prompt lido sempre? sino nas conversas?
+        self.every, self.sound, self.som = False, True, sons.Som()  # prompt lido sempre? sons ligados?
         self.reset()
         LOGS.mkdir(parents=True, exist_ok=True)
         self.raw = open(LOGS / "raw.log", "ab")
@@ -95,7 +98,7 @@ class Leitor:
         """Estado de uma conexão: prompt aprendido, sala, rota."""
         self.masked, self.tail, self.part, self.roomtxt, self.nl = False, "", "", "", 2
         self.prompt_re: re.Pattern | None = None
-        self.prompt, self.heard = "", None
+        self.prompt, self.heard, self.hpmax, self.low, self.cues = "", None, 0, False, []
         self.room = self.live = self.moved = self.target = self.arrived = None
         self.route: list = []
         self.last_sent = ""
@@ -200,13 +203,18 @@ class Leitor:
         """Prompt com a mesma vida, mana e movimento do último lido sai calado (a não ser no /prompt sempre)."""
         v, self.prompt = vitals(m[0]), m[0].strip()
         keep, self.heard = self.every or v != self.heard, v
+        (hp, top), was = v[0], self.low
+        self.hpmax = top or max(self.hpmax, hp)  # sem o máximo no prompt, o maior hp já visto
+        self.low = hp < self.hpmax * LOW
+        if self.low and not was:
+            self.cues.append(sons.LOWHP)
         return m[0] if keep else ""
 
     def show(self, text: str) -> None:
         """Escreve o que chegou sem o prompt repetido e com uma linha em branco no máximo; guarda as linhas para o
-        /rever e as conversas para o /conversas, e toca o sino quando outra pessoa fala com você."""
+        /rever e as conversas para o /conversas, e toca o som de cada coisa que aconteceu."""
         done = (self.part + text).split("\n")
-        self.part, ring = done.pop()[-400:], False
+        self.part, self.cues, alert = done.pop()[-400:], [], False
         for line in done:
             line = (self.prompt_re.sub("", line) if self.prompt_re else line).strip()
             if not line or vitals(line):
@@ -215,15 +223,30 @@ class Leitor:
             talk = chat_of(line)
             if talk:
                 self.talk.append(line)
-                ring = ring or talk[1] != "você"
+                if talk[1] != "você":
+                    self.cues.append(sons.CHAT if talk[0] == "global" else sons.TELL)
+                    alert = True
+            elif name := sons.cue(line):
+                self.cues.append(name)
         out = re.sub(r" +\n", "\n", "\n".join(self.prompt_re.sub(self.mute, p) if self.prompt_re else p
                                               for p in text.split("\n")))
         lead = "\n" * self.nl
         both = re.sub(r"\n{3,}", "\n\n", lead + out)
         if both != lead:
             self.nl = min(2, len(both) - len(both.rstrip("\n")))
-        sys.stdout.write(both[len(lead):] + ("\a" if ring and self.bell else ""))
+        sys.stdout.write(both[len(lead):])
         sys.stdout.flush()
+        self.ring(self.cues, alert or sons.LOWHP in self.cues)
+
+    def ring(self, names: list[str], alert: bool = False) -> None:
+        """Toca os sons, sem repetir e os mais recentes primeiro (a morte depois dos golpes, a vida baixa do prompt);
+        sem tocador, conversa e aviso tocam o sino."""
+        if not self.sound:
+            return
+        played = [self.som.play(n) for n in list(dict.fromkeys(reversed(names)))[:self.som.max]]
+        if alert and not any(played):
+            sys.stdout.write("\a")
+            sys.stdout.flush()
 
     def autologin(self) -> None:
         """Nome, senha e o Enter da tela de novidades, uma vez só, quando o servidor pede cada um."""
@@ -250,7 +273,8 @@ class Leitor:
         if self.sock and not self.warned and time.time() - self.typed_at >= WARN:
             self.warned = True
             self.say(f"parado há {WARN // 60} minutos: lá pelos 8 a 10 minutos o servidor põe você no Vazio e uns 4 "
-                     "minutos depois desconecta. Digite um comando para continuar.\a")
+                     "minutos depois desconecta. Digite um comando para continuar.")
+            self.ring([sons.IDLE], alert=True)
 
     # ------------------------------------------------------------------ o que sai
     def send(self, cmd: str, hidden: bool = False) -> None:
@@ -310,8 +334,9 @@ class Leitor:
         self.say("prompt lido sempre." if self.every else "prompt lido só quando vida, mana ou movimento mudam.")
 
     def cmd_som(self, arg: str) -> None:
-        self.bell = not self.bell
-        self.say("sino das conversas ligado." if self.bell else "sino das conversas desligado.")
+        self.sound = not self.sound
+        self.say(("sons ligados." if self.som.ok else "sons ligados, mas não achei paplay, pw-play, aplay nem afplay: "
+                  "fica só o sino nas conversas.") if self.sound else "sons desligados.")
 
     def cmd_sala(self, arg: str) -> None:
         rid = (self.base.nearest(self.room, arg) or (None,))[0] if arg else self.room
