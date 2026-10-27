@@ -23,7 +23,7 @@ TAG = re.compile(r"\((\d+)x\)\s*|\(([^)]+)\)\s*")  # (8x) quantidade, (Brilhando
 PROMPT_LINE = re.compile(r"<-?\d+hp ")
 CARRY = {"items": re.compile(r"Carregando (\d+) itens? de um máximo de (\d+)|Itens:\s+(\d+)/(\d+)"),
          "kg": re.compile(r"Carregando ([\d.]+) kg de um máximo de ([\d.]+) kg|Carreg\.:\s+([\d.]+)/([\d.]+) kg")}
-GOLD = re.compile(r"Ouro:\s+(\d+)")
+GOLD = re.compile(r"Ouro:\s+([\d.]+)")
 # as posições que a dica de vestir do próprio servidor lista, de cima para baixo, e as das mãos que já vieram no eq
 BODY = ("cabeça", "olhos", "rosto", "orelhas", "pescoço", "ombros", "sobre o corpo", "corpo", "costas", "braços",
         "pulsos", "mãos", "dedos", "cintura", "pernas", "tornozelos", "pés", "empunhando", "como escudo", "segurando",
@@ -84,7 +84,7 @@ def scan(text: str) -> dict:
         for m in rx.finditer(text):
             got[key] = tuple(float(g) for g in m.groups() if g is not None)
     for m in GOLD.finditer(text):
-        got["gold"] = int(m[1])
+        got["gold"] = int(m[1].replace(".",""))
     return got
 
 
